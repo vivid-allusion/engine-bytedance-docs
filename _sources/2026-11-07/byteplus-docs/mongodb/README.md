@@ -1,0 +1,276 @@
+# Document Database for MongoDB
+
+218 pages. Source: https://docs.byteplus.com/en/docs/mongodb
+
+Back to the [full index](../README.md).
+
+- [Performance whitepaper](Performance whitepaper.md)
+- **API reference**
+  - [API changelog](API reference/API changelog.md)
+  - [API overview](API reference/API overview.md)
+  - [Common error codes](API reference/Common error codes.md)
+  - **Account management**
+    - [CreateDBAccount](API reference/Account management/CreateDBAccount.md)
+    - [DeleteDBAccount](API reference/Account management/DeleteDBAccount.md)
+    - [DescribeDBAccounts](API reference/Account management/DescribeDBAccounts.md)
+    - [ResetDBAccount](API reference/Account management/ResetDBAccount.md)
+    - [UpdateDBAccountPrivilege](API reference/Account management/UpdateDBAccountPrivilege.md)
+  - **Allowlist management**
+    - [AssociateAllowList](API reference/Allowlist management/AssociateAllowList.md)
+    - [CreateAllowList](API reference/Allowlist management/CreateAllowList.md)
+    - [DeleteAllowList](API reference/Allowlist management/DeleteAllowList.md)
+    - [DescribeAllowListDetail](API reference/Allowlist management/DescribeAllowListDetail.md)
+    - [DescribeAllowLists](API reference/Allowlist management/DescribeAllowLists.md)
+    - [DisassociateAllowList](API reference/Allowlist management/DisassociateAllowList.md)
+    - [ModifyAllowList](API reference/Allowlist management/ModifyAllowList.md)
+  - **Backup and recovery**
+    - [CreateBackup](API reference/Backup and recovery/CreateBackup.md)
+    - [DescribeBackups](API reference/Backup and recovery/DescribeBackups.md)
+    - [DescribeDBInstanceBackupPolicy](API reference/Backup and recovery/DescribeDBInstanceBackupPolicy.md)
+    - [DescribeDBInstanceBackupURL](API reference/Backup and recovery/DescribeDBInstanceBackupURL.md)
+    - [DescribeRecoverableTime](API reference/Backup and recovery/DescribeRecoverableTime.md)
+    - [ModifyDBInstanceBackupPolicy](API reference/Backup and recovery/ModifyDBInstanceBackupPolicy.md)
+    - [ModifyDBInstanceBackupURL](API reference/Backup and recovery/ModifyDBInstanceBackupURL.md)
+    - [RestoreToNewInstance](API reference/Backup and recovery/RestoreToNewInstance.md)
+  - **Billing management**
+    - [ModifyDBInstanceChargeType](API reference/Billing management/ModifyDBInstanceChargeType.md)
+  - **Call method**
+    - [Common parameters](API reference/Call method/Common parameters.md)
+    - [Request structure](API reference/Call method/Request structure.md)
+    - [Response structure](API reference/Call method/Response structure.md)
+    - [Signature mechanism](API reference/Call method/Signature mechanism.md)
+  - **Connection management**
+    - [CreateDBEndpoint](API reference/Connection management/CreateDBEndpoint.md)
+    - [DeleteDBEndpoint](API reference/Connection management/DeleteDBEndpoint.md)
+    - [DescribeDBEndpoint](API reference/Connection management/DescribeDBEndpoint.md)
+    - [ModifyDBEndpointPort](API reference/Connection management/ModifyDBEndpointPort.md)
+    - [ModifyDBEndpointPrivateDNSVisibility](API reference/Connection management/ModifyDBEndpointPrivateDNSVisibility.md)
+  - **Instance management**
+    - [CreateDBInstance](API reference/Instance management/CreateDBInstance.md)
+    - [DeleteDBInstance](API reference/Instance management/DeleteDBInstance.md)
+    - [DescribeDBInstanceDetail](API reference/Instance management/DescribeDBInstanceDetail.md)
+    - [DescribeDBInstances](API reference/Instance management/DescribeDBInstances.md)
+    - [DescribeNodeSpecs](API reference/Instance management/DescribeNodeSpecs.md)
+    - [ModifyDBInstanceName](API reference/Instance management/ModifyDBInstanceName.md)
+    - [ModifyDBInstanceSpec](API reference/Instance management/ModifyDBInstanceSpec.md)
+    - [RestartDBInstance](API reference/Instance management/RestartDBInstance.md)
+    - [SwitchDBMaster](API reference/Instance management/SwitchDBMaster.md)
+  - **Log management**
+    - [DescribeNormalLogs](API reference/Log management/DescribeNormalLogs.md)
+    - [DescribeSlowLogs](API reference/Log management/DescribeSlowLogs.md)
+  - **Parameter management**
+    - [DescribeDBInstanceParameters](API reference/Parameter management/DescribeDBInstanceParameters.md)
+    - [DescribeDBInstanceParametersLog](API reference/Parameter management/DescribeDBInstanceParametersLog.md)
+    - [ModifyDBInstanceParameters](API reference/Parameter management/ModifyDBInstanceParameters.md)
+    - [ModifyMultiDBInstanceParameters](API reference/Parameter management/ModifyMultiDBInstanceParameters.md)
+  - **Region and availability zone**
+    - [DescribeAvailabilityZones](API reference/Region and availability zone/DescribeAvailabilityZones.md)
+    - [DescribeRegions](API reference/Region and availability zone/DescribeRegions.md)
+  - **SSL encryption**
+    - [DescribeDBInstanceSSL](API reference/SSL encryption/DescribeDBInstanceSSL.md)
+    - [ModifyDBInstanceSSL](API reference/SSL encryption/ModifyDBInstanceSSL.md)
+  - **Tag management**
+    - [AddTagsToResource](API reference/Tag management/AddTagsToResource.md)
+    - [RemoveTagsFromResource](API reference/Tag management/RemoveTagsFromResource.md)
+- **Best practices**
+  - [Guide for troubleshooting performance issues caused by excessive logical sessions](Best practices/Guide for troubleshooting performance issues caused by excessive logical sessions.md)
+  - [Guide to addressing abnormal performance caused by excessive databases and collections](Best practices/Guide to addressing abnormal performance caused by excessive databases and collections.md)
+  - [Guide to configuring MongoDB connection address](Best practices/Guide to configuring MongoDB connection address.md)
+  - [Guide to setting oplog-related parameters](Best practices/Guide to setting oplog-related parameters.md)
+  - [MongoDB maximum connections best practices](Best practices/MongoDB maximum connections best practices.md)
+  - [Reclaiming MongoDB instance disk fragments via COMPACT command](Best practices/Reclaiming MongoDB instance disk fragments via COMPACT command.md)
+  - [Restoring replica set instance data to self-built database via physical backup](Best practices/Restoring replica set instance data to self-built database via physical backup.md)
+  - [Troubleshooting manual for MongoDB high CPU utilization](Best practices/Troubleshooting manual for MongoDB high CPU utilization.md)
+  - [User guide for MongoDB sharding cluster](Best practices/User guide for MongoDB sharding cluster.md)
+  - **Data migration**
+    - [Guide to data migration](Best practices/Data migration/Guide to data migration.md)
+    - [Migrate data from self-managed MongoDB (express network) to  BytePlus MongoDB](Best practices/Data migration/Migrate data from self-managed MongoDB (express network) to BytePlus MongoDB.md)
+    - [Migrating data from BytePlus MongoDB to BytePlus MongoDB](Best practices/Data migration/Migrating data from BytePlus MongoDB to BytePlus MongoDB.md)
+    - [Migrating data from self-managed MongoDB (public network) to BytePlus MongoDB](Best practices/Data migration/Migrating data from self-managed MongoDB (public network) to BytePlus MongoDB.md)
+- **Billing**
+  - [Arrears and expiration](Billing/Arrears and expiration.md)
+  - [Automatic and manual renewal](Billing/Automatic and manual renewal.md)
+  - [Billing items and prices](Billing/Billing items and prices.md)
+  - [Overview](Billing/Overview.md)
+  - [Renewal](Billing/Renewal.md)
+  - [Switching to pay-as-you-go](Billing/Switching to pay-as-you-go.md)
+  - [Switching to subscription](Billing/Switching to subscription.md)
+  - **Billing methods**
+    - [Pay-as-you-go](Billing/Billing methods/Pay-as-you-go.md)
+    - [Yearly or monthly subscription](Billing/Billing methods/Yearly or monthly subscription.md)
+- **Developer tools**
+  - [Document Database for MongoDB skill user guide](Developer tools/Document Database for MongoDB skill user guide.md)
+- **FAQ**
+  - [Account permissions](FAQ/Account permissions.md)
+  - [Backup and recovery](FAQ/Backup and recovery.md)
+  - [FAQ overview](FAQ/FAQ overview.md)
+  - [Features](FAQ/Features.md)
+  - [Instance configuration modification](FAQ/Instance configuration modification.md)
+  - [Instance management](FAQ/Instance management.md)
+  - [Network connection](FAQ/Network connection.md)
+  - [Vector search](FAQ/Vector search.md)
+  - **Errors and exceptions**
+    - [How to troubleshoot and resolve connection failures caused by connection exhaustion in sharding instances?](FAQ/Errors and exceptions/How to troubleshoot and resolve connection failures caused by connection exhaustion in sha.md)
+    - [Why can't instances connect via public network address, or why do commands executed after connecting via public network address get stuck?](FAQ/Errors and exceptions/Why can't instances connect via public network address, or why do commands executed after.md)
+    - [Why does connecting to MongoDB instance with private domain name fail, and the error message contains public domain name information?](FAQ/Errors and exceptions/Why does connecting to MongoDB instance with private domain name fail, and the error messa.md)
+    - [Why does reading or writing data fail after creating a new database with the same name as a deleted one?](FAQ/Errors and exceptions/Why does reading or writing data fail after creating a new database with the same name as.md)
+- **Overview**
+  - [About Document Database for MongoDB](Overview/About Document Database for MongoDB.md)
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Constraints and limits](Overview/Constraints and limits.md)
+  - [Glossary](Overview/Glossary.md)
+  - [Storage types](Overview/Storage types.md)
+  - [Supported parameters](Overview/Supported parameters.md)
+  - **Product specifications**
+    - [Specification type](Overview/Product specifications/Specification type.md)
+    - **Instance specification**
+      - [Local disk specifications](Overview/Product specifications/Instance specification/Local disk specifications.md)
+      - [Volume instance specifications](Overview/Product specifications/Instance specification/Volume instance specifications.md)
+  - **Version introduction**
+    - [Overview of new features of MongoDB 4.2](Overview/Version introduction/Overview of new features of MongoDB 4.2.md)
+    - [Overview of new features of MongoDB 4.4](Overview/Version introduction/Overview of new features of MongoDB 4.4.md)
+    - [Overview of new features of MongoDB 5.0](Overview/Version introduction/Overview of new features of MongoDB 5.0.md)
+    - [Overview of new features of MongoDB 6.0](Overview/Version introduction/Overview of new features of MongoDB 6.0.md)
+    - [Overview of new features of MongoDB 7.0](Overview/Version introduction/Overview of new features of MongoDB 7.0.md)
+    - [Overview of new features of MongoDB 8.0](Overview/Version introduction/Overview of new features of MongoDB 8.0.md)
+    - [Overview of new features of MongoDB 8.3](Overview/Version introduction/Overview of new features of MongoDB 8.3.md)
+- **Quick start**
+  - [Applying for public address (Optional)](Quick start/Applying for public address (Optional).md)
+  - [Connecting to instance via MongoDB shell tool](Quick start/Connecting to instance via MongoDB shell tool.md)
+  - [Creating instance](Quick start/Creating instance.md)
+  - [Search feature](Quick start/Search feature.md)
+  - [Setting allowlist](Quick start/Setting allowlist.md)
+  - [Usage process](Quick start/Usage process.md)
+- **SDK reference**
+  - [Overview](SDK reference/Overview.md)
+  - **Go SDK**
+    - [Code examples](SDK reference/Go SDK/Code examples.md)
+    - [Downloading and installing](SDK reference/Go SDK/Downloading and installing.md)
+    - [Initializing client](SDK reference/Go SDK/Initializing client.md)
+  - **Python SDK**
+    - [Code examples](SDK reference/Python SDK/Code examples.md)
+    - [Downloading and installing](SDK reference/Python SDK/Downloading and installing.md)
+    - [Initializing client](SDK reference/Python SDK/Initializing client.md)
+- **Terms**
+  - [BytePlus Document Database for MongoDB_Service Level Agreement](Terms/BytePlus Document Database for MongoDB_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Database Products and Services](Terms/Service-Specific Terms for BytePlus Database Products and Services.md)
+- **User guide**
+  - [Features](User guide/Features.md)
+  - [Spatial analysis management](User guide/Spatial analysis management.md)
+  - **Account and access authorization**
+    - [Account permissions overview](User guide/Account and access authorization/Account permissions overview.md)
+    - [Creating account](User guide/Account and access authorization/Creating account.md)
+    - [Cross-service access authorization](User guide/Account and access authorization/Cross-service access authorization.md)
+    - [Deleting account](User guide/Account and access authorization/Deleting account.md)
+    - [Modifying account privileges](User guide/Account and access authorization/Modifying account privileges.md)
+    - [Modifying password](User guide/Account and access authorization/Modifying password.md)
+    - [Resetting root account](User guide/Account and access authorization/Resetting root account.md)
+    - [Using MongoDB with IAM user](User guide/Account and access authorization/Using MongoDB with IAM user.md)
+    - [Viewing account details](User guide/Account and access authorization/Viewing account details.md)
+  - **AI capabilities**
+    - [Deleting index](User guide/AI capabilities/Deleting index.md)
+    - **API Key management**
+      - [Getting Ark API Key](User guide/AI capabilities/API Key management/Getting Ark API Key.md)
+    - **Full-text search**
+      - [Creating full-text index](User guide/AI capabilities/Full-text search/Creating full-text index.md)
+      - [Overview](User guide/AI capabilities/Full-text search/Overview.md)
+      - [Viewing full-text index](User guide/AI capabilities/Full-text search/Viewing full-text index.md)
+    - **Vector search**
+      - [Creating auto-embedding vector index](User guide/AI capabilities/Vector search/Creating auto-embedding vector index.md)
+      - [Creating vector index](User guide/AI capabilities/Vector search/Creating vector index.md)
+      - [Editing vector index](User guide/AI capabilities/Vector search/Editing vector index.md)
+      - [Overview](User guide/AI capabilities/Vector search/Overview.md)
+      - [Viewing vector index](User guide/AI capabilities/Vector search/Viewing vector index.md)
+  - **Backup and recovery**
+    - [Overview](User guide/Backup and recovery/Overview.md)
+    - **Data backup**
+      - [Managing backup files](User guide/Backup and recovery/Data backup/Managing backup files.md)
+      - [Manual backup](User guide/Backup and recovery/Data backup/Manual backup.md)
+      - [Modifying automatic backup policy](User guide/Backup and recovery/Data backup/Modifying automatic backup policy.md)
+      - [Modifying automatic backup policy in batches](User guide/Backup and recovery/Data backup/Modifying automatic backup policy in batches.md)
+    - **Data recovery**
+      - [Managing database and table rollback task](User guide/Backup and recovery/Data recovery/Managing database and table rollback task.md)
+      - [Recovery by point in time](User guide/Backup and recovery/Data recovery/Recovery by point in time.md)
+      - [Recovery from backup files](User guide/Backup and recovery/Data recovery/Recovery from backup files.md)
+      - [Recovery from deleted instance](User guide/Backup and recovery/Data recovery/Recovery from deleted instance.md)
+      - [Rolling back database and table data](User guide/Backup and recovery/Data recovery/Rolling back database and table data.md)
+  - **Data security**
+    - [Connecting to database using Mongo shell via SSL encryption](User guide/Data security/Connecting to database using Mongo shell via SSL encryption.md)
+    - [Connecting to MongoDB from client via SSL encryption](User guide/Data security/Connecting to MongoDB from client via SSL encryption.md)
+    - [Setting SSL encryption](User guide/Data security/Setting SSL encryption.md)
+    - **Managing allowlists**
+      - [Associating instances and allowlists](User guide/Data security/Managing allowlists/Associating instances and allowlists.md)
+      - [Creating allowlist](User guide/Data security/Managing allowlists/Creating allowlist.md)
+      - [Deleting allowlist](User guide/Data security/Managing allowlists/Deleting allowlist.md)
+      - [Disassociating instances from allowlists](User guide/Data security/Managing allowlists/Disassociating instances from allowlists.md)
+      - [Editing allowlist](User guide/Data security/Managing allowlists/Editing allowlist.md)
+  - **Instance configuration modification**
+    - [Adding or deleting read-only nodes](User guide/Instance configuration modification/Adding or deleting read-only nodes.md)
+    - [Modifying replica set instance configuration](User guide/Instance configuration modification/Modifying replica set instance configuration.md)
+    - [Solutions for modification of instance specifications](User guide/Instance configuration modification/Solutions for modification of instance specifications.md)
+    - **Modifying sharding cluster instance configuration**
+      - [Modifying ConfigServer node configuration](User guide/Instance configuration modification/Modifying sharding cluster instance configuration/Modifying ConfigServer node configuration.md)
+      - [Modifying Mongos node configuration](User guide/Instance configuration modification/Modifying sharding cluster instance configuration/Modifying Mongos node configuration.md)
+      - [Modifying shard configuration](User guide/Instance configuration modification/Modifying sharding cluster instance configuration/Modifying shard configuration.md)
+  - **Instance management**
+    - [Creating instance](User guide/Instance management/Creating instance.md)
+    - [Deleting pay-as-you-go instance](User guide/Instance management/Deleting pay-as-you-go instance.md)
+    - [Exporting instance list](User guide/Instance management/Exporting instance list.md)
+    - [Instance status](User guide/Instance management/Instance status.md)
+    - [Managing read-only nodes](User guide/Instance management/Managing read-only nodes.md)
+    - [Restarting instance, component, or node](User guide/Instance management/Restarting instance, component, or node.md)
+    - [Switching node roles](User guide/Instance management/Switching node roles.md)
+    - [Switching primary node](User guide/Instance management/Switching primary node.md)
+    - [Unsubscribing from yearly or monthly subscription instance](User guide/Instance management/Unsubscribing from yearly or monthly subscription instance.md)
+    - [Viewing historical events](User guide/Instance management/Viewing historical events.md)
+    - [Viewing instance information](User guide/Instance management/Viewing instance information.md)
+  - **Log management**
+    - [Exporting logs](User guide/Log management/Exporting logs.md)
+    - [Overview](User guide/Log management/Overview.md)
+    - [Querrying error logs](User guide/Log management/Querrying error logs.md)
+    - [Querying running logs](User guide/Log management/Querying running logs.md)
+    - [Querying slow logs](User guide/Log management/Querying slow logs.md)
+  - **Monitoring and alerts**
+    - [Event monitoring](User guide/Monitoring and alerts/Event monitoring.md)
+    - [Monitoring metrics](User guide/Monitoring and alerts/Monitoring metrics.md)
+    - [Setting alerts](User guide/Monitoring and alerts/Setting alerts.md)
+    - [Viewing monitoring data](User guide/Monitoring and alerts/Viewing monitoring data.md)
+  - **Multi-availability zone disaster recovery solution**
+    - [Deploying in multiple availability zones](User guide/Multi-availability zone disaster recovery solution/Deploying in multiple availability zones.md)
+    - [Feature introduction](User guide/Multi-availability zone disaster recovery solution/Feature introduction.md)
+    - [Migrating availability zone](User guide/Multi-availability zone disaster recovery solution/Migrating availability zone.md)
+    - [Viewing availability zone of instance](User guide/Multi-availability zone disaster recovery solution/Viewing availability zone of instance.md)
+  - **Network and connection management**
+    - [Applying for private address](User guide/Network and connection management/Applying for private address.md)
+    - [Applying for public address](User guide/Network and connection management/Applying for public address.md)
+    - [Connecting to instance via MongoDB shell tool](User guide/Network and connection management/Connecting to instance via MongoDB shell tool.md)
+    - [Connecting to MongoDB via DBW](User guide/Network and connection management/Connecting to MongoDB via DBW.md)
+    - [Enabling or disabling public network resolution](User guide/Network and connection management/Enabling or disabling public network resolution.md)
+    - [Modifying connection address](User guide/Network and connection management/Modifying connection address.md)
+    - [Modifying port](User guide/Network and connection management/Modifying port.md)
+    - [Read/write splitting](User guide/Network and connection management/Read - write splitting.md)
+    - [Releasing private address](User guide/Network and connection management/Releasing private address.md)
+    - [Releasing public address](User guide/Network and connection management/Releasing public address.md)
+    - [Upgrading the connection address domain name](User guide/Network and connection management/Upgrading the connection address domain name.md)
+    - [Viewing connection address](User guide/Network and connection management/Viewing connection address.md)
+  - **Parameter management**
+    - [Modifying instance parameters](User guide/Parameter management/Modifying instance parameters.md)
+    - [Modifying parameters in batches](User guide/Parameter management/Modifying parameters in batches.md)
+    - [Viewing parameter modification history](User guide/Parameter management/Viewing parameter modification history.md)
+    - **Parameter template management**
+      - [Applying parameter template](User guide/Parameter management/Parameter template management/Applying parameter template.md)
+      - [Copying parameter template](User guide/Parameter management/Parameter template management/Copying parameter template.md)
+      - [Creating parameter template](User guide/Parameter management/Parameter template management/Creating parameter template.md)
+      - [Deleting parameter template](User guide/Parameter management/Parameter template management/Deleting parameter template.md)
+      - [Editing parameter template](User guide/Parameter management/Parameter template management/Editing parameter template.md)
+      - [Exporting as parameter template](User guide/Parameter management/Parameter template management/Exporting as parameter template.md)
+      - [Overview](User guide/Parameter management/Parameter template management/Overview.md)
+  - **Tag management**
+    - [Associating or adding tag](User guide/Tag management/Associating or adding tag.md)
+    - [Disassociating or deleting tag](User guide/Tag management/Disassociating or deleting tag.md)
+    - [Filtering instances by tag](User guide/Tag management/Filtering instances by tag.md)
+    - [Tag overview](User guide/Tag management/Tag overview.md)
+- **What's new**
+  - [New feature release notes](What's new/New feature release notes.md)
+  - **Product announcements**
+    - [End of sale for Document Database for MongoDB 1 core 2 GiB specification](What's new/Product announcements/End of sale for Document Database for MongoDB 1 core 2 GiB specification.md)

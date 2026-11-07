@@ -1,0 +1,33 @@
+---
+title: "Data processing"
+product: "Torch Object Storage"
+product_code: "tos"
+source: "https://docs.byteplus.com/en/docs/tos/docs-data-processing-fee"
+---
+
+You pay to use features such as image processing and advanced image compression. This topic explains how you are charged for data processing.
+
+<div data-tips="true" data-tips-type="warning" data-tips-is-title="true">warning</div>
+
+
+
+* <div data-tips="true" data-tips-type="warning">Charges apply only to successful operations, including image processing, advanced image compression and snapshot. Failed operations are not billed.</div>
+
+
+* <div data-tips="true" data-tips-type="warning">Using the image processing service incurs fees for image processing, requests, and data transfer. Request fees are calculated based on the number of GetObject requests initiated. Each image processing operation initiates one such request. The cost of outbound traffic over the public network is calculated based on the size of the processed image. For more information on request pricing and data transfer pricing, see <a href="https://docs.byteplus.com/docs/tos/docs-request-fee">Requests</a> and <a href="https://docs.byteplus.com/docs/tos/docs-traffic-fee">Data transfer</a>.</div>
+
+
+
+
+|**Billable item** |**Description** |**Unit price** |**Billing formula** |Billing cycle |
+|---|---|---|---|---|
+|Image processing |You can process up to 10 TiB of images for free every month. Any overage will be billed based on the original image size.<br><br><div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div><br><br><br><br>* <div data-tips="true" data-tips-type="tip">An image processing fee is charged for resizing, watermarking, and other processing operations. However, advanced image compression is billed separately. For instance, if you resize an image and apply advanced compression, you will be charged for image processing, advanced compression, requests, and data transfer.</div><br><br><br>* <div data-tips="true" data-tips-type="tip">Image processing is billed based on the original image size, not the number of requests.</div><br> |* Free Tier: First 10 TiB monthly<br><br>* Overage: ¥0.025 per GiB beyond 10 TiB |**Pay\-as\-you\-go**: Image processing cost (\> 10 TiB) = (Total processed \- 10 TiB) × Unit price |Billed hourly |
+|Advanced image compression (HEIF) |You are charged based on the number of operations. Billing varies by image resolution.<br><br><div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div><br><br><br><div data-tips="true" data-tips-type="tip">Resolution tiers apply to the image's actual dimensions when advanced compression is performed. For example, when both resizing and advanced compression are applied, the billing is calculated based on the dimensions of the resized image.</div><br><br><br><br>* Low: < 800 × 600 px<br><br>* High: 800 × 600 px (inclusive) \- 4096 × 4096 px (inclusive) |* Low: ¥0.025 per 1,000 operations<br><br>* Middle: ¥0.1 per 1,000 operations |**Pay\-as\-you\-go**: Advanced image compression cost = Unit price × Number of operations ÷ 1,000 |Billed hourly |
+|Snapshot |You are charged based on the number of operations performed. Currently, fees for retrieving video metadata are billed under this item. |¥0.1 per 1,000 operations |**Pay\-as\-you\-go**: Snapshot cost = Number of operations x Unit price ÷ 1,000 |Billed hourly |
+|Inspection |You are charged based on the number of operations.<br><br><div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div><br><br><br><div data-tips="true" data-tips-type="tip">You will only pay for successful API calls used to inspect abnormal images. There are no charges for failed calls. Billing is not affected by inspection results.</div><br> |¥0.1 per 1,000 operations |**Pay\-as\-you\-go**: Inspection cost = Number of operations x Unit price ÷ 1,000 |Billed hourly |
+|Object monitoring in Intelligent Tiering Storage |Intelligent Tiering automatically monitors access to objects, which incur charges.<br><br><div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div><br><br><br><div data-tips="true" data-tips-type="tip">Objects smaller than 64 KiB are exempt from these charges.</div><br> |¥0.175 per 10,000 objects per month |**Pay\-as\-you\-go**: Hourly object monitoring cost = Number of monitored objects × Per\-object hourly rate |Billed hourly |
+|File decompression |You are charged based on the size of the decompressed files. |¥0.05 per GiB |**Pay\-as\-you\-go**: File decompression cost = Decompressed file size (GiB) × Unit price |Billed hourly |
+|Multi\-file compression |You are charged based on the size of the files before compression. |¥0.05 per GiB |**Pay\-as\-you\-go**: Multi\-file compression cost = Total original file size (GiB) × Unit price |Billed hourly |
+|Video transcoding |You are charged based on the length of the video output. The cost varies depending on the encoding format and output resolution.<br><br><div data-tips="true" data-tips-type="default" data-tips-is-title="true">tip</div><br><br><br><div data-tips="true" data-tips-type="default">Billing is determined by output video resolution according to the following specifications.</div><br><br><br><div data-tips="true" data-tips-type="default">For example, HD (1280×720) output falls under the SD output tier if the long edge (width) is ≤1280 and the short edge (height) is ≤720. However, if either the long edge exceeds 1280 or the short edge exceeds 720, the output belongs to a higher resolution tier.</div><br><br><br>The resolution specifications and their corresponding long\-edge/short\-edge limits are as follows:<br><br><br>* SD: 640 x 480<br><br>* HD: 1280 x 720<br><br>* FHD: 1920 x 1080<br><br>* 2K: 2560 x 1440<br><br>* 4K: 3840 x 2160 |Currently free of charge. We will notify you of the charging schedule at a later time. |**Pay\-as\-you\-go**: Video transcoding cost = Video output minutes (rounded up to the nearest minute) × Price per minute |Billed hourly |
+|Audio transcoding |You are charged based on the length of the audio output. |Currently free of charge. We will notify you of the charging schedule at a later time. |**Pay\-as\-you\-go:**  Audio transcoding cost = Audio output minutes (rounded up to the nearest minute) × Price per minute |Billed hourly |
+|Extracting metadata from AIGC audio and video |You are charged based on the number of API requests. |Currently free of charge. We will notify you of the charging schedule at a later time. |**Pay\-as\-you\-go**: Metadata extraction cost = Number of operations x Unit price ÷ 1,000 |Billed hourly |

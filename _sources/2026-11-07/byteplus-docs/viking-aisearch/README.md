@@ -1,0 +1,143 @@
+# Viking AI Search
+
+105 pages. Source: https://docs.byteplus.com/en/docs/viking-aisearch
+
+Back to the [full index](../README.md).
+
+- **Related Agreements**
+  - [Terms and Conditions](Related Agreements/Terms and Conditions.md)
+- **Viking AI Search Documentation**
+  - **API reference**
+    - [BrowseIndex](Viking AI Search Documentation/API reference/BrowseIndex.md)
+    - **Agentic Search APIs**
+      - [ChatSearch](Viking AI Search Documentation/API reference/Agentic Search APIs/ChatSearch.md)
+      - [QuestionSuggestions](Viking AI Search Documentation/API reference/Agentic Search APIs/QuestionSuggestions.md)
+    - **Data API**
+      - [Delete - Delete specified data](Viking AI Search Documentation/API reference/Data API/Delete - Delete specified data.md)
+      - [GetItem - Get Item Details](Viking AI Search Documentation/API reference/Data API/GetItem - Get Item Details.md)
+      - [ListDatasetData - Get video data and details (Not recommended)](Viking AI Search Documentation/API reference/Data API/ListDatasetData - Get video data and details (Not recommended).md)
+      - [ListItems - Get the list of items in a dataset](Viking AI Search Documentation/API reference/Data API/ListItems - Get the list of items in a dataset.md)
+      - [Write - Import and update data in real time](Viking AI Search Documentation/API reference/Data API/Write - Import and update data in real time.md)
+      - **Batch data import**
+        - [BatchImport - Batch data import](Viking AI Search Documentation/API reference/Data API/Batch data import/BatchImport - Batch data import.md)
+        - [CompleteBatchImportTask](Viking AI Search Documentation/API reference/Data API/Batch data import/CompleteBatchImportTask.md)
+        - [CreateBatchImport - Create Batch Import Task](Viking AI Search Documentation/API reference/Data API/Batch data import/CreateBatchImport - Create Batch Import Task.md)
+        - [GetBatchImportStatus - Check Import Status](Viking AI Search Documentation/API reference/Data API/Batch data import/GetBatchImportStatus - Check Import Status.md)
+    - **General Introduction**
+      - [API Authentication](Viking AI Search Documentation/API reference/General Introduction/API Authentication.md)
+      - [Common Error Codes](Viking AI Search Documentation/API reference/General Introduction/Common Error Codes.md)
+    - **Recommendation APIs**
+      - [Deduplicate](Viking AI Search Documentation/API reference/Recommendation APIs/Deduplicate.md)
+      - [Recommend](Viking AI Search Documentation/API reference/Recommendation APIs/Recommend.md)
+      - [RecReason - Recommendation Assistant](Viking AI Search Documentation/API reference/Recommendation APIs/RecReason - Recommendation Assistant.md)
+      - [Rerank](Viking AI Search Documentation/API reference/Recommendation APIs/Rerank.md)
+    - **Search APIs**
+      - [Overview - Search Summary](Viking AI Search Documentation/API reference/Search APIs/Overview - Search Summary.md)
+      - [QueryCompletion](Viking AI Search Documentation/API reference/Search APIs/QueryCompletion.md)
+      - [QueryRecommendation](Viking AI Search Documentation/API reference/Search APIs/QueryRecommendation.md)
+      - [Search](Viking AI Search Documentation/API reference/Search APIs/Search.md)
+  - **Best practices**
+    - [Building an E-commerce agent with Viking AI Search](Viking AI Search Documentation/Best practices/Building an E-commerce agent with Viking AI Search.md)
+    - [Configure and Integrate Conversational Search](Viking AI Search Documentation/Best practices/Configure and Integrate Conversational Search.md)
+    - [Create an AI companion for a video platform using Viking AI Search](Viking AI Search Documentation/Best practices/Create an AI companion for a video platform using Viking AI Search.md)
+    - [Enabling Multimodal Search for a Stock Media Platform with Viking AI Search](Viking AI Search Documentation/Best practices/Enabling Multimodal Search for a Stock Media Platform with Viking AI Search.md)
+    - [Integrating Personalized recommendations in social applications using Viking AI Search](Viking AI Search Documentation/Best practices/Integrating Personalized recommendations in social applications using Viking AI Search.md)
+  - **Pricing**
+    - [Viking AI Search Billing and Pricing](Viking AI Search Documentation/Pricing/Viking AI Search Billing and Pricing.md)
+  - **Product Introduction**
+    - [Viking AI Search Product Introduction](Viking AI Search Documentation/Product Introduction/Viking AI Search Product Introduction.md)
+  - **Quick Start Guide**
+    - [Configure Conversational Search Capabilities](Viking AI Search Documentation/Quick Start Guide/Configure Conversational Search Capabilities.md)
+    - [Configure Multimodal Search Capabilities](Viking AI Search Documentation/Quick Start Guide/Configure Multimodal Search Capabilities.md)
+    - [Configure Personalised AI Recommendation Capabilities](Viking AI Search Documentation/Quick Start Guide/Configure Personalised AI Recommendation Capabilities.md)
+    - [Create an AI Search Application](Viking AI Search Documentation/Quick Start Guide/Create an AI Search Application.md)
+  - **Troubleshooting guide for common issues**
+    - [Common Data Processing Issues](Viking AI Search Documentation/Troubleshooting guide for common issues/Common Data Processing Issues.md)
+    - [Common Error Messages](Viking AI Search Documentation/Troubleshooting guide for common issues/Common Error Messages.md)
+    - [Common Recommendation Issues](Viking AI Search Documentation/Troubleshooting guide for common issues/Common Recommendation Issues.md)
+    - [Common Search Issues](Viking AI Search Documentation/Troubleshooting guide for common issues/Common Search Issues.md)
+    - [Conversational search scenarios](Viking AI Search Documentation/Troubleshooting guide for common issues/Conversational search scenarios.md)
+    - [Why does the recommendation return no items?](Viking AI Search Documentation/Troubleshooting guide for common issues/Why does the recommendation return no items?.md)
+  - **User Guide**
+    - [Manage API Key](Viking AI Search Documentation/User Guide/Manage API Key.md)
+    - [Publish Viking AI Search as an Agent Skill](Viking AI Search Documentation/User Guide/Publish Viking AI Search as an Agent Skill.md)
+    - [Quickstart Guide: Viking AI Search CLI (SearchCLI)](Viking AI Search Documentation/User Guide/Quickstart Guide: Viking AI Search CLI (SearchCLI).md)
+    - **App Management**
+      - [Create Application](Viking AI Search Documentation/User Guide/App Management/Create Application.md)
+      - [Delete Application](Viking AI Search Documentation/User Guide/App Management/Delete Application.md)
+    - **Configure AI Search**
+      - [About datasets and indexes](Viking AI Search Documentation/User Guide/Configure AI Search/About datasets and indexes.md)
+      - [AI Search: Boost and Bury via API (V1)](Viking AI Search Documentation/User Guide/Configure AI Search/AI Search: Boost and Bury via API (V1).md)
+      - [AI Search: Boost and Bury via API (V2)](Viking AI Search Documentation/User Guide/Configure AI Search/AI Search: Boost and Bury via API (V2).md)
+      - [AI Search: Filter](Viking AI Search Documentation/User Guide/Configure AI Search/AI Search: Filter.md)
+      - [AI Search: Search Results Sorting](Viking AI Search Documentation/User Guide/Configure AI Search/AI Search: Search Results Sorting.md)
+      - [Configure search strategy](Viking AI Search Documentation/User Guide/Configure AI Search/Configure search strategy.md)
+      - [Integrate AI Search](Viking AI Search Documentation/User Guide/Configure AI Search/Integrate AI Search.md)
+      - [Introduction to Viking AI Search](Viking AI Search Documentation/User Guide/Configure AI Search/Introduction to Viking AI Search.md)
+      - [Search Experience Page Settings](Viking AI Search Documentation/User Guide/Configure AI Search/Search Experience Page Settings.md)
+    - **Configure Conversational Search (Agentic Search)**
+      - [(Beta) Use Documents as Knowledge Base](Viking AI Search Documentation/User Guide/Configure Conversational Search (Agentic Search)/(Beta) Use Documents as Knowledge Base.md)
+      - [Configure and experience the conversation assistant](Viking AI Search Documentation/User Guide/Configure Conversational Search (Agentic Search)/Configure and experience the conversation assistant.md)
+      - [Configure Conversation Opening](Viking AI Search Documentation/User Guide/Configure Conversational Search (Agentic Search)/Configure Conversation Opening.md)
+      - [Configure Conversational Search Assistant instructions](Viking AI Search Documentation/User Guide/Configure Conversational Search (Agentic Search)/Configure Conversational Search Assistant instructions.md)
+      - [Integrating Conversational Search](Viking AI Search Documentation/User Guide/Configure Conversational Search (Agentic Search)/Integrating Conversational Search.md)
+      - [Introduction to Conversational Search Assistant (Agentic Search)](Viking AI Search Documentation/User Guide/Configure Conversational Search (Agentic Search)/Introduction to Conversational Search Assistant (Agentic Search).md)
+    - **Configure Personalized AI Recommendation**
+      - [Introduction to AI Recommendation](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Introduction to AI Recommendation.md)
+      - [Prerequisites and setup](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Prerequisites and setup.md)
+      - **Experience Centre**
+        - [Managing Recommendation Scenarios](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Experience Centre/Managing Recommendation Scenarios.md)
+        - [Recommendation Input](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Experience Centre/Recommendation Input.md)
+        - [Recommendation Overview](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Experience Centre/Recommendation Overview.md)
+      - **Item Filtering**
+        - [Configure Dynamic Filter Conditions](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Item Filtering/Configure Dynamic Filter Conditions.md)
+        - [Configure Static Filter Rules](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Item Filtering/Configure Static Filter Rules.md)
+      - **Item Re-ranking (Reordering)**
+        - [Boost and Bury via API (V2)](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Item Re-ranking (Reordering)/Boost and Bury via API (V2).md)
+        - [Boost and Demote by Item Attribute](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Item Re-ranking (Reordering)/Boost and Demote by Item Attribute.md)
+        - [Boost and Demote by Time Comparison](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Item Re-ranking (Reordering)/Boost and Demote by Time Comparison.md)
+        - [Boost and Demote by User Geo-location](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Item Re-ranking (Reordering)/Boost and Demote by User Geo-location.md)
+        - [Boost and Demote via API (V1)](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Item Re-ranking (Reordering)/Boost and Demote via API (V1).md)
+        - [Pinned Recommendation](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Item Re-ranking (Reordering)/Pinned Recommendation.md)
+      - **Recall Strategy**
+        - [Configure and Adjust Recall Merge Strategy](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Recall Strategy/Configure and Adjust Recall Merge Strategy.md)
+        - [Configure Item Cold Start Recall](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Recall Strategy/Configure Item Cold Start Recall.md)
+        - [Popular Items Recall (Cold start & Fallback)](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Recall Strategy/Popular Items Recall (Cold start & Fallback).md)
+      - **Recommendation Deduplication**
+        - [Exposure Deduplication](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Recommendation Deduplication/Exposure Deduplication.md)
+      - **Recommendation Diversity**
+        - [Configure Diversity Rules](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Recommendation Diversity/Configure Diversity Rules.md)
+      - **Recommendation Reason**
+        - [Item-based Recommendation Reason](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Recommendation Reason/Item-based Recommendation Reason.md)
+        - [Recommendation Assistant](Viking AI Search Documentation/User Guide/Configure Personalized AI Recommendation/Recommendation Reason/Recommendation Assistant.md)
+    - **Dataset**
+      - [Create Item Dataset - Image & Text Data](Viking AI Search Documentation/User Guide/Dataset/Create Item Dataset - Image & Text Data.md)
+      - [Create Item Dataset - Multimodal Dataset](Viking AI Search Documentation/User Guide/Dataset/Create Item Dataset - Multimodal Dataset.md)
+      - [Create Item Dataset - Video Data](Viking AI Search Documentation/User Guide/Dataset/Create Item Dataset - Video Data.md)
+      - [Create User Event Dataset](Viking AI Search Documentation/User Guide/Dataset/Create User Event Dataset.md)
+      - [Dataset Introduction](Viking AI Search Documentation/User Guide/Dataset/Dataset Introduction.md)
+      - [Delete Dataset](Viking AI Search Documentation/User Guide/Dataset/Delete Dataset.md)
+      - [Document Dataset](Viking AI Search Documentation/User Guide/Dataset/Document Dataset.md)
+      - [Synthesize New Fields using Large Language Models](Viking AI Search Documentation/User Guide/Dataset/Synthesize New Fields using Large Language Models.md)
+      - [View Data Details](Viking AI Search Documentation/User Guide/Dataset/View Data Details.md)
+      - **Import Item Data**
+        - [Batch Import Item Data](Viking AI Search Documentation/User Guide/Dataset/Import Item Data/Batch Import Item Data.md)
+        - [Import and Update Item Data in Real Time](Viking AI Search Documentation/User Guide/Dataset/Import Item Data/Import and Update Item Data in Real Time.md)
+        - [Import using JSONL Files](Viking AI Search Documentation/User Guide/Dataset/Import Item Data/Import using JSONL Files.md)
+      - **Import User Event Data**
+        - [Import Behavior Data using API](Viking AI Search Documentation/User Guide/Dataset/Import User Event Data/Import Behavior Data using API.md)
+        - [Import User Event Data using JSONL Files ](Viking AI Search Documentation/User Guide/Dataset/Import User Event Data/Import User Event Data using JSONL Files.md)
+    - **Link dataset - Item pool**
+      - [Create and Link Item Dataset](Viking AI Search Documentation/User Guide/Link dataset - Item pool/Create and Link Item Dataset.md)
+      - [Edit Item Pool](Viking AI Search Documentation/User Guide/Link dataset - Item pool/Edit Item Pool.md)
+      - [Initial Configuration of Item Pool](Viking AI Search Documentation/User Guide/Link dataset - Item pool/Initial Configuration of Item Pool.md)
+      - [Link Existing Item Dataset](Viking AI Search Documentation/User Guide/Link dataset - Item pool/Link Existing Item Dataset.md)
+    - **Monitoring**
+      - [FAQ](Viking AI Search Documentation/User Guide/Monitoring/FAQ.md)
+    - **Prepare Datasets**
+      - [Add new field to existing dataset](Viking AI Search Documentation/User Guide/Prepare Datasets/Add new field to existing dataset.md)
+      - [Image & Text Item Dataset](Viking AI Search Documentation/User Guide/Prepare Datasets/Image & Text Item Dataset.md)
+      - [Multimodal Dataset](Viking AI Search Documentation/User Guide/Prepare Datasets/Multimodal Dataset.md)
+      - [Overview of Item Datasets](Viking AI Search Documentation/User Guide/Prepare Datasets/Overview of Item Datasets.md)
+      - [User Event Dataset](Viking AI Search Documentation/User Guide/Prepare Datasets/User Event Dataset.md)
+      - [Video Dataset](Viking AI Search Documentation/User Guide/Prepare Datasets/Video Dataset.md)

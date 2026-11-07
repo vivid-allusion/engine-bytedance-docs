@@ -1,0 +1,444 @@
+# BytePlus RTC
+
+353 pages. Source: https://docs.byteplus.com/en/docs/byteplus-rtc
+
+Back to the [full index](../README.md).
+
+- **Agreements**
+  - [BytePlusRTC(Demo App) Terms of Service](Agreements/BytePlusRTC(Demo App) Terms of Service.md)
+  - [Open Source Software Compliance Statement](Agreements/Open Source Software Compliance Statement.md)
+- **Conversation AI**
+  - [Billing of Conversational AI](Conversation AI/Billing of Conversational AI.md)
+  - [Demo](Conversation AI/Demo.md)
+  - [Overview](Conversation AI/Overview.md)
+  - [Release Notes](Conversation AI/Release Notes.md)
+  - **Conversational AI FAQ**
+    - [Agent Failed to Join the Room or Not Working Properly?](Conversation AI/Conversational AI FAQ/Agent Failed to Join the Room or Not Working Properly?.md)
+    - [How to enable internet connectivity?](Conversation AI/Conversational AI FAQ/How to enable internet connectivity?.md)
+    - [What should I do if echo leakage or 'self-questioning and answering' occurs?](Conversation AI/Conversational AI FAQ/What should I do if echo leakage or 'self-questioning and answering' occurs?.md)
+  - **Development**
+    - [Ask Questions by Sending Text](Conversation AI/Development/Ask Questions by Sending Text.md)
+    - [Context (Short-Term Memory)](Conversation AI/Development/Context (Short-Term Memory).md)
+    - [Control AI Emotion with Instruction Tags](Conversation AI/Development/Control AI Emotion with Instruction Tags.md)
+    - [Control Voice Broadcast Content](Conversation AI/Development/Control Voice Broadcast Content.md)
+    - [Custom Voice Playback](Conversation AI/Development/Custom Voice Playback.md)
+    - [Function Calling](Conversation AI/Development/Function Calling.md)
+    - [Integrate Akool Avatar](Conversation AI/Development/Integrate Akool Avatar.md)
+    - [Integrate AskEcho Search Agent](Conversation AI/Development/Integrate AskEcho Search Agent.md)
+    - [Integrate MCP](Conversation AI/Development/Integrate MCP.md)
+    - [Integrate Self-hosted ASR or TTS Model](Conversation AI/Development/Integrate Self-hosted ASR or TTS Model.md)
+    - [Integrate Third-Party Model](Conversation AI/Development/Integrate Third-Party Model.md)
+    - [Interrupting AI](Conversation AI/Development/Interrupting AI.md)
+    - [Noise Reduction](Conversation AI/Development/Noise Reduction.md)
+    - [Obtain AI Status](Conversation AI/Development/Obtain AI Status.md)
+    - [Obtain Conversation AI Task Events](Conversation AI/Development/Obtain Conversation AI Task Events.md)
+    - [Pause or Resume AI Playback](Conversation AI/Development/Pause or Resume AI Playback.md)
+    - [Real-time Subtitles (Dialog Records)](Conversation AI/Development/Real-time Subtitles (Dialog Records).md)
+    - [Turn-end Detection and Dialogue Triggering](Conversation AI/Development/Turn-end Detection and Dialogue Triggering.md)
+    - [Video and Image Understanding](Conversation AI/Development/Video and Image Understanding.md)
+  - **OpenAPI**
+    - [ StartVoiceChatWithRealtimeAPI](Conversation AI/OpenAPI/StartVoiceChatWithRealtimeAPI.md)
+    - [Events and Error Codes](Conversation AI/OpenAPI/Events and Error Codes.md)
+    - [StartVoiceChat](Conversation AI/OpenAPI/StartVoiceChat.md)
+    - [StopVoiceChat](Conversation AI/OpenAPI/StopVoiceChat.md)
+    - [StopVoiceChatWithRealtimeAPI](Conversation AI/OpenAPI/StopVoiceChatWithRealtimeAPI.md)
+    - [UpdateVoiceChat](Conversation AI/OpenAPI/UpdateVoiceChat.md)
+  - **Quick Start**
+    - [Preparations for Solution Integration](Conversation AI/Quick Start/Preparations for Solution Integration.md)
+    - [Solution Integration](Conversation AI/Quick Start/Solution Integration.md)
+- **Real-Time Communication**
+  - [API References Archive](Real-Time Communication/API References Archive.md)
+  - **About Console**
+    - [Access Control](Real-Time Communication/About Console/Access Control.md)
+    - [Application Management](Real-Time Communication/About Console/Application Management.md)
+    - [Diagnostic Tool](Real-Time Communication/About Console/Diagnostic Tool.md)
+    - [Introduction](Real-Time Communication/About Console/Introduction.md)
+    - [Metrics and Statistics](Real-Time Communication/About Console/Metrics and Statistics.md)
+    - [Set up Alerts and Notifications](Real-Time Communication/About Console/Set up Alerts and Notifications.md)
+  - **Best Practices**
+    - [Get Connection State](Real-Time Communication/Best Practices/Get Connection State.md)
+    - [Integrate Plugins on Demand to Reduce the Size of the Application](Real-Time Communication/Best Practices/Integrate Plugins on Demand to Reduce the Size of the Application.md)
+    - [Resume Audio／Video Call](Real-Time Communication/Best Practices/Resume Audio／Video Call.md)
+    - [Set Audio Properties](Real-Time Communication/Best Practices/Set Audio Properties.md)
+    - [Set Subscription Mode](Real-Time Communication/Best Practices/Set Subscription Mode.md)
+    - [Show Call Statistics](Real-Time Communication/Best Practices/Show Call Statistics.md)
+    - **Audio and Video Device Management**
+      - [Device Error](Real-Time Communication/Best Practices/Audio and Video Device Management/Device Error.md)
+      - [Device Permission](Real-Time Communication/Best Practices/Audio and Video Device Management/Device Permission.md)
+      - **Device Detection**
+        - [Camera](Real-Time Communication/Best Practices/Audio and Video Device Management/Device Detection/Camera.md)
+        - [Microphone](Real-Time Communication/Best Practices/Audio and Video Device Management/Device Detection/Microphone.md)
+        - [Speaker](Real-Time Communication/Best Practices/Audio and Video Device Management/Device Detection/Speaker.md)
+  - **Billing**
+    - [Overdue Policy](Real-Time Communication/Billing/Overdue Policy.md)
+    - [Packages](Real-Time Communication/Billing/Packages.md)
+    - [Viewing Billing Details and Usage Statistics](Real-Time Communication/Billing/Viewing Billing Details and Usage Statistics.md)
+    - **Billing Rules**
+      - [Billing of Audio and Video Calls](Real-Time Communication/Billing/Billing Rules/Billing of Audio and Video Calls.md)
+      - [Billing of Audio Segment](Real-Time Communication/Billing/Billing Rules/Billing of Audio Segment.md)
+      - [Billing of Cloud Recording](Real-Time Communication/Billing/Billing Rules/Billing of Cloud Recording.md)
+      - [Billing of Push Media Stream to WTN](Real-Time Communication/Billing/Billing Rules/Billing of Push Media Stream to WTN.md)
+      - [Billing of Push to CDN](Real-Time Communication/Billing/Billing Rules/Billing of Push to CDN.md)
+      - [Billing of Snapshots](Real-Time Communication/Billing/Billing Rules/Billing of Snapshots.md)
+      - [Billing of Subtitle](Real-Time Communication/Billing/Billing Rules/Billing of Subtitle.md)
+      - [Billing of WebRecord](Real-Time Communication/Billing/Billing Rules/Billing of WebRecord.md)
+      - [Billing of WTN (Public Stream)](Real-Time Communication/Billing/Billing Rules/Billing of WTN (Public Stream).md)
+  - **Client API**
+    - [Flutter 3.60](Real-Time Communication/Client API/Flutter 3.60.md)
+    - **Android 3.60.107**
+      - [API Reference](Real-Time Communication/Client API/Android 3.60.107/API Reference.md)
+      - [Callback](Real-Time Communication/Client API/Android 3.60.107/Callback.md)
+      - [Error Code](Real-Time Communication/Client API/Android 3.60.107/Error Code.md)
+      - [Keytype](Real-Time Communication/Client API/Android 3.60.107/Keytype.md)
+      - [Overview](Real-Time Communication/Client API/Android 3.60.107/Overview.md)
+    - **Electron 3.60.1**
+      - [API Reference](Real-Time Communication/Client API/Electron 3.60.1/API Reference.md)
+      - [Callback](Real-Time Communication/Client API/Electron 3.60.1/Callback.md)
+      - [Error Code](Real-Time Communication/Client API/Electron 3.60.1/Error Code.md)
+      - [Keytype](Real-Time Communication/Client API/Electron 3.60.1/Keytype.md)
+      - [Overview](Real-Time Communication/Client API/Electron 3.60.1/Overview.md)
+    - **iOS 3.60.107**
+      - [API Reference](Real-Time Communication/Client API/iOS 3.60.107/API Reference.md)
+      - [Callback](Real-Time Communication/Client API/iOS 3.60.107/Callback.md)
+      - [Error Code](Real-Time Communication/Client API/iOS 3.60.107/Error Code.md)
+      - [Keytype](Real-Time Communication/Client API/iOS 3.60.107/Keytype.md)
+      - [Overview](Real-Time Communication/Client API/iOS 3.60.107/Overview.md)
+    - **Linux 3.60.107**
+      - [API Reference](Real-Time Communication/Client API/Linux 3.60.107/API Reference.md)
+      - [Callback](Real-Time Communication/Client API/Linux 3.60.107/Callback.md)
+      - [Error Code](Real-Time Communication/Client API/Linux 3.60.107/Error Code.md)
+      - [Keytype](Real-Time Communication/Client API/Linux 3.60.107/Keytype.md)
+      - [Overview](Real-Time Communication/Client API/Linux 3.60.107/Overview.md)
+    - **macOS 3.60.107**
+      - [API Reference](Real-Time Communication/Client API/macOS 3.60.107/API Reference.md)
+      - [Callback](Real-Time Communication/Client API/macOS 3.60.107/Callback.md)
+      - [Error Code](Real-Time Communication/Client API/macOS 3.60.107/Error Code.md)
+      - [Keytype](Real-Time Communication/Client API/macOS 3.60.107/Keytype.md)
+      - [Overview](Real-Time Communication/Client API/macOS 3.60.107/Overview.md)
+    - **Unity 3.58**
+      - [API Reference](Real-Time Communication/Client API/Unity 3.58/API Reference.md)
+      - [Callback](Real-Time Communication/Client API/Unity 3.58/Callback.md)
+      - [Error Code](Real-Time Communication/Client API/Unity 3.58/Error Code.md)
+      - [Keytype](Real-Time Communication/Client API/Unity 3.58/Keytype.md)
+      - [Overview](Real-Time Communication/Client API/Unity 3.58/Overview.md)
+    - **Web 4.69**
+      - [API Reference](Real-Time Communication/Client API/Web 4.69/API Reference.md)
+      - [Error Code](Real-Time Communication/Client API/Web 4.69/Error Code.md)
+      - [Event](Real-Time Communication/Client API/Web 4.69/Event.md)
+      - [Keytype](Real-Time Communication/Client API/Web 4.69/Keytype.md)
+      - [Overview](Real-Time Communication/Client API/Web 4.69/Overview.md)
+    - **Windows 3.60.107**
+      - [API Reference](Real-Time Communication/Client API/Windows 3.60.107/API Reference.md)
+      - [Callback](Real-Time Communication/Client API/Windows 3.60.107/Callback.md)
+      - [Error Code](Real-Time Communication/Client API/Windows 3.60.107/Error Code.md)
+      - [Keytype](Real-Time Communication/Client API/Windows 3.60.107/Keytype.md)
+      - [Overview](Real-Time Communication/Client API/Windows 3.60.107/Overview.md)
+  - **Download**
+    - [Demo](Real-Time Communication/Download/Demo.md)
+    - [Sample Projects](Real-Time Communication/Download/Sample Projects.md)
+    - [SDKs](Real-Time Communication/Download/SDKs.md)
+  - **FAQ**
+    - [Log File Settings](Real-Time Communication/FAQ/Log File Settings.md)
+    - **About Integration**
+      - [FAQ about Token](Real-Time Communication/FAQ/About Integration/FAQ about Token.md)
+      - [FAQ during Building an Electron App](Real-Time Communication/FAQ/About Integration/FAQ during Building an Electron App.md)
+      - [FAQ during Building Android Apps](Real-Time Communication/FAQ/About Integration/FAQ during Building Android Apps.md)
+      - [FAQ during Building iOS Apps](Real-Time Communication/FAQ/About Integration/FAQ during Building iOS Apps.md)
+      - [How to Create and Configure App Group](Real-Time Communication/FAQ/About Integration/How to Create and Configure App Group.md)
+      - [How to Deal with Auto-play Restrictions of Browsers](Real-Time Communication/FAQ/About Integration/How to Deal with Auto-play Restrictions of Browsers.md)
+      - [Obfuscating your code for Android Apps](Real-Time Communication/FAQ/About Integration/Obfuscating your code for Android Apps.md)
+      - [Room Capacity](Real-Time Communication/FAQ/About Integration/Room Capacity.md)
+      - [SDK integration FAQ for macOS](Real-Time Communication/FAQ/About Integration/SDK integration FAQ for macOS.md)
+      - [Switching between Default and Custom Schemes of Video Capturing and Encoding](Real-Time Communication/FAQ/About Integration/Switching between Default and Custom Schemes of Video Capturing and Encoding.md)
+      - [Value Nomenclature](Real-Time Communication/FAQ/About Integration/Value Nomenclature.md)
+      - [What is the difference between in-call volume and media volume？](Real-Time Communication/FAQ/About Integration/What is the difference between in-call volume and media volume？.md)
+    - **Quality issue**
+      - [Minimum Bandwidth Requirements](Real-Time Communication/FAQ/Quality issue/Minimum Bandwidth Requirements.md)
+      - [Noise Cancellation](Real-Time Communication/FAQ/Quality issue/Noise Cancellation.md)
+  - **Implement Advanced Features**
+    - [Advanced Feature Usage Instructions for RTC Flutter SDK](Real-Time Communication/Implement Advanced Features/Advanced Feature Usage Instructions for RTC Flutter SDK.md)
+    - [Cloud Recording](Real-Time Communication/Implement Advanced Features/Cloud Recording.md)
+    - [Process screenshots on Web](Real-Time Communication/Implement Advanced Features/Process screenshots on Web.md)
+    - [Pushing RTMP Streams to WTN or RTC Rooms](Real-Time Communication/Implement Advanced Features/Pushing RTMP Streams to WTN or RTC Rooms.md)
+    - [Real-time Call Subtitles and Translation](Real-Time Communication/Implement Advanced Features/Real-time Call Subtitles and Translation.md)
+    - **Business Management**
+      - [Audio Selection](Real-Time Communication/Implement Advanced Features/Business Management/Audio Selection.md)
+      - [Data about RTC Calls](Real-Time Communication/Implement Advanced Features/Business Management/Data about RTC Calls.md)
+      - [Setting Configurations for Scenarios](Real-Time Communication/Implement Advanced Features/Business Management/Setting Configurations for Scenarios.md)
+    - **Media Effects**
+      - [Supplemental Enhancement Information (SEI)](Real-Time Communication/Implement Advanced Features/Media Effects/Supplemental Enhancement Information (SEI).md)
+      - [Support Foreground Multi-tasking on Mobiles](Real-Time Communication/Implement Advanced Features/Media Effects/Support Foreground Multi-tasking on Mobiles.md)
+      - **Audio Effects**
+        - [About the Volume](Real-Time Communication/Implement Advanced Features/Media Effects/Audio Effects/About the Volume.md)
+        - [AI Noise-Canceling Extension (Web)](Real-Time Communication/Implement Advanced Features/Media Effects/Audio Effects/AI Noise-Canceling Extension (Web).md)
+        - [Audio Effect and Denoiser](Real-Time Communication/Implement Advanced Features/Media Effects/Audio Effects/Audio Effect and Denoiser.md)
+        - [Audio Preprocessing with AEC and AGC on Web](Real-Time Communication/Implement Advanced Features/Media Effects/Audio Effects/Audio Preprocessing with AEC and AGC on Web.md)
+        - [Custom Audio Processing](Real-Time Communication/Implement Advanced Features/Media Effects/Audio Effects/Custom Audio Processing.md)
+        - [Play Music Files](Real-Time Communication/Implement Advanced Features/Media Effects/Audio Effects/Play Music Files.md)
+        - [Play Sound Files](Real-Time Communication/Implement Advanced Features/Media Effects/Audio Effects/Play Sound Files.md)
+        - [Set the Audio Route](Real-Time Communication/Implement Advanced Features/Media Effects/Audio Effects/Set the Audio Route.md)
+        - [Sound Attenuation](Real-Time Communication/Implement Advanced Features/Media Effects/Audio Effects/Sound Attenuation.md)
+        - [Spatial Audio](Real-Time Communication/Implement Advanced Features/Media Effects/Audio Effects/Spatial Audio.md)
+      - **Video Effects**
+        - [Beauty Effects Extension (Web)](Real-Time Communication/Implement Advanced Features/Media Effects/Video Effects/Beauty Effects Extension (Web).md)
+        - [Beauty Effects on Electron](Real-Time Communication/Implement Advanced Features/Media Effects/Video Effects/Beauty Effects on Electron.md)
+        - [Beauty Effects on Flutter](Real-Time Communication/Implement Advanced Features/Media Effects/Video Effects/Beauty Effects on Flutter.md)
+        - [Beauty Effects on Native](Real-Time Communication/Implement Advanced Features/Media Effects/Video Effects/Beauty Effects on Native.md)
+        - [Custom Video Processing](Real-Time Communication/Implement Advanced Features/Media Effects/Video Effects/Custom Video Processing.md)
+        - [Mirroring](Real-Time Communication/Implement Advanced Features/Media Effects/Video Effects/Mirroring.md)
+        - [Video Effects (paid feature)](Real-Time Communication/Implement Advanced Features/Media Effects/Video Effects/Video Effects (paid feature).md)
+        - [Video Orientation](Real-Time Communication/Implement Advanced Features/Media Effects/Video Effects/Video Orientation.md)
+        - [Video Rotation](Real-Time Communication/Implement Advanced Features/Media Effects/Video Effects/Video Rotation.md)
+        - [Virtual Background (Native)](Real-Time Communication/Implement Advanced Features/Media Effects/Video Effects/Virtual Background (Native).md)
+        - [Virtual Background (Web)](Real-Time Communication/Implement Advanced Features/Media Effects/Video Effects/Virtual Background (Web).md)
+    - **Push to CDN**
+      - [About Pushing to CDN](Real-Time Communication/Implement Advanced Features/Push to CDN/About Pushing to CDN.md)
+      - [Integration Best Practice](Real-Time Communication/Implement Advanced Features/Push to CDN/Integration Best Practice.md)
+      - [Start Push to CDN](Real-Time Communication/Implement Advanced Features/Push to CDN/Start Push to CDN.md)
+    - **Real-time Signaling**
+      - [Real-time Signaling across RTC Rooms](Real-Time Communication/Implement Advanced Features/Real-time Signaling/Real-time Signaling across RTC Rooms.md)
+      - [Real-time Signaling between Client and Application Server](Real-Time Communication/Implement Advanced Features/Real-time Signaling/Real-time Signaling between Client and Application Server.md)
+      - [Real-time Signaling Overview](Real-Time Communication/Implement Advanced Features/Real-time Signaling/Real-time Signaling Overview.md)
+    - **RTC Communication**
+      - [Custom Video Encoding and Decoding](Real-Time Communication/Implement Advanced Features/RTC Communication/Custom Video Encoding and Decoding.md)
+      - [Enable RTC Communication with Restrictions of Firewall](Real-Time Communication/Implement Advanced Features/RTC Communication/Enable RTC Communication with Restrictions of Firewall.md)
+      - [Forward Media Stream across Rooms](Real-Time Communication/Implement Advanced Features/RTC Communication/Forward Media Stream across Rooms.md)
+      - [Get Raw Audio Data](Real-Time Communication/Implement Advanced Features/RTC Communication/Get Raw Audio Data.md)
+      - [Join Multiple RTC Rooms](Real-Time Communication/Implement Advanced Features/RTC Communication/Join Multiple RTC Rooms.md)
+      - [Publish and Subscribe to Public Streams](Real-Time Communication/Implement Advanced Features/RTC Communication/Publish and Subscribe to Public Streams.md)
+      - **Custom Audio - Video Capturing and Rendering**
+        - [Custom Audio and Video Capturing (Web)](Real-Time Communication/Implement Advanced Features/RTC Communication/Custom Audio - Video Capturing and Rendering/Custom Audio and Video Capturing (Web).md)
+        - [Custom Audio Capturing and Rendering (Native)](Real-Time Communication/Implement Advanced Features/RTC Communication/Custom Audio - Video Capturing and Rendering/Custom Audio Capturing and Rendering (Native).md)
+        - [Custom Video Capturing (Native)](Real-Time Communication/Implement Advanced Features/RTC Communication/Custom Audio - Video Capturing and Rendering/Custom Video Capturing (Native).md)
+        - [Custom Video Rendering](Real-Time Communication/Implement Advanced Features/RTC Communication/Custom Audio - Video Capturing and Rendering/Custom Video Rendering.md)
+      - **Pre-call Test**
+        - [Pre-call Tests of Network Status (Native)](Real-Time Communication/Implement Advanced Features/RTC Communication/Pre-call Test/Pre-call Tests of Network Status (Native).md)
+        - [Pre-call Tests of Network Status (Web)](Real-Time Communication/Implement Advanced Features/RTC Communication/Pre-call Test/Pre-call Tests of Network Status (Web).md)
+      - **Simulcasting**
+        - [Send Simulcast Streams in V3.58 and Earlier Versions](Real-Time Communication/Implement Advanced Features/RTC Communication/Simulcasting/Send Simulcast Streams in V3.58 and Earlier Versions.md)
+        - [Simulcasting and Fallback in V3](Real-Time Communication/Implement Advanced Features/RTC Communication/Simulcasting/Simulcasting and Fallback in V3.md)
+        - [Stream Fallback in V3](Real-Time Communication/Implement Advanced Features/RTC Communication/Simulcasting/Stream Fallback in V3.md)
+    - **Screen Sharing**
+      - [macOS (VeRTC Virtual Sound Card)](Real-Time Communication/Implement Advanced Features/Screen Sharing/macOS (VeRTC Virtual Sound Card).md)
+      - [Screen Sharing on Android](Real-Time Communication/Implement Advanced Features/Screen Sharing/Screen Sharing on Android.md)
+      - [Screen Sharing on Electron with Web SDK](Real-Time Communication/Implement Advanced Features/Screen Sharing/Screen Sharing on Electron with Web SDK.md)
+      - [Screen Sharing on iOS](Real-Time Communication/Implement Advanced Features/Screen Sharing/Screen Sharing on iOS.md)
+      - [Screen Sharing on PC](Real-Time Communication/Implement Advanced Features/Screen Sharing/Screen Sharing on PC.md)
+      - [Screen Sharing on Web](Real-Time Communication/Implement Advanced Features/Screen Sharing/Screen Sharing on Web.md)
+      - [Screen Sharing with Flutter](Real-Time Communication/Implement Advanced Features/Screen Sharing/Screen Sharing with Flutter.md)
+  - **OpenAPI Reference**
+    - [API List](Real-Time Communication/OpenAPI Reference/API List.md)
+    - [Appendix](Real-Time Communication/OpenAPI Reference/Appendix.md)
+    - [Call OpenAPI](Real-Time Communication/OpenAPI Reference/Call OpenAPI.md)
+    - [Error Code](Real-Time Communication/OpenAPI Reference/Error Code.md)
+    - [Sign API Request](Real-Time Communication/OpenAPI Reference/Sign API Request.md)
+    - **App Management**
+      - [CreateApp](Real-Time Communication/OpenAPI Reference/App Management/CreateApp.md)
+      - [ListApps](Real-Time Communication/OpenAPI Reference/App Management/ListApps.md)
+      - [ModifyAppStatus](Real-Time Communication/OpenAPI Reference/App Management/ModifyAppStatus.md)
+    - **Cloud Recording**
+      - [GetRecordTask](Real-Time Communication/OpenAPI Reference/Cloud Recording/GetRecordTask.md)
+      - [StartRecord](Real-Time Communication/OpenAPI Reference/Cloud Recording/StartRecord.md)
+      - [StopRecord](Real-Time Communication/OpenAPI Reference/Cloud Recording/StopRecord.md)
+      - [UpdateRecord](Real-Time Communication/OpenAPI Reference/Cloud Recording/UpdateRecord.md)
+    - **Data Structure**
+      - [2020-12-01](Real-Time Communication/OpenAPI Reference/Data Structure/2020-12-01.md)
+      - [2022-06-01](Real-Time Communication/OpenAPI Reference/Data Structure/2022-06-01.md)
+      - [2023-07-20](Real-Time Communication/OpenAPI Reference/Data Structure/2023-07-20.md)
+    - **Legacy**
+      - **Acquire Data Index**
+        - [ListCallDetail](Real-Time Communication/OpenAPI Reference/Legacy/Acquire Data Index/ListCallDetail.md)
+        - [ListRoomInfo](Real-Time Communication/OpenAPI Reference/Legacy/Acquire Data Index/ListRoomInfo.md)
+        - [ListUserInfo](Real-Time Communication/OpenAPI Reference/Legacy/Acquire Data Index/ListUserInfo.md)
+      - **Real-time Signaling**
+        - **2020-12-01**
+          - [BatchSendRoomUnicast](Real-Time Communication/OpenAPI Reference/Legacy/Real-time Signaling/2020-12-01/BatchSendRoomUnicast.md)
+          - [SendBroadcast](Real-Time Communication/OpenAPI Reference/Legacy/Real-time Signaling/2020-12-01/SendBroadcast.md)
+          - [SendRoomUnicast](Real-Time Communication/OpenAPI Reference/Legacy/Real-time Signaling/2020-12-01/SendRoomUnicast.md)
+          - [SendUnicast](Real-Time Communication/OpenAPI Reference/Legacy/Real-time Signaling/2020-12-01/SendUnicast.md)
+      - **Room Management**
+        - **2020-12-01**
+          - [BanRoomUser](Real-Time Communication/OpenAPI Reference/Legacy/Room Management/2020-12-01/BanRoomUser.md)
+          - [BanUserStream](Real-Time Communication/OpenAPI Reference/Legacy/Room Management/2020-12-01/BanUserStream.md)
+          - [UnbanUserStream](Real-Time Communication/OpenAPI Reference/Legacy/Room Management/2020-12-01/UnbanUserStream.md)
+          - [UpdateBanRoomUserRule](Real-Time Communication/OpenAPI Reference/Legacy/Room Management/2020-12-01/UpdateBanRoomUserRule.md)
+    - **Public Stream**
+      - [StartPushPublicStream](Real-Time Communication/OpenAPI Reference/Public Stream/StartPushPublicStream.md)
+      - [StopPushPublicStream](Real-Time Communication/OpenAPI Reference/Public Stream/StopPushPublicStream.md)
+      - [UpdatePublicStreamParam](Real-Time Communication/OpenAPI Reference/Public Stream/UpdatePublicStreamParam.md)
+    - **Push RTMP Streams**
+      - [GetOnlineStreams](Real-Time Communication/OpenAPI Reference/Push RTMP Streams/GetOnlineStreams.md)
+      - [GetStreamProperty](Real-Time Communication/OpenAPI Reference/Push RTMP Streams/GetStreamProperty.md)
+      - [RtmpAccessInfo](Real-Time Communication/OpenAPI Reference/Push RTMP Streams/RtmpAccessInfo.md)
+    - **Push to CDN**
+      - [GetPushMixedStreamToCDNTask](Real-Time Communication/OpenAPI Reference/Push to CDN/GetPushMixedStreamToCDNTask.md)
+      - [GetPushSingleStreamToCDNTask](Real-Time Communication/OpenAPI Reference/Push to CDN/GetPushSingleStreamToCDNTask.md)
+      - [StartPushMixedStreamToCDN](Real-Time Communication/OpenAPI Reference/Push to CDN/StartPushMixedStreamToCDN.md)
+      - [StartPushSingleStreamToCDN](Real-Time Communication/OpenAPI Reference/Push to CDN/StartPushSingleStreamToCDN.md)
+      - [StopPushStreamToCDN](Real-Time Communication/OpenAPI Reference/Push to CDN/StopPushStreamToCDN.md)
+      - [UpdatePushMixedStreamToCDN](Real-Time Communication/OpenAPI Reference/Push to CDN/UpdatePushMixedStreamToCDN.md)
+    - **Query Historical Data**
+      - [ListOperationDistribution](Real-Time Communication/OpenAPI Reference/Query Historical Data/ListOperationDistribution.md)
+      - [ListQuality](Real-Time Communication/OpenAPI Reference/Query Historical Data/ListQuality.md)
+      - [ListQualityDistribution](Real-Time Communication/OpenAPI Reference/Query Historical Data/ListQualityDistribution.md)
+      - [ListRoomInfo](Real-Time Communication/OpenAPI Reference/Query Historical Data/ListRoomInfo.md)
+      - [ListUsages](Real-Time Communication/OpenAPI Reference/Query Historical Data/ListUsages.md)
+      - [ListUserInfo](Real-Time Communication/OpenAPI Reference/Query Historical Data/ListUserInfo.md)
+    - **Query Real-time Data**
+      - [ListCallDetail](Real-Time Communication/OpenAPI Reference/Query Real-time Data/ListCallDetail.md)
+      - [ListRealTimePublicStreamInfo](Real-Time Communication/OpenAPI Reference/Query Real-time Data/ListRealTimePublicStreamInfo.md)
+      - [ListRealTimeQualityDistribution](Real-Time Communication/OpenAPI Reference/Query Real-time Data/ListRealTimeQualityDistribution.md)
+    - **Real-time Signaling**
+      - [BatchSendRoomUnicast](Real-Time Communication/OpenAPI Reference/Real-time Signaling/BatchSendRoomUnicast.md)
+      - [SendBroadcast](Real-Time Communication/OpenAPI Reference/Real-time Signaling/SendBroadcast.md)
+      - [SendRoomUnicast](Real-Time Communication/OpenAPI Reference/Real-time Signaling/SendRoomUnicast.md)
+      - [SendUnicast](Real-Time Communication/OpenAPI Reference/Real-time Signaling/SendUnicast.md)
+    - **Relay online Media Stream**
+      - [ListRelayStream](Real-Time Communication/OpenAPI Reference/Relay online Media Stream/ListRelayStream.md)
+      - [StartRelayStream](Real-Time Communication/OpenAPI Reference/Relay online Media Stream/StartRelayStream.md)
+      - [StopRelayStream](Real-Time Communication/OpenAPI Reference/Relay online Media Stream/StopRelayStream.md)
+      - [UpdateRelayStream](Real-Time Communication/OpenAPI Reference/Relay online Media Stream/UpdateRelayStream.md)
+    - **Room Management**
+      - [BanRoomUser](Real-Time Communication/OpenAPI Reference/Room Management/BanRoomUser.md)
+      - [BanUserStream](Real-Time Communication/OpenAPI Reference/Room Management/BanUserStream.md)
+      - [GetRoomOnlineUsers](Real-Time Communication/OpenAPI Reference/Room Management/GetRoomOnlineUsers.md)
+      - [LimitTokenPrivilege](Real-Time Communication/OpenAPI Reference/Room Management/LimitTokenPrivilege.md)
+      - [UnbanUserStream](Real-Time Communication/OpenAPI Reference/Room Management/UnbanUserStream.md)
+      - [UpdateBanRoomUserRule](Real-Time Communication/OpenAPI Reference/Room Management/UpdateBanRoomUserRule.md)
+    - **Segment**
+      - [GetSegmentTask](Real-Time Communication/OpenAPI Reference/Segment/GetSegmentTask.md)
+      - [StartSegment](Real-Time Communication/OpenAPI Reference/Segment/StartSegment.md)
+      - [StopSegment](Real-Time Communication/OpenAPI Reference/Segment/StopSegment.md)
+      - [UpdateSegment](Real-Time Communication/OpenAPI Reference/Segment/UpdateSegment.md)
+    - **Server-side callbacks**
+      - [Enable Message Notification](Real-Time Communication/OpenAPI Reference/Server-side callbacks/Enable Message Notification.md)
+      - [EventType Reference](Real-Time Communication/OpenAPI Reference/Server-side callbacks/EventType Reference.md)
+      - [Receive Event Callbacks](Real-Time Communication/OpenAPI Reference/Server-side callbacks/Receive Event Callbacks.md)
+      - [Reference for Callback Details](Real-Time Communication/OpenAPI Reference/Server-side callbacks/Reference for Callback Details.md)
+    - **Snapshot**
+      - [GetSnapshotTask](Real-Time Communication/OpenAPI Reference/Snapshot/GetSnapshotTask.md)
+      - [StartSnapshot](Real-Time Communication/OpenAPI Reference/Snapshot/StartSnapshot.md)
+      - [StopSnapshot](Real-Time Communication/OpenAPI Reference/Snapshot/StopSnapshot.md)
+      - [UpdateSnapshot](Real-Time Communication/OpenAPI Reference/Snapshot/UpdateSnapshot.md)
+    - **Subtitles**
+      - [StartSubtitle](Real-Time Communication/OpenAPI Reference/Subtitles/StartSubtitle.md)
+      - [StopSubtitle](Real-Time Communication/OpenAPI Reference/Subtitles/StopSubtitle.md)
+      - [UpdateSubtitle](Real-Time Communication/OpenAPI Reference/Subtitles/UpdateSubtitle.md)
+    - **WebRecord**
+      - [GetWebCastTask](Real-Time Communication/OpenAPI Reference/WebRecord/GetWebCastTask.md)
+      - [StartWebCast](Real-Time Communication/OpenAPI Reference/WebRecord/StartWebCast.md)
+      - [StopWebCast](Real-Time Communication/OpenAPI Reference/WebRecord/StopWebCast.md)
+  - **Product Overview**
+    - [Glossary](Real-Time Communication/Product Overview/Glossary.md)
+    - [Web SDK browser compatibility and known issues](Real-Time Communication/Product Overview/Web SDK browser compatibility and known issues.md)
+    - [What is BytePlus RTC？](Real-Time Communication/Product Overview/What is BytePlus RTC？.md)
+  - **Product Updates**
+    - **Product Announcement**
+      - [BytePlus Web RTC SDK Compatibility Upgrade to Address Chrome Browser Changes](Real-Time Communication/Product Updates/Product Announcement/BytePlus Web RTC SDK Compatibility Upgrade to Address Chrome Browser Changes.md)
+    - **Release Notes**
+      - [Native Client SDK](Real-Time Communication/Product Updates/Release Notes/Native Client SDK.md)
+      - [OpenAPI](Real-Time Communication/Product Updates/Release Notes/OpenAPI.md)
+      - [Web SDK](Real-Time Communication/Product Updates/Release Notes/Web SDK.md)
+  - **Quick Start Guide**
+    - [Authentication with Token](Real-Time Communication/Quick Start Guide/Authentication with Token.md)
+    - [Before Using RTC Service](Real-Time Communication/Quick Start Guide/Before Using RTC Service.md)
+    - [Setting Video Encoder Configuration](Real-Time Communication/Quick Start Guide/Setting Video Encoder Configuration.md)
+    - **Building a Video Application**
+      - [Android](Real-Time Communication/Quick Start Guide/Building a Video Application/Android.md)
+      - [Electron](Real-Time Communication/Quick Start Guide/Building a Video Application/Electron.md)
+      - [Flutter](Real-Time Communication/Quick Start Guide/Building a Video Application/Flutter.md)
+      - [iOS with Objective-C](Real-Time Communication/Quick Start Guide/Building a Video Application/iOS with Objective-C.md)
+      - [macOS with Objective-C](Real-Time Communication/Quick Start Guide/Building a Video Application/macOS with Objective-C.md)
+      - [React Native](Real-Time Communication/Quick Start Guide/Building a Video Application/React Native.md)
+      - [Unity](Real-Time Communication/Quick Start Guide/Building a Video Application/Unity.md)
+      - [Web](Real-Time Communication/Quick Start Guide/Building a Video Application/Web.md)
+      - [Windows](Real-Time Communication/Quick Start Guide/Building a Video Application/Windows.md)
+    - **Building App with the Demo Project**
+      - [Android](Real-Time Communication/Quick Start Guide/Building App with the Demo Project/Android.md)
+      - [Electron](Real-Time Communication/Quick Start Guide/Building App with the Demo Project/Electron.md)
+      - [Flutter](Real-Time Communication/Quick Start Guide/Building App with the Demo Project/Flutter.md)
+      - [iOS (Objective-C)](Real-Time Communication/Quick Start Guide/Building App with the Demo Project/iOS (Objective-C).md)
+      - [iOS (Swift)](Real-Time Communication/Quick Start Guide/Building App with the Demo Project/iOS (Swift).md)
+      - [macOS (Objective-C)](Real-Time Communication/Quick Start Guide/Building App with the Demo Project/macOS (Objective-C).md)
+      - [macOS (Swift)](Real-Time Communication/Quick Start Guide/Building App with the Demo Project/macOS (Swift).md)
+      - [Unity](Real-Time Communication/Quick Start Guide/Building App with the Demo Project/Unity.md)
+      - [Web](Real-Time Communication/Quick Start Guide/Building App with the Demo Project/Web.md)
+      - [Windows](Real-Time Communication/Quick Start Guide/Building App with the Demo Project/Windows.md)
+  - **SDK Upgrade Guides**
+    - [Android](Real-Time Communication/SDK Upgrade Guides/Android.md)
+    - [Electron](Real-Time Communication/SDK Upgrade Guides/Electron.md)
+    - [iOS](Real-Time Communication/SDK Upgrade Guides/iOS.md)
+    - [Linux](Real-Time Communication/SDK Upgrade Guides/Linux.md)
+    - [macOS](Real-Time Communication/SDK Upgrade Guides/macOS.md)
+    - [Web](Real-Time Communication/SDK Upgrade Guides/Web.md)
+    - [Windows](Real-Time Communication/SDK Upgrade Guides/Windows.md)
+  - **Use Cases**
+    - **Chatting Room**
+      - [Advanced Features](Real-Time Communication/Use Cases/Chatting Room/Advanced Features.md)
+      - [Chatting Room Overview](Real-Time Communication/Use Cases/Chatting Room/Chatting Room Overview.md)
+      - [Demo Experience](Real-Time Communication/Use Cases/Chatting Room/Demo Experience.md)
+      - [Scenario Building (Android)](Real-Time Communication/Use Cases/Chatting Room/Scenario Building (Android).md)
+      - [Scenario Building (iOS)](Real-Time Communication/Use Cases/Chatting Room/Scenario Building (iOS).md)
+    - **Game Room**
+      - [Demo Experience](Real-Time Communication/Use Cases/Game Room/Demo Experience.md)
+      - [Game Room Overview](Real-Time Communication/Use Cases/Game Room/Game Room Overview.md)
+      - [Scenario Building (Android)](Real-Time Communication/Use Cases/Game Room/Scenario Building (Android).md)
+      - [Scenario Building (iOS)](Real-Time Communication/Use Cases/Game Room/Scenario Building (iOS).md)
+    - **Group Video Call**
+      - [Demo Experience](Real-Time Communication/Use Cases/Group Video Call/Demo Experience.md)
+      - [Group Video Call Overview](Real-Time Communication/Use Cases/Group Video Call/Group Video Call Overview.md)
+      - [Scenario Building (Android)](Real-Time Communication/Use Cases/Group Video Call/Scenario Building (Android).md)
+      - [Scenario Building (iOS)](Real-Time Communication/Use Cases/Group Video Call/Scenario Building (iOS).md)
+      - [Scenario Building (Web)](Real-Time Communication/Use Cases/Group Video Call/Scenario Building (Web).md)
+      - [Scenario Building (Windows)](Real-Time Communication/Use Cases/Group Video Call/Scenario Building (Windows).md)
+    - **Live Streaming**
+      - [Live Streaming Overview](Real-Time Communication/Use Cases/Live Streaming/Live Streaming Overview.md)
+      - **Interactive Live Streaming**
+        - [Advanced Features](Real-Time Communication/Use Cases/Live Streaming/Interactive Live Streaming/Advanced Features.md)
+        - [Demo Experience](Real-Time Communication/Use Cases/Live Streaming/Interactive Live Streaming/Demo Experience.md)
+        - [Scenario Building (Android)](Real-Time Communication/Use Cases/Live Streaming/Interactive Live Streaming/Scenario Building (Android).md)
+        - [Scenario Building (iOS)](Real-Time Communication/Use Cases/Live Streaming/Interactive Live Streaming/Scenario Building (iOS).md)
+      - **Interactive Video Streaming**
+        - [Advanced Features](Real-Time Communication/Use Cases/Live Streaming/Interactive Video Streaming/Advanced Features.md)
+        - [Demo Experience](Real-Time Communication/Use Cases/Live Streaming/Interactive Video Streaming/Demo Experience.md)
+        - [Scenario Building (Android)](Real-Time Communication/Use Cases/Live Streaming/Interactive Video Streaming/Scenario Building (Android).md)
+        - [Scenario Building (iOS)](Real-Time Communication/Use Cases/Live Streaming/Interactive Video Streaming/Scenario Building (iOS).md)
+    - **Watch LIVE Together**
+      - [Demo Experience](Real-Time Communication/Use Cases/Watch LIVE Together/Demo Experience.md)
+      - [Scenario Building (Android)](Real-Time Communication/Use Cases/Watch LIVE Together/Scenario Building (Android).md)
+      - [Scenario Building (iOS)](Real-Time Communication/Use Cases/Watch LIVE Together/Scenario Building (iOS).md)
+      - [Watch LIVE Together Overview](Real-Time Communication/Use Cases/Watch LIVE Together/Watch LIVE Together Overview.md)
+- **WebRTC Transmission Network**
+  - [Building a Basic Application](WebRTC Transmission Network/Building a Basic Application.md)
+  - [Download Demos](WebRTC Transmission Network/Download Demos.md)
+  - [Introduction](WebRTC Transmission Network/Introduction.md)
+  - [Pricing](WebRTC Transmission Network/Pricing.md)
+  - [Release Notes](WebRTC Transmission Network/Release Notes.md)
+  - **OpenAPI Reference**
+    - **Cloud Recording for WTN**
+      - [GetRecordTask](WebRTC Transmission Network/OpenAPI Reference/Cloud Recording for WTN/GetRecordTask.md)
+      - [StartRecord](WebRTC Transmission Network/OpenAPI Reference/Cloud Recording for WTN/StartRecord.md)
+      - [StopRecord](WebRTC Transmission Network/OpenAPI Reference/Cloud Recording for WTN/StopRecord.md)
+      - [UpdateRecord](WebRTC Transmission Network/OpenAPI Reference/Cloud Recording for WTN/UpdateRecord.md)
+    - **Usage Statistics**
+      - [DescribeWTNCallDurationData](WebRTC Transmission Network/OpenAPI Reference/Usage Statistics/DescribeWTNCallDurationData.md)
+  - **Quickstart Guide**
+    - [Publishing and Subscribing to Media Streams](WebRTC Transmission Network/Quickstart Guide/Publishing and Subscribing to Media Streams.md)
+    - **Building Apps with Quickstart Demos**
+      - [OBS](WebRTC Transmission Network/Quickstart Guide/Building Apps with Quickstart Demos/OBS.md)
+      - [Web](WebRTC Transmission Network/Quickstart Guide/Building Apps with Quickstart Demos/Web.md)
+  - **Reference for Server-side APIs**
+    - [API Request Domain Name](WebRTC Transmission Network/Reference for Server-side APIs/API Request Domain Name.md)
+    - [Authentication](WebRTC Transmission Network/Reference for Server-side APIs/Authentication.md)
+    - [Status Codes](WebRTC Transmission Network/Reference for Server-side APIs/Status Codes.md)
+    - **Publishing and Subscribing to Media Streams**
+      - [Create Publishing and Subscription Resource](WebRTC Transmission Network/Reference for Server-side APIs/Publishing and Subscribing to Media Streams/Create Publishing and Subscription Resource.md)
+      - [Create Publishing Resource](WebRTC Transmission Network/Reference for Server-side APIs/Publishing and Subscribing to Media Streams/Create Publishing Resource.md)
+      - [Create Subscription Resource](WebRTC Transmission Network/Reference for Server-side APIs/Publishing and Subscribing to Media Streams/Create Subscription Resource.md)
+      - [Destroy Publishing and Subscription Resource](WebRTC Transmission Network/Reference for Server-side APIs/Publishing and Subscribing to Media Streams/Destroy Publishing and Subscription Resource.md)
+      - [Destroy Publishing Resource](WebRTC Transmission Network/Reference for Server-side APIs/Publishing and Subscribing to Media Streams/Destroy Publishing Resource.md)
+      - [Destroy Subscription Resource](WebRTC Transmission Network/Reference for Server-side APIs/Publishing and Subscribing to Media Streams/Destroy Subscription Resource.md)
+      - [Publish Resource and Subscription Resource](WebRTC Transmission Network/Reference for Server-side APIs/Publishing and Subscribing to Media Streams/Publish Resource and Subscription Resource.md)
+      - [Set Publishing and Subscription Configurations](WebRTC Transmission Network/Reference for Server-side APIs/Publishing and Subscribing to Media Streams/Set Publishing and Subscription Configurations.md)
+      - [Set Publishing Configurations](WebRTC Transmission Network/Reference for Server-side APIs/Publishing and Subscribing to Media Streams/Set Publishing Configurations.md)
+      - [Set Subscription Configurations](WebRTC Transmission Network/Reference for Server-side APIs/Publishing and Subscribing to Media Streams/Set Subscription Configurations.md)

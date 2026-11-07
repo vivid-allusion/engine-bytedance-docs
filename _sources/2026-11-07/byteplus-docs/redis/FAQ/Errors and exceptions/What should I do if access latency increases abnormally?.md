@@ -1,0 +1,26 @@
+---
+title: "What should I do if access latency increases abnormally?"
+product: "Cache for Redis"
+product_code: "redis"
+source: "https://docs.byteplus.com/en/docs/redis/what-should-I-do-if-access-latency-increases-abnormally"
+---
+
+<span id=".6Zeu6aKY546w6LGh"></span>
+## Problem phenomenon
+
+When the instance experiences bandwidth throttling, CPU usage rate is too high, memory is full, or other conditions (such as network jitter, etc.), it will lead to increased business access latency. You can refer to the following steps to locate the cause of the problem and solve the corresponding problem.
+
+<span id=".5o6S5p-l5q2l6aqk"></span>
+## Troubleshooting step
+
+
+|Troubleshooting step ||Solutions |
+|---|---|---|
+|No1. Client\-side troubleshooting<br><br> |1. Whether the computing or network resource where the client is located overloaded |When the computing (e.g., ECS) or network (e.g., EIP) resources where the client is located experience excessive load, the upper\-layer applications will perceive an increase in request time. It is recommended to closely monitor the load status of the computing or network resources where the client is located and expand the capacity in a timely manner as needed to prevent the client's processing capacity from becoming a bottleneck. |
+||2. Whether the client has cross\-availability zone access<br><br><br> |When the client and the Redis instance are in different availability zones, the network latency caused by cross\-availability zone access will increase the request time. Therefore, the following suggestions are provided:<br><br><br>* Try to deploy the client and Redis in the same availability zone.<br><br>* If cross\-availability zone access is really necessary, it is recommended to appropriately increase the timeout period of the client. |
+||3. Whether the client submits too many commands in a single pipeline |When using pipeline, avoid submitting too many commands at once (we recommend that you keep them below 100). Although there is no hard limit on the number of commands that can be executed in a single pipeline operation, each pipeline command uses a socket connection exclusively. Submitting too many commands in a single pipeline affects the allocation of the connection pool and may also result in slow queries. The more commands, the more likely it is to cause timeouts or blocking, which can affect cluster stability. For more details, refer to [Suggestions for business code development](https://docs.byteplus.com/en/docs/redis/business-code-development-suggestion). |
+|No2. Instance\-side troubleshooting |1. Whether the instance bandwidth limit has been triggered |View whether the **Network input bandwidth utilization rate** and **Network output bandwidth utilization rate** monitoring indicators of the server node in the Redis instance have reached 100%.<br><br>If it has reached 100%, it means that bandwidth throttling has been triggered. Please refer to the methods in [Efficient bandwidth usage guide](https://docs.byteplus.com/en/docs/redis/bandwidth-suggestion) to try to solve it. |
+||2. Whether the instance CPU utilization has increased abnormally |View whether the **CPU usage rate** monitoring indicator of the server node and proxy node in the Redis instance has increased abnormally.<br><br>If there is an abnormal increase, please refer to the troubleshooting steps in [What should I do if CPU usage increases abnormally](https://docs.byteplus.com/en/docs/redis/what-should-I-do-if-cpu-usage-increases-abnormally) to try to resolve it. |
+||3. Whether the instance memory is full |View whether the **Number of evicted keys per second** monitoring indicator of server node in the Redis instance is greater than 0, if greater than 0, indicating that the instance memory is full.<br><br>At this time, you can use the following scaling\-up solutions to make the instance configuration match your business load:<br><br><br>* Vertical scaling: That is, [upgrade node specifications](https://docs.byteplus.com/en/docs/redis/modify-node-spec).<br><br>* Horizontal scaling: That is, [increase the number of shards](https://docs.byteplus.com/en/docs/redis/modify-shard--number). |
+||4. Whether time\-consuming commands have been executed |Executing time\-consuming commands may cause subsequent commands to be queued, which in turn increases the request time. You can go to the Redis console, enter the **Logs \> Slow log** tab on the details page of the target instance, and view the specific execution time of the time\-consuming commands. For more details, refer to [Querying slow logs](https://docs.byteplus.com/en/docs/redis/query-slow-log).<br><br>If there are a large number of slow logs in your instance, the following suggestions are provided:<br><br><br>* If you need to use commands of the scan type (including SCAN, SSCAN, HSCAN, ZSCAN, etc.), it is recommended to limit the number of keys scanned in a single operation through the `COUNT` parameter.<br><br>* Avoid using commands such as KEYS.<br><br>* Avoid full\-scale or large\-range query operations on large keys (such as HGETALL, SMEMBERS, ZRANGE, LRANGE, etc.). |
+|No3. Other situations (such as network jitter) ||If the access delay is still large after the above optimization, [submit a ticket](https://console.byteplus.com/workorder/create/) to contact technical support. |

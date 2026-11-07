@@ -1,0 +1,142 @@
+# BytePlus Billing Console
+
+113 pages. Source: https://docs.byteplus.com/en/docs/byteplus-platform
+
+Back to the [full index](../README.md).
+
+- [Business discount management](Business discount management.md)
+- [Coupon management](Coupon management.md)
+- [Manage Order Form](Manage Order Form.md)
+- [Resource Transfer-Invitation for Testing](Resource Transfer-Invitation for Testing.md)
+- **API Reference**
+  - **Access Key**
+    - [CreateAccessKey](API Reference/Access Key/CreateAccessKey.md)
+    - [DeleteAccessKey](API Reference/Access Key/DeleteAccessKey.md)
+    - [ListAccessKeys](API Reference/Access Key/ListAccessKeys.md)
+    - [Overview of AccessKey-related APIs](API Reference/Access Key/Overview of AccessKey-related APIs.md)
+    - [UpdateAccessKey](API Reference/Access Key/UpdateAccessKey.md)
+  - **bill**
+    - [ListBillDetail](API Reference/bill/ListBillDetail.md)
+    - [ListBillOverviewByCategory](API Reference/bill/ListBillOverviewByCategory.md)
+    - [ListBillOverviewByProd](API Reference/bill/ListBillOverviewByProd.md)
+  - **Data types**
+    - [AccessKey](API Reference/Data types/AccessKey.md)
+    - [AccessKeyMeta](API Reference/Data types/AccessKeyMeta.md)
+    - [AttachedPolicy](API Reference/Data types/AttachedPolicy.md)
+    - [LoginProfile](API Reference/Data types/LoginProfile.md)
+    - [Policy](API Reference/Data types/Policy.md)
+    - [PolicyRole](API Reference/Data types/PolicyRole.md)
+    - [PolicyUser](API Reference/Data types/PolicyUser.md)
+    - [Role](API Reference/Data types/Role.md)
+    - [User](API Reference/Data types/User.md)
+  - **Error codes**
+    - [AccessKey errors](API Reference/Error codes/AccessKey errors.md)
+    - [Account errors](API Reference/Error codes/Account errors.md)
+    - [Category errors](API Reference/Error codes/Category errors.md)
+    - [Common error codes](API Reference/Error codes/Common error codes.md)
+    - [Federation errors](API Reference/Error codes/Federation errors.md)
+    - [Owner errors](API Reference/Error codes/Owner errors.md)
+    - [Policy errors](API Reference/Error codes/Policy errors.md)
+    - [Project errors](API Reference/Error codes/Project errors.md)
+    - [Role errors](API Reference/Error codes/Role errors.md)
+    - [Service errors](API Reference/Error codes/Service errors.md)
+    - [User errors](API Reference/Error codes/User errors.md)
+  - **Get started**
+    - [Common error codes of BytePlus OpenAPI](API Reference/Get started/Common error codes of BytePlus OpenAPI.md)
+    - [Common parameters](API Reference/Get started/Common parameters.md)
+    - [Others](API Reference/Get started/Others.md)
+    - [Overview of BytePlus OpenAPI](API Reference/Get started/Overview of BytePlus OpenAPI.md)
+    - [Request response](API Reference/Get started/Request response.md)
+    - [Request structure](API Reference/Get started/Request structure.md)
+    - **Signature request**
+      - [About the request signature](API Reference/Get started/Signature request/About the request signature.md)
+      - [Calculating a signature](API Reference/Get started/Signature request/Calculating a signature.md)
+      - [Example](API Reference/Get started/Signature request/Example.md)
+  - **Policy**
+    - [AttachRolePolicy](API Reference/Policy/AttachRolePolicy.md)
+    - [AttachUserPolicy](API Reference/Policy/AttachUserPolicy.md)
+    - [CreatePolicy](API Reference/Policy/CreatePolicy.md)
+    - [DeletePolicy](API Reference/Policy/DeletePolicy.md)
+    - [DetachRolePolicy](API Reference/Policy/DetachRolePolicy.md)
+    - [DetachUserPolicy](API Reference/Policy/DetachUserPolicy.md)
+    - [GetPolicy](API Reference/Policy/GetPolicy.md)
+    - [ListAttachedRolePolicies](API Reference/Policy/ListAttachedRolePolicies.md)
+    - [ListAttachedUserPolicies](API Reference/Policy/ListAttachedUserPolicies.md)
+    - [ListEntitiesForPolicy](API Reference/Policy/ListEntitiesForPolicy.md)
+    - [ListPolicies](API Reference/Policy/ListPolicies.md)
+    - [Overview of policy-related APIs](API Reference/Policy/Overview of policy-related APIs.md)
+    - [UpdatePolicy](API Reference/Policy/UpdatePolicy.md)
+  - **Role**
+    - [CreateRole](API Reference/Role/CreateRole.md)
+    - [CreateServiceLinkedRole](API Reference/Role/CreateServiceLinkedRole.md)
+    - [DeleteRole](API Reference/Role/DeleteRole.md)
+    - [GetRole](API Reference/Role/GetRole.md)
+    - [ListRoles](API Reference/Role/ListRoles.md)
+    - [Overview of role-related APIs](API Reference/Role/Overview of role-related APIs.md)
+    - [UpdateRole](API Reference/Role/UpdateRole.md)
+  - **Security Token Service (STS)**
+    - [AssumeRole](API Reference/Security Token Service (STS)/AssumeRole.md)
+  - **User**
+    - [CreateLoginProfile](API Reference/User/CreateLoginProfile.md)
+    - [CreateUser](API Reference/User/CreateUser.md)
+    - [DeleteLoginProfile](API Reference/User/DeleteLoginProfile.md)
+    - [DeleteUser](API Reference/User/DeleteUser.md)
+    - [GetLoginProfile](API Reference/User/GetLoginProfile.md)
+    - [GetUser](API Reference/User/GetUser.md)
+    - [ListUsers](API Reference/User/ListUsers.md)
+    - [Overview of user-related APIs](API Reference/User/Overview of user-related APIs.md)
+    - [UpdateLoginProfile](API Reference/User/UpdateLoginProfile.md)
+    - [UpdateUser](API Reference/User/UpdateUser.md)
+- **Bill management**
+  - [Bill Details](Bill management/Bill Details.md)
+  - [Bill tags](Bill management/Bill tags.md)
+  - [Configure bill data storage](Bill management/Configure bill data storage.md)
+  - [Cost analysis](Bill management/Cost analysis.md)
+  - [Cost bills](Bill management/Cost bills.md)
+  - [Set bill consumption warning](Bill management/Set bill consumption warning.md)
+  - [Split bills](Bill management/Split bills.md)
+- **Billing Center Overview**
+  - [Available Balance components](Billing Center Overview/Available Balance components.md)
+  - [Billing Center Overview](Billing Center Overview/Billing Center Overview.md)
+  - [Set up billing account](Billing Center Overview/Set up billing account.md)
+- **Corporate Finance**
+  - [Account linking](Corporate Finance/Account linking.md)
+- **Invoices management**
+  - [Invoice Management](Invoices management/Invoice Management.md)
+  - [Tax rate reference](Invoices management/Tax rate reference.md)
+- **Order management**
+  - [Order management](Order management/Order management.md)
+- **Payment management**
+  - [About payment methods](Payment management/About payment methods.md)
+  - [Adding a payment method](Payment management/Adding a payment method.md)
+  - [Apply Credit Limit](Payment management/Apply Credit Limit.md)
+  - [Bank transfer to BytePlus](Payment management/Bank transfer to BytePlus.md)
+  - [Payment rules for Paypal](Payment management/Payment rules for Paypal.md)
+  - [Removing a payment method](Payment management/Removing a payment method.md)
+  - [Setting the default payment method](Payment management/Setting the default payment method.md)
+  - [What is post payment?](Payment management/What is post payment?.md)
+- **Renewal management**
+  - [Non-renewal upon expiration](Renewal management/Non-renewal upon expiration.md)
+  - [Overview of renewal rules](Renewal management/Overview of renewal rules.md)
+  - [Set up expiration messages](Renewal management/Set up expiration messages.md)
+  - **Auto-renewal**
+    - [Auto-renewal billing date](Renewal management/Auto-renewal/Auto-renewal billing date.md)
+    - [Auto-renewal rules](Renewal management/Auto-renewal/Auto-renewal rules.md)
+  - **Manual renewal**
+    - [Manual renewal rules](Renewal management/Manual renewal/Manual renewal rules.md)
+    - [Specifying an expiration time](Renewal management/Manual renewal/Specifying an expiration time.md)
+    - [Unified expiration day](Renewal management/Manual renewal/Unified expiration day.md)
+- **Resource package**
+  - [About packages](Resource package/About packages.md)
+  - [Concept description managing packages](Resource package/Concept description managing packages.md)
+  - [Viewing all packages](Resource package/Viewing all packages.md)
+  - [Viewing deduction details](Resource package/Viewing deduction details.md)
+- **Savings Plans**
+  - [AI Savings Plans](Savings Plans/AI Savings Plans.md)
+  - [Application of savings plans](Savings Plans/Application of savings plans.md)
+  - [Introduction to savings plans](Savings Plans/Introduction to savings plans.md)
+  - [Set remaining amount alert](Savings Plans/Set remaining amount alert.md)
+  - [View of savings plans](Savings Plans/View of savings plans.md)
+- **Unsubscription management**
+  - [Billing Rules for Resource Subscription Change](Unsubscription management/Billing Rules for Resource Subscription Change.md)
+  - [Unsubscription rules](Unsubscription management/Unsubscription rules.md)

@@ -1,0 +1,242 @@
+# Cloud Monitor
+
+191 pages. Source: https://docs.byteplus.com/en/docs/cloudmonitor
+
+Back to the [full index](../README.md).
+
+- **API Reference**
+  - [API error codes](API Reference/API error codes.md)
+  - [API overview](API Reference/API overview.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [Available APIs](API Reference/Available APIs.md)
+  - **Alarm contact groups**
+    - [CreateContactGroup](API Reference/Alarm contact groups/CreateContactGroup.md)
+    - [DeleteContactGroupByIds](API Reference/Alarm contact groups/DeleteContactGroupByIds.md)
+    - [ListContactGroupByIds](API Reference/Alarm contact groups/ListContactGroupByIds.md)
+    - [ListContactGroups](API Reference/Alarm contact groups/ListContactGroups.md)
+    - [UpdateContactGroup](API Reference/Alarm contact groups/UpdateContactGroup.md)
+    - [UpdateContactGroupWithContacts](API Reference/Alarm contact groups/UpdateContactGroupWithContacts.md)
+  - **Alarm contacts**
+    - [CreateContacts](API Reference/Alarm contacts/CreateContacts.md)
+    - [DeleteContactsByIds](API Reference/Alarm contacts/DeleteContactsByIds.md)
+    - [ListContacts](API Reference/Alarm contacts/ListContacts.md)
+    - [ListContactsByIds](API Reference/Alarm contacts/ListContactsByIds.md)
+    - [UpdateContacts](API Reference/Alarm contacts/UpdateContacts.md)
+    - [UpdateContactsWithContactGroups](API Reference/Alarm contacts/UpdateContactsWithContactGroups.md)
+  - **Alarm history**
+    - [ListAlert](API Reference/Alarm history/ListAlert.md)
+    - [ListAlertGroup](API Reference/Alarm history/ListAlertGroup.md)
+    - [ListSendAlert](API Reference/Alarm history/ListSendAlert.md)
+  - **Alarm strategies**
+    - [CreateRule](API Reference/Alarm strategies/CreateRule.md)
+    - [DeleteRulesByIds](API Reference/Alarm strategies/DeleteRulesByIds.md)
+    - [ListRules](API Reference/Alarm strategies/ListRules.md)
+    - [ListRulesByIds](API Reference/Alarm strategies/ListRulesByIds.md)
+    - [ListRulesByInstanceId](API Reference/Alarm strategies/ListRulesByInstanceId.md)
+    - [SetStateOfRulesByIds](API Reference/Alarm strategies/SetStateOfRulesByIds.md)
+    - [UpdateRule](API Reference/Alarm strategies/UpdateRule.md)
+  - **Alerting template**
+    - [ApplyObjectGroupsByAlertTemplate](API Reference/Alerting template/ApplyObjectGroupsByAlertTemplate.md)
+    - [CreateAlertTemplate](API Reference/Alerting template/CreateAlertTemplate.md)
+    - [DeleteAlertTemplatesByIds](API Reference/Alerting template/DeleteAlertTemplatesByIds.md)
+    - [DisablePresetAlertTemplate](API Reference/Alerting template/DisablePresetAlertTemplate.md)
+    - [EnablePresetAlertTemplate](API Reference/Alerting template/EnablePresetAlertTemplate.md)
+    - [ListAlertTemplates](API Reference/Alerting template/ListAlertTemplates.md)
+    - [ListPresetAlertTemplates](API Reference/Alerting template/ListPresetAlertTemplates.md)
+    - [UpdateAlertTemplate](API Reference/Alerting template/UpdateAlertTemplate.md)
+  - **API call method**
+    - [Default parameters](API Reference/API call method/Default parameters.md)
+    - [Request methods](API Reference/API call method/Request methods.md)
+    - [Sample response](API Reference/API call method/Sample response.md)
+    - [Service addresses](API Reference/API call method/Service addresses.md)
+    - [Signature examples](API Reference/API call method/Signature examples.md)
+    - [Signature mechanism](API Reference/API call method/Signature mechanism.md)
+  - **Collection plugin**
+    - [CreateO11yAgentECSDeployTask](API Reference/Collection plugin/CreateO11yAgentECSDeployTask.md)
+    - [GetO11yAgentECSAutoInstall](API Reference/Collection plugin/GetO11yAgentECSAutoInstall.md)
+    - [ListO11yAgentECSInstanceMetadata](API Reference/Collection plugin/ListO11yAgentECSInstanceMetadata.md)
+    - [ListO11yAgentECSInstances](API Reference/Collection plugin/ListO11yAgentECSInstances.md)
+    - [ListO11yAgentECSProcessConfigs](API Reference/Collection plugin/ListO11yAgentECSProcessConfigs.md)
+    - [ListO11yAgentVpcEndpoints](API Reference/Collection plugin/ListO11yAgentVpcEndpoints.md)
+    - [PerformO11yAgentECSDeployTask](API Reference/Collection plugin/PerformO11yAgentECSDeployTask.md)
+    - [UpdateO11yAgentECSAutoInstall](API Reference/Collection plugin/UpdateO11yAgentECSAutoInstall.md)
+    - [UpdateO11yAgentECSProcessConfig](API Reference/Collection plugin/UpdateO11yAgentECSProcessConfig.md)
+  - **Event rules**
+    - [CreateEventRule](API Reference/Event rules/CreateEventRule.md)
+    - [DeleteEventRule](API Reference/Event rules/DeleteEventRule.md)
+    - [DisableEventRule](API Reference/Event rules/DisableEventRule.md)
+    - [EnableEventRule](API Reference/Event rules/EnableEventRule.md)
+    - [ListEventRules](API Reference/Event rules/ListEventRules.md)
+    - [UpdateEventRule](API Reference/Event rules/UpdateEventRule.md)
+  - **Notification policy**
+    - [CreateNotification](API Reference/Notification policy/CreateNotification.md)
+    - [DeleteNotificationsByIds](API Reference/Notification policy/DeleteNotificationsByIds.md)
+    - [ListNotifications](API Reference/Notification policy/ListNotifications.md)
+    - [UpdateNotification](API Reference/Notification policy/UpdateNotification.md)
+  - **Notification templates**
+    - [CreateNotifyTemplate](API Reference/Notification templates/CreateNotifyTemplate.md)
+    - [DeleteNotifyTemplatesByIds](API Reference/Notification templates/DeleteNotifyTemplatesByIds.md)
+    - [ListDefaultNotifyTemplates](API Reference/Notification templates/ListDefaultNotifyTemplates.md)
+    - [ListNotifyTemplates](API Reference/Notification templates/ListNotifyTemplates.md)
+    - [UpdateNotifyTemplate](API Reference/Notification templates/UpdateNotifyTemplate.md)
+  - **Object group**
+    - [CreateObjectGroup](API Reference/Object group/CreateObjectGroup.md)
+    - [DeleteObjectGroup](API Reference/Object group/DeleteObjectGroup.md)
+    - [ListObjectGroups](API Reference/Object group/ListObjectGroups.md)
+    - [UpdateObjectGroup](API Reference/Object group/UpdateObjectGroup.md)
+  - **Querying monitoring metrics or events of cloud services**
+    - [GetMetricData](API Reference/Querying monitoring metrics or events of cloud services/GetMetricData.md)
+    - [GetTopData](API Reference/Querying monitoring metrics or events of cloud services/GetTopData.md)
+    - [ListEvents](API Reference/Querying monitoring metrics or events of cloud services/ListEvents.md)
+  - **Silence strategy**
+    - [CreateSilencePolicy](API Reference/Silence strategy/CreateSilencePolicy.md)
+    - [DeleteSilencePolicyByIds](API Reference/Silence strategy/DeleteSilencePolicyByIds.md)
+    - [ListSilencePolicy](API Reference/Silence strategy/ListSilencePolicy.md)
+    - [ModifyStateOfSilencePolicyByIds](API Reference/Silence strategy/ModifyStateOfSilencePolicyByIds.md)
+    - [UpdateSilencePolicy](API Reference/Silence strategy/UpdateSilencePolicy.md)
+  - **Tag management**
+    - [TagResources](API Reference/Tag management/TagResources.md)
+    - [UntagResources](API Reference/Tag management/UntagResources.md)
+  - **Webhook**
+    - [CreateWebhook](API Reference/Webhook/CreateWebhook.md)
+    - [DeleteWebhooksByIds](API Reference/Webhook/DeleteWebhooksByIds.md)
+    - [ListWebhooks](API Reference/Webhook/ListWebhooks.md)
+    - [ListWebhooksByIds](API Reference/Webhook/ListWebhooksByIds.md)
+    - [UpdateWebhook](API Reference/Webhook/UpdateWebhook.md)
+- **Best Practices**
+  - **Alarm notification**
+    - [Receiving alert notifications via DingTalk group](Best Practices/Alarm notification/Receiving alert notifications via DingTalk group.md)
+    - [Receiving alert notifications via Feishu group](Best Practices/Alarm notification/Receiving alert notifications via Feishu group.md)
+    - [Receiving alert notifications via Slack](Best Practices/Alarm notification/Receiving alert notifications via Slack.md)
+    - [Receiving alert notifications via WeCom group](Best Practices/Alarm notification/Receiving alert notifications via WeCom group.md)
+    - [Receiving NoData alerts via Feishu](Best Practices/Alarm notification/Receiving NoData alerts via Feishu.md)
+    - [Using event alert callback](Best Practices/Alarm notification/Using event alert callback.md)
+  - **Alarm strategy**
+    - [Achieving differentiated alert notifications by using the alert grading feature](Best Practices/Alarm strategy/Achieving differentiated alert notifications by using the alert grading feature.md)
+    - [Generating alert policies using templates](Best Practices/Alarm strategy/Generating alert policies using templates.md)
+  - **Exporting Monitoring Data to Prometheus**
+    - [Backfilling historical data to Prometheus](Best Practices/Exporting Monitoring Data to Prometheus/Backfilling historical data to Prometheus.md)
+    - [Exporter change log](Best Practices/Exporting Monitoring Data to Prometheus/Exporter change log.md)
+    - [Exporter troubleshooting solutions](Best Practices/Exporting Monitoring Data to Prometheus/Exporter troubleshooting solutions.md)
+    - [Exporting monitoring data to self-managed Prometheus](Best Practices/Exporting Monitoring Data to Prometheus/Exporting monitoring data to self-managed Prometheus.md)
+    - [Exporting monitoring data to VMP](Best Practices/Exporting Monitoring Data to Prometheus/Exporting monitoring data to VMP.md)
+    - [Feature overview](Best Practices/Exporting Monitoring Data to Prometheus/Feature overview.md)
+- **FAQ**
+  - [Alert](FAQ/Alert.md)
+  - [Authorization](FAQ/Authorization.md)
+  - [Monitoring](FAQ/Monitoring.md)
+- **Getting Started**
+  - [Disabling pay-as-you-go](Getting Started/Disabling pay-as-you-go.md)
+  - [Enabling pay-as-you-go](Getting Started/Enabling pay-as-you-go.md)
+  - [Using Alert Center](Getting Started/Using Alert Center.md)
+  - [Using Event Center](Getting Started/Using Event Center.md)
+  - [Using the Overview page of Cloud Monitor](Getting Started/Using the Overview page of Cloud Monitor.md)
+  - [Viewing cloud product monitoring data](Getting Started/Viewing cloud product monitoring data.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Glossary](Overview/Glossary.md)
+  - [Limits](Overview/Limits.md)
+  - [Product advantages](Overview/Product advantages.md)
+  - [Server-launching region](Overview/Server-launching region.md)
+  - [What is Cloud Monitor?](Overview/What is Cloud Monitor?.md)
+- **Terms of Service**
+  - [BytePlus Cloud Monitor_Service Level Agreement](Terms of Service/BytePlus Cloud Monitor_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Cloud Monitor](Terms of Service/Service-Specific Terms for BytePlus Cloud Monitor.md)
+- **Troubleshooting**
+  - [Common alert failures](Troubleshooting/Common alert failures.md)
+  - [Failure to install the monitoring add-on](Troubleshooting/Failure to install the monitoring add-on.md)
+  - [Traffic increase over the internal network for ECS instances](Troubleshooting/Traffic increase over the internal network for ECS instances.md)
+- **User Guide**
+  - [Exporting monitoring data](User Guide/Exporting monitoring data.md)
+  - [Metrics](User Guide/Metrics.md)
+  - [Monitoring dashboard](User Guide/Monitoring dashboard.md)
+  - **Alarm Center**
+    - [Suppressing alerts](User Guide/Alarm Center/Suppressing alerts.md)
+    - **Alarm strategies**
+      - [Alert principles](User Guide/Alarm Center/Alarm strategies/Alert principles.md)
+      - [Creating an alert policy](User Guide/Alarm Center/Alarm strategies/Creating an alert policy.md)
+      - [Deleting alert policies](User Guide/Alarm Center/Alarm strategies/Deleting alert policies.md)
+      - [Disabling alert policies](User Guide/Alarm Center/Alarm strategies/Disabling alert policies.md)
+      - [Disassociating alert policies](User Guide/Alarm Center/Alarm strategies/Disassociating alert policies.md)
+      - [Editing alert policies](User Guide/Alarm Center/Alarm strategies/Editing alert policies.md)
+      - [Enabling alert policies](User Guide/Alarm Center/Alarm strategies/Enabling alert policies.md)
+      - [Viewing alert policies](User Guide/Alarm Center/Alarm strategies/Viewing alert policies.md)
+    - **Alarm templates**
+      - [Applying alert templates to object groups](User Guide/Alarm Center/Alarm templates/Applying alert templates to object groups.md)
+      - [Copying an alert template](User Guide/Alarm Center/Alarm templates/Copying an alert template.md)
+      - [Creating an alert template](User Guide/Alarm Center/Alarm templates/Creating an alert template.md)
+      - [Deleting an alert template](User Guide/Alarm Center/Alarm templates/Deleting an alert template.md)
+      - [Disabling a preset alert template](User Guide/Alarm Center/Alarm templates/Disabling a preset alert template.md)
+      - [Editing alert templates](User Guide/Alarm Center/Alarm templates/Editing alert templates.md)
+      - [Enabling a preset alert template](User Guide/Alarm Center/Alarm templates/Enabling a preset alert template.md)
+      - [Viewing a preset alert template](User Guide/Alarm Center/Alarm templates/Viewing a preset alert template.md)
+      - [Viewing alert templates](User Guide/Alarm Center/Alarm templates/Viewing alert templates.md)
+    - **Viewing alarms**
+      - [Viewing alert records](User Guide/Alarm Center/Viewing alarms/Viewing alert records.md)
+      - [Viewing resources with active alerts](User Guide/Alarm Center/Viewing alarms/Viewing resources with active alerts.md)
+  - **Event Center**
+    - [Cloud product events](User Guide/Event Center/Cloud product events.md)
+    - [Event suppression](User Guide/Event Center/Event suppression.md)
+    - [Viewing events](User Guide/Event Center/Viewing events.md)
+    - **Event rule**
+      - [Creating an event rule](User Guide/Event Center/Event rule/Creating an event rule.md)
+      - [Managing event rules](User Guide/Event Center/Event rule/Managing event rules.md)
+  - **Management permission**
+    - [Cloud Monitor service-linked roles](User Guide/Management permission/Cloud Monitor service-linked roles.md)
+    - [Granting permissions to an IAM user](User Guide/Management permission/Granting permissions to an IAM user.md)
+  - **Monitoring cloud service**
+    - [Other cloud service monitoring](User Guide/Monitoring cloud service/Other cloud service monitoring.md)
+    - [Supported cloud services](User Guide/Monitoring cloud service/Supported cloud services.md)
+    - [Viewing pre-configured dashboards](User Guide/Monitoring cloud service/Viewing pre-configured dashboards.md)
+    - **ECS monitoring**
+      - [Basic monitoring](User Guide/Monitoring cloud service/ECS monitoring/Basic monitoring.md)
+      - [Configuring alert notifications](User Guide/Monitoring cloud service/ECS monitoring/Configuring alert notifications.md)
+      - [Operating system monitoring](User Guide/Monitoring cloud service/ECS monitoring/Operating system monitoring.md)
+      - [Overview](User Guide/Monitoring cloud service/ECS monitoring/Overview.md)
+      - **Monitoring plug-in (O11yAgent)**
+        - [Add-on release notes](User Guide/Monitoring cloud service/ECS monitoring/Monitoring plug-in (O11yAgent)/Add-on release notes.md)
+        - [Creating O11yAgent endpoints](User Guide/Monitoring cloud service/ECS monitoring/Monitoring plug-in (O11yAgent)/Creating O11yAgent endpoints.md)
+        - [Installing the O11yAgent collection add-on by using the GUI](User Guide/Monitoring cloud service/ECS monitoring/Monitoring plug-in (O11yAgent)/Installing the O11yAgent collection add-on by using the GUI.md)
+        - [Manually installing the O11yAgent collection add-on](User Guide/Monitoring cloud service/ECS monitoring/Monitoring plug-in (O11yAgent)/Manually installing the O11yAgent collection add-on.md)
+        - [Troubleshooting common issues with collection add-ons](User Guide/Monitoring cloud service/ECS monitoring/Monitoring plug-in (O11yAgent)/Troubleshooting common issues with collection add-ons.md)
+  - **Notification**
+    - **Alarm contacts**
+      - [Creating contact groups](User Guide/Notification/Alarm contacts/Creating contact groups.md)
+      - [Creating contacts](User Guide/Notification/Alarm contacts/Creating contacts.md)
+    - **Callback**
+      - [Alert callback usage notes](User Guide/Notification/Callback/Alert callback usage notes.md)
+      - [Managing callback URLs](User Guide/Notification/Callback/Managing callback URLs.md)
+      - [Request content for a metric alert callback](User Guide/Notification/Callback/Request content for a metric alert callback.md)
+      - [Request content for an event alert callback](User Guide/Notification/Callback/Request content for an event alert callback.md)
+    - **Notification policy**
+      - [Creating a notification policy](User Guide/Notification/Notification policy/Creating a notification policy.md)
+    - **Notification template**
+      - [Creating notification templates](User Guide/Notification/Notification template/Creating notification templates.md)
+      - [Extension functions and variables](User Guide/Notification/Notification template/Extension functions and variables.md)
+      - [Template syntax](User Guide/Notification/Notification template/Template syntax.md)
+  - **Resource groups**
+    - [Copying an object group](User Guide/Resource groups/Copying an object group.md)
+    - [Creating an object group](User Guide/Resource groups/Creating an object group.md)
+    - [Deleting an object group](User Guide/Resource groups/Deleting an object group.md)
+    - [Editing object groups](User Guide/Resource groups/Editing object groups.md)
+- **What's New**
+  - [Release notes](What's New/Release notes.md)
+  - **Announcement on the change of cloud service metrics**
+    - [Change announcement on Cloud Search metrics](What's New/Announcement on the change of cloud service metrics/Change announcement on Cloud Search metrics.md)
+    - [Change announcement on RDS for veDB MySQL metrics](What's New/Announcement on the change of cloud service metrics/Change announcement on RDS for veDB MySQL metrics.md)
+    - [Change log of CLB dedicated cluster metrics](What's New/Announcement on the change of cloud service metrics/Change log of CLB dedicated cluster metrics.md)
+    - [Change log of CLB metrics](What's New/Announcement on the change of cloud service metrics/Change log of CLB metrics.md)
+    - [Change log of CloudWAN metrics](What's New/Announcement on the change of cloud service metrics/Change log of CloudWAN metrics.md)
+    - [Change log of EFS metrics](What's New/Announcement on the change of cloud service metrics/Change log of EFS metrics.md)
+    - [Change log of metrics for HBase table database](What's New/Announcement on the change of cloud service metrics/Change log of metrics for HBase table database.md)
+    - [Change log of metrics for Message Queue for Kafka](What's New/Announcement on the change of cloud service metrics/Change log of metrics for Message Queue for Kafka.md)
+    - [Change log of metrics for Milvus Serverless vector database](What's New/Announcement on the change of cloud service metrics/Change log of metrics for Milvus Serverless vector database.md)
+    - [Change log of Milvus metrics](What's New/Announcement on the change of cloud service metrics/Change log of Milvus metrics.md)
+    - [Change log of vePFS metrics](What's New/Announcement on the change of cloud service metrics/Change log of vePFS metrics.md)
+    - [Change log of Viking vector database - dataset metrics](What's New/Announcement on the change of cloud service metrics/Change log of Viking vector database - dataset metrics.md)
+    - [NAS file storage capacity metric change announcement](What's New/Announcement on the change of cloud service metrics/NAS file storage capacity metric change announcement.md)
+  - **Product Announcement**
+    - [Announcement on Cloud Monitor collection add-on deprecation](What's New/Product Announcement/Announcement on Cloud Monitor collection add-on deprecation.md)
+    - [Carrier restrictions on SMS content containing URLs, IP addresses, and contact information](What's New/Product Announcement/Carrier restrictions on SMS content containing URLs, IP addresses, and contact information.md)
+    - [Cloud Monitor ServiceCode replacement announcement](What's New/Product Announcement/Cloud Monitor ServiceCode replacement announcement.md)
+    - [List of phone numbers used for notifications](What's New/Product Announcement/List of phone numbers used for notifications.md)

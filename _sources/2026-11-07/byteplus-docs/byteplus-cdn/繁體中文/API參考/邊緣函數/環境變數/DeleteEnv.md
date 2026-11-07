@@ -1,0 +1,73 @@
+---
+title: "DeleteEnv"
+product: "BytePlus CDN"
+product_code: "byteplus-cdn"
+source: "https://docs.byteplus.com/en/docs/byteplus-cdn/edge-functions-api-ref-DeleteEnv-zh-tw"
+---
+
+刪除函數的環境變數。
+
+<div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div>
+
+
+<div data-tips="true" data-tips-type="tip">您對環境變數的新增刪除修改操作在函數被再次發佈後才會生效。</div>
+
+
+<span id="使用說明"></span>
+## 使用說明
+
+請求限流：每秒最多可發送20個請求。
+
+<span id="請求說明"></span>
+## 請求說明
+
+
+* Request Method：POST
+
+* Request URL： https://cdn.byteplusapi.com?Action=DeleteEnv&Version=2021\-03\-01
+
+
+<span id="請求參數"></span>
+## 請求參數
+
+<span id="query"></span>
+### Query
+
+
+|參數 |類型 |是否必選 |描述 |
+|---|---|---|---|
+|Action |String |是 |介面名稱。目前 API 的名稱為 `DeleteEnv`。 |
+|Version |String |是 |介面版本。目前 API 的版本為 `2021-03-01`。 |
+
+
+<span id="body"></span>
+### Body
+
+
+|參數 |類型 |是否必選 |描述 |範例值 |
+|---|---|---|---|---|
+|FunctionId |String |是 |函數 ID。您可以呼叫[ListFunction](https://docs.byteplus.com/en/docs/byteplus-cdn/edge-functions-api-ref-ListFunction-zh-tw)取得函數 ID。 |`23455331245` |
+|EnvKeys |String[] |是 |您想要刪除的環境變數的鍵。您可以一次性刪除多個環境變數。 |`["abc","def"]` |
+
+
+<span id="返回參數"></span>
+## 返回參數
+
+無
+
+<span id="範例"></span>
+## 範例
+
+<span id="請求範例"></span>
+### 請求範例
+
+```json
+POST  https://cdn.byteplusapi.com?Action=DeleteEnv&Version=2021-03-01
+{
+    "FunctionId": "23455331245",
+    "Envs": [
+        "abc",
+        "def"
+    ]
+}
+```

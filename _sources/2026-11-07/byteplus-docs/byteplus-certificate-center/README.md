@@ -1,0 +1,83 @@
+# BytePlus Certificate Center
+
+61 pages. Source: https://docs.byteplus.com/en/docs/byteplus-certificate-center
+
+Back to the [full index](../README.md).
+
+- **Notifications**
+  - [Important notice: DigiCert 2024 MSRP pricing update](Notifications/Important notice: DigiCert 2024 MSRP pricing update.md)
+  - [Notice: DigiCert SSL Certificate Pricing Adjustment](Notifications/Notice: DigiCert SSL Certificate Pricing Adjustment.md)
+  - [Notice: DigiCert SSL Certificate Pricing Adjustments](Notifications/Notice: DigiCert SSL Certificate Pricing Adjustments.md)
+  - [Notice: Discontinuation of Let's Encrypt Certificates](Notifications/Notice: Discontinuation of Let's Encrypt Certificates.md)
+  - [Notice: Let's Encrypt root certificate update](Notifications/Notice: Let's Encrypt root certificate update.md)
+  - [Notice: Reduction in SSL Certificate Validity Period](Notifications/Notice: Reduction in SSL Certificate Validity Period.md)
+  - [Notice: SSL Certificate service Maintenance](Notifications/Notice: SSL Certificate service Maintenance.md)
+- **SSL Certificate**
+  - [Certificate hosting](SSL Certificate/Certificate hosting.md)
+  - [Certificate messages](SSL Certificate/Certificate messages.md)
+  - **API reference**
+    - [API error codes](SSL Certificate/API reference/API error codes.md)
+    - **Certificate instance**
+      - [CancelInstance - Canceling a certificate order](SSL Certificate/API reference/Certificate instance/CancelInstance - Canceling a certificate order.md)
+      - [CertificateDeleteInstance - Deleting a certificate instance](SSL Certificate/API reference/Certificate instance/CertificateDeleteInstance - Deleting a certificate instance.md)
+      - [CertificateGetDcvParam - Getting the verification requirements of domain](SSL Certificate/API reference/Certificate instance/CertificateGetDcvParam - Getting the verification requirements of domain.md)
+      - [CertificateGetInstance - Querying the certificate instance details](SSL Certificate/API reference/Certificate instance/CertificateGetInstance - Querying the certificate instance details.md)
+      - [CertificateGetInstanceList - Getting the certificate instance list](SSL Certificate/API reference/Certificate instance/CertificateGetInstanceList - Getting the certificate instance list.md)
+      - [CertificateUpdateInstance - Updating a certificate instance](SSL Certificate/API reference/Certificate instance/CertificateUpdateInstance - Updating a certificate instance.md)
+      - [ImportCertificate - Uploading a certificate](SSL Certificate/API reference/Certificate instance/ImportCertificate - Uploading a certificate.md)
+    - **Hosting task**
+      - [CheckDelegatedCnameRecords - Checking the proxy CNAME record configuration](SSL Certificate/API reference/Hosting task/CheckDelegatedCnameRecords - Checking the proxy CNAME record configuration.md)
+      - [CreateDelegatedCnameRecords - Generating the proxy CNAME records](SSL Certificate/API reference/Hosting task/CreateDelegatedCnameRecords - Generating the proxy CNAME records.md)
+      - [CreateManagedTask - Creating a certificate managed task](SSL Certificate/API reference/Hosting task/CreateManagedTask - Creating a certificate managed task.md)
+      - [DeleteManagedTask - Deleting a managed task](SSL Certificate/API reference/Hosting task/DeleteManagedTask - Deleting a managed task.md)
+      - [TerminateManagedTask - Canceling a managed task](SSL Certificate/API reference/Hosting task/TerminateManagedTask - Canceling a managed task.md)
+    - **Make requests**
+      - [API request responses](SSL Certificate/API reference/Make requests/API request responses.md)
+      - [Sending API requests](SSL Certificate/API reference/Make requests/Sending API requests.md)
+    - **Manage information templates**
+      - [CertificateAddOrganization - Creating the information template](SSL Certificate/API reference/Manage information templates/CertificateAddOrganization - Creating the information template.md)
+      - [CertificateDeleteOrganization - Deleting the information template](SSL Certificate/API reference/Manage information templates/CertificateDeleteOrganization - Deleting the information template.md)
+      - [CertificateGetOrganization - Querying the information template](SSL Certificate/API reference/Manage information templates/CertificateGetOrganization - Querying the information template.md)
+      - [CertificateGetOrganizationList - Getting the information template list](SSL Certificate/API reference/Manage information templates/CertificateGetOrganizationList - Getting the information template list.md)
+      - [CertificateUpdateOrganization - Updating the information template](SSL Certificate/API reference/Manage information templates/CertificateUpdateOrganization - Updating the information template.md)
+    - **Tag management**
+      - [ListTagsForResources - Querying the resource tags](SSL Certificate/API reference/Tag management/ListTagsForResources - Querying the resource tags.md)
+      - [TagResources - Associating a tag with a resource](SSL Certificate/API reference/Tag management/TagResources - Associating a tag with a resource.md)
+      - [UntagResources - Disassociating a tag from a resource](SSL Certificate/API reference/Tag management/UntagResources - Disassociating a tag from a resource.md)
+  - **Best Practices**
+    - [Best practices for certificate hosting management](SSL Certificate/Best Practices/Best practices for certificate hosting management.md)
+    - [Guide for IAM users to use certificate center](SSL Certificate/Best Practices/Guide for IAM users to use certificate center.md)
+  - **Certificate installation**
+    - [Installing a JKS format certificate on Tomcat](SSL Certificate/Certificate installation/Installing a JKS format certificate on Tomcat.md)
+    - [Installing a PFX format SSL certificate on Tomcat](SSL Certificate/Certificate installation/Installing a PFX format SSL certificate on Tomcat.md)
+    - [Installing an SSL certificate on Apache](SSL Certificate/Certificate installation/Installing an SSL certificate on Apache.md)
+    - [Installing an SSL certificate on IIS](SSL Certificate/Certificate installation/Installing an SSL certificate on IIS.md)
+    - [Installing an SSL certificate on Nginx](SSL Certificate/Certificate installation/Installing an SSL certificate on Nginx.md)
+  - **FAQs**
+    - [FAQs about installing certificates](SSL Certificate/FAQs/FAQs about installing certificates.md)
+    - [FAQs about requesting certificates](SSL Certificate/FAQs/FAQs about requesting certificates.md)
+    - [FAQs about SSL certificate concepts](SSL Certificate/FAQs/FAQs about SSL certificate concepts.md)
+  - **Free certificates**
+    - [Overview of free certificates](SSL Certificate/Free certificates/Overview of free certificates.md)
+    - [Requesting a free SSL certificate](SSL Certificate/Free certificates/Requesting a free SSL certificate.md)
+    - [Upgrading a free certificate](SSL Certificate/Free certificates/Upgrading a free certificate.md)
+  - **Manage certificates**
+    - [BytePlus Certificate Center supported SSL brands root compatibility report](SSL Certificate/Manage certificates/BytePlus Certificate Center supported SSL brands root compatibility report.md)
+    - [Cancelling an SSL certificate order](SSL Certificate/Manage certificates/Cancelling an SSL certificate order.md)
+    - [Creating an SSL certificate order](SSL Certificate/Manage certificates/Creating an SSL certificate order.md)
+    - [Deleting an SSL certificate](SSL Certificate/Manage certificates/Deleting an SSL certificate.md)
+    - [Demonstrating control over domain](SSL Certificate/Manage certificates/Demonstrating control over domain.md)
+    - [Deploying an SSL certificate](SSL Certificate/Manage certificates/Deploying an SSL certificate.md)
+    - [Downloading an SSL certificate](SSL Certificate/Manage certificates/Downloading an SSL certificate.md)
+    - [Renewing an SSL certificate](SSL Certificate/Manage certificates/Renewing an SSL certificate.md)
+    - [Requesting an SSL certificate](SSL Certificate/Manage certificates/Requesting an SSL certificate.md)
+    - [Revoking an SSL certificate](SSL Certificate/Manage certificates/Revoking an SSL certificate.md)
+    - [Understanding the CA review process for certificate requests](SSL Certificate/Manage certificates/Understanding the CA review process for certificate requests.md)
+    - [Uploading an SSL certificate](SSL Certificate/Manage certificates/Uploading an SSL certificate.md)
+  - **Manage information templates**
+    - [Managing information templates](SSL Certificate/Manage information templates/Managing information templates.md)
+  - **Product overview**
+    - [Billing method](SSL Certificate/Product overview/Billing method.md)
+    - [What is BytePlus Certificate Center](SSL Certificate/Product overview/What is BytePlus Certificate Center.md)
+  - **Quick start**
+    - [Getting started with SSL certificate service](SSL Certificate/Quick start/Getting started with SSL certificate service.md)

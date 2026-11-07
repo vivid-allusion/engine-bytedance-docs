@@ -1,0 +1,223 @@
+# Direct Connect
+
+168 pages. Source: https://docs.byteplus.com/en/docs/directconnect
+
+Back to the [full index](../README.md).
+
+- [New feature release notes](New feature release notes.md)
+- **API Reference**
+  - [API overview](API Reference/API overview.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [Overview](API Reference/Overview.md)
+  - **BGP peers**
+    - [CreateBgpPeer - Creating a BGP Peer](API Reference/BGP peers/CreateBgpPeer - Creating a BGP Peer.md)
+    - [DeleteBgpPeer - Deleting a BGP Peer](API Reference/BGP peers/DeleteBgpPeer - Deleting a BGP Peer.md)
+    - [DescribeBgpPeerAttributes - Querying a BGP Peer](API Reference/BGP peers/DescribeBgpPeerAttributes - Querying a BGP Peer.md)
+    - [DescribeBgpPeers - Querying the list of BGP Peers](API Reference/BGP peers/DescribeBgpPeers - Querying the list of BGP Peers.md)
+    - [ModifyBgpPeerAttributes - Modifying a BGP Peer](API Reference/BGP peers/ModifyBgpPeerAttributes - Modifying a BGP Peer.md)
+  - **Call method**
+    - [Back to example](API Reference/Call method/Back to example.md)
+    - [Common Parameters](API Reference/Call method/Common Parameters.md)
+    - [Public error codes](API Reference/Call method/Public error codes.md)
+    - [Request Structure](API Reference/Call method/Request Structure.md)
+    - [Signature Method](API Reference/Call method/Signature Method.md)
+  - **Direct Connect connections**
+    - [ApplyDirectConnectConnectionLoa - Submitting a LOA application for Direct Connect.](API Reference/Direct Connect connections/ApplyDirectConnectConnectionLoa - Submitting a LOA application for Direct Connect.md)
+    - [CreateDirectConnectConnection - Creating a DC Connection](API Reference/Direct Connect connections/CreateDirectConnectConnection - Creating a DC Connection.md)
+    - [CreateDirectConnectConnectionOrder - Creating a payment order for a DC Connection](API Reference/Direct Connect connections/CreateDirectConnectConnectionOrder - Creating a payment order for a DC Connection.md)
+    - [DeleteDirectConnectConnection - Deleting a DC Connection](API Reference/Direct Connect connections/DeleteDirectConnectConnection - Deleting a DC Connection.md)
+    - [DescribeDirectConnectAccessPoints - Querying information about DC access points.](API Reference/Direct Connect connections/DescribeDirectConnectAccessPoints - Querying information about DC access points.md)
+    - [DescribeDirectConnectConnectionAttributes - Querying the details of a DC Connection](API Reference/Direct Connect connections/DescribeDirectConnectConnectionAttributes - Querying the details of a DC Connection.md)
+    - [DescribeDirectConnectConnectionBilling - Querying billing information for a DC Connection](API Reference/Direct Connect connections/DescribeDirectConnectConnectionBilling - Querying billing information for a DC Connection.md)
+    - [DescribeDirectConnectConnectionLoaAttributes - Querying a LOA application for a DC Connection](API Reference/Direct Connect connections/DescribeDirectConnectConnectionLoaAttributes - Querying a LOA application for a DC Connect.md)
+    - [DescribeDirectConnectConnections - Listing DC Connections](API Reference/Direct Connect connections/DescribeDirectConnectConnections - Listing DC Connections.md)
+    - [ModifyDirectConnectConnectionAttributes - Modifying a DC Connection](API Reference/Direct Connect connections/ModifyDirectConnectConnectionAttributes - Modifying a DC Connection.md)
+    - [ModifyDirectConnectConnectionLoaAttributes - Modifying a LOA application for a DC Connection](API Reference/Direct Connect connections/ModifyDirectConnectConnectionLoaAttributes - Modifying a LOA application for a DC Connecti.md)
+    - [RenewDirectConnectConnection - Renewing a DC Connection](API Reference/Direct Connect connections/RenewDirectConnectConnection - Renewing a DC Connection.md)
+    - [SetDirectConnectConnectionRenewal - Modifying renewal method for a DC Connection](API Reference/Direct Connect connections/SetDirectConnectConnectionRenewal - Modifying renewal method for a DC Connection.md)
+  - **Direct Connect gateways**
+    - [CreateDirectConnectGateway - Creating a DC Gateway](API Reference/Direct Connect gateways/CreateDirectConnectGateway - Creating a DC Gateway.md)
+    - [DeleteDirectConnectGateway - Deleting a DC Gateway](API Reference/Direct Connect gateways/DeleteDirectConnectGateway - Deleting a DC Gateway.md)
+    - [DescribeDirectConnectGatewayAttributes - Querying a specified DC Gateway](API Reference/Direct Connect gateways/DescribeDirectConnectGatewayAttributes - Querying a specified DC Gateway.md)
+    - [DescribeDirectConnectGateways - Querying DC Gateways](API Reference/Direct Connect gateways/DescribeDirectConnectGateways - Querying DC Gateways.md)
+    - [ModifyDirectConnectGatewayAttributes - Modifying a DC Gateway](API Reference/Direct Connect gateways/ModifyDirectConnectGatewayAttributes - Modifying a DC Gateway.md)
+  - **Direct Connect virtual interfaces**
+    - [CreateDirectConnectVirtualInterface - Creating a Virtual Interface](API Reference/Direct Connect virtual interfaces/CreateDirectConnectVirtualInterface - Creating a Virtual Interface.md)
+    - [DeleteDirectConnectVirtualInterface - Deleting a DC Virtual Interface](API Reference/Direct Connect virtual interfaces/DeleteDirectConnectVirtualInterface - Deleting a DC Virtual Interface.md)
+    - [DescribeDirectConnectVirtualInterfaceAttributes - Querying details of a Virtual Interface](API Reference/Direct Connect virtual interfaces/DescribeDirectConnectVirtualInterfaceAttributes - Querying details of a Virtual Interface.md)
+    - [DescribeDirectConnectVirtualInterfaces - Listing Virtual Interfaces](API Reference/Direct Connect virtual interfaces/DescribeDirectConnectVirtualInterfaces - Listing Virtual Interfaces.md)
+    - [ModifyDirectConnectVirtualInterfaceAttributes - Modifying information for a DC Virtual Interface](API Reference/Direct Connect virtual interfaces/ModifyDirectConnectVirtualInterfaceAttributes - Modifying information for a DC Virtual Int.md)
+  - **Failure Drill**
+    - [CreateFailoverJob - Creating a failure drill task](API Reference/Failure Drill/CreateFailoverJob - Creating a failure drill task.md)
+    - [DeleteFailoverJob - Deleting a failure drill task](API Reference/Failure Drill/DeleteFailoverJob - Deleting a failure drill task.md)
+    - [DescribeFailoverJobAttributes - Querying a failure drill task](API Reference/Failure Drill/DescribeFailoverJobAttributes - Querying a failure drill task.md)
+    - [DescribeFailoverJobs - Querying the list of failure drill tasks](API Reference/Failure Drill/DescribeFailoverJobs - Querying the list of failure drill tasks.md)
+    - [ModifyFailoverJobAttributes - Modifying attributes for a failure drill task](API Reference/Failure Drill/ModifyFailoverJobAttributes - Modifying attributes for a failure drill task.md)
+  - **Health check**
+    - **Health check instance**
+      - [CreateDirectConnectHealthCheck - Creating a health check for Direct Connect](API Reference/Health check/Health check instance/CreateDirectConnectHealthCheck - Creating a health check for Direct Connect.md)
+      - [DeleteDirectConnectHealthCheck - Deleting a DC health check](API Reference/Health check/Health check instance/DeleteDirectConnectHealthCheck - Deleting a DC health check.md)
+      - [DescribeDirectConnectHealthCheckAttributes - Querying a specified DC health check](API Reference/Health check/Health check instance/DescribeDirectConnectHealthCheckAttributes - Querying a specified DC health check.md)
+      - [DescribeDirectConnectHealthChecks - Querying the list of DC health checks](API Reference/Health check/Health check instance/DescribeDirectConnectHealthChecks - Querying the list of DC health checks.md)
+      - [ModifyDirectConnectHealthCheckAttributes - Modifying a DC health check](API Reference/Health check/Health check instance/ModifyDirectConnectHealthCheckAttributes - Modifying a DC health check.md)
+    - **Health check probe**
+      - [CreateDirectConnectHealthCheckProbes - Creating health check probes](API Reference/Health check/Health check probe/CreateDirectConnectHealthCheckProbes - Creating health check probes.md)
+      - [DeleteDirectConnectHealthCheckProbes - Deleting a health check probe](API Reference/Health check/Health check probe/DeleteDirectConnectHealthCheckProbes - Deleting a health check probe.md)
+      - [DescribeDirectConnectHealthCheckProbeAttributes - Querying the details of a health check probe](API Reference/Health check/Health check probe/DescribeDirectConnectHealthCheckProbeAttributes - Querying the details of a health check p.md)
+      - [DescribeDirectConnectHealthCheckProbes - Querying health check probes](API Reference/Health check/Health check probe/DescribeDirectConnectHealthCheckProbes - Querying health check probes.md)
+      - [ModifyDirectConnectHealthCheckProbeAttributes - Modifying a DC health check probe](API Reference/Health check/Health check probe/ModifyDirectConnectHealthCheckProbeAttributes - Modifying a DC health check probe.md)
+  - **On-Cloud services**
+    - [CreateCloudServiceBill - Creating a DC Cloud Service order](API Reference/On-Cloud services/CreateCloudServiceBill - Creating a DC Cloud Service order.md)
+    - [CreateCloudServiceBillOrder - Paying a DC Cloud Service order](API Reference/On-Cloud services/CreateCloudServiceBillOrder - Paying a DC Cloud Service order.md)
+    - [DeleteCloudServiceBill - Deleting a DC Cloud Service order](API Reference/On-Cloud services/DeleteCloudServiceBill - Deleting a DC Cloud Service order.md)
+    - [DescribeCloudServiceBillAttributes - Querying the details of a specified DC Cloud Service order](API Reference/On-Cloud services/DescribeCloudServiceBillAttributes - Querying the details of a specified DC Cloud Service.md)
+    - [DescribeCloudServiceBills - Querying DC Cloud Service orders](API Reference/On-Cloud services/DescribeCloudServiceBills - Querying DC Cloud Service orders.md)
+    - [ModifyCloudServiceBillAttributes - Modifying description for a DC Cloud Service order](API Reference/On-Cloud services/ModifyCloudServiceBillAttributes - Modifying description for a DC Cloud Service order.md)
+  - **QoS Policy**
+    - [CreateDirectConnectTrafficQosPolicy - Creating a QoS policy](API Reference/QoS Policy/CreateDirectConnectTrafficQosPolicy - Creating a QoS policy.md)
+    - [DeleteDirectConnectTrafficQosPolicy - Deleting a specified QoS policy](API Reference/QoS Policy/DeleteDirectConnectTrafficQosPolicy - Deleting a specified QoS policy.md)
+    - [DescribeDirectConnectTrafficQosPolicies - Querying qualified QoS policies](API Reference/QoS Policy/DescribeDirectConnectTrafficQosPolicies - Querying qualified QoS policies.md)
+    - [ModifyDirectConnectTrafficQosPolicyAttributes - Modifying a QoS policy](API Reference/QoS Policy/ModifyDirectConnectTrafficQosPolicyAttributes - Modifying a QoS policy.md)
+  - **QoS Rule**
+    - [CreateDirectConnectTrafficQosRule - Adding a traffic rule to a specified traffic queue](API Reference/QoS Rule/CreateDirectConnectTrafficQosRule - Adding a traffic rule to a specified traffic queue.md)
+    - [DeleteDirectConnectTrafficQosRule - Deleting a specified traffic rule](API Reference/QoS Rule/DeleteDirectConnectTrafficQosRule - Deleting a specified traffic rule.md)
+    - [DescribeDirectConnectTrafficQosRules - Querying traffic rules](API Reference/QoS Rule/DescribeDirectConnectTrafficQosRules - Querying traffic rules.md)
+    - [ModifyDirectConnectTrafficQosRuleAttributes - Modifying a traffic rule](API Reference/QoS Rule/ModifyDirectConnectTrafficQosRuleAttributes - Modifying a traffic rule.md)
+  - **Shared Direct Connect connections**
+    - [ConfirmDirectConnectConnection - Accepting a Shared Line](API Reference/Shared Direct Connect connections/ConfirmDirectConnectConnection - Accepting a Shared Line.md)
+    - [CreateSharedDirectConnectConnection - Creating a Shared Line](API Reference/Shared Direct Connect connections/CreateSharedDirectConnectConnection - Creating a Shared Line.md)
+    - [DescribeSharedDirectConnectConnections - Listing Shared Lines](API Reference/Shared Direct Connect connections/DescribeSharedDirectConnectConnections - Listing Shared Lines.md)
+    - [ModifySharedDirectConnectConnectionAttributes - Modifying attributes for a Shared Line](API Reference/Shared Direct Connect connections/ModifySharedDirectConnectConnectionAttributes - Modifying attributes for a Shared Line.md)
+  - **Shared Direct Connect Virtual Interface**
+    - [AllocateDirectConnectVirtualInterface - Authorizing a DC Virtual Interface](API Reference/Shared Direct Connect Virtual Interface/AllocateDirectConnectVirtualInterface - Authorizing a DC Virtual Interface.md)
+    - [ConfirmDirectConnectVirtualInterface - Accepting an authorized DC Virtual Interface](API Reference/Shared Direct Connect Virtual Interface/ConfirmDirectConnectVirtualInterface - Accepting an authorized DC Virtual Interface.md)
+  - **Tag**
+    - [ListTagsForResources - Querying the tag list](API Reference/Tag/ListTagsForResources - Querying the tag list.md)
+    - [TagResources - Creating tags](API Reference/Tag/TagResources - Creating tags.md)
+    - [UntagResources - Disassociating custom tags](API Reference/Tag/UntagResources - Disassociating custom tags.md)
+  - **Traffic QoS queue**
+    - [CreateDirectConnectTrafficQosQueue - Adding a traffic queue to a specified QoS policy](API Reference/Traffic QoS queue/CreateDirectConnectTrafficQosQueue - Adding a traffic queue to a specified QoS policy.md)
+    - [DeleteDirectConnectTrafficQosQueue - Deleting a specified traffic queue](API Reference/Traffic QoS queue/DeleteDirectConnectTrafficQosQueue - Deleting a specified traffic queue.md)
+    - [DescribeDirectConnectTrafficQosQueues - Querying qualified traffic queues](API Reference/Traffic QoS queue/DescribeDirectConnectTrafficQosQueues - Querying qualified traffic queues.md)
+    - [ModifyDirectConnectTrafficQosQueueAttributes - Modifying a specified traffic queue](API Reference/Traffic QoS queue/ModifyDirectConnectTrafficQosQueueAttributes - Modifying a specified traffic queue.md)
+- **Best Practices**
+  - [Best practice overview](Best Practices/Best practice overview.md)
+  - **Interconnection between IDCs**
+    - [Interconnecting multiple data centers via Direct Connect with static routing](Best Practices/Interconnection between IDCs/Interconnecting multiple data centers via Direct Connect with static routing.md)
+  - **On-premises to Cloud migration**
+    - [Connecting an on-premises data center to a VPC across accounts and regions](Best Practices/On-premises to Cloud migration/Connecting an on-premises data center to a VPC across accounts and regions.md)
+    - **Dual line access**
+      - [Connecting an on-premises data center to a VPC via dual Direct Connects with BGP routes (active-standby redundancy)](Best Practices/On-premises to Cloud migration/Dual line access/Connecting an on-premises data center to a VPC via dual Direct Connects with BGP routes (a.md)
+      - [Connecting an on-premises data center to a VPC via dual Direct Connects with BGP routes (load redundancy)](Best Practices/On-premises to Cloud migration/Dual line access/Connecting an on-premises data center to a VPC via dual Direct Connects with BGP routes (l.md)
+      - [Connecting an on-premises data center to a VPC via dual Direct Connects with static routes (active-standby redundancy)](Best Practices/On-premises to Cloud migration/Dual line access/Connecting an on-premises data center to a VPC via dual Direct Connects with static routes (Best-Practices-8).md)
+      - [Connecting an on-premises data center to a VPC via dual Direct Connects with static routes (load redundancy)](Best Practices/On-premises to Cloud migration/Dual line access/Connecting an on-premises data center to a VPC via dual Direct Connects with static routes.md)
+    - **Single-line access**
+      - [Connecting an on-premises data center to a VPC via a single Direct Connect with BGP](Best Practices/On-premises to Cloud migration/Single-line access/Connecting an on-premises data center to a VPC via a single Direct Connect with BGP.md)
+      - [Connecting an on-premises data center to a VPC via a single Direct Connect with static routing](Best Practices/On-premises to Cloud migration/Single-line access/Connecting an on-premises data center to a VPC via a single Direct Connect with static rou.md)
+- **Billing**
+  - [Arrears](Billing/Arrears.md)
+  - [Billing notes](Billing/Billing notes.md)
+  - [Expiration](Billing/Expiration.md)
+  - [Modifying specifications](Billing/Modifying specifications.md)
+- **Direct Connect gateway routes**
+  - [CreateDirectConnectGatewayRoute - Creating a DC Gateway route](Direct Connect gateway routes/CreateDirectConnectGatewayRoute - Creating a DC Gateway route.md)
+  - [DeleteDirectConnectGatewayRoute - Deleting a DC Gateway route](Direct Connect gateway routes/DeleteDirectConnectGatewayRoute - Deleting a DC Gateway route.md)
+  - [DescribeDirectConnectGatewayRouteAttributes - Querying a specified DC Gateway route](Direct Connect gateway routes/DescribeDirectConnectGatewayRouteAttributes - Querying a specified DC Gateway route.md)
+  - [DescribeDirectConnectGatewayRoutes - Querying routes of a DC Gateway](Direct Connect gateway routes/DescribeDirectConnectGatewayRoutes - Querying routes of a DC Gateway.md)
+- **FAQ**
+  - [Direct Connect Connection FAQs](FAQ/Direct Connect Connection FAQs.md)
+  - [Direct Connect Gateway FAQs](FAQ/Direct Connect Gateway FAQs.md)
+  - [IAM FAQs](FAQ/IAM FAQs.md)
+  - [Virtual Interface FAQs](FAQ/Virtual Interface FAQs.md)
+- **Getting Started**
+  - [Quick start](Getting Started/Quick start.md)
+  - **Interconnecting on-premises data centers and VPCs**
+    - [Attaching a network instance](Getting Started/Interconnecting on-premises data centers and VPCs/Attaching a network instance.md)
+    - [Configuring on-premises routing and testing connectivity](Getting Started/Interconnecting on-premises data centers and VPCs/Configuring on-premises routing and testing connectivity.md)
+    - [Creating a Direct Connect Connection](Getting Started/Interconnecting on-premises data centers and VPCs/Creating a Direct Connect Connection.md)
+    - [Creating a Direct Connect Gateway](Getting Started/Interconnecting on-premises data centers and VPCs/Creating a Direct Connect Gateway.md)
+    - [Creating a Virtual Interface](Getting Started/Interconnecting on-premises data centers and VPCs/Creating a Virtual Interface.md)
+- **Internet Tunnel**
+  - **Internet Tunnel gateways**
+    - [Creating an Internet Tunnel Bandwidth](Internet Tunnel/Internet Tunnel gateways/Creating an Internet Tunnel Bandwidth.md)
+    - [Creating an Internet Tunnel Gateway](Internet Tunnel/Internet Tunnel gateways/Creating an Internet Tunnel Gateway.md)
+  - **Monitoring**
+    - [Viewing Internet Tunnel monitoring data](Internet Tunnel/Monitoring/Viewing Internet Tunnel monitoring data.md)
+  - **Quick start**
+    - [On-premises data center Internet connectivity](Internet Tunnel/Quick start/On-premises data center Internet connectivity.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Direct Connect access points](Overview/Direct Connect access points.md)
+  - [Features](Overview/Features.md)
+  - [Limits](Overview/Limits.md)
+  - [Regions](Overview/Regions.md)
+  - [Related cloud services](Overview/Related cloud services.md)
+  - [What is Direct Connect](Overview/What is Direct Connect.md)
+- **SDK Refrence**
+  - [Direct Connect SDK overview](SDK Refrence/Direct Connect SDK overview.md)
+- **Terms**
+  - [BytePlus Direct Connect Service Level Agreement](Terms/BytePlus Direct Connect Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Direct Connect](Terms/Service-Specific Terms for BytePlus Direct Connect.md)
+- **Troubleshooting**
+  - [Direct Connect troubleshooting](Troubleshooting/Direct Connect troubleshooting.md)
+- **User guide**
+  - [Quota management](User guide/Quota management.md)
+  - **Direct Connect connections**
+    - [Direct Connect access process](User guide/Direct Connect connections/Direct Connect access process.md)
+    - **Exclusive DC Connection**
+      - [Creating a Direct Connect Connection](User guide/Direct Connect connections/Exclusive DC Connection/Creating a Direct Connect Connection.md)
+      - [Managing a Direct Connect Connection](User guide/Direct Connect connections/Exclusive DC Connection/Managing a Direct Connect Connection.md)
+      - [Managing a Direct Connect LOA](User guide/Direct Connect connections/Exclusive DC Connection/Managing a Direct Connect LOA.md)
+      - [Modifying bandwidth for a Direct Connect Connection](User guide/Direct Connect connections/Exclusive DC Connection/Modifying bandwidth for a Direct Connect Connection.md)
+      - [Preparations before access](User guide/Direct Connect connections/Exclusive DC Connection/Preparations before access.md)
+    - **Shared Direct Connect connections**
+      - [Line operator guide](User guide/Direct Connect connections/Shared Direct Connect connections/Line operator guide.md)
+      - [Shared Line overview](User guide/Direct Connect connections/Shared Direct Connect connections/Shared Line overview.md)
+      - [Tenant guide](User guide/Direct Connect connections/Shared Direct Connect connections/Tenant guide.md)
+  - **Direct Connect gateways**
+    - [Adding a BGP Peer](User guide/Direct Connect gateways/Adding a BGP Peer.md)
+    - [Adding a static route](User guide/Direct Connect gateways/Adding a static route.md)
+    - [Authorizing a cross-account CEN](User guide/Direct Connect gateways/Authorizing a cross-account CEN.md)
+    - [Creating a Direct Connect Gateway](User guide/Direct Connect gateways/Creating a Direct Connect Gateway.md)
+    - [Enabling IPv6 for a Direct Connect Gateway](User guide/Direct Connect gateways/Enabling IPv6 for a Direct Connect Gateway.md)
+    - [Managing a Direct Connect Gateway](User guide/Direct Connect gateways/Managing a Direct Connect Gateway.md)
+  - **Direct Connect virtual interfaces**
+    - [Accepting a Shared Virtual Interface](User guide/Direct Connect virtual interfaces/Accepting a Shared Virtual Interface.md)
+    - [Creating a Shared Virtual Interface](User guide/Direct Connect virtual interfaces/Creating a Shared Virtual Interface.md)
+    - [Creating a Virtual Interface](User guide/Direct Connect virtual interfaces/Creating a Virtual Interface.md)
+    - [Deleting a Shared Virtual Interface](User guide/Direct Connect virtual interfaces/Deleting a Shared Virtual Interface.md)
+    - [Deleting a Virtual Interface](User guide/Direct Connect virtual interfaces/Deleting a Virtual Interface.md)
+    - [Modifying bandwidth cap for a Virtual Interface](User guide/Direct Connect virtual interfaces/Modifying bandwidth cap for a Virtual Interface.md)
+  - **Failure drill**
+    - [Creating a failure drill task](User guide/Failure drill/Creating a failure drill task.md)
+    - [Failure Drill overview](User guide/Failure drill/Failure Drill overview.md)
+    - [Managing a failure drill task](User guide/Failure drill/Managing a failure drill task.md)
+  - **Health check**
+    - [Adding a probe](User guide/Health check/Adding a probe.md)
+    - [Creating a health check](User guide/Health check/Creating a health check.md)
+    - [Direct Connect health check overview](User guide/Health check/Direct Connect health check overview.md)
+    - [Managing health check](User guide/Health check/Managing health check.md)
+  - **Identity and Access Management**
+    - [DC custom policy configuration examples](User guide/Identity and Access Management/DC custom policy configuration examples.md)
+    - [DC IAM Policy Type](User guide/Identity and Access Management/DC IAM Policy Type.md)
+    - [Direct Connect IAM policy types](User guide/Identity and Access Management/Direct Connect IAM policy types.md)
+    - [IAM overview](User guide/Identity and Access Management/IAM overview.md)
+  - **Line health check**
+    - [Detection methods](User guide/Line health check/Detection methods.md)
+    - [Modifying a detection method](User guide/Line health check/Modifying a detection method.md)
+  - **Monitoring and alerts**
+    - [Configuring event monitoring](User guide/Monitoring and alerts/Configuring event monitoring.md)
+    - [Viewing monitoring data](User guide/Monitoring and alerts/Viewing monitoring data.md)
+  - **Outbound traffic package**
+    - [Creating an Outbound Traffic Package](User guide/Outbound traffic package/Creating an Outbound Traffic Package.md)
+    - [Managing an outbound traffic package](User guide/Outbound traffic package/Managing an outbound traffic package.md)
+    - [Outbound Traffic Package overview](User guide/Outbound traffic package/Outbound Traffic Package overview.md)
+  - **Projects and tags**
+    - [Project management](User guide/Projects and tags/Project management.md)
+    - [Tag management](User guide/Projects and tags/Tag management.md)
+  - **QoS Management**
+    - [Attaching and detaching a Direct Connect Connection](User guide/QoS Management/Attaching and detaching a Direct Connect Connection.md)
+    - [Creating a QoS Policy](User guide/QoS Management/Creating a QoS Policy.md)
+    - [Deleting a QoS policy](User guide/QoS Management/Deleting a QoS policy.md)
+    - [Managing a QoS policy](User guide/QoS Management/Managing a QoS policy.md)
+    - [QoS Policy overview](User guide/QoS Management/QoS Policy overview.md)

@@ -1,0 +1,335 @@
+# Cloud Search
+
+257 pages. Source: https://docs.byteplus.com/en/docs/cloudsearch
+
+Back to the [full index](../README.md).
+
+- [Technical support](Technical support.md)
+- **API Reference**
+  - [List of API actions](API Reference/List of API actions.md)
+  - **How to invoke the API**
+    - [Common parameters](API Reference/How to invoke the API/Common parameters.md)
+    - [Request structure](API Reference/How to invoke the API/Request structure.md)
+    - [Sample responses](API Reference/How to invoke the API/Sample responses.md)
+    - [Signature method](API Reference/How to invoke the API/Signature method.md)
+  - **Instance Management**
+    - [CreateInstance](API Reference/Instance Management/CreateInstance.md)
+    - [CreateInstanceInOneStep](API Reference/Instance Management/CreateInstanceInOneStep.md)
+    - [DescribeScenarios](API Reference/Instance Management/DescribeScenarios.md)
+    - [ModifyChargeCode](API Reference/Instance Management/ModifyChargeCode.md)
+    - [ModifyDeletionProtection](API Reference/Instance Management/ModifyDeletionProtection.md)
+    - [ModifyIpAllowlist](API Reference/Instance Management/ModifyIpAllowlist.md)
+    - [ModifyMaintenanceSetting](API Reference/Instance Management/ModifyMaintenanceSetting.md)
+    - [ModifyNodeSpecInOneStep](API Reference/Instance Management/ModifyNodeSpecInOneStep.md)
+    - [ReleaseInstance](API Reference/Instance Management/ReleaseInstance.md)
+    - [RenameInstance](API Reference/Instance Management/RenameInstance.md)
+    - [ResetAdminPassword](API Reference/Instance Management/ResetAdminPassword.md)
+    - [RestartInstance](API Reference/Instance Management/RestartInstance.md)
+    - [RestartNode](API Reference/Instance Management/RestartNode.md)
+  - **Instance Query**
+    - [DescribeInstance](API Reference/Instance Query/DescribeInstance.md)
+    - [DescribeInstanceNodes](API Reference/Instance Query/DescribeInstanceNodes.md)
+    - [DescribeInstancePlugins](API Reference/Instance Query/DescribeInstancePlugins.md)
+    - [DescribeInstances ](API Reference/Instance Query/DescribeInstances.md)
+    - [DescribeNodeAvailableSpecs](API Reference/Instance Query/DescribeNodeAvailableSpecs.md)
+    - [DescribeNodeAvailableSpecsV2](API Reference/Instance Query/DescribeNodeAvailableSpecsV2.md)
+    - [DescribeZones](API Reference/Instance Query/DescribeZones.md)
+  - **Observability**
+    - [ListLogs](API Reference/Observability/ListLogs.md)
+- **Best Practices**
+  - **Application building**
+    - [Build a text-image retrieval application based on Cloud Search and Doubao-embedding-vision model](Best Practices/Application building/Build a text-image retrieval application based on Cloud Search and Doubao-embedding-vision.md)
+    - [Build a text-image retrieval application based on cloud search service + Doubao-1.5-pro visual understanding model](Best Practices/Application building/Build a text-image retrieval application based on cloud search service + Doubao-1.5-pro vi.md)
+    - [Build image and text search applications based on Cloud Search services (image-to-image search, text-to-image search)](Best Practices/Application building/Build image and text search applications based on Cloud Search services (image-to-image se.md)
+    - [Cloud Search hybrid retrieval + rerank operation example (using Doubao embedding model)](Best Practices/Application building/Cloud Search hybrid retrieval + rerank operation example (using Doubao embedding model).md)
+    - [Cloud Search skill user guide](Best Practices/Application building/Cloud Search skill user guide.md)
+    - [CloudSearch-based distributed vector databases](Best Practices/Application building/CloudSearch-based distributed vector databases.md)
+    - [Practice of learning to rank based on Cloud Search](Best Practices/Application building/Practice of learning to rank based on Cloud Search.md)
+    - [Use the Cloud Search plugin in Coze](Best Practices/Application building/Use the Cloud Search plugin in Coze.md)
+  - **Connecting to a cluster**
+    - [Connecting to a cluster using cURL](Best Practices/Connecting to a cluster/Connecting to a cluster using cURL.md)
+    - [Connecting to a cluster using Java](Best Practices/Connecting to a cluster/Connecting to a cluster using Java.md)
+    - [Connecting to a cluster using Kibana](Best Practices/Connecting to a cluster/Connecting to a cluster using Kibana.md)
+    - [Connecting to a cluster using Python](Best Practices/Connecting to a cluster/Connecting to a cluster using Python.md)
+    - **Connecting to a Cluster Using Java**
+      - [Switch Elasticsearch Java SDK to OpenSearch Java SDK](Best Practices/Connecting to a cluster/Connecting to a Cluster Using Java/Switch Elasticsearch Java SDK to OpenSearch Java SDK.md)
+    - **Connecting to a Cluster Using Python**
+      - [Switch from Elasticsearch Python SDK to OpenSearch Python SDK](Best Practices/Connecting to a cluster/Connecting to a Cluster Using Python/Switch from Elasticsearch Python SDK to OpenSearch Python SDK.md)
+  - **Data migration**
+    - [Use Logstash to migrate data across clusters](Best Practices/Data migration/Use Logstash to migrate data across clusters.md)
+    - [Use TOS for cross-region data migration](Best Practices/Data migration/Use TOS for cross-region data migration.md)
+  - **Data writing**
+    - [Use Logstash to read Message Queue for Kafka data into Cloud Search](Best Practices/Data writing/Use Logstash to read Message Queue for Kafka data into Cloud Search.md)
+    - [Use Logstash to read TLS data and write to Cloud Search](Best Practices/Data writing/Use Logstash to read TLS data and write to Cloud Search.md)
+    - [Use Logstash to read TOS data and write to Cloud Search](Best Practices/Data writing/Use Logstash to read TOS data and write to Cloud Search.md)
+  - **Optimize search results**
+    - [How to manage the active shard distribution in balanced Cloud Search service instances](Best Practices/Optimize search results/How to manage the active shard distribution in balanced Cloud Search service instances.md)
+    - [Rerank tuning](Best Practices/Optimize search results/Rerank tuning.md)
+    - [Tuning Pipeline and Query templates](Best Practices/Optimize search results/Tuning Pipeline and Query templates.md)
+    - [Tuning the console UI](Best Practices/Optimize search results/Tuning the console UI.md)
+  - **Searchable snapshot**
+    - [Create searchable snapshots through ISM](Best Practices/Searchable snapshot/Create searchable snapshots through ISM.md)
+    - [Manually create searchable snapshots](Best Practices/Searchable snapshot/Manually create searchable snapshots.md)
+    - [Searchable snapshot overview](Best Practices/Searchable snapshot/Searchable snapshot overview.md)
+  - **Time series data management**
+    - [Manage time-series data using Data Streams and ISM](Best Practices/Time series data management/Manage time-series data using Data Streams and ISM.md)
+- **FAQ**
+  - [FAQs](FAQ/FAQs.md)
+  - [Kibana common operations guide](FAQ/Kibana common operations guide.md)
+- **Getting Started**
+  - [Before Use](Getting Started/Before Use.md)
+  - [Create an instance](Getting Started/Create an instance.md)
+  - [Cross-service Authorization](Getting Started/Cross-service Authorization.md)
+  - [Instance resource estimation](Getting Started/Instance resource estimation.md)
+  - [Resource calculator](Getting Started/Resource calculator.md)
+  - [Volumes base bandwidth reference](Getting Started/Volumes base bandwidth reference.md)
+  - **Accessing an Instance**
+    - [Access the instance through Kibana](Getting Started/Accessing an Instance/Access the instance through Kibana.md)
+    - [Accessing an instance by using a client](Getting Started/Accessing an Instance/Accessing an instance by using a client.md)
+    - [Accessing an instance by using the API](Getting Started/Accessing an Instance/Accessing an instance by using the API.md)
+- **Logstash user guide**
+  - [What is Logstash](Logstash user guide/What is Logstash.md)
+  - **Instance configuration**
+    - [Configure extension files](Logstash user guide/Instance configuration/Configure extension files.md)
+  - **Instance management**
+    - [Cancel a subscription Logstash instance](Logstash user guide/Instance management/Cancel a subscription Logstash instance.md)
+    - [Convert a pay-as-you-go Logstash instance to subscription](Logstash user guide/Instance management/Convert a pay-as-you-go Logstash instance to subscription.md)
+    - [Create a Logstash instance](Logstash user guide/Instance management/Create a Logstash instance.md)
+    - [Delete a pay-as-you-go Logstash instance](Logstash user guide/Instance management/Delete a pay-as-you-go Logstash instance.md)
+    - [Restart a Logstash instance](Logstash user guide/Instance management/Restart a Logstash instance.md)
+    - [Upgrade a Logstash instance](Logstash user guide/Instance management/Upgrade a Logstash instance.md)
+    - [View Logstash instance information](Logstash user guide/Instance management/View Logstash instance information.md)
+    - [View Logstash instances](Logstash user guide/Instance management/View Logstash instances.md)
+  - **Monitoring and logs**
+    - [Configure alerts](Logstash user guide/Monitoring and logs/Configure alerts.md)
+    - [Query logs](Logstash user guide/Monitoring and logs/Query logs.md)
+    - [View monitoring](Logstash user guide/Monitoring and logs/View monitoring.md)
+  - **Network configuration**
+    - [Use DNAT to configure Logstash access from the public network](Logstash user guide/Network configuration/Use DNAT to configure Logstash access from the public network.md)
+  - **Pipeline management**
+    - [Comparison feature of metadata migration pipelines](Logstash user guide/Pipeline management/Comparison feature of metadata migration pipelines.md)
+    - [Create a pipeline](Logstash user guide/Pipeline management/Create a pipeline.md)
+    - [Manage pipelines](Logstash user guide/Pipeline management/Manage pipelines.md)
+    - [Use the debugging feature](Logstash user guide/Pipeline management/Use the debugging feature.md)
+    - **Pipeline introduction**
+      - [Metadata migration pipeline](Logstash user guide/Pipeline management/Pipeline introduction/Metadata migration pipeline.md)
+      - [Pipeline status](Logstash user guide/Pipeline management/Pipeline introduction/Pipeline status.md)
+      - [Standard pipeline](Logstash user guide/Pipeline management/Pipeline introduction/Standard pipeline.md)
+  - **Plugin introduction**
+    - [Differences Between Plugins in Elasticsearch and OpenSearch](Logstash user guide/Plugin introduction/Differences Between Plugins in Elasticsearch and OpenSearch.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Benefits](Overview/Benefits.md)
+  - [Create index](Overview/Create index.md)
+  - [Features](Overview/Features.md)
+  - [Manage search configurations](Overview/Manage search configurations.md)
+  - [Practice of hybrid search and reranking based on Cloud Search](Overview/Practice of hybrid search and reranking based on Cloud Search.md)
+  - [Product specifications](Overview/Product specifications.md)
+  - [Region and availability zone](Overview/Region and availability zone.md)
+  - [Terms](Overview/Terms.md)
+  - [Turn index off or on](Overview/Turn index off or on.md)
+  - [What is Cloud Search](Overview/What is Cloud Search.md)
+  - **Cloud Search kernel**
+    - [Kernel version release notes](Overview/Cloud Search kernel/Kernel version release notes.md)
+    - **Kernel enhancement**
+      - [Adaptive write optimization](Overview/Cloud Search kernel/Kernel enhancement/Adaptive write optimization.md)
+      - [Bulk directional routing](Overview/Cloud Search kernel/Kernel enhancement/Bulk directional routing.md)
+      - [Controllable latency queue](Overview/Cloud Search kernel/Kernel enhancement/Controllable latency queue.md)
+      - [Multi-AZ replica traffic balancing](Overview/Cloud Search kernel/Kernel enhancement/Multi-AZ replica traffic balancing.md)
+- **Product Billing**
+  - [Arrears](Product Billing/Arrears.md)
+  - [Billable items](Product Billing/Billable items.md)
+  - [Billing overview](Product Billing/Billing overview.md)
+  - [Costs for unsubscription or changing instance specifications](Product Billing/Costs for unsubscription or changing instance specifications.md)
+  - [Instance renewal](Product Billing/Instance renewal.md)
+  - **Billing Methods**
+    - [Changing the billing method from pay-as-you-go to subscription](Product Billing/Billing Methods/Changing the billing method from pay-as-you-go to subscription.md)
+    - [Pay-as-you-go](Product Billing/Billing Methods/Pay-as-you-go.md)
+    - [Subscription](Product Billing/Billing Methods/Subscription.md)
+- **SDK reference**
+  - **Go SDK**
+    - [Client initialization](SDK reference/Go SDK/Client initialization.md)
+    - [Code examples](SDK reference/Go SDK/Code examples.md)
+    - [Download and installation](SDK reference/Go SDK/Download and installation.md)
+  - **Java SDK**
+    - [Client initialization](SDK reference/Java SDK/Client initialization.md)
+    - [Code examples](SDK reference/Java SDK/Code examples.md)
+    - [Download and installation](SDK reference/Java SDK/Download and installation.md)
+  - **Python SDK**
+    - [Client initialization](SDK reference/Python SDK/Client initialization.md)
+    - [Code examples](SDK reference/Python SDK/Code examples.md)
+    - [Download and installation](SDK reference/Python SDK/Download and installation.md)
+- **Task Center**
+  - [Viewing task progress](Task Center/Viewing task progress.md)
+- **Terms of Service**
+  - [BytePlus Cloud Search Service Level Agreement](Terms of Service/BytePlus Cloud Search Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Cloud Search](Terms of Service/Service-Specific Terms for BytePlus Cloud Search.md)
+  - [Terms of data migration](Terms of Service/Terms of data migration.md)
+- **User Guide**
+  - [Dev Tools](User Guide/Dev Tools.md)
+  - **Accessing Instances**
+    - [Access an instance](User Guide/Accessing Instances/Access an instance.md)
+    - [Configure instance private network address public network resolution](User Guide/Accessing Instances/Configure instance private network address public network resolution.md)
+    - [Configure instance private network IP allowlist](User Guide/Accessing Instances/Configure instance private network IP allowlist.md)
+    - [Configure instance public network access](User Guide/Accessing Instances/Configure instance public network access.md)
+    - [Configure instance public network IP allowlist](User Guide/Accessing Instances/Configure instance public network IP allowlist.md)
+    - [Configure SAML authentication to implement single sign-on](User Guide/Accessing Instances/Configure SAML authentication to implement single sign-on.md)
+  - **Backup Management**
+    - [Backup overview](User Guide/Backup Management/Backup overview.md)
+    - [Deleting snapshots](User Guide/Backup Management/Deleting snapshots.md)
+    - [manual snapshot creation](User Guide/Backup Management/manual snapshot creation.md)
+    - [Recover data using snapshot](User Guide/Backup Management/Recover data using snapshot.md)
+    - [Setting up automatic snapshots](User Guide/Backup Management/Setting up automatic snapshots.md)
+    - [Viewing snapshot details](User Guide/Backup Management/Viewing snapshot details.md)
+    - [Viewing the snapshot bucket](User Guide/Backup Management/Viewing the snapshot bucket.md)
+  - **Cerebro management**
+    - [Access Cerebro](User Guide/Cerebro management/Access Cerebro.md)
+    - [Configure Cerebro private network address public network resolution](User Guide/Cerebro management/Configure Cerebro private network address public network resolution.md)
+    - [Configure Cerebro private network IP allowlist](User Guide/Cerebro management/Configure Cerebro private network IP allowlist.md)
+    - [Configure Cerebro public network access](User Guide/Cerebro management/Configure Cerebro public network access.md)
+    - [Configure Cerebro public network IP allowlist](User Guide/Cerebro management/Configure Cerebro public network IP allowlist.md)
+    - [Create Cerebro](User Guide/Cerebro management/Create Cerebro.md)
+    - [Manage Cerebro](User Guide/Cerebro management/Manage Cerebro.md)
+    - [View Cerebro details](User Guide/Cerebro management/View Cerebro details.md)
+  - **Changing Instance Specifications**
+    - [Adding availability zone](User Guide/Changing Instance Specifications/Adding availability zone.md)
+    - [Adding dedicated master nodes](User Guide/Changing Instance Specifications/Adding dedicated master nodes.md)
+    - [Availability zone migration](User Guide/Changing Instance Specifications/Availability zone migration.md)
+    - [Downgrading instance specifications](User Guide/Changing Instance Specifications/Downgrading instance specifications.md)
+    - [Removing data nodes](User Guide/Changing Instance Specifications/Removing data nodes.md)
+    - [Upgrade an instance](User Guide/Changing Instance Specifications/Upgrade an instance.md)
+  - **ContextSearch**
+    - **Manage API keys**
+      - [Create an API Key](User Guide/ContextSearch/Manage API keys/Create an API Key.md)
+      - [Delete an API Key](User Guide/ContextSearch/Manage API keys/Delete an API Key.md)
+      - [View an API Key](User Guide/ContextSearch/Manage API keys/View an API Key.md)
+    - **Manage inference service**
+      - [Call an inference service](User Guide/ContextSearch/Manage inference service/Call an inference service.md)
+      - [Create a custom inference service](User Guide/ContextSearch/Manage inference service/Create a custom inference service.md)
+      - [Delete a custom inference service](User Guide/ContextSearch/Manage inference service/Delete a custom inference service.md)
+      - [Edit a custom inference service](User Guide/ContextSearch/Manage inference service/Edit a custom inference service.md)
+      - [Restart custom inference service](User Guide/ContextSearch/Manage inference service/Restart custom inference service.md)
+      - [Start custom inference service](User Guide/ContextSearch/Manage inference service/Start custom inference service.md)
+      - [Stop a custom inference service](User Guide/ContextSearch/Manage inference service/Stop a custom inference service.md)
+      - [View an inference service](User Guide/ContextSearch/Manage inference service/View an inference service.md)
+    - **Manage models**
+      - [Create a custom model](User Guide/ContextSearch/Manage models/Create a custom model.md)
+      - [Delete a custom model](User Guide/ContextSearch/Manage models/Delete a custom model.md)
+      - [Edit a custom model](User Guide/ContextSearch/Manage models/Edit a custom model.md)
+      - [View a custom model](User Guide/ContextSearch/Manage models/View a custom model.md)
+      - [View a public model](User Guide/ContextSearch/Manage models/View a public model.md)
+    - **Manage scenario development**
+      - [Create scene](User Guide/ContextSearch/Manage scenario development/Create scene.md)
+      - [Manage scenarios](User Guide/ContextSearch/Manage scenario development/Manage scenarios.md)
+      - [scenario development](User Guide/ContextSearch/Manage scenario development/scenario development.md)
+    - **Quick start**
+      - [Experience sample scenarios](User Guide/ContextSearch/Quick start/Experience sample scenarios.md)
+      - [Quick search](User Guide/ContextSearch/Quick start/Quick search.md)
+      - [Quickly create and use scenarios](User Guide/ContextSearch/Quick start/Quickly create and use scenarios.md)
+      - [What is ContextSearch](User Guide/ContextSearch/Quick start/What is ContextSearch.md)
+  - **Managing Indices**
+    - [Index management](User Guide/Managing Indices/Index management.md)
+    - [Managing index templates](User Guide/Managing Indices/Managing index templates.md)
+    - [Managing lifecycle policies](User Guide/Managing Indices/Managing lifecycle policies.md)
+  - **Managing Instances**
+    - **Managing instance lifecycles**
+      - [Create an instance](User Guide/Managing Instances/Managing instance lifecycles/Create an instance.md)
+      - [Customizing column fields of instance list](User Guide/Managing Instances/Managing instance lifecycles/Customizing column fields of instance list.md)
+      - [Delete an instance](User Guide/Managing Instances/Managing instance lifecycles/Delete an instance.md)
+      - [Export instance data](User Guide/Managing Instances/Managing instance lifecycles/Export instance data.md)
+      - [Restart instance or node](User Guide/Managing Instances/Managing instance lifecycles/Restart instance or node.md)
+      - [Update instance SSL certificates](User Guide/Managing Instances/Managing instance lifecycles/Update instance SSL certificates.md)
+      - [View instance details](User Guide/Managing Instances/Managing instance lifecycles/View instance details.md)
+    - **Observability**
+      - **Log Management**
+        - [Query logs](User Guide/Managing Instances/Observability/Log Management/Query logs.md)
+      - **Monitoring and Alarms**
+        - [Configuring an alarm policy](User Guide/Managing Instances/Observability/Monitoring and Alarms/Configuring an alarm policy.md)
+        - [One-click alarm](User Guide/Managing Instances/Observability/Monitoring and Alarms/One-click alarm.md)
+        - [View monitoring data](User Guide/Managing Instances/Observability/Monitoring and Alarms/View monitoring data.md)
+        - [Viewing instance architecture diagram](User Guide/Managing Instances/Observability/Monitoring and Alarms/Viewing instance architecture diagram.md)
+      - **Security Auditing**
+        - [Control panel audit log](User Guide/Managing Instances/Observability/Security Auditing/Control panel audit log.md)
+        - **Data plane auditing**
+          - [Configuring audit log collection parameters](User Guide/Managing Instances/Observability/Security Auditing/Data plane auditing/Configuring audit log collection parameters.md)
+          - [Customizing and exporting audit logs](User Guide/Managing Instances/Observability/Security Auditing/Data plane auditing/Customizing and exporting audit logs.md)
+          - [Enable data plane auditing](User Guide/Managing Instances/Observability/Security Auditing/Data plane auditing/Enable data plane auditing.md)
+          - [Managing the lifecycle of audit log indices](User Guide/Managing Instances/Observability/Security Auditing/Data plane auditing/Managing the lifecycle of audit log indices.md)
+          - [Query data plane auditing logs](User Guide/Managing Instances/Observability/Security Auditing/Data plane auditing/Query data plane auditing logs.md)
+  - **Modifying Instance Configurations**
+    - [Changing the transfer protocol of an instance](User Guide/Modifying Instance Configurations/Changing the transfer protocol of an instance.md)
+    - [Configuring instance tag](User Guide/Modifying Instance Configurations/Configuring instance tag.md)
+    - [Modifying networking configuration](User Guide/Modifying Instance Configurations/Modifying networking configuration.md)
+    - [Modifying the maintenance window](User Guide/Modifying Instance Configurations/Modifying the maintenance window.md)
+    - [Optimization solution for network change ](User Guide/Modifying Instance Configurations/Optimization solution for network change.md)
+    - [Resetting an access password](User Guide/Modifying Instance Configurations/Resetting an access password.md)
+    - [Setting deletion protection for an instance](User Guide/Modifying Instance Configurations/Setting deletion protection for an instance.md)
+  - **Operation and Maintenance**
+    - **Command-based O&M**
+      - [Overview of O&M commands](User Guide/Operation and Maintenance/Command-based O&M/Overview of O&M commands.md)
+      - [Querying the cluster health status](User Guide/Operation and Maintenance/Command-based O&M/Querying the cluster health status.md)
+    - **Intelligent Operation and Maintenance**
+      - [Disabling Intelligent O&M feature](User Guide/Operation and Maintenance/Intelligent Operation and Maintenance/Disabling Intelligent O&M feature.md)
+      - [Intelligent O&M Overview](User Guide/Operation and Maintenance/Intelligent Operation and Maintenance/Intelligent O&M Overview.md)
+      - [Modifying the automatic diagnostic time](User Guide/Operation and Maintenance/Intelligent Operation and Maintenance/Modifying the automatic diagnostic time.md)
+      - [Performing a diagnostic on an instance](User Guide/Operation and Maintenance/Intelligent Operation and Maintenance/Performing a diagnostic on an instance.md)
+      - [Viewing diagnosis reports](User Guide/Operation and Maintenance/Intelligent Operation and Maintenance/Viewing diagnosis reports.md)
+      - [Viewing instance health overview](User Guide/Operation and Maintenance/Intelligent Operation and Maintenance/Viewing instance health overview.md)
+  - **Parameter Configuration**
+    - [Configuring system parameters](User Guide/Parameter Configuration/Configuring system parameters.md)
+    - [View system parameters](User Guide/Parameter Configuration/View system parameters.md)
+  - **Plugin Management**
+    - [Deleting user-defined plugins](User Guide/Plugin Management/Deleting user-defined plugins.md)
+    - [Installing user-defined plugins](User Guide/Plugin Management/Installing user-defined plugins.md)
+    - [Managing built-in plugins](User Guide/Plugin Management/Managing built-in plugins.md)
+    - [Troubleshooting custom plugin installation issues](User Guide/Plugin Management/Troubleshooting custom plugin installation issues.md)
+    - [Uninstalling user-defined plugins](User Guide/Plugin Management/Uninstalling user-defined plugins.md)
+    - [Uploading user-defined plugins](User Guide/Plugin Management/Uploading user-defined plugins.md)
+    - [View system built-in plugins](User Guide/Plugin Management/View system built-in plugins.md)
+    - **Plugin Instruction**
+      - [Byte-throttler rate limiting plugin instructions](User Guide/Plugin Management/Plugin Instruction/Byte-throttler rate limiting plugin instructions.md)
+      - [Enhancements plugin instructions](User Guide/Plugin Management/Plugin Instruction/Enhancements plugin instructions.md)
+      - [Remote Inference plugin user guide](User Guide/Plugin Management/Plugin Instruction/Remote Inference plugin user guide.md)
+      - [Using the Ngram-Type plugin for fuzzy queries](User Guide/Plugin Management/Plugin Instruction/Using the Ngram-Type plugin for fuzzy queries.md)
+      - [Wildcard Type plugin instructions](User Guide/Plugin Management/Plugin Instruction/Wildcard Type plugin instructions.md)
+  - **Search Management**
+    - [Canceling data refresh tasks](User Guide/Search Management/Canceling data refresh tasks.md)
+    - [Executing data refresh](User Guide/Search Management/Executing data refresh.md)
+    - [Testing the effect of synonym terms](User Guide/Search Management/Testing the effect of synonym terms.md)
+    - **Category Prediction Intervention**
+      - [Configuring category prediction terms](User Guide/Search Management/Category Prediction Intervention/Configuring category prediction terms.md)
+      - [Installing category prediction plugin](User Guide/Search Management/Category Prediction Intervention/Installing category prediction plugin.md)
+    - **Configuring Analyzer**
+      - [Configuring analyzer terms via GUI](User Guide/Search Management/Configuring Analyzer/Configuring analyzer terms via GUI.md)
+      - [Managing dictionary files](User Guide/Search Management/Configuring Analyzer/Managing dictionary files.md)
+    - **Configuring Synonym**
+      - [Configuring synonym terms via GUI](User Guide/Search Management/Configuring Synonym/Configuring synonym terms via GUI.md)
+      - [Loading synonym files dynamically via plugin](User Guide/Search Management/Configuring Synonym/Loading synonym files dynamically via plugin.md)
+      - [Managing synonym files](User Guide/Search Management/Configuring Synonym/Managing synonym files.md)
+  - **Snapshot Management**
+    - [Creating snapshots automatically](User Guide/Snapshot Management/Creating snapshots automatically.md)
+    - [Deleting a snapshot file](User Guide/Snapshot Management/Deleting a snapshot file.md)
+    - [manual snapshot creation](User Guide/Snapshot Management/manual snapshot creation.md)
+    - [Recover data using snapshot](User Guide/Snapshot Management/Recover data using snapshot.md)
+    - [Save snapshot to TOS](User Guide/Snapshot Management/Save snapshot to TOS.md)
+    - [Snapshot management overview](User Guide/Snapshot Management/Snapshot management overview.md)
+    - [Stopping snapshot production](User Guide/Snapshot Management/Stopping snapshot production.md)
+    - [Viewing snapshot details](User Guide/Snapshot Management/Viewing snapshot details.md)
+  - **Visualization Tool**
+    - **Cerebro**
+      - [Configure Cerebro private network address public network resolution](User Guide/Visualization Tool/Cerebro/Configure Cerebro private network address public network resolution.md)
+      - [Configure Cerebro private network IP allowlist](User Guide/Visualization Tool/Cerebro/Configure Cerebro private network IP allowlist.md)
+      - [Configure Cerebro public network IP allowlist](User Guide/Visualization Tool/Cerebro/Configure Cerebro public network IP allowlist.md)
+      - [Configuring public network access to Cerebro](User Guide/Visualization Tool/Cerebro/Configuring public network access to Cerebro.md)
+      - [Enabling Cerebro](User Guide/Visualization Tool/Cerebro/Enabling Cerebro.md)
+      - [Logging on to Cerebro](User Guide/Visualization Tool/Cerebro/Logging on to Cerebro.md)
+    - **Kibana - Dashboards**
+      - [Configuring a private IP allowlist for the visualization tool](User Guide/Visualization Tool/Kibana - Dashboards/Configuring a private IP allowlist for the visualization tool.md)
+      - [Configuring a public IP allowlist for the visualization tool](User Guide/Visualization Tool/Kibana - Dashboards/Configuring a public IP allowlist for the visualization tool.md)
+      - [Configuring Internet DNS Lookup for the visualization tool](User Guide/Visualization Tool/Kibana - Dashboards/Configuring Internet DNS Lookup for the visualization tool.md)
+      - [Configuring public network access for the visualization tool](User Guide/Visualization Tool/Kibana - Dashboards/Configuring public network access for the visualization tool.md)
+      - [Kibana common operations guide](User Guide/Visualization Tool/Kibana - Dashboards/Kibana common operations guide.md)
+      - [Logging on to the visualization tool](User Guide/Visualization Tool/Kibana - Dashboards/Logging on to the visualization tool.md)
+      - [Modify Kibana/Dashboards parameters](User Guide/Visualization Tool/Kibana - Dashboards/Modify Kibana - Dashboards parameters.md)
+- **What's new**
+  - [Release notes](What's new/Release notes.md)

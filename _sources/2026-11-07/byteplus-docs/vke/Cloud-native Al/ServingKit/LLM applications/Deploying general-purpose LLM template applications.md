@@ -1,0 +1,78 @@
+---
+title: "Deploying general-purpose LLM template applications"
+product: " Vital Kubernetes Engine"
+product_code: "vke"
+source: "https://docs.byteplus.com/en/docs/vke/Deploying_general-purpose_LLM_template_applications"
+---
+
+This topic describes how to deploy inference services by using the general\-purpose LLM deployment template in AI application templates.
+
+## Usage instructions
+
+* To ensure the successful deployment of the text model, which involves multiple add\-ons that depend on each other and have complex configurations, you need to strictly follow the instructions in this topic.
+
+* To achieve the expected results and conform to the [limits](https://docs.byteplus.com/en/docs/vke/Limits) of Vital Kubernetes Engine (VKE), you need to perform operations by following the solution described in this topic or on the recommended resources. If you need to change your solution, you can consult the Account Manager of the BytePlus.
+
+* Do not use mGPU on GPU resources.
+
+* The complete deployment process may depend on the following BytePlus beta capabilities. In your deployment, apply for beta capabilities that are necessary in your actual business scenarios.
+
+   |**Beta feature/resource** |**Related service** |**Description** |
+   |---|---|---|
+   |High Performance Computing Optimized instance family |[GPU Compute Service](https://www.byteplus.com/en/product/gpu) |The instance families of GPU Compute Service, which provide computing power for AI inference applications.<br><br>In GPU Compute Service, some instance types of the High Performance Computing Optimized instance family and the instance types of the GPU Accelerated instance family are at the beta stage. For example, the ecs.hpcpni3ln instance type, which is required for deploying most AI application templates for ServingKit, is currently at the beta stage. |
+   |GPU Accelerated instance family |||
+   |Capability of mounting nodes to local disks |[Vital Kubernetes Engine](https://www.byteplus.com/en/product/vke) |You can configure the local disk mounting in the VKE cluster. |
+   |EIC |EIC |A high\-performance distributed KV Cache service launched by the BytePlus storage team for large language model (LLM) inference.<br><br>Only some AI application templates support KV Cache. Apply to use this service based on your business requirements and the capabilities supported by the template. |
+
+## Preparations
+
+* You can create a managed heterogeneous computing cluster of VKE in advance or create a cluster when you deploy the model. For details, see [Creating managed heterogeneous computing clusters](https://docs.byteplus.com/en/docs/vke/Creating_a_managed_heterogeneous_computing_cluster).
+
+* Prepare storage for storing model data and application data. Supported cloud storage services includes TOS buckets, Cache FileNAS instances, and EFS instances. You can also use cloud disks on nodes of the VKE cluster where your AI application is deployed.
+
+* (Optional) If you want to expose the service by using API Gateway (APIG), you need to prepare an APIG instance. You can create an APIG instance in advance or when you deploy the model. For details, see [Creating instances](https://docs.byteplus.com/en/docs/apig/Creating_an_instance).
+
+## Procedure
+
+1. Log in to the [VKE console](https://console.byteplus.com/vke).
+
+2. In the left navigation bar, click **ServingKit \> AI application templates**.
+
+3. On the **ServingKit AI application templates** page, move the pointer over **LLM General Template** and click **Deploy**.
+
+4. On the **Deploy** page, specify the parameters of the model.
+
+   |**Parameter** |**Description** |
+   |---|---|
+   |**Select framework and orchestration** ||
+   |Selected templates |It displays the **LLM General Template** that you have selected. |
+   |Image |The image of the inference engine. The following image types are supported:<br><br><br>* **Preset**: Select a ServingKit **preset** image and use the **Advanced filter** feature to view different inference engine models that ServingKit provides for different production environments. Select an image based on your business requirements.<br><br>* **Custom**: Enter the third\-party image address or CR image address. Subsequently, you need to configure the start command, model path configuration, and other settings for the custom image. |
+   |Inference engine |This parameter is displayed after **Custom** is selected for the **Image** parameter.<br><br>Select an inference engine for your AI application. The following inference engines and frameworks are supported:<br><br><br>* **sglang**: Open\-source LLM inference framework. It is applicable to complex control‑flow scenarios such as agents, multi‑step references, and JSON/regex‑constrained generation. It provides an efficient and reliable service deployment mode for text‑to‑text models.<br><br>* **vllm**: Open\-source LLM inference engine. It is applicable to online services requiring high throughput (such as chatbots and content summarization), enterprise\-level LLM service deployment, real\-time conversation systems, and large\-scale text generation scenarios.<br><br>* **comfyui\-openvefuser**: The self\-developed AIGC inference acceleration add\-on of BytePlus. It seamlessly integrates with the ComfyUI ecosystem and is applicable to text\-to\-image and text\-to\-video tasks in the AIGC field. For details about the add\-on, see [BytePlus Enhanced Edition of the ComfyUI add-on](https://docs.byteplus.com/en/docs/vke/Servingkit_overview?lang=en#7H7gF9CV).<br><br>* **openvefuser**: The self\-developed general\-purpose AIGC inference add\-on of BytePlus. It can be deployed independently or integrated as an add\-on with ComfyUI to provide efficient inference services for multimodal models. For details about the add\-on, see [Openvefuser add-on](https://docs.byteplus.com/en/docs/vke/Servingkit_overview?lang=en#obHV9sLB). |
+   |Model configuration |Configure the model settings for the AI application:<br><br><br>* **StorageClass type**: Select the storage service used to store model data. The following options are supported:<br><br>   * **TOS**: Use TOS to store model data. You also need to specify a bucket. For details, see [Creating buckets](https://docs.byteplus.com/en/docs/tos/docs-create-a-bucket). <br><br>   * **Data volume**: Use a data volume on a node of the VKE cluster to store model data. If the node has local disks, local disks are prioritized. Otherwise, the model data will be downloaded to the EBS data disk.<br><br>   * **Cached NAS**: [Beta] Use Cache FileNAS to store model data. You also need to specify a file system and access point. For details, see [Cache FileNAS](https://docs.byteplus.com/en/docs/nas/Cache-filenas).<br><br>   > **tip**<br>   <br><br>      * > Cache FileNAS instance types are in the beta stage. To use them, contact your BytePlus account manager to apply for beta access.<br>   <br><br>* **Select Models**: Based on your actual requirements, click **Add predefined model** or **Add custom model** and configure the **Storage path** for the model. The data at the **Container mounting path** of the model will be stored in this storage path. The description of the preset model and the custom model is as follows:<br><br>   * **Preset model**: The preset model provided by ServingKit. Select the target preset model from the drop\-down list, and configure a storage path for the model. After using a preset model, you can use the model in your current application without manually downloading the model on the node.<br><br>   * **Custom model**: Use your prepared model to create an application, and configure a storage path for the custom model. Subsequently, you need to download your custom model to your node. For details, see [FAQ](https://docs.byteplus.com/en/docs/vke/LLM_FAQ).<br><br>* **AK & SK**: This setting is required for using TOS to store data. Enter the BytePlus access key, which is used by VKE to access your TOS resources.  It is recommended to use the access key of an IAM user with minimal permissions required to access the involved files.  For information on how to obtain an access key ID and secret access key, see [Managing access keys](https://docs.byteplus.com/en/docs/byteplus-platform/docs-managing-an-accesskey). |
+   |**Application configuration** ||
+   |Application name |Set an application name that complies with the on\-screen naming requirements and a description. You can also use the automatically generated name. |
+   |Inference mode |Select the inference mode for the AI application. You can select the **PD co\-location** or **PD disaggregation** mode. For details, see [Terms](https://docs.byteplus.com/en/docs/vke/Servingkit_overview#gbZqhB2i). |
+   |**Instance configuration**<br><br>> **warning**<br><br><br><br>* > If **PD disaggregation** is selected for **Inference mode**, apply the following **instance configuration** respectively to **Prefill** and **Decode**.<br><br><br>* > In PD disaggregation inference mode, you can also configure instances for model\-gateway, which functions as a high\-performance request router and load balancer in the PD disaggregation architecture by clicking the plus sign (`+`).<br> ||
+   |Instance specification |Instances are the entities that implement inference models. Set the **Number of instances** and **Single instance GPUs** for running the inference model as needed. |
+   |RDMA settings |You can select **Enable RDMA network** to achieve interconnection between instances through high\-speed RDMA networks and improve communication efficiency.<br><br>After enabling the RDMA network, you can click the ![图片](https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_b4ea1311d39bf75b2730341f9bebec63.png)icon to enter the number of RDMA cards, or leave it blank. The system will automatically specify the number based on the value of **Resource configuration**. We recommend automatic calculation by the system​.<br><br>> **tip**<br><br><br>> In the Prefill and Decode phases, the RDMA network is enabled, and the model\-gateway is disabled by default. You can modify the configurations based on your business requirements.<br> |
+   |Resource configuration |Select a managed VKE  cluster for heterogeneous computing to deploy the model application. Prepare the resources in a preferred way:<br><br><br>* **Select existing**: Select a created managed heterogeneous computing cluster of VKE and select the resources of the cluster, such as the namespace and the node pool, based on on\-screen prompts.<br><br>* **Automatically create**: When you deploy the model, you can create a custom managed heterogeneous computing cluster of VKE. For a detailed parameter description, see [Creating managed heterogeneous computing clusters](https://docs.byteplus.com/en/docs/vke/Creating_a_managed_heterogeneous_computing_cluster).<br><br><br>> **warning**<br><br><br><br>* > If you select **Enable RDMA network**, you need to select a node pool with the **GPU Accelerated** specification. Only this node type supports interconnections through a high\-speed RDMA network.<br><br><br>* > If you use existing managed clusters for heterogeneous computing and use TOS storage for the current model application, make sure that csi\-fsx and fsx\-service add\-ons are installed in the clusters. TOS storage can be mounted to containers only via FSX. You can follow the on\-screen prompts to navigate to the **Addons** page of the corresponding cluster and install the add\-ons. For details, see [csi\-fsx](https://docs.byteplus.com/en/docs/vke/csi-fsx-add-on) and [fsx\-service](https://docs.byteplus.com/en/docs/vke/fsx-service-add-on).<br> |
+   |Start command |Set the start script and port number for the LLM application. |
+   |More configurations |* **Health check**: Configure health checking for the AI application as needed. You can specify the **Liveness check**, **Ready check**, and **Start check** parameters. You can test whether workloads are normal by using an HTTP, TCP, gRPC, or command check.<br><br>* **Environment variables**: Create environment variables. Environment variables are injected into the container during application deployment.<br><br>* **Privileged container**: After you enable this feature, privileged containers deployed on Linux systems can control the network stack or access devices on hosts.<br><br>* **KV Cache**: The data caching mechanism of the AI application. ServingKit supports high\-performance distributed KV cache based on EIC. |
+   |**Service configuration** ||
+   |API Gateway |If you want to configure Ingress by using APIG to process inbound traffic to the model, **enable** APIG and select the target APIG instance.<br><br><br>* **Select existing**: Use an existing APIG instance as the route for the current application. You can also click **Create API Gateway instances** to go to the [APIG console](https://console.byteplus.com/veapig) to create a custom instance. For details, see [Creating instances](https://docs.byteplus.com/en/docs/apig/Creating_an_instance).<br><br>* **Automatically create**: When you deploy the AI application, an APIG instance with fixed instance specifications and configurations is automatically created by ServingKit. A newly created APIG instance will incur fees. For details, see [APIG service billing](https://docs.byteplus.com/en/docs/apig/Billing_overview).<br><br><br>> **tip**<br><br><br>> When you use an existing APIG instance to expose the model service in the cluster, take note of the following parameter or feature configurations:<br><br><br><br>* > **Region**: It needs to be consistent with the region of the AI application.<br><br><br>* > **Circuit breaking**: When some GPU instances malfunction, the common method is to take the faulty instances offline to eliminate failures. At the same time, it is necessary to retain the faulty instances for troubleshooting later. You can isolate the faulty instances by configuring a circuit breaking rule for the APIG instance. For details, see [Circuit breaking policies](https://docs.byteplus.com/en/docs/apig/Circuit_breaking_policy).<br> |
+   |Intelligent routing |Enable it to use AI Gateway to distribute inference traffic. The [AI Gateway](https://docs.byteplus.com/en/docs/apig/What_is_the_AI_Gateway) provides a standardized interface for calls to different models, improving the availability and observability of model calls. |
+   |**More configuration** ||
+   |Update policy |The update policy is enabled by default.  It follows the InPlaceUpdate policy, which performs in\-place updates. The InPlaceUpdate policy allows you to directly update the existing RoleSet. During the update, additional GPU resources are not used. |
+   |Model download |Select the model download method. The model will be automatically downloaded to all nodes in the node pool for the application. For the descriptions of related terms, see [Terms](https://docs.byteplus.com/en/docs/vke/Servingkit_overview#gbZqhB2i). |
+
+5. Click **Confirm** to complete the configuration.
+
+   Please wait patiently as the application creation takes approximately 15 to 20 minutes. You can also click **Back to AI application list** to view the application status, or click **Go to AI application template** to view AI application template details or create another AI application.
+
+## What to do next
+
+After you deploy the AI application, you can manage, view, and use the AI model application on the **List of AI applications** page. For details, see the following documentation:
+
+* [Managing and using AI applications](https://docs.byteplus.com/en/docs/vke/Managing_and_using_AI_applications)
+
+* [AI application observability](https://docs.byteplus.com/en/docs/vke/AI_application_observability)

@@ -1,0 +1,76 @@
+# BytePlus Messaging
+
+54 pages. Source: https://docs.byteplus.com/en/docs/byteplus-sms
+
+Back to the [full index](../README.md).
+
+- **Advanced Functions**
+  - [Sending bulk text messages](Advanced Functions/Sending bulk text messages.md)
+  - [Short Link](Advanced Functions/Short Link.md)
+  - [Splitting bill](Advanced Functions/Splitting bill.md)
+  - **Security & Protection**
+    - [Anti-fraud settings](Advanced Functions/Security & Protection/Anti-fraud settings.md)
+    - [Blocklist](Advanced Functions/Security & Protection/Blocklist.md)
+    - [Encrypting mobile numbers](Advanced Functions/Security & Protection/Encrypting mobile numbers.md)
+    - [Frequency control](Advanced Functions/Security & Protection/Frequency control.md)
+- **Getting Started with BytePlus Messaging**
+  - [Activating BytePlus Messaging](Getting Started with BytePlus Messaging/Activating BytePlus Messaging.md)
+  - [BytePlus SMS Service Public Knowledge Base](Getting Started with BytePlus Messaging/BytePlus SMS Service Public Knowledge Base.md)
+  - [Getting started with SMS](Getting Started with BytePlus Messaging/Getting started with SMS.md)
+  - [Getting started with WhatsApp](Getting Started with BytePlus Messaging/Getting started with WhatsApp.md)
+  - [Material management](Getting Started with BytePlus Messaging/Material management.md)
+  - [Message group](Getting Started with BytePlus Messaging/Message group.md)
+  - [Messaging template](Getting Started with BytePlus Messaging/Messaging template.md)
+  - [Sending records](Getting Started with BytePlus Messaging/Sending records.md)
+  - [Statistics](Getting Started with BytePlus Messaging/Statistics.md)
+- **Integration**
+  - **API Reference**
+    - [API overview](Integration/API Reference/API overview.md)
+    - **APIs**
+      - [ApplySmsTemplate](Integration/API Reference/APIs/ApplySmsTemplate.md)
+      - [CheckSmsVerifyCode](Integration/API Reference/APIs/CheckSmsVerifyCode.md)
+      - [Conversion](Integration/API Reference/APIs/Conversion.md)
+      - [DeleteSmsTemplate](Integration/API Reference/APIs/DeleteSmsTemplate.md)
+      - [GetSmsTemplateAndOrderList](Integration/API Reference/APIs/GetSmsTemplateAndOrderList.md)
+      - [GetSubAccountDetail](Integration/API Reference/APIs/GetSubAccountDetail.md)
+      - [GetSubAccountList](Integration/API Reference/APIs/GetSubAccountList.md)
+      - [SendBatchSms](Integration/API Reference/APIs/SendBatchSms.md)
+      - [SendSms](Integration/API Reference/APIs/SendSms.md)
+      - [SendSmsVerifyCode](Integration/API Reference/APIs/SendSmsVerifyCode.md)
+    - **OpenAPIs**
+      - [ApplySmsTemplate](Integration/API Reference/OpenAPIs/ApplySmsTemplate.md)
+      - [CreateSubAccount](Integration/API Reference/OpenAPIs/CreateSubAccount.md)
+      - [DeleteSmsTemplate](Integration/API Reference/OpenAPIs/DeleteSmsTemplate.md)
+      - [GetSmsTemplateAndOrderDetail](Integration/API Reference/OpenAPIs/GetSmsTemplateAndOrderDetail.md)
+      - [GetSmsTemplateAndOrderList](Integration/API Reference/OpenAPIs/GetSmsTemplateAndOrderList.md)
+      - [GetSubAccountDetail](Integration/API Reference/OpenAPIs/GetSubAccountDetail.md)
+      - [GetSubAccountList](Integration/API Reference/OpenAPIs/GetSubAccountList.md)
+      - [OpenAPI for messaging](Integration/API Reference/OpenAPIs/OpenAPI for messaging.md)
+    - **OpenAPIs 2.0**
+      - [Send messaging](Integration/API Reference/OpenAPIs 2.0/Send messaging.md)
+  - **SDK Integration**
+    - [Go quickstart](Integration/SDK Integration/Go quickstart.md)
+    - [Java quickstart](Integration/SDK Integration/Java quickstart.md)
+    - [PHP quickstart](Integration/SDK Integration/PHP quickstart.md)
+    - [Python quickstart](Integration/SDK Integration/Python quickstart.md)
+    - [SDK integration overview](Integration/SDK Integration/SDK integration overview.md)
+  - **Webhook Reference**
+    - [Enabling webhook](Integration/Webhook Reference/Enabling webhook.md)
+    - [SMS webhook](Integration/Webhook Reference/SMS webhook.md)
+    - **Whatsapp webhook**
+      - [WhatsApp incoming message notification](Integration/Webhook Reference/Whatsapp webhook/WhatsApp incoming message notification.md)
+      - [WhatsApp message status delivery notification](Integration/Webhook Reference/Whatsapp webhook/WhatsApp message status delivery notification.md)
+      - [WhatsApp template status notification](Integration/Webhook Reference/Whatsapp webhook/WhatsApp template status notification.md)
+- **Overview of Byteplus Messaging**
+  - [What is BytePlus Messaging](Overview of Byteplus Messaging/What is BytePlus Messaging.md)
+  - **SMS overview**
+    - [Basic concepts in SMS](Overview of Byteplus Messaging/SMS overview/Basic concepts in SMS.md)
+    - [What is SMS](Overview of Byteplus Messaging/SMS overview/What is SMS.md)
+  - **WhatsApp overview**
+    - [What is Whatsapp](Overview of Byteplus Messaging/WhatsApp overview/What is Whatsapp.md)
+- **Permission management**
+  - [Permission management](Permission management/Permission management.md)
+  - [Project management](Permission management/Project management.md)
+- **Pricing**
+  - [SMS pricing](Pricing/SMS pricing.md)
+  - [Whatsapp pricing](Pricing/Whatsapp pricing.md)

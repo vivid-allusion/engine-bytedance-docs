@@ -1,0 +1,206 @@
+---
+title: "Data Output"
+product: "DataWind"
+product_code: "DataWind"
+source: "https://docs.byteplus.com/en/docs/DataWind/Data_Outputs"
+---
+
+<span id="_1-概述"></span>
+# 1. Overview
+
+Data output refers to the stage of outputting and saving data during the process of creating a visual modeling task. After completing data input and data processing, it is necessary to save the task results as a dataset for subsequent visual queries, presentation, and more.
+
+<span id="_2-功能介绍"></span>
+# 2. Feature overview
+
+<span id="_2-1-输出方式选择"></span>
+## 2.1 Output dataset
+
+In the visual modeling editing interface, click the Add Operator button, and in the output type section, click to select the first **Output Dataset** .
+
+<div style="text-align: center">
+<img src="https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/ba3da634414842648f1567c65ea09d59~tplv-goo7wpa0wc-image.image" width="610px" /></div>
+
+
+For modeling tasks where each node has already been processed, you can create a new dataset or write into an existing dataset in the "Output Dataset" section at the bottom of the task interface.
+
+<div style="text-align: center">
+<img src="https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/a3839ec6d3eb48bfbfbddd6c65e6eb62~tplv-goo7wpa0wc-image.image" width="610px" /></div>
+
+
+
+* To create a new dataset, you need to enter the dataset name and dataset description.
+
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/1710be70b6d74ec99664163060779bbc~tplv-goo7wpa0wc-image.image) </span>
+
+
+* The output node of visual modeling supports field correction. When there is a compatibility issue between the field format of the upstream node and the field format of the target storage, you can click one\-click correction. After clicking, a [Field Settings] operator will be added before the current node, and the correction will be performed automatically.
+
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/3e771e131cc242fcbb85ea5c725390bb~tplv-goo7wpa0wc-image.image) </span>
+
+
+* Database selection: The system supports the bytehouse storage method, and you can select configuration items as needed. For detailed feature explanations, click the question mark to view.
+
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/5c8ad39dc4c84fd6a9d8208adaf3b808~tplv-goo7wpa0wc-image.image) </span>
+
+<span id="_2-2-依赖配置"></span>
+## 2.2 Dependency configuration
+
+This product provides users with flexible task scheduling dependency configuration capabilities. Scheduling dependencies usually refer to the upstream and downstream dependencies between periodic scheduling nodes during data synchronization and data development processes. By configuring the dependencies between nodes, tasks can be scheduled to run upstream and downstream nodes in order. That is, after the upstream node runs successfully, the downstream node will start running, ensuring the timely production of valid business data.
+
+The dependency configuration of this product provides two main methods: automatic detection of whether upstream data is produced and custom dependency configuration. This section provides a detailed introduction to these two methods. Enable users to establish dependencies on data sources, so that when a data source is updated or run, the execution of the current visual modeling task is triggered.
+
+
+* **Configuration methods**: There are two types: automatic system configuration and custom configuration.
+
+* **Note**: To use third\-party API configuration, you must first configure the API in the task management module under system management, and then complete dependency configuration for task scheduling in the dependency configuration module for visual modeling and datasets.
+
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/1c9aeccdde7d4961af9e980b404b3700~tplv-goo7wpa0wc-image.image) </span>
+
+<span id="_2-2-1-系统自动构建数据源分区探测任务"></span>
+### 2.2.1 System automatic construction of data source partition detection tasks
+
+
+* **Usage restrictions:**  Only supports certain partitioned data sources (Hive/MaxCompute/LAS) and partition tables. \*\*\*LAS in *SaaS environments currently only supports built\-in data connections and does not support custom connections*
+
+* **Special note:**  To avoid inaccurate dependencies caused by incomplete data output during partition detection, please complete data output before building partitions.
+
+
+ **(1) Automatic system configuration**
+
+For Hive, MaxCompute, and LAS data sources, the system can automatically obtain upstream dependency information and display it.
+
+**Note:**  After the system wakes up the Sensor task at the scheduled time, it checks every 5 minutes whether the specified partition table of the data source has been generated. If it has been generated, the current task will be executed immediately. If the partition is not produced for more than 50 hours, the Sensor task will be marked as failed.
+
+> Sensor task definition: Sensor tasks mainly refer to scheduled tasks generated by the system script to detect partitions, not the current task. For user settings, the system will automatically **detect** and **check** whether the required partition table for the task exists in the user's data source. If it exists, it means that the upstream data preparation is complete and downstream data can be started.
+
+
+Based on the type of node table data source and project space that are dragged in, if the system matches dependency rules, the interface will automatically recommend the system auto\-configuration dependency.
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/02a17eeafe9843f29b75e90b33ea987a~tplv-goo7wpa0wc-image.image) </span>
+
+ **(2) Custom configuration**
+
+This product also allows users to modify dependency offsets and add dependencies through custom configuration. The specific steps are as follows:
+
+**Step 1**: Click Custom Configuration, then click "Add Dependency" to open the configuration interface. In this interface, you can click Variable Description to view tips related to dynamic time, or enter a table name to search and view.
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/e8f2d3835f7f4015a07e3f132dab4a1c~tplv-goo7wpa0wc-image.image) </span>
+
+**Step 2**: Click "Create System Custom Dependency" to open the detailed configuration window. At this point, you need to fill in the information shown in the figure below:
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/c13be631672f4007902dbc15ec71ab85~tplv-goo7wpa0wc-image.image) </span>
+
+**Step 3**: After clicking OK, the custom dependency configuration is successfully completed.
+
+<span id="_2-2-2-三方api依赖"></span>
+### 2.2.2 Third\-party API dependencies
+
+If there is already a scheduling platform for data development or data processing tasks within the enterprise, and it can be configured according to this product's API specifications, integration and linkage with this product can be achieved to establish task status dependencies for the scheduling platform.
+
+
+* **Special note:**  All data sources supported for extraction by this product also support building API dependencies.
+
+
+ **(1) Create an API task dependency**
+
+In System Management \- Task Management, create a new API task dependency. [See details](https://www.volcengine.com/docs/4726/65282).
+
+ **(2) System automatic configuration**
+
+For data sources covered by the API dependency rules created by the user, the system can automatically obtain and display the upstream configured dependency information.
+
+**Note:**  After the system wakes up the Sensor task at the scheduled time, it checks every 5 minutes whether the specified partition table of the data source has been generated. If it has been generated, the current task will be executed immediately. If the partition has not been produced for more than 50 hours, the Sensor task will be marked as failed.
+
+Based on the data source type of the dragged node table and the project space, if the system matches a dependency rule, the interface will automatically recommend a "System Automatic Configuration" dependency.
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/bcb0f6c4e412497aa6e3f80a912bff4a~tplv-goo7wpa0wc-image.image) </span>
+
+ **(3) Custom configuration**
+
+This product also allows users to modify dependency offsets and add dependencies through custom configuration. The specific steps are as follows:
+
+**Step 1:**  Click Custom Configuration, then click "Add Dependency" to open the configuration interface. In this interface, you can click Variable description to view tips related to dynamic time, or enter a table name to search for and view it.
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/4524eaa41bbf401c8f84ff71a0257d50~tplv-goo7wpa0wc-image.image) </span>
+
+**Step 2:**  Click "Create System Custom Dependency" to open the specific configuration window. At this point, you need to fill in the content shown in the following figure:
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/5c3d9fca572f4c83ac137ef04c29e964~tplv-goo7wpa0wc-image.image) </span>
+
+**Step 3:**  After clicking OK, the custom dependency is configured successfully.
+
+<span id="_2-2-3-其他情况"></span>
+### 2.2.3 Other scenarios
+
+**Scenario 1**
+
+If there is already a scheduling platform for data development or data processing tasks within the enterprise, users can also choose to manually run tasks based on the status of relevant tasks in their own scheduling platform.
+
+**Special note:**  Users need to specify the specific task ID, and if the original task is a manually executed task, users can trigger manual execution through OpenAPI.
+
+
+* First, set the task update method to manual run.
+
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/e0bf1d8d6d6a44938ed9d314bc1f43f6~tplv-goo7wpa0wc-image.image) </span>
+
+
+* Second, locate the task ID and project ID (Appid). The task URL contains both the task ID and project ID.
+
+> Project refers to the project space of this product.
+
+
+<span>![图片](https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_66975505664d0352c526e273a788e746.png) </span>
+
+
+* Finally, users can run the task by manually triggering the interface.
+
+
+**Scenario 2**
+
+If the user's data development or data task management scheduling platform cannot be configured in this product's task management via the standard API method, it is necessary to develop and configure an interface through an intermediate layer. Then, this product can adapt to build task dependencies. For this scenario, we recommend that enterprises adopt the ISV development service approach. For specific solutions, please consult BytePlus staff.
+
+<span id="_2-3-高级配置"></span>
+## 2.3 Advanced configuration
+
+For HIVE data sources, you need to select the execution queue and the execution priority within the queue for the dataset. After selecting a queue, the corresponding HIVE query will be executed on the specified queue before importing the dataset. The choice of queue affects the synchronization duration of the dataset, but does not affect the visual query results.
+
+**Runtime parameters:**  Supports configuring runtime parameters for dataset synchronization as needed to ensure successful synchronization or optimal performance, and so on. For details, see: [Extraction Parameters](https://docs.byteplus.com/docs/DataWind/110019)
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/f6115f43aa844bd080258401087b000b~tplv-goo7wpa0wc-image.image) </span>
+
+<span id="_2-4-监控配置"></span>
+## 2.4 Monitoring configuration
+
+**Prerequisites:**  Notification methods require [Office platform integration](https://docs.byteplus.com/docs/undefined/69c349c050cba904c1f628f7) to be configured in advance before they can be set.
+
+**Alert conditions:**  Supports adding monitoring alerts to promptly notify relevant users in the event of dataset synchronization anomalies. Multiple alert rules can be configured. The system provides three types of alert conditions
+
+
+* Failure alert: A notification message is triggered if dataset synchronization fails
+
+* Timeout alert: Supports selecting from three types of timeout definitions
+
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/de741a2071f34aff82969b1949f78e86~tplv-goo7wpa0wc-image.image) </span>
+
+
+* Result anomaly alert: Monitors the number of data rows and triggers an alert when the row count is abnormal. Commonly used in the following scenarios:
+
+   * To prevent synchronization anomalies or upstream data anomalies that result in no synchronized data: Set an alert when the number of data rows = 0
+
+   * When upstream data is updated multiple times, to prevent incomplete synchronized data: Set an alert when the number of data rows is less than the expected row count. For example, if the expected dataset synchronizes 100,000 rows daily, and less than 80,000 rows indicates possible incomplete data, set an alert when the number of data rows is less than 80,000
+
+   * Percentage difference alert: To monitor changes in the number of data rows in a timely manner, set a percentage difference compared to the previous day, the same period last week, the same period last month, or the average of the previous seven days. For example, if the percentage difference (compared to the previous day) is set to 10%, an alert is triggered when the number of data rows changes by more than 10% compared to the previous day
+
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/9aa05ca91a254790b27a3da102c81cd4~tplv-goo7wpa0wc-image.image) </span>
+
+Notification methods: Supports alerts via email, Lark, WebEx, DingTalk, WeCom, email groups, and Lark groups.
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/2deb9810ae344e529438b071865533b2~tplv-goo7wpa0wc-image.image) </span>

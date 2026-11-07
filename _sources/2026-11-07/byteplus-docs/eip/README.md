@@ -1,0 +1,92 @@
+# Elastic IP Address
+
+68 pages. Source: https://docs.byteplus.com/en/docs/eip
+
+Back to the [full index](../README.md).
+
+- [New feature release notes](New feature release notes.md)
+- **API Reference**
+  - [API overview](API Reference/API overview.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [Overview](API Reference/Overview.md)
+  - **Call method**
+    - [Common error codes](API Reference/Call method/Common error codes.md)
+    - [Common parameters](API Reference/Call method/Common parameters.md)
+    - [Request structure](API Reference/Call method/Request structure.md)
+    - [Response examples](API Reference/Call method/Response examples.md)
+    - [Signature method](API Reference/Call method/Signature method.md)
+  - **EIP API**
+    - [AllocateEipAddress - Applying for an EIP](API Reference/EIP API/AllocateEipAddress - Applying for an EIP.md)
+    - [AssociateEipAddress - Associating an EIP](API Reference/EIP API/AssociateEipAddress - Associating an EIP.md)
+    - [DescribeEipAddressAttributes](API Reference/EIP API/DescribeEipAddressAttributes.md)
+    - [DescribeEipAddresses](API Reference/EIP API/DescribeEipAddresses.md)
+    - [DisassociateEipAddress](API Reference/EIP API/DisassociateEipAddress.md)
+    - [ModifyEipAddressAttributes](API Reference/EIP API/ModifyEipAddressAttributes.md)
+    - [ReleaseEipAddress](API Reference/EIP API/ReleaseEipAddress.md)
+  - **IP Address Pool API**
+    - [AddIpAddressPoolCidrBlock](API Reference/IP Address Pool API/AddIpAddressPoolCidrBlock.md)
+    - [CreateIpAddressPool](API Reference/IP Address Pool API/CreateIpAddressPool.md)
+    - [DeleteIpAddressPool](API Reference/IP Address Pool API/DeleteIpAddressPool.md)
+    - [DeleteIpAddressPoolCidrBlock](API Reference/IP Address Pool API/DeleteIpAddressPoolCidrBlock.md)
+    - [DescribeIpAddressPoolAttributes](API Reference/IP Address Pool API/DescribeIpAddressPoolAttributes.md)
+    - [DescribeIpAddressPoolCidrBlocks](API Reference/IP Address Pool API/DescribeIpAddressPoolCidrBlocks.md)
+    - [DescribeIpAddressPools](API Reference/IP Address Pool API/DescribeIpAddressPools.md)
+    - [ModifyIpAddressPoolAttributes](API Reference/IP Address Pool API/ModifyIpAddressPoolAttributes.md)
+- **Best Practices**
+  - [Achieving Internet access via EIP](Best Practices/Achieving Internet access via EIP.md)
+- **Billing**
+  - [Arrears](Billing/Arrears.md)
+  - [Billing conversion](Billing/Billing conversion.md)
+  - [Billing overview](Billing/Billing overview.md)
+  - [Expiration](Billing/Expiration.md)
+  - [Renewal](Billing/Renewal.md)
+  - [Specification changes](Billing/Specification changes.md)
+  - [Unsubscription](Billing/Unsubscription.md)
+  - **Billing methods**
+    - [Pay-as-you-go](Billing/Billing methods/Pay-as-you-go.md)
+    - [Subscription](Billing/Billing methods/Subscription.md)
+- **FAQ**
+  - [Bandwidth FAQs](FAQ/Bandwidth FAQs.md)
+  - [Billing FAQs](FAQ/Billing FAQs.md)
+  - [Elastic IP Address FAQs](FAQ/Elastic IP Address FAQs.md)
+- **Getting Started**
+  - [Applying for an EIP and associating an ECS](Getting Started/Applying for an EIP and associating an ECS.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Benefits](Overview/Benefits.md)
+  - [Limits](Overview/Limits.md)
+  - [Regions](Overview/Regions.md)
+  - [What is Elastic IP Address](Overview/What is Elastic IP Address.md)
+- **Terms**
+  - [BytePlus Elastic IP_Service Level Agreement _EIP](Terms/BytePlus Elastic IP_Service Level Agreement _EIP.md)
+  - [Service-Specific Terms for BytePlus Elastic IP](Terms/Service-Specific Terms for BytePlus Elastic IP.md)
+- **User Guide**
+  - **Bandwidth Package**
+    - [Adding to a Bandwidth Package](User Guide/Bandwidth Package/Adding to a Bandwidth Package.md)
+    - [Bandwidth Package overview](User Guide/Bandwidth Package/Bandwidth Package overview.md)
+    - [Removing from a Bandwidth Package](User Guide/Bandwidth Package/Removing from a Bandwidth Package.md)
+  - **EIP**
+    - [Applying for a specified EIP](User Guide/EIP/Applying for a specified EIP.md)
+    - [Applying for an EIP](User Guide/EIP/Applying for an EIP.md)
+    - [Associating a cloud resource](User Guide/EIP/Associating a cloud resource.md)
+    - [Configuring EIP Direct](User Guide/EIP/Configuring EIP Direct.md)
+    - [Disassociating a cloud resource](User Guide/EIP/Disassociating a cloud resource.md)
+    - [Modifying the maximum bandwidth](User Guide/EIP/Modifying the maximum bandwidth.md)
+    - [Releasing an EIP](User Guide/EIP/Releasing an EIP.md)
+    - [Transferring an EIP](User Guide/EIP/Transferring an EIP.md)
+  - **Identity and Access Management**
+    - [Custom policy examples for Elastic IP Address](User Guide/Identity and Access Management/Custom policy examples for Elastic IP Address.md)
+    - [Custom policy examples for IP Address Pool](User Guide/Identity and Access Management/Custom policy examples for IP Address Pool.md)
+    - [IAM overview](User Guide/Identity and Access Management/IAM overview.md)
+    - [IAM policy types for Elastic IP Address](User Guide/Identity and Access Management/IAM policy types for Elastic IP Address.md)
+    - [IAM policy types for IP Address Pool](User Guide/Identity and Access Management/IAM policy types for IP Address Pool.md)
+  - **IP Address Pool**
+    - [Creating an IP address pool](User Guide/IP Address Pool/Creating an IP address pool.md)
+    - [IP Address Pool overview](User Guide/IP Address Pool/IP Address Pool overview.md)
+    - [Managing an IP address pool](User Guide/IP Address Pool/Managing an IP address pool.md)
+  - **Monitoring**
+    - [Configuring an alert policy](User Guide/Monitoring/Configuring an alert policy.md)
+    - [Viewing monitoring data](User Guide/Monitoring/Viewing monitoring data.md)
+  - **Projects and Tags**
+    - [Project management](User Guide/Projects and Tags/Project management.md)
+    - [Tag management](User Guide/Projects and Tags/Tag management.md)

@@ -1,0 +1,282 @@
+# BytePlus DNS Suite
+
+212 pages. Source: https://docs.byteplus.com/en/docs/byteplus-dns-suite
+
+Back to the [full index](../README.md).
+
+- **Access and Resource Management**
+  - [Access and Resource Management](Access and Resource Management/Access and Resource Management.md)
+- **BytePlus DNS**
+  - **API Reference**
+    - [API List](BytePlus DNS/API Reference/API List.md)
+    - [API Release Notes](BytePlus DNS/API Reference/API Release Notes.md)
+    - [Common Error Codes](BytePlus DNS/API Reference/Common Error Codes.md)
+    - [How to Call an API](BytePlus DNS/API Reference/How to Call an API.md)
+    - **DNS Backup APIs**
+      - [CreateUserZoneBackup](BytePlus DNS/API Reference/DNS Backup APIs/CreateUserZoneBackup.md)
+      - [DeleteUserZoneBackup](BytePlus DNS/API Reference/DNS Backup APIs/DeleteUserZoneBackup.md)
+      - [ListUserZoneBackups](BytePlus DNS/API Reference/DNS Backup APIs/ListUserZoneBackups.md)
+      - [QueryBackupSchedule](BytePlus DNS/API Reference/DNS Backup APIs/QueryBackupSchedule.md)
+      - [RestoreUserZoneBackup](BytePlus DNS/API Reference/DNS Backup APIs/RestoreUserZoneBackup.md)
+      - [UpdateBackupSchedule](BytePlus DNS/API Reference/DNS Backup APIs/UpdateBackupSchedule.md)
+    - **DNS Query Metrics APIs**
+      - [ListDomainStatistics](BytePlus DNS/API Reference/DNS Query Metrics APIs/ListDomainStatistics.md)
+      - [ListZoneStatistics](BytePlus DNS/API Reference/DNS Query Metrics APIs/ListZoneStatistics.md)
+    - **Domain APIs**
+      - [CheckRetrieveZone](BytePlus DNS/API Reference/Domain APIs/CheckRetrieveZone.md)
+      - [CheckZone](BytePlus DNS/API Reference/Domain APIs/CheckZone.md)
+      - [CreateZone](BytePlus DNS/API Reference/Domain APIs/CreateZone.md)
+      - [DeleteZone](BytePlus DNS/API Reference/Domain APIs/DeleteZone.md)
+      - [ListZones](BytePlus DNS/API Reference/Domain APIs/ListZones.md)
+      - [QueryZone](BytePlus DNS/API Reference/Domain APIs/QueryZone.md)
+      - [RetrieveZone](BytePlus DNS/API Reference/Domain APIs/RetrieveZone.md)
+      - [UpdateZone](BytePlus DNS/API Reference/Domain APIs/UpdateZone.md)
+    - **IP-based Line APIs**
+      - [BatchDeleteCustomLine](BytePlus DNS/API Reference/IP-based Line APIs/BatchDeleteCustomLine.md)
+      - [CreateCustomLine](BytePlus DNS/API Reference/IP-based Line APIs/CreateCustomLine.md)
+      - [ListCustomLines](BytePlus DNS/API Reference/IP-based Line APIs/ListCustomLines.md)
+      - [ListRecordDigestByLine](BytePlus DNS/API Reference/IP-based Line APIs/ListRecordDigestByLine.md)
+      - [UpdateCustomLine](BytePlus DNS/API Reference/IP-based Line APIs/UpdateCustomLine.md)
+    - **Line APIs**
+      - [ListLines](BytePlus DNS/API Reference/Line APIs/ListLines.md)
+    - **Record APIs**
+      - [CreateRecord](BytePlus DNS/API Reference/Record APIs/CreateRecord.md)
+      - [DeleteRecord](BytePlus DNS/API Reference/Record APIs/DeleteRecord.md)
+      - [ListRecords](BytePlus DNS/API Reference/Record APIs/ListRecords.md)
+      - [QueryRecord](BytePlus DNS/API Reference/Record APIs/QueryRecord.md)
+      - [UpdateRecord](BytePlus DNS/API Reference/Record APIs/UpdateRecord.md)
+      - [UpdateRecordStatus](BytePlus DNS/API Reference/Record APIs/UpdateRecordStatus.md)
+    - **Record Set APIs**
+      - [ListRecordSets](BytePlus DNS/API Reference/Record Set APIs/ListRecordSets.md)
+      - [UpdateRecordSet](BytePlus DNS/API Reference/Record Set APIs/UpdateRecordSet.md)
+  - **FAQs**
+    - [Troubleshooting FAQs](BytePlus DNS/FAQs/Troubleshooting FAQs.md)
+  - **Getting Started**
+    - [Tutorial Overview](BytePlus DNS/Getting Started/Tutorial Overview.md)
+    - **Activate BytePlus DNS And Add a Domain**
+      - [Activate BytePlus DNS](BytePlus DNS/Getting Started/Activate BytePlus DNS And Add a Domain/Activate BytePlus DNS.md)
+      - [Add a Domain](BytePlus DNS/Getting Started/Activate BytePlus DNS And Add a Domain/Add a Domain.md)
+      - [Configure DNS Servers for Your Domain](BytePlus DNS/Getting Started/Activate BytePlus DNS And Add a Domain/Configure DNS Servers for Your Domain.md)
+    - **Route User Requests to a Website Server**
+      - [Create an A Record and an AAAA Record](BytePlus DNS/Getting Started/Route User Requests to a Website Server/Create an A Record and an AAAA Record.md)
+      - [Verify Whether the DNS Records Are Active](BytePlus DNS/Getting Started/Route User Requests to a Website Server/Verify Whether the DNS Records Are Active.md)
+    - **Route User Requests to CDN**
+      - [Create a CNAME Record](BytePlus DNS/Getting Started/Route User Requests to CDN/Create a CNAME Record.md)
+      - [Verify Whether the DNS Records Are Active](BytePlus DNS/Getting Started/Route User Requests to CDN/Verify Whether the DNS Records Are Active.md)
+    - **Set up an Email Address**
+      - [Create TXT Records and MX Records](BytePlus DNS/Getting Started/Set up an Email Address/Create TXT Records and MX Records.md)
+      - [Verify Whether the DNS Records Are Active](BytePlus DNS/Getting Started/Set up an Email Address/Verify Whether the DNS Records Are Active.md)
+  - **Product Overview**
+    - [Application Scenarios](BytePlus DNS/Product Overview/Application Scenarios.md)
+    - [Basic Concepts](BytePlus DNS/Product Overview/Basic Concepts.md)
+    - [Billing](BytePlus DNS/Product Overview/Billing.md)
+    - [Editions](BytePlus DNS/Product Overview/Editions.md)
+    - [How It Works](BytePlus DNS/Product Overview/How It Works.md)
+    - [What is BytePlus DNS](BytePlus DNS/Product Overview/What is BytePlus DNS.md)
+  - **SDK Reference**
+    - [Calling an API with SDK](BytePlus DNS/SDK Reference/Calling an API with SDK.md)
+  - **User Guide**
+    - [Renew the Paid Edition of Your Domain](BytePlus DNS/User Guide/Renew the Paid Edition of Your Domain.md)
+    - [Transfer DNS Service to BytePlus DNS](BytePlus DNS/User Guide/Transfer DNS Service to BytePlus DNS.md)
+    - [View DNS Query Metrics](BytePlus DNS/User Guide/View DNS Query Metrics.md)
+    - **Batch Operation**
+      - [Batch Create DNS Records](BytePlus DNS/User Guide/Batch Operation/Batch Create DNS Records.md)
+    - **DNS Record Management**
+      - [Avoid Conflicts in DNS Records](BytePlus DNS/User Guide/DNS Record Management/Avoid Conflicts in DNS Records.md)
+      - [Back Up DNS Records](BytePlus DNS/User Guide/DNS Record Management/Back Up DNS Records.md)
+      - [Create DNS Records](BytePlus DNS/User Guide/DNS Record Management/Create DNS Records.md)
+      - [Delete DNS Records](BytePlus DNS/User Guide/DNS Record Management/Delete DNS Records.md)
+      - [DNS-based Load Balancing](BytePlus DNS/User Guide/DNS Record Management/DNS-based Load Balancing.md)
+      - [DNS-based Routing With Lines](BytePlus DNS/User Guide/DNS Record Management/DNS-based Routing With Lines.md)
+      - [Enable or Disable DNS Records](BytePlus DNS/User Guide/DNS Record Management/Enable or Disable DNS Records.md)
+      - [Line Matching Priorities for DNS Queries](BytePlus DNS/User Guide/DNS Record Management/Line Matching Priorities for DNS Queries.md)
+      - [Supported DNS Record Types](BytePlus DNS/User Guide/DNS Record Management/Supported DNS Record Types.md)
+      - [Update DNS Records](BytePlus DNS/User Guide/DNS Record Management/Update DNS Records.md)
+      - **Manage Alias Records**
+        - [Create an Alias record pointing to a CNAME of BytePlus CDN](BytePlus DNS/User Guide/DNS Record Management/Manage Alias Records/Create an Alias record pointing to a CNAME of BytePlus CDN.md)
+        - [What is an Alias Record](BytePlus DNS/User Guide/DNS Record Management/Manage Alias Records/What is an Alias Record.md)
+      - **Manage PTR Records**
+        - [Manage PTR records](BytePlus DNS/User Guide/DNS Record Management/Manage PTR Records/Manage PTR records.md)
+        - [Purchase a PTR record](BytePlus DNS/User Guide/DNS Record Management/Manage PTR Records/Purchase a PTR record.md)
+    - **DNSSEC**
+      - [Disable DNSSEC](BytePlus DNS/User Guide/DNSSEC/Disable DNSSEC.md)
+      - [Enable DNSSEC](BytePlus DNS/User Guide/DNSSEC/Enable DNSSEC.md)
+    - **Domain Management**
+      - [Add a Domain](BytePlus DNS/User Guide/Domain Management/Add a Domain.md)
+      - [Delete a Domain](BytePlus DNS/User Guide/Domain Management/Delete a Domain.md)
+      - [Switch Domains Between DNS Instances](BytePlus DNS/User Guide/Domain Management/Switch Domains Between DNS Instances.md)
+      - [Transfer DNS Ownership to Another BytePlus Account](BytePlus DNS/User Guide/Domain Management/Transfer DNS Ownership to Another BytePlus Account.md)
+      - [Update Domain Remark](BytePlus DNS/User Guide/Domain Management/Update Domain Remark.md)
+      - **One-click CNAME**
+        - [Map Your Domain Name to a CDN CNAME](BytePlus DNS/User Guide/Domain Management/One-click CNAME/Map Your Domain Name to a CDN CNAME.md)
+    - **Import or Export DNS Records**
+      - [Export DNS Records](BytePlus DNS/User Guide/Import or Export DNS Records/Export DNS Records.md)
+      - [Import DNS Records](BytePlus DNS/User Guide/Import or Export DNS Records/Import DNS Records.md)
+      - [Supported Lines](BytePlus DNS/User Guide/Import or Export DNS Records/Supported Lines.md)
+    - **IP-based Line Management**
+      - [Configure DNS Records to Use IP-based lines](BytePlus DNS/User Guide/IP-based Line Management/Configure DNS Records to Use IP-based lines.md)
+      - [Create an IP-based Line](BytePlus DNS/User Guide/IP-based Line Management/Create an IP-based Line.md)
+      - [Delete an IP-based Line](BytePlus DNS/User Guide/IP-based Line Management/Delete an IP-based Line.md)
+      - [Get the Egress IP of User's Local DNS](BytePlus DNS/User Guide/IP-based Line Management/Get the Egress IP of User's Local DNS.md)
+      - [Update an IP-based Line](BytePlus DNS/User Guide/IP-based Line Management/Update an IP-based Line.md)
+      - [What is an IP-based Line](BytePlus DNS/User Guide/IP-based Line Management/What is an IP-based Line.md)
+    - **Line Group Management**
+      - [Associate a Record Set With a Line Group](BytePlus DNS/User Guide/Line Group Management/Associate a Record Set With a Line Group.md)
+      - [Create a Line Group](BytePlus DNS/User Guide/Line Group Management/Create a Line Group.md)
+      - [Delete a Line Group](BytePlus DNS/User Guide/Line Group Management/Delete a Line Group.md)
+      - [Update a Line Group](BytePlus DNS/User Guide/Line Group Management/Update a Line Group.md)
+      - [What is a Line Group](BytePlus DNS/User Guide/Line Group Management/What is a Line Group.md)
+- **BytePlus GTM**
+  - [FAQs](BytePlus GTM/FAQs.md)
+  - **API Reference**
+    - [API List](BytePlus GTM/API Reference/API List.md)
+    - [API Release Notes](BytePlus GTM/API Reference/API Release Notes.md)
+    - [Common Error Codes](BytePlus GTM/API Reference/Common Error Codes.md)
+    - [How to Call an API](BytePlus GTM/API Reference/How to Call an API.md)
+    - **GTM Instance Management APIs**
+      - [DeleteGtm](BytePlus GTM/API Reference/GTM Instance Management APIs/DeleteGtm.md)
+      - [GetGtm](BytePlus GTM/API Reference/GTM Instance Management APIs/GetGtm.md)
+      - [ListGtms](BytePlus GTM/API Reference/GTM Instance Management APIs/ListGtms.md)
+      - [ListQueryStats](BytePlus GTM/API Reference/GTM Instance Management APIs/ListQueryStats.md)
+      - [StartRouting](BytePlus GTM/API Reference/GTM Instance Management APIs/StartRouting.md)
+      - [StopRouting](BytePlus GTM/API Reference/GTM Instance Management APIs/StopRouting.md)
+      - [UpdateGtm](BytePlus GTM/API Reference/GTM Instance Management APIs/UpdateGtm.md)
+    - **Health Check Management**
+      - [GetProbe](BytePlus GTM/API Reference/Health Check Management/GetProbe.md)
+      - [ListProbeTaskIds](BytePlus GTM/API Reference/Health Check Management/ListProbeTaskIds.md)
+      - [ReadProbeTaskDetail](BytePlus GTM/API Reference/Health Check Management/ReadProbeTaskDetail.md)
+      - [UpdateProbe](BytePlus GTM/API Reference/Health Check Management/UpdateProbe.md)
+    - **Policy Management APIs**
+      - [GetPolicy](BytePlus GTM/API Reference/Policy Management APIs/GetPolicy.md)
+      - [UpdatePolicy](BytePlus GTM/API Reference/Policy Management APIs/UpdatePolicy.md)
+    - **Pool Management**
+      - [CreatePool](BytePlus GTM/API Reference/Pool Management/CreatePool.md)
+      - [DeletePool](BytePlus GTM/API Reference/Pool Management/DeletePool.md)
+      - [GetPool](BytePlus GTM/API Reference/Pool Management/GetPool.md)
+      - [ListPools](BytePlus GTM/API Reference/Pool Management/ListPools.md)
+      - [UpdatePool](BytePlus GTM/API Reference/Pool Management/UpdatePool.md)
+    - **Rule Management**
+      - [CreateRule](BytePlus GTM/API Reference/Rule Management/CreateRule.md)
+      - [DeleteRule](BytePlus GTM/API Reference/Rule Management/DeleteRule.md)
+      - [GetRule](BytePlus GTM/API Reference/Rule Management/GetRule.md)
+      - [ListRules](BytePlus GTM/API Reference/Rule Management/ListRules.md)
+      - [UpdateRule](BytePlus GTM/API Reference/Rule Management/UpdateRule.md)
+  - **Best Practices**
+    - [Cross-region Disaster Recovery](BytePlus GTM/Best Practices/Cross-region Disaster Recovery.md)
+    - [Intra-region Disaster Recovery](BytePlus GTM/Best Practices/Intra-region Disaster Recovery.md)
+    - [Load Balancing and Disaster Recovery with BytePlus CDN](BytePlus GTM/Best Practices/Load Balancing and Disaster Recovery with BytePlus CDN.md)
+    - [Traffic Routing and Disaster Recovery with BytePlus ALB](BytePlus GTM/Best Practices/Traffic Routing and Disaster Recovery with BytePlus ALB.md)
+    - [Traffic Routing and Disaster Recovery with BytePlus CLB](BytePlus GTM/Best Practices/Traffic Routing and Disaster Recovery with BytePlus CLB.md)
+  - **Getting Started**
+    - [Configure the GTM Instance (Basic Routing)](BytePlus GTM/Getting Started/Configure the GTM Instance (Basic Routing).md)
+    - [Configure the GTM Instance (Intelligent Routing, Capacity Mode)](BytePlus GTM/Getting Started/Configure the GTM Instance (Intelligent Routing, Capacity Mode).md)
+    - [Configure the GTM Instance (Intelligent Routing, Performance Mode)](BytePlus GTM/Getting Started/Configure the GTM Instance (Intelligent Routing, Performance Mode).md)
+    - [Create an GTM Instance](BytePlus GTM/Getting Started/Create an GTM Instance.md)
+    - [Tutorial Overview](BytePlus GTM/Getting Started/Tutorial Overview.md)
+    - [Validate Traffic](BytePlus GTM/Getting Started/Validate Traffic.md)
+  - **Product Overview**
+    - [Application Scenarios](BytePlus GTM/Product Overview/Application Scenarios.md)
+    - [Basic Concepts](BytePlus GTM/Product Overview/Basic Concepts.md)
+    - [Billing](BytePlus GTM/Product Overview/Billing.md)
+    - [Editions](BytePlus GTM/Product Overview/Editions.md)
+    - [How It Works](BytePlus GTM/Product Overview/How It Works.md)
+    - [What is BytePlus GTM](BytePlus GTM/Product Overview/What is BytePlus GTM.md)
+  - **User Guide**
+    - [Connect Your Domain to BytePlus GTM](BytePlus GTM/User Guide/Connect Your Domain to BytePlus GTM.md)
+    - **Alarms and Notifications**
+      - [Create an Alarm Strategy](BytePlus GTM/User Guide/Alarms and Notifications/Create an Alarm Strategy.md)
+      - [Delete an Alarm Strategy](BytePlus GTM/User Guide/Alarms and Notifications/Delete an Alarm Strategy.md)
+      - [Update an Alarm Strategy](BytePlus GTM/User Guide/Alarms and Notifications/Update an Alarm Strategy.md)
+      - [What Are Alarms and Notifications](BytePlus GTM/User Guide/Alarms and Notifications/What Are Alarms and Notifications.md)
+    - **GTM Instance Management**
+      - [Configure a GTM Instance](BytePlus GTM/User Guide/GTM Instance Management/Configure a GTM Instance.md)
+      - [Create an GTM Instance](BytePlus GTM/User Guide/GTM Instance Management/Create an GTM Instance.md)
+      - [Delete a GTM Instance](BytePlus GTM/User Guide/GTM Instance Management/Delete a GTM Instance.md)
+      - [Start or Stop a GTM Instance](BytePlus GTM/User Guide/GTM Instance Management/Start or Stop a GTM Instance.md)
+      - [Update a GTM Instance](BytePlus GTM/User Guide/GTM Instance Management/Update a GTM Instance.md)
+    - **Health Check**
+      - [View Health Check Task Sets and Tasks](BytePlus GTM/User Guide/Health Check/View Health Check Task Sets and Tasks.md)
+    - **Policy Management**
+      - [Report Load in Load Feedback Mode](BytePlus GTM/User Guide/Policy Management/Report Load in Load Feedback Mode.md)
+      - [Set Traffic Targets for Intelligent Policy](BytePlus GTM/User Guide/Policy Management/Set Traffic Targets for Intelligent Policy.md)
+      - [Switch Policies for a GTM Instance](BytePlus GTM/User Guide/Policy Management/Switch Policies for a GTM Instance.md)
+      - [Update a Policy](BytePlus GTM/User Guide/Policy Management/Update a Policy.md)
+    - **Pool Management**
+      - [Create a Pool](BytePlus GTM/User Guide/Pool Management/Create a Pool.md)
+      - [Delete a Pool](BytePlus GTM/User Guide/Pool Management/Delete a Pool.md)
+      - [Update a Pool](BytePlus GTM/User Guide/Pool Management/Update a Pool.md)
+    - **Rule Management**
+      - [Create a Rule](BytePlus GTM/User Guide/Rule Management/Create a Rule.md)
+      - [Delete a Rule](BytePlus GTM/User Guide/Rule Management/Delete a Rule.md)
+      - [Update a Rule](BytePlus GTM/User Guide/Rule Management/Update a Rule.md)
+    - **Statistics and Analytics**
+      - [Check the Traffic View](BytePlus GTM/User Guide/Statistics and Analytics/Check the Traffic View.md)
+      - [View DNS Query Metrics](BytePlus GTM/User Guide/Statistics and Analytics/View DNS Query Metrics.md)
+- **BytePlus PrivateZone**
+  - [FAQs](BytePlus PrivateZone/FAQs.md)
+  - **Best Practices**
+    - [Reduce the DNS Query Frequency From an ECS Instance](BytePlus PrivateZone/Best Practices/Reduce the DNS Query Frequency From an ECS Instance.md)
+  - **Getting Started**
+    - [Activate BytePlus PrivateZone](BytePlus PrivateZone/Getting Started/Activate BytePlus PrivateZone.md)
+    - [Add a Domain](BytePlus PrivateZone/Getting Started/Add a Domain.md)
+    - [Create a DNS Record](BytePlus PrivateZone/Getting Started/Create a DNS Record.md)
+    - [Tutorial Overview](BytePlus PrivateZone/Getting Started/Tutorial Overview.md)
+    - [Validate the DNS Record](BytePlus PrivateZone/Getting Started/Validate the DNS Record.md)
+  - **Product Overview**
+    - [Application Scenarios](BytePlus PrivateZone/Product Overview/Application Scenarios.md)
+    - [Basic Concepts](BytePlus PrivateZone/Product Overview/Basic Concepts.md)
+    - [Billing](BytePlus PrivateZone/Product Overview/Billing.md)
+    - [How It Works](BytePlus PrivateZone/Product Overview/How It Works.md)
+    - [Limits](BytePlus PrivateZone/Product Overview/Limits.md)
+    - [What is BytePlus PrivateZone](BytePlus PrivateZone/Product Overview/What is BytePlus PrivateZone.md)
+  - **User Guide**
+    - [View DNS Query Metrics](BytePlus PrivateZone/User Guide/View DNS Query Metrics.md)
+    - **Advanced DNS**
+      - [Implement Load Balancing](BytePlus PrivateZone/User Guide/Advanced DNS/Implement Load Balancing.md)
+      - [Implement Subnet-based Routing](BytePlus PrivateZone/User Guide/Advanced DNS/Implement Subnet-based Routing.md)
+    - **Domain management**
+      - [Add a Domain](BytePlus PrivateZone/User Guide/Domain management/Add a Domain.md)
+      - [Delete a Domain](BytePlus PrivateZone/User Guide/Domain management/Delete a Domain.md)
+      - [Update Domain Configuration](BytePlus PrivateZone/User Guide/Domain management/Update Domain Configuration.md)
+    - **ECS Hostname Records Management**
+      - [Generate ECS Hostname Records](BytePlus PrivateZone/User Guide/ECS Hostname Records Management/Generate ECS Hostname Records.md)
+      - [What is an ECS Hostname Record](BytePlus PrivateZone/User Guide/ECS Hostname Records Management/What is an ECS Hostname Record.md)
+    - **Import or Export DNS Records**
+      - [Export DNS Records](BytePlus PrivateZone/User Guide/Import or Export DNS Records/Export DNS Records.md)
+      - [Import DNS Records](BytePlus PrivateZone/User Guide/Import or Export DNS Records/Import DNS Records.md)
+    - **Record management**
+      - [Back Up DNS Records](BytePlus PrivateZone/User Guide/Record management/Back Up DNS Records.md)
+      - [Create DNS Records](BytePlus PrivateZone/User Guide/Record management/Create DNS Records.md)
+      - [Delete DNS Records](BytePlus PrivateZone/User Guide/Record management/Delete DNS Records.md)
+      - [Implement Recursive DNS](BytePlus PrivateZone/User Guide/Record management/Implement Recursive DNS.md)
+      - [Supported DNS Record Types](BytePlus PrivateZone/User Guide/Record management/Supported DNS Record Types.md)
+      - [Update DNS Records](BytePlus PrivateZone/User Guide/Record management/Update DNS Records.md)
+    - **Resolver**
+      - [Manage Inbound Endpoints](BytePlus PrivateZone/User Guide/Resolver/Manage Inbound Endpoints.md)
+      - [Manage Outbound Endpoints](BytePlus PrivateZone/User Guide/Resolver/Manage Outbound Endpoints.md)
+      - [Manage Rules](BytePlus PrivateZone/User Guide/Resolver/Manage Rules.md)
+      - [Resolve DNS Queries Between VPC and On-premise IDCs/Third-party Cloud Services](BytePlus PrivateZone/User Guide/Resolver/Resolve DNS Queries Between VPC and On-premise IDCs - Third-party Cloud Services.md)
+      - [What is Resolver](BytePlus PrivateZone/User Guide/Resolver/What is Resolver.md)
+      - **Forward DNS Requests From On-premise IDC - Third-party Cloud**
+        - [Forward DNS queries from the on-premise IDC/third-party cloud services to the resolver](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests From On-premise IDC - Third-party Cloud/Forward DNS queries from the on-premise IDC - third-party cloud services to the resolver.md)
+        - [Step 1: Develop an Inbound DNS Strategy](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests From On-premise IDC - Third-party Cloud/Step 1: Develop an Inbound DNS Strategy.md)
+        - [Step 2: Create an Inbound VPC](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests From On-premise IDC - Third-party Cloud/Step 2: Create an Inbound VPC.md)
+        - [Step 3: Create an Inbound Endpoint](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests From On-premise IDC - Third-party Cloud/Step 3: Create an Inbound Endpoint.md)
+        - [Step 4: Create Rules in the DNS Server of the On-premise IDC/Third-party Cloud Services](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests From On-premise IDC - Third-party Cloud/Step 4: Create Rules in the DNS Server of the On-premise IDC - Third-party Cloud Services.md)
+        - [Step 5: Verify DNS Inbound Forwarding](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests From On-premise IDC - Third-party Cloud/Step 5: Verify DNS Inbound Forwarding.md)
+      - **Forward DNS Requests to An External DNS Server**
+        - [Forward DNS queries from the VPC to the DNS server of the on-premise IDC/third-party cloud services](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests to An External DNS Server/Forward DNS queries from the VPC to the DNS server of the on-premise IDC - third-party clo.md)
+        - [Step 1: Develop an Outbound DNS Strategy](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests to An External DNS Server/Step 1: Develop an Outbound DNS Strategy.md)
+        - [Step 2: Create an Outbound VPC](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests to An External DNS Server/Step 2: Create an Outbound VPC.md)
+        - [Step 3: Create an Outbound Endpoint](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests to An External DNS Server/Step 3: Create an Outbound Endpoint.md)
+        - [Step 4: Create a Rule in the Resolver](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests to An External DNS Server/Step 4: Create a Rule in the Resolver.md)
+        - [Step 5: Verify DNS Outbound Forwarding](BytePlus PrivateZone/User Guide/Resolver/Forward DNS Requests to An External DNS Server/Step 5: Verify DNS Outbound Forwarding.md)
+- **Operation Logs**
+  - [View Operation Logs](Operation Logs/View Operation Logs.md)
+- **Product Overview**
+  - [What is BytePlus DNS Suite](Product Overview/What is BytePlus DNS Suite.md)
+- **Product Updates**
+  - [BytePlus DNS Suite Release Notes](Product Updates/BytePlus DNS Suite Release Notes.md)
+  - [BytePlus GTM Private Beta Announcement](Product Updates/BytePlus GTM Private Beta Announcement.md)
+- **Terms**
+  - [BytePlus DNS Suite Specific Terms](Terms/BytePlus DNS Suite Specific Terms.md)

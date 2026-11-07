@@ -1,0 +1,81 @@
+# Data Migration Service
+
+59 pages. Source: https://docs.byteplus.com/en/docs/dms
+
+Back to the [full index](../README.md).
+
+- **API Reference**
+  - [API Overview](API Reference/API Overview.md)
+  - **Task Management**
+    - [CreateDataMigrateTask - Create migration task](API Reference/Task Management/CreateDataMigrateTask - Create migration task.md)
+    - [CreateFailureDataMigrateTask - Failed to create new task migration object](API Reference/Task Management/CreateFailureDataMigrateTask - Failed to create new task migration object.md)
+    - [DeleteDataMigrateTask - Delete Migration Task](API Reference/Task Management/DeleteDataMigrateTask - Delete Migration Task.md)
+    - [ListDataMigrateTask - List migration tasks](API Reference/Task Management/ListDataMigrateTask - List migration tasks.md)
+    - [QueryDataMigrateTask - query migration task](API Reference/Task Management/QueryDataMigrateTask - query migration task.md)
+    - [ResumeDataMigrateTask - Resume migration task](API Reference/Task Management/ResumeDataMigrateTask - Resume migration task.md)
+    - [StopDataMigrateTask - Pause migration task](API Reference/Task Management/StopDataMigrateTask - Pause migration task.md)
+  - **Usage method**
+    - [Common error codes](API Reference/Usage method/Common error codes.md)
+    - [Common Parameters](API Reference/Usage method/Common Parameters.md)
+    - [Request structure](API Reference/Usage method/Request structure.md)
+    - [Return result](API Reference/Usage method/Return result.md)
+    - [Signature Mechanism](API Reference/Usage method/Signature Mechanism.md)
+- **Error Code**
+  - [Error code overview](Error Code/Error code overview.md)
+  - **1001-System error**
+    - [1001-00000001](Error Code/1001-System error/1001-00000001.md)
+    - [1001-00000002](Error Code/1001-System error/1001-00000002.md)
+    - [1001-00000003](Error Code/1001-System error/1001-00000003.md)
+  - **1002-Execution error**
+    - [1002-00000001](Error Code/1002-Execution error/1002-00000001.md)
+    - [1002-00000002](Error Code/1002-Execution error/1002-00000002.md)
+    - [1002-00000003](Error Code/1002-Execution error/1002-00000003.md)
+    - [1002-00000004](Error Code/1002-Execution error/1002-00000004.md)
+    - [1002-00000005](Error Code/1002-Execution error/1002-00000005.md)
+    - [1002-00000006](Error Code/1002-Execution error/1002-00000006.md)
+    - [1002-00000007](Error Code/1002-Execution error/1002-00000007.md)
+    - [1002-00000008](Error Code/1002-Execution error/1002-00000008.md)
+  - **1003-Source error**
+    - [1003-00000001](Error Code/1003-Source error/1003-00000001.md)
+    - [1003-00000002](Error Code/1003-Source error/1003-00000002.md)
+    - [1003-00000003](Error Code/1003-Source error/1003-00000003.md)
+    - [1003-00000004](Error Code/1003-Source error/1003-00000004.md)
+    - [1003-00000005](Error Code/1003-Source error/1003-00000005.md)
+    - [1003-00000006](Error Code/1003-Source error/1003-00000006.md)
+  - **1004-Target error**
+    - [1004-00000001](Error Code/1004-Target error/1004-00000001.md)
+    - [1004-00000002](Error Code/1004-Target error/1004-00000002.md)
+    - [1004-00000003](Error Code/1004-Target error/1004-00000003.md)
+    - [1004-00000004](Error Code/1004-Target error/1004-00000004.md)
+    - [1004-00000005](Error Code/1004-Target error/1004-00000005.md)
+    - [1004-00000006](Error Code/1004-Target error/1004-00000006.md)
+    - [1004-00000007](Error Code/1004-Target error/1004-00000007.md)
+    - [1004-00000008](Error Code/1004-Target error/1004-00000008.md)
+    - [1004-00000009](Error Code/1004-Target error/1004-00000009.md)
+    - [1004-00000010](Error Code/1004-Target error/1004-00000010.md)
+  - **1005-Dedicated line error**
+    - [1005-00000001](Error Code/1005-Dedicated line error/1005-00000001.md)
+- **FAQ**
+  - [Migration Issues](FAQ/Migration Issues.md)
+- **Legal**
+  - [Service-Specific Terms for BytePlus Storage Products and Services](Legal/Service-Specific Terms for BytePlus Storage Products and Services.md)
+- **Product Billing**
+  - [Billing overview](Product Billing/Billing overview.md)
+- **Product Overview**
+  - [Application scenarios](Product Overview/Application scenarios.md)
+  - [Features](Product Overview/Features.md)
+  - [Limts](Product Overview/Limts.md)
+  - [What is Data Migration Service](Product Overview/What is Data Migration Service.md)
+- **Quick Start**
+  - [Quick start](Quick Start/Quick start.md)
+- **User Guide**
+  - [Copy a migration task](User Guide/Copy a migration task.md)
+  - [Create a migration task - use dedicated network](User Guide/Create a migration task - use dedicated network.md)
+  - [Create a migration task - use public network](User Guide/Create a migration task - use public network.md)
+  - [Data consistency verification](User Guide/Data consistency verification.md)
+  - [Manage migration tasks](User Guide/Manage migration tasks.md)
+  - [Mapping between S3 and TOS during data migration](User Guide/Mapping between S3 and TOS during data migration.md)
+  - [Retry failed objects](User Guide/Retry failed objects.md)
+  - [View migration results](User Guide/View migration results.md)
+- **What's New**
+  - [New feature release notes](What's New/New feature release notes.md)

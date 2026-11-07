@@ -1,0 +1,156 @@
+# Table Storage for HBase
+
+120 pages. Source: https://docs.byteplus.com/en/docs/HBase
+
+Back to the [full index](../README.md).
+
+- [FAQs](FAQs.md)
+- **API reference**
+  - [API overview](API reference/API overview.md)
+  - **Call methods**
+    - [Common parameters](API reference/Call methods/Common parameters.md)
+    - [Request structure](API reference/Call methods/Request structure.md)
+    - [Response structure](API reference/Call methods/Response structure.md)
+    - [Signature mechanism](API reference/Call methods/Signature mechanism.md)
+  - **Changing configuration**
+    - [ModifyColdStorage](API reference/Changing configuration/ModifyColdStorage.md)
+    - [ModifyDBInstanceSpec](API reference/Changing configuration/ModifyDBInstanceSpec.md)
+    - [ModifyDBInstanceStorageCapacity](API reference/Changing configuration/ModifyDBInstanceStorageCapacity.md)
+    - [ModifyRSNodeCount](API reference/Changing configuration/ModifyRSNodeCount.md)
+  - **Global management**
+    - [DescribeRegions](API reference/Global management/DescribeRegions.md)
+    - [DescribeZones](API reference/Global management/DescribeZones.md)
+  - **Managing connections**
+    - [CreateDBEndpoint](API reference/Managing connections/CreateDBEndpoint.md)
+    - [DeleteDBEndpoint](API reference/Managing connections/DeleteDBEndpoint.md)
+    - [DisableDBInstanceThriftServer](API reference/Managing connections/DisableDBInstanceThriftServer.md)
+    - [EnableDBInstanceThriftServer](API reference/Managing connections/EnableDBInstanceThriftServer.md)
+    - [ModifyDBInstanceThriftServerSpec](API reference/Managing connections/ModifyDBInstanceThriftServerSpec.md)
+    - [StartThrift2](API reference/Managing connections/StartThrift2.md)
+    - [StopThrift2](API reference/Managing connections/StopThrift2.md)
+    - [UpgradeDBInstanceThriftServer](API reference/Managing connections/UpgradeDBInstanceThriftServer.md)
+  - **Managing instances**
+    - [CreateDBInstance](API reference/Managing instances/CreateDBInstance.md)
+    - [DeleteDBInstance](API reference/Managing instances/DeleteDBInstance.md)
+    - [DescribeDBInstanceDetail](API reference/Managing instances/DescribeDBInstanceDetail.md)
+    - [DescribeDBInstances](API reference/Managing instances/DescribeDBInstances.md)
+    - [ModifyDBInstanceName](API reference/Managing instances/ModifyDBInstanceName.md)
+    - [ModifyInstanceChargeType](API reference/Managing instances/ModifyInstanceChargeType.md)
+    - [ModifyInstanceDeletionProtectionPolicy](API reference/Managing instances/ModifyInstanceDeletionProtectionPolicy.md)
+    - [RestartDBInstance](API reference/Managing instances/RestartDBInstance.md)
+  - **Managing tags**
+    - [AddTagsToResource](API reference/Managing tags/AddTagsToResource.md)
+    - [DescribeTagsByResource](API reference/Managing tags/DescribeTagsByResource.md)
+    - [RemoveTagsFromResource](API reference/Managing tags/RemoveTagsFromResource.md)
+  - **Security encryption**
+    - [AssociateAllowList](API reference/Security encryption/AssociateAllowList.md)
+    - [CreateAllowList](API reference/Security encryption/CreateAllowList.md)
+    - [DeleteAllowList](API reference/Security encryption/DeleteAllowList.md)
+    - [DescribeAllowListDetail](API reference/Security encryption/DescribeAllowListDetail.md)
+    - [DescribeAllowLists](API reference/Security encryption/DescribeAllowLists.md)
+    - [DisassociateAllowList](API reference/Security encryption/DisassociateAllowList.md)
+    - [ModifyAllowList](API reference/Security encryption/ModifyAllowList.md)
+- **Appendix**
+  - [Reserved keyword list](Appendix/Reserved keyword list.md)
+- **Billing**
+  - [Arrears and expiration](Billing/Arrears and expiration.md)
+  - [Billing items and prices](Billing/Billing items and prices.md)
+  - [Billing overview](Billing/Billing overview.md)
+  - [Renewal management](Billing/Renewal management.md)
+  - [Subscription cancellation or instance specification modification](Billing/Subscription cancellation or instance specification modification.md)
+  - [Switching to yearly or monthly subscription](Billing/Switching to yearly or monthly subscription.md)
+  - **Billing method**
+    - [Pay-as-you-go](Billing/Billing method/Pay-as-you-go.md)
+    - [Yearly or monthly subscription](Billing/Billing method/Yearly or monthly subscription.md)
+- **Development reference**
+  - [Access an HBase instance from a Go program using a Thrift2 address](Development reference/Access an HBase instance from a Go program using a Thrift2 address.md)
+  - [Access an HBase instance from a Java program using a Thrift2 address](Development reference/Access an HBase instance from a Java program using a Thrift2 address.md)
+  - [Access an HBase instance from a Python program using a Thrift2 address](Development reference/Access an HBase instance from a Python program using a Thrift2 address.md)
+- **Overview**
+  - [About Table Storage for HBase](Overview/About Table Storage for HBase.md)
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Common concepts](Overview/Common concepts.md)
+  - [Constraints and limits](Overview/Constraints and limits.md)
+  - [Product specifications](Overview/Product specifications.md)
+- **Quick start**
+  - [Configuring an allowlist](Quick start/Configuring an allowlist.md)
+  - [Creating an instance](Quick start/Creating an instance.md)
+  - [Usage process](Quick start/Usage process.md)
+  - **Connecting to an instance**
+    - [Connecting to the instance using the HBase Shell](Quick start/Connecting to an instance/Connecting to the instance using the HBase Shell.md)
+    - [Connecting to the instance using the Java API](Quick start/Connecting to an instance/Connecting to the instance using the Java API.md)
+- **Terms**
+  - [Service Level Agreement for Table Storage for HBase](Terms/Service Level Agreement for Table Storage for HBase.md)
+  - [Service-Specific Terms for BytePlus Database Products and Services](Terms/Service-Specific Terms for BytePlus Database Products and Services.md)
+- **User guide**
+  - [Features](User guide/Features.md)
+  - **Account and access authorization**
+    - [Cross-service access authorization](User guide/Account and access authorization/Cross-service access authorization.md)
+    - [Using HBase with sub-accounts](User guide/Account and access authorization/Using HBase with sub-accounts.md)
+  - **Managing allowlist**
+    - [Associating allowlist and instance](User guide/Managing allowlist/Associating allowlist and instance.md)
+    - [Copying an allowlist](User guide/Managing allowlist/Copying an allowlist.md)
+    - [Creating an allowlist](User guide/Managing allowlist/Creating an allowlist.md)
+    - [Deleting an allowlist](User guide/Managing allowlist/Deleting an allowlist.md)
+    - [Disassociating instance and allowlist](User guide/Managing allowlist/Disassociating instance and allowlist.md)
+    - [Modifying an allowlist](User guide/Managing allowlist/Modifying an allowlist.md)
+    - [Viewing allowlist](User guide/Managing allowlist/Viewing allowlist.md)
+    - [Viewing allowlist information](User guide/Managing allowlist/Viewing allowlist information.md)
+  - **Managing connections**
+    - [Applying for Thrift2 connection address](User guide/Managing connections/Applying for Thrift2 connection address.md)
+    - [Connecting to the instance using the HBase Shell](User guide/Managing connections/Connecting to the instance using the HBase Shell.md)
+    - [Connecting to the instance using the Java API](User guide/Managing connections/Connecting to the instance using the Java API.md)
+    - [Disabling public network access](User guide/Managing connections/Disabling public network access.md)
+    - [Enabling or disabling public network resolution](User guide/Managing connections/Enabling or disabling public network resolution.md)
+    - [Enabling public network access](User guide/Managing connections/Enabling public network access.md)
+    - [Releasing Thrift2 connection address](User guide/Managing connections/Releasing Thrift2 connection address.md)
+    - [Using HBase Shell](User guide/Managing connections/Using HBase Shell.md)
+    - [Viewing connection address](User guide/Managing connections/Viewing connection address.md)
+    - **Managing Thrift connection address**
+      - [Changing high-availability Thrift Server configurations](User guide/Managing connections/Managing Thrift connection address/Changing high-availability Thrift Server configurations.md)
+      - [Enabling or disabling high-availability Thrift connection address](User guide/Managing connections/Managing Thrift connection address/Enabling or disabling high-availability Thrift connection address.md)
+      - [ThriftServer performance document](User guide/Managing connections/Managing Thrift connection address/ThriftServer performance document.md)
+      - [Upgrading to high-availability Thrift connection address](User guide/Managing connections/Managing Thrift connection address/Upgrading to high-availability Thrift connection address.md)
+  - **Managing instances**
+    - [Configuring maintenance window](User guide/Managing instances/Configuring maintenance window.md)
+    - [Creating an instance](User guide/Managing instances/Creating an instance.md)
+    - [Deleting or unsubscribing an instance](User guide/Managing instances/Deleting or unsubscribing an instance.md)
+    - [Disable DDL](User guide/Managing instances/Disable DDL.md)
+    - [Instance deletion protection](User guide/Managing instances/Instance deletion protection.md)
+    - [Instance status description](User guide/Managing instances/Instance status description.md)
+    - [Restarting instances](User guide/Managing instances/Restarting instances.md)
+    - [Viewing instance details](User guide/Managing instances/Viewing instance details.md)
+    - [Viewing instance list](User guide/Managing instances/Viewing instance list.md)
+    - **Changing instance configuration**
+      - [Adding or removing nodes](User guide/Managing instances/Changing instance configuration/Adding or removing nodes.md)
+      - [Changing node specifications](User guide/Managing instances/Changing instance configuration/Changing node specifications.md)
+      - [Changing storage size](User guide/Managing instances/Changing instance configuration/Changing storage size.md)
+      - [Modify configuration instructions](User guide/Managing instances/Changing instance configuration/Modify configuration instructions.md)
+    - **Hot and cold data separation**
+      - [About hot and cold data separation](User guide/Managing instances/Hot and cold data separation/About hot and cold data separation.md)
+      - [Changing the capacity of Capacity storage](User guide/Managing instances/Hot and cold data separation/Changing the capacity of Capacity storage.md)
+      - [Compaction strategy guide](User guide/Managing instances/Hot and cold data separation/Compaction strategy guide.md)
+      - [Configure hot and cold data separation](User guide/Managing instances/Hot and cold data separation/Configure hot and cold data separation.md)
+      - [Enabling Capacity storage](User guide/Managing instances/Hot and cold data separation/Enabling Capacity storage.md)
+      - [Performance test](User guide/Managing instances/Hot and cold data separation/Performance test.md)
+    - **Managing tags**
+      - [Associating or adding tag](User guide/Managing instances/Managing tags/Associating or adding tag.md)
+      - [Disassociating or deleting tag](User guide/Managing instances/Managing tags/Disassociating or deleting tag.md)
+      - [Filtering instances by tag](User guide/Managing instances/Managing tags/Filtering instances by tag.md)
+      - [Tag overview](User guide/Managing instances/Managing tags/Tag overview.md)
+  - **Managing parameters**
+    - [List of modifiable parameters](User guide/Managing parameters/List of modifiable parameters.md)
+    - [Modifying parameters](User guide/Managing parameters/Modifying parameters.md)
+  - **Monitoring and alerts**
+    - [Creating alert policies](User guide/Monitoring and alerts/Creating alert policies.md)
+    - [Monitoring metrics](User guide/Monitoring and alerts/Monitoring metrics.md)
+    - [Viewing monitoring information](User guide/Monitoring and alerts/Viewing monitoring information.md)
+  - **Operation and maintenance events**
+    - [Canceling operation and maintenance events](User guide/Operation and maintenance events/Canceling operation and maintenance events.md)
+    - [Executing an operation and maintenance event in advance](User guide/Operation and maintenance events/Executing an operation and maintenance event in advance.md)
+    - [Modifying the execution time of operation and maintenance events](User guide/Operation and maintenance events/Modifying the execution time of operation and maintenance events.md)
+    - [Viewing operation and maintenance events](User guide/Operation and maintenance events/Viewing operation and maintenance events.md)
+- **What's new**
+  - [New feature release notes](What's new/New feature release notes.md)
+  - **Product announcements**
+    - [Announcement on billing for Thrift connection addresses](What's new/Product announcements/Announcement on billing for Thrift connection addresses.md)

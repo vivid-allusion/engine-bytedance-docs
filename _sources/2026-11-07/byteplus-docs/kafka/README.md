@@ -1,0 +1,263 @@
+# Message Queue for Kafka
+
+209 pages. Source: https://docs.byteplus.com/en/docs/kafka
+
+Back to the [full index](../README.md).
+
+- **API Reference**
+  - [API Release Notes](API Reference/API Release Notes.md)
+  - **V1 (2018-01-01)**
+    - [API overview](API Reference/V1 (2018-01-01)/API overview.md)
+    - [Reading before use](API Reference/V1 (2018-01-01)/Reading before use.md)
+    - **Appendixes**
+      - [Data structure](API Reference/V1 (2018-01-01)/Appendixes/Data structure.md)
+      - [Error code](API Reference/V1 (2018-01-01)/Appendixes/Error code.md)
+    - **Group management**
+      - [DeleteGroup](API Reference/V1 (2018-01-01)/Group management/DeleteGroup.md)
+      - [DescribeConsumedPartitions](API Reference/V1 (2018-01-01)/Group management/DescribeConsumedPartitions.md)
+      - [DescribeConsumedTopics](API Reference/V1 (2018-01-01)/Group management/DescribeConsumedTopics.md)
+      - [DescribeGroups](API Reference/V1 (2018-01-01)/Group management/DescribeGroups.md)
+      - [ResetConsumedOffsets](API Reference/V1 (2018-01-01)/Group management/ResetConsumedOffsets.md)
+    - **How to invoke the API**
+      - [Common parameters](API Reference/V1 (2018-01-01)/How to invoke the API/Common parameters.md)
+      - [Request structure](API Reference/V1 (2018-01-01)/How to invoke the API/Request structure.md)
+      - [Sample responses](API Reference/V1 (2018-01-01)/How to invoke the API/Sample responses.md)
+      - [Signature method](API Reference/V1 (2018-01-01)/How to invoke the API/Signature method.md)
+    - **Instance management**
+      - [CreateKafkaInstance ](API Reference/V1 (2018-01-01)/Instance management/CreateKafkaInstance.md)
+      - [DeleteKafkaInstance](API Reference/V1 (2018-01-01)/Instance management/DeleteKafkaInstance.md)
+      - [DescribeInstanceDetail](API Reference/V1 (2018-01-01)/Instance management/DescribeInstanceDetail.md)
+      - [DescribeInstancesSummary](API Reference/V1 (2018-01-01)/Instance management/DescribeInstancesSummary.md)
+      - [DisableInternetAccess](API Reference/V1 (2018-01-01)/Instance management/DisableInternetAccess.md)
+      - [EnableInternetAccess](API Reference/V1 (2018-01-01)/Instance management/EnableInternetAccess.md)
+      - [ListKafkaConf](API Reference/V1 (2018-01-01)/Instance management/ListKafkaConf.md)
+      - [ModifyInstanceDescription](API Reference/V1 (2018-01-01)/Instance management/ModifyInstanceDescription.md)
+      - [ModifyInstanceName ](API Reference/V1 (2018-01-01)/Instance management/ModifyInstanceName.md)
+      - [ModifyInstanceParams](API Reference/V1 (2018-01-01)/Instance management/ModifyInstanceParams.md)
+      - [ScaleKafkaInstance](API Reference/V1 (2018-01-01)/Instance management/ScaleKafkaInstance.md)
+    - **SASL user management**
+      - [CreateSaslUser](API Reference/V1 (2018-01-01)/SASL user management/CreateSaslUser.md)
+      - [DeleteSaslUser](API Reference/V1 (2018-01-01)/SASL user management/DeleteSaslUser.md)
+      - [DescribeSaslUsers](API Reference/V1 (2018-01-01)/SASL user management/DescribeSaslUsers.md)
+      - [ModifySaslPassword](API Reference/V1 (2018-01-01)/SASL user management/ModifySaslPassword.md)
+      - [ModifyUserAuthority](API Reference/V1 (2018-01-01)/SASL user management/ModifyUserAuthority.md)
+    - **Topic management**
+      - [CreateTopic](API Reference/V1 (2018-01-01)/Topic management/CreateTopic.md)
+      - [DeleteTopic](API Reference/V1 (2018-01-01)/Topic management/DeleteTopic.md)
+      - [DescribeTopicAuthorities](API Reference/V1 (2018-01-01)/Topic management/DescribeTopicAuthorities.md)
+      - [DescribeTopicPartitions](API Reference/V1 (2018-01-01)/Topic management/DescribeTopicPartitions.md)
+      - [DescribeTopics](API Reference/V1 (2018-01-01)/Topic management/DescribeTopics.md)
+      - [ModifyTopic](API Reference/V1 (2018-01-01)/Topic management/ModifyTopic.md)
+      - [ModifyTopicAuthorities](API Reference/V1 (2018-01-01)/Topic management/ModifyTopicAuthorities.md)
+      - [QueryMessageByMessageId](API Reference/V1 (2018-01-01)/Topic management/QueryMessageByMessageId.md)
+  - **V2 (2022-05-01)**
+    - [API overview](API Reference/V2 (2022-05-01)/API overview.md)
+    - [Reading before use](API Reference/V2 (2022-05-01)/Reading before use.md)
+    - **ACL policy management**
+      - [CreateAcl](API Reference/V2 (2022-05-01)/ACL policy management/CreateAcl.md)
+      - [DeleteAcl](API Reference/V2 (2022-05-01)/ACL policy management/DeleteAcl.md)
+      - [DescribeAcls](API Reference/V2 (2022-05-01)/ACL policy management/DescribeAcls.md)
+    - **Allowlist management**
+      - [AssociateAllowList](API Reference/V2 (2022-05-01)/Allowlist management/AssociateAllowList.md)
+      - [CreateAllowList](API Reference/V2 (2022-05-01)/Allowlist management/CreateAllowList.md)
+      - [DeleteAllowList](API Reference/V2 (2022-05-01)/Allowlist management/DeleteAllowList.md)
+      - [DescribeAllowListDetail](API Reference/V2 (2022-05-01)/Allowlist management/DescribeAllowListDetail.md)
+      - [DescribeAllowLists](API Reference/V2 (2022-05-01)/Allowlist management/DescribeAllowLists.md)
+      - [DisassociateAllowList](API Reference/V2 (2022-05-01)/Allowlist management/DisassociateAllowList.md)
+      - [ModifyAllowList](API Reference/V2 (2022-05-01)/Allowlist management/ModifyAllowList.md)
+    - **Appendixes**
+      - [Data Structure](API Reference/V2 (2022-05-01)/Appendixes/Data Structure.md)
+      - [Error Code](API Reference/V2 (2022-05-01)/Appendixes/Error Code.md)
+      - [Request Idempotence](API Reference/V2 (2022-05-01)/Appendixes/Request Idempotence.md)
+    - **Group management**
+      - [CreateGroup](API Reference/V2 (2022-05-01)/Group management/CreateGroup.md)
+      - [DeleteGroup](API Reference/V2 (2022-05-01)/Group management/DeleteGroup.md)
+      - [DescribeConsumedPartitions](API Reference/V2 (2022-05-01)/Group management/DescribeConsumedPartitions.md)
+      - [DescribeConsumedTopics](API Reference/V2 (2022-05-01)/Group management/DescribeConsumedTopics.md)
+      - [DescribeGroups](API Reference/V2 (2022-05-01)/Group management/DescribeGroups.md)
+      - [ModifyGroup](API Reference/V2 (2022-05-01)/Group management/ModifyGroup.md)
+      - [ResetConsumedOffsets](API Reference/V2 (2022-05-01)/Group management/ResetConsumedOffsets.md)
+    - **How to invoke the API**
+      - [Common parameters](API Reference/V2 (2022-05-01)/How to invoke the API/Common parameters.md)
+      - [Request structure](API Reference/V2 (2022-05-01)/How to invoke the API/Request structure.md)
+      - [Sample responses](API Reference/V2 (2022-05-01)/How to invoke the API/Sample responses.md)
+      - [Service Endpoint](API Reference/V2 (2022-05-01)/How to invoke the API/Service Endpoint.md)
+      - [Signature method](API Reference/V2 (2022-05-01)/How to invoke the API/Signature method.md)
+    - **Instance management**
+      - [CreateInstance](API Reference/V2 (2022-05-01)/Instance management/CreateInstance.md)
+      - [DeleteInstance](API Reference/V2 (2022-05-01)/Instance management/DeleteInstance.md)
+      - [DescribeInstanceDetail](API Reference/V2 (2022-05-01)/Instance management/DescribeInstanceDetail.md)
+      - [DescribeInstances](API Reference/V2 (2022-05-01)/Instance management/DescribeInstances.md)
+      - [ModifyInstanceAttributes](API Reference/V2 (2022-05-01)/Instance management/ModifyInstanceAttributes.md)
+      - [ModifyInstanceParameters](API Reference/V2 (2022-05-01)/Instance management/ModifyInstanceParameters.md)
+      - [ModifyInstanceSpec](API Reference/V2 (2022-05-01)/Instance management/ModifyInstanceSpec.md)
+    - **Message query**
+      - [QueryMessageByTimestamp](API Reference/V2 (2022-05-01)/Message query/QueryMessageByTimestamp.md)
+    - **Network management**
+      - [CreatePublicAddress](API Reference/V2 (2022-05-01)/Network management/CreatePublicAddress.md)
+      - [DeletePublicAddress](API Reference/V2 (2022-05-01)/Network management/DeletePublicAddress.md)
+    - **Resource check**
+      - [DescribeAvailabilityZones](API Reference/V2 (2022-05-01)/Resource check/DescribeAvailabilityZones.md)
+      - [DescribeRegions](API Reference/V2 (2022-05-01)/Resource check/DescribeRegions.md)
+    - **SASL user management**
+      - [CreateUser](API Reference/V2 (2022-05-01)/SASL user management/CreateUser.md)
+      - [DeleteUser](API Reference/V2 (2022-05-01)/SASL user management/DeleteUser.md)
+      - [DescribeUsers](API Reference/V2 (2022-05-01)/SASL user management/DescribeUsers.md)
+      - [ModifyUserAuthority](API Reference/V2 (2022-05-01)/SASL user management/ModifyUserAuthority.md)
+    - **Tag management**
+      - [AddTagsToResource](API Reference/V2 (2022-05-01)/Tag management/AddTagsToResource.md)
+      - [DescribeTagsByResource](API Reference/V2 (2022-05-01)/Tag management/DescribeTagsByResource.md)
+      - [RemoveTagsFromResource](API Reference/V2 (2022-05-01)/Tag management/RemoveTagsFromResource.md)
+    - **Topic management**
+      - [CreateTopic](API Reference/V2 (2022-05-01)/Topic management/CreateTopic.md)
+      - [DeleteTopic](API Reference/V2 (2022-05-01)/Topic management/DeleteTopic.md)
+      - [DescribeTopicAccessPolicies](API Reference/V2 (2022-05-01)/Topic management/DescribeTopicAccessPolicies.md)
+      - [DescribeTopicParameters](API Reference/V2 (2022-05-01)/Topic management/DescribeTopicParameters.md)
+      - [DescribeTopicPartitions](API Reference/V2 (2022-05-01)/Topic management/DescribeTopicPartitions.md)
+      - [DescribeTopics](API Reference/V2 (2022-05-01)/Topic management/DescribeTopics.md)
+      - [ModifyTopicAccessPolicies](API Reference/V2 (2022-05-01)/Topic management/ModifyTopicAccessPolicies.md)
+      - [ModifyTopicAttributes](API Reference/V2 (2022-05-01)/Topic management/ModifyTopicAttributes.md)
+      - [ModifyTopicParameters](API Reference/V2 (2022-05-01)/Topic management/ModifyTopicParameters.md)
+- **Best Practices**
+  - [Best practices for consumers](Best Practices/Best practices for consumers.md)
+  - [Best practices for producers](Best Practices/Best practices for producers.md)
+  - [Connecting Kafka to Filebeat](Best Practices/Connecting Kafka to Filebeat.md)
+  - [CPU consumption scenario analysis for Kafka instances](Best Practices/CPU consumption scenario analysis for Kafka instances.md)
+  - [Data balancing in a Message Queue for Kafka cluster](Best Practices/Data balancing in a Message Queue for Kafka cluster.md)
+  - [Deploying a Kafka instance in multiple Availability Zones](Best Practices/Deploying a Kafka instance in multiple Availability Zones.md)
+  - [Message order and reliability](Best Practices/Message order and reliability.md)
+  - [Recommendations for using topics](Best Practices/Recommendations for using topics.md)
+  - [Recommended data compression algorithms](Best Practices/Recommended data compression algorithms.md)
+  - **Business data migration**
+    - [Migration overview](Best Practices/Business data migration/Migration overview.md)
+    - [Solution 1 for migrating to Message Queue for Kafka](Best Practices/Business data migration/Solution 1 for migrating to Message Queue for Kafka.md)
+    - [Solution 2 for migrating to Message Queue for Kafka](Best Practices/Business data migration/Solution 2 for migrating to Message Queue for Kafka.md)
+    - [Viewing migration progress and results](Best Practices/Business data migration/Viewing migration progress and results.md)
+  - **Performing stress test for Kafka production and consumption**
+    - [Overview of stress test](Best Practices/Performing stress test for Kafka production and consumption/Overview of stress test.md)
+    - [Using default endpoint for stress testing](Best Practices/Performing stress test for Kafka production and consumption/Using default endpoint for stress testing.md)
+    - [Using SASL_PLAINTEXT endpoint for stress testing](Best Practices/Performing stress test for Kafka production and consumption/Using SASL_PLAINTEXT endpoint for stress testing.md)
+    - [Using SASL_SSL endpoint for stress testing](Best Practices/Performing stress test for Kafka production and consumption/Using SASL_SSL endpoint for stress testing.md)
+- **Billing**
+  - [Billing items](Billing/Billing items.md)
+  - [Billing overview](Billing/Billing overview.md)
+  - [Costs for unsubscription or changing instance specifications](Billing/Costs for unsubscription or changing instance specifications.md)
+  - [Overdue payments or expiration](Billing/Overdue payments or expiration.md)
+  - [Pay-as-you-go](Billing/Pay-as-you-go.md)
+- **FAQs**
+  - **Consultation**
+    - [Instance connection](FAQs/Consultation/Instance connection.md)
+    - [Instance management](FAQs/Consultation/Instance management.md)
+    - [Message production and consumption](FAQs/Consultation/Message production and consumption.md)
+    - [Topic and group management](FAQs/Consultation/Topic and group management.md)
+  - **Troubleshooting**
+    - [Clients](FAQs/Troubleshooting/Clients.md)
+    - [Instance management](FAQs/Troubleshooting/Instance management.md)
+    - [Message query](FAQs/Troubleshooting/Message query.md)
+    - [Monitoring](FAQs/Troubleshooting/Monitoring.md)
+    - [Topic and group management](FAQs/Troubleshooting/Topic and group management.md)
+- **Getting Started**
+  - [Connecting to an instance by using a SASL_PLAINTEXT endpoint](Getting Started/Connecting to an instance by using a SASL_PLAINTEXT endpoint.md)
+  - [Connecting to an instance by using a SASL_SSL endpoint](Getting Started/Connecting to an instance by using a SASL_SSL endpoint.md)
+  - [Connecting to an instance by using the default endpoint](Getting Started/Connecting to an instance by using the default endpoint.md)
+  - [Creating resources](Getting Started/Creating resources.md)
+  - [Overview](Getting Started/Overview.md)
+  - [Setting up the development environment](Getting Started/Setting up the development environment.md)
+- **Overview**
+  - [Benefits](Overview/Benefits.md)
+  - [Features](Overview/Features.md)
+  - [Limits](Overview/Limits.md)
+  - [Regions and Availability Zones](Overview/Regions and Availability Zones.md)
+  - [Specifications](Overview/Specifications.md)
+  - [Terms](Overview/Terms.md)
+  - [What is Message Queue for Kafka](Overview/What is Message Queue for Kafka.md)
+- **SDK Reference**
+  - [Overview](SDK Reference/Overview.md)
+  - **Apache Kafka SDKs**
+    - **Go Client SDK**
+      - [Overview](SDK Reference/Apache Kafka SDKs/Go Client SDK/Overview.md)
+      - [Preparations](SDK Reference/Apache Kafka SDKs/Go Client SDK/Preparations.md)
+      - [SDK configuration](SDK Reference/Apache Kafka SDKs/Go Client SDK/SDK configuration.md)
+      - [Sending and receiving messages via a SASL_PLAINTEXT endpoint using the PLAIN mechanism](SDK Reference/Apache Kafka SDKs/Go Client SDK/Sending and receiving messages via a SASL_PLAINTEXT endpoint using the PLAIN mechanism.md)
+      - [Sending and receiving messages via a SASL_PLAINTEXT endpoint using the SCRAM mechanism](SDK Reference/Apache Kafka SDKs/Go Client SDK/Sending and receiving messages via a SASL_PLAINTEXT endpoint using the SCRAM mechanism.md)
+      - [Sending and receiving messages via a SASL_SSL endpoint using the PLAIN mechanism](SDK Reference/Apache Kafka SDKs/Go Client SDK/Sending and receiving messages via a SASL_SSL endpoint using the PLAIN mechanism.md)
+      - [Sending and receiving messages via a SASL_SSL endpoint using the SCRAM mechanism](SDK Reference/Apache Kafka SDKs/Go Client SDK/Sending and receiving messages via a SASL_SSL endpoint using the SCRAM mechanism.md)
+      - [Sending and receiving messages via the default endpoint](SDK Reference/Apache Kafka SDKs/Go Client SDK/Sending and receiving messages via the default endpoint.md)
+    - **Java Client SDK**
+      - [Configuration file](SDK Reference/Apache Kafka SDKs/Java Client SDK/Configuration file.md)
+      - [Overview](SDK Reference/Apache Kafka SDKs/Java Client SDK/Overview.md)
+      - [Preparations](SDK Reference/Apache Kafka SDKs/Java Client SDK/Preparations.md)
+      - [Sending and receiving messages via a SASL_PLAINTEXT endpoint using the PLAIN mechanism](SDK Reference/Apache Kafka SDKs/Java Client SDK/Sending and receiving messages via a SASL_PLAINTEXT endpoint using the PLAIN mechanism.md)
+      - [Sending and receiving messages via a SASL_PLAINTEXT endpoint using the SCRAM mechanism](SDK Reference/Apache Kafka SDKs/Java Client SDK/Sending and receiving messages via a SASL_PLAINTEXT endpoint using the SCRAM mechanism.md)
+      - [Sending and receiving messages via a SASL_SSL endpoint using the PLAIN mechanism](SDK Reference/Apache Kafka SDKs/Java Client SDK/Sending and receiving messages via a SASL_SSL endpoint using the PLAIN mechanism.md)
+      - [Sending and receiving messages via a SASL_SSL endpoint using the SCRAM mechanism](SDK Reference/Apache Kafka SDKs/Java Client SDK/Sending and receiving messages via a SASL_SSL endpoint using the SCRAM mechanism.md)
+      - [Sending and receiving messages via the default endpoint](SDK Reference/Apache Kafka SDKs/Java Client SDK/Sending and receiving messages via the default endpoint.md)
+- **Terms of Service**
+  - [BytePlus Message Queue for Kakfa Service Level Agreement](Terms of Service/BytePlus Message Queue for Kakfa Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Message Queue for Kafka](Terms of Service/Service-Specific Terms for BytePlus Message Queue for Kafka.md)
+- **User Guide**
+  - [Managing background tasks](User Guide/Managing background tasks.md)
+  - [Message query](User Guide/Message query.md)
+  - **Access control**
+    - [Access policy templates](User Guide/Access control/Access policy templates.md)
+    - [Authorizable resources and actions](User Guide/Access control/Authorizable resources and actions.md)
+    - [Cross-service access authorization](User Guide/Access control/Cross-service access authorization.md)
+    - [IAM-based permission management](User Guide/Access control/IAM-based permission management.md)
+  - **ACL management**
+    - [Creating an access control list](User Guide/ACL management/Creating an access control list.md)
+    - [Deleting an access control list](User Guide/ACL management/Deleting an access control list.md)
+  - **Allowlist management**
+    - [Associating an instance with an allowlist](User Guide/Allowlist management/Associating an instance with an allowlist.md)
+    - [Creating an allowlist](User Guide/Allowlist management/Creating an allowlist.md)
+    - [Deleting an allowlist](User Guide/Allowlist management/Deleting an allowlist.md)
+    - [Disassociating an instance from an allowlist](User Guide/Allowlist management/Disassociating an instance from an allowlist.md)
+    - [Modifying an allowlist](User Guide/Allowlist management/Modifying an allowlist.md)
+    - [Viewing allowlist details](User Guide/Allowlist management/Viewing allowlist details.md)
+  - **Group management**
+    - [Batch importing groups](User Guide/Group management/Batch importing groups.md)
+    - [Creating a group](User Guide/Group management/Creating a group.md)
+    - [Deleting a group](User Guide/Group management/Deleting a group.md)
+    - [Exporting a list of groups](User Guide/Group management/Exporting a list of groups.md)
+    - [Manage Group Tags](User Guide/Group management/Manage Group Tags.md)
+    - [Resetting consumer offsets](User Guide/Group management/Resetting consumer offsets.md)
+    - [Viewing consumption status in a group](User Guide/Group management/Viewing consumption status in a group.md)
+  - **Instance management**
+    - **Connection management**
+      - [Enabling Public Network Access](User Guide/Instance management/Connection management/Enabling Public Network Access.md)
+      - [Modifying the domain name prefix of an endpoint](User Guide/Instance management/Connection management/Modifying the domain name prefix of an endpoint.md)
+      - [Switching subnets](User Guide/Instance management/Connection management/Switching subnets.md)
+      - [Viewing endpoints](User Guide/Instance management/Connection management/Viewing endpoints.md)
+    - **Instance lifecycle management**
+      - [Creating an instance](User Guide/Instance management/Instance lifecycle management/Creating an instance.md)
+      - [Deleting an instance](User Guide/Instance management/Instance lifecycle management/Deleting an instance.md)
+      - [Restarting an instance](User Guide/Instance management/Instance lifecycle management/Restarting an instance.md)
+      - [Upgrading instance specifications](User Guide/Instance management/Instance lifecycle management/Upgrading instance specifications.md)
+      - [Viewing instance details](User Guide/Instance management/Instance lifecycle management/Viewing instance details.md)
+    - **Instance O&M**
+      - [Modifying parameter configurations](User Guide/Instance management/Instance O&M/Modifying parameter configurations.md)
+      - [Setting a disk cleanup threshold](User Guide/Instance management/Instance O&M/Setting a disk cleanup threshold.md)
+      - [Viewing node information](User Guide/Instance management/Instance O&M/Viewing node information.md)
+    - **Tag management**
+      - [Associating with tags](User Guide/Instance management/Tag management/Associating with tags.md)
+      - [Editing and detaching tags](User Guide/Instance management/Tag management/Editing and detaching tags.md)
+      - [Filtering instances by tag](User Guide/Instance management/Tag management/Filtering instances by tag.md)
+      - [Tag overview](User Guide/Instance management/Tag management/Tag overview.md)
+  - **Monitoring and alarms**
+    - [Recommended alarm rules](User Guide/Monitoring and alarms/Recommended alarm rules.md)
+    - [Setting an alarm rule](User Guide/Monitoring and alarms/Setting an alarm rule.md)
+    - [Viewing monitoring data](User Guide/Monitoring and alarms/Viewing monitoring data.md)
+  - **Topic management**
+    - [Batch importing topics](User Guide/Topic management/Batch importing topics.md)
+    - [Creating a topic](User Guide/Topic management/Creating a topic.md)
+    - [Deleting a topic](User Guide/Topic management/Deleting a topic.md)
+    - [Exporting a list of topics](User Guide/Topic management/Exporting a list of topics.md)
+    - [Manage topic tags](User Guide/Topic management/Manage topic tags.md)
+    - [Modifying topic configurations](User Guide/Topic management/Modifying topic configurations.md)
+    - [Online debugging](User Guide/Topic management/Online debugging.md)
+    - [Viewing topic details](User Guide/Topic management/Viewing topic details.md)
+  - **User management**
+    - [Batch importing SASL users](User Guide/User management/Batch importing SASL users.md)
+    - [Creating a SASL user](User Guide/User management/Creating a SASL user.md)
+    - [Deleting a SASL user](User Guide/User management/Deleting a SASL user.md)
+    - [Resetting a SASL user password](User Guide/User management/Resetting a SASL user password.md)
+    - [Viewing a PLAIN SASL user password](User Guide/User management/Viewing a PLAIN SASL user password.md)

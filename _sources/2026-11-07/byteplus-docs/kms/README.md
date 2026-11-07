@@ -1,0 +1,101 @@
+# BytePlus Key Management Service
+
+77 pages. Source: https://docs.byteplus.com/en/docs/kms
+
+Back to the [full index](../README.md).
+
+- [FAQs](FAQs.md)
+- **API reference**
+  - **Call method**
+    - [Error codes](API reference/Call method/Error codes.md)
+    - [Request structure](API reference/Call method/Request structure.md)
+    - [Response examples](API reference/Call method/Response examples.md)
+    - [Signature method](API reference/Call method/Signature method.md)
+  - **Key management**
+    - **Data type**
+      - [Error](API reference/Key management/Data type/Error.md)
+      - [Key](API reference/Key management/Data type/Key.md)
+      - [Keyring](API reference/Key management/Data type/Keyring.md)
+      - [PageInfo](API reference/Key management/Data type/PageInfo.md)
+      - [ResponseMetadata](API reference/Key management/Data type/ResponseMetadata.md)
+    - **Key**
+      - [ArchiveKey](API reference/Key management/Key/ArchiveKey.md)
+      - [AsymmetricDecrypt](API reference/Key management/Key/AsymmetricDecrypt.md)
+      - [AsymmetricEncrypt](API reference/Key management/Key/AsymmetricEncrypt.md)
+      - [AsymmetricSign](API reference/Key management/Key/AsymmetricSign.md)
+      - [AsymmetricVerify](API reference/Key management/Key/AsymmetricVerify.md)
+      - [CancelArchiveKey](API reference/Key management/Key/CancelArchiveKey.md)
+      - [CancelKeyDeletion](API reference/Key management/Key/CancelKeyDeletion.md)
+      - [CreateKey](API reference/Key management/Key/CreateKey.md)
+      - [Decrypt](API reference/Key management/Key/Decrypt.md)
+      - [DeleteKeyMaterial](API reference/Key management/Key/DeleteKeyMaterial.md)
+      - [DescribeKey](API reference/Key management/Key/DescribeKey.md)
+      - [DescribeKeys](API reference/Key management/Key/DescribeKeys.md)
+      - [DisableKey](API reference/Key management/Key/DisableKey.md)
+      - [DisableKeyRotation](API reference/Key management/Key/DisableKeyRotation.md)
+      - [EnableKey](API reference/Key management/Key/EnableKey.md)
+      - [EnableKeyRotation](API reference/Key management/Key/EnableKeyRotation.md)
+      - [Encrypt](API reference/Key management/Key/Encrypt.md)
+      - [GenerateDataKey](API reference/Key management/Key/GenerateDataKey.md)
+      - [GetParametersForImport](API reference/Key management/Key/GetParametersForImport.md)
+      - [GetPublicKey](API reference/Key management/Key/GetPublicKey.md)
+      - [ImportKeyMaterial](API reference/Key management/Key/ImportKeyMaterial.md)
+      - [ReEncrypt](API reference/Key management/Key/ReEncrypt.md)
+      - [ScheduleKeyDeletion](API reference/Key management/Key/ScheduleKeyDeletion.md)
+      - [UpdateKey](API reference/Key management/Key/UpdateKey.md)
+    - **Keyring**
+      - [CreateKeyring](API reference/Key management/Keyring/CreateKeyring.md)
+      - [DeleteKeyring](API reference/Key management/Keyring/DeleteKeyring.md)
+      - [DescribeKeyrings](API reference/Key management/Keyring/DescribeKeyrings.md)
+      - [QueryKeyring](API reference/Key management/Keyring/QueryKeyring.md)
+      - [UpdateKeyring](API reference/Key management/Keyring/UpdateKeyring.md)
+  - **Region**
+    - [DescribeRegions](API reference/Region/DescribeRegions.md)
+  - **Secret manager**
+    - [BackupSecret](API reference/Secret manager/BackupSecret.md)
+    - [BatchGetSecretValue](API reference/Secret manager/BatchGetSecretValue.md)
+    - [CancelSecretDeletion](API reference/Secret manager/CancelSecretDeletion.md)
+    - [CreateSecret](API reference/Secret manager/CreateSecret.md)
+    - [DescribeSecret](API reference/Secret manager/DescribeSecret.md)
+    - [DescribeSecrets](API reference/Secret manager/DescribeSecrets.md)
+    - [DescribeSecretVersions](API reference/Secret manager/DescribeSecretVersions.md)
+    - [GetSecretValue](API reference/Secret manager/GetSecretValue.md)
+    - [RestoreSecret](API reference/Secret manager/RestoreSecret.md)
+    - [RotateSecret](API reference/Secret manager/RotateSecret.md)
+    - [ScheduleSecretDeletion](API reference/Secret manager/ScheduleSecretDeletion.md)
+    - [SetSecretValue](API reference/Secret manager/SetSecretValue.md)
+    - [UpdateSecret](API reference/Secret manager/UpdateSecret.md)
+    - [UpdateSecretRotationPolicy](API reference/Secret manager/UpdateSecretRotationPolicy.md)
+- **Best practices**
+  - [Encrypting and decrypting data locally based on envelope encryption](Best practices/Encrypting and decrypting data locally based on envelope encryption.md)
+  - [Encrypting data online using Key Management Service](Best practices/Encrypting data online using Key Management Service.md)
+- **Billing**
+  - [BytePlus KMS Pricing](Billing/BytePlus KMS Pricing.md)
+- **Product introduction**
+  - [Product features](Product introduction/Product features.md)
+  - [Terminology](Product introduction/Terminology.md)
+  - [What is Key Management Service](Product introduction/What is Key Management Service.md)
+  - **Application scenarios**
+    - [Key management scenarios](Product introduction/Application scenarios/Key management scenarios.md)
+    - [Secret management scenarios](Product introduction/Application scenarios/Secret management scenarios.md)
+- **Quick start**
+  - [Getting started with key management](Quick start/Getting started with key management.md)
+  - [Getting started with secret management](Quick start/Getting started with secret management.md)
+- **Term**
+  - [BytePlus Key Management Service Level Agreement](Term/BytePlus Key Management Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Key Management Service](Term/Service-Specific Terms for BytePlus Key Management Service.md)
+- **User Guides**
+  - **Key management**
+    - [Access control](User Guides/Key management/Access control.md)
+    - [Bring your own key](User Guides/Key management/Bring your own key.md)
+    - [Key hosting](User Guides/Key management/Key hosting.md)
+    - [Key rotation](User Guides/Key management/Key rotation.md)
+    - [Project management](User Guides/Key management/Project management.md)
+  - **Secret manager**
+    - [Cache for Redis secret management](User Guides/Secret manager/Cache for Redis secret management.md)
+    - [ECS secret management](User Guides/Secret manager/ECS secret management.md)
+    - [Generic secret management](User Guides/Secret manager/Generic secret management.md)
+    - [IAM secret management](User Guides/Secret manager/IAM secret management.md)
+    - [RDS for MySQL secret management](User Guides/Secret manager/RDS for MySQL secret management.md)
+- **What's New**
+  - [New feature release notes](What's New/New feature release notes.md)

@@ -1,0 +1,428 @@
+# ModelArk
+
+334 pages. Source: https://docs.byteplus.com/en/docs/modelark
+
+Back to the [full index](../README.md).
+
+- **2123197**
+  - **Best practices**
+    - [Best practices for handling burst traffic](2123197/Best practices/Best practices for handling burst traffic.md)
+    - [Enable real-time online search via Info Quest MCP integration](2123197/Best practices/Enable real-time online search via Info Quest MCP integration.md)
+    - [Environment variable configuration guide](2123197/Best practices/Environment variable configuration guide.md)
+    - [Practice guidance for ModelArk bill split](2123197/Best practices/Practice guidance for ModelArk bill split.md)
+    - [Seedance-1.0-pro&pro-fast prompt guide](2123197/Best practices/Seedance-1.0-pro&pro-fast prompt guide.md)
+    - [Seedance-1.5-pro prompt guide](2123197/Best practices/Seedance-1.5-pro prompt guide.md)
+    - [Seedream 4.0-4.5 prompt guide](2123197/Best practices/Seedream 4.0-4.5 prompt guide.md)
+    - [Skylark role creation guide](2123197/Best practices/Skylark role creation guide.md)
+    - [Upload files by using an internal TOS presigned URL](2123197/Best practices/Upload files by using an internal TOS presigned URL.md)
+    - [Usage detail CSV parsing best practices](2123197/Best practices/Usage detail CSV parsing best practices.md)
+    - **Managed Agents**
+      - [\[Basics\] How to use custom tools in Managed Agents](2123197/Best practices/Managed Agents/[Basics] How to use custom tools in Managed Agents.md)
+  - **FAQ**
+    - [FAQs](2123197/FAQ/FAQs.md)
+  - **Legal documents**
+    - [BytePlus Copyright and Portrait Feature Usage Rules](2123197/Legal documents/BytePlus Copyright and Portrait Feature Usage Rules.md)
+    - [International Availability for BytePlus Model Service](2123197/Legal documents/International Availability for BytePlus Model Service.md)
+    - [Specific Terms for the BytePlus Video Generation Model Services ](2123197/Legal documents/Specific Terms for the BytePlus Video Generation Model Services.md)
+    - [Terms and Conditions](2123197/Legal documents/Terms and Conditions.md)
+    - **Agent Plan - Coding Plan**
+      - [ArkClaw Service Rules](2123197/Legal documents/Agent Plan - Coding Plan/ArkClaw Service Rules.md)
+      - [Exclusive offer for new users](2123197/Legal documents/Agent Plan - Coding Plan/Exclusive offer for new users.md)
+  - **Permission management**
+    - [Access control using IAM](2123197/Permission management/Access control using IAM.md)
+    - [IAM API key best practices](2123197/Permission management/IAM API key best practices.md)
+    - [Manage API keys](2123197/Permission management/Manage API keys.md)
+  - **Platform functionalities**
+    - [Activation Management](2123197/Platform functionalities/Activation Management.md)
+    - [Batch inference (via console)](2123197/Platform functionalities/Batch inference (via console).md)
+    - [Foundation models](2123197/Platform functionalities/Foundation models.md)
+    - [Knowledge base](2123197/Platform functionalities/Knowledge base.md)
+    - [Model Generations Quality Diagnostics Service Acknowledgement](2123197/Platform functionalities/Model Generations Quality Diagnostics Service Acknowledgement.md)
+    - [Monitoring](2123197/Platform functionalities/Monitoring.md)
+    - [Network configuration](2123197/Platform functionalities/Network configuration.md)
+    - [Platform functionality overview](2123197/Platform functionalities/Platform functionality overview.md)
+    - [Project authorization](2123197/Platform functionalities/Project authorization.md)
+    - **Online inference**
+      - [Free Tokens Only mode](2123197/Platform functionalities/Online inference/Free Tokens Only mode.md)
+      - [Manage inference endpoints](2123197/Platform functionalities/Online inference/Manage inference endpoints.md)
+    - **Playground**
+      - [Add real-human assets to asset library](2123197/Platform functionalities/Playground/Add real-human assets to asset library.md)
+      - [Digital character library](2123197/Platform functionalities/Playground/Digital character library.md)
+      - [Explore model capabilities](2123197/Platform functionalities/Playground/Explore model capabilities.md)
+      - [Generate IP videos using copyrighted video generation templates](2123197/Platform functionalities/Playground/Generate IP videos using copyrighted video generation templates.md)
+    - **Security audit**
+      - [Console - inference endpoint security monitoring overview](2123197/Platform functionalities/Security audit/Console - inference endpoint security monitoring overview.md)
+      - [Console - inference security audit](2123197/Platform functionalities/Security audit/Console - inference security audit.md)
+  - **Popular activities**
+    - [Activate, use, and cancel Dreamina Seedance 2.5 and 2.0 series models](2123197/Popular activities/Activate, use, and cancel Dreamina Seedance 2.5 and 2.0 series models.md)
+    - [Byteplus ModelArk Data Collaboration Rewards Campaign and Data Authorization Agreement](2123197/Popular activities/Byteplus ModelArk Data Collaboration Rewards Campaign and Data Authorization Agreement.md)
+    - [Inference free trial](2123197/Popular activities/Inference free trial.md)
+    - [Limited-time discount campaign rules for Seedance models](2123197/Popular activities/Limited-time discount campaign rules for Seedance models.md)
+    - [ModelArk referral campaign](2123197/Popular activities/ModelArk referral campaign.md)
+    - [Resource packs for Dreamina Seedance 2.0 and 2.5 models](2123197/Popular activities/Resource packs for Dreamina Seedance 2.0 and 2.5 models.md)
+  - **Pricing and billing**
+    - [Dreamina Seedance Advanced Creation Rights purchase guide](2123197/Pricing and billing/Dreamina Seedance Advanced Creation Rights purchase guide.md)
+    - [Knowledge base billing](2123197/Pricing and billing/Knowledge base billing.md)
+    - [Model service billing](2123197/Pricing and billing/Model service billing.md)
+    - [ModelArk artifacts verification](2123197/Pricing and billing/ModelArk artifacts verification.md)
+  - **Product announcements**
+    - [API schema upgrade notice](2123197/Product announcements/API schema upgrade notice.md)
+    - [Model deprecations](2123197/Product announcements/Model deprecations.md)
+    - [Model releases](2123197/Product announcements/Model releases.md)
+    - [Official Ark SDK upgrade notice](2123197/Product announcements/Official Ark SDK upgrade notice.md)
+    - [Product updates](2123197/Product announcements/Product updates.md)
+    - [Retiring model migration guide](2123197/Product announcements/Retiring model migration guide.md)
+    - **Previous releases**
+      - [\[Announcement\] Temporary sign-in requirement for certain pages](2123197/Product announcements/Previous releases/[Announcement] Temporary sign-in requirement for certain pages.md)
+      - **2025**
+        - [Model deprecations - 2025](2123197/Product announcements/Previous releases/2025/Model deprecations - 2025.md)
+        - [Model releases - 2025](2123197/Product announcements/Previous releases/2025/Model releases - 2025.md)
+        - [Product updates - 2025](2123197/Product announcements/Previous releases/2025/Product updates - 2025.md)
+  - **Security & trust**
+    - [BytePlus ModelArk data processing](2123197/Security & trust/BytePlus ModelArk data processing.md)
+    - [C2PA Content Credentials Guide](2123197/Security & trust/C2PA Content Credentials Guide.md)
+    - [Inferential session data application layer encryption scheme](2123197/Security & trust/Inferential session data application layer encryption scheme.md)
+    - [ModelArk Trusted Collaborative Computing Framework](2123197/Security & trust/ModelArk Trusted Collaborative Computing Framework.md)
+    - **ModelArk Content filter**
+      - [ModelArk Content filter FAQ](2123197/Security & trust/ModelArk Content filter/ModelArk Content filter FAQ.md)
+      - [ModelArk Content filter overview](2123197/Security & trust/ModelArk Content filter/ModelArk Content filter overview.md)
+- **2388013**
+  - **Coding Plan**
+    - [Ark CLI guide for Coding Plan](2388013/Coding Plan/Ark CLI guide for Coding Plan.md)
+    - [FAQs](2388013/Coding Plan/FAQs.md)
+    - [Quick start guide](2388013/Coding Plan/Quick start guide.md)
+    - [Subscription overview](2388013/Coding Plan/Subscription overview.md)
+    - **Additional entitlements**
+      - [ArkClaw](2388013/Coding Plan/Additional entitlements/ArkClaw.md)
+      - [Memory enhancement - embedding model](2388013/Coding Plan/Additional entitlements/Memory enhancement - embedding model.md)
+    - **Announcements**
+      - [Coding Plan release notes](2388013/Coding Plan/Announcements/Coding Plan release notes.md)
+      - [Model deprecation announcement](2388013/Coding Plan/Announcements/Model deprecation announcement.md)
+      - [Time-limited referral campaign](2388013/Coding Plan/Announcements/Time-limited referral campaign.md)
+    - **Integrate with AI programming tools**
+      - [Claude Code](2388013/Coding Plan/Integrate with AI programming tools/Claude Code.md)
+      - [Codex](2388013/Coding Plan/Integrate with AI programming tools/Codex.md)
+      - [DeepSeek Harness](2388013/Coding Plan/Integrate with AI programming tools/DeepSeek Harness.md)
+      - [Hermes Agent](2388013/Coding Plan/Integrate with AI programming tools/Hermes Agent.md)
+      - [OpenClaw (Clawdbot)](2388013/Coding Plan/Integrate with AI programming tools/OpenClaw (Clawdbot).md)
+      - [OpenCode](2388013/Coding Plan/Integrate with AI programming tools/OpenCode.md)
+      - [OpenViking](2388013/Coding Plan/Integrate with AI programming tools/OpenViking.md)
+      - [Other tools](2388013/Coding Plan/Integrate with AI programming tools/Other tools.md)
+      - [TRAE](2388013/Coding Plan/Integrate with AI programming tools/TRAE.md)
+      - [WorkBuddy](2388013/Coding Plan/Integrate with AI programming tools/WorkBuddy.md)
+      - [ZCode](2388013/Coding Plan/Integrate with AI programming tools/ZCode.md)
+- **ai-suite**
+  - **ArkCLI**
+    - [Ark CLI guide](ai-suite/ArkCLI/Ark CLI guide.md)
+    - **Ark CLI Command Reference**
+      - [Chat & Generation](ai-suite/ArkCLI/Ark CLI Command Reference/Chat & Generation.md)
+      - [Identity & Configuration](ai-suite/ArkCLI/Ark CLI Command Reference/Identity & Configuration.md)
+      - [Inference & Training](ai-suite/ArkCLI/Ark CLI Command Reference/Inference & Training.md)
+      - [Managed Agents](ai-suite/ArkCLI/Ark CLI Command Reference/Managed Agents.md)
+      - [Models & Plans](ai-suite/ArkCLI/Ark CLI Command Reference/Models & Plans.md)
+      - [Tools & Platform](ai-suite/ArkCLI/Ark CLI Command Reference/Tools & Platform.md)
+      - [Usage & Diagnostics](ai-suite/ArkCLI/Ark CLI Command Reference/Usage & Diagnostics.md)
+  - **Documentation access**
+    - [From URLs](ai-suite/Documentation access/From URLs.md)
+    - [ModelArk documentation Skills](ai-suite/Documentation access/ModelArk documentation Skills.md)
+- **api**
+  - **3D generation API**
+    - **Hitem3d API**
+      - [Cancel or delete a 3D generation task](api/3D generation API/Hitem3d API/Cancel or delete a 3D generation task.md)
+      - [Create a 3D generation task](api/3D generation API/Hitem3d API/Create a 3D generation task.md)
+      - [List 3D generation tasks](api/3D generation API/Hitem3d API/List 3D generation tasks.md)
+      - [Retrieve a 3D generation task](api/3D generation API/Hitem3d API/Retrieve a 3D generation task.md)
+    - **Hyper3D API**
+      - [Cancel or delete a 3D generation task](api/3D generation API/Hyper3D API/Cancel or delete a 3D generation task.md)
+      - [Create a 3D generation task](api/3D generation API/Hyper3D API/Create a 3D generation task.md)
+      - [List 3D generation tasks](api/3D generation API/Hyper3D API/List 3D generation tasks.md)
+      - [Retrieve a 3D generation task](api/3D generation API/Hyper3D API/Retrieve a 3D generation task.md)
+  - **Batch inference API**
+    - [Batch API (Chat)](api/Batch inference API/Batch API (Chat).md)
+    - **Batch inference API (Job)**
+      - [CreateBatchInferenceJob](api/Batch inference API/Batch inference API (Job)/CreateBatchInferenceJob.md)
+      - [DeleteBatchInferenceJob](api/Batch inference API/Batch inference API (Job)/DeleteBatchInferenceJob.md)
+      - [GetBatchInferenceJob](api/Batch inference API/Batch inference API (Job)/GetBatchInferenceJob.md)
+      - [ListBatchInferenceJobs](api/Batch inference API/Batch inference API (Job)/ListBatchInferenceJobs.md)
+      - [StopBatchInferenceJob](api/Batch inference API/Batch inference API (Job)/StopBatchInferenceJob.md)
+      - [UpdateBatchInferenceJob](api/Batch inference API/Batch inference API (Job)/UpdateBatchInferenceJob.md)
+  - **Chat API**
+    - [Chat API](api/Chat API/Chat API.md)
+  - **Control plane API**
+    - **Case report API**
+      - [CasePlatformV1BadcaseQuery — BytePlus ModelArk Seedance 2.x Generations Quality Diagnostics Result Query API](api/Control plane API/Case report API/CasePlatformV1BadcaseQuery — BytePlus ModelArk Seedance 2.x Generations Quality Diagnostic.md)
+      - [CasePlatformV1BadcaseReport - BytePlus ModelArk Seedance 2.x Generations Quality Diagnostics API](api/Control plane API/Case report API/CasePlatformV1BadcaseReport - BytePlus ModelArk Seedance 2.x Generations Quality Diagnosti.md)
+    - **Manage API keys**
+      - [GetApiKey](api/Control plane API/Manage API keys/GetApiKey.md)
+    - **Manage foundation model**
+      - [GetFoundationModel](api/Control plane API/Manage foundation model/GetFoundationModel.md)
+      - [GetFoundationModelVersion](api/Control plane API/Manage foundation model/GetFoundationModelVersion.md)
+      - [GetFoundationModelVersionConfiguration](api/Control plane API/Manage foundation model/GetFoundationModelVersionConfiguration.md)
+      - [ListFoundationModels](api/Control plane API/Manage foundation model/ListFoundationModels.md)
+      - [ListFoundationModelVersions](api/Control plane API/Manage foundation model/ListFoundationModelVersions.md)
+    - **Manage inference endpoints**
+      - [CancelEndpointRolling - Cancel inference endpoint rolling upgrade](api/Control plane API/Manage inference endpoints/CancelEndpointRolling - Cancel inference endpoint rolling upgrade.md)
+      - [Create an inference endpoint](api/Control plane API/Manage inference endpoints/Create an inference endpoint.md)
+      - [CreateEndpointRolling - Create an inference endpoint rolling upgrade task](api/Control plane API/Manage inference endpoints/CreateEndpointRolling - Create an inference endpoint rolling upgrade task.md)
+      - [DeleteEndpoint](api/Control plane API/Manage inference endpoints/DeleteEndpoint.md)
+      - [GetEndpoint](api/Control plane API/Manage inference endpoints/GetEndpoint.md)
+      - [GetEndpointCertificate](api/Control plane API/Manage inference endpoints/GetEndpointCertificate.md)
+      - [GetEndpointRolling - Query inference endpoint rolling upgrade details](api/Control plane API/Manage inference endpoints/GetEndpointRolling - Query inference endpoint rolling upgrade details.md)
+      - [ListEndpoints](api/Control plane API/Manage inference endpoints/ListEndpoints.md)
+      - [RollbackEndpointRolling - Roll back inference endpoint rolling upgrade](api/Control plane API/Manage inference endpoints/RollbackEndpointRolling - Roll back inference endpoint rolling upgrade.md)
+      - [StartEndpoint](api/Control plane API/Manage inference endpoints/StartEndpoint.md)
+      - [StopEndpoint](api/Control plane API/Manage inference endpoints/StopEndpoint.md)
+      - [UpdateEndpoint](api/Control plane API/Manage inference endpoints/UpdateEndpoint.md)
+    - **Manage model usage**
+      - [Create a usage record export task](api/Control plane API/Manage model usage/Create a usage record export task.md)
+      - [Disable model inference limits](api/Control plane API/Manage model usage/Disable model inference limits.md)
+      - [Enable model inference limits](api/Control plane API/Manage model usage/Enable model inference limits.md)
+      - [Get inference request usage](api/Control plane API/Manage model usage/Get inference request usage.md)
+      - [Get inference task usage](api/Control plane API/Manage model usage/Get inference task usage.md)
+      - [Query a usage record export task](api/Control plane API/Manage model usage/Query a usage record export task.md)
+      - [Query inference usage](api/Control plane API/Manage model usage/Query inference usage.md)
+      - [Query model inference limits](api/Control plane API/Manage model usage/Query model inference limits.md)
+    - **Model activation**
+      - [ActivateModels - Batch activation of foundation models](api/Control plane API/Model activation/ActivateModels - Batch activation of foundation models.md)
+      - [DisableAutoModelActivation - Turn off automatic activation of new models](api/Control plane API/Model activation/DisableAutoModelActivation - Turn off automatic activation of new models.md)
+      - [EnableAutoModelActivation - Enable automatic activation of new models](api/Control plane API/Model activation/EnableAutoModelActivation - Enable automatic activation of new models.md)
+      - [GetModelActivation - Query model activation details](api/Control plane API/Model activation/GetModelActivation - Query model activation details.md)
+      - [ListModelActivations - List activated models](api/Control plane API/Model activation/ListModelActivations - List activated models.md)
+    - **Security audit**
+      - [CreateArkOfficialResultQuery - Create a ModelArk artifact verification query](api/Control plane API/Security audit/CreateArkOfficialResultQuery - Create a ModelArk artifact verification query.md)
+      - [GetArkOfficialResult - Obtain ModelArk artifact verification result](api/Control plane API/Security audit/GetArkOfficialResult - Obtain ModelArk artifact verification result.md)
+      - [Retrieve Security audit logs](api/Control plane API/Security audit/Retrieve Security audit logs.md)
+  - **Embedding API**
+    - [Multimodal Vectorization API](api/Embedding API/Multimodal Vectorization API.md)
+  - **Files API**
+    - [Delete file](api/Files API/Delete file.md)
+    - [List files](api/Files API/List files.md)
+    - [Retrieve file](api/Files API/Retrieve file.md)
+    - [Upload file](api/Files API/Upload file.md)
+  - **Image generation API**
+    - [Image generation API](api/Image generation API/Image generation API.md)
+    - [Streaming response](api/Image generation API/Streaming response.md)
+  - **Managed Agents API**
+    - **Agents**
+      - [Archive agent](api/Managed Agents API/Agents/Archive agent.md)
+      - [Create agent](api/Managed Agents API/Agents/Create agent.md)
+      - [Delete agent](api/Managed Agents API/Agents/Delete agent.md)
+      - [Get agent](api/Managed Agents API/Agents/Get agent.md)
+      - [List agent versions](api/Managed Agents API/Agents/List agent versions.md)
+      - [List agents](api/Managed Agents API/Agents/List agents.md)
+      - [Update agent](api/Managed Agents API/Agents/Update agent.md)
+    - **Environments**
+      - [Archive environment](api/Managed Agents API/Environments/Archive environment.md)
+      - [Create environment](api/Managed Agents API/Environments/Create environment.md)
+      - [Delete environment](api/Managed Agents API/Environments/Delete environment.md)
+      - [Get environment](api/Managed Agents API/Environments/Get environment.md)
+      - [List environments](api/Managed Agents API/Environments/List environments.md)
+      - [Update environment](api/Managed Agents API/Environments/Update environment.md)
+      - **Self-hosted worker**
+        - [Acknowledge work](api/Managed Agents API/Environments/Self-hosted worker/Acknowledge work.md)
+        - [Get a work item](api/Managed Agents API/Environments/Self-hosted worker/Get a work item.md)
+        - [Get work queue statistics](api/Managed Agents API/Environments/Self-hosted worker/Get work queue statistics.md)
+        - [List work items](api/Managed Agents API/Environments/Self-hosted worker/List work items.md)
+        - [Long-poll for work](api/Managed Agents API/Environments/Self-hosted worker/Long-poll for work.md)
+        - [Renew work lease](api/Managed Agents API/Environments/Self-hosted worker/Renew work lease.md)
+        - [Stop work](api/Managed Agents API/Environments/Self-hosted worker/Stop work.md)
+    - **Memory Stores**
+      - [Create memory store](api/Managed Agents API/Memory Stores/Create memory store.md)
+      - [Delete memory store](api/Managed Agents API/Memory Stores/Delete memory store.md)
+      - [Get memory store](api/Managed Agents API/Memory Stores/Get memory store.md)
+      - [List memory stores](api/Managed Agents API/Memory Stores/List memory stores.md)
+      - [Update memory store](api/Managed Agents API/Memory Stores/Update memory store.md)
+      - **Memories**
+        - [Batch create memories](api/Managed Agents API/Memory Stores/Memories/Batch create memories.md)
+        - [Create memory](api/Managed Agents API/Memory Stores/Memories/Create memory.md)
+        - [Delete memory](api/Managed Agents API/Memory Stores/Memories/Delete memory.md)
+        - [Get memory](api/Managed Agents API/Memory Stores/Memories/Get memory.md)
+        - [List memories](api/Managed Agents API/Memory Stores/Memories/List memories.md)
+        - [Update memory](api/Managed Agents API/Memory Stores/Memories/Update memory.md)
+    - **Sessions**
+      - [Archive session](api/Managed Agents API/Sessions/Archive session.md)
+      - [Create session](api/Managed Agents API/Sessions/Create session.md)
+      - [Delete session](api/Managed Agents API/Sessions/Delete session.md)
+      - [Get session](api/Managed Agents API/Sessions/Get session.md)
+      - [List sessions](api/Managed Agents API/Sessions/List sessions.md)
+      - [Update session](api/Managed Agents API/Sessions/Update session.md)
+      - [Upgrade session](api/Managed Agents API/Sessions/Upgrade session.md)
+      - **Session events**
+        - [List session events](api/Managed Agents API/Sessions/Session events/List session events.md)
+        - [Send session event](api/Managed Agents API/Sessions/Session events/Send session event.md)
+        - [Session event structure reference](api/Managed Agents API/Sessions/Session events/Session event structure reference.md)
+        - [Stream session events](api/Managed Agents API/Sessions/Session events/Stream session events.md)
+      - **Session resources**
+        - [Add session resource](api/Managed Agents API/Sessions/Session resources/Add session resource.md)
+        - [Get session resource](api/Managed Agents API/Sessions/Session resources/Get session resource.md)
+        - [List session resources](api/Managed Agents API/Sessions/Session resources/List session resources.md)
+      - **Session tasks**
+        - [Cancel session task](api/Managed Agents API/Sessions/Session tasks/Cancel session task.md)
+        - [List session tasks](api/Managed Agents API/Sessions/Session tasks/List session tasks.md)
+        - [Query session task](api/Managed Agents API/Sessions/Session tasks/Query session task.md)
+      - **Session threads**
+        - [Get thread](api/Managed Agents API/Sessions/Session threads/Get thread.md)
+        - [List thread events](api/Managed Agents API/Sessions/Session threads/List thread events.md)
+        - [List threads](api/Managed Agents API/Sessions/Session threads/List threads.md)
+        - [Stream thread events](api/Managed Agents API/Sessions/Session threads/Stream thread events.md)
+    - **Skills**
+      - [Create new skill version](api/Managed Agents API/Skills/Create new skill version.md)
+      - [Create skill](api/Managed Agents API/Skills/Create skill.md)
+      - [Delete skill](api/Managed Agents API/Skills/Delete skill.md)
+      - [Delete specified version of skill](api/Managed Agents API/Skills/Delete specified version of skill.md)
+      - [Download skill of specified version](api/Managed Agents API/Skills/Download skill of specified version.md)
+      - [Get skill](api/Managed Agents API/Skills/Get skill.md)
+      - [Import GitHub skills](api/Managed Agents API/Skills/Import GitHub skills.md)
+      - [List skill versions](api/Managed Agents API/Skills/List skill versions.md)
+      - [List skills](api/Managed Agents API/Skills/List skills.md)
+      - [Retrieve skill of specified version](api/Managed Agents API/Skills/Retrieve skill of specified version.md)
+      - [Scan GitHub skills](api/Managed Agents API/Skills/Scan GitHub skills.md)
+      - [Set skill content protection](api/Managed Agents API/Skills/Set skill content protection.md)
+    - **Vaults**
+      - [Create vault](api/Managed Agents API/Vaults/Create vault.md)
+      - [Delete vault](api/Managed Agents API/Vaults/Delete vault.md)
+      - [Get vault](api/Managed Agents API/Vaults/Get vault.md)
+      - [List vaults](api/Managed Agents API/Vaults/List vaults.md)
+      - [Update vault](api/Managed Agents API/Vaults/Update vault.md)
+      - **Credentials**
+        - [Create credential](api/Managed Agents API/Vaults/Credentials/Create credential.md)
+        - [Delete credential](api/Managed Agents API/Vaults/Credentials/Delete credential.md)
+        - [Get credential](api/Managed Agents API/Vaults/Credentials/Get credential.md)
+        - [List credentials](api/Managed Agents API/Vaults/Credentials/List credentials.md)
+        - [Update credential](api/Managed Agents API/Vaults/Credentials/Update credential.md)
+        - [Validate MCP OAuth credential](api/Managed Agents API/Vaults/Credentials/Validate MCP OAuth credential.md)
+    - **Webhooks**
+      - [Create webhook endpoint](api/Managed Agents API/Webhooks/Create webhook endpoint.md)
+      - [Delete webhook endpoint](api/Managed Agents API/Webhooks/Delete webhook endpoint.md)
+      - [Disable webhook endpoint](api/Managed Agents API/Webhooks/Disable webhook endpoint.md)
+      - [Enable webhook endpoint](api/Managed Agents API/Webhooks/Enable webhook endpoint.md)
+      - [Get webhook endpoint](api/Managed Agents API/Webhooks/Get webhook endpoint.md)
+      - [Get webhook event](api/Managed Agents API/Webhooks/Get webhook event.md)
+      - [List webhook endpoints](api/Managed Agents API/Webhooks/List webhook endpoints.md)
+      - [List webhook events](api/Managed Agents API/Webhooks/List webhook events.md)
+      - [Reset webhook signing secret](api/Managed Agents API/Webhooks/Reset webhook signing secret.md)
+      - [Send webhook test event](api/Managed Agents API/Webhooks/Send webhook test event.md)
+      - [Update webhook endpoint](api/Managed Agents API/Webhooks/Update webhook endpoint.md)
+      - [Webhook event structure reference](api/Managed Agents API/Webhooks/Webhook event structure reference.md)
+  - **Messages API**
+    - [Count tokens for Messages requests](api/Messages API/Count tokens for Messages requests.md)
+    - [Create message](api/Messages API/Create message.md)
+  - **Models API**
+    - [Models API](api/Models API/Models API.md)
+  - **Others**
+    - [Best practices for backward compatibility](api/Others/Best practices for backward compatibility.md)
+    - [Common SDK usage examples](api/Others/Common SDK usage examples.md)
+    - [Compatible with OpenAI API](api/Others/Compatible with OpenAI API.md)
+    - [Error codes](api/Others/Error codes.md)
+  - **Prerequisites**
+    - [Base URL and authentication](api/Prerequisites/Base URL and authentication.md)
+    - [Install and upgrade SDK](api/Prerequisites/Install and upgrade SDK.md)
+    - [Obtain and configure an API key](api/Prerequisites/Obtain and configure an API key.md)
+  - **Responses API**
+    - [Create a model response](api/Responses API/Create a model response.md)
+    - [Delete a model response](api/Responses API/Delete a model response.md)
+    - [Retrieve a model response](api/Responses API/Retrieve a model response.md)
+    - [Retrieve response context](api/Responses API/Retrieve response context.md)
+    - **Streaming response events**
+      - [Output item and text response](api/Responses API/Streaming response events/Output item and text response.md)
+      - [Response lifecycle](api/Responses API/Streaming response events/Response lifecycle.md)
+      - [Speech transcription and error events](api/Responses API/Streaming response events/Speech transcription and error events.md)
+      - [Tool call events](api/Responses API/Streaming response events/Tool call events.md)
+  - **Tokenization API**
+    - [Tokenization API](api/Tokenization API/Tokenization API.md)
+  - **Video generation API**
+    - [Cancel or delete a video generation task](api/Video generation API/Cancel or delete a video generation task.md)
+    - [Create a video generation task](api/Video generation API/Create a video generation task.md)
+    - [List video generation tasks](api/Video generation API/List video generation tasks.md)
+    - [Retrieve a video generation task](api/Video generation API/Retrieve a video generation task.md)
+- **Get started**
+  - [Best practices of model calling for agents](Get started/Best practices of model calling for agents.md)
+  - [Migrate to the official Ark SDK](Get started/Migrate to the official Ark SDK.md)
+  - [Overview](Get started/Overview.md)
+  - [Pricing](Get started/Pricing.md)
+  - [Quick start](Get started/Quick start.md)
+  - [Region availability](Get started/Region availability.md)
+- **Inference**
+  - [Batch inference](Inference/Batch inference.md)
+  - [Inference methods overview](Inference/Inference methods overview.md)
+  - [Online inference (Flex)](Inference/Online inference (Flex).md)
+  - [Online inference (standard)](Inference/Online inference (standard).md)
+  - **Model Unit**
+    - [Model Unit](Inference/Model Unit/Model Unit.md)
+- **Managed Agents**
+  - **Advanced capabilities**
+    - [Multi Agent](Managed Agents/Advanced capabilities/Multi Agent.md)
+  - **Configure agent environments**
+    - [Cloud sandbox reference](Managed Agents/Configure agent environments/Cloud sandbox reference.md)
+    - [Configure cloud environments](Managed Agents/Configure agent environments/Configure cloud environments.md)
+    - **Self-hosted environments**
+      - [Configure and run a self-hosted environment](Managed Agents/Configure agent environments/Self-hosted environments/Configure and run a self-hosted environment.md)
+      - [Self-hosted environment overview](Managed Agents/Configure agent environments/Self-hosted environments/Self-hosted environment overview.md)
+      - [Self-hosted environment security](Managed Agents/Configure agent environments/Self-hosted environments/Self-hosted environment security.md)
+  - **Define agents**
+    - [Agent](Managed Agents/Define agents/Agent.md)
+    - [List of parameters supported by models](Managed Agents/Define agents/List of parameters supported by models.md)
+    - [MCP](Managed Agents/Define agents/MCP.md)
+    - [Skills](Managed Agents/Define agents/Skills.md)
+    - [Tool permission policy](Managed Agents/Define agents/Tool permission policy.md)
+    - [Tools](Managed Agents/Define agents/Tools.md)
+  - **Delegate tasks to agents**
+    - [Manage session](Managed Agents/Delegate tasks to agents/Manage session.md)
+    - [Receive webhook events](Managed Agents/Delegate tasks to agents/Receive webhook events.md)
+    - [Run and manage background tool tasks](Managed Agents/Delegate tasks to agents/Run and manage background tool tasks.md)
+    - [Session event stream](Managed Agents/Delegate tasks to agents/Session event stream.md)
+    - [Start session](Managed Agents/Delegate tasks to agents/Start session.md)
+    - [Use Vaults authentication](Managed Agents/Delegate tasks to agents/Use Vaults authentication.md)
+  - **Get started**
+    - [Overview](Managed Agents/Get started/Overview.md)
+    - [Quick start (code)](Managed Agents/Get started/Quick start (code).md)
+    - [Quick start (console)](Managed Agents/Get started/Quick start (console).md)
+  - **Manage agent context**
+    - [Configure context compaction](Managed Agents/Manage agent context/Configure context compaction.md)
+    - [Persistent memory](Managed Agents/Manage agent context/Persistent memory.md)
+    - [Upload and mount files](Managed Agents/Manage agent context/Upload and mount files.md)
+- **Model**
+  - [DeepSeek V4.1 Flash](Model/DeepSeek V4.1 Flash.md)
+  - [Model list](Model/Model list.md)
+- **Model invocation**
+  - [Integrate with third-party tools](Model invocation/Integrate with third-party tools.md)
+  - [Text generation](Model invocation/Text generation.md)
+  - **Advanced usage**
+    - [Context cache](Model invocation/Advanced usage/Context cache.md)
+    - [Context management](Model invocation/Advanced usage/Context management.md)
+    - [Deep reasoning](Model invocation/Advanced usage/Deep reasoning.md)
+    - [Files API tutorial](Model invocation/Advanced usage/Files API tutorial.md)
+    - [Prefill-based response](Model invocation/Advanced usage/Prefill-based response.md)
+    - [Prompt engineering](Model invocation/Advanced usage/Prompt engineering.md)
+    - [Streaming output](Model invocation/Advanced usage/Streaming output.md)
+    - [Structured output (beta)](Model invocation/Advanced usage/Structured output (beta).md)
+    - [Visual grounding](Model invocation/Advanced usage/Visual grounding.md)
+  - **Embeddings**
+    - [Multimodal embedding](Model invocation/Embeddings/Multimodal embedding.md)
+  - **Image generation**
+    - [Image generation tutorial](Model invocation/Image generation/Image generation tutorial.md)
+    - [Seedream 5.0 pro / flash interactive editing guide](Model invocation/Image generation/Seedream 5.0 pro - flash interactive editing guide.md)
+    - [Seedream 5.0 pro / flash tutorial](Model invocation/Image generation/Seedream 5.0 pro - flash tutorial.md)
+  - **Multi-modal understanding**
+    - [Audio understanding](Model invocation/Multi-modal understanding/Audio understanding.md)
+    - [Document understanding](Model invocation/Multi-modal understanding/Document understanding.md)
+    - [Image understanding](Model invocation/Multi-modal understanding/Image understanding.md)
+    - [Video understanding](Model invocation/Multi-modal understanding/Video understanding.md)
+  - **Responses API tutorials**
+    - [Context editing (Responses API)](Model invocation/Responses API tutorials/Context editing (Responses API).md)
+    - [Deep reasoning (Responses API)](Model invocation/Responses API tutorials/Deep reasoning (Responses API).md)
+    - [Migrate to Responses API](Model invocation/Responses API tutorials/Migrate to Responses API.md)
+    - [Multimodal understanding (Responses API)](Model invocation/Responses API tutorials/Multimodal understanding (Responses API).md)
+    - [Structured output (Responses API)](Model invocation/Responses API tutorials/Structured output (Responses API).md)
+    - [Text generation (Responses API)](Model invocation/Responses API tutorials/Text generation (Responses API).md)
+    - [Tool use (Responses API)](Model invocation/Responses API tutorials/Tool use (Responses API).md)
+  - **Tool use**
+    - [Cloud-deployed MCP / remote MCP](Model invocation/Tool use/Cloud-deployed MCP - remote MCP.md)
+    - [Function call](Model invocation/Tool use/Function call.md)
+  - **Video generation**
+    - [Create portrait videos with Dreamina Seedance models](Model invocation/Video generation/Create portrait videos with Dreamina Seedance models.md)
+    - [Dreamina Seedance 2.0 series prompt guide](Model invocation/Video generation/Dreamina Seedance 2.0 series prompt guide.md)
+    - [Dreamina Seedance 2.0 series tutorial](Model invocation/Video generation/Dreamina Seedance 2.0 series tutorial.md)
+    - [Dreamina Seedance 2.5 prompt guide](Model invocation/Video generation/Dreamina Seedance 2.5 prompt guide.md)
+    - [Dreamina Seedance 2.5 tutorial](Model invocation/Video generation/Dreamina Seedance 2.5 tutorial.md)
+    - [Video generation tutorial](Model invocation/Video generation/Video generation tutorial.md)

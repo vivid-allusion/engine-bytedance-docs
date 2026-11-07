@@ -1,0 +1,715 @@
+# BytePlus EMR
+
+529 pages. Source: https://docs.byteplus.com/en/docs/E-MapReduce
+
+Back to the [full index](../README.md).
+
+- **Component_and_API_reference**
+  - **API reference**
+    - **EMR on ECS API reference**
+      - **Calling methods**
+        - [Service address](Component_and_API_reference/API reference/EMR on ECS API reference/Calling methods/Service address.md)
+    - **EMR Serverless API reference**
+      - **Invocation methods**
+        - [Service address](Component_and_API_reference/API reference/EMR Serverless API reference/Invocation methods/Service address.md)
+  - **Guide to operating components**
+    - **Airflow**
+      - [Advanced usage](Component_and_API_reference/Guide to operating components/Airflow/Advanced usage.md)
+      - [Best practices](Component_and_API_reference/Guide to operating components/Airflow/Best practices.md)
+      - [FAQs and important notes](Component_and_API_reference/Guide to operating components/Airflow/FAQs and important notes.md)
+      - [Integrating Airflow logs with TOS](Component_and_API_reference/Guide to operating components/Airflow/Integrating Airflow logs with TOS.md)
+      - [Overview](Component_and_API_reference/Guide to operating components/Airflow/Overview.md)
+      - [Quickstart](Component_and_API_reference/Guide to operating components/Airflow/Quickstart.md)
+      - **Basic usage**
+        - [code sample](Component_and_API_reference/Guide to operating components/Airflow/Basic usage/code sample.md)
+        - [Key configurations](Component_and_API_reference/Guide to operating components/Airflow/Basic usage/Key configurations.md)
+    - **Celeborn**
+      - [Advanced usage](Component_and_API_reference/Guide to operating components/Celeborn/Advanced usage.md)
+      - [Basic usage](Component_and_API_reference/Guide to operating components/Celeborn/Basic usage.md)
+      - [Celeborn FAQs](Component_and_API_reference/Guide to operating components/Celeborn/Celeborn FAQs.md)
+      - [Celeborn overview](Component_and_API_reference/Guide to operating components/Celeborn/Celeborn overview.md)
+    - **ClickHouse**
+      - [Advanced usage](Component_and_API_reference/Guide to operating components/ClickHouse/Advanced usage.md)
+      - [Basic usage](Component_and_API_reference/Guide to operating components/ClickHouse/Basic usage.md)
+      - [Overview](Component_and_API_reference/Guide to operating components/ClickHouse/Overview.md)
+      - [Quickstart](Component_and_API_reference/Guide to operating components/ClickHouse/Quickstart.md)
+    - **Delta Lake**
+      - [Advanced usage](Component_and_API_reference/Guide to operating components/Delta Lake/Advanced usage.md)
+      - [Basic usage](Component_and_API_reference/Guide to operating components/Delta Lake/Basic usage.md)
+      - [Usage instructions](Component_and_API_reference/Guide to operating components/Delta Lake/Usage instructions.md)
+    - **DolphinScheduler**
+      - [Configuration guide](Component_and_API_reference/Guide to operating components/DolphinScheduler/Configuration guide.md)
+      - [FAQs](Component_and_API_reference/Guide to operating components/DolphinScheduler/FAQs.md)
+      - [Integration example](Component_and_API_reference/Guide to operating components/DolphinScheduler/Integration example.md)
+      - [Overview](Component_and_API_reference/Guide to operating components/DolphinScheduler/Overview.md)
+      - [quickstart](Component_and_API_reference/Guide to operating components/DolphinScheduler/quickstart.md)
+      - **best practices**
+        - [Best practices for integrating DolphinScheduler with TOS](Component_and_API_reference/Guide to operating components/DolphinScheduler/best practices/Best practices for integrating DolphinScheduler with TOS.md)
+        - [DolphinScheduler shell kill application practices](Component_and_API_reference/Guide to operating components/DolphinScheduler/best practices/DolphinScheduler shell kill application practices.md)
+        - [DolphinScheduler supports Volcano Voice alerts](Component_and_API_reference/Guide to operating components/DolphinScheduler/best practices/DolphinScheduler supports Volcano Voice alerts.md)
+      - **DolphinScheduler on EMR Serverless**
+        - [Dolphin Serverless task output JobID](Component_and_API_reference/Guide to operating components/DolphinScheduler/DolphinScheduler on EMR Serverless/Dolphin Serverless task output JobID.md)
+        - [Use Spark submit](Component_and_API_reference/Guide to operating components/DolphinScheduler/DolphinScheduler on EMR Serverless/Use Spark submit.md)
+        - [Use the Task Plugin](Component_and_API_reference/Guide to operating components/DolphinScheduler/DolphinScheduler on EMR Serverless/Use the Task Plugin.md)
+    - **Doris**
+      - [Basic usage](Component_and_API_reference/Guide to operating components/Doris/Basic usage.md)
+      - [Doris overview](Component_and_API_reference/Guide to operating components/Doris/Doris overview.md)
+      - [FAQs](Component_and_API_reference/Guide to operating components/Doris/FAQs.md)
+      - [quickstart](Component_and_API_reference/Guide to operating components/Doris/quickstart.md)
+      - **Advanced usage**
+        - [Advanced usage](Component_and_API_reference/Guide to operating components/Doris/Advanced usage/Advanced usage.md)
+      - **Best practices**
+        - [Doris connects to Tableau](Component_and_API_reference/Guide to operating components/Doris/Best practices/Doris connects to Tableau.md)
+    - **Flink**
+      - [Basic Flink usage](Component_and_API_reference/Guide to operating components/Flink/Basic Flink usage.md)
+      - [FAQs](Component_and_API_reference/Guide to operating components/Flink/FAQs.md)
+      - [Flink SQL Client usage reference](Component_and_API_reference/Guide to operating components/Flink/Flink SQL Client usage reference.md)
+      - [Flink supports the Protobuf format](Component_and_API_reference/Guide to operating components/Flink/Flink supports the Protobuf format.md)
+      - [Overview](Component_and_API_reference/Guide to operating components/Flink/Overview.md)
+    - **HBase**
+      - [HBase Shell](Component_and_API_reference/Guide to operating components/HBase/HBase Shell.md)
+      - [Note](Component_and_API_reference/Guide to operating components/HBase/Note.md)
+      - **Advanced usage**
+        - [HBase memory tuning](Component_and_API_reference/Guide to operating components/HBase/Advanced usage/HBase memory tuning.md)
+    - **HDFS**
+      - [Advanced usage](Component_and_API_reference/Guide to operating components/HDFS/Advanced usage.md)
+      - [Basic usage](Component_and_API_reference/Guide to operating components/HDFS/Basic usage.md)
+      - [Best practices](Component_and_API_reference/Guide to operating components/HDFS/Best practices.md)
+      - [Development guide](Component_and_API_reference/Guide to operating components/HDFS/Development guide.md)
+      - [FAQs](Component_and_API_reference/Guide to operating components/HDFS/FAQs.md)
+      - [Note](Component_and_API_reference/Guide to operating components/HDFS/Note.md)
+      - [Quickstart](Component_and_API_reference/Guide to operating components/HDFS/Quickstart.md)
+    - **Hive**
+      - [FAQs](Component_and_API_reference/Guide to operating components/Hive/FAQs.md)
+      - [Overview](Component_and_API_reference/Guide to operating components/Hive/Overview.md)
+      - **Advanced usage**
+        - [Hive job optimization](Component_and_API_reference/Guide to operating components/Hive/Advanced usage/Hive job optimization.md)
+        - [Hive supports Chinese field names and Chinese partitions](Component_and_API_reference/Guide to operating components/Hive/Advanced usage/Hive supports Chinese field names and Chinese partitions.md)
+        - [HiveServer2 load balancing](Component_and_API_reference/Guide to operating components/Hive/Advanced usage/HiveServer2 load balancing.md)
+        - [Manage LDAP authentication](Component_and_API_reference/Guide to operating components/Hive/Advanced usage/Manage LDAP authentication.md)
+      - **Basic usage**
+        - [Determine the HiveServer2 address](Component_and_API_reference/Guide to operating components/Hive/Basic usage/Determine the HiveServer2 address.md)
+        - [Hive basic operations](Component_and_API_reference/Guide to operating components/Hive/Basic usage/Hive basic operations.md)
+        - [Hive connection methods](Component_and_API_reference/Guide to operating components/Hive/Basic usage/Hive connection methods.md)
+        - [Important notes for Hive3 usage](Component_and_API_reference/Guide to operating components/Hive/Basic usage/Important notes for Hive3 usage.md)
+      - **Best practices**
+        - [Hive access to Hudi data](Component_and_API_reference/Guide to operating components/Hive/Best practices/Hive access to Hudi data.md)
+        - [Run the TPC-DS Benchmark on an EMR on ECS cluster](Component_and_API_reference/Guide to operating components/Hive/Best practices/Run the TPC-DS Benchmark on an EMR on ECS cluster.md)
+      - **Development guide**
+        - [User-defined function (UDF)](Component_and_API_reference/Guide to operating components/Hive/Development guide/User-defined function (UDF).md)
+    - **Hue**
+      - [Usage instructions](Component_and_API_reference/Guide to operating components/Hue/Usage instructions.md)
+      - **Best practices**
+        - [Hue high availability: Accessing other services within the cluster](Component_and_API_reference/Guide to operating components/Hue/Best practices/Hue high availability: Accessing other services within the cluster.md)
+        - [Querying data using Hue](Component_and_API_reference/Guide to operating components/Hue/Best practices/Querying data using Hue.md)
+    - **Iceberg**
+      - [Instructions](Component_and_API_reference/Guide to operating components/Iceberg/Instructions.md)
+      - **Advanced usage**
+        - [Batch reading and writing Iceberg tables with Spark](Component_and_API_reference/Guide to operating components/Iceberg/Advanced usage/Batch reading and writing Iceberg tables with Spark.md)
+        - [Iceberg and Flink integration](Component_and_API_reference/Guide to operating components/Iceberg/Advanced usage/Iceberg and Flink integration.md)
+        - [Iceberg integration with Trino/Presto](Component_and_API_reference/Guide to operating components/Iceberg/Advanced usage/Iceberg integration with Trino - Presto.md)
+        - [Iceberg parameter configuration](Component_and_API_reference/Guide to operating components/Iceberg/Advanced usage/Iceberg parameter configuration.md)
+        - [Operate Iceberg data in Hive](Component_and_API_reference/Guide to operating components/Iceberg/Advanced usage/Operate Iceberg data in Hive.md)
+        - [Operate Iceberg tables in TOS](Component_and_API_reference/Guide to operating components/Iceberg/Advanced usage/Operate Iceberg tables in TOS.md)
+        - [Operate Iceberg tables in TOS (applicable to EMR 2.x versions)](Component_and_API_reference/Guide to operating components/Iceberg/Advanced usage/Operate Iceberg tables in TOS (applicable to EMR 2.x versions).md)
+        - [Spark streaming read and write Iceberg](Component_and_API_reference/Guide to operating components/Iceberg/Advanced usage/Spark streaming read and write Iceberg.md)
+        - [Spark streaming read and write Iceberg (for EMR 2.x versions)](Component_and_API_reference/Guide to operating components/Iceberg/Advanced usage/Spark streaming read and write Iceberg (for EMR 2.x versions).md)
+        - [Use Iceberg in Dataleap](Component_and_API_reference/Guide to operating components/Iceberg/Advanced usage/Use Iceberg in Dataleap.md)
+      - **Basic usage**
+        - [Access the Iceberg Catalog through a Doris instance](Component_and_API_reference/Guide to operating components/Iceberg/Basic usage/Access the Iceberg Catalog through a Doris instance.md)
+        - [Basic usage of Iceberg](Component_and_API_reference/Guide to operating components/Iceberg/Basic usage/Basic usage of Iceberg.md)
+        - [Basic usage of Iceberg (applicable to EMR 2.x versions)](Component_and_API_reference/Guide to operating components/Iceberg/Basic usage/Basic usage of Iceberg (applicable to EMR 2.x versions).md)
+    - **Impala**
+      - [Impala overview](Component_and_API_reference/Guide to operating components/Impala/Impala overview.md)
+      - **Advanced usage**
+        - [Manage LDAP authentication](Component_and_API_reference/Guide to operating components/Impala/Advanced usage/Manage LDAP authentication.md)
+      - **Basic usage**
+        - [Impala basic operations](Component_and_API_reference/Guide to operating components/Impala/Basic usage/Impala basic operations.md)
+        - [Impala connection methods](Component_and_API_reference/Guide to operating components/Impala/Basic usage/Impala connection methods.md)
+        - [Impala-shell tool](Component_and_API_reference/Guide to operating components/Impala/Basic usage/Impala-shell tool.md)
+      - **Best practices**
+        - [Access Kudu using Impala](Component_and_API_reference/Guide to operating components/Impala/Best practices/Access Kudu using Impala.md)
+    - **Kafka**
+      - [Advanced usage](Component_and_API_reference/Guide to operating components/Kafka/Advanced usage.md)
+      - [Basic usage](Component_and_API_reference/Guide to operating components/Kafka/Basic usage.md)
+      - [Development guide](Component_and_API_reference/Guide to operating components/Kafka/Development guide.md)
+      - [FAQs](Component_and_API_reference/Guide to operating components/Kafka/FAQs.md)
+      - [Kafka overview](Component_and_API_reference/Guide to operating components/Kafka/Kafka overview.md)
+      - [Quickstart](Component_and_API_reference/Guide to operating components/Kafka/Quickstart.md)
+    - **Kerberos**
+      - [Configure cross-realm trust between Kerberos clusters](Component_and_API_reference/Guide to operating components/Kerberos/Configure cross-realm trust between Kerberos clusters.md)
+      - [EMR uses external KDC](Component_and_API_reference/Guide to operating components/Kerberos/EMR uses external KDC.md)
+      - [Use a Kerberos-authenticated cluster](Component_and_API_reference/Guide to operating components/Kerberos/Use a Kerberos-authenticated cluster.md)
+    - **Knox**
+      - [Note](Component_and_API_reference/Guide to operating components/Knox/Note.md)
+    - **Kudu**
+      - [Kudu overview](Component_and_API_reference/Guide to operating components/Kudu/Kudu overview.md)
+      - **Advanced usage**
+        - [Impala integration with Kudu](Component_and_API_reference/Guide to operating components/Kudu/Advanced usage/Impala integration with Kudu.md)
+        - [Synchronize data to Kudu using Flume](Component_and_API_reference/Guide to operating components/Kudu/Advanced usage/Synchronize data to Kudu using Flume.md)
+      - **Basic usage**
+        - [Basic Kudu operations](Component_and_API_reference/Guide to operating components/Kudu/Basic usage/Basic Kudu operations.md)
+    - **Kyuubi**
+      - [Kyuubi advanced features](Component_and_API_reference/Guide to operating components/Kyuubi/Kyuubi advanced features.md)
+      - [Kyuubi overview](Component_and_API_reference/Guide to operating components/Kyuubi/Kyuubi overview.md)
+      - [Kyuubi quickstart](Component_and_API_reference/Guide to operating components/Kyuubi/Kyuubi quickstart.md)
+    - **Lance**
+      - [Lance overview](Component_and_API_reference/Guide to operating components/Lance/Lance overview.md)
+      - [Quick Start](Component_and_API_reference/Guide to operating components/Lance/Quick Start.md)
+      - **Best practices**
+        - [Access Lance data on TOS using the Lance Python SDK](Component_and_API_reference/Guide to operating components/Lance/Best practices/Access Lance data on TOS using the Lance Python SDK.md)
+        - [EMR Daft integration with Lance: operation guide and best practices](Component_and_API_reference/Guide to operating components/Lance/Best practices/EMR Daft integration with Lance: operation guide and best practices.md)
+        - [Perform multimodal vector data retrieval using the Lance data format](Component_and_API_reference/Guide to operating components/Lance/Best practices/Perform multimodal vector data retrieval using the Lance data format.md)
+        - [Train a CLIP multimodal model using the Lance data format](Component_and_API_reference/Guide to operating components/Lance/Best practices/Train a CLIP multimodal model using the Lance data format.md)
+      - **Ecosystem and integration**
+        - [EMR Serverless Spark integration with Lance](Component_and_API_reference/Guide to operating components/Lance/Ecosystem and integration/EMR Serverless Spark integration with Lance.md)
+        - [Operate Lance data with Ray](Component_and_API_reference/Guide to operating components/Lance/Ecosystem and integration/Operate Lance data with Ray.md)
+        - [Use SparkSQL Warehouse to access Lance tables](Component_and_API_reference/Guide to operating components/Lance/Ecosystem and integration/Use SparkSQL Warehouse to access Lance tables.md)
+      - **Lake format conversion**
+        - [Lake format conversion: Ray reads WebDataset and writes to Lance](Component_and_API_reference/Guide to operating components/Lance/Lake format conversion/Lake format conversion: Ray reads WebDataset and writes to Lance.md)
+      - **Use cases**
+        - [Mixed text and image layout](Component_and_API_reference/Guide to operating components/Lance/Use cases/Mixed text and image layout.md)
+        - [Model labeling](Component_and_API_reference/Guide to operating components/Lance/Use cases/Model labeling.md)
+        - [Model training](Component_and_API_reference/Guide to operating components/Lance/Use cases/Model training.md)
+        - [Multimodal retrieval](Component_and_API_reference/Guide to operating components/Lance/Use cases/Multimodal retrieval.md)
+        - [Smart driving scenario](Component_and_API_reference/Guide to operating components/Lance/Use cases/Smart driving scenario.md)
+        - [Task-level fault tolerance](Component_and_API_reference/Guide to operating components/Lance/Use cases/Task-level fault tolerance.md)
+        - [Version management](Component_and_API_reference/Guide to operating components/Lance/Use cases/Version management.md)
+    - **Livy**
+      - [User guide](Component_and_API_reference/Guide to operating components/Livy/User guide.md)
+    - **MapReduce2**
+      - [Note](Component_and_API_reference/Guide to operating components/MapReduce2/Note.md)
+    - **OpenLDAP**
+      - [Basic usage](Component_and_API_reference/Guide to operating components/OpenLDAP/Basic usage.md)
+      - [Overview](Component_and_API_reference/Guide to operating components/OpenLDAP/Overview.md)
+      - **Best practices**
+        - [Manually configure LDAP authentication](Component_and_API_reference/Guide to operating components/OpenLDAP/Best practices/Manually configure LDAP authentication.md)
+    - **Paimon**
+      - [Advanced usage](Component_and_API_reference/Guide to operating components/Paimon/Advanced usage.md)
+      - [Basic usage](Component_and_API_reference/Guide to operating components/Paimon/Basic usage.md)
+      - [Paimon overview](Component_and_API_reference/Guide to operating components/Paimon/Paimon overview.md)
+    - **Phoenix**
+      - [Note](Component_and_API_reference/Guide to operating components/Phoenix/Note.md)
+    - **Presto**
+      - [Advanced usage](Component_and_API_reference/Guide to operating components/Presto/Advanced usage.md)
+      - [Basic usage](Component_and_API_reference/Guide to operating components/Presto/Basic usage.md)
+      - [FAQs](Component_and_API_reference/Guide to operating components/Presto/FAQs.md)
+      - [User guide](Component_and_API_reference/Guide to operating components/Presto/User guide.md)
+    - **Proton**
+      - [Proton overview](Component_and_API_reference/Guide to operating components/Proton/Proton overview.md)
+      - **Advanced usage**
+        - [Determining Proton cache size](Component_and_API_reference/Guide to operating components/Proton/Advanced usage/Determining Proton cache size.md)
+        - [Develop a custom CredentialProvider](Component_and_API_reference/Guide to operating components/Proton/Advanced usage/Develop a custom CredentialProvider.md)
+        - [DistCp copies data from OSS to TOS](Component_and_API_reference/Guide to operating components/Proton/Advanced usage/DistCp copies data from OSS to TOS.md)
+        - [Distcp copy data to TOS](Component_and_API_reference/Guide to operating components/Proton/Advanced usage/Distcp copy data to TOS.md)
+        - [Mount Proton using FUSE](Component_and_API_reference/Guide to operating components/Proton/Advanced usage/Mount Proton using FUSE.md)
+        - [Proton Cli](Component_and_API_reference/Guide to operating components/Proton/Advanced usage/Proton Cli.md)
+        - [Proton metadata synchronization](Component_and_API_reference/Guide to operating components/Proton/Advanced usage/Proton metadata synchronization.md)
+        - [Proton on-demand cache user manual](Component_and_API_reference/Guide to operating components/Proton/Advanced usage/Proton on-demand cache user manual.md)
+        - [Proton parameter configuration](Component_and_API_reference/Guide to operating components/Proton/Advanced usage/Proton parameter configuration.md)
+      - **Basic usage**
+        - [DolphinScheduler uses Proton](Component_and_API_reference/Guide to operating components/Proton/Basic usage/DolphinScheduler uses Proton.md)
+        - [Flink uses Proton](Component_and_API_reference/Guide to operating components/Proton/Basic usage/Flink uses Proton.md)
+        - [Hadoop uses Proton](Component_and_API_reference/Guide to operating components/Proton/Basic usage/Hadoop uses Proton.md)
+        - [Hive uses Proton](Component_and_API_reference/Guide to operating components/Proton/Basic usage/Hive uses Proton.md)
+        - [Identity and permission configuration](Component_and_API_reference/Guide to operating components/Proton/Basic usage/Identity and permission configuration.md)
+        - [Impala uses Proton](Component_and_API_reference/Guide to operating components/Proton/Basic usage/Impala uses Proton.md)
+        - [Spark uses Proton](Component_and_API_reference/Guide to operating components/Proton/Basic usage/Spark uses Proton.md)
+      - **Best practices**
+        - [EMR storage-compute separation Job Committer best practices](Component_and_API_reference/Guide to operating components/Proton/Best practices/EMR storage-compute separation Job Committer best practices.md)
+        - [Proton On VKE](Component_and_API_reference/Guide to operating components/Proton/Best practices/Proton On VKE.md)
+        - [Proton SDK optimization guide](Component_and_API_reference/Guide to operating components/Proton/Best practices/Proton SDK optimization guide.md)
+      - **Getting started**
+        - [Proton cache mode](Component_and_API_reference/Guide to operating components/Proton/Getting started/Proton cache mode.md)
+        - [Proton cache mode (TOS Accelerator)](Component_and_API_reference/Guide to operating components/Proton/Getting started/Proton cache mode (TOS Accelerator).md)
+        - [Proton no-cache mode](Component_and_API_reference/Guide to operating components/Proton/Getting started/Proton no-cache mode.md)
+      - **PyProton**
+        - [Introduction and usage of FSSpec](Component_and_API_reference/Guide to operating components/Proton/PyProton/Introduction and usage of FSSpec.md)
+        - [PyProton best practices](Component_and_API_reference/Guide to operating components/Proton/PyProton/PyProton best practices.md)
+        - [PyProton introduction and usage documentation](Component_and_API_reference/Guide to operating components/Proton/PyProton/PyProton introduction and usage documentation.md)
+        - [Use FSSpec in a Python environment](Component_and_API_reference/Guide to operating components/Proton/PyProton/Use FSSpec in a Python environment.md)
+        - [Use TOSFS in Ray Data](Component_and_API_reference/Guide to operating components/Proton/PyProton/Use TOSFS in Ray Data.md)
+        - [Using FSSpec in the PyTorch training framework](Component_and_API_reference/Guide to operating components/Proton/PyProton/Using FSSpec in the PyTorch training framework.md)
+      - **Release versions**
+        - [JobCommitter version](Component_and_API_reference/Guide to operating components/Proton/Release versions/JobCommitter version.md)
+        - [Proton release versions](Component_and_API_reference/Guide to operating components/Proton/Release versions/Proton release versions.md)
+        - [Untitled document](Component_and_API_reference/Guide to operating components/Proton/Release versions/Untitled document.md)
+    - **Pulsar**
+      - [FAQs](Component_and_API_reference/Guide to operating components/Pulsar/FAQs.md)
+      - [Note](Component_and_API_reference/Guide to operating components/Pulsar/Note.md)
+      - [quickstart](Component_and_API_reference/Guide to operating components/Pulsar/quickstart.md)
+    - **Ranger**
+      - [FAQs](Component_and_API_reference/Guide to operating components/Ranger/FAQs.md)
+      - [Overview](Component_and_API_reference/Guide to operating components/Ranger/Overview.md)
+      - [Quickstart](Component_and_API_reference/Guide to operating components/Ranger/Quickstart.md)
+      - **Advanced features**
+        - [Configure DataLeap data development permissions](Component_and_API_reference/Guide to operating components/Ranger/Advanced features/Configure DataLeap data development permissions.md)
+        - [Hive data masking](Component_and_API_reference/Guide to operating components/Ranger/Advanced features/Hive data masking.md)
+        - [Ranger User Sync integration with LDAP](Component_and_API_reference/Guide to operating components/Ranger/Advanced features/Ranger User Sync integration with LDAP.md)
+        - [View Ranger audit log information](Component_and_API_reference/Guide to operating components/Ranger/Advanced features/View Ranger audit log information.md)
+      - **Component integration**
+        - [HBase integration](Component_and_API_reference/Guide to operating components/Ranger/Component integration/HBase integration.md)
+        - [HDFS integration](Component_and_API_reference/Guide to operating components/Ranger/Component integration/HDFS integration.md)
+        - [Hive integration](Component_and_API_reference/Guide to operating components/Ranger/Component integration/Hive integration.md)
+        - [Presto integration](Component_and_API_reference/Guide to operating components/Ranger/Component integration/Presto integration.md)
+        - [Spark integration](Component_and_API_reference/Guide to operating components/Ranger/Component integration/Spark integration.md)
+        - [Trino integration](Component_and_API_reference/Guide to operating components/Ranger/Component integration/Trino integration.md)
+        - [YARN integration](Component_and_API_reference/Guide to operating components/Ranger/Component integration/YARN integration.md)
+    - **Ray**
+      - [Enable autoscaling capability for KubeRay clusters](Component_and_API_reference/Guide to operating components/Ray/Enable autoscaling capability for KubeRay clusters.md)
+      - [How to resolve Ray cluster load and memory overflow issues](Component_and_API_reference/Guide to operating components/Ray/How to resolve Ray cluster load and memory overflow issues.md)
+      - [KubeRay RayCluster usage guide](Component_and_API_reference/Guide to operating components/Ray/KubeRay RayCluster usage guide.md)
+      - [Ray image list](Component_and_API_reference/Guide to operating components/Ray/Ray image list.md)
+      - [Ray on VKE product introduction](Component_and_API_reference/Guide to operating components/Ray/Ray on VKE product introduction.md)
+      - [Ray overview](Component_and_API_reference/Guide to operating components/Ray/Ray overview.md)
+      - [Ray Quick Start](Component_and_API_reference/Guide to operating components/Ray/Ray Quick Start.md)
+      - [Ray reads WebDataset and writes to Lance](Component_and_API_reference/Guide to operating components/Ray/Ray reads WebDataset and writes to Lance.md)
+      - [Ray vs Spark comparison](Component_and_API_reference/Guide to operating components/Ray/Ray vs Spark comparison.md)
+      - [Use RayHistoryServer to view historical jobs](Component_and_API_reference/Guide to operating components/Ray/Use RayHistoryServer to view historical jobs.md)
+      - **Best practices**
+        - [Build online model inference services based on Ray Serve](Component_and_API_reference/Guide to operating components/Ray/Best practices/Build online model inference services based on Ray Serve.md)
+        - [Enable Autoscaler for RayCluster](Component_and_API_reference/Guide to operating components/Ray/Best practices/Enable Autoscaler for RayCluster.md)
+        - [Enable Ray Dashboard metrics capability](Component_and_API_reference/Guide to operating components/Ray/Best practices/Enable Ray Dashboard metrics capability.md)
+        - [Practical guide for converting traditional Python programs to Ray programs](Component_and_API_reference/Guide to operating components/Ray/Best practices/Practical guide for converting traditional Python programs to Ray programs.md)
+        - [Ray architectural practices in multimodal image processing](Component_and_API_reference/Guide to operating components/Ray/Best practices/Ray architectural practices in multimodal image processing.md)
+        - [Ray Data backpressure enhancement analysis](Component_and_API_reference/Guide to operating components/Ray/Best practices/Ray Data backpressure enhancement analysis.md)
+        - [Ray Data best practices for LLM data preprocessing](Component_and_API_reference/Guide to operating components/Ray/Best practices/Ray Data best practices for LLM data preprocessing.md)
+        - [Ray integration with log service TLS](Component_and_API_reference/Guide to operating components/Ray/Best practices/Ray integration with log service TLS.md)
+        - [Ray tasks run on GPUs](Component_and_API_reference/Guide to operating components/Ray/Best practices/Ray tasks run on GPUs.md)
+        - [Replace the K8S Default Scheduler with Volcano Scheduler to run Spark and Ray jobs](Component_and_API_reference/Guide to operating components/Ray/Best practices/Replace the K8S Default Scheduler with Volcano Scheduler to run Spark and Ray jobs.md)
+      - **Lance-Ray library**
+        - [EMR Lance-Ray general operation guide](Component_and_API_reference/Guide to operating components/Ray/Lance-Ray library/EMR Lance-Ray general operation guide.md)
+      - **Use RayJob**
+        - [KubeRay RayJob submission guide](Component_and_API_reference/Guide to operating components/Ray/Use RayJob/KubeRay RayJob submission guide.md)
+        - [Monitor RayJob using EMR](Component_and_API_reference/Guide to operating components/Ray/Use RayJob/Monitor RayJob using EMR.md)
+        - [RayJob Quick Start](Component_and_API_reference/Guide to operating components/Ray/Use RayJob/RayJob Quick Start.md)
+        - [RayJob submission guide](Component_and_API_reference/Guide to operating components/Ray/Use RayJob/RayJob submission guide.md)
+        - [Streaming data processing based on Ray](Component_and_API_reference/Guide to operating components/Ray/Use RayJob/Streaming data processing based on Ray.md)
+        - [View task status through Ray Dashboard](Component_and_API_reference/Guide to operating components/Ray/Use RayJob/View task status through Ray Dashboard.md)
+      - **Using RayCluster**
+        - [Examples of accessing TOS with Ray](Component_and_API_reference/Guide to operating components/Ray/Using RayCluster/Examples of accessing TOS with Ray.md)
+        - [Guidance for using KubeRay to manage RayClusters across different namespaces](Component_and_API_reference/Guide to operating components/Ray/Using RayCluster/Guidance for using KubeRay to manage RayClusters across different namespaces.md)
+        - [Monitor jobs using Ray Dashboard](Component_and_API_reference/Guide to operating components/Ray/Using RayCluster/Monitor jobs using Ray Dashboard.md)
+        - [Mount PersistentVolumeClaim to RayCluster](Component_and_API_reference/Guide to operating components/Ray/Using RayCluster/Mount PersistentVolumeClaim to RayCluster.md)
+        - [Ray GCS usage guide](Component_and_API_reference/Guide to operating components/Ray/Using RayCluster/Ray GCS usage guide.md)
+        - [Ray Placement Group usage guide](Component_and_API_reference/Guide to operating components/Ray/Using RayCluster/Ray Placement Group usage guide.md)
+        - [RayCluster Quick Start](Component_and_API_reference/Guide to operating components/Ray/Using RayCluster/RayCluster Quick Start.md)
+        - [RayCluster supports multiple WorkerGroups](Component_and_API_reference/Guide to operating components/Ray/Using RayCluster/RayCluster supports multiple WorkerGroups.md)
+        - [User guide for submitting Ray jobs](Component_and_API_reference/Guide to operating components/Ray/Using RayCluster/User guide for submitting Ray jobs.md)
+        - [Word frequency statistics using Ray (WordCount)](Component_and_API_reference/Guide to operating components/Ray/Using RayCluster/Word frequency statistics using Ray (WordCount).md)
+      - **Using RayData**
+        - [AutoScale: Using AdaptiveStreamingExecutor](Component_and_API_reference/Guide to operating components/Ray/Using RayData/AutoScale: Using AdaptiveStreamingExecutor.md)
+        - [Practical application of Ray Data Checkpoint in multimodal data processing](Component_and_API_reference/Guide to operating components/Ray/Using RayData/Practical application of Ray Data Checkpoint in multimodal data processing.md)
+        - [Ray Data file output: Two-phase write](Component_and_API_reference/Guide to operating components/Ray/Using RayData/Ray Data file output: Two-phase write.md)
+    - **Spark**
+      - [FAQs](Component_and_API_reference/Guide to operating components/Spark/FAQs.md)
+      - [Note](Component_and_API_reference/Guide to operating components/Spark/Note.md)
+      - [Quickstart](Component_and_API_reference/Guide to operating components/Spark/Quickstart.md)
+      - **Basic usage**
+        - [Basic usage](Component_and_API_reference/Guide to operating components/Spark/Basic usage/Basic usage.md)
+        - [Basic usage of PySpark](Component_and_API_reference/Guide to operating components/Spark/Basic usage/Basic usage of PySpark.md)
+        - [Basic usage of Spark RDD](Component_and_API_reference/Guide to operating components/Spark/Basic usage/Basic usage of Spark RDD.md)
+        - [DDL statements](Component_and_API_reference/Guide to operating components/Spark/Basic usage/DDL statements.md)
+        - [DML statements](Component_and_API_reference/Guide to operating components/Spark/Basic usage/DML statements.md)
+        - [SELECT statement](Component_and_API_reference/Guide to operating components/Spark/Basic usage/SELECT statement.md)
+      - **Best practices**
+        - [Deprecated and taken down: Spark on Bolt note](Component_and_API_reference/Guide to operating components/Spark/Best practices/Deprecated and taken down: Spark on Bolt note.md)
+        - [Ksana for SparkSQL](Component_and_API_reference/Guide to operating components/Spark/Best practices/Ksana for SparkSQL.md)
+        - [MaxCompute Buildin Function Plugin](Component_and_API_reference/Guide to operating components/Spark/Best practices/MaxCompute Buildin Function Plugin.md)
+        - [Spark on GPU best practices](Component_and_API_reference/Guide to operating components/Spark/Best practices/Spark on GPU best practices.md)
+        - [Spark optimization guide](Component_and_API_reference/Guide to operating components/Spark/Best practices/Spark optimization guide.md)
+    - **Sqoop**
+      - [FAQs](Component_and_API_reference/Guide to operating components/Sqoop/FAQs.md)
+      - [Note](Component_and_API_reference/Guide to operating components/Sqoop/Note.md)
+    - **StarRocks**
+      - [Basic usage](Component_and_API_reference/Guide to operating components/StarRocks/Basic usage.md)
+      - [Explanation of observed metrics for the StarRocks engine](Component_and_API_reference/Guide to operating components/StarRocks/Explanation of observed metrics for the StarRocks engine.md)
+      - [FAQs](Component_and_API_reference/Guide to operating components/StarRocks/FAQs.md)
+      - [Overview](Component_and_API_reference/Guide to operating components/StarRocks/Overview.md)
+      - [Plan StarRocks clusters](Component_and_API_reference/Guide to operating components/StarRocks/Plan StarRocks clusters.md)
+      - [quickstart](Component_and_API_reference/Guide to operating components/StarRocks/quickstart.md)
+      - **Advanced usage**
+        - [Slow SQL analysis](Component_and_API_reference/Guide to operating components/StarRocks/Advanced usage/Slow SQL analysis.md)
+        - [StarRocks access TOS](Component_and_API_reference/Guide to operating components/StarRocks/Advanced usage/StarRocks access TOS.md)
+        - [StarRocks Flink Connector](Component_and_API_reference/Guide to operating components/StarRocks/Advanced usage/StarRocks Flink Connector.md)
+        - [StarRocks Spark Connector](Component_and_API_reference/Guide to operating components/StarRocks/Advanced usage/StarRocks Spark Connector.md)
+        - [Using StarRocks partitioned tables](Component_and_API_reference/Guide to operating components/StarRocks/Advanced usage/Using StarRocks partitioned tables.md)
+      - **Best practices**
+        - [Analyze StarRocks data using Intelligent Data Insights](Component_and_API_reference/Guide to operating components/StarRocks/Best practices/Analyze StarRocks data using Intelligent Data Insights.md)
+        - [Implement data integration from MySQL to StarRocks using Serverless Flink](Component_and_API_reference/Guide to operating components/StarRocks/Best practices/Implement data integration from MySQL to StarRocks using Serverless Flink.md)
+        - [StarRocks cluster resource planning](Component_and_API_reference/Guide to operating components/StarRocks/Best practices/StarRocks cluster resource planning.md)
+        - [StarRocks high availability best practices](Component_and_API_reference/Guide to operating components/StarRocks/Best practices/StarRocks high availability best practices.md)
+        - [Starrocks major version upgrade](Component_and_API_reference/Guide to operating components/StarRocks/Best practices/Starrocks major version upgrade.md)
+        - [StarRocks table model design](Component_and_API_reference/Guide to operating components/StarRocks/Best practices/StarRocks table model design.md)
+        - [Use DataSail for MySQL to StarRocks data integration](Component_and_API_reference/Guide to operating components/StarRocks/Best practices/Use DataSail for MySQL to StarRocks data integration.md)
+      - **Data lake analysis**
+        - **Catalog**
+          - [Default Catalog](Component_and_API_reference/Guide to operating components/StarRocks/Data lake analysis/Catalog/Default Catalog.md)
+          - [External Catalog](Component_and_API_reference/Guide to operating components/StarRocks/Data lake analysis/Catalog/External Catalog.md)
+      - **Operation and maintenance management**
+        - [Implement load balancing using CLB](Component_and_API_reference/Guide to operating components/StarRocks/Operation and maintenance management/Implement load balancing using CLB.md)
+        - [StarRocks parameter configuration](Component_and_API_reference/Guide to operating components/StarRocks/Operation and maintenance management/StarRocks parameter configuration.md)
+        - [StarRocks UI usage](Component_and_API_reference/Guide to operating components/StarRocks/Operation and maintenance management/StarRocks UI usage.md)
+        - [User and permission management](Component_and_API_reference/Guide to operating components/StarRocks/Operation and maintenance management/User and permission management.md)
+    - **TensorFlow**
+      - [Advanced usage](Component_and_API_reference/Guide to operating components/TensorFlow/Advanced usage.md)
+      - [Basic usage](Component_and_API_reference/Guide to operating components/TensorFlow/Basic usage.md)
+      - [Note](Component_and_API_reference/Guide to operating components/TensorFlow/Note.md)
+      - [Quickstart](Component_and_API_reference/Guide to operating components/TensorFlow/Quickstart.md)
+    - **Tez**
+      - [Note](Component_and_API_reference/Guide to operating components/Tez/Note.md)
+    - **Trino**
+      - [Advanced usage](Component_and_API_reference/Guide to operating components/Trino/Advanced usage.md)
+      - [Basic usage](Component_and_API_reference/Guide to operating components/Trino/Basic usage.md)
+      - [FAQs](Component_and_API_reference/Guide to operating components/Trino/FAQs.md)
+      - [Note](Component_and_API_reference/Guide to operating components/Trino/Note.md)
+    - **YARN**
+      - [FAQs](Component_and_API_reference/Guide to operating components/YARN/FAQs.md)
+      - [Note](Component_and_API_reference/Guide to operating components/YARN/Note.md)
+      - **Best practices**
+        - [Configure user group queue mapping](Component_and_API_reference/Guide to operating components/YARN/Best practices/Configure user group queue mapping.md)
+        - [Introduction to YARN Node Label and best practices](Component_and_API_reference/Guide to operating components/YARN/Best practices/Introduction to YARN Node Label and best practices.md)
+      - **Queue management**
+        - [Basic usage](Component_and_API_reference/Guide to operating components/YARN/Queue management/Basic usage.md)
+        - [Queue management: Capacity Scheduler](Component_and_API_reference/Guide to operating components/YARN/Queue management/Queue management: Capacity Scheduler.md)
+        - [Queue management: Fair Scheduler](Component_and_API_reference/Guide to operating components/YARN/Queue management/Queue management: Fair Scheduler.md)
+      - **YARN enhancements**
+        - [YARN queue management](Component_and_API_reference/Guide to operating components/YARN/YARN enhancements/YARN queue management.md)
+        - [YARN resource pool management](Component_and_API_reference/Guide to operating components/YARN/YARN enhancements/YARN resource pool management.md)
+    - **ZooKeeper**
+      - [Advanced usage](Component_and_API_reference/Guide to operating components/ZooKeeper/Advanced usage.md)
+      - [Basic usage](Component_and_API_reference/Guide to operating components/ZooKeeper/Basic usage.md)
+      - [Overview](Component_and_API_reference/Guide to operating components/ZooKeeper/Overview.md)
+  - **SDK reference**
+    - **EMR on ECS SDK reference**
+      - [SDK overview](Component_and_API_reference/SDK reference/EMR on ECS SDK reference/SDK overview.md)
+    - **EMR Serverless SDK reference**
+      - [Java Query SDK](Component_and_API_reference/SDK reference/EMR Serverless SDK reference/Java Query SDK.md)
+      - [Python Query SDK](Component_and_API_reference/SDK reference/EMR Serverless SDK reference/Python Query SDK.md)
+      - [Spark-submit tool usage instructions](Component_and_API_reference/SDK reference/EMR Serverless SDK reference/Spark-submit tool usage instructions.md)
+- **emr_on_ecs_operation_guides**
+  - **Cluster management**
+    - [Cluster types](emr_on_ecs_operation_guides/Cluster management/Cluster types.md)
+    - [Supported ECS instances](emr_on_ecs_operation_guides/Cluster management/Supported ECS instances.md)
+    - **Create and configure clusters**
+      - **Configuration center**
+        - [Cluster template](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Configuration center/Cluster template.md)
+        - [Metadata connections](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Configuration center/Metadata connections.md)
+      - **Configure cluster security groups**
+        - [Manage security groups](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Configure cluster security groups/Manage security groups.md)
+      - **Create clusters**
+        - [Clone clusters](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Create clusters/Clone clusters.md)
+        - [Create clusters](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Create clusters/Create clusters.md)
+        - [Create custom topology clusters](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Create clusters/Create custom topology clusters.md)
+        - [Create storage-compute separation clusters](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Create clusters/Create storage-compute separation clusters.md)
+      - **Efficient cluster management**
+        - [Cluster scripts](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Efficient cluster management/Cluster scripts.md)
+        - [Guided operations](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Efficient cluster management/Guided operations.md)
+        - [Project configuration](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Efficient cluster management/Project configuration.md)
+        - [Tag configuration](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Efficient cluster management/Tag configuration.md)
+      - **Users and permissions management**
+        - [EMR service role](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Users and permissions management/EMR service role.md)
+        - [Permissions management](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Users and permissions management/Permissions management.md)
+        - [Role authorization](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Users and permissions management/Role authorization.md)
+        - [Roles and permissions](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Users and permissions management/Roles and permissions.md)
+        - [User management](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/Users and permissions management/User management.md)
+      - **View cluster details**
+        - [View and modify the basic cluster configuration](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/View cluster details/View and modify the basic cluster configuration.md)
+        - [View cluster list](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/View cluster details/View cluster list.md)
+        - [View cluster status](emr_on_ecs_operation_guides/Cluster management/Create and configure clusters/View cluster details/View cluster status.md)
+    - **Resource adjustment and node management**
+      - [Elastic scaling](emr_on_ecs_operation_guides/Cluster management/Resource adjustment and node management/Elastic scaling.md)
+      - [Expand disk capacity](emr_on_ecs_operation_guides/Cluster management/Resource adjustment and node management/Expand disk capacity.md)
+      - [Scale in clusters](emr_on_ecs_operation_guides/Cluster management/Resource adjustment and node management/Scale in clusters.md)
+      - [Scale up clusters](emr_on_ecs_operation_guides/Cluster management/Resource adjustment and node management/Scale up clusters.md)
+      - **Node management**
+        - [Description of node domain name rules](emr_on_ecs_operation_guides/Cluster management/Resource adjustment and node management/Node management/Description of node domain name rules.md)
+        - [Node configuration changes](emr_on_ecs_operation_guides/Cluster management/Resource adjustment and node management/Node management/Node configuration changes.md)
+        - [Node group management](emr_on_ecs_operation_guides/Cluster management/Resource adjustment and node management/Node management/Node group management.md)
+  - **Cluster operations and maintenance**
+    - [Authorize remote assistance for operations and maintenance](emr_on_ecs_operation_guides/Cluster operations and maintenance/Authorize remote assistance for operations and maintenance.md)
+    - [Cluster management FAQs](emr_on_ecs_operation_guides/Cluster operations and maintenance/Cluster management FAQs.md)
+    - [Common file paths](emr_on_ecs_operation_guides/Cluster operations and maintenance/Common file paths.md)
+    - [One-click repair for local disk failures](emr_on_ecs_operation_guides/Cluster operations and maintenance/One-click repair for local disk failures.md)
+    - **Log in and release clusters**
+      - [Log in to the cluster](emr_on_ecs_operation_guides/Cluster operations and maintenance/Log in and release clusters/Log in to the cluster.md)
+      - [Release clusters](emr_on_ecs_operation_guides/Cluster operations and maintenance/Log in and release clusters/Release clusters.md)
+    - **Logs, monitoring, and alerts**
+      - [Alert center](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Alert center.md)
+      - [Log center](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Log center.md)
+      - **Cluster monitoring**
+        - [Cluster event center](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Cluster event center.md)
+        - [Configure metric monitoring alerts](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Configure metric monitoring alerts.md)
+        - [Practical guide for exporting monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Practical guide for exporting monitoring metrics.md)
+        - **Monitoring metrics**
+          - [Celeborn monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/Celeborn monitoring metrics.md)
+          - [ClickHouse cluster monitoring](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/ClickHouse cluster monitoring.md)
+          - [Doris monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/Doris monitoring metrics.md)
+          - [HBase monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/HBase monitoring metrics.md)
+          - [HDFS monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/HDFS monitoring metrics.md)
+          - [Hive monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/Hive monitoring metrics.md)
+          - [Impala monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/Impala monitoring metrics.md)
+          - [Kudu service monitoring](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/Kudu service monitoring.md)
+          - [Kyuubi monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/Kyuubi monitoring metrics.md)
+          - [Node monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/Node monitoring metrics.md)
+          - [OpenSearch monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/OpenSearch monitoring metrics.md)
+          - [Overview](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/Overview.md)
+          - [Presto monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/Presto monitoring metrics.md)
+          - [StarRocks monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/StarRocks monitoring metrics.md)
+          - [Trino monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/Trino monitoring metrics.md)
+          - [Yarn monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/Yarn monitoring metrics.md)
+          - [ZooKeeper monitoring metrics](emr_on_ecs_operation_guides/Cluster operations and maintenance/Logs, monitoring, and alerts/Cluster monitoring/Monitoring metrics/ZooKeeper monitoring metrics.md)
+  - **FAQs**
+    - [Cluster management FAQs](emr_on_ecs_operation_guides/FAQs/Cluster management FAQs.md)
+  - **Job submission and management**
+    - [Create and Submit Job](emr_on_ecs_operation_guides/Job submission and management/Create and Submit Job.md)
+  - **Service management**
+    - [Add/restart service](emr_on_ecs_operation_guides/Service management/Add - restart service.md)
+    - [Component topology management](emr_on_ecs_operation_guides/Service management/Component topology management.md)
+    - [Configure service access links](emr_on_ecs_operation_guides/Service management/Configure service access links.md)
+    - [Manage service configuration parameters](emr_on_ecs_operation_guides/Service management/Manage service configuration parameters.md)
+    - [Service scaling](emr_on_ecs_operation_guides/Service management/Service scaling.md)
+    - [Start and stop services](emr_on_ecs_operation_guides/Service management/Start and stop services.md)
+    - [View service list](emr_on_ecs_operation_guides/Service management/View service list.md)
+    - **Reference**
+      - [Cluster component port note](emr_on_ecs_operation_guides/Service management/Reference/Cluster component port note.md)
+      - [Note on the usage of built-in MySQL in EMR](emr_on_ecs_operation_guides/Service management/Reference/Note on the usage of built-in MySQL in EMR.md)
+- **EMR_on_VKE_user_guide**
+  - **Cluster management**
+    - [Alert center](EMR_on_VKE_user_guide/Cluster management/Alert center.md)
+    - [Auto scaling](EMR_on_VKE_user_guide/Cluster management/Auto scaling.md)
+    - [Create virtual clusters](EMR_on_VKE_user_guide/Cluster management/Create virtual clusters.md)
+    - [Node management](EMR_on_VKE_user_guide/Cluster management/Node management.md)
+    - [Operation logs](EMR_on_VKE_user_guide/Cluster management/Operation logs.md)
+    - [Release cluster](EMR_on_VKE_user_guide/Cluster management/Release cluster.md)
+    - [Scheduling policy configuration](EMR_on_VKE_user_guide/Cluster management/Scheduling policy configuration.md)
+    - [View cluster list and details](EMR_on_VKE_user_guide/Cluster management/View cluster list and details.md)
+    - **Cluster monitoring**
+      - [Celeborn service metrics](EMR_on_VKE_user_guide/Cluster management/Cluster monitoring/Celeborn service metrics.md)
+      - [Overview](EMR_on_VKE_user_guide/Cluster management/Cluster monitoring/Overview.md)
+      - [Ray service metrics](EMR_on_VKE_user_guide/Cluster management/Cluster monitoring/Ray service metrics.md)
+      - [Spark service metrics](EMR_on_VKE_user_guide/Cluster management/Cluster monitoring/Spark service metrics.md)
+      - [VolcanoScheduler service metrics](EMR_on_VKE_user_guide/Cluster management/Cluster monitoring/VolcanoScheduler service metrics.md)
+  - **Image management**
+    - [Run jobs with a custom Docker image](EMR_on_VKE_user_guide/Image management/Run jobs with a custom Docker image.md)
+    - [Spark image list](EMR_on_VKE_user_guide/Image management/Spark image list.md)
+  - **Job management**
+    - [Common troubleshooting methods for assignment submission failures](EMR_on_VKE_user_guide/Job management/Common troubleshooting methods for assignment submission failures.md)
+    - [View job lists](EMR_on_VKE_user_guide/Job management/View job lists.md)
+  - **Service management**
+    - [Add a service](EMR_on_VKE_user_guide/Service management/Add a service.md)
+    - [Configuration management](EMR_on_VKE_user_guide/Service management/Configuration management.md)
+    - [RayCluster management](EMR_on_VKE_user_guide/Service management/RayCluster management.md)
+    - [Restart service](EMR_on_VKE_user_guide/Service management/Restart service.md)
+- **EMR_Serverless_instance_operation_guide**
+  - **Best practices for EMR Serverless instances**
+    - [OLAP version management/configuration update](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/OLAP version management - configuration update.md)
+    - [Serverless OLAP WebUI best practices](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/Serverless OLAP WebUI best practices.md)
+    - **Doris**
+      - [OLAP data disaster recovery best practices](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/Doris/OLAP data disaster recovery best practices.md)
+      - **Access data lakes**
+        - [Doris access to LAS Catalog](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/Doris/Access data lakes/Doris access to LAS Catalog.md)
+      - **Building defenses against large queries**
+        - [Large query defense](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/Doris/Building defenses against large queries/Large query defense.md)
+        - [Locating large queries](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/Doris/Building defenses against large queries/Locating large queries.md)
+      - **Capacity planning**
+        - [EMR Serverless Doris cluster resource planning](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/Doris/Capacity planning/EMR Serverless Doris cluster resource planning.md)
+      - **Fault loss prevention**
+        - [CompactionScore too high](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/Doris/Fault loss prevention/CompactionScore too high.md)
+      - **Stability improvement**
+        - [EMR Serverless Doris high availability best practices](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/Doris/Stability improvement/EMR Serverless Doris high availability best practices.md)
+      - **Table design**
+        - [EMR Serverless Doris table model design best practices](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/Doris/Table design/EMR Serverless Doris table model design best practices.md)
+    - **StarRocks**
+      - [Analyze Serverless StarRocks using Volcano Engine Intelligent Data Insight](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Analyze Serverless StarRocks using Volcano Engine Intelligent Data Insight.md)
+      - [Implement MySQL to StarRocks data integration using Serverless Flink](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Implement MySQL to StarRocks data integration using Serverless Flink.md)
+      - [Prometheus configuration for fully managed OLAP cluster solution](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Prometheus configuration for fully managed OLAP cluster solution.md)
+      - [Serverless StarRocks TPC-H Note](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Serverless StarRocks TPC-H Note.md)
+      - [StarRocks instance backup and restore best practices](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/StarRocks instance backup and restore best practices.md)
+      - [StarRocks Multi-Warehouse best practices](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/StarRocks Multi-Warehouse best practices.md)
+      - [Storage-compute separation best practices](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Storage-compute separation best practices.md)
+      - **Capacity planning**
+        - [EMR Serverless StarRocks cluster resource planning](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Capacity planning/EMR Serverless StarRocks cluster resource planning.md)
+      - **Failure loss mitigation**
+        - [CompactionScore too high](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Failure loss mitigation/CompactionScore too high.md)
+        - [Transaction write backlog](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Failure loss mitigation/Transaction write backlog.md)
+      - **Large query defense construction**
+        - [Large query defense](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Large query defense construction/Large query defense.md)
+        - [Locating large queries](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Large query defense construction/Locating large queries.md)
+      - **Stability improvement**
+        - [Serverless StarRocks high availability best practices](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Stability improvement/Serverless StarRocks high availability best practices.md)
+      - **Table design**
+        - [Serverless StarRocks table model design](EMR_Serverless_instance_operation_guide/Best practices for EMR Serverless instances/StarRocks/Table design/Serverless StarRocks table model design.md)
+  - **Data import and export**
+    - [Cross-cluster data migration solutions](EMR_Serverless_instance_operation_guide/Data import and export/Cross-cluster data migration solutions.md)
+    - **Data import**
+      - [Broker Load](EMR_Serverless_instance_operation_guide/Data import and export/Data import/Broker Load.md)
+      - [Import overview](EMR_Serverless_instance_operation_guide/Data import and export/Data import/Import overview.md)
+      - [Import using the Insert method](EMR_Serverless_instance_operation_guide/Data import and export/Data import/Import using the Insert method.md)
+      - [Routine Load](EMR_Serverless_instance_operation_guide/Data import and export/Data import/Routine Load.md)
+      - [Stream Load](EMR_Serverless_instance_operation_guide/Data import and export/Data import/Stream Load.md)
+    - **Export data**
+      - [Data export](EMR_Serverless_instance_operation_guide/Data import and export/Export data/Data export.md)
+  - **Data lake queries (StarRocks)**
+    - **Catalog**
+      - [Catalog overview](EMR_Serverless_instance_operation_guide/Data lake queries (StarRocks)/Catalog/Catalog overview.md)
+      - [Default Catalog](EMR_Serverless_instance_operation_guide/Data lake queries (StarRocks)/Catalog/Default Catalog.md)
+      - [External Catalog](EMR_Serverless_instance_operation_guide/Data lake queries (StarRocks)/Catalog/External Catalog.md)
+    - **External table**
+      - [Read data in Hadoop clusters](EMR_Serverless_instance_operation_guide/Data lake queries (StarRocks)/External table/Read data in Hadoop clusters.md)
+      - [Read LAS data](EMR_Serverless_instance_operation_guide/Data lake queries (StarRocks)/External table/Read LAS data.md)
+      - [Update metadata cache](EMR_Serverless_instance_operation_guide/Data lake queries (StarRocks)/External table/Update metadata cache.md)
+  - **EMR Serverless instance FAQs**
+    - [Doris FAQs](EMR_Serverless_instance_operation_guide/EMR Serverless instance FAQs/Doris FAQs.md)
+    - [Locate large queries](EMR_Serverless_instance_operation_guide/EMR Serverless instance FAQs/Locate large queries.md)
+    - [StarRocks FAQs](EMR_Serverless_instance_operation_guide/EMR Serverless instance FAQs/StarRocks FAQs.md)
+  - **Instance management**
+    - [Connection instance](EMR_Serverless_instance_operation_guide/Instance management/Connection instance.md)
+    - [Create instances](EMR_Serverless_instance_operation_guide/Instance management/Create instances.md)
+    - [Instance disk expansion](EMR_Serverless_instance_operation_guide/Instance management/Instance disk expansion.md)
+    - [Instance status table](EMR_Serverless_instance_operation_guide/Instance management/Instance status table.md)
+    - [Recommendations for configuring StarRocks clusters with storage and compute separation](EMR_Serverless_instance_operation_guide/Instance management/Recommendations for configuring StarRocks clusters with storage and compute separation.md)
+    - [Scale out and upgrade instance nodes](EMR_Serverless_instance_operation_guide/Instance management/Scale out and upgrade instance nodes.md)
+    - [User management](EMR_Serverless_instance_operation_guide/Instance management/User management.md)
+    - [Version upgrade notes](EMR_Serverless_instance_operation_guide/Instance management/Version upgrade notes.md)
+    - [View instance list and details](EMR_Serverless_instance_operation_guide/Instance management/View instance list and details.md)
+  - **Monitoring alerts**
+    - [Alarm management](EMR_Serverless_instance_operation_guide/Monitoring alerts/Alarm management.md)
+    - [Monitoring metrics](EMR_Serverless_instance_operation_guide/Monitoring alerts/Monitoring metrics.md)
+    - [User Log Service collects logs from fully managed OLAP clusters](EMR_Serverless_instance_operation_guide/Monitoring alerts/User Log Service collects logs from fully managed OLAP clusters.md)
+  - **Performance tuning**
+    - [SQL diagnostics instructions](EMR_Serverless_instance_operation_guide/Performance tuning/SQL diagnostics instructions.md)
+  - **Permissions management**
+    - [Component permission management: users and roles](EMR_Serverless_instance_operation_guide/Permissions management/Component permission management: users and roles.md)
+    - [Create a Starrocks instance with storage-compute separation using an existing TOS bucket](EMR_Serverless_instance_operation_guide/Permissions management/Create a Starrocks instance with storage-compute separation using an existing TOS bucket.md)
+    - [EMR Serverless OLAP permission management overview](EMR_Serverless_instance_operation_guide/Permissions management/EMR Serverless OLAP permission management overview.md)
+    - [Permission management for the console: Grant permissions to IAM users](EMR_Serverless_instance_operation_guide/Permissions management/Permission management for the console: Grant permissions to IAM users.md)
+  - **Table storage format**
+    - [StarRocks hybrid row-column storage table](EMR_Serverless_instance_operation_guide/Table storage format/StarRocks hybrid row-column storage table.md)
+- **EMR_Serverless_queue**
+  - **Best practices for EMR Serverless queues**
+    - **Spark**
+      - [Serverless Spark access Kerberos cluster](EMR_Serverless_queue/Best practices for EMR Serverless queues/Spark/Serverless Spark access Kerberos cluster.md)
+  - **Configure and manage queues**
+    - [Create and manage Kyuubi Gateway](EMR_Serverless_queue/Configure and manage queues/Create and manage Kyuubi Gateway.md)
+    - **Configure the storage network and vePFS**
+      - [Mount NAS](EMR_Serverless_queue/Configure and manage queues/Configure the storage network and vePFS/Mount NAS.md)
+      - [Mount TOS](EMR_Serverless_queue/Configure and manage queues/Configure the storage network and vePFS/Mount TOS.md)
+      - [Mount vePFS](EMR_Serverless_queue/Configure and manage queues/Configure the storage network and vePFS/Mount vePFS.md)
+      - [Overview of storage mounting](EMR_Serverless_queue/Configure and manage queues/Configure the storage network and vePFS/Overview of storage mounting.md)
+    - **Create and manage compute groups**
+      - [Compute groups overview](EMR_Serverless_queue/Configure and manage queues/Create and manage compute groups/Compute groups overview.md)
+      - [Create and manage compute groups](EMR_Serverless_queue/Configure and manage queues/Create and manage compute groups/Create and manage compute groups.md)
+      - [List of images supported by Serverless](EMR_Serverless_queue/Configure and manage queues/Create and manage compute groups/List of images supported by Serverless.md)
+    - **Create and manage queues**
+      - [Create a queue](EMR_Serverless_queue/Configure and manage queues/Create and manage queues/Create a queue.md)
+      - [View and manage queues](EMR_Serverless_queue/Configure and manage queues/Create and manage queues/View and manage queues.md)
+    - **Operations and maintenance management**
+      - [Operation logs](EMR_Serverless_queue/Configure and manage queues/Operations and maintenance management/Operation logs.md)
+      - [Resource and job monitoring](EMR_Serverless_queue/Configure and manage queues/Operations and maintenance management/Resource and job monitoring.md)
+    - **Permission management and control**
+      - [Customer managed](EMR_Serverless_queue/Configure and manage queues/Permission management and control/Customer managed.md)
+      - [Queue permissions](EMR_Serverless_queue/Configure and manage queues/Permission management and control/Queue permissions.md)
+  - **Development guide**
+    - [Bolt operation guide](EMR_Serverless_queue/Development guide/Bolt operation guide.md)
+    - [Build and use custom images](EMR_Serverless_queue/Development guide/Build and use custom images.md)
+    - **Presto**
+      - [Basic usage](EMR_Serverless_queue/Development guide/Presto/Basic usage.md)
+      - [Connect to Presto](EMR_Serverless_queue/Development guide/Presto/Connect to Presto.md)
+      - [Presto usage note for lakehouse tables](EMR_Serverless_queue/Development guide/Presto/Presto usage note for lakehouse tables.md)
+    - **Ray**
+      - [Note on Serverless Ray parameters](EMR_Serverless_queue/Development guide/Ray/Note on Serverless Ray parameters.md)
+    - **Spark**
+      - [Basic usage](EMR_Serverless_queue/Development guide/Spark/Basic usage.md)
+      - [Introduction to engine](EMR_Serverless_queue/Development guide/Spark/Introduction to engine.md)
+      - **Advanced usage**
+        - [Access non-TOS schemes in Spark](EMR_Serverless_queue/Development guide/Spark/Advanced usage/Access non-TOS schemes in Spark.md)
+        - [Data shuffle](EMR_Serverless_queue/Development guide/Spark/Advanced usage/Data shuffle.md)
+        - [Note for using Spark with lakehouse tables](EMR_Serverless_queue/Development guide/Spark/Advanced usage/Note for using Spark with lakehouse tables.md)
+        - [Operation manual for reading and writing Serverless Doris with Serverless Spark](EMR_Serverless_queue/Development guide/Spark/Advanced usage/Operation manual for reading and writing Serverless Doris with Serverless Spark.md)
+        - [Serverless PySpark development guide](EMR_Serverless_queue/Development guide/Spark/Advanced usage/Serverless PySpark development guide.md)
+        - [Serverless PySpark development guide - BytePlus](EMR_Serverless_queue/Development guide/Spark/Advanced usage/Serverless PySpark development guide - BytePlus.md)
+        - [Serverless Spark operation manual for reading and writing StarRocks (storage-compute separation)](EMR_Serverless_queue/Development guide/Spark/Advanced usage/Serverless Spark operation manual for reading and writing StarRocks (storage-compute separ.md)
+        - [Small file merge in Spark](EMR_Serverless_queue/Development guide/Spark/Advanced usage/Small file merge in Spark.md)
+        - [Spark on Native engine: Bolt](EMR_Serverless_queue/Development guide/Spark/Advanced usage/Spark on Native engine: Bolt.md)
+        - [Using JDBC](EMR_Serverless_queue/Development guide/Spark/Advanced usage/Using JDBC.md)
+  - **EMR Serverless best practices**
+    - [Best Practices for Serverless PySpark Development](EMR_Serverless_queue/EMR Serverless best practices/Best Practices for Serverless PySpark Development.md)
+    - [EMR Serverless Jupyter Notebook best practices](EMR_Serverless_queue/EMR Serverless best practices/EMR Serverless Jupyter Notebook best practices.md)
+    - [EMR Serverless Jupyter Notebook Best Practices](EMR_Serverless_queue/EMR Serverless best practices/EMR Serverless Jupyter Notebook Best Practices (EMR_Serverless_Jupyter_Notebook_Best_Pra).md)
+    - [Serverless PySpark development best practices](EMR_Serverless_queue/EMR Serverless best practices/Serverless PySpark development best practices.md)
+    - [Serverless Spark access to Kerberos clusters](EMR_Serverless_queue/EMR Serverless best practices/Serverless Spark access to Kerberos clusters.md)
+  - **Remote Shuffle Service（RSS）**
+    - [EMR Serverless RSS service](EMR_Serverless_queue/Remote Shuffle Service（RSS）/EMR Serverless RSS service.md)
+  - **Submit Job**
+    - [DaftJob jobs](EMR_Serverless_queue/Submit Job/DaftJob jobs.md)
+    - [EMR Serverless Custom Job usage instructions](EMR_Serverless_queue/Submit Job/EMR Serverless Custom Job usage instructions.md)
+    - [HiveSQL jobs](EMR_Serverless_queue/Submit Job/HiveSQL jobs.md)
+    - [PrestoSQL jobs](EMR_Serverless_queue/Submit Job/PrestoSQL jobs.md)
+    - [RayJob jobs](EMR_Serverless_queue/Submit Job/RayJob jobs.md)
+    - **Metadata management**
+      - [Integrate with LAS](EMR_Serverless_queue/Submit Job/Metadata management/Integrate with LAS.md)
+    - **Serverless Spark jobs**
+      - [PySpark jobs](EMR_Serverless_queue/Submit Job/Serverless Spark jobs/PySpark jobs.md)
+      - [SparkJar jobs](EMR_Serverless_queue/Submit Job/Serverless Spark jobs/SparkJar jobs.md)
+      - [SparkSQL jobs](EMR_Serverless_queue/Submit Job/Serverless Spark jobs/SparkSQL jobs.md)
+    - **Serverless Spark jobs: based on Spark connect**
+      - [Job visualization analysis](EMR_Serverless_queue/Submit Job/Serverless Spark jobs: based on Spark connect/Job visualization analysis.md)
+- **Understand_EMR_and_get_started**
+  - **Announcement**
+    - [\[Announcement\] Commercialization announcement for EMR Spark on Native engine Bolt](Understand_EMR_and_get_started/Announcement/[Announcement] Commercialization announcement for EMR Spark on Native engine Bolt.md)
+  - **Billing**
+    - **EMR on ECS**
+      - [Billing items](Understand_EMR_and_get_started/Billing/EMR on ECS/Billing items.md)
+      - [Billing overview](Understand_EMR_and_get_started/Billing/EMR on ECS/Billing overview.md)
+      - [Expiration instructions](Understand_EMR_and_get_started/Billing/EMR on ECS/Expiration instructions.md)
+      - [Overdue payments](Understand_EMR_and_get_started/Billing/EMR on ECS/Overdue payments.md)
+      - [Renewal policy](Understand_EMR_and_get_started/Billing/EMR on ECS/Renewal policy.md)
+      - [Switch from Pay-As-You-Go to Subscription](Understand_EMR_and_get_started/Billing/EMR on ECS/Switch from Pay-As-You-Go to Subscription.md)
+      - [Unsubscribe policy](Understand_EMR_and_get_started/Billing/EMR on ECS/Unsubscribe policy.md)
+      - [View bills](Understand_EMR_and_get_started/Billing/EMR on ECS/View bills.md)
+      - **Billing methods**
+        - [No charge during downtime](Understand_EMR_and_get_started/Billing/EMR on ECS/Billing methods/No charge during downtime.md)
+        - [Pay-As-You-Go](Understand_EMR_and_get_started/Billing/EMR on ECS/Billing methods/Pay-As-You-Go.md)
+        - [Subscription](Understand_EMR_and_get_started/Billing/EMR on ECS/Billing methods/Subscription.md)
+    - **EMR on VKE**
+      - [Billing items](Understand_EMR_and_get_started/Billing/EMR on VKE/Billing items.md)
+      - [Billing overview](Understand_EMR_and_get_started/Billing/EMR on VKE/Billing overview.md)
+      - [Overdue payments](Understand_EMR_and_get_started/Billing/EMR on VKE/Overdue payments.md)
+      - [Pay-As-You-Go](Understand_EMR_and_get_started/Billing/EMR on VKE/Pay-As-You-Go.md)
+      - [view bills](Understand_EMR_and_get_started/Billing/EMR on VKE/view bills.md)
+    - **EMR Serverless**
+      - [Billing Items](Understand_EMR_and_get_started/Billing/EMR Serverless/Billing Items.md)
+      - [Bolt acceleration engine pricing details](Understand_EMR_and_get_started/Billing/EMR Serverless/Bolt acceleration engine pricing details.md)
+      - [Compute-enhanced CPU computing resources](Understand_EMR_and_get_started/Billing/EMR Serverless/Compute-enhanced CPU computing resources.md)
+      - [Memory-enhanced CPU computing resources](Understand_EMR_and_get_started/Billing/EMR Serverless/Memory-enhanced CPU computing resources.md)
+      - [Overdue payments](Understand_EMR_and_get_started/Billing/EMR Serverless/Overdue payments.md)
+      - [Overview](Understand_EMR_and_get_started/Billing/EMR Serverless/Overview.md)
+      - [Renewal and Cancellation Instructions](Understand_EMR_and_get_started/Billing/EMR Serverless/Renewal and Cancellation Instructions.md)
+      - [Standard Computing Resources](Understand_EMR_and_get_started/Billing/EMR Serverless/Standard Computing Resources.md)
+      - [Upgrading and downgrading](Understand_EMR_and_get_started/Billing/EMR Serverless/Upgrading and downgrading.md)
+  - **Product overview**
+    - [Basic concepts](Understand_EMR_and_get_started/Product overview/Basic concepts.md)
+    - [Guide to selecting EMR product forms](Understand_EMR_and_get_started/Product overview/Guide to selecting EMR product forms.md)
+    - [Product advantages](Understand_EMR_and_get_started/Product overview/Product advantages.md)
+    - [Product architecture](Understand_EMR_and_get_started/Product overview/Product architecture.md)
+    - [What is E-MapReduce](Understand_EMR_and_get_started/Product overview/What is E-MapReduce.md)
+    - **Limits**
+      - [EMR on ECS limits](Understand_EMR_and_get_started/Product overview/Limits/EMR on ECS limits.md)
+      - [EMR on VKE limits](Understand_EMR_and_get_started/Product overview/Limits/EMR on VKE limits.md)
+      - [EMR Serverless limits](Understand_EMR_and_get_started/Product overview/Limits/EMR Serverless limits.md)
+      - [Limits for open source components](Understand_EMR_and_get_started/Product overview/Limits/Limits for open source components.md)
+    - **Use cases**
+      - [EMR on ECS use cases](Understand_EMR_and_get_started/Product overview/Use cases/EMR on ECS use cases.md)
+      - [EMR on VKE use cases](Understand_EMR_and_get_started/Product overview/Use cases/EMR on VKE use cases.md)
+      - [EMR Serverless use cases](Understand_EMR_and_get_started/Product overview/Use cases/EMR Serverless use cases.md)
+  - **Quick Start**
+    - [Preparation](Understand_EMR_and_get_started/Quick Start/Preparation.md)
+    - **EMR on ECS Quick Start**
+      - [DataLeap on EMR Quick Start](Understand_EMR_and_get_started/Quick Start/EMR on ECS Quick Start/DataLeap on EMR Quick Start.md)
+      - [EMR on ECS Quick Start](Understand_EMR_and_get_started/Quick Start/EMR on ECS Quick Start/EMR on ECS Quick Start.md)
+    - **EMR Serverless Quick Start**
+      - [EMR Serverless Quick Start](Understand_EMR_and_get_started/Quick Start/EMR Serverless Quick Start/EMR Serverless Quick Start.md)
+  - **Terms**
+    - [BytePlus EMR on ECS Service Level Agreement](Understand_EMR_and_get_started/Terms/BytePlus EMR on ECS Service Level Agreement.md)
+    - [BytePlus EMR Serverless Service Level Agreement](Understand_EMR_and_get_started/Terms/BytePlus EMR Serverless Service Level Agreement.md)

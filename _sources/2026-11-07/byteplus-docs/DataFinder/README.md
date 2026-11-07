@@ -1,0 +1,389 @@
+# BytePlus DataFinder
+
+309 pages. Source: https://docs.byteplus.com/en/docs/DataFinder
+
+Back to the [full index](../README.md).
+
+- **Administrator Guide**
+  - [Basic Configuration](Administrator Guide/Basic Configuration.md)
+  - **Application Management**
+    - [AI Capability Configuration: Business Knowledge](Administrator Guide/Application Management/AI Capability Configuration: Business Knowledge.md)
+    - **Application Settings**
+      - [Date Annotation](Administrator Guide/Application Management/Application Settings/Date Annotation.md)
+      - [General Settings](Administrator Guide/Application Management/Application Settings/General Settings.md)
+      - [General Settings - Crawler Data Filtering](Administrator Guide/Application Management/Application Settings/General Settings - Crawler Data Filtering.md)
+      - [Monitoring Management](Administrator Guide/Application Management/Application Settings/Monitoring Management.md)
+      - [Multi-Time Zone Analysis](Administrator Guide/Application Management/Application Settings/Multi-Time Zone Analysis.md)
+      - [Operation Log](Administrator Guide/Application Management/Application Settings/Operation Log.md)
+      - [Query Trigger Method Settings](Administrator Guide/Application Management/Application Settings/Query Trigger Method Settings.md)
+    - **Dashboard Center**
+      - [Dashboard Management](Administrator Guide/Application Management/Dashboard Center/Dashboard Management.md)
+      - [Webhook Management](Administrator Guide/Application Management/Dashboard Center/Webhook Management.md)
+    - **Task Management**
+      - [Query Task List](Administrator Guide/Application Management/Task Management/Query Task List.md)
+      - [Warm-up Management](Administrator Guide/Application Management/Task Management/Warm-up Management.md)
+  - **Group Configuration**
+    - [App List](Administrator Guide/Group Configuration/App List.md)
+    - [Basic Concept](Administrator Guide/Group Configuration/Basic Concept.md)
+    - [Group Information](Administrator Guide/Group Configuration/Group Information.md)
+    - [Permission System](Administrator Guide/Group Configuration/Permission System.md)
+    - [Personal Profile](Administrator Guide/Group Configuration/Personal Profile.md)
+    - [Role Management](Administrator Guide/Group Configuration/Role Management.md)
+    - [User Management](Administrator Guide/Group Configuration/User Management.md)
+  - **Project Center**
+    - [AI Capability Configuration: Business Knowledge](Administrator Guide/Project Center/AI Capability Configuration: Business Knowledge.md)
+    - [Permission Management](Administrator Guide/Project Center/Permission Management.md)
+    - **Dashboard Center**
+      - [Dashboard Management](Administrator Guide/Project Center/Dashboard Center/Dashboard Management.md)
+      - [Subscription Management](Administrator Guide/Project Center/Dashboard Center/Subscription Management.md)
+      - [Webhook Management](Administrator Guide/Project Center/Dashboard Center/Webhook Management.md)
+    - **Project Management**
+      - [General Settings: Web Crawler Recognition](Administrator Guide/Project Center/Project Management/General Settings: Web Crawler Recognition.md)
+      - [Operation Log](Administrator Guide/Project Center/Project Management/Operation Log.md)
+      - [Project Management](Administrator Guide/Project Center/Project Management/Project Management.md)
+      - [Project Management - Multi-Time Zone Configuration](Administrator Guide/Project Center/Project Management/Project Management - Multi-Time Zone Configuration.md)
+      - [Project Management - SDK Settings](Administrator Guide/Project Center/Project Management/Project Management - SDK Settings.md)
+    - **Task Management**
+      - [Query Task List](Administrator Guide/Project Center/Task Management/Query Task List.md)
+      - [Warm-up Management](Administrator Guide/Project Center/Task Management/Warm-up Management.md)
+- **Agreements**
+  - [Growth Marketing(DataFinder) Service Level Agreement](Agreements/Growth Marketing(DataFinder) Service Level Agreement.md)
+  - [Specific Terms for the BytePlus Growth Marketing Suite Service](Agreements/Specific Terms for the BytePlus Growth Marketing Suite Service.md)
+- **Billing**
+  - [Product Usage Standard and Statistics](Billing/Product Usage Standard and Statistics.md)
+  - [Product/Service Billing and Settlement Rules](Billing/Product - Service Billing and Settlement Rules.md)
+- **Data Analysis and Governance**
+  - [Scenarios Template](Data Analysis and Governance/Scenarios Template.md)
+  - **Analysis Tool**
+    - **Advanced Analysis**
+      - [Attribution Analysis](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Attribution Analysis.md)
+      - [Custom SQL Query](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Custom SQL Query.md)
+      - [DataTable Analysis](Data Analysis and Governance/Analysis Tool/Advanced Analysis/DataTable Analysis.md)
+      - [Distribution Analysis](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Distribution Analysis.md)
+      - [Event Analysis](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Event Analysis.md)
+      - [Funnel Analysis](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Funnel Analysis.md)
+      - [Heat Map Analysis](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Heat Map Analysis.md)
+      - [Item Analysis](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Item Analysis.md)
+      - [LTV Analysis](Data Analysis and Governance/Analysis Tool/Advanced Analysis/LTV Analysis.md)
+      - [Retention Analysis](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Retention Analysis.md)
+      - [User Composition Analysis](Data Analysis and Governance/Analysis Tool/Advanced Analysis/User Composition Analysis.md)
+      - [User Lifecycle](Data Analysis and Governance/Analysis Tool/Advanced Analysis/User Lifecycle.md)
+      - [User Path](Data Analysis and Governance/Analysis Tool/Advanced Analysis/User Path.md)
+      - **Generic Capability**
+        - [Data Query Anomaly Detection](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Generic Capability/Data Query Anomaly Detection.md)
+        - [In-Text Grouping (Segmentation Filtering)](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Generic Capability/In-Text Grouping (Segmentation Filtering).md)
+        - [Microscope Function](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Generic Capability/Microscope Function.md)
+        - [Property (Custom) Grouping and Properties](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Generic Capability/Property (Custom) Grouping and Properties.md)
+        - [Save Metrics (SaaS Viewing)](Data Analysis and Governance/Analysis Tool/Advanced Analysis/Generic Capability/Save Metrics (SaaS Viewing).md)
+    - **User Analysis**
+      - [Cohorts (User Grouping)](Data Analysis and Governance/Analysis Tool/User Analysis/Cohorts (User Grouping).md)
+      - [User Details](Data Analysis and Governance/Analysis Tool/User Analysis/User Details.md)
+      - [User Portrait](Data Analysis and Governance/Analysis Tool/User Analysis/User Portrait.md)
+  - **Dashboard**
+    - [Dashboard Function Description](Data Analysis and Governance/Dashboard/Dashboard Function Description.md)
+    - [Dashboard Intelligent Summary](Data Analysis and Governance/Dashboard/Dashboard Intelligent Summary.md)
+    - [Dashboard Openness](Data Analysis and Governance/Dashboard/Dashboard Openness.md)
+    - [Dashboard Overview](Data Analysis and Governance/Dashboard/Dashboard Overview.md)
+    - [Dashboard Permission Description](Data Analysis and Governance/Dashboard/Dashboard Permission Description.md)
+    - [Dashboard Subscription](Data Analysis and Governance/Dashboard/Dashboard Subscription.md)
+    - [Preset Dashboard - Indicator Criteria](Data Analysis and Governance/Dashboard/Preset Dashboard - Indicator Criteria.md)
+  - **Data Management**
+    - **Data Governance**
+      - [Alarm Management](Data Analysis and Governance/Data Management/Data Governance/Alarm Management.md)
+      - [Data Governance Dashboard](Data Analysis and Governance/Data Management/Data Governance/Data Governance Dashboard.md)
+      - [Storage Details (Original Data Quality)](Data Analysis and Governance/Data Management/Data Governance/Storage Details (Original Data Quality).md)
+      - [Validation Rule Configuration](Data Analysis and Governance/Data Management/Data Governance/Validation Rule Configuration.md)
+    - **Data Output**
+      - [Data Output Overview](Data Analysis and Governance/Data Management/Data Output/Data Output Overview.md)
+      - **Data Output: SaaS-Cloud Native**
+        - [Create a Data Source](Data Analysis and Governance/Data Management/Data Output/Data Output: SaaS-Cloud Native/Create a Data Source.md)
+        - [Create Data Output Task](Data Analysis and Governance/Data Management/Data Output/Data Output: SaaS-Cloud Native/Create Data Output Task.md)
+    - **Event Tracking Verification**
+      - [Event Tracking Real-Time Verification](Data Analysis and Governance/Data Management/Event Tracking Verification/Event Tracking Real-Time Verification.md)
+      - [FAQ](Data Analysis and Governance/Data Management/Event Tracking Verification/FAQ.md)
+      - [Verification Report](Data Analysis and Governance/Data Management/Event Tracking Verification/Verification Report.md)
+    - **Metadata Management**
+      - [Circle Event](Data Analysis and Governance/Data Management/Metadata Management/Circle Event.md)
+      - [Custom Session](Data Analysis and Governance/Data Management/Metadata Management/Custom Session.md)
+      - [Effeciency: Dimensional Dictionary](Data Analysis and Governance/Data Management/Metadata Management/Effeciency: Dimensional Dictionary.md)
+      - [Efficiency Improvement Function: Event Classification](Data Analysis and Governance/Data Management/Metadata Management/Efficiency Improvement Function: Event Classification.md)
+      - [Efficiency Improvement Function: Event Tracking Bloodline](Data Analysis and Governance/Data Management/Metadata Management/Efficiency Improvement Function: Event Tracking Bloodline.md)
+      - [Event Properties](Data Analysis and Governance/Data Management/Metadata Management/Event Properties.md)
+      - [General Events](Data Analysis and Governance/Data Management/Metadata Management/General Events.md)
+      - [Item (Business Dimension)](Data Analysis and Governance/Data Management/Metadata Management/Item (Business Dimension).md)
+      - [Metrics Management](Data Analysis and Governance/Data Management/Metadata Management/Metrics Management.md)
+      - [Request Management](Data Analysis and Governance/Data Management/Metadata Management/Request Management.md)
+      - [Session Management](Data Analysis and Governance/Data Management/Metadata Management/Session Management.md)
+      - [Statistical Criteria](Data Analysis and Governance/Data Management/Metadata Management/Statistical Criteria.md)
+      - [User Properties](Data Analysis and Governance/Data Management/Metadata Management/User Properties.md)
+      - [Virtual Events](Data Analysis and Governance/Data Management/Metadata Management/Virtual Events.md)
+      - [Virtual Properties](Data Analysis and Governance/Data Management/Metadata Management/Virtual Properties.md)
+  - **Multi-Application - Multi-Agent - Multi-ID Type Analysis**
+    - [Multi-Application/ Multi-Agent/ Multi-ID Type Overview](Data Analysis and Governance/Multi-Application - Multi-Agent - Multi-ID Type Analysis/Multi-Application - Multi-Agent - Multi-ID Type Overview.md)
+    - [Use Multiple Apps](Data Analysis and Governance/Multi-Application - Multi-Agent - Multi-ID Type Analysis/Use Multiple Apps.md)
+  - **Scene Analysis**
+    - **Fundamental Analysis**
+      - **General Analysis**
+        - [Basic Metrics](Data Analysis and Governance/Scene Analysis/Fundamental Analysis/General Analysis/Basic Metrics.md)
+        - [Basic Retention](Data Analysis and Governance/Scene Analysis/Fundamental Analysis/General Analysis/Basic Retention.md)
+        - [Device Analysis](Data Analysis and Governance/Scene Analysis/Fundamental Analysis/General Analysis/Device Analysis.md)
+      - **Mini Program Analysis**
+        - [Mini Program Access](Data Analysis and Governance/Scene Analysis/Fundamental Analysis/Mini Program Analysis/Mini Program Access.md)
+        - [QR Code Channel (Including QR Code Statistics, QR Code Management)](Data Analysis and Governance/Scene Analysis/Fundamental Analysis/Mini Program Analysis/QR Code Channel (Including QR Code Statistics, QR Code Management).md)
+        - [Scene Value Analysis](Data Analysis and Governance/Scene Analysis/Fundamental Analysis/Mini Program Analysis/Scene Value Analysis.md)
+        - [Sharing Analysis (Including Sharing Trends, Sharing Fission Maps, Sharing Users, and Sharing Pages)](Data Analysis and Governance/Scene Analysis/Fundamental Analysis/Mini Program Analysis/Sharing Analysis (Including Sharing Trends, Sharing Fission Maps, Sharing Users, and Shari.md)
+      - **Web Analysis**
+        - [Referral Analysis](Data Analysis and Governance/Scene Analysis/Fundamental Analysis/Web Analysis/Referral Analysis.md)
+        - [Web Page Access](Data Analysis and Governance/Scene Analysis/Fundamental Analysis/Web Analysis/Web Page Access.md)
+- **Developer Guide**
+  - [\[Growth Marketing Kit SDK\] Privacy Policy](Developer Guide/[Growth Marketing Kit SDK] Privacy Policy.md)
+  - [DataFinder Data Access Overview](Developer Guide/DataFinder Data Access Overview.md)
+  - **Data Access**
+    - [General Event Tracking Verification Operation Guide](Developer Guide/Data Access/General Event Tracking Verification Operation Guide.md)
+    - [SDK Feature List](Developer Guide/Data Access/SDK Feature List.md)
+    - [SDK Update Log](Developer Guide/Data Access/SDK Update Log.md)
+    - **Client Side SDK**
+      - [Client Side SDK Overview](Developer Guide/Data Access/Client Side SDK/Client Side SDK Overview.md)
+      - [Cordova SDK Integration and Event Tracking](Developer Guide/Data Access/Client Side SDK/Cordova SDK Integration and Event Tracking.md)
+      - [SDK General FAQ](Developer Guide/Data Access/Client Side SDK/SDK General FAQ.md)
+      - **Android SDK**
+        - [Android SDK API Description](Developer Guide/Data Access/Client Side SDK/Android SDK/Android SDK API Description.md)
+        - [Android SDK Integration](Developer Guide/Data Access/Client Side SDK/Android SDK/Android SDK Integration.md)
+        - [Android SDK Integration Scenario Practice](Developer Guide/Data Access/Client Side SDK/Android SDK/Android SDK Integration Scenario Practice.md)
+        - [Reference: Android SDK Integration FAQ](Developer Guide/Data Access/Client Side SDK/Android SDK/Reference: Android SDK Integration FAQ.md)
+        - [Reference: Android SDK Release Log and Upgrade Guide](Developer Guide/Data Access/Client Side SDK/Android SDK/Reference: Android SDK Release Log and Upgrade Guide.md)
+      - **Archived Document**
+        - **Android SDK (Legacy Documentation)**
+          - [Android SDK Event Tracking and Properties](Developer Guide/Data Access/Client Side SDK/Archived Document/Android SDK (Legacy Documentation)/Android SDK Event Tracking and Properties.md)
+          - [Android SDK FAQ](Developer Guide/Data Access/Client Side SDK/Archived Document/Android SDK (Legacy Documentation)/Android SDK FAQ.md)
+          - [Android SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Android SDK (Legacy Documentation)/Android SDK Integration.md)
+        - **Flutter SDK Integration (Legacy Documentation)**
+          - [Flutter SDK Full Event Tracking](Developer Guide/Data Access/Client Side SDK/Archived Document/Flutter SDK Integration (Legacy Documentation)/Flutter SDK Full Event Tracking.md)
+          - [Flutter SDK Harmony Access](Developer Guide/Data Access/Client Side SDK/Archived Document/Flutter SDK Integration (Legacy Documentation)/Flutter SDK Harmony Access.md)
+          - [Flutter SDK Integration (Pure Flutter Project)](Developer Guide/Data Access/Client Side SDK/Archived Document/Flutter SDK Integration (Legacy Documentation)/Flutter SDK Integration (Pure Flutter Project).md)
+          - [Flutter SDK Integration and Event Tracking](Developer Guide/Data Access/Client Side SDK/Archived Document/Flutter SDK Integration (Legacy Documentation)/Flutter SDK Integration and Event Tracking.md)
+        - **HarmonyOS Next SDK Test Version (Legacy Documentation)**
+          - [HarmonyOS Next SDK Event Tracking and Properties](Developer Guide/Data Access/Client Side SDK/Archived Document/HarmonyOS Next SDK Test Version (Legacy Documentation)/HarmonyOS Next SDK Event Tracking and Properties.md)
+          - [HarmonyOS Next SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/HarmonyOS Next SDK Test Version (Legacy Documentation)/HarmonyOS Next SDK Integration.md)
+        - **iOS SDK (Legacy Documentation)**
+          - [(Legacy Documentation)iOS SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/iOS SDK (Legacy Documentation)/(Legacy Documentation)iOS SDK Integration.md)
+          - [iOS Access Privacy Configuration PrivacyInfo.xcprivacy](Developer Guide/Data Access/Client Side SDK/Archived Document/iOS SDK (Legacy Documentation)/iOS Access Privacy Configuration PrivacyInfo.xcprivacy.md)
+          - [iOS SDK Event Tracking and Properties](Developer Guide/Data Access/Client Side SDK/Archived Document/iOS SDK (Legacy Documentation)/iOS SDK Event Tracking and Properties.md)
+          - [iOS SDK FAQ](Developer Guide/Data Access/Client Side SDK/Archived Document/iOS SDK (Legacy Documentation)/iOS SDK FAQ.md)
+        - **Mini Program SDK (Legacy Documentation)**
+          - [Alipay Mini Program SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/Alipay Mini Program SDK Integration.md)
+          - [Baidu Mini Program SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/Baidu Mini Program SDK Integration.md)
+          - [ByteDance Mini Program SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/ByteDance Mini Program SDK Integration.md)
+          - [DingTalk Mini Program SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/DingTalk Mini Program SDK Integration.md)
+          - [JD.com Mini Program SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/JD.com Mini Program SDK Integration.md)
+          - [Mini Program SDK Event Tracking and Properties](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/Mini Program SDK Event Tracking and Properties.md)
+          - [Mini Program SDK FAQ](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/Mini Program SDK FAQ.md)
+          - [Mini Program SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/Mini Program SDK Integration.md)
+          - [QQ Mini Program SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/QQ Mini Program SDK Integration.md)
+          - [Quick Application SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/Quick Application SDK Integration.md)
+          - [RedNote Mini Program SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/RedNote Mini Program SDK Integration.md)
+          - [We Mini Program SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/We Mini Program SDK Integration.md)
+          - [WeChat Mini Program SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Mini Program SDK (Legacy Documentation)/WeChat Mini Program SDK Integration.md)
+        - **React Native SDK Integration with Event Tracking (Legacy Doc**
+          - [React Native Full Event Tracking](Developer Guide/Data Access/Client Side SDK/Archived Document/React Native SDK Integration with Event Tracking (Legacy Doc/React Native Full Event Tracking.md)
+          - [React Native SDK Integration and Event Tracking](Developer Guide/Data Access/Client Side SDK/Archived Document/React Native SDK Integration with Event Tracking (Legacy Doc/React Native SDK Integration and Event Tracking.md)
+        - **Web JavaScript SDK (Legacy Documentation)**
+          - [Web/JavaScript SDK Event Tracking and Properties](Developer Guide/Data Access/Client Side SDK/Archived Document/Web JavaScript SDK (Legacy Documentation)/Web - JavaScript SDK Event Tracking and Properties.md)
+          - [Web/JavaScript SDK Integration](Developer Guide/Data Access/Client Side SDK/Archived Document/Web JavaScript SDK (Legacy Documentation)/Web - JavaScript SDK Integration.md)
+          - [Web/JS SDK Classification Function](Developer Guide/Data Access/Client Side SDK/Archived Document/Web JavaScript SDK (Legacy Documentation)/Web - JS SDK Classification Function.md)
+      - **Electron SDK**
+        - [Electron SDK API Description](Developer Guide/Data Access/Client Side SDK/Electron SDK/Electron SDK API Description.md)
+        - [Electron SDK Integration](Developer Guide/Data Access/Client Side SDK/Electron SDK/Electron SDK Integration.md)
+        - [Electron SDK Integration Scenario Practice](Developer Guide/Data Access/Client Side SDK/Electron SDK/Electron SDK Integration Scenario Practice.md)
+        - [Reference: Electron SDK Integration FAQ](Developer Guide/Data Access/Client Side SDK/Electron SDK/Reference: Electron SDK Integration FAQ.md)
+        - [Reference: Electron SDK Release Log and Upgrade Guide](Developer Guide/Data Access/Client Side SDK/Electron SDK/Reference: Electron SDK Release Log and Upgrade Guide.md)
+      - **Flutter SDK**
+        - [Flutter SDK API Description](Developer Guide/Data Access/Client Side SDK/Flutter SDK/Flutter SDK API Description.md)
+        - [Flutter SDK Integration](Developer Guide/Data Access/Client Side SDK/Flutter SDK/Flutter SDK Integration.md)
+        - [Flutter SDK Integration Scenario Practice](Developer Guide/Data Access/Client Side SDK/Flutter SDK/Flutter SDK Integration Scenario Practice.md)
+        - [Reference: Flutter SDK Integration FAQ](Developer Guide/Data Access/Client Side SDK/Flutter SDK/Reference: Flutter SDK Integration FAQ.md)
+        - [Reference: Flutter SDK Release Log and Upgrade Guide](Developer Guide/Data Access/Client Side SDK/Flutter SDK/Reference: Flutter SDK Release Log and Upgrade Guide.md)
+      - **HarmonyOS Next SDK**
+        - [HarmonyOS Next SDK API Description](Developer Guide/Data Access/Client Side SDK/HarmonyOS Next SDK/HarmonyOS Next SDK API Description.md)
+        - [HarmonyOS Next SDK Integration](Developer Guide/Data Access/Client Side SDK/HarmonyOS Next SDK/HarmonyOS Next SDK Integration.md)
+        - [HarmonyOS Next SDK Integration Scenario Practice](Developer Guide/Data Access/Client Side SDK/HarmonyOS Next SDK/HarmonyOS Next SDK Integration Scenario Practice.md)
+        - [Reference: HarmonyOS Next SDK Integration FAQ](Developer Guide/Data Access/Client Side SDK/HarmonyOS Next SDK/Reference: HarmonyOS Next SDK Integration FAQ.md)
+        - [Reference: HarmonyOS Next SDK Release Log and Upgrade Guide](Developer Guide/Data Access/Client Side SDK/HarmonyOS Next SDK/Reference: HarmonyOS Next SDK Release Log and Upgrade Guide.md)
+      - **iOS SDK**
+        - [iOS Access Privacy Configuration PrivacyInfo.xcprivacy](Developer Guide/Data Access/Client Side SDK/iOS SDK/iOS Access Privacy Configuration PrivacyInfo.xcprivacy.md)
+        - [iOS SDK API Description](Developer Guide/Data Access/Client Side SDK/iOS SDK/iOS SDK API Description.md)
+        - [iOS SDK Integration](Developer Guide/Data Access/Client Side SDK/iOS SDK/iOS SDK Integration.md)
+        - [iOS SDK Integration Scenario Practice](Developer Guide/Data Access/Client Side SDK/iOS SDK/iOS SDK Integration Scenario Practice.md)
+        - [Reference: iOS SDK Integration FAQ](Developer Guide/Data Access/Client Side SDK/iOS SDK/Reference: iOS SDK Integration FAQ.md)
+        - [Reference: iOS SDK Release Log and Upgrade Guide](Developer Guide/Data Access/Client Side SDK/iOS SDK/Reference: iOS SDK Release Log and Upgrade Guide.md)
+      - **Mini Game SDK**
+        - [Mini Game SDK API Description](Developer Guide/Data Access/Client Side SDK/Mini Game SDK/Mini Game SDK API Description.md)
+        - [Mini Game SDK Integration](Developer Guide/Data Access/Client Side SDK/Mini Game SDK/Mini Game SDK Integration.md)
+        - [Mini Game SDK Integration Scenario Practice](Developer Guide/Data Access/Client Side SDK/Mini Game SDK/Mini Game SDK Integration Scenario Practice.md)
+        - [Reference: Mini Game SDK Integration FAQ](Developer Guide/Data Access/Client Side SDK/Mini Game SDK/Reference: Mini Game SDK Integration FAQ.md)
+        - [Reference: Mini Game SDK Package File Structure Description](Developer Guide/Data Access/Client Side SDK/Mini Game SDK/Reference: Mini Game SDK Package File Structure Description.md)
+        - [Reference: Mini Game SDK Release Log and Upgrade Guide](Developer Guide/Data Access/Client Side SDK/Mini Game SDK/Reference: Mini Game SDK Release Log and Upgrade Guide.md)
+      - **Mini Program SDK**
+        - [Mini Program SDK API Description](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/Mini Program SDK API Description.md)
+        - [Mini Program SDK Integration](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/Mini Program SDK Integration.md)
+        - [Mini Program SDK Integration Scenario Practice](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/Mini Program SDK Integration Scenario Practice.md)
+        - [Reference: Mini Program SDK Integration FAQ](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/Reference: Mini Program SDK Integration FAQ.md)
+        - [Reference: Mini Program SDK Package File Structure Description](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/Reference: Mini Program SDK Package File Structure Description.md)
+        - [Reference: Mini Program SDK Release Log and Upgrade Guide](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/Reference: Mini Program SDK Release Log and Upgrade Guide.md)
+        - [Supported Mini Program Platforms](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/Supported Mini Program Platforms.md)
+      - **Quick Application SDK**
+        - [Quick Application SDK API Description](Developer Guide/Data Access/Client Side SDK/Quick Application SDK/Quick Application SDK API Description.md)
+        - [Quick Application SDK Integration](Developer Guide/Data Access/Client Side SDK/Quick Application SDK/Quick Application SDK Integration.md)
+        - [Quick Application SDK Integration Scenario Practice](Developer Guide/Data Access/Client Side SDK/Quick Application SDK/Quick Application SDK Integration Scenario Practice.md)
+        - [Reference: Quick Application SDK Integration FAQ](Developer Guide/Data Access/Client Side SDK/Quick Application SDK/Reference: Quick Application SDK Integration FAQ.md)
+        - [Reference: Quick Application SDK Release Log and Upgrade Guide](Developer Guide/Data Access/Client Side SDK/Quick Application SDK/Reference: Quick Application SDK Release Log and Upgrade Guide.md)
+      - **React Native SDK**
+        - [React Native SDK API Description](Developer Guide/Data Access/Client Side SDK/React Native SDK/React Native SDK API Description.md)
+        - [React Native SDK Integration](Developer Guide/Data Access/Client Side SDK/React Native SDK/React Native SDK Integration.md)
+        - [React Native SDK Integration Scenario Practice](Developer Guide/Data Access/Client Side SDK/React Native SDK/React Native SDK Integration Scenario Practice.md)
+        - [Reference: React Native SDK Integration FAQ](Developer Guide/Data Access/Client Side SDK/React Native SDK/Reference: React Native SDK Integration FAQ.md)
+        - [Reference: React Native SDK Release Log and Upgrade Guide](Developer Guide/Data Access/Client Side SDK/React Native SDK/Reference: React Native SDK Release Log and Upgrade Guide.md)
+      - **Web - JS SDK**
+        - [Reference: Web/JavaScript SDK FAQ](Developer Guide/Data Access/Client Side SDK/Web - JS SDK/Reference: Web - JavaScript SDK FAQ.md)
+        - [Web DevTools](Developer Guide/Data Access/Client Side SDK/Web - JS SDK/Web DevTools.md)
+        - [Web/JavaScript SDK Integration](Developer Guide/Data Access/Client Side SDK/Web - JS SDK/Web - JavaScript SDK Integration.md)
+        - [Web/JavaScript SDK Release Log and Upgrade Guide](Developer Guide/Data Access/Client Side SDK/Web - JS SDK/Web - JavaScript SDK Release Log and Upgrade Guide.md)
+        - [Web/JS SDK API Description](Developer Guide/Data Access/Client Side SDK/Web - JS SDK/Web - JS SDK API Description.md)
+        - [Web/JS SDK Integration Scenario Practice](Developer Guide/Data Access/Client Side SDK/Web - JS SDK/Web - JS SDK Integration Scenario Practice.md)
+    - **Server Side Access**
+      - [Business Dimension (Item) Data Access (Local File Upload)](Developer Guide/Data Access/Server Side Access/Business Dimension (Item) Data Access (Local File Upload).md)
+      - [Business Dimension (Item) Data Access and Usage Practices](Developer Guide/Data Access/Server Side Access/Business Dimension (Item) Data Access and Usage Practices.md)
+      - [Golang SDK](Developer Guide/Data Access/Server Side Access/Golang SDK.md)
+      - [HTTP API](Developer Guide/Data Access/Server Side Access/HTTP API.md)
+      - [Node.js SDK](Developer Guide/Data Access/Server Side Access/Node.js SDK.md)
+      - [PHP SDK](Developer Guide/Data Access/Server Side Access/PHP SDK.md)
+      - [Server Side Access Instructions](Developer Guide/Data Access/Server Side Access/Server Side Access Instructions.md)
+      - **Java SDK**
+        - [Java SDK API Description](Developer Guide/Data Access/Server Side Access/Java SDK/Java SDK API Description.md)
+        - [Java SDK Integration](Developer Guide/Data Access/Server Side Access/Java SDK/Java SDK Integration.md)
+        - [Java SDK Scenario Practice](Developer Guide/Data Access/Server Side Access/Java SDK/Java SDK Scenario Practice.md)
+        - [Reference: Java SDK Integration FAQ](Developer Guide/Data Access/Server Side Access/Java SDK/Reference: Java SDK Integration FAQ.md)
+  - **Key Basics (Prerequisite)**
+    - [Data Reporting Address](Developer Guide/Key Basics (Prerequisite)/Data Reporting Address.md)
+    - [Event Property Storage Logic Description](Developer Guide/Key Basics (Prerequisite)/Event Property Storage Logic Description.md)
+    - [Supported Data Formats and Event/Property Classification](Developer Guide/Key Basics (Prerequisite)/Supported Data Formats and Event - Property Classification.md)
+    - [Supported User Unique Identifiers](Developer Guide/Key Basics (Prerequisite)/Supported User Unique Identifiers.md)
+    - **Supported Preset Events and Properties**
+      - [Android-Side Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Android-Side Preset Events and Properties.md)
+      - [Disable Properties List](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Disable Properties List.md)
+      - [Full Event Tracking Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Full Event Tracking Preset Events and Properties.md)
+      - [HarmonyOS-Side Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/HarmonyOS-Side Preset Events and Properties.md)
+      - [Inter-Side Preset Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Inter-Side Preset Properties.md)
+      - [iOS-Side Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/iOS-Side Preset Events and Properties.md)
+      - [MacOS Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/MacOS Preset Events and Properties.md)
+      - [Mini Program Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Mini Program Preset Events and Properties.md)
+      - [Preset Property Summary Table](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Preset Property Summary Table.md)
+      - [Preset User Properties/Preset Event Public Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Preset User Properties - Preset Event Public Properties.md)
+      - [Web Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Web Preset Events and Properties.md)
+      - [WeChat Official Account Related Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/WeChat Official Account Related Events and Properties.md)
+      - [Windows Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Windows Preset Events and Properties.md)
+  - **Open Data**
+    - **OpenAPI**
+      - [API List](Developer Guide/Open Data/OpenAPI/API List.md)
+      - [API Release History](Developer Guide/Open Data/OpenAPI/API Release History.md)
+      - [Common Error Code](Developer Guide/Open Data/OpenAPI/Common Error Code.md)
+      - **Application Information**
+        - [Acquire Group Information](Developer Guide/Open Data/OpenAPI/Application Information/Acquire Group Information.md)
+        - [API Description and Public Parameters](Developer Guide/Open Data/OpenAPI/Application Information/API Description and Public Parameters.md)
+        - [Query Group Usage Data](Developer Guide/Open Data/OpenAPI/Application Information/Query Group Usage Data.md)
+      - **Cohorts**
+        - [API Description and Public Parameters](Developer Guide/Open Data/OpenAPI/Cohorts/API Description and Public Parameters.md)
+        - [Create a Cohort](Developer Guide/Open Data/OpenAPI/Cohorts/Create a Cohort.md)
+        - [Delete Created Cohorts](Developer Guide/Open Data/OpenAPI/Cohorts/Delete Created Cohorts.md)
+        - [Download the Specified Cohorts User List Information (Streaming)](Developer Guide/Open Data/OpenAPI/Cohorts/Download the Specified Cohorts User List Information (Streaming).md)
+        - [Get Cohorts List](Developer Guide/Open Data/OpenAPI/Cohorts/Get Cohorts List.md)
+        - [Get the Specified Cohorts Information](Developer Guide/Open Data/OpenAPI/Cohorts/Get the Specified Cohorts Information.md)
+        - [Get the User List Information for the Specified Cohorts](Developer Guide/Open Data/OpenAPI/Cohorts/Get the User List Information for the Specified Cohorts.md)
+        - [Modify Created Cohorts](Developer Guide/Open Data/OpenAPI/Cohorts/Modify Created Cohorts.md)
+        - [Refresh Cohorts](Developer Guide/Open Data/OpenAPI/Cohorts/Refresh Cohorts.md)
+        - [Upload the File which is Used to Create the Cohorts](Developer Guide/Open Data/OpenAPI/Cohorts/Upload the File which is Used to Create the Cohorts.md)
+      - **Dashboard and Reports**
+        - [API Description and Public Parameters](Developer Guide/Open Data/OpenAPI/Dashboard and Reports/API Description and Public Parameters.md)
+        - [Query Dashboard Information](Developer Guide/Open Data/OpenAPI/Dashboard and Reports/Query Dashboard Information.md)
+        - [Query Report Information and Data](Developer Guide/Open Data/OpenAPI/Dashboard and Reports/Query Report Information and Data.md)
+        - [Query Report Information in Dashboard](Developer Guide/Open Data/OpenAPI/Dashboard and Reports/Query Report Information in Dashboard.md)
+        - [Query User Dashboard List](Developer Guide/Open Data/OpenAPI/Dashboard and Reports/Query User Dashboard List.md)
+      - **Metadata**
+        - [Add Event Properties](Developer Guide/Open Data/OpenAPI/Metadata/Add Event Properties.md)
+        - [Add Events (General Operations)](Developer Guide/Open Data/OpenAPI/Metadata/Add Events (General Operations).md)
+        - [Add User Properties](Developer Guide/Open Data/OpenAPI/Metadata/Add User Properties.md)
+        - [Add Virtual Events](Developer Guide/Open Data/OpenAPI/Metadata/Add Virtual Events.md)
+        - [Add Virtual Properties](Developer Guide/Open Data/OpenAPI/Metadata/Add Virtual Properties.md)
+        - [API Description and Public Parameters](Developer Guide/Open Data/OpenAPI/Metadata/API Description and Public Parameters.md)
+        - [Delete Virtual Event](Developer Guide/Open Data/OpenAPI/Metadata/Delete Virtual Event.md)
+        - [Delete Virtual Property](Developer Guide/Open Data/OpenAPI/Metadata/Delete Virtual Property.md)
+        - [Get Application and Configuration Information](Developer Guide/Open Data/OpenAPI/Metadata/Get Application and Configuration Information.md)
+        - [Get Event Properties](Developer Guide/Open Data/OpenAPI/Metadata/Get Event Properties.md)
+        - [Get User Properties](Developer Guide/Open Data/OpenAPI/Metadata/Get User Properties.md)
+        - [Modify Event](Developer Guide/Open Data/OpenAPI/Metadata/Modify Event.md)
+        - [Modify Event Properties](Developer Guide/Open Data/OpenAPI/Metadata/Modify Event Properties.md)
+        - [Modify User Properties](Developer Guide/Open Data/OpenAPI/Metadata/Modify User Properties.md)
+        - [Modify Virtual Events](Developer Guide/Open Data/OpenAPI/Metadata/Modify Virtual Events.md)
+        - [Modify Virtual Properties](Developer Guide/Open Data/OpenAPI/Metadata/Modify Virtual Properties.md)
+        - [Query Event](Developer Guide/Open Data/OpenAPI/Metadata/Query Event.md)
+        - [Query Virtual Events](Developer Guide/Open Data/OpenAPI/Metadata/Query Virtual Events.md)
+        - [Query Virtual Properties](Developer Guide/Open Data/OpenAPI/Metadata/Query Virtual Properties.md)
+      - **Query Analysis**
+        - [API Description and Public Parameters](Developer Guide/Open Data/OpenAPI/Query Analysis/API Description and Public Parameters.md)
+        - [Batch Query Analysis](Developer Guide/Open Data/OpenAPI/Query Analysis/Batch Query Analysis.md)
+        - [Query Analysis (Privatization)](Developer Guide/Open Data/OpenAPI/Query Analysis/Query Analysis (Privatization).md)
+        - [Query Analysis (SaaS)](Developer Guide/Open Data/OpenAPI/Query Analysis/Query Analysis (SaaS).md)
+        - [Query Analysis - Get result Query Results (Privatization)](Developer Guide/Open Data/OpenAPI/Query Analysis/Query Analysis - Get result Query Results (Privatization).md)
+      - **Raw Event Property Data Export (Privatization)**
+        - [API Description and Public Parameters](Developer Guide/Open Data/OpenAPI/Raw Event Property Data Export (Privatization)/API Description and Public Parameters.md)
+      - **Usage Statistics (SaaS)**
+        - [API Description and Public Parameters](Developer Guide/Open Data/OpenAPI/Usage Statistics (SaaS)/API Description and Public Parameters.md)
+        - [Daily Granularity Usage Statistics](Developer Guide/Open Data/OpenAPI/Usage Statistics (SaaS)/Daily Granularity Usage Statistics.md)
+        - [Monthly Granularity Usage Statistics](Developer Guide/Open Data/OpenAPI/Usage Statistics (SaaS)/Monthly Granularity Usage Statistics.md)
+      - **User Analysis (Privatization)**
+        - [API Description and Public Parameters](Developer Guide/Open Data/OpenAPI/User Analysis (Privatization)/API Description and Public Parameters.md)
+        - [Create Query ID of User List](Developer Guide/Open Data/OpenAPI/User Analysis (Privatization)/Create Query ID of User List.md)
+        - [Get Results Based on Query ID](Developer Guide/Open Data/OpenAPI/User Analysis (Privatization)/Get Results Based on Query ID.md)
+        - [Get the User's Behavior Stream](Developer Guide/Open Data/OpenAPI/User Analysis (Privatization)/Get the User's Behavior Stream.md)
+        - [Get the User's User Information, Device Information, User Tags and User Property Value](Developer Guide/Open Data/OpenAPI/User Analysis (Privatization)/Get the User's User Information, Device Information, User Tags and User Property Value.md)
+        - [Streaming Export Based on Query ID](Developer Guide/Open Data/OpenAPI/User Analysis (Privatization)/Streaming Export Based on Query ID.md)
+- **FAQs**
+  - [Dashboard](FAQs/Dashboard.md)
+  - [Data Import and Export](FAQs/Data Import and Export.md)
+  - [Fee/Usage/Usage Consultation](FAQs/Fee - Usage - Usage Consultation.md)
+  - [Metadata & Data Governance](FAQs/Metadata & Data Governance.md)
+  - [OpenAPI](FAQs/OpenAPI.md)
+  - [Project/Application/Permission Management](FAQs/Project - Application - Permission Management.md)
+  - [Query Analysis & Analysis Metrics](FAQs/Query Analysis & Analysis Metrics.md)
+  - [SDK Integration & Data Reporting](FAQs/SDK Integration & Data Reporting.md)
+  - [Statistical Criteria & Value Logic](FAQs/Statistical Criteria & Value Logic.md)
+- **Product Introduction**
+  - [DataFinder Q & A](Product Introduction/DataFinder Q & A.md)
+  - [Introduction to Cloud Hosting Model](Product Introduction/Introduction to Cloud Hosting Model.md)
+  - [Product Introduction and Advantages](Product Introduction/Product Introduction and Advantages.md)
+  - [Product Usage Restrictions](Product Introduction/Product Usage Restrictions.md)
+  - [SaaS Cloud-Native & Privatized Environments](Product Introduction/SaaS Cloud-Native & Privatized Environments.md)
+  - [Supported Regions](Product Introduction/Supported Regions.md)
+  - **Basic Concept**
+    - [Data Model](Product Introduction/Basic Concept/Data Model.md)
+    - [Event Tracking, Full Event Tracking](Product Introduction/Basic Concept/Event Tracking, Full Event Tracking.md)
+    - [Explanation of DataFinder Proper Nouns](Product Introduction/Basic Concept/Explanation of DataFinder Proper Nouns.md)
+    - [Logic for Judging the Source of Page Visits](Product Introduction/Basic Concept/Logic for Judging the Source of Page Visits.md)
+    - [Passive and Relational Events](Product Introduction/Basic Concept/Passive and Relational Events.md)
+    - [Session](Product Introduction/Basic Concept/Session.md)
+    - [User ID (uid, ssid, did)](Product Introduction/Basic Concept/User ID (uid, ssid, did).md)
+- **Quick Start**
+  - [Free Trial for New Users](Quick Start/Free Trial for New Users.md)
+  - [New Customers Notice](Quick Start/New Customers Notice.md)
+  - [Quick Start: Administrator (SaaS-Cloud Native)](Quick Start/Quick Start: Administrator (SaaS-Cloud Native).md)
+  - [Quick Start: Developers](Quick Start/Quick Start: Developers.md)
+  - **Study Courses and Training (Required for New Guests)**
+    - [Learning Paths and Video Courses](Quick Start/Study Courses and Training (Required for New Guests)/Learning Paths and Video Courses.md)
+- **Release Log**
+  - [SaaS - Release Log (2026)](Release Log/SaaS - Release Log (2026).md)
+- **Scheme Before Data Analysis**
+  - [Overall Introduction of Launch Process](Scheme Before Data Analysis/Overall Introduction of Launch Process.md)
+  - **Design Event Tracking Collection Scheme**
+    - [How to Design Event Tracking and Collection Scheme?](Scheme Before Data Analysis/Design Event Tracking Collection Scheme/How to Design Event Tracking and Collection Scheme?.md)
+  - **Organize Data Requirements**
+    - [How to Sort out Requirements](Scheme Before Data Analysis/Organize Data Requirements/How to Sort out Requirements.md)

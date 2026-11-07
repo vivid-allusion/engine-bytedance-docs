@@ -1,0 +1,333 @@
+# Vital Managed Service for Prometheus
+
+268 pages. Source: https://docs.byteplus.com/en/docs/vmp
+
+Back to the [full index](../README.md).
+
+- [Getting Started](Getting Started.md)
+- **API Reference**
+  - [API error code list](API Reference/API error code list.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [Available APIs](API Reference/Available APIs.md)
+  - [Essential reading prior to use](API Reference/Essential reading prior to use.md)
+  - **Alert center**
+    - **Alert templates**
+      - [CreateAlertingRuleGroup](API Reference/Alert center/Alert templates/CreateAlertingRuleGroup.md)
+      - [CreateAlertingRuleTemplate](API Reference/Alert center/Alert templates/CreateAlertingRuleTemplate.md)
+      - [DeleteAlertingRuleGroup](API Reference/Alert center/Alert templates/DeleteAlertingRuleGroup.md)
+      - [DeleteAlertingRuleTemplate](API Reference/Alert center/Alert templates/DeleteAlertingRuleTemplate.md)
+      - [GetAlertingRuleTemplate](API Reference/Alert center/Alert templates/GetAlertingRuleTemplate.md)
+      - [ListAlertingRuleGroups](API Reference/Alert center/Alert templates/ListAlertingRuleGroups.md)
+      - [ListAlertingRuleTemplates](API Reference/Alert center/Alert templates/ListAlertingRuleTemplates.md)
+      - [UnbindAlertingRuleGroupTemplate](API Reference/Alert center/Alert templates/UnbindAlertingRuleGroupTemplate.md)
+      - [UpdateAlertingRuleGroup](API Reference/Alert center/Alert templates/UpdateAlertingRuleGroup.md)
+      - [UpdateAlertingRuleTemplate](API Reference/Alert center/Alert templates/UpdateAlertingRuleTemplate.md)
+      - [UpgradeAlertingRuleGroups](API Reference/Alert center/Alert templates/UpgradeAlertingRuleGroups.md)
+    - **Alerting aggregation rule**
+      - [CreateNotifyGroupPolicy](API Reference/Alert center/Alerting aggregation rule/CreateNotifyGroupPolicy.md)
+      - [DeleteNotifyGroupPolicy](API Reference/Alert center/Alerting aggregation rule/DeleteNotifyGroupPolicy.md)
+      - [ListNotifyGroupPolicies](API Reference/Alert center/Alerting aggregation rule/ListNotifyGroupPolicies.md)
+      - [UpdateNotifyGroupPolicy](API Reference/Alert center/Alerting aggregation rule/UpdateNotifyGroupPolicy.md)
+    - **Alerting notification rule**
+      - [CreateNotifyPolicy](API Reference/Alert center/Alerting notification rule/CreateNotifyPolicy.md)
+      - [DeleteNotifyPolicy](API Reference/Alert center/Alerting notification rule/DeleteNotifyPolicy.md)
+      - [ListNotifyPolicies](API Reference/Alert center/Alerting notification rule/ListNotifyPolicies.md)
+      - [UpdateNotifyPolicy](API Reference/Alert center/Alerting notification rule/UpdateNotifyPolicy.md)
+    - **Alerting notify template**
+      - [CreateNotifyTemplate](API Reference/Alert center/Alerting notify template/CreateNotifyTemplate.md)
+      - [DeleteNotifyTemplate](API Reference/Alert center/Alerting notify template/DeleteNotifyTemplate.md)
+      - [ListNotifyTemplates](API Reference/Alert center/Alerting notify template/ListNotifyTemplates.md)
+      - [UpdateNotifyTemplate](API Reference/Alert center/Alerting notify template/UpdateNotifyTemplate.md)
+    - **Alerting receiver**
+      - [CreateContact](API Reference/Alert center/Alerting receiver/CreateContact.md)
+      - [CreateContactGroup](API Reference/Alert center/Alerting receiver/CreateContactGroup.md)
+      - [DeleteContactGroups](API Reference/Alert center/Alerting receiver/DeleteContactGroups.md)
+      - [DeleteContacts](API Reference/Alert center/Alerting receiver/DeleteContacts.md)
+      - [ListContactGroups](API Reference/Alert center/Alerting receiver/ListContactGroups.md)
+      - [ListContacts](API Reference/Alert center/Alerting receiver/ListContacts.md)
+      - [SendValidationMessage](API Reference/Alert center/Alerting receiver/SendValidationMessage.md)
+      - [TestDingTalkBotWebhook](API Reference/Alert center/Alerting receiver/TestDingTalkBotWebhook.md)
+      - [TestLarkBotWebhook](API Reference/Alert center/Alerting receiver/TestLarkBotWebhook.md)
+      - [TestWebhook](API Reference/Alert center/Alerting receiver/TestWebhook.md)
+      - [TestWeComBotWebhook](API Reference/Alert center/Alerting receiver/TestWeComBotWebhook.md)
+      - [UpdateContact](API Reference/Alert center/Alerting receiver/UpdateContact.md)
+      - [UpdateContactGroup](API Reference/Alert center/Alerting receiver/UpdateContactGroup.md)
+    - **Alerting rule**
+      - [CreateAlertingRule](API Reference/Alert center/Alerting rule/CreateAlertingRule.md)
+      - [DeleteAlertingRules](API Reference/Alert center/Alerting rule/DeleteAlertingRules.md)
+      - [DisableAlertingRules](API Reference/Alert center/Alerting rule/DisableAlertingRules.md)
+      - [EnableAlertingRules](API Reference/Alert center/Alerting rule/EnableAlertingRules.md)
+      - [ListAlertingRules](API Reference/Alert center/Alerting rule/ListAlertingRules.md)
+      - [UpdateAlertingRule](API Reference/Alert center/Alerting rule/UpdateAlertingRule.md)
+    - **Alerting silence policy**
+      - [CreateSilencePolicy](API Reference/Alert center/Alerting silence policy/CreateSilencePolicy.md)
+      - [DeleteSilencePolicies](API Reference/Alert center/Alerting silence policy/DeleteSilencePolicies.md)
+      - [DisableSilencePolicies](API Reference/Alert center/Alerting silence policy/DisableSilencePolicies.md)
+      - [EnableSilencePolicies](API Reference/Alert center/Alerting silence policy/EnableSilencePolicies.md)
+      - [ListSilencePolicies](API Reference/Alert center/Alerting silence policy/ListSilencePolicies.md)
+      - [UpdateSilencePolicy](API Reference/Alert center/Alerting silence policy/UpdateSilencePolicy.md)
+    - **Viewing alerts**
+      - [ListAlerts](API Reference/Alert center/Viewing alerts/ListAlerts.md)
+      - [ListAlertSamples](API Reference/Alert center/Viewing alerts/ListAlertSamples.md)
+  - **Call methods**
+    - [Common parameters](API Reference/Call methods/Common parameters.md)
+    - [Request structure](API Reference/Call methods/Request structure.md)
+    - [Response structure](API Reference/Call methods/Response structure.md)
+    - [Service addresses](API Reference/Call methods/Service addresses.md)
+    - [Signature mechanism](API Reference/Call methods/Signature mechanism.md)
+  - **Integration tasks**
+    - [CreateIntegrationTask](API Reference/Integration tasks/CreateIntegrationTask.md)
+    - [DeleteIntegrationTask](API Reference/Integration tasks/DeleteIntegrationTask.md)
+    - [DisableIntegrationTasks](API Reference/Integration tasks/DisableIntegrationTasks.md)
+    - [EnableIntegrationTasks](API Reference/Integration tasks/EnableIntegrationTasks.md)
+    - [GetIntegrationTask](API Reference/Integration tasks/GetIntegrationTask.md)
+    - [ListIntegrationTasks](API Reference/Integration tasks/ListIntegrationTasks.md)
+    - [UpdateIntegrationTask](API Reference/Integration tasks/UpdateIntegrationTask.md)
+  - **Recording Rule**
+    - [CreateRuleFile](API Reference/Recording Rule/CreateRuleFile.md)
+    - [DeleteRuleFile](API Reference/Recording Rule/DeleteRuleFile.md)
+    - [GetRuleFile](API Reference/Recording Rule/GetRuleFile.md)
+    - [ListRuleFiles](API Reference/Recording Rule/ListRuleFiles.md)
+    - [ListRules](API Reference/Recording Rule/ListRules.md)
+    - [UpdateRuleFile](API Reference/Recording Rule/UpdateRuleFile.md)
+  - **Resource labels**
+    - [ListTagsForResources](API Reference/Resource labels/ListTagsForResources.md)
+    - [TagResources](API Reference/Resource labels/TagResources.md)
+    - [UntagResources](API Reference/Resource labels/UntagResources.md)
+  - **Workspace**
+    - [CreateWorkspace](API Reference/Workspace/CreateWorkspace.md)
+    - [DeleteWorkspace](API Reference/Workspace/DeleteWorkspace.md)
+    - [GetWorkspace](API Reference/Workspace/GetWorkspace.md)
+    - [GetWorkspaceAuthInfo](API Reference/Workspace/GetWorkspaceAuthInfo.md)
+    - [ListWorkspaceInstanceTypes](API Reference/Workspace/ListWorkspaceInstanceTypes.md)
+    - [ListWorkspaces](API Reference/Workspace/ListWorkspaces.md)
+    - [ListWorkspaceStatus](API Reference/Workspace/ListWorkspaceStatus.md)
+    - [UpdateWorkspace](API Reference/Workspace/UpdateWorkspace.md)
+- **Basic Prometheus knowledge**
+  - **Data format and metric types**
+    - [Metric relabeling](Basic Prometheus knowledge/Data format and metric types/Metric relabeling.md)
+    - [Prometheus metric type](Basic Prometheus knowledge/Data format and metric types/Prometheus metric type.md)
+    - [Prometheus time series data format](Basic Prometheus knowledge/Data format and metric types/Prometheus time series data format.md)
+  - **PromQL quick start**
+    - [Basic usage of PromQL](Basic Prometheus knowledge/PromQL quick start/Basic usage of PromQL.md)
+    - [PromQL aggregation operations](Basic Prometheus knowledge/PromQL quick start/PromQL aggregation operations.md)
+    - [PromQL common functions](Basic Prometheus knowledge/PromQL quick start/PromQL common functions.md)
+    - [PromQL operators](Basic Prometheus knowledge/PromQL quick start/PromQL operators.md)
+    - [PromQL selector](Basic Prometheus knowledge/PromQL quick start/PromQL selector.md)
+    - [What is PromQL](Basic Prometheus knowledge/PromQL quick start/What is PromQL.md)
+- **Best Practice**
+  - [Accessing a workspace over the Internet through a proxy](Best Practice/Accessing a workspace over the Internet through a proxy.md)
+  - [Accessing VMP query APIs via curl](Best Practice/Accessing VMP query APIs via curl.md)
+  - [Achieving cross-cloud access to workspaces by using DC and PrivateLink](Best Practice/Achieving cross-cloud access to workspaces by using DC and PrivateLink.md)
+  - [Achieving cross-region access to workspaces by using CEN and PrivateLink](Best Practice/Achieving cross-region access to workspaces by using CEN and PrivateLink.md)
+  - [Associating a local workspace with a local Prometheus instance](Best Practice/Associating a local workspace with a local Prometheus instance.md)
+  - [Best practices for improving Prometheus-agent stability ](Best Practice/Best practices for improving Prometheus-agent stability.md)
+  - [Best practices for optimizing the performance of the Agent mode of open-source Prometheus](Best Practice/Best practices for optimizing the performance of the Agent mode of open-source Prometheus.md)
+  - [ChatOps: Managing VMP by using the MCP service](Best Practice/ChatOps: Managing VMP by using the MCP service.md)
+  - [Commonly used dashboards for VKE monitoring](Best Practice/Commonly used dashboards for VKE monitoring.md)
+  - [Deploying Grafana in a VKE cluster and integrating Grafana with a workspace](Best Practice/Deploying Grafana in a VKE cluster and integrating Grafana with a workspace.md)
+  - [Deploying Grafana on an ECS instance and integrating Grafana with a workspace](Best Practice/Deploying Grafana on an ECS instance and integrating Grafana with a workspace.md)
+  - [Enabling workspace access over the Internet using NLB and PrivateLink](Best Practice/Enabling workspace access over the Internet using NLB and PrivateLink.md)
+  - [Monitoring an AI training task in a VKE cluster](Best Practice/Monitoring an AI training task in a VKE cluster.md)
+  - [Monitoring applications on ECS instances](Best Practice/Monitoring applications on ECS instances.md)
+  - [Monitoring custom Kubernetes clusters](Best Practice/Monitoring custom Kubernetes clusters.md)
+  - [Monitoring ECS instances by using node-exporter](Best Practice/Monitoring ECS instances by using node-exporter.md)
+  - [Monitoring GPUs in a custom Kubernetes cluster](Best Practice/Monitoring GPUs in a custom Kubernetes cluster.md)
+  - [Monitoring Tencent Cloud resources](Best Practice/Monitoring Tencent Cloud resources.md)
+  - [Pushing data by using Pushgateway](Best Practice/Pushing data by using Pushgateway.md)
+  - [Scraping workspace time series by using the federate endpoint](Best Practice/Scraping workspace time series by using the federate endpoint.md)
+  - [Using Java to query and write data in workspaces](Best Practice/Using Java to query and write data in workspaces.md)
+  - [Using Python to query and write data in workspaces](Best Practice/Using Python to query and write data in workspaces.md)
+  - [Using recording rules to pre-aggregate and accelerate queries](Best Practice/Using recording rules to pre-aggregate and accelerate queries.md)
+  - [Using the Go language to query and write data in workspaces](Best Practice/Using the Go language to query and write data in workspaces.md)
+  - [Using vmalert to integrate with VMP for alerting](Best Practice/Using vmalert to integrate with VMP for alerting.md)
+  - [Writing data from open-source Prometheus to VMP workspaces through Remote Write URLs](Best Practice/Writing data from open-source Prometheus to VMP workspaces through Remote Write URLs.md)
+  - **Alerting center**
+    - [Receiving alert notifications by custom Feishu bot](Best Practice/Alerting center/Receiving alert notifications by custom Feishu bot.md)
+    - [Receiving alert notifications through DingTalk](Best Practice/Alerting center/Receiving alert notifications through DingTalk.md)
+    - [Receiving alert notifications through text messages](Best Practice/Alerting center/Receiving alert notifications through text messages.md)
+    - [Receiving alert notifications through the Feishu application bot](Best Practice/Alerting center/Receiving alert notifications through the Feishu application bot.md)
+    - [Receiving alert notifications through WeCom](Best Practice/Alerting center/Receiving alert notifications through WeCom.md)
+    - [Receiving alerting notifications through emails](Best Practice/Alerting center/Receiving alerting notifications through emails.md)
+    - [Receiving alerting notifications through phone calls](Best Practice/Alerting center/Receiving alerting notifications through phone calls.md)
+- **Billing**
+  - [Arrears](Billing/Arrears.md)
+  - [Bill splitting by labels](Billing/Bill splitting by labels.md)
+  - [Billing overview](Billing/Billing overview.md)
+  - [Price calculator](Billing/Price calculator.md)
+  - [Project bill splitting](Billing/Project bill splitting.md)
+  - **Billing methods**
+    - [Pay as you go](Billing/Billing methods/Pay as you go.md)
+    - **Package**
+      - [Canceling packages and changing package specifications](Billing/Billing methods/Package/Canceling packages and changing package specifications.md)
+      - [Package Overview](Billing/Billing methods/Package/Package Overview.md)
+      - [Purchasing packages](Billing/Billing methods/Package/Purchasing packages.md)
+      - [Renew Package](Billing/Billing methods/Package/Renew Package.md)
+      - [Viewing Packages](Billing/Billing methods/Package/Viewing Packages.md)
+- **FAQs**
+  - [Cannot Receive Alert Information Using the Generic Webhook](FAQs/Cannot Receive Alert Information Using the Generic Webhook.md)
+  - [Generic Webhook Format Description](FAQs/Generic Webhook Format Description.md)
+  - [How do I create CRD resources such as ServiceMonitor in a cluster?](FAQs/How do I create CRD resources such as ServiceMonitor in a cluster?.md)
+  - [How do I increase the quota?](FAQs/How do I increase the quota?.md)
+  - [How do I resolve the "AccessDenied,Code: 403" error?](FAQs/How do I resolve the "AccessDenied,Code: 403" error?.md)
+  - [How to Delete Service Discovery Configuration?](FAQs/How to Delete Service Discovery Configuration?.md)
+  - [How to View Metric Data?](FAQs/How to View Metric Data?.md)
+  - [Stock Standard Edition Instance Data Migration Instructions](FAQs/Stock Standard Edition Instance Data Migration Instructions.md)
+  - [Which queries can automatically match acceleration rules?](FAQs/Which queries can automatically match acceleration rules?.md)
+  - [Why Am I Unable to Correctly View the Expected Metrics?](FAQs/Why Am I Unable to Correctly View the Expected Metrics?.md)
+  - [Why does the query result of the increase function in VMP differ from the expected result?](FAQs/Why does the query result of the increase function in VMP differ from the expected result?.md)
+- **Integration Guide**
+  - [Container storage metric integration](Integration Guide/Container storage metric integration.md)
+  - [Dynamo integration](Integration Guide/Dynamo integration.md)
+  - [etcd integration](Integration Guide/etcd integration.md)
+  - [Health inspection (blackbox) integration](Integration Guide/Health inspection (blackbox) integration.md)
+  - [Integration overview](Integration Guide/Integration overview.md)
+  - [Kafka integration](Integration Guide/Kafka integration.md)
+  - [Nacos integration](Integration Guide/Nacos integration.md)
+  - [Prometheus federation integration](Integration Guide/Prometheus federation integration.md)
+  - [Ray integration](Integration Guide/Ray integration.md)
+  - [SGLang integration](Integration Guide/SGLang integration.md)
+  - [vLLM integration](Integration Guide/vLLM integration.md)
+  - **Cloud service integration**
+    - [Cloud Monitor integration](Integration Guide/Cloud service integration/Cloud Monitor integration.md)
+    - [Custom ECS integration](Integration Guide/Cloud service integration/Custom ECS integration.md)
+    - [GPU/RDMA millisecond-level monitoring integration](Integration Guide/Cloud service integration/GPU - RDMA millisecond-level monitoring integration.md)
+    - [Other cloud service integration](Integration Guide/Cloud service integration/Other cloud service integration.md)
+    - **VKE integration**
+      - [Container cluster integration](Integration Guide/Cloud service integration/VKE integration/Container cluster integration.md)
+      - [Container custom collection integration](Integration Guide/Cloud service integration/VKE integration/Container custom collection integration.md)
+  - **Custom integration**
+    - [Custom business access](Integration Guide/Custom integration/Custom business access.md)
+    - [Go application integration](Integration Guide/Custom integration/Go application integration.md)
+  - **Exporter integration**
+    - [Elasticsearch exporter integration](Integration Guide/Exporter integration/Elasticsearch exporter integration.md)
+    - [Kafka exporter integration](Integration Guide/Exporter integration/Kafka exporter integration.md)
+    - [MongoDB exporter integration](Integration Guide/Exporter integration/MongoDB exporter integration.md)
+    - [MySQL exporter integration](Integration Guide/Exporter integration/MySQL exporter integration.md)
+    - [NGINX exporter integration](Integration Guide/Exporter integration/NGINX exporter integration.md)
+    - [PostgreSQL exporter integration](Integration Guide/Exporter integration/PostgreSQL exporter integration.md)
+    - [RabbitMQ exporter integration](Integration Guide/Exporter integration/RabbitMQ exporter integration.md)
+    - [Redis exporter integration](Integration Guide/Exporter integration/Redis exporter integration.md)
+  - **Self-built Kubernetes cluster integration**
+    - [Collection solution overview](Integration Guide/Self-built Kubernetes cluster integration/Collection solution overview.md)
+    - **Deployment script**
+      - [Obtaining the script](Integration Guide/Self-built Kubernetes cluster integration/Deployment script/Obtaining the script.md)
+      - [Using the script](Integration Guide/Self-built Kubernetes cluster integration/Deployment script/Using the script.md)
+    - **High availability collection solution**
+      - [Alerting and O&M suggestions](Integration Guide/Self-built Kubernetes cluster integration/High availability collection solution/Alerting and O&M suggestions.md)
+      - [Deploying VM Agent](Integration Guide/Self-built Kubernetes cluster integration/High availability collection solution/Deploying VM Agent.md)
+      - [Managing VM Agent](Integration Guide/Self-built Kubernetes cluster integration/High availability collection solution/Managing VM Agent.md)
+      - [Scaling out agents](Integration Guide/Self-built Kubernetes cluster integration/High availability collection solution/Scaling out agents.md)
+- **Metrics Reference**
+  - [API Gateway metrics](Metrics Reference/API Gateway metrics.md)
+  - [ECS metrics](Metrics Reference/ECS metrics.md)
+  - [MSE metrics](Metrics Reference/MSE metrics.md)
+  - **Common metrics of Vital Kubernetes Engine**
+    - [API server metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/API server metrics.md)
+    - [cAdvisor metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/cAdvisor metrics.md)
+    - [core-dns metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/core-dns metrics.md)
+    - [cr-credential-controller metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/cr-credential-controller metrics.md)
+    - [csi-ebs metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/csi-ebs metrics.md)
+    - [image-accelerator metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/image-accelerator metrics.md)
+    - [ingress-nginx metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/ingress-nginx metrics.md)
+    - [katalyst metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/katalyst metrics.md)
+    - [kube-state-metrics metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/kube-state-metrics metrics.md)
+    - [kubelet metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/kubelet metrics.md)
+    - [metrics-server metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/metrics-server metrics.md)
+    - [mGPU metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/mGPU metrics.md)
+    - [node-exporter metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/node-exporter metrics.md)
+    - [node-local-dns metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/node-local-dns metrics.md)
+    - [npu-a-device-plugin metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/npu-a-device-plugin metrics.md)
+    - [nvidia-device-plugin metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/nvidia-device-plugin metrics.md)
+    - [p2p-accelerator metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/p2p-accelerator metrics.md)
+    - [rdma-device-plugin metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/rdma-device-plugin metrics.md)
+    - [vpc-cni metrics](Metrics Reference/Common metrics of Vital Kubernetes Engine/vpc-cni metrics.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Glossary](Overview/Glossary.md)
+  - [Limit](Overview/Limit.md)
+  - [Product advantages](Overview/Product advantages.md)
+  - [Product features](Overview/Product features.md)
+  - [Regions and availability zones](Overview/Regions and availability zones.md)
+  - [What is VMP](Overview/What is VMP.md)
+- **SDK Reference**
+  - [SDK overview](SDK Reference/SDK overview.md)
+- **Terms**
+  - [BytePlus Vital Managed Service for Prometheus_Service Level Agreement](Terms/BytePlus Vital Managed Service for Prometheus_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Vital Managed Service for Prometheus](Terms/Service-Specific Terms for BytePlus Vital Managed Service for Prometheus.md)
+- **User Guide**
+  - [Integration center](User Guide/Integration center.md)
+  - [Resource consumption](User Guide/Resource consumption.md)
+  - **Alert Center**
+    - [Alert overview](User Guide/Alert Center/Alert overview.md)
+    - [Viewing alerts](User Guide/Alert Center/Viewing alerts.md)
+    - **Alerting aggregation policy**
+      - [Creating an alerting aggregation policy](User Guide/Alert Center/Alerting aggregation policy/Creating an alerting aggregation policy.md)
+      - [Managing alerting aggregation policies](User Guide/Alert Center/Alerting aggregation policy/Managing alerting aggregation policies.md)
+    - **Alerting contacts**
+      - [Creating a contact](User Guide/Alert Center/Alerting contacts/Creating a contact.md)
+      - [Creating a contact group](User Guide/Alert Center/Alerting contacts/Creating a contact group.md)
+    - **Alerting notification policy**
+      - [Creating an alerting notification policy](User Guide/Alert Center/Alerting notification policy/Creating an alerting notification policy.md)
+      - [Managing alerting notification policies](User Guide/Alert Center/Alerting notification policy/Managing alerting notification policies.md)
+    - **Alerting notification template**
+      - [Creating a notification template](User Guide/Alert Center/Alerting notification template/Creating a notification template.md)
+      - [Extension functions and variables](User Guide/Alert Center/Alerting notification template/Extension functions and variables.md)
+      - [Managing notification templates](User Guide/Alert Center/Alerting notification template/Managing notification templates.md)
+    - **Alerting rule**
+      - [Common alerts and rule recommendations](User Guide/Alert Center/Alerting rule/Common alerts and rule recommendations.md)
+      - [Creating alert rules](User Guide/Alert Center/Alerting rule/Creating alert rules.md)
+      - [Creating an alerting rule group](User Guide/Alert Center/Alerting rule/Creating an alerting rule group.md)
+      - [Managing alerting rule groups](User Guide/Alert Center/Alerting rule/Managing alerting rule groups.md)
+      - [Managing alerting rules](User Guide/Alert Center/Alerting rule/Managing alerting rules.md)
+    - **Alerting rule template**
+      - [Creating a custom alerting rule template](User Guide/Alert Center/Alerting rule template/Creating a custom alerting rule template.md)
+      - [Preset alerting rule templates](User Guide/Alert Center/Alerting rule template/Preset alerting rule templates.md)
+    - **Alerting silence policy**
+      - [Creating an alerting silence policy](User Guide/Alert Center/Alerting silence policy/Creating an alerting silence policy.md)
+      - [Managing alerting silence policies](User Guide/Alert Center/Alerting silence policy/Managing alerting silence policies.md)
+  - **Explore**
+    - [Query history](User Guide/Explore/Query history.md)
+    - [Querying metrics](User Guide/Explore/Querying metrics.md)
+  - **Metric exporting**
+    - [Exporting metrics to Kafka message queue](User Guide/Metric exporting/Exporting metrics to Kafka message queue.md)
+    - [Exporting metrics to self-managed Prometheus](User Guide/Metric exporting/Exporting metrics to self-managed Prometheus.md)
+    - [Exporting metrics to TOS](User Guide/Metric exporting/Exporting metrics to TOS.md)
+  - **Monitor dashboards**
+    - [Basic operations](User Guide/Monitor dashboards/Basic operations.md)
+    - [Built-in dashboard](User Guide/Monitor dashboards/Built-in dashboard.md)
+  - **Permission management**
+    - [Configuring IAM permissions](User Guide/Permission management/Configuring IAM permissions.md)
+    - [Configuring project-level permissions](User Guide/Permission management/Configuring project-level permissions.md)
+    - [IAM overview](User Guide/Permission management/IAM overview.md)
+  - **Projects and tags**
+    - [Project management](User Guide/Projects and tags/Project management.md)
+    - [Tag management](User Guide/Projects and tags/Tag management.md)
+  - **Workspaces**
+    - [Cross-account/region Workspace Aggregation](User Guide/Workspaces/Cross-account - region Workspace Aggregation.md)
+    - [Managing workspaces](User Guide/Workspaces/Managing workspaces.md)
+    - [Obtaining workspace addresses](User Guide/Workspaces/Obtaining workspace addresses.md)
+    - [Slow queries](User Guide/Workspaces/Slow queries.md)
+    - [Workspace monitoring](User Guide/Workspaces/Workspace monitoring.md)
+    - **Creating a workspace**
+      - [Creating a common workspace](User Guide/Workspaces/Creating a workspace/Creating a common workspace.md)
+      - [Creating aggregation query workspaces](User Guide/Workspaces/Creating a workspace/Creating aggregation query workspaces.md)
+      - [Creating local workspaces](User Guide/Workspaces/Creating a workspace/Creating local workspaces.md)
+    - **Recording Rule**
+      - [Creating recording rules](User Guide/Workspaces/Recording Rule/Creating recording rules.md)
+      - [Managing recording rules](User Guide/Workspaces/Recording Rule/Managing recording rules.md)
+    - **Throttling**
+      - [Managing PromQL blocking policies](User Guide/Workspaces/Throttling/Managing PromQL blocking policies.md)
+      - [Throttling](User Guide/Workspaces/Throttling/Throttling.md)
+    - **Workspace configuration change**
+      - [Changing the workspace billing type](User Guide/Workspaces/Workspace configuration change/Changing the workspace billing type.md)
+      - [Modifying the data storage duration for a workspace](User Guide/Workspaces/Workspace configuration change/Modifying the data storage duration for a workspace.md)
+      - [Modifying workspace parameters](User Guide/Workspaces/Workspace configuration change/Modifying workspace parameters.md)
+    - **Workspace overview**
+      - [Selecting a workspace](User Guide/Workspaces/Workspace overview/Selecting a workspace.md)
+      - [Workspace type](User Guide/Workspaces/Workspace overview/Workspace type.md)
+- **What's New**
+  - [Release notes](What's New/Release notes.md)
+  - **Product announcements**
+    - [\[Billing updates\] Billing by written metric volume is supported for VMP](What's New/Product announcements/[Billing updates] Billing by written metric volume is supported for VMP.md)
+    - [\[Product update\] Migration of the VMP alert notification feature to the Alert Center of the Observability Platform](What's New/Product announcements/[Product update] Migration of the VMP alert notification feature to the Alert Center of th.md)

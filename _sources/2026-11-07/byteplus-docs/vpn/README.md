@@ -1,0 +1,187 @@
+# Virtual Private Network
+
+141 pages. Source: https://docs.byteplus.com/en/docs/vpn
+
+Back to the [full index](../README.md).
+
+- [New feature release notes](New feature release notes.md)
+- **API Reference**
+  - [API overview](API Reference/API overview.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [Overview](API Reference/Overview.md)
+  - **Call method**
+    - [Public error codes](API Reference/Call method/Public error codes.md)
+    - [Public parameters](API Reference/Call method/Public parameters.md)
+    - [Request structure](API Reference/Call method/Request structure.md)
+    - [Responses](API Reference/Call method/Responses.md)
+    - [Signature method](API Reference/Call method/Signature method.md)
+  - **Customer gateway**
+    - [CreateCustomerGateway - Creating a customer gateway](API Reference/Customer gateway/CreateCustomerGateway - Creating a customer gateway.md)
+    - [DeleteCustomerGateway - Deleting a customer gateway](API Reference/Customer gateway/DeleteCustomerGateway - Deleting a customer gateway.md)
+    - [DescribeCustomerGatewayAttributes – Querying a specified customer gateway](API Reference/Customer gateway/DescribeCustomerGatewayAttributes – Querying a specified customer gateway.md)
+    - [DescribeCustomerGateways - Querying customer gateways](API Reference/Customer gateway/DescribeCustomerGateways - Querying customer gateways.md)
+    - [ModifyCustomerGatewayAttributes - Modifying a customer gateway](API Reference/Customer gateway/ModifyCustomerGatewayAttributes - Modifying a customer gateway.md)
+  - **Health Check**
+    - [CreateVpnConnectionHealthCheckers - Creating a health check instance](API Reference/Health Check/CreateVpnConnectionHealthCheckers - Creating a health check instance.md)
+    - [DeleteVpnConnectionHealthChecker - Deleting a health check instance](API Reference/Health Check/DeleteVpnConnectionHealthChecker - Deleting a health check instance.md)
+    - [ModifyVpnConnectionHealthChecker - Updating health check for VPN](API Reference/Health Check/ModifyVpnConnectionHealthChecker - Updating health check for VPN.md)
+  - **IPsec-VPN connection**
+    - [CreateVpnConnection - Creating an IPsec-VPN connection](API Reference/IPsec-VPN connection/CreateVpnConnection - Creating an IPsec-VPN connection.md)
+    - [DeleteVpnConnection - Deleting an IPsec-VPN connection](API Reference/IPsec-VPN connection/DeleteVpnConnection - Deleting an IPsec-VPN connection.md)
+    - [DescribeVpnConnectionAttributes - Querying a specified IPsec-VPN connection](API Reference/IPsec-VPN connection/DescribeVpnConnectionAttributes - Querying a specified IPsec-VPN connection.md)
+    - [DescribeVpnConnections - Querying IPsec-VPN connections](API Reference/IPsec-VPN connection/DescribeVpnConnections - Querying IPsec-VPN connections.md)
+    - [ModifyVpnConnectionAttributes - Modifying an IPsec-VPN connection](API Reference/IPsec-VPN connection/ModifyVpnConnectionAttributes - Modifying an IPsec-VPN connection.md)
+    - [ResetVpnConnection - Resetting an IPsec-VPN tunnel](API Reference/IPsec-VPN connection/ResetVpnConnection - Resetting an IPsec-VPN tunnel.md)
+  - **SSL client certificate**
+    - [CreateSslVpnClientCert - Creating an SSL client certificate](API Reference/SSL client certificate/CreateSslVpnClientCert - Creating an SSL client certificate.md)
+    - [DeleteSslVpnClientCert - Deleting an SSL client certificate](API Reference/SSL client certificate/DeleteSslVpnClientCert - Deleting an SSL client certificate.md)
+    - [DescribeSslVpnClientCertAttributes - Querying an SSL client certificate](API Reference/SSL client certificate/DescribeSslVpnClientCertAttributes - Querying an SSL client certificate.md)
+    - [DescribeSslVpnClientCerts - Querying SSL client certificates](API Reference/SSL client certificate/DescribeSslVpnClientCerts - Querying SSL client certificates.md)
+    - [ModifySslVpnClientCert - Modifying an SSL client certificate](API Reference/SSL client certificate/ModifySslVpnClientCert - Modifying an SSL client certificate.md)
+  - **SSL server**
+    - [CreateSslVpnServer - Creating an SSL-VPN server](API Reference/SSL server/CreateSslVpnServer - Creating an SSL-VPN server.md)
+    - [DeleteSslVpnServer - Deleting an SSL VPN server](API Reference/SSL server/DeleteSslVpnServer - Deleting an SSL VPN server.md)
+    - [DescribeSslVpnServers - Querying SSL-VPN servers](API Reference/SSL server/DescribeSslVpnServers - Querying SSL-VPN servers.md)
+    - [DescribeSslVpnServerSamlData - Querying identity provider metadata](API Reference/SSL server/DescribeSslVpnServerSamlData - Querying identity provider metadata.md)
+    - [ModifySslVpnServer - Modifying an SSL-VPN server](API Reference/SSL server/ModifySslVpnServer - Modifying an SSL-VPN server.md)
+  - **Tag**
+    - [ListTagsForResources - Querying the list of tags](API Reference/Tag/ListTagsForResources - Querying the list of tags.md)
+    - [TagResources - Adding a custom tag](API Reference/Tag/TagResources - Adding a custom tag.md)
+    - [UntagResources - Disassociating a custom tag](API Reference/Tag/UntagResources - Disassociating a custom tag.md)
+  - **VPN gateway**
+    - [CreateVpnGateway - Creating a VPN gateway](API Reference/VPN gateway/CreateVpnGateway - Creating a VPN gateway.md)
+    - [DeleteVpnGateway - Deleting a VPN gateway](API Reference/VPN gateway/DeleteVpnGateway - Deleting a VPN gateway.md)
+    - [DescribeVpnGatewayAttributes - Querying a specified VPN gateway](API Reference/VPN gateway/DescribeVpnGatewayAttributes - Querying a specified VPN gateway.md)
+    - [DescribeVpnGateways - Querying VPN gateways](API Reference/VPN gateway/DescribeVpnGateways - Querying VPN gateways.md)
+    - [DescribeVpnGatewaysBilling - Query billing for a VPN gateway](API Reference/VPN gateway/DescribeVpnGatewaysBilling - Query billing for a VPN gateway.md)
+    - [ModifyVpnGatewayAttributes - Modifying a VPN gateway](API Reference/VPN gateway/ModifyVpnGatewayAttributes - Modifying a VPN gateway.md)
+    - [RenewVpnGateway - Renewing a VPN gateway](API Reference/VPN gateway/RenewVpnGateway - Renewing a VPN gateway.md)
+    - [SetVpnGatewayRenewal - Modifying renewal for a VPN gateway](API Reference/VPN gateway/SetVpnGatewayRenewal - Modifying renewal for a VPN gateway.md)
+  - **VPN gateway route**
+    - [CreateVpnGatewayRoute - Creating a VPN gateway route](API Reference/VPN gateway route/CreateVpnGatewayRoute - Creating a VPN gateway route.md)
+    - [DeleteVpnGatewayRoute - Deleting a VPN gateway route](API Reference/VPN gateway route/DeleteVpnGatewayRoute - Deleting a VPN gateway route.md)
+    - [DescribeVpnGatewayRouteAttributes - Querying a specified gateway route](API Reference/VPN gateway route/DescribeVpnGatewayRouteAttributes - Querying a specified gateway route.md)
+    - [DescribeVpnGatewayRoutes - Querying gateway routes](API Reference/VPN gateway route/DescribeVpnGatewayRoutes - Querying gateway routes.md)
+- **Best Practices**
+  - [Best practice overview](Best Practices/Best practice overview.md)
+  - **Connections between VPCs**
+    - [Building dual-tunnel VPN interconnection between VPCs (dynamic routing)](Best Practices/Connections between VPCs/Building dual-tunnel VPN interconnection between VPCs (dynamic routing).md)
+    - [Building dual-tunnel VPN interconnection between VPCs (static routing)](Best Practices/Connections between VPCs/Building dual-tunnel VPN interconnection between VPCs (static routing).md)
+    - [Building single-tunnel VPN interconnection between VPCs (dynamic routing)](Best Practices/Connections between VPCs/Building single-tunnel VPN interconnection between VPCs (dynamic routing).md)
+    - [Building single-tunnel VPN interconnection between VPCs (static routing)](Best Practices/Connections between VPCs/Building single-tunnel VPN interconnection between VPCs (static routing).md)
+  - **Connections between VPCs and data centers**
+    - [Connecting a VPC to an on-premises data center (IPsec-VPN connection with a single non-fixed egress IP)](Best Practices/Connections between VPCs and data centers/Connecting a VPC to an on-premises data center (IPsec-VPN connection with a single non-fix.md)
+    - [Connecting a VPC to an on-premises data center (IPsec-VPN connection with dynamic routing)](Best Practices/Connections between VPCs and data centers/Connecting a VPC to an on-premises data center (IPsec-VPN connection with dynamic routing).md)
+    - [Connecting a VPC to an on-premises data center (IPsec-VPN connection with static routing)](Best Practices/Connections between VPCs and data centers/Connecting a VPC to an on-premises data center (IPsec-VPN connection with static routing).md)
+    - [Connecting a VPC to an on-premises data center (IPsec-VPN connections with multiple non-fixed egress IPs)](Best Practices/Connections between VPCs and data centers/Connecting a VPC to an on-premises data center (IPsec-VPN connections with multiple non-fi.md)
+    - [Connecting a VPC to an on-premises data center with high availability (IPsec-VPN connection with dynamic routing)](Best Practices/Connections between VPCs and data centers/Connecting a VPC to an on-premises data center with high availability (IPsec-VPN connectio.md)
+  - **Connections between VPCs and self-managed servers**
+    - [Connecting a VPC to an Alibaba Cloud ECS](Best Practices/Connections between VPCs and self-managed servers/Connecting a VPC to an Alibaba Cloud ECS.md)
+    - [Connecting a VPC to an AWS VPC (dynamic routing)](Best Practices/Connections between VPCs and self-managed servers/Connecting a VPC to an AWS VPC (dynamic routing).md)
+    - [Connecting a VPC to an AWS VPN](Best Practices/Connections between VPCs and self-managed servers/Connecting a VPC to an AWS VPN.md)
+- **Billing**
+  - [Arrears](Billing/Arrears.md)
+  - [Billing conversion](Billing/Billing conversion.md)
+  - [Billing overview](Billing/Billing overview.md)
+  - [Expiration](Billing/Expiration.md)
+  - [Specification change](Billing/Specification change.md)
+  - **Billing methods**
+    - [Billing for IPsec-VPN connection](Billing/Billing methods/Billing for IPsec-VPN connection.md)
+    - [Billing for VPN gateway](Billing/Billing methods/Billing for VPN gateway.md)
+- **FAQ**
+  - [IAM FAQs](FAQ/IAM FAQs.md)
+  - [IPsec-VPN connection FAQs](FAQ/IPsec-VPN connection FAQs.md)
+  - [SSL-VPN connection FAQs](FAQ/SSL-VPN connection FAQs.md)
+  - [VPN gateway FAQs](FAQ/VPN gateway FAQs.md)
+- **Getting Started**
+  - [IPsec-VPN quick start](Getting Started/IPsec-VPN quick start.md)
+  - **Getting started with SSL-VPN**
+    - [Configuring client](Getting Started/Getting started with SSL-VPN/Configuring client.md)
+    - [Creating a VPN gateway](Getting Started/Getting started with SSL-VPN/Creating a VPN gateway.md)
+    - [Creating an SSL-VPN server](Getting Started/Getting started with SSL-VPN/Creating an SSL-VPN server.md)
+    - [Creating and downloading an SSL-VPN client certificate](Getting Started/Getting started with SSL-VPN/Creating and downloading an SSL-VPN client certificate.md)
+    - [SSL-VPN quick start](Getting Started/Getting started with SSL-VPN/SSL-VPN quick start.md)
+    - [Testing connectivity](Getting Started/Getting started with SSL-VPN/Testing connectivity.md)
+  - **IPsec-VPN connection via Transit Router**
+    - [Configuring route](Getting Started/IPsec-VPN connection via Transit Router/Configuring route.md)
+    - [Creating a customer gateway](Getting Started/IPsec-VPN connection via Transit Router/Creating a customer gateway.md)
+    - [Creating an IPsec-VPN connection](Getting Started/IPsec-VPN connection via Transit Router/Creating an IPsec-VPN connection.md)
+    - [Testing connectivity](Getting Started/IPsec-VPN connection via Transit Router/Testing connectivity.md)
+  - **IPsec-VPN connection via VPN gateway**
+    - [Configuring route](Getting Started/IPsec-VPN connection via VPN gateway/Configuring route.md)
+    - [Creating a customer gateway](Getting Started/IPsec-VPN connection via VPN gateway/Creating a customer gateway.md)
+    - [Creating a VPN gateway](Getting Started/IPsec-VPN connection via VPN gateway/Creating a VPN gateway.md)
+    - [Creating an IPsec-VPN connection](Getting Started/IPsec-VPN connection via VPN gateway/Creating an IPsec-VPN connection.md)
+    - [Testing connectivity](Getting Started/IPsec-VPN connection via VPN gateway/Testing connectivity.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Benefits](Overview/Benefits.md)
+  - [Limits](Overview/Limits.md)
+  - [Regions](Overview/Regions.md)
+  - [Terms](Overview/Terms.md)
+  - [What is VPN Connect](Overview/What is VPN Connect.md)
+- **SDK Reference**
+  - [VPN SDK overview](SDK Reference/VPN SDK overview.md)
+- **Terms**
+  - [BytePlus VPN_Service Level Agreement](Terms/BytePlus VPN_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Virtual Private Network](Terms/Service-Specific Terms for BytePlus Virtual Private Network.md)
+- **Troubleshooting**
+  - [Troubleshooting and solutions for IPsec-VPN connection issues](Troubleshooting/Troubleshooting and solutions for IPsec-VPN connection issues.md)
+- **User Guide**
+  - [Quota management](User Guide/Quota management.md)
+  - **Customer gateway**
+    - [Creating a customer gateway](User Guide/Customer gateway/Creating a customer gateway.md)
+    - [Deleting a customer gateway](User Guide/Customer gateway/Deleting a customer gateway.md)
+  - **Identity and Access Management**
+    - [IAM overview](User Guide/Identity and Access Management/IAM overview.md)
+    - [VPN Connect custom policy syntax examples](User Guide/Identity and Access Management/VPN Connect custom policy syntax examples.md)
+    - [VPN Connect IAM policy types](User Guide/Identity and Access Management/VPN Connect IAM policy types.md)
+  - **IPsec-VPN**
+    - [Configuring health check](User Guide/IPsec-VPN/Configuring health check.md)
+    - [Creating an IPsec-VPN connection](User Guide/IPsec-VPN/Creating an IPsec-VPN connection.md)
+    - [Deleting an IPsec-VPN connection](User Guide/IPsec-VPN/Deleting an IPsec-VPN connection.md)
+    - [Downloading IPsec-VPN connection configuration](User Guide/IPsec-VPN/Downloading IPsec-VPN connection configuration.md)
+    - [IPsec-VPN overview](User Guide/IPsec-VPN/IPsec-VPN overview.md)
+    - [Modifying configuration for IPsec-VPN connection](User Guide/IPsec-VPN/Modifying configuration for IPsec-VPN connection.md)
+    - [Resetting an IPsec-VPN connection](User Guide/IPsec-VPN/Resetting an IPsec-VPN connection.md)
+  - **Logs and monitoring**
+    - [Deleting IPsec Connection Log set](User Guide/Logs and monitoring/Deleting IPsec Connection Log set.md)
+    - [Viewing monitoring data](User Guide/Logs and monitoring/Viewing monitoring data.md)
+    - [Viewing VPN Connect logs](User Guide/Logs and monitoring/Viewing VPN Connect logs.md)
+  - **Projects and tags**
+    - [Project management](User Guide/Projects and tags/Project management.md)
+    - [Tag management](User Guide/Projects and tags/Tag management.md)
+  - **Route entries**
+    - [Route overview](User Guide/Route entries/Route overview.md)
+    - **Local gateway routes**
+      - [Overview](User Guide/Route entries/Local gateway routes/Overview.md)
+      - **File configuration**
+        - [Cisco firewall configuration file](User Guide/Route entries/Local gateway routes/File configuration/Cisco firewall configuration file.md)
+        - [H3C firewall configuration file](User Guide/Route entries/Local gateway routes/File configuration/H3C firewall configuration file.md)
+      - **Manual configuration**
+        - [Configuring Cisco firewall](User Guide/Route entries/Local gateway routes/Manual configuration/Configuring Cisco firewall.md)
+        - [Configuring H3C firewall](User Guide/Route entries/Local gateway routes/Manual configuration/Configuring H3C firewall.md)
+        - [Configuring Hillstone firewall](User Guide/Route entries/Local gateway routes/Manual configuration/Configuring Hillstone firewall.md)
+        - [Configuring Sangfor firewall](User Guide/Route entries/Local gateway routes/Manual configuration/Configuring Sangfor firewall.md)
+    - **VPN gateway routes**
+      - [Adding a  VPN gateway route](User Guide/Route entries/VPN gateway routes/Adding a VPN gateway route.md)
+      - [Deleting a VPN gateway route](User Guide/Route entries/VPN gateway routes/Deleting a VPN gateway route.md)
+  - **SSL-VPN**
+    - [Modifying SSL Max Connections](User Guide/SSL-VPN/Modifying SSL Max Connections.md)
+    - [SSL-VPN overview](User Guide/SSL-VPN/SSL-VPN overview.md)
+    - **SSL client certificate**
+      - [Creating an SSL-VPN client certificate](User Guide/SSL-VPN/SSL client certificate/Creating an SSL-VPN client certificate.md)
+      - [Deleting an SSL-VPN client certificate](User Guide/SSL-VPN/SSL client certificate/Deleting an SSL-VPN client certificate.md)
+      - [Downloading an SSL-VPN client certificate](User Guide/SSL-VPN/SSL client certificate/Downloading an SSL-VPN client certificate.md)
+      - [Merging client certificates](User Guide/SSL-VPN/SSL client certificate/Merging client certificates.md)
+      - [Modifying an SSL-VPN client certificate](User Guide/SSL-VPN/SSL client certificate/Modifying an SSL-VPN client certificate.md)
+    - **SSL server**
+      - [Creating an SSL-VPN server](User Guide/SSL-VPN/SSL server/Creating an SSL-VPN server.md)
+      - [Deleting an SSL-VPN server](User Guide/SSL-VPN/SSL server/Deleting an SSL-VPN server.md)
+      - [Modifying an SSL-VPN server](User Guide/SSL-VPN/SSL server/Modifying an SSL-VPN server.md)
+  - **VPN gateway**
+    - [Creating a VPN gateway](User Guide/VPN gateway/Creating a VPN gateway.md)
+    - [Deleting a VPN gateway](User Guide/VPN gateway/Deleting a VPN gateway.md)
+    - [Modifying configuration for VPN gateway](User Guide/VPN gateway/Modifying configuration for VPN gateway.md)
+    - [Upgrading a VPN gateway](User Guide/VPN gateway/Upgrading a VPN gateway.md)
+    - [Viewing VPN gateway details](User Guide/VPN gateway/Viewing VPN gateway details.md)

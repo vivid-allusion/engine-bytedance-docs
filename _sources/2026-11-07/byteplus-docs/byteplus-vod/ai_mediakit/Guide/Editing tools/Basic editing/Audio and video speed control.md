@@ -1,0 +1,171 @@
+---
+title: "Audio and video speed control"
+product: "BytePlus Video on Demand"
+product_code: "byteplus-vod"
+source: "https://docs.byteplus.com/en/docs/byteplus-vod/ai-mediakit-audio-video-speed-control"
+---
+
+The AI MediaKit audio and video speed control tools let you adjust the playback speed of a media file to achieve fast\-forward or slow\-motion effects. This capability is widely used in scenarios such as content re\-editing, highlight reel production, time\-lapse photography, teaching demonstrations, and speed playback of podcasts/audiobooks.
+
+This guide walks you through how to easily change the playback speed of a video via an API call.
+
+<span id="tool-overview"></span>
+## Tool overview
+
+AI MediaKit provides separate APIs for video and audio speed control, but both follow exactly the same asynchronous task flow and use the same API to query task results.
+
+
+|Tool |API |Core capability |
+|---|---|---|
+|Video speed control |[Create a video speed control task](https://docs.byteplus.com/docs/byteplus-vod/ai-mediakit-create-a-video-speed-control-task) |Adjust the playback speed of a video; the audio track is processed in sync to keep audio and video aligned. |
+|Audio speed control |[Create an audio speed control task](https://docs.byteplus.com/docs/byteplus-vod/ai-mediakit-create-an-audio-speed-control-task) |Adjust the playback speed of an audio file while keeping the pitch natural through an algorithm. |
+
+
+<span id="3c059c72"></span>
+## Demo
+
+
+|Input  |Output (Speed up to 2x) |
+|---|---|
+|<video src="https://p9-arcosite.byteimg.com/obj/tos-cn-i-goo7wpa0wc/9cc2e706544f4e08a7a9aac8b94c7c4c" controls></video><br> |<video src="https://p9-arcosite.byteimg.com/obj/tos-cn-i-goo7wpa0wc/79f729171b494575b08b127dda947dce" controls></video><br> |
+
+
+<span id="quickstart-speed-up-a-video-to-2x"></span>
+## Quickstart: Speed up a video to 2x
+
+This section uses **video speed control** as a concrete example to demonstrate how to increase the playback speed of an MP4 video to 2x.
+
+<span id="prerequisites"></span>
+### Prerequisites
+
+
+* **Obtain an API key**: Before you begin, visit the [API key](https://console.byteplus.com/vodpaas/region:vodpaas+ap-southeast-1/ai-mediakit/settings?tab=apiKey) page in the AI MediaKit console to create and obtain your **AI MediaKit API Key**.
+
+* **Prepare a video file**: Have a video file ready for speed adjustment, accessible via a public HTTP/HTTPS URL. You can obtain this URL by uploading the video to your own publicly accessible server or to the [BytePlus VOD service](https://docs.byteplus.com/en/docs/byteplus-vod/docs-media-upload).
+
+
+<span id="procedure"></span>
+### Procedure
+
+Video speed control is an asynchronous task. The standard workflow is as follows:
+
+
+1. Call `POST /api/v1/tools/adjust-video-speed` to submit the task, and the API returns a `task_id`.
+
+2. Either poll `GET /api/v1/tasks/{task_id}` until the task `status` becomes `completed`, or use [Event notification](https://docs.byteplus.com/docs/byteplus-vod/ai-mediakit-event-notification) to automatically receive task status updates. Once the task is complete, parse the `result` field to get the download URL of the speed\-adjusted video from the `video_url` field.
+
+
+<span id="step-1-submit-the-task"></span>
+#### Step 1: Submit the task
+
+You need to call the [Create a video speed control task](https://docs.byteplus.com/docs/byteplus-vod/ai-mediakit-create-a-video-speed-control-task) API. You can copy the following cURL command to submit a video speed control task at 2x speed.
+
+```Bash
+curl -X POST 'https://mediakit.ap-southeast-1.bytepluses.com/api/v1/tools/adjust-video-speed' \
+-H 'Authorization: Bearer {Your_API_Key}' \
+-H 'Content-Type: application/json' \
+-d '{
+  "video_url": "https://example.com/your_source_video.mp4",
+  "speed": 2.0
+}'
+```
+
+
+<div data-tips="true" data-tips-type="default" data-tips-is-title="true">INFO</div>
+
+
+
+* <div data-tips="true" data-tips-type="default">Replace <code>{Your_API_Key}</code> with your valid API Key.</div>
+
+
+* <div data-tips="true" data-tips-type="default">Replace the value of <code>video_url</code> with the URL of your own video file.</div>
+
+
+* <div data-tips="true" data-tips-type="default">A <code>speed</code> value greater than <code>1.0</code> means fast\-forward, and a value less than <code>1.0</code> means slow\-motion.</div>
+
+
+
+Upon successful submission, you will receive a response containing a `task_id`. Please save this ID for future queries.
+
+```JSON
+{
+  "success": true,
+  "task_id": "amk-tool-adjust-video-speed-123456789",
+  "request_id": "20240520173000ABCDEFG12345"
+}
+```
+
+
+<span id="step-2-get-the-result"></span>
+#### Step 2: Get the result
+
+Because video processing takes some time, poll the [Get task details](https://docs.byteplus.com/docs/byteplus-vod/ai-mediakit-get-task-details) API until the task `status` becomes `completed`.
+
+```Bash
+curl -X GET 'https://mediakit.ap-southeast-1.bytepluses.com/api/v1/tasks/{task_id}' \
+-H 'Authorization: Bearer {Your_API_Key}'
+```
+
+
+<div data-tips="true" data-tips-type="default" data-tips-is-title="true">INFO</div>
+
+
+<div data-tips="true" data-tips-type="default">Replace <code>{task_id}</code> at the end of the URL with the task ID returned in Step 1.</div>
+
+
+When the task is successfully completed, you will receive the following response. The `video_url` in the `result` field is the download URL of the speed\-adjusted video (the output is in MP4 format by default and the URL is valid for **24** hours).
+
+```JSON
+{
+    "success": true,
+    "task_id": "amk-tool-adjust-video-speed-123456789",
+    "task_type": "adjust-video-speed",
+    "status": "completed",
+    "result": {
+        "video_url": "https://example.byteplus.com/speed-adjusted-video.mp4?auth_key=...",
+        "resolution": "1080p",
+        "duration": 32.94
+    },
+    "expires_at": 1785240563,
+    "created_at": 1785154101,
+    "finished_at": 1785154164,
+    "request_id": "1742012dcc1938455d84dbe56beb7acc"
+}
+```
+
+
+<div data-tips="true" data-tips-type="default" data-tips-is-title="true">INFO</div>
+
+
+<div data-tips="true" data-tips-type="default"><strong>Audio speed control</strong>: The process for adjusting the speed of audio is exactly the same as above. The only difference is that you need to call the <a href="https://docs.byteplus.com/docs/byteplus-vod/ai-mediakit-create-an-audio-speed-control-task">Create an audio speed control task</a> API and change the parameter name from <code>video_url</code> to <code>audio_url</code>.</div>
+
+
+<span id="reference"></span>
+## Reference
+
+<span id="usage-limits"></span>
+### Usage limits
+
+
+|Limit |Description |
+|---|---|
+|Input file limits |* **File source**: Only publicly accessible HTTP/HTTPS URLs are supported.<br><br>* **Supported formats**:<br><br>   * Mainstream video formats such as `mp4`, `flv`, `ts`, `avi`, `mov`, `wmv`, `mkv`.<br><br>   * Mainstream audio formats such as `mp3`, `m4a`, `wav`.<br><br>* **File size**: It is recommended that the input file size not exceed 10 GB.<br><br>* **Input resolution**: Up to 4K (3840×2160) is supported for input videos. |
+|Speed range |The `speed` value ranges from `0.1` to `4.0`. The default value is `1.0` (original speed). |
+
+
+<span id="processing-time"></span>
+### Processing time
+
+Processing time is positively correlated with the media's duration and resolution, so longer and higher\-resolution media takes longer to process. The average RTF (processing time / source duration) is 1.
+
+<span id="related-api-references"></span>
+## Related APIs
+
+
+* [Create a video speed control task](https://docs.byteplus.com/docs/byteplus-vod/ai-mediakit-create-a-video-speed-control-task)
+
+* [Create an audio speed control task](https://docs.byteplus.com/docs/byteplus-vod/ai-mediakit-create-an-audio-speed-control-task)
+
+* [Get task details](https://docs.byteplus.com/docs/byteplus-vod/ai-mediakit-get-task-details)
+
+* [Event notification](https://docs.byteplus.com/docs/byteplus-vod/ai-mediakit-event-notification)

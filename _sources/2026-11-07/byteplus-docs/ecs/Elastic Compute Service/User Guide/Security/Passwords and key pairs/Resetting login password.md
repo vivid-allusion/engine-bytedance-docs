@@ -1,0 +1,155 @@
+---
+title: "Resetting login password"
+product: "Elastic Compute Service"
+product_code: "ecs"
+source: "https://docs.byteplus.com/en/docs/ecs/Resetting-passwords"
+---
+
+<span id=".5pON5L2c5Zy65pmv"></span>
+## Scenarios
+
+If you have forgotten the login password for an instance, or did not specify a password when you create an instance, you can refer to this topic and select an appropriate method to specify the login password for one or more instances.
+
+<div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div>
+
+
+
+* <div data-tips="true" data-tips-type="tip">Only Linux instances support SSH key pair\-based login. Windows instances do not support this login method.</div>
+
+
+* <div data-tips="true" data-tips-type="tip">If a Linux instance is associated with an SSH key pair, after you reset the password, you can log in to the instance by using the password or the key pair.</div>
+
+
+
+<span id=".6YeN572u5a-G56CB5pa55byP5a-55q-U"></span>
+## Comparison of password reset methods
+
+The following table describes the login password reset methods for instances. Select a suitable method based on your business requirements.
+
+<div data-tips="true" data-tips-type="warning" data-tips-is-title="true">warning</div>
+
+
+
+* <div data-tips="true" data-tips-type="warning">If you first change the login password to A by using the offline reset method without restarting the instance, and then reset it to B by using the online reset method and restart the instance, the password that actually takes effect is A.</div>
+
+
+* <div data-tips="true" data-tips-type="warning">If you use a <a href="https://docs.byteplus.com/en/docs/ecs/Self-building-users-log-in-to-the-ECS">custom account</a> and want to log in to your instance with a custom username, refer to Method 1 (Linux instances only) or Method 4.</div>
+
+
+
+
+|Reset method |Recommended scenarios |Instance state |Installation of reset\-authentication plug\-in required |Installation of cloud assistant Agent required |Instance login required |Instance restart required |Batch operation supported |
+|---|---|---|---|---|---|---|---|
+|[Method 1: Reset the instance login password online](https://docs.byteplus.com/en/docs/ecs/Resetting-passwords#.5pa55byP5LiA77ya5Zyo57q_6YeN572u5a6e5L6L5a-G56CB) |You can reset the password for the root user or a custom user of Linux instances. |**In service** |No |Yes |Not required |Not required |Not supported |
+|[Method 2: Reset the instance login password offline](https://docs.byteplus.com/en/docs/ecs/Resetting-passwords#.5pa55byP5LqM77ya56a757q_6YeN572u5a6e5L6L5a-G56CB) |You can reset the password for the root user of Linux instances and the Administrator user of Windows instances. |**Running** or **Stopped** |Yes |Not required |Not required |Yes |Supported |
+|[Method 3: Use the cloud assistant to reset the password](https://docs.byteplus.com/en/docs/ecs/Resetting-passwords#.5pa55byP5LiJ77ya6YCa6L-H5om56YeP5L2c5Lia6YeN572u5a-G56CB) |For instances without the reset\-authentication plug\-in installed, we recommend that you use this method to reset the password. |**In service** |Not required |Yes |Not required |Not required |Supported |
+|[Method 4: Reset the password within an instance](https://docs.byteplus.com/en/docs/ecs/Resetting-passwords#.5pa55byP5Zub77ya5Zyo5a6e5L6L5YaF6YOo6YeN572u5a-G56CB) |Reset the password for a custom user. |**In service** |Not required |Not required |Yes |Not required |Not supported |
+
+
+<span id=".5pa55byP5LiA77ya5Zyo57q_6YeN572u5a6e5L6L5a-G56CB"></span>
+## Method 1: Reset the instance login password online
+
+<span id=".57qm5p2f6ZmQ5Yi2"></span>
+#### Limits
+
+
+|Limit item |Description |
+|---|---|
+|Cloud assistant Agent |To reset the password online, you need to [install the cloud assistant Agent](https://docs.byteplus.com/en/docs/ecs/Install-the-Cloud-Assistant-client). Make sure that the cloud assistant Agent is **running** and that its version is not earlier than 1.11.1. |
+|Instance state |The instance must be in the **Running** status. |
+|Operating System |You cannot reset the login password online for Windows instances. |
+|Batch operation |You cannot reset the password online for multiple instances at the same time. |
+
+
+<span id=".5pON5L2c5q2l6aqk"></span>
+#### Procedure 
+
+
+1. Log in to the [ECS console](https://console.byteplus.com/ecs/instance).
+
+2. In the top menu bar, select the region and project of the target instance.
+
+3. Click the "... \> Instance property \> Reset instance password" button in the "Actions" column on the right side of the target instance.
+
+4. Select "Reset Password Online" as the reset method. Then enter the username (default: root) and the new password.
+
+5. Click the "Reset" button and wait for the reset process to finish.
+
+   <div data-tips="true" data-tips-type="tip" data-tips-is-title="true" data-wrapper-indent="1">tip   </div>
+   
+
+   * <div data-tips="true" data-tips-type="tip" data-wrapper-indent="1">During the reset process, a temporary key pair is generated by the cloud assistant to encrypt the password, ensuring the security of the password during transmission. The temporary key pair is automatically deleted after 60 seconds.   </div>
+   
+
+   * <div data-tips="true" data-tips-type="tip" data-wrapper-indent="1">After you reset the password by using this method, you do not need to restart the instance. The new password takes effect immediately.   </div>
+   
+
+   * <div data-tips="true" data-tips-type="tip" data-wrapper-indent="1">You can click the "Log in instance now" button and use the new password to <a href="https://docs.byteplus.com/en/docs/ecs/Overview-1">log in to the instance</a>.   </div>
+   
+
+6.  **(Optional)**  If the operation fails, you can go to the cloud assistant management page to view task details. [Learn more](https://docs.byteplus.com/en/docs/ecs/View-job-execution-results).
+
+
+<span id=".5pa55byP5LqM77ya56a757q_6YeN572u5a6e5L6L5a-G56CB"></span>
+## Method 2: Reset the instance login password offline
+
+<span id=".5rOo5oSP5LqL6aG5"></span>
+#### Usage notes
+
+
+|Type |Description |
+|---|---|
+|Instance related |The instance status must be **Running** or **Stopped**. |
+||After you reset the password, you need to restart the instance for the new password to take effect. |
+||A newly created instance must run for several minutes before you can reset the password offline. Attempting to reset the password immediately after creation results in an error. |
+|Image\-related |For Windows instances, take note of the following items. Otherwise, the reset fails. Proceed with caution.<br><br><br>* Before you reset the password, do not frequently start up or shut down the target instances.<br><br>* After you reset the password and restart the instances, we recommend that you do not restart or shut down any **Running** instance again within 10 minutes. |
+||Before you reset the password for an instance created by using a custom image, you need to [install the reset-authentication plug-in](https://docs.byteplus.com/en/docs/ecs/Installing-the-password-plug-in). Otherwise, the reset fails. |
+|Batch operation |When you reset the password offline for multiple instances at the same time, you can select up to 100 instances at a time. If password reset submission fails for any instance in the batch, the batch operation cannot be performed. Follow the onscreen instructions to complete the required steps and try again, or select individual instances to reset their passwords separately. |
+
+
+<span id=".5pON5L2c5q2l6aqk"></span>
+#### Procedure 
+
+
+1. Log in to the [ECS console](https://console.byteplus.com/ecs/instance). 
+
+2. In the top menu bar, select the region and project of the target instance.
+
+3. On the Instances page, use one of the following methods to go to the password reset page.
+
+   * Reset the password for a single instance: In the "Actions" column to the right of the target instance, click "... \> Instance property \> Reset instance password".
+
+   * Reset the password for multiple instances at the same time: Select one or more instances for which you want to reset the password, and click "... \> Reset instance password".
+
+4. Select "Reset Password Offline" as the reset method and enter the new password.
+
+5. Select "Agree to restart Instances now" to make the operation take effect. You can also manually restart the instances after the operation is complete.
+
+   <div data-tips="true" data-tips-type="default" data-tips-is-title="true" data-wrapper-indent="1">tip   </div>
+   
+
+   <div data-tips="true" data-tips-type="default" data-wrapper-indent="1">If you select "Agree to restart Instances now", your business is interrupted. Proceed with caution.   </div>
+   
+
+   <div data-tips="true" data-tips-type="default" data-wrapper-indent="1">After selecting immediate restart, the <strong>Running</strong> ECS instances will restart by default, and the <strong>Stopped</strong> ECS instances will start by default.   </div>
+   
+
+6. Click "Confirm" to complete the procedure.
+
+7.  **(Optional)**  After the instance restarts, you can use the new password to [log in to the instances](https://docs.byteplus.com/en/docs/ecs/Overview-1).
+
+
+<span id=".5pa55byP5LiJ77ya6YCa6L-H5om56YeP5L2c5Lia6YeN572u5a-G56CB"></span>
+## Method 3: Use the cloud assistant to reset the password
+
+For information about how to use the cloud assistant to reset the login password for instances, see [Modifying login passwords for multiple instances at the same time/Adding SSH public key](https://docs.byteplus.com/en/docs/ecs/Batch-modify-instance-login-password-and-add-SSH-public-key).
+
+<span id=".5pa55byP5Zub77ya5Zyo5a6e5L6L5YaF6YOo6YeN572u5a-G56CB"></span>
+## Method 4: Reset the password within an instance
+
+For information about how to reset the login password for a custom account within an instance, see [Logging in to ECS instance with custom account](https://docs.byteplus.com/en/docs/ecs/Self-building-users-log-in-to-the-ECS).
+
+<span id=".55u45YWz5paH5qGj"></span>
+## Related documents
+
+[ModifyInstanceAttribute](https://docs.byteplus.com/en/docs/ecs/ModifyInstanceAttribute)

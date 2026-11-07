@@ -1,0 +1,258 @@
+# Function Service
+
+189 pages. Source: https://docs.byteplus.com/en/docs/faas
+
+Back to the [full index](../README.md).
+
+- **API reference**
+  - [API list](API reference/API list.md)
+  - [API release history](API reference/API release history.md)
+  - [Public error code](API reference/Public error code.md)
+  - **Asynchronous task**
+    - [ListAsyncTasks](API reference/Asynchronous task/ListAsyncTasks.md)
+    - [TerminateAsyncTask](API reference/Asynchronous task/TerminateAsyncTask.md)
+  - **Call methods**
+    - [Public parameter](API reference/Call methods/Public parameter.md)
+    - [Request structure](API reference/Call methods/Request structure.md)
+    - [Response result](API reference/Call methods/Response result.md)
+    - [Signature mechanism](API reference/Call methods/Signature mechanism.md)
+  - **Cloud sandboxes**
+    - **Sandbox images**
+      - [CreateCustomImageRegistry](API reference/Cloud sandboxes/Sandbox images/CreateCustomImageRegistry.md)
+      - [DeleteCustomImageRegistry](API reference/Cloud sandboxes/Sandbox images/DeleteCustomImageRegistry.md)
+      - [DeleteSandboxImage](API reference/Cloud sandboxes/Sandbox images/DeleteSandboxImage.md)
+      - [GetCustomImageRegistry](API reference/Cloud sandboxes/Sandbox images/GetCustomImageRegistry.md)
+      - [GetSandboxImagePrecacheTicket](API reference/Cloud sandboxes/Sandbox images/GetSandboxImagePrecacheTicket.md)
+      - [ListCustomImageRegistries](API reference/Cloud sandboxes/Sandbox images/ListCustomImageRegistries.md)
+      - [ListSandboxImages](API reference/Cloud sandboxes/Sandbox images/ListSandboxImages.md)
+      - [PrecacheSandboxImages](API reference/Cloud sandboxes/Sandbox images/PrecacheSandboxImages.md)
+      - [UpdateCustomImageRegistry](API reference/Cloud sandboxes/Sandbox images/UpdateCustomImageRegistry.md)
+    - **Sandbox instances**
+      - [CreateSandbox](API reference/Cloud sandboxes/Sandbox instances/CreateSandbox.md)
+      - [DescribeSandbox](API reference/Cloud sandboxes/Sandbox instances/DescribeSandbox.md)
+      - [KillSandbox](API reference/Cloud sandboxes/Sandbox instances/KillSandbox.md)
+      - [ListSandboxes](API reference/Cloud sandboxes/Sandbox instances/ListSandboxes.md)
+      - [SetSandboxTimeout](API reference/Cloud sandboxes/Sandbox instances/SetSandboxTimeout.md)
+  - **Dependency installation tasks**
+    - [CreateDependencyInstallTask](API reference/Dependency installation tasks/CreateDependencyInstallTask.md)
+    - [GetDependencyInstallTaskLogDownloadURI](API reference/Dependency installation tasks/GetDependencyInstallTaskLogDownloadURI.md)
+    - [GetDependencyInstallTaskStatus](API reference/Dependency installation tasks/GetDependencyInstallTaskStatus.md)
+    - [TerminateDependencyInstallTask](API reference/Dependency installation tasks/TerminateDependencyInstallTask.md)
+  - **Function**
+    - [AbortRelease](API reference/Function/AbortRelease.md)
+    - [CopyFunction](API reference/Function/CopyFunction.md)
+    - [CreateFunction](API reference/Function/CreateFunction.md)
+    - [DeleteFunction](API reference/Function/DeleteFunction.md)
+    - [GetFunction](API reference/Function/GetFunction.md)
+    - [GetFunctionInstanceLogs](API reference/Function/GetFunctionInstanceLogs.md)
+    - [GetImageSyncStatus](API reference/Function/GetImageSyncStatus.md)
+    - [GetReleaseStatus](API reference/Function/GetReleaseStatus.md)
+    - [GetRevision](API reference/Function/GetRevision.md)
+    - [ListFunctionInstances](API reference/Function/ListFunctionInstances.md)
+    - [ListFunctions](API reference/Function/ListFunctions.md)
+    - [ListReleaseRecords](API reference/Function/ListReleaseRecords.md)
+    - [ListRevisions](API reference/Function/ListRevisions.md)
+    - [Release](API reference/Function/Release.md)
+    - [UpdateFunction](API reference/Function/UpdateFunction.md)
+    - [UpdateRelease](API reference/Function/UpdateRelease.md)
+  - **Function instance**
+    - [GenWebshellEndpoint](API reference/Function instance/GenWebshellEndpoint.md)
+  - **Trigger**
+    - [GetRocketMQTrigger](API reference/Trigger/GetRocketMQTrigger.md)
+    - [ListTriggers](API reference/Trigger/ListTriggers.md)
+    - **Kafka trigger**
+      - [CreateKafkaTrigger](API reference/Trigger/Kafka trigger/CreateKafkaTrigger.md)
+      - [DeleteKafkaTrigger](API reference/Trigger/Kafka trigger/DeleteKafkaTrigger.md)
+      - [GetKafkaTrigger](API reference/Trigger/Kafka trigger/GetKafkaTrigger.md)
+      - [UpdateKafkaTrigger](API reference/Trigger/Kafka trigger/UpdateKafkaTrigger.md)
+    - **Timer trigger**
+      - [CreateTimer](API reference/Trigger/Timer trigger/CreateTimer.md)
+      - [DeleteTimer](API reference/Trigger/Timer trigger/DeleteTimer.md)
+      - [GetTimer](API reference/Trigger/Timer trigger/GetTimer.md)
+      - [UpdateTimer](API reference/Trigger/Timer trigger/UpdateTimer.md)
+- **Best Practices**
+  - **Al Application**
+    - [Fast deploying SandboxFusion code sandbox](Best Practices/Al Application/Fast deploying SandboxFusion code sandbox.md)
+    - [Quickly deploying GPU text-to-image ComfyUI using Function Service](Best Practices/Al Application/Quickly deploying GPU text-to-image ComfyUI using Function Service.md)
+  - **Authorization**
+    - [Best practices on IAM authorization](Best Practices/Authorization/Best practices on IAM authorization.md)
+    - [Granting instances the permissions for accessing cloud services through IAM roles](Best Practices/Authorization/Granting instances the permissions for accessing cloud services through IAM roles.md)
+  - **Cloud sandboxes**
+    - [Creating cloud sandbox instances using custom images](Best Practices/Cloud sandboxes/Creating cloud sandbox instances using custom images.md)
+    - [veRL integration with veFaaS cloud sandbox](Best Practices/Cloud sandboxes/veRL integration with veFaaS cloud sandbox.md)
+  - **Data processing**
+    - [Reading data from Kafka to ES by using Function Service](Best Practices/Data processing/Reading data from Kafka to ES by using Function Service.md)
+    - [Using Function as a Service to read and write the TOS mounted directory](Best Practices/Data processing/Using Function as a Service to read and write the TOS mounted directory.md)
+    - [Using Function Service to achieve real-time automatic decompression of TOS uploaded files](Best Practices/Data processing/Using Function Service to achieve real-time automatic decompression of TOS uploaded files.md)
+  - **Feature application**
+    - [Using Function Service to host static sites](Best Practices/Feature application/Using Function Service to host static sites.md)
+    - [Using Function Service to trigger CDN refresh/preload at a scheduled time](Best Practices/Feature application/Using Function Service to trigger CDN refresh - preload at a scheduled time.md)
+    - [Using Function Service to trigger TOS for CDN refresh and preload](Best Practices/Feature application/Using Function Service to trigger TOS for CDN refresh and preload.md)
+    - [Using Function Service to trigger TOS for MCDN refresh and preload](Best Practices/Feature application/Using Function Service to trigger TOS for MCDN refresh and preload.md)
+- **Billing**
+  - [Billing overview](Billing/Billing overview.md)
+  - [Overdue payments](Billing/Overdue payments.md)
+  - [Unsubscribe Description](Billing/Unsubscribe Description.md)
+  - **Billing method**
+    - [Pay-as-you-go](Billing/Billing method/Pay-as-you-go.md)
+- **Code development**
+  - [Code development overview](Code development/Code development overview.md)
+  - **Native Python runtime**
+    - [Code package deployment](Code development/Native Python runtime/Code package deployment.md)
+    - [Development methods](Code development/Native Python runtime/Development methods.md)
+    - [Log collection](Code development/Native Python runtime/Log collection.md)
+    - [Overview](Code development/Native Python runtime/Overview.md)
+  - **Native runtime**
+    - [Code package deployment](Code development/Native runtime/Code package deployment.md)
+    - [Development methods (Task)](Code development/Native runtime/Development methods (Task).md)
+    - [Development methods (Web applications)](Code development/Native runtime/Development methods (Web applications).md)
+    - [Image deployment](Code development/Native runtime/Image deployment.md)
+    - [Log collection](Code development/Native runtime/Log collection.md)
+    - [Overview](Code development/Native runtime/Overview.md)
+  - **Node.js runtime**
+    - [Dependency Installation](Code development/Node.js runtime/Dependency Installation.md)
+    - [Deployment method](Code development/Node.js runtime/Deployment method.md)
+    - [Development methods](Code development/Node.js runtime/Development methods.md)
+    - [Log collection](Code development/Node.js runtime/Log collection.md)
+    - [Overview](Code development/Node.js runtime/Overview.md)
+  - **Python runtime**
+    - [Dependency Installation](Code development/Python runtime/Dependency Installation.md)
+    - [Deployment method](Code development/Python runtime/Deployment method.md)
+    - [Development methods](Code development/Python runtime/Development methods.md)
+    - [Log collection](Code development/Python runtime/Log collection.md)
+    - [Overview](Code development/Python runtime/Overview.md)
+- **FAQs**
+  - [How do I apply for beta features?](FAQs/How do I apply for beta features?.md)
+  - **Cloud sandboxes**
+    - [Obtaining the access address for a cloud sandbox instance](FAQs/Cloud sandboxes/Obtaining the access address for a cloud sandbox instance.md)
+    - [What is the relationship between the application configuration and the instance configuration in the cloud sandbox?](FAQs/Cloud sandboxes/What is the relationship between the application configuration and the instance configurat.md)
+  - **Code development FAQs**
+    - [What is an initializer?](FAQs/Code development FAQs/What is an initializer?.md)
+  - **Function instance FAQs**
+    - [How does a function access the public network?](FAQs/Function instance FAQs/How does a function access the public network?.md)
+    - [How does a function scale elastically?](FAQs/Function instance FAQs/How does a function scale elastically?.md)
+    - [How should a synchronous function timeout exceeding 900 seconds be handled?](FAQs/Function instance FAQs/How should a synchronous function timeout exceeding 900 seconds be handled?.md)
+    - [How to query function resource usage and costs?](FAQs/Function instance FAQs/How to query function resource usage and costs?.md)
+    - [Install package dependencies](FAQs/Function instance FAQs/Install package dependencies.md)
+    - [Why is there no instance in my function?](FAQs/Function instance FAQs/Why is there no instance in my function?.md)
+  - **Function revision FAQs**
+    - [Will requests be interrupted during the process of function release?](FAQs/Function revision FAQs/Will requests be interrupted during the process of function release?.md)
+  - **Function scaling FAQs**
+    - [What are the procedures involved in a cold start and how long does it take?](FAQs/Function scaling FAQs/What are the procedures involved in a cold start and how long does it take?.md)
+  - **Trigger FAQs**
+    - [What is the CloudEvents format of a trigger?](FAQs/Trigger FAQs/What is the CloudEvents format of a trigger?.md)
+- **Getting started**
+  - [Getting started with function deployment](Getting started/Getting started with function deployment.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Available regions](Overview/Available regions.md)
+  - [Benefits](Overview/Benefits.md)
+  - [Glossary](Overview/Glossary.md)
+  - [Limits](Overview/Limits.md)
+  - [Product features](Overview/Product features.md)
+  - [What is veFaaS?](Overview/What is veFaaS?.md)
+- **SDK reference**
+  - [SDK overview](SDK reference/SDK overview.md)
+- **Solution**
+  - [Consuming log data through the Function Service](Solution/Consuming log data through the Function Service.md)
+  - [Consuming message queue for Kafka through Function Service](Solution/Consuming message queue for Kafka through Function Service.md)
+  - [Consuming RocketMQ message queues through Function Service](Solution/Consuming RocketMQ message queues through Function Service.md)
+- **Terms**
+  - [BytePlus Function Service_Service Level Agreement](Terms/BytePlus Function Service_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Function Service](Terms/Service-Specific Terms for BytePlus Function Service.md)
+- **User guide**
+  - [Overview](User guide/Overview.md)
+  - [Selection guide](User guide/Selection guide.md)
+  - **Application**
+    - [Application overview](User guide/Application/Application overview.md)
+    - [Manage applications](User guide/Application/Manage applications.md)
+    - **Apply a template**
+      - **AI Cloud Native**
+        - **Browser Use Agent**
+          - [Browser Use Agent Introduction](User guide/Application/Apply a template/AI Cloud Native/Browser Use Agent/Browser Use Agent Introduction.md)
+          - [Deploying Browser Use Agent applications with one click](User guide/Application/Apply a template/AI Cloud Native/Browser Use Agent/Deploying Browser Use Agent applications with one click.md)
+        - **Code Sandbox Agent**
+          - [Code Sandbox Agent Introduction](User guide/Application/Apply a template/AI Cloud Native/Code Sandbox Agent/Code Sandbox Agent Introduction.md)
+          - [Deploying Code Sandbox Agent applications with one click](User guide/Application/Apply a template/AI Cloud Native/Code Sandbox Agent/Deploying Code Sandbox Agent applications with one click.md)
+        - **Computer Use Agent**
+          - [Computer Use Agent Introduction](User guide/Application/Apply a template/AI Cloud Native/Computer Use Agent/Computer Use Agent Introduction.md)
+          - [Deploying Computer Use Agent application with one click](User guide/Application/Apply a template/AI Cloud Native/Computer Use Agent/Deploying Computer Use Agent application with one click.md)
+  - **Cloud sandbox**
+    - [Advanced configurations for sandbox applications](User guide/Cloud sandbox/Advanced configurations for sandbox applications.md)
+    - [Configuring wildcard domains for sandbox applications](User guide/Cloud sandbox/Configuring wildcard domains for sandbox applications.md)
+    - [For sandbox instances](User guide/Cloud sandbox/For sandbox instances.md)
+    - [Overview of cloud sandbox](User guide/Cloud sandbox/Overview of cloud sandbox.md)
+    - [Sandbox applications](User guide/Cloud sandbox/Sandbox applications.md)
+    - [Sandbox images](User guide/Cloud sandbox/Sandbox images.md)
+    - [Sandbox instance warm pools](User guide/Cloud sandbox/Sandbox instance warm pools.md)
+  - **Functions**
+    - [Function overview](User guide/Functions/Function overview.md)
+    - [Function testing](User guide/Functions/Function testing.md)
+    - **Advanced settings**
+      - [Function configuration](User guide/Functions/Advanced settings/Function configuration.md)
+      - [Label management](User guide/Functions/Advanced settings/Label management.md)
+      - [Project management](User guide/Functions/Advanced settings/Project management.md)
+      - **Asynchronous task**
+        - [Async task management](User guide/Functions/Advanced settings/Asynchronous task/Async task management.md)
+        - [Configuring asynchronous tasks](User guide/Functions/Advanced settings/Asynchronous task/Configuring asynchronous tasks.md)
+        - [Overview of asynchronous task](User guide/Functions/Advanced settings/Asynchronous task/Overview of asynchronous task.md)
+        - [Submit task](User guide/Functions/Advanced settings/Asynchronous task/Submit task.md)
+        - [Task monitoring](User guide/Functions/Advanced settings/Asynchronous task/Task monitoring.md)
+      - **Monitoring and logs**
+        - [Dashboard overview](User guide/Functions/Advanced settings/Monitoring and logs/Dashboard overview.md)
+        - **Log management**
+          - [Enable log delivery](User guide/Functions/Advanced settings/Monitoring and logs/Log management/Enable log delivery.md)
+          - [Log structure description](User guide/Functions/Advanced settings/Monitoring and logs/Log management/Log structure description.md)
+          - [Query function execution logs](User guide/Functions/Advanced settings/Monitoring and logs/Log management/Query function execution logs.md)
+      - **Storage**
+        - [Function storage selection](User guide/Functions/Advanced settings/Storage/Function storage selection.md)
+        - [Mount FileNAS](User guide/Functions/Advanced settings/Storage/Mount FileNAS.md)
+        - [Mount TOS](User guide/Functions/Advanced settings/Storage/Mount TOS.md)
+    - **Function management**
+      - [Function creation method selection](User guide/Functions/Function management/Function creation method selection.md)
+      - [Managing functions](User guide/Functions/Function management/Managing functions.md)
+      - **Event function**
+        - [Create an event function](User guide/Functions/Function management/Event function/Create an event function.md)
+      - **Microservices applications**
+        - [Adding CLB access configurations](User guide/Functions/Function management/Microservices applications/Adding CLB access configurations.md)
+        - [Application start and stop](User guide/Functions/Function management/Microservices applications/Application start and stop.md)
+        - [Auto-scaling](User guide/Functions/Function management/Microservices applications/Auto-scaling.md)
+        - [Create microservices applications](User guide/Functions/Function management/Microservices applications/Create microservices applications.md)
+      - **Serverless GPU**
+        - [Account resource statistics (including GPU)](User guide/Functions/Function management/Serverless GPU/Account resource statistics (including GPU).md)
+        - [GPU function management](User guide/Functions/Function management/Serverless GPU/GPU function management.md)
+        - [GPU function resource management](User guide/Functions/Function management/Serverless GPU/GPU function resource management.md)
+        - [Overview of serverless GPU](User guide/Functions/Function management/Serverless GPU/Overview of serverless GPU.md)
+      - **Task function**
+        - [Create tasks](User guide/Functions/Function management/Task function/Create tasks.md)
+      - **Web application funtion**
+        - [Creating custom runtimes](User guide/Functions/Function management/Web application funtion/Creating custom runtimes.md)
+        - [Creating web applications](User guide/Functions/Function management/Web application funtion/Creating web applications.md)
+        - [Debugging](User guide/Functions/Function management/Web application funtion/Debugging.md)
+    - **Resource management**
+      - [Account resource statistics](User guide/Functions/Resource management/Account resource statistics.md)
+      - [Function resource statistics](User guide/Functions/Resource management/Function resource statistics.md)
+      - [Quota](User guide/Functions/Resource management/Quota.md)
+      - [Reserved instance](User guide/Functions/Resource management/Reserved instance.md)
+    - **Trigger management**
+      - [Create a TLS trigger](User guide/Functions/Trigger management/Create a TLS trigger.md)
+      - [Creating a API Gateway trigger](User guide/Functions/Trigger management/Creating a API Gateway trigger.md)
+      - [Creating a Kafka trigger](User guide/Functions/Trigger management/Creating a Kafka trigger.md)
+      - [Creating a RocketMQ trigger](User guide/Functions/Trigger management/Creating a RocketMQ trigger.md)
+      - [Creating a Timer trigger](User guide/Functions/Trigger management/Creating a Timer trigger.md)
+      - [Creating a TOS trigger](User guide/Functions/Trigger management/Creating a TOS trigger.md)
+      - [Managing triggers](User guide/Functions/Trigger management/Managing triggers.md)
+      - [Trigger event message structure](User guide/Functions/Trigger management/Trigger event message structure.md)
+      - [Trigger overview](User guide/Functions/Trigger management/Trigger overview.md)
+    - **Version management**
+      - [Observation release process](User guide/Functions/Version management/Observation release process.md)
+      - [Release function](User guide/Functions/Version management/Release function.md)
+      - [Release notes](User guide/Functions/Version management/Release notes.md)
+      - [Version History](User guide/Functions/Version management/Version History.md)
+- **What's New**
+  - [Release notes](What's New/Release notes.md)
+  - **Product announcement**
+    - [\[Billing updates\] FaaS (Function Service) pricing updates](What's New/Product announcement/[Billing updates] FaaS (Function Service) pricing updates.md)
+    - [\[Product updates\] Python 3.8 no longer supported](What's New/Product announcement/[Product updates] Python 3.8 no longer supported.md)
+  - **Security announcement**
+    - [React deserialization code execution vulnerability notice (CVE-2025-55182)](What's New/Security announcement/React deserialization code execution vulnerability notice (CVE-2025-55182).md)

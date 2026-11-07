@@ -1,0 +1,69 @@
+# Network Advisor
+
+48 pages. Source: https://docs.byteplus.com/en/docs/NetworkAdvisor
+
+Back to the [full index](../README.md).
+
+- [What's New](What's New.md)
+- **API reference**
+  - [API release notes](API reference/API release notes.md)
+  - [Introduction​](API reference/Introduction​.md)
+  - [Network Advisor API overview](API reference/Network Advisor API overview.md)
+  - **Call Methods**
+    - [Common error codes](API reference/Call Methods/Common error codes.md)
+    - [Common parameters](API reference/Call Methods/Common parameters.md)
+    - [Request structure](API reference/Call Methods/Request structure.md)
+    - [Response examples](API reference/Call Methods/Response examples.md)
+    - [Signature method](API reference/Call Methods/Signature method.md)
+  - **Instance Diagnostics**
+    - [CreateDiagnosisInstance - Creating an instance diagnosis](API reference/Instance Diagnostics/CreateDiagnosisInstance - Creating an instance diagnosis.md)
+    - [DescribeDiagnosisInstanceDetail - Getting the details of diagnosis instance](API reference/Instance Diagnostics/DescribeDiagnosisInstanceDetail - Getting the details of diagnosis instance.md)
+    - [DescribeDiagnosisInstances - Getting a diagnosis instance list](API reference/Instance Diagnostics/DescribeDiagnosisInstances - Getting a diagnosis instance list.md)
+    - [DescribeHistoryDiagnosis - Viewing the instance history diagnosis](API reference/Instance Diagnostics/DescribeHistoryDiagnosis - Viewing the instance history diagnosis.md)
+  - **Path Analysis**
+    - [CreatePathAnalysis - Initiating a path analysis](API reference/Path Analysis/CreatePathAnalysis - Initiating a path analysis.md)
+    - [DeleteAnalysisPath - Deleting a path analysis](API reference/Path Analysis/DeleteAnalysisPath - Deleting a path analysis.md)
+    - [DeleteAnalysisPathReport - Deleting a path analysis report](API reference/Path Analysis/DeleteAnalysisPathReport - Deleting a path analysis report.md)
+    - [GetAnalysisPathReport - Getting a path analysis report](API reference/Path Analysis/GetAnalysisPathReport - Getting a path analysis report.md)
+    - [ReanalysisPath - Restarting a path analysis](API reference/Path Analysis/ReanalysisPath - Restarting a path analysis.md)
+  - **Traffic Analysis**
+    - [GetNetworkTrafficMetrics - Getting the network traffic metric trend](API reference/Traffic Analysis/GetNetworkTrafficMetrics - Getting the network traffic metric trend.md)
+    - [GetNetworkTrafficTopN - Retrieving a network traffic metric ranking](API reference/Traffic Analysis/GetNetworkTrafficTopN - Retrieving a network traffic metric ranking.md)
+- **Best Practices**
+  - [ArkClaw usage example diagnosis](Best Practices/ArkClaw usage example diagnosis.md)
+  - [ArkClaw usage path analysis](Best Practices/ArkClaw usage path analysis.md)
+- **FAQs**
+  - [FAQs](FAQs/FAQs.md)
+- **Getting Started**
+  - [Diagnosing an EIP instance](Getting Started/Diagnosing an EIP instance.md)
+  - [Path analysis](Getting Started/Path analysis.md)
+- **Overview**
+  - [Benefits](Overview/Benefits.md)
+  - [Region overview](Overview/Region overview.md)
+  - [What is Network Advisor](Overview/What is Network Advisor.md)
+- **User guide**
+  - [Viewing network topology](User guide/Viewing network topology.md)
+  - **IAM**
+    - [IAM overview](User guide/IAM/IAM overview.md)
+    - [Network Advisor IAM policy type](User guide/IAM/Network Advisor IAM policy type.md)
+  - **Instance Diagnosis**
+    - [CEN diagnosis](User guide/Instance Diagnosis/CEN diagnosis.md)
+    - [CLB diagnostic](User guide/Instance Diagnosis/CLB diagnostic.md)
+    - [Direct Connect diagnostic](User guide/Instance Diagnosis/Direct Connect diagnostic.md)
+    - [EIP diagnostic](User guide/Instance Diagnosis/EIP diagnostic.md)
+    - [Instance diagnostic overview](User guide/Instance Diagnosis/Instance diagnostic overview.md)
+    - [Managing instance diagnosis](User guide/Instance Diagnosis/Managing instance diagnosis.md)
+    - [NAT Gateway diagnostic](User guide/Instance Diagnosis/NAT Gateway diagnostic.md)
+    - [PrivateLink diagnostic](User guide/Instance Diagnosis/PrivateLink diagnostic.md)
+    - [Transit Router diagnostic](User guide/Instance Diagnosis/Transit Router diagnostic.md)
+    - [VPN diagnostic](User guide/Instance Diagnosis/VPN diagnostic.md)
+  - **Path Analysis**
+    - [Analysis results and nodes](User guide/Path Analysis/Analysis results and nodes.md)
+    - [Managing path analysis](User guide/Path Analysis/Managing path analysis.md)
+  - **Performance monitoring**
+    - [Internet performance monitoring](User guide/Performance monitoring/Internet performance monitoring.md)
+    - [Private network performance monitoring](User guide/Performance monitoring/Private network performance monitoring.md)
+  - **Traffic Analysis**
+    - [Cross-region traffic analysis](User guide/Traffic Analysis/Cross-region traffic analysis.md)
+    - [Hybird Cloud Traffic analysis](User guide/Traffic Analysis/Hybird Cloud Traffic analysis.md)
+    - [Internet traffic analysis](User guide/Traffic Analysis/Internet traffic analysis.md)

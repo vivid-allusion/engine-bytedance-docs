@@ -1,0 +1,91 @@
+# GPU Compute Service
+
+64 pages. Source: https://docs.byteplus.com/en/docs/gpu
+
+Back to the [full index](../README.md).
+
+- **GPU Compute Service**
+  - [API reference](GPU Compute Service/API reference.md)
+  - [Billing](GPU Compute Service/Billing.md)
+  - [Terms](GPU Compute Service/Terms.md)
+  - **Best Practices**
+    - [Installing RDMA Agent in HPC-optimized instances](GPU Compute Service/Best Practices/Installing RDMA Agent in HPC-optimized instances.md)
+    - [Using second-level monitoring feature](GPU Compute Service/Best Practices/Using second-level monitoring feature.md)
+    - **Building applications**
+      - [GPU - Building AIGC capabilities (Linux)](GPU Compute Service/Best Practices/Building applications/GPU - Building AIGC capabilities (Linux).md)
+      - [GPU - Building AIGC capabilities (Windows)](GPU Compute Service/Best Practices/Building applications/GPU - Building AIGC capabilities (Windows).md)
+      - [GPU - Deploying NGC environment](GPU Compute Service/Best Practices/Building applications/GPU - Deploying NGC environment.md)
+      - [GPU - Deploying PyTorch applications](GPU Compute Service/Best Practices/Building applications/GPU - Deploying PyTorch applications.md)
+      - [GPU-Setting up Isaac Sim 5.1 simulation environment](GPU Compute Service/Best Practices/Building applications/GPU-Setting up Isaac Sim 5.1 simulation environment.md)
+      - [HPC - Configuring NCCL](GPU Compute Service/Best Practices/Building applications/HPC - Configuring NCCL.md)
+      - [HPC - Setting up Slurm compute cluster](GPU Compute Service/Best Practices/Building applications/HPC - Setting up Slurm compute cluster.md)
+    - **Building models**
+      - [GPU - Deploying DeepSeek-R1/V3 model](GPU Compute Service/Best Practices/Building models/GPU - Deploying DeepSeek-R1 - V3 model.md)
+      - [GPU - Deploying DeepSeek-V3.2 model](GPU Compute Service/Best Practices/Building models/GPU - Deploying DeepSeek-V3.2 model.md)
+      - [GPU - Deploying GPT-OSS-120B](GPU Compute Service/Best Practices/Building models/GPU - Deploying GPT-OSS-120B.md)
+      - [GPU - Deploying​ Seed-OSS model](GPU Compute Service/Best Practices/Building models/GPU - Deploying​ Seed-OSS model.md)
+      - [GPU - Deployment of DeepSeek-R1-Distill model](GPU Compute Service/Best Practices/Building models/GPU - Deployment of DeepSeek-R1-Distill model.md)
+      - [HPC – Compatibility between Elastic Scheduled Instances (Segmented) and veRL](GPU Compute Service/Best Practices/Building models/HPC – Compatibility between Elastic Scheduled Instances (Segmented) and veRL.md)
+    - **Inference acceleration**
+      - [GPU - Deploying DeepSeek-R1 model with large-scale Expert Parallelism](GPU Compute Service/Best Practices/Inference acceleration/GPU - Deploying DeepSeek-R1 model with large-scale Expert Parallelism.md)
+    - **Performance testing - tuning**
+      - [Proprietary high-performance collective communication library veCCL](GPU Compute Service/Best Practices/Performance testing - tuning/Proprietary high-performance collective communication library veCCL.md)
+  - **FAQ**
+    - [GPU instance FAQ](GPU Compute Service/FAQ/GPU instance FAQ.md)
+    - [GPU instance hardware-related FAQ](GPU Compute Service/FAQ/GPU instance hardware-related FAQ.md)
+    - [Monitoring FAQ](GPU Compute Service/FAQ/Monitoring FAQ.md)
+    - [NVIDIA driver FAQ](GPU Compute Service/FAQ/NVIDIA driver FAQ.md)
+  - **Getting Started**
+    - [NVIDIA driver installation guide](GPU Compute Service/Getting Started/NVIDIA driver installation guide.md)
+    - [Preparations](GPU Compute Service/Getting Started/Preparations.md)
+    - [Purchasing Heterogeneous Compute-optimized instances](GPU Compute Service/Getting Started/Purchasing Heterogeneous Compute-optimized instances.md)
+    - [Purchasing HPC Heterogeneous instances](GPU Compute Service/Getting Started/Purchasing HPC Heterogeneous instances.md)
+  - **Overview**
+    - [Benefits](GPU Compute Service/Overview/Benefits.md)
+    - [Limits](GPU Compute Service/Overview/Limits.md)
+    - [Regions and Availability Zones](GPU Compute Service/Overview/Regions and Availability Zones.md)
+    - [What is a GPU instance?](GPU Compute Service/Overview/What is a GPU instance?.md)
+  - **Troubleshooting**
+    - [Cause analysis and solutions for DeepEP errors in Ubuntu 24.04 + Nvidia drive 570 + doca 2.9.1 environment](GPU Compute Service/Troubleshooting/Cause analysis and solutions for DeepEP errors in Ubuntu 24.04 + Nvidia drive 570 + doca 2.md)
+    - [Common NVIDIA GPU XIDs and solutions](GPU Compute Service/Troubleshooting/Common NVIDIA GPU XIDs and solutions.md)
+    - [How to troubleshoot an abnormally interrupted A100 GPU-involved training process?](GPU Compute Service/Troubleshooting/How to troubleshoot an abnormally interrupted A100 GPU-involved training process?.md)
+  - **User Guide**
+    - [Instance user guide](GPU Compute Service/User Guide/Instance user guide.md)
+    - **Installing NVIDIA drivers**
+      - **Installing NVIDIA GRID drivers**
+        - [Automatically loading GRID drivers during instance creation](GPU Compute Service/User Guide/Installing NVIDIA drivers/Installing NVIDIA GRID drivers/Automatically loading GRID drivers during instance creation.md)
+        - [Installing GRID drivers manually](GPU Compute Service/User Guide/Installing NVIDIA drivers/Installing NVIDIA GRID drivers/Installing GRID drivers manually.md)
+      - **Installing NVIDIA Tesla drivers**
+        - [Automatically installing Tesla driver during instance creation](GPU Compute Service/User Guide/Installing NVIDIA drivers/Installing NVIDIA Tesla drivers/Automatically installing Tesla driver during instance creation.md)
+        - [Installing CUDA toolkits](GPU Compute Service/User Guide/Installing NVIDIA drivers/Installing NVIDIA Tesla drivers/Installing CUDA toolkits.md)
+        - [Installing GPU drivers manually](GPU Compute Service/User Guide/Installing NVIDIA drivers/Installing NVIDIA Tesla drivers/Installing GPU drivers manually.md)
+        - [Installing NVIDIA-Fabric Manager packages](GPU Compute Service/User Guide/Installing NVIDIA drivers/Installing NVIDIA Tesla drivers/Installing NVIDIA-Fabric Manager packages.md)
+        - [Quickly installing Tesla drivers in created instances](GPU Compute Service/User Guide/Installing NVIDIA drivers/Installing NVIDIA Tesla drivers/Quickly installing Tesla drivers in created instances.md)
+    - **Instance Types**
+      - [GPU Accelerated](GPU Compute Service/User Guide/Instance Types/GPU Accelerated.md)
+      - [GPU instance naming and type recommendations](GPU Compute Service/User Guide/Instance Types/GPU instance naming and type recommendations.md)
+      - [GPU Rendering](GPU Compute Service/User Guide/Instance Types/GPU Rendering.md)
+      - [HPC-optimized](GPU Compute Service/User Guide/Instance Types/HPC-optimized.md)
+      - [Instance types](GPU Compute Service/User Guide/Instance Types/Instance types.md)
+    - **Managing HPC clusters**
+      - [Creating HPC clusters](GPU Compute Service/User Guide/Managing HPC clusters/Creating HPC clusters.md)
+      - [Deleting HPC clusters](GPU Compute Service/User Guide/Managing HPC clusters/Deleting HPC clusters.md)
+      - [Expanding HPC clusters](GPU Compute Service/User Guide/Managing HPC clusters/Expanding HPC clusters.md)
+      - [HPC cluster overview](GPU Compute Service/User Guide/Managing HPC clusters/HPC cluster overview.md)
+      - [Managing cluster events](GPU Compute Service/User Guide/Managing HPC clusters/Managing cluster events.md)
+      - **Cluster diagnosis**
+        - [Cluster diagnosis overview](GPU Compute Service/User Guide/Managing HPC clusters/Cluster diagnosis/Cluster diagnosis overview.md)
+        - [Creating diagnosis tasks](GPU Compute Service/User Guide/Managing HPC clusters/Cluster diagnosis/Creating diagnosis tasks.md)
+        - [Diagnosis item overview](GPU Compute Service/User Guide/Managing HPC clusters/Cluster diagnosis/Diagnosis item overview.md)
+        - [Viewing historical diagnosis reports](GPU Compute Service/User Guide/Managing HPC clusters/Cluster diagnosis/Viewing historical diagnosis reports.md)
+    - **Monitoring**
+      - [Viewing instance GPU/RDMA monitoring data](GPU Compute Service/User Guide/Monitoring/Viewing instance GPU - RDMA monitoring data.md)
+      - **Cloud Monitor**
+        - [Monitoring overview](GPU Compute Service/User Guide/Monitoring/Cloud Monitor/Monitoring overview.md)
+    - **Uninstalling NVIDIA drivers**
+      - [Uninstalling NVIDIA GRID drivers](GPU Compute Service/User Guide/Uninstalling NVIDIA drivers/Uninstalling NVIDIA GRID drivers.md)
+      - [Uninstalling NVIDIA Tesla drivers](GPU Compute Service/User Guide/Uninstalling NVIDIA drivers/Uninstalling NVIDIA Tesla drivers.md)
+      - [Uninstalling NVIDIA-Fabric Manager software packages](GPU Compute Service/User Guide/Uninstalling NVIDIA drivers/Uninstalling NVIDIA-Fabric Manager software packages.md)
+  - **What's New**
+    - [Image release notes](GPU Compute Service/What's New/Image release notes.md)
+    - [New feature release notes](GPU Compute Service/What's New/New feature release notes.md)

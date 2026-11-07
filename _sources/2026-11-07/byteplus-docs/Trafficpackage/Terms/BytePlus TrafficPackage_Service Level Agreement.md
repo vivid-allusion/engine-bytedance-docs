@@ -1,0 +1,98 @@
+---
+title: "BytePlus TrafficPackage_Service Level Agreement"
+product: "TrafficPackage"
+product_code: "Trafficpackage"
+source: "https://docs.byteplus.com/en/docs/Trafficpackage/BytePlus_TrafficPackage_Service_Level_Agreement"
+---
+
+**Last Update: 1st January,**  **2025**
+
+During the term of the [BytePlus Customer Agreement](https://docs.byteplus.com/en/legal/docs/customer-agreement) pursuant to which BytePlus Pte. Ltd.(“**BytePlus**”) has agreed to provide the **BytePlus Traffic Package Service** (the “**Service**”) to you (the “**Agreement**”), the Service will be subject to the service level metrics set out below in this Service Level Agreement (this “**SLA**”).Capitalized terms used in this SLA, but not defined in this SLA, have the meaning stated in the Agreement.
+
+<span id="_1-service-levels"></span>
+## 1. Service Levels
+
+BytePlus will use all commercially reasonable efforts to make the Service available with a Monthly Uptime Percentage no less than 99.95% during any monthly billing cycle (the “**Service Levels**”) as calculated and subject to the exclusions outlined below in Section 4.
+
+<span id="_2-service-credits"></span>
+## 2. Service Credits
+
+Subject to the terms and conditions of the Agreement, and your full compliance of the Agreement, in the event that the above Service Levels are not satisfied, you will be eligible to receive service credits (the "**Service Credits**") as described below.
+
+
+|<div style="text-align: center"><br>Monthly Uptime Percentage ("MUP")</div><br> |Percentage of monthly bill for the Service which does not meet SLA that will be credited to your future monthly bills |
+|---|---|
+|<div style="text-align: center"><br>99% <= MUP < 99.95%</div><br> |15% |
+|<div style="text-align: center"><br>95% <= MUP < 99%</div><br> |30% |
+|<div style="text-align: center"><br>MUP< 95%</div><br> |100% |
+
+
+
+* We will apply any Service Credits only against future Service payments otherwise due from you. At our discretion, we may exchange the Service Credits into Service hours.
+
+* Service Credits will be applicable and issued only if the credit amount for the applicable monthly billing cycle is greater than US one dollar (US$1).
+
+* The aggregate maximum amount of Service Credits you can claim in a single monthly billing cycle shall not exceed 100% of such monthly service fee. Service Credits will not entitle you to any refund or other payment from BytePlus. Service Credits may not be transferred or applied to any other account.
+
+
+Notwithstanding anything to the contrary hereunder and under the Agreement, you agree and acknowledge that the Service Credits (if eligible) are the sole and exclusive remedy for any unavailability, non\-performance, or other failure by us to provide the Service.
+
+<span id="_3-service-credit-application-and-payment-procedures"></span>
+## 3. Service Credit Application and Payment Procedures
+
+In order to apply for the Service Credits, you must notify BytePlus within 30 days after the end of preceding calendar month where you become eligible to receive the Service Credits, and provide BytePlus with sufficient supporting information and materials evidencing the occurrence of the failure of Service Levels. Such written notification must include:
+
+
+1. The words **SLA Credit Request** in the subject line;
+
+2. The dates, times, and BytePlus regions of each lack of availability incident that you are claiming;
+
+3. The affected Services;
+
+
+If the MUP of such a request is confirmed by us and is less than the Service Levels, then we will issue the Service Credits to you within one billing cycle following the month in which your request is confirmed by us.
+
+If you fail to meet the aforesaid requirements, your eligibility to receive the Service Credits may be forfeited. In case of any disputes regarding the Service Credits, BytePlus shall be entitled to make a determination in good faith based on BytePlus’s information.
+
+<span id="_4-exclusions-of-sla"></span>
+## 4. Exclusions of SLA
+
+If any failure to achieve the Service Levels is due to any of the following reasons, you will not be eligible for the Service Credits:
+
+
+1. Any system maintenance with prior notice by BytePlus to you, including system cutover, maintenance, upgrade and failure simulation test;
+
+2. Any features excluded from this SLA;
+
+3. Any matters that is out of BytePlus’s control or resulting from the software, hardware, network, equipment or resources that are not provided by BytePlus;
+
+4. Any loss or leak of data, pin or password due to your improper maintenance or improper security measures;
+
+5. Any negligence in authorization or mal\-operation by you;
+
+6. Any of your failure to comply with documentation or suggestions made available by BytePlus;
+
+7. Any Service unavailability or failure of the Service not attributable to BytePlus, including without limitation, force majeure event, your application and/or a domain is blocked due to any reason;
+
+8. Any hacker attacks on your or any user's system and/or application.
+
+
+<span id="_5-definitions"></span>
+## 5. DEFINITIONS
+
+The following definitions shall apply to this SLA:
+
+**Service Period**: A service period is one calendar month.
+
+**Total Minutes in Service Period:**  Calculated as the total number of days in the service period × 24 (hours) × 60 (minutes).
+
+ **"Service Downtime "**  : In any minute, if all outbound packets of an BWP instance are dropped at the internet gateway device of BytePlus, then the service of that BWP instance is considered unavailable for that minute. The sum of minutes of service unavailability for a BWP instance within a service period is the total minutes of service unavailability.
+
+**Monthly Service Fee**: The total amount of service fees paid by a customer for a single BWP instance in a calendar month, excluding any part that has been purchased but not consumed. If the customer has paid for several months of service fees in one go, the monthly service fee will be calculated based on the proportion of months purchased or the volume of use.
+
+ **"Monthly Uptime Percentage"**  ：（**Total Minutes in Service Period** \- **Service** **Downtime**）/ **Total Minutes in Service Period** × 100%
+
+<span id="_6-miscellaneous"></span>
+## 6. MISCELLANEOUS
+
+BytePlus has the right to amend this SLA as appropriate or necessary in light of changes in due course. You may review the most updated version of this SLA on our [Website](https://www.byteplus.com/en). If you disagree with such revisions to be made by BytePlus, you should cease using the Service; by continuing to use the Service, you are deemed to have accepted this SLA as amended.

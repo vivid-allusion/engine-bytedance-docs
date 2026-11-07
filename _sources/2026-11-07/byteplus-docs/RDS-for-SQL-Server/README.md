@@ -1,0 +1,245 @@
+# RDS for SQL Server
+
+187 pages. Source: https://docs.byteplus.com/en/docs/RDS-for-SQL-Server
+
+Back to the [full index](../README.md).
+
+- **API reference**
+  - [API History](API reference/API History.md)
+  - [API overview](API reference/API overview.md)
+  - **Account management**
+    - [CreateDBAccount - Create an account](API reference/Account management/CreateDBAccount - Create an account.md)
+    - [DeleteDBAccount - Delete an account](API reference/Account management/DeleteDBAccount - Delete an account.md)
+    - [DescribeDBAccounts - Query accounts](API reference/Account management/DescribeDBAccounts - Query accounts.md)
+    - [GrantDBAccountPrivilege - Grant privileges to an account](API reference/Account management/GrantDBAccountPrivilege - Grant privileges to an account.md)
+    - [ModifyDBAccountStatus - Modify the status of an instance account](API reference/Account management/ModifyDBAccountStatus - Modify the status of an instance account.md)
+    - [ResetDBAccount - Reset a database account password](API reference/Account management/ResetDBAccount - Reset a database account password.md)
+    - [RevokeDBAccountPrivilege - Revoke account privileges](API reference/Account management/RevokeDBAccountPrivilege - Revoke account privileges.md)
+  - **Allowlist**
+    - [AssociateAllowList - Associate an allowlist with an instance](API reference/Allowlist/AssociateAllowList - Associate an allowlist with an instance.md)
+    - [CreateAllowList - Create an allowlist](API reference/Allowlist/CreateAllowList - Create an allowlist.md)
+    - [DeleteAllowList](API reference/Allowlist/DeleteAllowList.md)
+    - [DescribeAllowListDetail - Queries the details of an allowlist](API reference/Allowlist/DescribeAllowListDetail - Queries the details of an allowlist.md)
+    - [DescribeAllowLists - Query allowlists](API reference/Allowlist/DescribeAllowLists - Query allowlists.md)
+    - [DescribeInstanceAllowLists - Query the allowlists associated with an instance](API reference/Allowlist/DescribeInstanceAllowLists - Query the allowlists associated with an instance.md)
+    - [DisassociateAllowList - Disassociate an instance from an allowlist](API reference/Allowlist/DisassociateAllowList - Disassociate an instance from an allowlist.md)
+    - [ModifyAllowList - Modify an allowlist](API reference/Allowlist/ModifyAllowList - Modify an allowlist.md)
+  - **Appendix**
+    - [Data structure](API reference/Appendix/Data structure.md)
+    - [Error codes](API reference/Appendix/Error codes.md)
+  - **Backup**
+    - [CreateBackup - Create backup](API reference/Backup/CreateBackup - Create backup.md)
+    - [DeleteBackup](API reference/Backup/DeleteBackup.md)
+    - [DescribeAvailableCrossRegion - Query destination regions for cross-regional backups.](API reference/Backup/DescribeAvailableCrossRegion - Query destination regions for cross-regional backups.md)
+    - [DescribeBackupDetail - Describe backup details](API reference/Backup/DescribeBackupDetail - Describe backup details.md)
+    - [DescribeBackups - Queries the list of backup files](API reference/Backup/DescribeBackups - Queries the list of backup files.md)
+    - [DescribeCrossBackupPolicy - Query a cross-regional backup policy](API reference/Backup/DescribeCrossBackupPolicy - Query a cross-regional backup policy.md)
+    - [DownloadBackup - Download full physical backup files](API reference/Backup/DownloadBackup - Download full physical backup files.md)
+    - [ModifyBackupPolicy](API reference/Backup/ModifyBackupPolicy.md)
+    - [ModifyCrossBackupPolicy - Modify cross-regional backup policy](API reference/Backup/ModifyCrossBackupPolicy - Modify cross-regional backup policy.md)
+  - **Call methods**
+    - [Common parameters](API reference/Call methods/Common parameters.md)
+    - [Request structure](API reference/Call methods/Request structure.md)
+    - [Response results](API reference/Call methods/Response results.md)
+    - [Signature mechanism](API reference/Call methods/Signature mechanism.md)
+  - **Data security**
+    - [DescribeDBInstanceSSL - Query instance SSL configuration](API reference/Data security/DescribeDBInstanceSSL - Query instance SSL configuration.md)
+    - [DescribeDBInstanceTDE - Query instance TDE status](API reference/Data security/DescribeDBInstanceTDE - Query instance TDE status.md)
+    - [DownloadSSLCertificate - Download an SSL certificate](API reference/Data security/DownloadSSLCertificate - Download an SSL certificate.md)
+    - [ModifyDBInstanceSSL - Modify the SSL configuration of an instance](API reference/Data security/ModifyDBInstanceSSL - Modify the SSL configuration of an instance.md)
+    - [ModifyDBInstanceTDE - Modify the TDE configuration of an instance](API reference/Data security/ModifyDBInstanceTDE - Modify the TDE configuration of an instance.md)
+  - **Global management**
+    - [DescribeAvailabilityZones - Query availability zones](API reference/Global management/DescribeAvailabilityZones - Query availability zones.md)
+    - [DescribeRegions - Query available Regions](API reference/Global management/DescribeRegions - Query available Regions.md)
+  - **Managing instances**
+    - [CreateDBInstance - Create instance](API reference/Managing instances/CreateDBInstance - Create instance.md)
+    - [DeleteDBInstance - Delete instance](API reference/Managing instances/DeleteDBInstance - Delete instance.md)
+    - [DescribeDBInstanceDetail - Query instance details](API reference/Managing instances/DescribeDBInstanceDetail - Query instance details.md)
+    - [DescribeDBInstances - Query the instance list](API reference/Managing instances/DescribeDBInstances - Query the instance list.md)
+    - [DescribeDBInstanceSpecs](API reference/Managing instances/DescribeDBInstanceSpecs.md)
+    - [ModifyDBFailover](API reference/Managing instances/ModifyDBFailover.md)
+    - [ModifyDBInstanceName - Modify instance name](API reference/Managing instances/ModifyDBInstanceName - Modify instance name.md)
+    - [ModifyInstanceAdvancedFeatures - Modify instance advanced features](API reference/Managing instances/ModifyInstanceAdvancedFeatures - Modify instance advanced features.md)
+    - [RestartDBInstance](API reference/Managing instances/RestartDBInstance.md)
+  - **Managing parameters**
+    - [DescribeDBInstanceParameters - Query instance parameters](API reference/Managing parameters/DescribeDBInstanceParameters - Query instance parameters.md)
+  - **Recovery**
+    - [CreateTosRestore - Create a task to migrate a TOS backup to the cloud](API reference/Recovery/CreateTosRestore - Create a task to migrate a TOS backup to the cloud.md)
+    - [DescribeTosRestoreTaskDetail - Queries the details of a backup restoration task from TOS](API reference/Recovery/DescribeTosRestoreTaskDetail - Queries the details of a backup restoration task from TOS.md)
+    - [DescribeTosRestoreTasks - Describes the list of tasks for restoring from TOS backups](API reference/Recovery/DescribeTosRestoreTasks - Describes the list of tasks for restoring from TOS backups.md)
+    - [RestoreToExistedInstance - Restore to an existing instance](API reference/Recovery/RestoreToExistedInstance - Restore to an existing instance.md)
+- **Best practices**
+  - [Add linked servers to RDS for SQL Server](Best practices/Add linked servers to RDS for SQL Server.md)
+  - [Microsoft License and Software Assurance](Best practices/Microsoft License and Software Assurance.md)
+  - [Upload full backup data from a local database to an RDS for SQL Server instance via TOS](Best practices/Upload full backup data from a local database to an RDS for SQL Server instance via TOS.md)
+  - [Upload incremental backup data from a local database to an RDS for SQL Server instance via TOS](Best practices/Upload incremental backup data from a local database to an RDS for SQL Server instance via.md)
+- **Developer tools**
+  - **Terraform**
+    - [About terraform](Developer tools/Terraform/About terraform.md)
+    - [Configure terraform](Developer tools/Terraform/Configure terraform.md)
+    - [Install terraform](Developer tools/Terraform/Install terraform.md)
+    - [Use terraform](Developer tools/Terraform/Use terraform.md)
+- **FAQ**
+  - [How do I change maximum concurrency of RDS for SQL Server instance?](FAQ/How do I change maximum concurrency of RDS for SQL Server instance?.md)
+  - [How do I obtain client ip address for connecting to RDS for SQL Server instance?](FAQ/How do I obtain client ip address for connecting to RDS for SQL Server instance?.md)
+  - [How do I query the time zone and character set of RDS for SQL Server instance?](FAQ/How do I query the time zone and character set of RDS for SQL Server instance?.md)
+  - [How do I resolve error messages in RDS for SQL Server database console?](FAQ/How do I resolve error messages in RDS for SQL Server database console?.md)
+  - [How to change the locale of rds for sql server?](FAQ/How to change the locale of rds for sql server?.md)
+  - [How to shrink the transaction log of an RDS for SQL Server instance?](FAQ/How to shrink the transaction log of an RDS for SQL Server instance?.md)
+  - [How to view the log_reuse_wait_desc attribute value of a database?](FAQ/How to view the log_reuse_wait_desc attribute value of a database?.md)
+  - [What should I do if I get the error Could not obtain exclusive lock on database 'model' when creating database?](FAQ/What should I do if I get the error Could not obtain exclusive lock on database 'model' wh.md)
+  - [What should I do if the default database for RDS for SQL Server login has been specified as custom database, but the properties of the default database cannot be synchronized to the standby database?](FAQ/What should I do if the default database for RDS for SQL Server login has been specified a.md)
+- **Overview**
+  - [About RDS for SQL Server](Overview/About RDS for SQL Server.md)
+  - [Common concepts](Overview/Common concepts.md)
+  - [Feature comparison by version](Overview/Feature comparison by version.md)
+  - [Feature Overview](Overview/Feature Overview.md)
+  - [Product features](Overview/Product features.md)
+  - [Storage type introduction](Overview/Storage type introduction.md)
+  - **Product specifications**
+    - [Primary instance specification](Overview/Product specifications/Primary instance specification.md)
+    - [Product specification family](Overview/Product specifications/Product specification family.md)
+    - [Read-only instance specifications](Overview/Product specifications/Read-only instance specifications.md)
+- **Product billing**
+  - [Arrears and expriation](Product billing/Arrears and expriation.md)
+  - [Billing items and price](Product billing/Billing items and price.md)
+  - [Description of unsubscription and configuration modification](Product billing/Description of unsubscription and configuration modification.md)
+  - [Overview](Product billing/Overview.md)
+  - [Renewal description](Product billing/Renewal description.md)
+  - [Switching to yearly or monthly subscription](Product billing/Switching to yearly or monthly subscription.md)
+  - **Billing method**
+    - [Pay-as-you-go](Product billing/Billing method/Pay-as-you-go.md)
+    - [Yearly or monthly subscription](Product billing/Billing method/Yearly or monthly subscription.md)
+- **Quick start**
+  - [Associate an instance with an allowlist](Quick start/Associate an instance with an allowlist.md)
+  - [Connect to an instance](Quick start/Connect to an instance.md)
+  - [Create an instance](Quick start/Create an instance.md)
+  - [Creating allowlist](Quick start/Creating allowlist.md)
+  - [Use process](Quick start/Use process.md)
+- **SDK reference**
+  - **Go SDK**
+    - [Client initialization](SDK reference/Go SDK/Client initialization.md)
+    - [Code examples](SDK reference/Go SDK/Code examples.md)
+    - [Download and installation](SDK reference/Go SDK/Download and installation.md)
+  - **Java SDK**
+    - [Client initialization](SDK reference/Java SDK/Client initialization.md)
+    - [Code examples](SDK reference/Java SDK/Code examples.md)
+    - [Download and Installation](SDK reference/Java SDK/Download and Installation.md)
+  - **Python SDK**
+    - [Client initialization](SDK reference/Python SDK/Client initialization.md)
+    - [Code examples](SDK reference/Python SDK/Code examples.md)
+    - [Download and installation](SDK reference/Python SDK/Download and installation.md)
+- **Terms**
+  - [Service Level Agreement for RDS for SQL Server](Terms/Service Level Agreement for RDS for SQL Server.md)
+  - [Specific Terms for BytePlus Database Products and Services](Terms/Specific Terms for BytePlus Database Products and Services.md)
+- **User guide**
+  - **Backup recovery**
+    - **Backup data**
+      - [About backups](User guide/Backup recovery/Backup data/About backups.md)
+      - [Creating data backup manually](User guide/Backup recovery/Backup data/Creating data backup manually.md)
+      - [Custom backup policy](User guide/Backup recovery/Backup data/Custom backup policy.md)
+      - [Deleting manual data backup files](User guide/Backup recovery/Backup data/Deleting manual data backup files.md)
+      - [Download log backup file](User guide/Backup recovery/Backup data/Download log backup file.md)
+      - [Downloading data backup files](User guide/Backup recovery/Backup data/Downloading data backup files.md)
+      - [Viewing backup details](User guide/Backup recovery/Backup data/Viewing backup details.md)
+    - **Data recovery**
+      - [Restore to a new instance by time in point](User guide/Backup recovery/Data recovery/Restore to a new instance by time in point.md)
+      - [Restore to a new instance from a backup set](User guide/Backup recovery/Data recovery/Restore to a new instance from a backup set.md)
+      - [Restore to an existing instance by point in time](User guide/Backup recovery/Data recovery/Restore to an existing instance by point in time.md)
+      - [Restore to an existing instance from a backup set](User guide/Backup recovery/Data recovery/Restore to an existing instance from a backup set.md)
+    - **Recoverying from a TOS backup**
+      - [Creating a TOS backup recovery task](User guide/Backup recovery/Recoverying from a TOS backup/Creating a TOS backup recovery task.md)
+      - [Viewing TOS backup recovery tasks](User guide/Backup recovery/Recoverying from a TOS backup/Viewing TOS backup recovery tasks.md)
+  - **Data security**
+    - [Set up SSL encryption](User guide/Data security/Set up SSL encryption.md)
+    - [Update SSL certificate](User guide/Data security/Update SSL certificate.md)
+    - **Managing allowlists**
+      - [Copying allowlist](User guide/Data security/Managing allowlists/Copying allowlist.md)
+      - [Creating allowlist](User guide/Data security/Managing allowlists/Creating allowlist.md)
+      - [Deleting allowlist](User guide/Data security/Managing allowlists/Deleting allowlist.md)
+      - [Editing allowlist](User guide/Data security/Managing allowlists/Editing allowlist.md)
+      - [Synchronizing security group](User guide/Data security/Managing allowlists/Synchronizing security group.md)
+      - **Associating allowlists**
+        - [Associating allowlist to instance](User guide/Data security/Managing allowlists/Associating allowlists/Associating allowlist to instance.md)
+        - [Associating instance to allowlist](User guide/Data security/Managing allowlists/Associating allowlists/Associating instance to allowlist.md)
+        - [Disassociating allowlist from instance](User guide/Data security/Managing allowlists/Associating allowlists/Disassociating allowlist from instance.md)
+        - [Disassociating instance from allowlist](User guide/Data security/Managing allowlists/Associating allowlists/Disassociating instance from allowlist.md)
+        - [Synchronize an allowlist](User guide/Data security/Managing allowlists/Associating allowlists/Synchronize an allowlist.md)
+  - **Database Workshop**
+    - [Database Workshop](User guide/Database Workshop/Database Workshop.md)
+  - **Historical events**
+    - [Viewing historical events](User guide/Historical events/Viewing historical events.md)
+  - **Managing account**
+    - [Account permission description](User guide/Managing account/Account permission description.md)
+    - [Authorize cross-service access](User guide/Managing account/Authorize cross-service access.md)
+    - [Create and manage accounts](User guide/Managing account/Create and manage accounts.md)
+    - [Modifying account permissions](User guide/Managing account/Modifying account permissions.md)
+    - [Reset account password](User guide/Managing account/Reset account password.md)
+  - **Managing backup**
+    - [Rebuild an instance](User guide/Managing backup/Rebuild an instance.md)
+    - [Viewing list of deleted instance backups](User guide/Managing backup/Viewing list of deleted instance backups.md)
+  - **Managing connections**
+    - **Connecting to instance**
+      - [Connect to an instance](User guide/Managing connections/Connecting to instance/Connect to an instance.md)
+      - [Connecting to RDS for SQL Server instance use DBW](User guide/Managing connections/Connecting to instance/Connecting to RDS for SQL Server instance use DBW.md)
+    - **Managing access address**
+      - [Modify the connection address prefix](User guide/Managing connections/Managing access address/Modify the connection address prefix.md)
+      - [View connection address and port](User guide/Managing connections/Managing access address/View connection address and port.md)
+    - **Managing connection endpoints**
+      - [Disabling public network access](User guide/Managing connections/Managing connection endpoints/Disabling public network access.md)
+      - [Enabling public network access](User guide/Managing connections/Managing connection endpoints/Enabling public network access.md)
+      - [Public network resolution management](User guide/Managing connections/Managing connection endpoints/Public network resolution management.md)
+  - **Managing databases**
+    - [Creating database](User guide/Managing databases/Creating database.md)
+    - [Deleting database](User guide/Managing databases/Deleting database.md)
+  - **Managing instances**
+    - [Configuring maintenance window](User guide/Managing instances/Configuring maintenance window.md)
+    - [Create an instance](User guide/Managing instances/Create an instance.md)
+    - [Deleting pay-as-you-go instance](User guide/Managing instances/Deleting pay-as-you-go instance.md)
+    - [Reset password](User guide/Managing instances/Reset password.md)
+    - [Restart instance](User guide/Managing instances/Restart instance.md)
+    - [Unsubscribe from yearly or monthly subscription instances](User guide/Managing instances/Unsubscribe from yearly or monthly subscription instances.md)
+    - [View instances](User guide/Managing instances/View instances.md)
+    - **Changing an instance configuration**
+      - [Regular modification of specification](User guide/Managing instances/Changing an instance configuration/Regular modification of specification.md)
+    - **Tag management**
+      - [Associating tag](User guide/Managing instances/Tag management/Associating tag.md)
+      - [Disassociating tag](User guide/Managing instances/Tag management/Disassociating tag.md)
+      - [Editing tag](User guide/Managing instances/Tag management/Editing tag.md)
+      - [Filtering instances by tags](User guide/Managing instances/Tag management/Filtering instances by tags.md)
+      - [Overview](User guide/Managing instances/Tag management/Overview.md)
+  - **Managing logs**
+    - [Enabling slow log](User guide/Managing logs/Enabling slow log.md)
+    - [Managing audit log](User guide/Managing logs/Managing audit log.md)
+    - [Viewing and download slow logs](User guide/Managing logs/Viewing and download slow logs.md)
+    - [Viewing error logs](User guide/Managing logs/Viewing error logs.md)
+    - [Viewing master and standby switch log](User guide/Managing logs/Viewing master and standby switch log.md)
+  - **Managing parameters**
+    - [Modifying parameters](User guide/Managing parameters/Modifying parameters.md)
+    - [Viewing parameter modification history](User guide/Managing parameters/Viewing parameter modification history.md)
+  - **Managing read-only instance**
+    - [Creating read-only instance](User guide/Managing read-only instance/Creating read-only instance.md)
+    - [Delete a read-only instance](User guide/Managing read-only instance/Delete a read-only instance.md)
+    - [Read-only overview](User guide/Managing read-only instance/Read-only overview.md)
+    - [View connection address of the read-only instance](User guide/Managing read-only instance/View connection address of the read-only instance.md)
+  - **Monitoring and alerts**
+    - [Creating alert policies](User guide/Monitoring and alerts/Creating alert policies.md)
+    - [Creating event rule](User guide/Monitoring and alerts/Creating event rule.md)
+    - [Monitoring metrics](User guide/Monitoring and alerts/Monitoring metrics.md)
+    - [Viewing event](User guide/Monitoring and alerts/Viewing event.md)
+    - [Viewing monitoring information](User guide/Monitoring and alerts/Viewing monitoring information.md)
+  - **Service availability**
+    - [Switching master node](User guide/Service availability/Switching master node.md)
+  - **Using of stored procedures**
+    - [Changing data capture (CDC) management](User guide/Using of stored procedures/Changing data capture (CDC) management.md)
+    - [Copying database](User guide/Using of stored procedures/Copying database.md)
+    - [Deleting database](User guide/Using of stored procedures/Deleting database.md)
+    - [Denying normal users to display all databases](User guide/Using of stored procedures/Denying normal users to display all databases.md)
+    - [Editing database name](User guide/Using of stored procedures/Editing database name.md)
+    - [Editing database status to online](User guide/Using of stored procedures/Editing database status to online.md)
+    - [Granting account tracking permissions](User guide/Using of stored procedures/Granting account tracking permissions.md)
+    - [Granting permissions to database owner](User guide/Using of stored procedures/Granting permissions to database owner.md)
+    - [TDE Stored Procedure](User guide/Using of stored procedures/TDE Stored Procedure.md)
+    - [Updating database statistics](User guide/Using of stored procedures/Updating database statistics.md)
+- **What's new**
+  - [Release notes](What's new/Release notes.md)

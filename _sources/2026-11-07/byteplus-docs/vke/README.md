@@ -1,0 +1,1051 @@
+# Vital Kubernetes Engine
+
+819 pages. Source: https://docs.byteplus.com/en/docs/vke
+
+Back to the [full index](../README.md).
+
+- **Cloud-native Al**
+  - [AI cloud-native release notes](Cloud-native Al/AI cloud-native release notes.md)
+  - **ServingKit**
+    - [AI application observability](Cloud-native Al/ServingKit/AI application observability.md)
+    - [Managing and using AI applications](Cloud-native Al/ServingKit/Managing and using AI applications.md)
+    - [ServingKit overview](Cloud-native Al/ServingKit/ServingKit overview.md)
+    - [Supported inference models](Cloud-native Al/ServingKit/Supported inference models.md)
+    - **Best practices**
+      - [Monitoring AI training jobs](Cloud-native Al/ServingKit/Best practices/Monitoring AI training jobs.md)
+      - [Using AI container images](Cloud-native Al/ServingKit/Best practices/Using AI container images.md)
+      - **DeepSeek model deployment**
+        - [Quickly deploying DeepSeek-V4-Flash using the LLM General Template](Cloud-native Al/ServingKit/Best practices/DeepSeek model deployment/Quickly deploying DeepSeek-V4-Flash using the LLM General Template.md)
+        - [Quickly deploying DeepSeek-V4-Pro by using the LLM General Template](Cloud-native Al/ServingKit/Best practices/DeepSeek model deployment/Quickly deploying DeepSeek-V4-Pro by using the LLM General Template.md)
+      - **GLM model deployment**
+        - [Quickly deploying GLM-5 by using the LLM General Template](Cloud-native Al/ServingKit/Best practices/GLM model deployment/Quickly deploying GLM-5 by using the LLM General Template.md)
+        - [Quickly deploying GLM-5.1 by using the LLM General Template](Cloud-native Al/ServingKit/Best practices/GLM model deployment/Quickly deploying GLM-5.1 by using the LLM General Template.md)
+        - [Quickly deploying GLM-5.2 by using the LLM General Template](Cloud-native Al/ServingKit/Best practices/GLM model deployment/Quickly deploying GLM-5.2 by using the LLM General Template.md)
+      - **Kimi model deployment**
+        - [Deploying Kimi-K3 model quickly via LLM general template](Cloud-native Al/ServingKit/Best practices/Kimi model deployment/Deploying Kimi-K3 model quickly via LLM general template.md)
+        - [Quickly deploying Kimi-K2.5 by using the LLM General Template](Cloud-native Al/ServingKit/Best practices/Kimi model deployment/Quickly deploying Kimi-K2.5 by using the LLM General Template.md)
+        - [Quickly deploying Kimi-K2.6 by using the LLM General Template](Cloud-native Al/ServingKit/Best practices/Kimi model deployment/Quickly deploying Kimi-K2.6 by using the LLM General Template.md)
+      - **MiniMax model deployment**
+        - [Quickly deploying MiniMax-M3 by using the LLM General Template](Cloud-native Al/ServingKit/Best practices/MiniMax model deployment/Quickly deploying MiniMax-M3 by using the LLM General Template.md)
+        - [Quickly deploying the MiniMax-M2.5 model by using the LLM general-purpose template](Cloud-native Al/ServingKit/Best practices/MiniMax model deployment/Quickly deploying the MiniMax-M2.5 model by using the LLM general-purpose template.md)
+        - [Quickly deploying the MiniMax-M2.7 model by using the LLM general-purpose template](Cloud-native Al/ServingKit/Best practices/MiniMax model deployment/Quickly deploying the MiniMax-M2.7 model by using the LLM general-purpose template.md)
+      - **Qwen model deployment**
+        - [Quickly deploying Qwen3.5 by using the LLM General Template](Cloud-native Al/ServingKit/Best practices/Qwen model deployment/Quickly deploying Qwen3.5 by using the LLM General Template.md)
+    - **ComfyUI application**
+      - [ComfyUI FAQs](Cloud-native Al/ServingKit/ComfyUI application/ComfyUI FAQs.md)
+      - [Deploying ComfyUI](Cloud-native Al/ServingKit/ComfyUI application/Deploying ComfyUI.md)
+      - [Using ComfyUI to achieve universal migration](Cloud-native Al/ServingKit/ComfyUI application/Using ComfyUI to achieve universal migration.md)
+      - [Using ComfyUI to implement digital human lip-sync podcasts](Cloud-native Al/ServingKit/ComfyUI application/Using ComfyUI to implement digital human lip-sync podcasts.md)
+    - **Deploying the Al inference application through Helm**
+      - [Helm deployment overview](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Helm deployment overview.md)
+      - **Deepseek practices**
+        - [Deploying DeepSeek-V3.1 with SGLang](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Deepseek practices/Deploying DeepSeek-V3.1 with SGLang.md)
+        - [Quickly deploying  quantized DeepSeek-R1 with SGLang](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Deepseek practices/Quickly deploying quantized DeepSeek-R1 with SGLang.md)
+        - [Quickly deploying DeepSeek-R1 (full version) with SGLang](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Deepseek practices/Quickly deploying DeepSeek-R1 (full version) with SGLang.md)
+        - [Quickly deploying DeepSeek-R1 (full version) with SGLang (PD disaggregation)](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Deepseek practices/Quickly deploying DeepSeek-R1 (full version) with SGLang (PD disaggregation).md)
+        - [Quickly deploying DeepSeek-R1-0528 (full version) with SGLang](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Deepseek practices/Quickly deploying DeepSeek-R1-0528 (full version) with SGLang.md)
+        - [Quickly deploying DeepSeek-R1-0528/V3-0424 (full version) with SGLang (PD disaggregation)](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Deepseek practices/Quickly deploying DeepSeek-R1-0528 - V3-0424 (full version) with SGLang (PD disaggregation.md)
+        - [Quickly deploying DeepSeek-V3/R1 (full version) with xLLM (PD disaggregation)](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Deepseek practices/Quickly deploying DeepSeek-V3 - R1 (full version) with xLLM (PD disaggregation).md)
+        - [Quickly deploying quantized DeepSeek-R1 with TensorRT-LLM](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Deepseek practices/Quickly deploying quantized DeepSeek-R1 with TensorRT-LLM.md)
+      - **GPT practice**
+        - [Quickly deploying gpt-oss-120b with vLLM](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/GPT practice/Quickly deploying gpt-oss-120b with vLLM.md)
+      - **Qwen practices**
+        - [Quickly deploying Qwen3-235B with Dynamo and vLLM (PD disaggregation)](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Qwen practices/Quickly deploying Qwen3-235B with Dynamo and vLLM (PD disaggregation).md)
+        - [Quickly deploying Qwen3-235B-A22B-FP8 with SGLang](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Qwen practices/Quickly deploying Qwen3-235B-A22B-FP8 with SGLang.md)
+        - [Quickly deploying Qwen3-30B-A3B-FP8 with SGLang](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Qwen practices/Quickly deploying Qwen3-30B-A3B-FP8 with SGLang.md)
+        - [Quickly deploying Qwen3-32B-FP8 with SGLang](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Qwen practices/Quickly deploying Qwen3-32B-FP8 with SGLang.md)
+      - **Seed practice**
+        - [Quickly deploying Seed-OSS-36B-Instruct with vLLM](Cloud-native Al/ServingKit/Deploying the Al inference application through Helm/Seed practice/Quickly deploying Seed-OSS-36B-Instruct with vLLM.md)
+    - **LLM applications**
+      - [Deploy a text model application](Cloud-native Al/ServingKit/LLM applications/Deploy a text model application.md)
+      - [Deploying general-purpose LLM template applications](Cloud-native Al/ServingKit/LLM applications/Deploying general-purpose LLM template applications.md)
+      - [LLM FAQ](Cloud-native Al/ServingKit/LLM applications/LLM FAQ.md)
+  - **TrainingKit**
+    - [Conducting RL for code generation through veRL Code Sandbox](Cloud-native Al/TrainingKit/Conducting RL for code generation through veRL Code Sandbox.md)
+    - [High-performance communication practices of veCCL](Cloud-native Al/TrainingKit/High-performance communication practices of veCCL.md)
+    - [PPO training on the GSM8K dataset with veRL](Cloud-native Al/TrainingKit/PPO training on the GSM8K dataset with veRL.md)
+- **Terms**
+  - [BytePlus VKE_Service Level Agreement](Terms/BytePlus VKE_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Vital Kubernetes Engine](Terms/Service-Specific Terms for BytePlus Vital Kubernetes Engine.md)
+- **Vital Container Instance**
+  - **Best practices**
+    - [Best practices for VCI troubleshooting](Vital Container Instance/Best practices/Best practices for VCI troubleshooting.md)
+    - [Defining appropriate Java 8 heap memory in containers](Vital Container Instance/Best practices/Defining appropriate Java 8 heap memory in containers.md)
+    - [Using VCI to run Spark data processing jobs](Vital Container Instance/Best practices/Using VCI to run Spark data processing jobs.md)
+  - **Billing**
+    - [Billing Overview](Vital Container Instance/Billing/Billing Overview.md)
+    - [Overdue payments](Vital Container Instance/Billing/Overdue payments.md)
+    - [Project-based bill splitting](Vital Container Instance/Billing/Project-based bill splitting.md)
+    - [Tag-based bill splitting](Vital Container Instance/Billing/Tag-based bill splitting.md)
+    - **Billing methods**
+      - [Pay-as-you-go](Vital Container Instance/Billing/Billing methods/Pay-as-you-go.md)
+      - [Reserved Container Instances](Vital Container Instance/Billing/Billing methods/Reserved Container Instances.md)
+  - **FAQs**
+    - [How do I avoid pulling images after using an image cache?](Vital Container Instance/FAQs/How do I avoid pulling images after using an image cache?.md)
+    - [How do I fix a situation where a VCI pod remains in the Pending state with no image pull events?](Vital Container Instance/FAQs/How do I fix a situation where a VCI pod remains in the Pending state with no image pull e.md)
+    - [How do I handle a FailedCreateSystemDisk event?](Vital Container Instance/FAQs/How do I handle a FailedCreateSystemDisk event?.md)
+    - [How do I handle the ProviderFailed error when creating a pod?](Vital Container Instance/FAQs/How do I handle the ProviderFailed error when creating a pod?.md)
+    - [How do I handle VCI pod scheduling when a cluster contains subnets within multiple availability zones?](Vital Container Instance/FAQs/How do I handle VCI pod scheduling when a cluster contains subnets within multiple availab.md)
+    - [How do I resolve the error "exec user process caused: exec format error" when creating a pod?](Vital Container Instance/FAQs/How do I resolve the error "exec user process caused: exec format error" when creating a p.md)
+    - [How do I schedule a VCI pod to a specified availability zone?](Vital Container Instance/FAQs/How do I schedule a VCI pod to a specified availability zone?.md)
+    - [How do I troubleshoot pod failures when using partitioned data volumes?](Vital Container Instance/FAQs/How do I troubleshoot pod failures when using partitioned data volumes?.md)
+  - **Getting started**
+    - [Using VCI in the VKE console](Vital Container Instance/Getting started/Using VCI in the VKE console.md)
+    - [Using VCI through kubectl](Vital Container Instance/Getting started/Using VCI through kubectl.md)
+    - [VCI preparations](Vital Container Instance/Getting started/VCI preparations.md)
+    - [VCI quick guide](Vital Container Instance/Getting started/VCI quick guide.md)
+  - **Overview**
+    - [Limits](Vital Container Instance/Overview/Limits.md)
+    - [Product advantages](Vital Container Instance/Overview/Product advantages.md)
+    - [Regions and AZs](Vital Container Instance/Overview/Regions and AZs.md)
+    - [What is VCI?](Vital Container Instance/Overview/What is VCI?.md)
+    - **Instance families**
+      - [General-purpose specifications](Vital Container Instance/Overview/Instance families/General-purpose specifications.md)
+      - [VCI instance specifications](Vital Container Instance/Overview/Instance families/VCI instance specifications.md)
+  - **Security and compliance**
+    - [Shared security responsibility for VCI](Vital Container Instance/Security and compliance/Shared security responsibility for VCI.md)
+  - **User guide**
+    - [Kubectl commands supported by VCI](Vital Container Instance/User guide/Kubectl commands supported by VCI.md)
+    - [Pod annotation descriptions](Vital Container Instance/User guide/Pod annotation descriptions.md)
+    - **Container configuration**
+      - [Configuring security contexts](Vital Container Instance/User guide/Container configuration/Configuring security contexts.md)
+      - [Configuring the startup and exit priorities of containers](Vital Container Instance/User guide/Container configuration/Configuring the startup and exit priorities of containers.md)
+      - [In-place restart of VCI pods](Vital Container Instance/User guide/Container configuration/In-place restart of VCI pods.md)
+    - **Creating an instance**
+      - [Creating instances by ignoring specific container resource requirements](Vital Container Instance/User guide/Creating an instance/Creating instances by ignoring specific container resource requirements.md)
+      - [Instance specification adjustment description](Vital Container Instance/User guide/Creating an instance/Instance specification adjustment description.md)
+      - [Pulling images from self-built image registries during instance creation](Vital Container Instance/User guide/Creating an instance/Pulling images from self-built image registries during instance creation.md)
+      - **General purpose instance**
+        - [Creating an instance by specifying an instance family (vCPU and memory).](Vital Container Instance/User guide/Creating an instance/General purpose instance/Creating an instance by specifying an instance family (vCPU and memory).md)
+        - [Creating general-purpose instances by specifying VCI specifications](Vital Container Instance/User guide/Creating an instance/General purpose instance/Creating general-purpose instances by specifying VCI specifications.md)
+    - **Events**
+      - [Summary of VCI event types](Vital Container Instance/User guide/Events/Summary of VCI event types.md)
+      - [VCI event monitoring overview](Vital Container Instance/User guide/Events/VCI event monitoring overview.md)
+    - **Instance metadata**
+      - [Instance metadata items](Vital Container Instance/User guide/Instance metadata/Instance metadata items.md)
+      - [Instance metadata overview](Vital Container Instance/User guide/Instance metadata/Instance metadata overview.md)
+      - [Querying instance metadata](Vital Container Instance/User guide/Instance metadata/Querying instance metadata.md)
+    - **Integrating with VCI**
+      - [Using VCI in Flannel clusters](Vital Container Instance/User guide/Integrating with VCI/Using VCI in Flannel clusters.md)
+      - [Using VCI in VPC-CNI clusters](Vital Container Instance/User guide/Integrating with VCI/Using VCI in VPC-CNI clusters.md)
+      - [Using VCIs by configuring vci-profile](Vital Container Instance/User guide/Integrating with VCI/Using VCIs by configuring vci-profile.md)
+    - **Logs**
+      - [Collecting VCI container logs via a sidecar](Vital Container Instance/User guide/Logs/Collecting VCI container logs via a sidecar.md)
+      - [Collecting VCI container logs via TLS](Vital Container Instance/User guide/Logs/Collecting VCI container logs via TLS.md)
+      - [Overview](Vital Container Instance/User guide/Logs/Overview.md)
+    - **Monitoring**
+      - [Configuring monitoring and alerting for VCI disk usage](Vital Container Instance/User guide/Monitoring/Configuring monitoring and alerting for VCI disk usage.md)
+      - [Monitoring VCI with VMP](Vital Container Instance/User guide/Monitoring/Monitoring VCI with VMP.md)
+      - [Obtaining VCI metrics through virtual nodes](Vital Container Instance/User guide/Monitoring/Obtaining VCI metrics through virtual nodes.md)
+      - [Using self-built Prometheus to monitor VCI](Vital Container Instance/User guide/Monitoring/Using self-built Prometheus to monitor VCI.md)
+      - [VCI GPU metrics](Vital Container Instance/User guide/Monitoring/VCI GPU metrics.md)
+    - **Networking**
+      - [Configuring IPv4/IPv6 dual-stack networks](Vital Container Instance/User guide/Networking/Configuring IPv4 - IPv6 dual-stack networks.md)
+      - [Creating instances by specifying security groups](Vital Container Instance/User guide/Networking/Creating instances by specifying security groups.md)
+      - [Creating instances by specifying subnets](Vital Container Instance/User guide/Networking/Creating instances by specifying subnets.md)
+      - [Using a NetworkPolicy to implement network access control for VCI Pods](Vital Container Instance/User guide/Networking/Using a NetworkPolicy to implement network access control for VCI Pods.md)
+    - **O&M**
+      - [Persistent storage of container core dump files](Vital Container Instance/User guide/O&M/Persistent storage of container core dump files.md)
+      - [VCI pod eviction and protection](Vital Container Instance/User guide/O&M/VCI pod eviction and protection.md)
+      - [VCI Pod fail-fast](Vital Container Instance/User guide/O&M/VCI Pod fail-fast.md)
+    - **Scheduling**
+      - [VCI inventory-aware scheduling](Vital Container Instance/User guide/Scheduling/VCI inventory-aware scheduling.md)
+    - **Storage**
+      - [Persistence of container rootfs data](Vital Container Instance/User guide/Storage/Persistence of container rootfs data.md)
+    - **VCI Agent Sandbox**
+      - [Data persistence](Vital Container Instance/User guide/VCI Agent Sandbox/Data persistence.md)
+      - [FAQ](Vital Container Instance/User guide/VCI Agent Sandbox/FAQ.md)
+      - [Feature introduction](Vital Container Instance/User guide/VCI Agent Sandbox/Feature introduction.md)
+      - [Image commit](Vital Container Instance/User guide/VCI Agent Sandbox/Image commit.md)
+      - [Installation guide](Vital Container Instance/User guide/VCI Agent Sandbox/Installation guide.md)
+      - [Lifecycle management](Vital Container Instance/User guide/VCI Agent Sandbox/Lifecycle management.md)
+      - [Monitoring](Vital Container Instance/User guide/VCI Agent Sandbox/Monitoring.md)
+      - [Network isolation policies](Vital Container Instance/User guide/VCI Agent Sandbox/Network isolation policies.md)
+      - **E2B-based management**
+        - [Getting started](Vital Container Instance/User guide/VCI Agent Sandbox/E2B-based management/Getting started.md)
+        - [Overview](Vital Container Instance/User guide/VCI Agent Sandbox/E2B-based management/Overview.md)
+        - [SDK reference](Vital Container Instance/User guide/VCI Agent Sandbox/E2B-based management/SDK reference.md)
+      - **Startup acceleration**
+        - [Overview of startup acceleration](Vital Container Instance/User guide/VCI Agent Sandbox/Startup acceleration/Overview of startup acceleration.md)
+        - [Warm pools](Vital Container Instance/User guide/VCI Agent Sandbox/Startup acceleration/Warm pools.md)
+      - **Upgrade guide**
+        - [Upgrading VCI Agent Sandbox](Vital Container Instance/User guide/VCI Agent Sandbox/Upgrade guide/Upgrading VCI Agent Sandbox.md)
+        - [Version change log](Vital Container Instance/User guide/VCI Agent Sandbox/Upgrade guide/Version change log.md)
+    - **VCI Image Cache**
+      - [Creating VCIs by using automatically created image caches](Vital Container Instance/User guide/VCI Image Cache/Creating VCIs by using automatically created image caches.md)
+      - [Creating VCIs by using manually created image caches](Vital Container Instance/User guide/VCI Image Cache/Creating VCIs by using manually created image caches.md)
+      - [Image cache overview](Vital Container Instance/User guide/VCI Image Cache/Image cache overview.md)
+      - [Managing VCI image caches by using CRD](Vital Container Instance/User guide/VCI Image Cache/Managing VCI image caches by using CRD.md)
+    - **Virtual node**
+      - **Self-managed - third-party cluster uses virtual node**
+        - [Creating virtual nodes](Vital Container Instance/User guide/Virtual node/Self-managed - third-party cluster uses virtual node/Creating virtual nodes.md)
+        - [Elastically using VCI for self-managed or cross-cloud Kubernetes clusters](Vital Container Instance/User guide/Virtual node/Self-managed - third-party cluster uses virtual node/Elastically using VCI for self-managed or cross-cloud Kubernetes clusters.md)
+      - **VKE cluster uses virtual node**
+        - [Managing virtual nodes](Vital Container Instance/User guide/Virtual node/VKE cluster uses virtual node/Managing virtual nodes.md)
+        - [Virtual Kubelet and virtual nodes](Vital Container Instance/User guide/Virtual node/VKE cluster uses virtual node/Virtual Kubelet and virtual nodes.md)
+  - **What's new**
+    - [Release notes](Vital Container Instance/What's new/Release notes.md)
+    - **History feature release notes**
+      - [Historical release notes (2024)](Vital Container Instance/What's new/History feature release notes/Historical release notes (2024).md)
+- **Vital Kubernetes Engine**
+  - [Billing](Vital Kubernetes Engine/Billing.md)
+  - **API reference**
+    - [API error code list](Vital Kubernetes Engine/API reference/API error code list.md)
+    - [API overview](Vital Kubernetes Engine/API reference/API overview.md)
+    - [API release notes](Vital Kubernetes Engine/API reference/API release notes.md)
+    - [Before you start](Vital Kubernetes Engine/API reference/Before you start.md)
+    - **Access policy management**
+      - [GrantPermission](Vital Kubernetes Engine/API reference/Access policy management/GrantPermission.md)
+      - [ListPermissions](Vital Kubernetes Engine/API reference/Access policy management/ListPermissions.md)
+      - [RevokePermission](Vital Kubernetes Engine/API reference/Access policy management/RevokePermission.md)
+    - **Add-on management**
+      - [CreateAddon](Vital Kubernetes Engine/API reference/Add-on management/CreateAddon.md)
+      - [DeleteAddon](Vital Kubernetes Engine/API reference/Add-on management/DeleteAddon.md)
+      - [ListAddons](Vital Kubernetes Engine/API reference/Add-on management/ListAddons.md)
+      - [ListSupportedAddons](Vital Kubernetes Engine/API reference/Add-on management/ListSupportedAddons.md)
+      - [UpdateAddonConfig](Vital Kubernetes Engine/API reference/Add-on management/UpdateAddonConfig.md)
+      - [UpdateAddonVersion](Vital Kubernetes Engine/API reference/Add-on management/UpdateAddonVersion.md)
+    - **Appendix**
+      - [Resource status description](Vital Kubernetes Engine/API reference/Appendix/Resource status description.md)
+    - **Call methods**
+      - [Public parameters](Vital Kubernetes Engine/API reference/Call methods/Public parameters.md)
+      - [Request structure](Vital Kubernetes Engine/API reference/Call methods/Request structure.md)
+      - [Response result](Vital Kubernetes Engine/API reference/Call methods/Response result.md)
+      - [Service Addresses](Vital Kubernetes Engine/API reference/Call methods/Service Addresses.md)
+      - [Signature mechanism](Vital Kubernetes Engine/API reference/Call methods/Signature mechanism.md)
+    - **Cloud native observability**
+      - [CreateKubernetesObservability](Vital Kubernetes Engine/API reference/Cloud native observability/CreateKubernetesObservability.md)
+      - [ListKubernetesObservability](Vital Kubernetes Engine/API reference/Cloud native observability/ListKubernetesObservability.md)
+      - [UpdateKubernetesObservabilityComponentConfigs](Vital Kubernetes Engine/API reference/Cloud native observability/UpdateKubernetesObservabilityComponentConfigs.md)
+    - **Cluster management**
+      - [CreateCluster](Vital Kubernetes Engine/API reference/Cluster management/CreateCluster.md)
+      - [CreateKubeconfig](Vital Kubernetes Engine/API reference/Cluster management/CreateKubeconfig.md)
+      - [DeleteCluster](Vital Kubernetes Engine/API reference/Cluster management/DeleteCluster.md)
+      - [DeleteKubeconfigs](Vital Kubernetes Engine/API reference/Cluster management/DeleteKubeconfigs.md)
+      - [ListClusters](Vital Kubernetes Engine/API reference/Cluster management/ListClusters.md)
+      - [ListKubeconfigs](Vital Kubernetes Engine/API reference/Cluster management/ListKubeconfigs.md)
+      - [ListSupportedResourceTypes](Vital Kubernetes Engine/API reference/Cluster management/ListSupportedResourceTypes.md)
+      - [UpdateClusterConfig](Vital Kubernetes Engine/API reference/Cluster management/UpdateClusterConfig.md)
+      - [UpdateClusterVersion](Vital Kubernetes Engine/API reference/Cluster management/UpdateClusterVersion.md)
+      - [UpgradeNodePools](Vital Kubernetes Engine/API reference/Cluster management/UpgradeNodePools.md)
+    - **Inspection and diagnosis**
+      - [BindingRemedyConfig](Vital Kubernetes Engine/API reference/Inspection and diagnosis/BindingRemedyConfig.md)
+      - [CreateDiagnosticTask](Vital Kubernetes Engine/API reference/Inspection and diagnosis/CreateDiagnosticTask.md)
+      - [CreateInspectionPolicy](Vital Kubernetes Engine/API reference/Inspection and diagnosis/CreateInspectionPolicy.md)
+      - [CreateRemedyRule](Vital Kubernetes Engine/API reference/Inspection and diagnosis/CreateRemedyRule.md)
+      - [DeleteInspectionPolicy](Vital Kubernetes Engine/API reference/Inspection and diagnosis/DeleteInspectionPolicy.md)
+      - [DeleteRemedyRule](Vital Kubernetes Engine/API reference/Inspection and diagnosis/DeleteRemedyRule.md)
+      - [ListDiagnosticTask](Vital Kubernetes Engine/API reference/Inspection and diagnosis/ListDiagnosticTask.md)
+      - [ListDiagnosticTaskResults](Vital Kubernetes Engine/API reference/Inspection and diagnosis/ListDiagnosticTaskResults.md)
+      - [ListInspectionPolicies](Vital Kubernetes Engine/API reference/Inspection and diagnosis/ListInspectionPolicies.md)
+      - [ListRemedyConfigs](Vital Kubernetes Engine/API reference/Inspection and diagnosis/ListRemedyConfigs.md)
+      - [UnbindingRemedyConfig](Vital Kubernetes Engine/API reference/Inspection and diagnosis/UnbindingRemedyConfig.md)
+      - [UpdateInspectionPolicy](Vital Kubernetes Engine/API reference/Inspection and diagnosis/UpdateInspectionPolicy.md)
+      - [UpdateRemedyRule](Vital Kubernetes Engine/API reference/Inspection and diagnosis/UpdateRemedyRule.md)
+    - **Instance images management**
+      - [ListInstanceTypeLabels](Vital Kubernetes Engine/API reference/Instance images management/ListInstanceTypeLabels.md)
+      - [ListSupportedAddInstanceTypes](Vital Kubernetes Engine/API reference/Instance images management/ListSupportedAddInstanceTypes.md)
+      - [ListSupportedImages](Vital Kubernetes Engine/API reference/Instance images management/ListSupportedImages.md)
+    - **Node management**
+      - [CreateNodes](Vital Kubernetes Engine/API reference/Node management/CreateNodes.md)
+      - [DeleteNodes](Vital Kubernetes Engine/API reference/Node management/DeleteNodes.md)
+      - [ListNodes](Vital Kubernetes Engine/API reference/Node management/ListNodes.md)
+    - **NodePool management**
+      - [CreateDefaultNodePool](Vital Kubernetes Engine/API reference/NodePool management/CreateDefaultNodePool.md)
+      - [CreateNodePool](Vital Kubernetes Engine/API reference/NodePool management/CreateNodePool.md)
+      - [CreateScalingPolicy](Vital Kubernetes Engine/API reference/NodePool management/CreateScalingPolicy.md)
+      - [DeleteNodePool](Vital Kubernetes Engine/API reference/NodePool management/DeleteNodePool.md)
+      - [DeleteScalingPolicies](Vital Kubernetes Engine/API reference/NodePool management/DeleteScalingPolicies.md)
+      - [ListNodePools](Vital Kubernetes Engine/API reference/NodePool management/ListNodePools.md)
+      - [ListScalingPolicies](Vital Kubernetes Engine/API reference/NodePool management/ListScalingPolicies.md)
+      - [ListSupportedGpuDriverVersions](Vital Kubernetes Engine/API reference/NodePool management/ListSupportedGpuDriverVersions.md)
+      - [ScaleNodePool](Vital Kubernetes Engine/API reference/NodePool management/ScaleNodePool.md)
+      - [UpdateNodePoolConfig](Vital Kubernetes Engine/API reference/NodePool management/UpdateNodePoolConfig.md)
+      - [UpdateNodePoolNodesConfig](Vital Kubernetes Engine/API reference/NodePool management/UpdateNodePoolNodesConfig.md)
+      - [UpdateScalingPolicy](Vital Kubernetes Engine/API reference/NodePool management/UpdateScalingPolicy.md)
+    - **Tag management**
+      - [ListTagsForResources](Vital Kubernetes Engine/API reference/Tag management/ListTagsForResources.md)
+      - [TagResources](Vital Kubernetes Engine/API reference/Tag management/TagResources.md)
+      - [UntagResources](Vital Kubernetes Engine/API reference/Tag management/UntagResources.md)
+    - **Task management**
+      - [ListTasks](Vital Kubernetes Engine/API reference/Task management/ListTasks.md)
+      - [UpdateTask](Vital Kubernetes Engine/API reference/Task management/UpdateTask.md)
+    - **Virtual nodes management**
+      - [CreateVirtualNode](Vital Kubernetes Engine/API reference/Virtual nodes management/CreateVirtualNode.md)
+      - [DeleteVirtualNode](Vital Kubernetes Engine/API reference/Virtual nodes management/DeleteVirtualNode.md)
+      - [ListVirtualNodes](Vital Kubernetes Engine/API reference/Virtual nodes management/ListVirtualNodes.md)
+    - **Vital Container Instance**
+      - **Image Cache**
+        - [CreateImageCache](Vital Kubernetes Engine/API reference/Vital Container Instance/Image Cache/CreateImageCache.md)
+        - [DeleteImageCache](Vital Kubernetes Engine/API reference/Vital Container Instance/Image Cache/DeleteImageCache.md)
+        - [ListImageCaches](Vital Kubernetes Engine/API reference/Vital Container Instance/Image Cache/ListImageCaches.md)
+        - [UpdateImageCache](Vital Kubernetes Engine/API reference/Vital Container Instance/Image Cache/UpdateImageCache.md)
+        - [UpdateImageCacheRetentionDays](Vital Kubernetes Engine/API reference/Vital Container Instance/Image Cache/UpdateImageCacheRetentionDays.md)
+  - **Best practices**
+    - **Authorization**
+      - [Access control based on IAM for the VKE console](Vital Kubernetes Engine/Best practices/Authorization/Access control based on IAM for the VKE console.md)
+      - [IAM authorization best practices](Vital Kubernetes Engine/Best practices/Authorization/IAM authorization best practices.md)
+      - [Using the new RBAC authorization system of VKE](Vital Kubernetes Engine/Best practices/Authorization/Using the new RBAC authorization system of VKE.md)
+    - **Autoscaling**
+      - [Cluster autoscaler best practices](Vital Kubernetes Engine/Best practices/Autoscaling/Cluster autoscaler best practices.md)
+      - [HPA best practices](Vital Kubernetes Engine/Best practices/Autoscaling/HPA best practices.md)
+    - **Clusters**
+      - [Accessing the API server over IPv6](Vital Kubernetes Engine/Best practices/Clusters/Accessing the API server over IPv6.md)
+      - [Best practices of cluster upgrade ](Vital Kubernetes Engine/Best practices/Clusters/Best practices of cluster upgrade.md)
+      - [Creating IPv4/IPv6 dual-stack clusters](Vital Kubernetes Engine/Best practices/Clusters/Creating IPv4 - IPv6 dual-stack clusters.md)
+      - [Enabling API Server private domain access for existing clusters](Vital Kubernetes Engine/Best practices/Clusters/Enabling API Server private domain access for existing clusters.md)
+      - [Kubernetes best practices for developers](Vital Kubernetes Engine/Best practices/Clusters/Kubernetes best practices for developers.md)
+      - [Using a shared VPC to create clusters](Vital Kubernetes Engine/Best practices/Clusters/Using a shared VPC to create clusters.md)
+      - [Using KubeCm to manage the kubeconfig files of multiple clusters](Vital Kubernetes Engine/Best practices/Clusters/Using KubeCm to manage the kubeconfig files of multiple clusters.md)
+    - **Networking**
+      - [Best practices for observability of custom Nginx Ingress controllers](Vital Kubernetes Engine/Best practices/Networking/Best practices for observability of custom Nginx Ingress controllers.md)
+      - [Container networking](Vital Kubernetes Engine/Best practices/Networking/Container networking.md)
+      - [Deploying and running DPDK applications](Vital Kubernetes Engine/Best practices/Networking/Deploying and running DPDK applications.md)
+      - [Expose services from applications in the cluster externally](Vital Kubernetes Engine/Best practices/Networking/Expose services from applications in the cluster externally.md)
+      - [Implementing canary and blue-green deployments using an Nginx Ingress](Vital Kubernetes Engine/Best practices/Networking/Implementing canary and blue-green deployments using an Nginx Ingress.md)
+      - [Inter-application access within the cluster](Vital Kubernetes Engine/Best practices/Networking/Inter-application access within the cluster.md)
+      - [Nginx Ingress best practices](Vital Kubernetes Engine/Best practices/Networking/Nginx Ingress best practices.md)
+      - [Obtaining client IPs by using Ingresses](Vital Kubernetes Engine/Best practices/Networking/Obtaining client IPs by using Ingresses.md)
+      - [Optimizing container kernel network parameters](Vital Kubernetes Engine/Best practices/Networking/Optimizing container kernel network parameters.md)
+      - [Specifying node-level Pod networking parameters](Vital Kubernetes Engine/Best practices/Networking/Specifying node-level Pod networking parameters.md)
+    - **Nodes and node pools**
+      - [Accelerating node scale-out by using data volume snapshots](Vital Kubernetes Engine/Best practices/Nodes and node pools/Accelerating node scale-out by using data volume snapshots.md)
+      - [Best practices for ECS instance selection](Vital Kubernetes Engine/Best practices/Nodes and node pools/Best practices for ECS instance selection.md)
+      - [Configuring custom kubelet parameters](Vital Kubernetes Engine/Best practices/Nodes and node pools/Configuring custom kubelet parameters.md)
+      - [Enhancing container resource visibility](Vital Kubernetes Engine/Best practices/Nodes and node pools/Enhancing container resource visibility.md)
+      - [Implementing custom node scale-in behavior with lifecycle hooks](Vital Kubernetes Engine/Best practices/Nodes and node pools/Implementing custom node scale-in behavior with lifecycle hooks.md)
+      - [Properly using runtimes and operating systems](Vital Kubernetes Engine/Best practices/Nodes and node pools/Properly using runtimes and operating systems.md)
+    - **Observability**
+      - [Best practices for container scenario observability](Vital Kubernetes Engine/Best practices/Observability/Best practices for container scenario observability.md)
+      - [Best practices for switching alert configuration from Cloud Monitor to VMP](Vital Kubernetes Engine/Best practices/Observability/Best practices for switching alert configuration from Cloud Monitor to VMP.md)
+      - [Building cluster observability dashboards by using self-managed Grafana](Vital Kubernetes Engine/Best practices/Observability/Building cluster observability dashboards by using self-managed Grafana.md)
+      - [Configuring service discovery with a PodMonitor](Vital Kubernetes Engine/Best practices/Observability/Configuring service discovery with a PodMonitor.md)
+      - [Configuring service discovery with a ServiceMonitor](Vital Kubernetes Engine/Best practices/Observability/Configuring service discovery with a ServiceMonitor.md)
+      - [Monitoring application instances deployed in clusters](Vital Kubernetes Engine/Best practices/Observability/Monitoring application instances deployed in clusters.md)
+      - [Monitoring Go applications in clusters](Vital Kubernetes Engine/Best practices/Observability/Monitoring Go applications in clusters.md)
+    - **Scheduling**
+      - [Best practices for CPU Burst capabilities](Vital Kubernetes Engine/Best practices/Scheduling/Best practices for CPU Burst capabilities.md)
+      - [Injecting node labels or annotations into pods](Vital Kubernetes Engine/Best practices/Scheduling/Injecting node labels or annotations into pods.md)
+    - **Security**
+      - [Best practices for security group configuration](Vital Kubernetes Engine/Best practices/Security/Best practices for security group configuration.md)
+      - [Cloud-native container security solution](Vital Kubernetes Engine/Best practices/Security/Cloud-native container security solution.md)
+      - [Safely taking nodes offline](Vital Kubernetes Engine/Best practices/Security/Safely taking nodes offline.md)
+    - **Solutions**
+      - [Cloud-based architecture solution for large-scale concurrent business systems](Vital Kubernetes Engine/Best practices/Solutions/Cloud-based architecture solution for large-scale concurrent business systems.md)
+      - [Optimizing costs of infrastructure resources in cloud-native scenarios](Vital Kubernetes Engine/Best practices/Solutions/Optimizing costs of infrastructure resources in cloud-native scenarios.md)
+      - [Workload migration solutions for disaster recovery from node failures](Vital Kubernetes Engine/Best practices/Solutions/Workload migration solutions for disaster recovery from node failures.md)
+    - **Storage**
+      - [Best practices for cloud disk persistent storage](Vital Kubernetes Engine/Best practices/Storage/Best practices for cloud disk persistent storage.md)
+      - [Best practices for FileNAS persistent storage](Vital Kubernetes Engine/Best practices/Storage/Best practices for FileNAS persistent storage.md)
+      - [Best practices for storage selection](Vital Kubernetes Engine/Best practices/Storage/Best practices for storage selection.md)
+      - [Container storage](Vital Kubernetes Engine/Best practices/Storage/Container storage.md)
+      - [Recommended configurations for storage deployment across multiple availability zones](Vital Kubernetes Engine/Best practices/Storage/Recommended configurations for storage deployment across multiple availability zones.md)
+      - [Using FSXSet to implement differentiated configurations for clients](Vital Kubernetes Engine/Best practices/Storage/Using FSXSet to implement differentiated configurations for clients.md)
+      - [Using FSXSet to implement on-demand client creation](Vital Kubernetes Engine/Best practices/Storage/Using FSXSet to implement on-demand client creation.md)
+      - [Using FSXSet to implement smooth client upgrades](Vital Kubernetes Engine/Best practices/Storage/Using FSXSet to implement smooth client upgrades.md)
+  - **Development guide**
+    - **Using Vital Kubernetes Engine through Terraform**
+      - [Creating VKE clusters without ECS nodes by using Terraform](Vital Kubernetes Engine/Development guide/Using Vital Kubernetes Engine through Terraform/Creating VKE clusters without ECS nodes by using Terraform.md)
+      - [Managing clusters created by Terraform](Vital Kubernetes Engine/Development guide/Using Vital Kubernetes Engine through Terraform/Managing clusters created by Terraform.md)
+      - [Managing existing clusters by using Terraform](Vital Kubernetes Engine/Development guide/Using Vital Kubernetes Engine through Terraform/Managing existing clusters by using Terraform.md)
+      - [Managing existing nodes in a custom node pool by using Terraform](Vital Kubernetes Engine/Development guide/Using Vital Kubernetes Engine through Terraform/Managing existing nodes in a custom node pool by using Terraform.md)
+      - [Managing existing nodes in the default node pool by using Terraform](Vital Kubernetes Engine/Development guide/Using Vital Kubernetes Engine through Terraform/Managing existing nodes in the default node pool by using Terraform.md)
+      - [Managing node pools created via Terraform](Vital Kubernetes Engine/Development guide/Using Vital Kubernetes Engine through Terraform/Managing node pools created via Terraform.md)
+      - [Overview](Vital Kubernetes Engine/Development guide/Using Vital Kubernetes Engine through Terraform/Overview.md)
+  - **FAQs**
+    - **Add-on FAQs**
+      - [How do I determine if a node-local-dns add-on is used?](Vital Kubernetes Engine/FAQs/Add-on FAQs/How do I determine if a node-local-dns add-on is used?.md)
+      - [How do I handle add-on installation failures caused by resource name conflicts?](Vital Kubernetes Engine/FAQs/Add-on FAQs/How do I handle add-on installation failures caused by resource name conflicts?.md)
+      - [How do I handle add-on scheduling failures?](Vital Kubernetes Engine/FAQs/Add-on FAQs/How do I handle add-on scheduling failures?.md)
+      - [How do I handle add-on startup failures?](Vital Kubernetes Engine/FAQs/Add-on FAQs/How do I handle add-on startup failures?.md)
+      - [How do I handle add-on uninstallation failures?](Vital Kubernetes Engine/FAQs/Add-on FAQs/How do I handle add-on uninstallation failures?.md)
+      - [How do I handle add-ons with the error message "Image pull failed"?](Vital Kubernetes Engine/FAQs/Add-on FAQs/How do I handle add-ons with the error message "Image pull failed"?.md)
+      - [How do I handle the issue where an add-on remains in the Installing, Updating, or Uninstalling state for a long period of time?](Vital Kubernetes Engine/FAQs/Add-on FAQs/How do I handle the issue where an add-on remains in the Installing, Updating, or Uninstal.md)
+      - [How do I restore system-required add-ons that are in an abnormal status?](Vital Kubernetes Engine/FAQs/Add-on FAQs/How do I restore system-required add-ons that are in an abnormal status?.md)
+    - **Authorization FAQs**
+      - [How do I fix the "AccessDenied,Code:403" error when performing operations on cluster resources?](Vital Kubernetes Engine/FAQs/Authorization FAQs/How do I fix the "AccessDenied,Code:403" error when performing operations on cluster resou.md)
+      - [How do I grant cluster-level resource permissions to IAM users?](Vital Kubernetes Engine/FAQs/Authorization FAQs/How do I grant cluster-level resource permissions to IAM users?.md)
+      - [Why does an IAM user fail to access an ALB Ingress?](Vital Kubernetes Engine/FAQs/Authorization FAQs/Why does an IAM user fail to access an ALB Ingress?.md)
+      - [Why is an IAM user with cluster administrator permissions unable to create YAML resources?](Vital Kubernetes Engine/FAQs/Authorization FAQs/Why is an IAM user with cluster administrator permissions unable to create YAML resources?.md)
+    - **Autoscale FAQ**
+      - [Why are excess pods added during HPA rolling updates?](Vital Kubernetes Engine/FAQs/Autoscale FAQ/Why are excess pods added during HPA rolling updates?.md)
+    - **Cluster FAQs**
+      - **Cluster management**
+        - [How do I modify the specification of the CLB instance associated with the API server during cluster creation?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster management/How do I modify the specification of the CLB instance associated with the API server durin.md)
+        - [How do I obtain node information of a cluster?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster management/How do I obtain node information of a cluster?.md)
+        - [How do I use a cluster to create a CP private resource pool?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster management/How do I use a cluster to create a CP private resource pool?.md)
+        - [How do I view the Kubernetes version of a cluster?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster management/How do I view the Kubernetes version of a cluster?.md)
+        - [What are the purposes of the CLB instances that are automatically created during cluster creation?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster management/What are the purposes of the CLB instances that are automatically created during cluster c.md)
+        - [Why cannot I delete a cluster that fails to be created?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster management/Why cannot I delete a cluster that fails to be created?.md)
+      - **Cluster network**
+        - [How do I manually enable Public NAT for Internet endpoint for a cluster?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster network/How do I manually enable Public NAT for Internet endpoint for a cluster?.md)
+        - [How do I obtain the EIP of a cluster?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster network/How do I obtain the EIP of a cluster?.md)
+        - [How do I obtain the EIP of public traffic egress for a cluster?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster network/How do I obtain the EIP of public traffic egress for a cluster?.md)
+        - [Which types of network models do VKE clusters support?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster network/Which types of network models do VKE clusters support?.md)
+      - **Cluster upgrade**
+        - [How do I resolve the "conntrack full" error?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster upgrade/How do I resolve the "conntrack full" error?.md)
+        - [How do I upgrade data plane nodes?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster upgrade/How do I upgrade data plane nodes?.md)
+        - [How long does it take to upgrade a cluster?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster upgrade/How long does it take to upgrade a cluster?.md)
+        - [Will business pods that run as expected restart during a cluster upgrade?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster upgrade/Will business pods that run as expected restart during a cluster upgrade?.md)
+        - [Will business traffic be interrupted during the cluster control plane upgrade?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster upgrade/Will business traffic be interrupted during the cluster control plane upgrade?.md)
+        - [Will custom kubelet parameters on a node be overwritten during an upgrade?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster upgrade/Will custom kubelet parameters on a node be overwritten during an upgrade?.md)
+        - [Will network add-on upgrades before cluster upgrades cause traffic interruption?](Vital Kubernetes Engine/FAQs/Cluster FAQs/Cluster upgrade/Will network add-on upgrades before cluster upgrades cause traffic interruption?.md)
+    - **General FAQs**
+      - [FAQ about using the command line for Base64 encoding](Vital Kubernetes Engine/FAQs/General FAQs/FAQ about using the command line for Base64 encoding.md)
+      - [How do I apply to use a beta feature?](Vital Kubernetes Engine/FAQs/General FAQs/How do I apply to use a beta feature?.md)
+      - [How do I set an allowlist when VKE accesses an RDS for MySQL database?](Vital Kubernetes Engine/FAQs/General FAQs/How do I set an allowlist when VKE accesses an RDS for MySQL database?.md)
+      - [What container runtime does VKE currently support?](Vital Kubernetes Engine/FAQs/General FAQs/What container runtime does VKE currently support?.md)
+      - [What is the general process for running applications by using VKE?](Vital Kubernetes Engine/FAQs/General FAQs/What is the general process for running applications by using VKE?.md)
+    - **Heterogeneous computing FAQs**
+      - [How do I deal with the error in an RDMA-enabled environment?](Vital Kubernetes Engine/FAQs/Heterogeneous computing FAQs/How do I deal with the error in an RDMA-enabled environment?.md)
+      - [Why does the process SM utilization not match the computing power proportion configured for the mGPU?](Vital Kubernetes Engine/FAQs/Heterogeneous computing FAQs/Why does the process SM utilization not match the computing power proportion configured fo.md)
+    - **Image FAQ**
+      - [How do I disable the GSP configuration in a public image?](Vital Kubernetes Engine/FAQs/Image FAQ/How do I disable the GSP configuration in a public image?.md)
+    - **Node and Node pool FAQs**
+      - [How do I clear residual data from the data volume of an existing node?](Vital Kubernetes Engine/FAQs/Node and Node pool FAQs/How do I clear residual data from the data volume of an existing node?.md)
+      - [How do I handle RDMA network connectivity issues for nodes with multiple A100/A800 GPUs?](Vital Kubernetes Engine/FAQs/Node and Node pool FAQs/How do I handle RDMA network connectivity issues for nodes with multiple A100 - A800 GPUs?.md)
+      - [How do I view node resource usage?](Vital Kubernetes Engine/FAQs/Node and Node pool FAQs/How do I view node resource usage?.md)
+      - [How do I view the allocatable resources of a node?](Vital Kubernetes Engine/FAQs/Node and Node pool FAQs/How do I view the allocatable resources of a node?.md)
+      - [How do I view the containerd version of a node?](Vital Kubernetes Engine/FAQs/Node and Node pool FAQs/How do I view the containerd version of a node?.md)
+      - [How does the expected number of nodes change?](Vital Kubernetes Engine/FAQs/Node and Node pool FAQs/How does the expected number of nodes change?.md)
+      - [What is the default node pool?](Vital Kubernetes Engine/FAQs/Node and Node pool FAQs/What is the default node pool?.md)
+      - [Why cannot nodes automatically scale in?](Vital Kubernetes Engine/FAQs/Node and Node pool FAQs/Why cannot nodes automatically scale in?.md)
+      - [Why do node configurations not change after the corresponding ECS instance configurations are modified in the ECS console?](Vital Kubernetes Engine/FAQs/Node and Node pool FAQs/Why do node configurations not change after the corresponding ECS instance configurations.md)
+    - **Observability FAQs**
+      - [Why am I unable to query the kube_namespace_label metric?](Vital Kubernetes Engine/FAQs/Observability FAQs/Why am I unable to query the kube_namespace_label metric?.md)
+    - **Quota FAQs**
+      - [How do I increase quotas?](Vital Kubernetes Engine/FAQs/Quota FAQs/How do I increase quotas?.md)
+    - **Registered cluster FAQ**
+      - [How do I handle the disconnection of an agent-registered cluster caused by a missing agent?](Vital Kubernetes Engine/FAQs/Registered cluster FAQ/How do I handle the disconnection of an agent-registered cluster caused by a missing agent.md)
+    - **Scheduling FAQs**
+      - [CPU QoS scheduling FAQs](Vital Kubernetes Engine/FAQs/Scheduling FAQs/CPU QoS scheduling FAQs.md)
+      - [How do I handle the impact of the katalyst add-on upgrade?](Vital Kubernetes Engine/FAQs/Scheduling FAQs/How do I handle the impact of the katalyst add-on upgrade?.md)
+    - **Service and Ingress FAQs**
+      - [After a workload is unbound from a Service, why is it still accessible through the Service address?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/After a workload is unbound from a Service, why is it still accessible through the Service.md)
+      - [How do I  fix the problem of not retaining source IP addresses in Ingress pods?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I fix the problem of not retaining source IP addresses in Ingress pods?.md)
+      - [How do I create multiple services at a time?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I create multiple services at a time?.md)
+      - [How do I fix a "failed calling webhook" error when creating an Ingress?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I fix a "failed calling webhook" error when creating an Ingress?.md)
+      - [How do I fix a cross-origin Ingress access failure?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I fix a cross-origin Ingress access failure?.md)
+      - [How do I fix an Nginx Ingress add-on installation failure?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I fix an Nginx Ingress add-on installation failure?.md)
+      - [How do I fix common HTTP error codes?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I fix common HTTP error codes?.md)
+      - [How do I fix Ingress Nginx Controller startup errors caused by a large number of ConfigMaps?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I fix Ingress Nginx Controller startup errors caused by a large number of ConfigMap.md)
+      - [How do I fix the "net::ERR_HTTP2_SERVER_REFUSED_STREAM" error returned from a resource access request?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I fix the "net::ERR_HTTP2_SERVER_REFUSED_STREAM" error returned from a resource acc.md)
+      - [How do I fix the "SSL_ERROR_RX_RECORD_TOO_LONG" error for HTTPS access?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I fix the "SSL_ERROR_RX_RECORD_TOO_LONG" error for HTTPS access?.md)
+      - [How do I fix the 404 error reported when I access the resources via an Ingress with the rewrite-target setting?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I fix the 404 error reported when I access the resources via an Ingress with the re.md)
+      - [How do I handle a dropped persistent connection?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I handle a dropped persistent connection?.md)
+      - [How do I handle an incorrect canary Ingress or its impact on other traffic?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I handle an incorrect canary Ingress or its impact on other traffic?.md)
+      - [How do I handle missing HTTP headers in requests?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I handle missing HTTP headers in requests?.md)
+      - [How do I handle unresponsive Ingress requests?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I handle unresponsive Ingress requests?.md)
+      - [How do I resolve issues where configuration changes fail to take effect, either fully or partially?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I resolve issues where configuration changes fail to take effect, either fully or p.md)
+      - [How do I resolve the issue where the Ingress Controller itself is inaccessible?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I resolve the issue where the Ingress Controller itself is inaccessible?.md)
+      - [How do I troubleshoot an Ingress that is not working as expected?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/How do I troubleshoot an Ingress that is not working as expected?.md)
+      - [What are the differences between session persistence in LoadBalancer Services and session persistence in CLB Listeners?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/What are the differences between session persistence in LoadBalancer Services and session.md)
+      - [What should I do if TCP or UDP services are inaccessible via the Ingress?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/What should I do if TCP or UDP services are inaccessible via the Ingress?.md)
+      - [Why am I unable to connect to a back-end HTTPS service?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/Why am I unable to connect to a back-end HTTPS service?.md)
+      - [Why am I unable to connect to the gRPC service exposed via an Ingress?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/Why am I unable to connect to the gRPC service exposed via an Ingress?.md)
+      - [Why do sessions time out and disconnect during large file downloads that take over 1 minute when a service is exposed externally via ingress-nginx?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/Why do sessions time out and disconnect during large file downloads that take over 1 minut.md)
+      - [Why does a "loadbalancer for service not found" event occur when I configure Layer 4 load balancing using Annotation?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/Why does a "loadbalancer for service not found" event occur when I configure Layer 4 load.md)
+      - [Why does a canary Ingress fail to take effect?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/Why does a canary Ingress fail to take effect?.md)
+      - [Why does the "InvalidServerGroupListener.InUse" event occur when I delete a Service?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/Why does the "InvalidServerGroupListener.InUse" event occur when I delete a Service?.md)
+      - [Why does the "lb is provisioning" event occur when I configure a Layer 4 LoadBalancer via Annotation?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/Why does the "lb is provisioning" event occur when I configure a Layer 4 LoadBalancer via.md)
+      - [Why does Webhook validation report a "Service not found" error during Ingress creation?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/Why does Webhook validation report a "Service not found" error during Ingress creation?.md)
+      - [Why is the default or old certificate used for access requests after the cluster has a TLS certificate added or modified?](Vital Kubernetes Engine/FAQs/Service and Ingress FAQs/Why is the default or old certificate used for access requests after the cluster has a TLS.md)
+    - **Storage FAQs**
+      - [How do I fix issues where a Kubernetes cluster fails to mount PV or PVC cloud disks with existing data?](Vital Kubernetes Engine/FAQs/Storage FAQs/How do I fix issues where a Kubernetes cluster fails to mount PV or PVC cloud disks with e.md)
+      - [How do I modify the TOS mount configuration to grant others read and write access to TOS PersistentVolumes?](Vital Kubernetes Engine/FAQs/Storage FAQs/How do I modify the TOS mount configuration to grant others read and write access to TOS P.md)
+      - [How do I provision cloud disk PVs when a cluster contains nodes of various ECS instance specifications?](Vital Kubernetes Engine/FAQs/Storage FAQs/How do I provision cloud disk PVs when a cluster contains nodes of various ECS instance sp.md)
+      - [How do I resolve container creation errors when mounting the root directory of a TOS bucket to a PV?](Vital Kubernetes Engine/FAQs/Storage FAQs/How do I resolve container creation errors when mounting the root directory of a TOS bucke.md)
+    - **Workload FAQs**
+      - [How do I collect container initialization logs?](Vital Kubernetes Engine/FAQs/Workload FAQs/How do I collect container initialization logs?.md)
+      - [How do I fix workload deployment failures with the "0/16 nodes are available" error?](Vital Kubernetes Engine/FAQs/Workload FAQs/How do I fix workload deployment failures with the "0 - 16 nodes are available" error?.md)
+      - [How do I update the CoreDNS replica count and resource quotas?](Vital Kubernetes Engine/FAQs/Workload FAQs/How do I update the CoreDNS replica count and resource quotas?.md)
+      - [How to disable the IPv6 protocol stack in a pod](Vital Kubernetes Engine/FAQs/Workload FAQs/How to disable the IPv6 protocol stack in a pod.md)
+      - [Why is the pod instance always in the "ContainerCreating" state after the workload is created?](Vital Kubernetes Engine/FAQs/Workload FAQs/Why is the pod instance always in the "ContainerCreating" state after the workload is crea.md)
+      - **Pod troubleshooting**
+        - [How do I fix a failure in scheduling a pod in the Pending state?](Vital Kubernetes Engine/FAQs/Workload FAQs/Pod troubleshooting/How do I fix a failure in scheduling a pod in the Pending state?.md)
+        - [How do I fix a pod in the CrashLoopBackOff state?](Vital Kubernetes Engine/FAQs/Workload FAQs/Pod troubleshooting/How do I fix a pod in the CrashLoopBackOff state?.md)
+        - [How do I fix a pod that remains in the ImagePullBackOff state?](Vital Kubernetes Engine/FAQs/Workload FAQs/Pod troubleshooting/How do I fix a pod that remains in the ImagePullBackOff state?.md)
+        - [How do I fix pod health check failures?](Vital Kubernetes Engine/FAQs/Workload FAQs/Pod troubleshooting/How do I fix pod health check failures?.md)
+  - **Getting started**
+    - [Guide for beginners](Vital Kubernetes Engine/Getting started/Guide for beginners.md)
+    - [Preparations](Vital Kubernetes Engine/Getting started/Preparations.md)
+    - [Quickly deploying applications by using application templates](Vital Kubernetes Engine/Getting started/Quickly deploying applications by using application templates.md)
+    - [Using VKE via kubectl](Vital Kubernetes Engine/Getting started/Using VKE via kubectl.md)
+    - [Using VKE via the console](Vital Kubernetes Engine/Getting started/Using VKE via the console.md)
+  - **Overview**
+    - [Application scenarios](Vital Kubernetes Engine/Overview/Application scenarios.md)
+    - [Benefits](Vital Kubernetes Engine/Overview/Benefits.md)
+    - [CIS Kubernetes benchmark compliance status](Vital Kubernetes Engine/Overview/CIS Kubernetes benchmark compliance status.md)
+    - [Dependencies between VKE and other cloud services](Vital Kubernetes Engine/Overview/Dependencies between VKE and other cloud services.md)
+    - [Features](Vital Kubernetes Engine/Overview/Features.md)
+    - [Glossary](Vital Kubernetes Engine/Overview/Glossary.md)
+    - [High-risk operations and recovery solutions](Vital Kubernetes Engine/Overview/High-risk operations and recovery solutions.md)
+    - [Limits](Vital Kubernetes Engine/Overview/Limits.md)
+    - [Regions and AZs](Vital Kubernetes Engine/Overview/Regions and AZs.md)
+    - [What is Volcengine Kubernetes Engine](Vital Kubernetes Engine/Overview/What is Volcengine Kubernetes Engine.md)
+  - **Security and compliance**
+    - [Shared security responsibility for VKE](Vital Kubernetes Engine/Security and compliance/Shared security responsibility for VKE.md)
+  - **User guide**
+    - [Guide to common console operations](Vital Kubernetes Engine/User guide/Guide to common console operations.md)
+    - [Image cache](Vital Kubernetes Engine/User guide/Image cache.md)
+    - [Project management](Vital Kubernetes Engine/User guide/Project management.md)
+    - [Usage notes](Vital Kubernetes Engine/User guide/Usage notes.md)
+    - **Add-on management**
+      - [Add-on overview](Vital Kubernetes Engine/User guide/Add-on management/Add-on overview.md)
+      - [Description of IP addresses assigned to add-ons on nodes](Vital Kubernetes Engine/User guide/Add-on management/Description of IP addresses assigned to add-ons on nodes.md)
+      - [Uninstalling add-ons](Vital Kubernetes Engine/User guide/Add-on management/Uninstalling add-ons.md)
+      - **Core add-ons**
+        - [cloud-controller-manager](Vital Kubernetes Engine/User guide/Add-on management/Core add-ons/cloud-controller-manager.md)
+      - **DNS add-ons**
+        - [core-dns](Vital Kubernetes Engine/User guide/Add-on management/DNS add-ons/core-dns.md)
+        - [node-local-dns](Vital Kubernetes Engine/User guide/Add-on management/DNS add-ons/node-local-dns.md)
+      - **GPU add-ons**
+        - [mgpu](Vital Kubernetes Engine/User guide/Add-on management/GPU add-ons/mgpu.md)
+        - [nvidia-device-plugin](Vital Kubernetes Engine/User guide/Add-on management/GPU add-ons/nvidia-device-plugin.md)
+      - **Image add-ons**
+        - [cr-credential-controller](Vital Kubernetes Engine/User guide/Add-on management/Image add-ons/cr-credential-controller.md)
+        - [image-accelerator](Vital Kubernetes Engine/User guide/Add-on management/Image add-ons/image-accelerator.md)
+        - [p2p-accelerator](Vital Kubernetes Engine/User guide/Add-on management/Image add-ons/p2p-accelerator.md)
+      - **Monitoring add-ons**
+        - [apmplus-opentelemetry-collector](Vital Kubernetes Engine/User guide/Add-on management/Monitoring add-ons/apmplus-opentelemetry-collector.md)
+        - [apmplus-server-agent](Vital Kubernetes Engine/User guide/Add-on management/Monitoring add-ons/apmplus-server-agent.md)
+        - [event-collector](Vital Kubernetes Engine/User guide/Add-on management/Monitoring add-ons/event-collector.md)
+        - [log-collector](Vital Kubernetes Engine/User guide/Add-on management/Monitoring add-ons/log-collector.md)
+        - [metrics-server](Vital Kubernetes Engine/User guide/Add-on management/Monitoring add-ons/metrics-server.md)
+        - [node-problem-detector](Vital Kubernetes Engine/User guide/Add-on management/Monitoring add-ons/node-problem-detector.md)
+        - [prometheus-adapter](Vital Kubernetes Engine/User guide/Add-on management/Monitoring add-ons/prometheus-adapter.md)
+        - [prometheus-agent](Vital Kubernetes Engine/User guide/Add-on management/Monitoring add-ons/prometheus-agent.md)
+      - **Network add-ons**
+        - [alb-ingress-controller](Vital Kubernetes Engine/User guide/Add-on management/Network add-ons/alb-ingress-controller.md)
+        - [apig-controller](Vital Kubernetes Engine/User guide/Add-on management/Network add-ons/apig-controller.md)
+        - [flannel](Vital Kubernetes Engine/User guide/Add-on management/Network add-ons/flannel.md)
+        - [ingress-nginx](Vital Kubernetes Engine/User guide/Add-on management/Network add-ons/ingress-nginx.md)
+        - [rdma-device-plugin](Vital Kubernetes Engine/User guide/Add-on management/Network add-ons/rdma-device-plugin.md)
+        - [vpc-cni](Vital Kubernetes Engine/User guide/Add-on management/Network add-ons/vpc-cni.md)
+        - [vpc-cni-controlplane](Vital Kubernetes Engine/User guide/Add-on management/Network add-ons/vpc-cni-controlplane.md)
+      - **Sandbox add-on**
+        - [agent-sandbox](Vital Kubernetes Engine/User guide/Add-on management/Sandbox add-on/agent-sandbox.md)
+      - **Scheduling add-ons**
+        - [aibrix](Vital Kubernetes Engine/User guide/Add-on management/Scheduling add-ons/aibrix.md)
+        - [cluster-autoscaler](Vital Kubernetes Engine/User guide/Add-on management/Scheduling add-ons/cluster-autoscaler.md)
+        - [cronhpa](Vital Kubernetes Engine/User guide/Add-on management/Scheduling add-ons/cronhpa.md)
+        - [karpenter](Vital Kubernetes Engine/User guide/Add-on management/Scheduling add-ons/karpenter.md)
+        - [katalyst](Vital Kubernetes Engine/User guide/Add-on management/Scheduling add-ons/katalyst.md)
+        - [keda](Vital Kubernetes Engine/User guide/Add-on management/Scheduling add-ons/keda.md)
+        - [scheduler-plugin](Vital Kubernetes Engine/User guide/Add-on management/Scheduling add-ons/scheduler-plugin.md)
+        - [vci-virtual-kubelet](Vital Kubernetes Engine/User guide/Add-on management/Scheduling add-ons/vci-virtual-kubelet.md)
+      - **Security add-ons**
+        - [application-inspector](Vital Kubernetes Engine/User guide/Add-on management/Security add-ons/application-inspector.md)
+        - [migrate-plugin](Vital Kubernetes Engine/User guide/Add-on management/Security add-ons/migrate-plugin.md)
+        - [pod-identity-webhook](Vital Kubernetes Engine/User guide/Add-on management/Security add-ons/pod-identity-webhook.md)
+        - [security-scan](Vital Kubernetes Engine/User guide/Add-on management/Security add-ons/security-scan.md)
+        - [varmor](Vital Kubernetes Engine/User guide/Add-on management/Security add-ons/varmor.md)
+      - **Storage add-ons**
+        - [csi-cloudfs](Vital Kubernetes Engine/User guide/Add-on management/Storage add-ons/csi-cloudfs.md)
+        - [csi-ebs](Vital Kubernetes Engine/User guide/Add-on management/Storage add-ons/csi-ebs.md)
+        - [csi-fsx](Vital Kubernetes Engine/User guide/Add-on management/Storage add-ons/csi-fsx.md)
+        - [csi-local](Vital Kubernetes Engine/User guide/Add-on management/Storage add-ons/csi-local.md)
+        - [csi-nas](Vital Kubernetes Engine/User guide/Add-on management/Storage add-ons/csi-nas.md)
+        - [csi-tos](Vital Kubernetes Engine/User guide/Add-on management/Storage add-ons/csi-tos.md)
+        - [csi-vepfs](Vital Kubernetes Engine/User guide/Add-on management/Storage add-ons/csi-vepfs.md)
+        - [fsxset-controller](Vital Kubernetes Engine/User guide/Add-on management/Storage add-ons/fsxset-controller.md)
+        - [snapshot-controller](Vital Kubernetes Engine/User guide/Add-on management/Storage add-ons/snapshot-controller.md)
+      - **Upgrading add-ons**
+        - [Add-on upgrade check](Vital Kubernetes Engine/User guide/Add-on management/Upgrading add-ons/Add-on upgrade check.md)
+        - [Upgrading add-ons](Vital Kubernetes Engine/User guide/Add-on management/Upgrading add-ons/Upgrading add-ons.md)
+    - **Application center**
+      - [Application templates](Vital Kubernetes Engine/User guide/Application center/Application templates.md)
+      - [Creating Helm applications](Vital Kubernetes Engine/User guide/Application center/Creating Helm applications.md)
+      - [Managing applications](Vital Kubernetes Engine/User guide/Application center/Managing applications.md)
+    - **Authorization management**
+      - [Authorization overview](Vital Kubernetes Engine/User guide/Authorization management/Authorization overview.md)
+      - [Introduction to the VKE service-associated roles](Vital Kubernetes Engine/User guide/Authorization management/Introduction to the VKE service-associated roles.md)
+      - **IAM user permissions**
+        - [Granting IAM permissions](Vital Kubernetes Engine/User guide/Authorization management/IAM user permissions/Granting IAM permissions.md)
+        - [Service-specific condition keys and user-defined policies](Vital Kubernetes Engine/User guide/Authorization management/IAM user permissions/Service-specific condition keys and user-defined policies.md)
+      - **IRSA mechanism**
+        - [IRSA overview](Vital Kubernetes Engine/User guide/Authorization management/IRSA mechanism/IRSA overview.md)
+        - [Using IRSA in clusters](Vital Kubernetes Engine/User guide/Authorization management/IRSA mechanism/Using IRSA in clusters.md)
+      - **RBAC permissions**
+        - [Description of RBAC permission roles](Vital Kubernetes Engine/User guide/Authorization management/RBAC permissions/Description of RBAC permission roles.md)
+        - [Granting RBAC permissions](Vital Kubernetes Engine/User guide/Authorization management/RBAC permissions/Granting RBAC permissions.md)
+    - **Autoscale**
+      - [Autoscaling overview](Vital Kubernetes Engine/User guide/Autoscale/Autoscaling overview.md)
+      - **Cluster Autoscaler**
+        - [Configuring node autoscaling (Cluster AutoScaler)](Vital Kubernetes Engine/User guide/Autoscale/Cluster Autoscaler/Configuring node autoscaling (Cluster AutoScaler).md)
+        - [Configuring node instant autoscaling (Karpenter)](Vital Kubernetes Engine/User guide/Autoscale/Cluster Autoscaler/Configuring node instant autoscaling (Karpenter).md)
+        - [Node scaling overview](Vital Kubernetes Engine/User guide/Autoscale/Cluster Autoscaler/Node scaling overview.md)
+      - **Workload Autoscaler**
+        - [Workload scaling overview](Vital Kubernetes Engine/User guide/Autoscale/Workload Autoscaler/Workload scaling overview.md)
+        - **Cron Horizontal Pod Autoscaler (CronHPA)**
+          - [Creating CronHPA](Vital Kubernetes Engine/User guide/Autoscale/Workload Autoscaler/Cron Horizontal Pod Autoscaler (CronHPA)/Creating CronHPA.md)
+          - [Managing CronHPA](Vital Kubernetes Engine/User guide/Autoscale/Workload Autoscaler/Cron Horizontal Pod Autoscaler (CronHPA)/Managing CronHPA.md)
+        - **Horizontal Pod Autoscaler (HPA)**
+          - [Achieving autoscaling by using GPU and network metrics](Vital Kubernetes Engine/User guide/Autoscale/Workload Autoscaler/Horizontal Pod Autoscaler (HPA)/Achieving autoscaling by using GPU and network metrics.md)
+          - [Autoscaling based on CPU and memory metrics](Vital Kubernetes Engine/User guide/Autoscale/Workload Autoscaler/Horizontal Pod Autoscaler (HPA)/Autoscaling based on CPU and memory metrics.md)
+          - [Autoscaling based on custom metrics](Vital Kubernetes Engine/User guide/Autoscale/Workload Autoscaler/Horizontal Pod Autoscaler (HPA)/Autoscaling based on custom metrics.md)
+          - [Autoscaling based on self-managed Prometheus](Vital Kubernetes Engine/User guide/Autoscale/Workload Autoscaler/Horizontal Pod Autoscaler (HPA)/Autoscaling based on self-managed Prometheus.md)
+          - [Managing HorizontalPodAutoscalers](Vital Kubernetes Engine/User guide/Autoscale/Workload Autoscaler/Horizontal Pod Autoscaler (HPA)/Managing HorizontalPodAutoscalers.md)
+        - **Horizontal Pod Autoscaler based on event-driven (KEDA)**
+          - [Autoscaling based on APIG network metrics](Vital Kubernetes Engine/User guide/Autoscale/Workload Autoscaler/Horizontal Pod Autoscaler based on event-driven (KEDA)/Autoscaling based on APIG network metrics.md)
+        - **Intelligent Horizontal Pod Autoscaler (IHPA)**
+          - [Creating IHPA](Vital Kubernetes Engine/User guide/Autoscale/Workload Autoscaler/Intelligent Horizontal Pod Autoscaler (IHPA)/Creating IHPA.md)
+          - [IHPA overview](Vital Kubernetes Engine/User guide/Autoscale/Workload Autoscaler/Intelligent Horizontal Pod Autoscaler (IHPA)/IHPA overview.md)
+    - **Backup center**
+      - [Backup center overview](Vital Kubernetes Engine/User guide/Backup center/Backup center overview.md)
+      - **Application backup**
+        - [Creating backup plans](Vital Kubernetes Engine/User guide/Backup center/Application backup/Creating backup plans.md)
+        - [Creating restore jobs](Vital Kubernetes Engine/User guide/Backup center/Application backup/Creating restore jobs.md)
+        - [Managing backup plans](Vital Kubernetes Engine/User guide/Backup center/Application backup/Managing backup plans.md)
+        - [Troubleshooting partially failed jobs](Vital Kubernetes Engine/User guide/Backup center/Application backup/Troubleshooting partially failed jobs.md)
+        - [Viewing backup jobs](Vital Kubernetes Engine/User guide/Backup center/Application backup/Viewing backup jobs.md)
+      - **TOS warehouse**
+        - [Adding repositories](Vital Kubernetes Engine/User guide/Backup center/TOS warehouse/Adding repositories.md)
+        - [Managing warehouses](Vital Kubernetes Engine/User guide/Backup center/TOS warehouse/Managing warehouses.md)
+    - **Clusters**
+      - [Cluster monitoring](Vital Kubernetes Engine/User guide/Clusters/Cluster monitoring.md)
+      - [Cluster overview](Vital Kubernetes Engine/User guide/Clusters/Cluster overview.md)
+      - [Viewing cluster information](Vital Kubernetes Engine/User guide/Clusters/Viewing cluster information.md)
+      - **Cluster O&M**
+        - [Automatic O&M](Vital Kubernetes Engine/User guide/Clusters/Cluster O&M/Automatic O&M.md)
+        - [O&M events](Vital Kubernetes Engine/User guide/Clusters/Cluster O&M/O&M events.md)
+        - [O&M overview](Vital Kubernetes Engine/User guide/Clusters/Cluster O&M/O&M overview.md)
+      - **Connecting to clusters**
+        - [Connecting to clusters using custom domain names](Vital Kubernetes Engine/User guide/Clusters/Connecting to clusters/Connecting to clusters using custom domain names.md)
+        - [Connecting to clusters using kubectl](Vital Kubernetes Engine/User guide/Clusters/Connecting to clusters/Connecting to clusters using kubectl.md)
+        - [Managing access credentials](Vital Kubernetes Engine/User guide/Clusters/Connecting to clusters/Managing access credentials.md)
+      - **Creating clusters**
+        - [Cluster creation overview](Vital Kubernetes Engine/User guide/Clusters/Creating clusters/Cluster creation overview.md)
+        - [Creating a managed heterogeneous computing cluster](Vital Kubernetes Engine/User guide/Clusters/Creating clusters/Creating a managed heterogeneous computing cluster.md)
+        - [Creating clusters without ECS nodes](Vital Kubernetes Engine/User guide/Clusters/Creating clusters/Creating clusters without ECS nodes.md)
+        - [Creating managed clusters](Vital Kubernetes Engine/User guide/Clusters/Creating clusters/Creating managed clusters.md)
+        - [Registering existing clusters](Vital Kubernetes Engine/User guide/Clusters/Creating clusters/Registering existing clusters.md)
+      - **Managing cluster**
+        - [Configuring control plane parameters](Vital Kubernetes Engine/User guide/Clusters/Managing cluster/Configuring control plane parameters.md)
+        - [Control plane observability](Vital Kubernetes Engine/User guide/Clusters/Managing cluster/Control plane observability.md)
+        - [Deleting clusters](Vital Kubernetes Engine/User guide/Clusters/Managing cluster/Deleting clusters.md)
+        - [Deregistering registered clusters](Vital Kubernetes Engine/User guide/Clusters/Managing cluster/Deregistering registered clusters.md)
+        - [Scaling out clusters](Vital Kubernetes Engine/User guide/Clusters/Managing cluster/Scaling out clusters.md)
+      - **Upgrading clusters**
+        - [Cluster upgrade checks](Vital Kubernetes Engine/User guide/Clusters/Upgrading clusters/Cluster upgrade checks.md)
+        - [Upgrading clusters](Vital Kubernetes Engine/User guide/Clusters/Upgrading clusters/Upgrading clusters.md)
+    - **Diagnosis and inspection**
+      - [Application inspection](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Application inspection.md)
+      - [Baseline inspection](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Baseline inspection.md)
+      - [Diagnosis and inspection overview](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Diagnosis and inspection overview.md)
+      - **Cluster inspection**
+        - [Configuring cluster inspection](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Cluster inspection/Configuring cluster inspection.md)
+        - [Inspection item descriptions and fix suggestions](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Cluster inspection/Inspection item descriptions and fix suggestions.md)
+      - **Fault diagnosis**
+        - [Ingress diagnosis](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Fault diagnosis/Ingress diagnosis.md)
+        - [Node diagnosis](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Fault diagnosis/Node diagnosis.md)
+        - [Node pool diagnosis](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Fault diagnosis/Node pool diagnosis.md)
+        - [Pod diagnosis](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Fault diagnosis/Pod diagnosis.md)
+      - **Node check and self-healing**
+        - [Check and self-healing overview](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Node check and self-healing/Check and self-healing overview.md)
+        - [Configuring node check and self-healing](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Node check and self-healing/Configuring node check and self-healing.md)
+        - [Custom node check items](Vital Kubernetes Engine/User guide/Diagnosis and inspection/Node check and self-healing/Custom node check items.md)
+    - **Heterogeneous computing**
+      - [GPU scheduling overview](Vital Kubernetes Engine/User guide/Heterogeneous computing/GPU scheduling overview.md)
+      - **mGPU scheduling**
+        - [Configuring mGPU scheduling](Vital Kubernetes Engine/User guide/Heterogeneous computing/mGPU scheduling/Configuring mGPU scheduling.md)
+        - [Implementing mGPU computing power allocation](Vital Kubernetes Engine/User guide/Heterogeneous computing/mGPU scheduling/Implementing mGPU computing power allocation.md)
+        - [Implementing online-offline hybrid deployment based on mGPUs](Vital Kubernetes Engine/User guide/Heterogeneous computing/mGPU scheduling/Implementing online-offline hybrid deployment based on mGPUs.md)
+        - [mGPU overview](Vital Kubernetes Engine/User guide/Heterogeneous computing/mGPU scheduling/mGPU overview.md)
+        - [Using mGPU to implement multi-card sharing](Vital Kubernetes Engine/User guide/Heterogeneous computing/mGPU scheduling/Using mGPU to implement multi-card sharing.md)
+      - **NVIDIA GPU**
+        - [Automatically installing GPU drivers](Vital Kubernetes Engine/User guide/Heterogeneous computing/NVIDIA GPU/Automatically installing GPU drivers.md)
+        - [Configuring NVIDIA GPU scheduling](Vital Kubernetes Engine/User guide/Heterogeneous computing/NVIDIA GPU/Configuring NVIDIA GPU scheduling.md)
+        - [Custom installation of GPU drivers](Vital Kubernetes Engine/User guide/Heterogeneous computing/NVIDIA GPU/Custom installation of GPU drivers.md)
+        - [Implementing NVIDIA GPU scheduling based on DRA](Vital Kubernetes Engine/User guide/Heterogeneous computing/NVIDIA GPU/Implementing NVIDIA GPU scheduling based on DRA.md)
+        - [Optimizing GPU clock configurations](Vital Kubernetes Engine/User guide/Heterogeneous computing/NVIDIA GPU/Optimizing GPU clock configurations.md)
+      - **RDMA high-performance computing**
+        - [Using RDMA resources (InfiniBand) in VKE clusters](Vital Kubernetes Engine/User guide/Heterogeneous computing/RDMA high-performance computing/Using RDMA resources (InfiniBand) in VKE clusters.md)
+        - [Using RDMA resources (RoCE) in clusters](Vital Kubernetes Engine/User guide/Heterogeneous computing/RDMA high-performance computing/Using RDMA resources (RoCE) in clusters.md)
+    - **Image**
+      - [Creating a custom image based on Docker](Vital Kubernetes Engine/User guide/Image/Creating a custom image based on Docker.md)
+      - [Creating a custom image based on ECS](Vital Kubernetes Engine/User guide/Image/Creating a custom image based on ECS.md)
+      - [Overview of operating system (OS) images](Vital Kubernetes Engine/User guide/Image/Overview of operating system (OS) images.md)
+    - **Large-scale cluster management**
+      - [Large-scale cluster limits and suggestions](Vital Kubernetes Engine/User guide/Large-scale cluster management/Large-scale cluster limits and suggestions.md)
+      - [Large-scale cluster O&M guarantee](Vital Kubernetes Engine/User guide/Large-scale cluster management/Large-scale cluster O&M guarantee.md)
+      - [Large-scale cluster version and configuration](Vital Kubernetes Engine/User guide/Large-scale cluster management/Large-scale cluster version and configuration.md)
+      - [Overview of large-scale cluster management](Vital Kubernetes Engine/User guide/Large-scale cluster management/Overview of large-scale cluster management.md)
+    - **Namespaces**
+      - [Creating namespaces](Vital Kubernetes Engine/User guide/Namespaces/Creating namespaces.md)
+      - [Managing namespaces](Vital Kubernetes Engine/User guide/Namespaces/Managing namespaces.md)
+      - [Namespace overview](Vital Kubernetes Engine/User guide/Namespaces/Namespace overview.md)
+      - [Setting LimitRange](Vital Kubernetes Engine/User guide/Namespaces/Setting LimitRange.md)
+      - [Setting ResourceQuota](Vital Kubernetes Engine/User guide/Namespaces/Setting ResourceQuota.md)
+    - **Networking**
+      - [Network overview](Vital Kubernetes Engine/User guide/Networking/Network overview.md)
+      - **Cluster network**
+        - [Access control of API server](Vital Kubernetes Engine/User guide/Networking/Cluster network/Access control of API server.md)
+        - [API server rate limiting](Vital Kubernetes Engine/User guide/Networking/Cluster network/API server rate limiting.md)
+        - [API Server subnet management](Vital Kubernetes Engine/User guide/Networking/Cluster network/API Server subnet management.md)
+        - [Cluster access rules](Vital Kubernetes Engine/User guide/Networking/Cluster network/Cluster access rules.md)
+        - [Configuring security groups](Vital Kubernetes Engine/User guide/Networking/Cluster network/Configuring security groups.md)
+        - [Expanding cluster subnets](Vital Kubernetes Engine/User guide/Networking/Cluster network/Expanding cluster subnets.md)
+      - **Container network**
+        - [Binding dedicated EIP to pods](Vital Kubernetes Engine/User guide/Networking/Container network/Binding dedicated EIP to pods.md)
+        - [Configuring IPv6 public bandwidth for pods](Vital Kubernetes Engine/User guide/Networking/Container network/Configuring IPv6 public bandwidth for pods.md)
+        - [Configuring QoS bandwidth limits for pods](Vital Kubernetes Engine/User guide/Networking/Container network/Configuring QoS bandwidth limits for pods.md)
+        - [Configuring Static IPs for pods](Vital Kubernetes Engine/User guide/Networking/Container network/Configuring Static IPs for pods.md)
+        - [Elastic network interface dedicated to a pod with Trunk ENI](Vital Kubernetes Engine/User guide/Networking/Container network/Elastic network interface dedicated to a pod with Trunk ENI.md)
+        - [Using a NetworkPolicy for network access control](Vital Kubernetes Engine/User guide/Networking/Container network/Using a NetworkPolicy for network access control.md)
+      - **DNS**
+        - [CoreDNS best practices](Vital Kubernetes Engine/User guide/Networking/DNS/CoreDNS best practices.md)
+        - [CoreDNS FAQs](Vital Kubernetes Engine/User guide/Networking/DNS/CoreDNS FAQs.md)
+        - [CoreDNS troubleshooting](Vital Kubernetes Engine/User guide/Networking/DNS/CoreDNS troubleshooting.md)
+        - [Using NodeLocal DNSCache as a DNS caching proxy](Vital Kubernetes Engine/User guide/Networking/DNS/Using NodeLocal DNSCache as a DNS caching proxy.md)
+      - **Gateway API**
+        - [Using Gateway API via APIG](Vital Kubernetes Engine/User guide/Networking/Gateway API/Using Gateway API via APIG.md)
+      - **Ingresses**
+        - [Ingress overview](Vital Kubernetes Engine/User guide/Networking/Ingresses/Ingress overview.md)
+        - [Managing Ingresses](Vital Kubernetes Engine/User guide/Networking/Ingresses/Managing Ingresses.md)
+        - **ALB Ingress**
+          - [Configuring ALB Ingress using annotation](Vital Kubernetes Engine/User guide/Networking/Ingresses/ALB Ingress/Configuring ALB Ingress using annotation.md)
+          - [Configuring forwarding rule rewriting for ALB Ingresses](Vital Kubernetes Engine/User guide/Networking/Ingresses/ALB Ingress/Configuring forwarding rule rewriting for ALB Ingresses.md)
+          - [Configuring multiple backend server groups for an ALB Ingress](Vital Kubernetes Engine/User guide/Networking/Ingresses/ALB Ingress/Configuring multiple backend server groups for an ALB Ingress.md)
+          - [Configuring mutual authentication on HTTPS listeners for ALB Ingresses](Vital Kubernetes Engine/User guide/Networking/Ingresses/ALB Ingress/Configuring mutual authentication on HTTPS listeners for ALB Ingresses.md)
+          - [Creating an ALB Ingress through kubectl](Vital Kubernetes Engine/User guide/Networking/Ingresses/ALB Ingress/Creating an ALB Ingress through kubectl.md)
+          - [Creating an ALB Ingress through the console](Vital Kubernetes Engine/User guide/Networking/Ingresses/ALB Ingress/Creating an ALB Ingress through the console.md)
+          - [Enabling HTTPS for ALB Ingress](Vital Kubernetes Engine/User guide/Networking/Ingresses/ALB Ingress/Enabling HTTPS for ALB Ingress.md)
+          - [Using ALB Ingresses for service deployment](Vital Kubernetes Engine/User guide/Networking/Ingresses/ALB Ingress/Using ALB Ingresses for service deployment.md)
+        - **APIG Ingress**
+          - [Configuring APIG Ingresses by using annotations](Vital Kubernetes Engine/User guide/Networking/Ingresses/APIG Ingress/Configuring APIG Ingresses by using annotations.md)
+          - [Configuring HTTPS for the APIG Ingress](Vital Kubernetes Engine/User guide/Networking/Ingresses/APIG Ingress/Configuring HTTPS for the APIG Ingress.md)
+          - [Creating APIG Ingresses by using kubectl](Vital Kubernetes Engine/User guide/Networking/Ingresses/APIG Ingress/Creating APIG Ingresses by using kubectl.md)
+          - [Creating APIG Ingresses in the console](Vital Kubernetes Engine/User guide/Networking/Ingresses/APIG Ingress/Creating APIG Ingresses in the console.md)
+          - [Releasing services using APIG Ingress](Vital Kubernetes Engine/User guide/Networking/Ingresses/APIG Ingress/Releasing services using APIG Ingress.md)
+          - [Using APIG Ingresses to implement gray releases and blue-green deployments](Vital Kubernetes Engine/User guide/Networking/Ingresses/APIG Ingress/Using APIG Ingresses to implement gray releases and blue-green deployments.md)
+        - **CLB Ingress**
+          - [Configuring CLB Ingress through annotations](Vital Kubernetes Engine/User guide/Networking/Ingresses/CLB Ingress/Configuring CLB Ingress through annotations.md)
+          - [Configuring HTTPS certificates for CLB Ingress](Vital Kubernetes Engine/User guide/Networking/Ingresses/CLB Ingress/Configuring HTTPS certificates for CLB Ingress.md)
+          - [Considerations for using CLB Ingresses](Vital Kubernetes Engine/User guide/Networking/Ingresses/CLB Ingress/Considerations for using CLB Ingresses.md)
+          - [Creating CLB Ingresses through kubectl](Vital Kubernetes Engine/User guide/Networking/Ingresses/CLB Ingress/Creating CLB Ingresses through kubectl.md)
+          - [Creating CLB Ingresses through the console](Vital Kubernetes Engine/User guide/Networking/Ingresses/CLB Ingress/Creating CLB Ingresses through the console.md)
+          - [Updating HTTPS certificates for CLB Ingress](Vital Kubernetes Engine/User guide/Networking/Ingresses/CLB Ingress/Updating HTTPS certificates for CLB Ingress.md)
+        - **Migrating Ingresses**
+          - [Migrating from NGINX Ingresses to ALB Ingresses](Vital Kubernetes Engine/User guide/Networking/Ingresses/Migrating Ingresses/Migrating from NGINX Ingresses to ALB Ingresses.md)
+          - [Migrating from NGINX Ingresses to APIG Ingresses](Vital Kubernetes Engine/User guide/Networking/Ingresses/Migrating Ingresses/Migrating from NGINX Ingresses to APIG Ingresses.md)
+        - **Nginx Ingress**
+          - [Common annotations of NGINX Ingresses](Vital Kubernetes Engine/User guide/Networking/Ingresses/Nginx Ingress/Common annotations of NGINX Ingresses.md)
+          - [Configure HTTPS for Nginx Ingress](Vital Kubernetes Engine/User guide/Networking/Ingresses/Nginx Ingress/Configure HTTPS for Nginx Ingress.md)
+          - [Configuring consistent hashing for load balancing with NGINX Ingresses](Vital Kubernetes Engine/User guide/Networking/Ingresses/Nginx Ingress/Configuring consistent hashing for load balancing with NGINX Ingresses.md)
+          - [Configuring Nginx Ingress redirect rules](Vital Kubernetes Engine/User guide/Networking/Ingresses/Nginx Ingress/Configuring Nginx Ingress redirect rules.md)
+          - [Configuring NGINX Ingresses for traffic mirroring](Vital Kubernetes Engine/User guide/Networking/Ingresses/Nginx Ingress/Configuring NGINX Ingresses for traffic mirroring.md)
+          - [Configuring URL rewrite rules in Nginx Ingresses](Vital Kubernetes Engine/User guide/Networking/Ingresses/Nginx Ingress/Configuring URL rewrite rules in Nginx Ingresses.md)
+          - [Connecting NGINX Ingresses to backend services through HTTPS](Vital Kubernetes Engine/User guide/Networking/Ingresses/Nginx Ingress/Connecting NGINX Ingresses to backend services through HTTPS.md)
+          - [Creating NGINX Ingresses in the console](Vital Kubernetes Engine/User guide/Networking/Ingresses/Nginx Ingress/Creating NGINX Ingresses in the console.md)
+          - [Creating Nginx Ingresses through kubectl](Vital Kubernetes Engine/User guide/Networking/Ingresses/Nginx Ingress/Creating Nginx Ingresses through kubectl.md)
+          - [Deploying multiple NGINX Ingress controllers](Vital Kubernetes Engine/User guide/Networking/Ingresses/Nginx Ingress/Deploying multiple NGINX Ingress controllers.md)
+          - [Gray releases and blue-green deployments using Nginx Ingresses](Vital Kubernetes Engine/User guide/Networking/Ingresses/Nginx Ingress/Gray releases and blue-green deployments using Nginx Ingresses.md)
+      - **Services**
+        - [ClusterIP](Vital Kubernetes Engine/User guide/Networking/Services/ClusterIP.md)
+        - [ExternalName](Vital Kubernetes Engine/User guide/Networking/Services/ExternalName.md)
+        - [NodePort](Vital Kubernetes Engine/User guide/Networking/Services/NodePort.md)
+        - [Service Management](Vital Kubernetes Engine/User guide/Networking/Services/Service Management.md)
+        - [Service Overview](Vital Kubernetes Engine/User guide/Networking/Services/Service Overview.md)
+        - **LoadBalancer**
+          - [Considerations for using LoadBalancer Services](Vital Kubernetes Engine/User guide/Networking/Services/LoadBalancer/Considerations for using LoadBalancer Services.md)
+          - [LoadBalancer Service overview](Vital Kubernetes Engine/User guide/Networking/Services/LoadBalancer/LoadBalancer Service overview.md)
+          - [Reusing existing LoadBalancer instances to deploy Services across clusters](Vital Kubernetes Engine/User guide/Networking/Services/LoadBalancer/Reusing existing LoadBalancer instances to deploy Services across clusters.md)
+          - [Updating HTTPS certificates for LoadBalancer services](Vital Kubernetes Engine/User guide/Networking/Services/LoadBalancer/Updating HTTPS certificates for LoadBalancer services.md)
+          - **CLB**
+            - [Configuring CLB LoadBalancer Services by using annotations](Vital Kubernetes Engine/User guide/Networking/Services/LoadBalancer/CLB/Configuring CLB LoadBalancer Services by using annotations.md)
+            - [Configuring the IP mode of the LoadBalancer Service](Vital Kubernetes Engine/User guide/Networking/Services/LoadBalancer/CLB/Configuring the IP mode of the LoadBalancer Service.md)
+            - [Creating CLB services through kubectl](Vital Kubernetes Engine/User guide/Networking/Services/LoadBalancer/CLB/Creating CLB services through kubectl.md)
+            - [Creating CLB services via the console](Vital Kubernetes Engine/User guide/Networking/Services/LoadBalancer/CLB/Creating CLB services via the console.md)
+          - **NLB**
+            - [Configuring an NLB Service using annotations](Vital Kubernetes Engine/User guide/Networking/Services/LoadBalancer/NLB/Configuring an NLB Service using annotations.md)
+            - [Creating an NLB Service via the console](Vital Kubernetes Engine/User guide/Networking/Services/LoadBalancer/NLB/Creating an NLB Service via the console.md)
+    - **Node pool**
+      - [Configuring Containerd for node pools](Vital Kubernetes Engine/User guide/Node pool/Configuring Containerd for node pools.md)
+      - [Configuring Kubelet parameters for node pools](Vital Kubernetes Engine/User guide/Node pool/Configuring Kubelet parameters for node pools.md)
+      - [Managing node pools](Vital Kubernetes Engine/User guide/Node pool/Managing node pools.md)
+      - [Monitoring node pool resources](Vital Kubernetes Engine/User guide/Node pool/Monitoring node pool resources.md)
+      - [Node pool overview](Vital Kubernetes Engine/User guide/Node pool/Node pool overview.md)
+      - **Creating node pools**
+        - [Create node pools for spot instances](Vital Kubernetes Engine/User guide/Node pool/Creating node pools/Create node pools for spot instances.md)
+        - [Creating managed node pools](Vital Kubernetes Engine/User guide/Node pool/Creating node pools/Creating managed node pools.md)
+        - [Creating normal node pools](Vital Kubernetes Engine/User guide/Node pool/Creating node pools/Creating normal node pools.md)
+      - **Scaling out - in node pools**
+        - [Elastic scheduled scale-out (general-purpose)](Vital Kubernetes Engine/User guide/Node pool/Scaling out - in node pools/Elastic scheduled scale-out (general-purpose).md)
+        - [Manually scaling node pools](Vital Kubernetes Engine/User guide/Node pool/Scaling out - in node pools/Manually scaling node pools.md)
+    - **Nodes**
+      - [Add existing nodes](Vital Kubernetes Engine/User guide/Nodes/Add existing nodes.md)
+      - [Adding worker nodes](Vital Kubernetes Engine/User guide/Nodes/Adding worker nodes.md)
+      - [Overview of nodes](Vital Kubernetes Engine/User guide/Nodes/Overview of nodes.md)
+      - **Managing nodes**
+        - [Managing nodes of managed clusters](Vital Kubernetes Engine/User guide/Nodes/Managing nodes/Managing nodes of managed clusters.md)
+        - [Managing nodes of registered clusters](Vital Kubernetes Engine/User guide/Nodes/Managing nodes/Managing nodes of registered clusters.md)
+      - **Nodes operation and maintenance**
+        - [Calculating schedulable Pod density for nodes](Vital Kubernetes Engine/User guide/Nodes/Nodes operation and maintenance/Calculating schedulable Pod density for nodes.md)
+        - [Node resource reservation policies](Vital Kubernetes Engine/User guide/Nodes/Nodes operation and maintenance/Node resource reservation policies.md)
+        - [System labels and taints](Vital Kubernetes Engine/User guide/Nodes/Nodes operation and maintenance/System labels and taints.md)
+    - **Observability**
+      - [AI profiling](Vital Kubernetes Engine/User guide/Observability/AI profiling.md)
+      - [Application performance observability](Vital Kubernetes Engine/User guide/Observability/Application performance observability.md)
+      - [Auditing clusters](Vital Kubernetes Engine/User guide/Observability/Auditing clusters.md)
+      - [Observability of registered clusters](Vital Kubernetes Engine/User guide/Observability/Observability of registered clusters.md)
+      - [Observability overview](Vital Kubernetes Engine/User guide/Observability/Observability overview.md)
+      - **Alert management**
+        - [Alert configuration overview](Vital Kubernetes Engine/User guide/Observability/Alert management/Alert configuration overview.md)
+        - [Cluster log and event alerts](Vital Kubernetes Engine/User guide/Observability/Alert management/Cluster log and event alerts.md)
+        - [Event alerts for core resources](Vital Kubernetes Engine/User guide/Observability/Alert management/Event alerts for core resources.md)
+        - **Metric alerts**
+          - [Configure custom alert rules](Vital Kubernetes Engine/User guide/Observability/Alert management/Metric alerts/Configure custom alert rules.md)
+          - [Configuring alerts based on custom templates](Vital Kubernetes Engine/User guide/Observability/Alert management/Metric alerts/Configuring alerts based on custom templates.md)
+          - [Configuring alerts through preset templates](Vital Kubernetes Engine/User guide/Observability/Alert management/Metric alerts/Configuring alerts through preset templates.md)
+          - [Preset alert templates](Vital Kubernetes Engine/User guide/Observability/Alert management/Metric alerts/Preset alert templates.md)
+      - **Basic observability**
+        - [Enabling observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Enabling observability.md)
+        - [Overview of basic observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Overview of basic observability.md)
+        - **Cluster observation**
+          - [Control plane observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Cluster observation/Control plane observability.md)
+          - [Using self-managed Prometheus to collect control plane add-on metrics](Vital Kubernetes Engine/User guide/Observability/Basic observability/Cluster observation/Using self-managed Prometheus to collect control plane add-on metrics.md)
+          - [VKE observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Cluster observation/VKE observability.md)
+        - **Network observation**
+          - [CNI network observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Network observation/CNI network observability.md)
+          - [DNS service observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Network observation/DNS service observability.md)
+          - [Ingress service observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Network observation/Ingress service observability.md)
+        - **Other observation**
+          - [AI resource observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Other observation/AI resource observability.md)
+          - [Check and self-healing observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Other observation/Check and self-healing observability.md)
+          - [Image acceleration observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Other observation/Image acceleration observability.md)
+          - [Image repository observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Other observation/Image repository observability.md)
+          - [Monitoring service observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Other observation/Monitoring service observability.md)
+        - **Setup & Configuration**
+          - [Custom metric collection](Vital Kubernetes Engine/User guide/Observability/Basic observability/Setup & Configuration/Custom metric collection.md)
+          - [Custom metric labels](Vital Kubernetes Engine/User guide/Observability/Basic observability/Setup & Configuration/Custom metric labels.md)
+          - [Service discovery](Vital Kubernetes Engine/User guide/Observability/Basic observability/Setup & Configuration/Service discovery.md)
+        - **Storage observation**
+          - [Container storage observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Storage observation/Container storage observability.md)
+          - [CSI storage observability](Vital Kubernetes Engine/User guide/Observability/Basic observability/Storage observation/CSI storage observability.md)
+        - **Using metrics**
+          - [Querying metrics](Vital Kubernetes Engine/User guide/Observability/Basic observability/Using metrics/Querying metrics.md)
+          - [Using dashboards](Vital Kubernetes Engine/User guide/Observability/Basic observability/Using metrics/Using dashboards.md)
+      - **Event monitoring**
+        - [Configuring and viewing persistent events](Vital Kubernetes Engine/User guide/Observability/Event monitoring/Configuring and viewing persistent events.md)
+        - [Event overview](Vital Kubernetes Engine/User guide/Observability/Event monitoring/Event overview.md)
+        - [Querying and handling events](Vital Kubernetes Engine/User guide/Observability/Event monitoring/Querying and handling events.md)
+      - **Full-stack observability**
+        - [Capturing network packets](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Capturing network packets.md)
+        - [Cluster topologies](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Cluster topologies.md)
+        - [Enabling full-stack observability](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Enabling full-stack observability.md)
+        - [Full-stack observability overview](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Full-stack observability overview.md)
+        - [Metric references](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Metric references.md)
+        - **Resource explore**
+          - [DaemonSets](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Resource explore/DaemonSets.md)
+          - [Deployments](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Resource explore/Deployments.md)
+          - [Ingresses](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Resource explore/Ingresses.md)
+          - [Nodes](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Resource explore/Nodes.md)
+          - [Pod](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Resource explore/Pod.md)
+          - [Services](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Resource explore/Services.md)
+          - [StatefulSets](Vital Kubernetes Engine/User guide/Observability/Full-stack observability/Resource explore/StatefulSets.md)
+      - **Log management**
+        - [Collecting container logs](Vital Kubernetes Engine/User guide/Observability/Log management/Collecting container logs.md)
+        - [Collecting container logs by using environment variables](Vital Kubernetes Engine/User guide/Observability/Log management/Collecting container logs by using environment variables.md)
+        - [Collecting control plane add-on logs](Vital Kubernetes Engine/User guide/Observability/Log management/Collecting control plane add-on logs.md)
+        - [Collecting the logs of the ingress-nginx add-on](Vital Kubernetes Engine/User guide/Observability/Log management/Collecting the logs of the ingress-nginx add-on.md)
+        - [Log overview](Vital Kubernetes Engine/User guide/Observability/Log management/Log overview.md)
+    - **Scheduling management**
+      - [Configuring custom scheduling parameters](Vital Kubernetes Engine/User guide/Scheduling management/Configuring custom scheduling parameters.md)
+      - [Container image-aware scheduling](Vital Kubernetes Engine/User guide/Scheduling management/Container image-aware scheduling.md)
+      - [Load-aware scheduling](Vital Kubernetes Engine/User guide/Scheduling management/Load-aware scheduling.md)
+      - [ResourcePolicy scheduling](Vital Kubernetes Engine/User guide/Scheduling management/ResourcePolicy scheduling.md)
+      - **Job scheduling**
+        - [Capacity scheduling](Vital Kubernetes Engine/User guide/Scheduling management/Job scheduling/Capacity scheduling.md)
+        - [Gang scheduling](Vital Kubernetes Engine/User guide/Scheduling management/Job scheduling/Gang scheduling.md)
+        - [Job admission and scheduling based on Kueue](Vital Kubernetes Engine/User guide/Scheduling management/Job scheduling/Job admission and scheduling based on Kueue.md)
+      - **QoS-aware scheduling**
+        - [Amplifying nodes](Vital Kubernetes Engine/User guide/Scheduling management/QoS-aware scheduling/Amplifying nodes.md)
+        - [CPU Burst](Vital Kubernetes Engine/User guide/Scheduling management/QoS-aware scheduling/CPU Burst.md)
+        - [CPU QoS](Vital Kubernetes Engine/User guide/Scheduling management/QoS-aware scheduling/CPU QoS.md)
+        - [Memory compression](Vital Kubernetes Engine/User guide/Scheduling management/QoS-aware scheduling/Memory compression.md)
+      - **Topology-aware scheduling**
+        - [NUMA-aware scheduling](Vital Kubernetes Engine/User guide/Scheduling management/Topology-aware scheduling/NUMA-aware scheduling.md)
+        - [RDMA topology-aware scheduling](Vital Kubernetes Engine/User guide/Scheduling management/Topology-aware scheduling/RDMA topology-aware scheduling.md)
+    - **Stability**
+      - [Basic stability capability configuration](Vital Kubernetes Engine/User guide/Stability/Basic stability capability configuration.md)
+      - [Kubernetes cluster stability optimization](Vital Kubernetes Engine/User guide/Stability/Kubernetes cluster stability optimization.md)
+      - [Workload stability optimization](Vital Kubernetes Engine/User guide/Stability/Workload stability optimization.md)
+    - **Storage**
+      - [PersistentVolume mount parameters](Vital Kubernetes Engine/User guide/Storage/PersistentVolume mount parameters.md)
+      - [Storage basics](Vital Kubernetes Engine/User guide/Storage/Storage basics.md)
+      - [Storage overview](Vital Kubernetes Engine/User guide/Storage/Storage overview.md)
+      - **CloudFS Volumes**
+        - [Using static CloudFS PVs](Vital Kubernetes Engine/User guide/Storage/CloudFS Volumes/Using static CloudFS PVs.md)
+      - **EBS Volumes**
+        - [Changing cloud disk types](Vital Kubernetes Engine/User guide/Storage/EBS Volumes/Changing cloud disk types.md)
+        - [Expanding by using dynamically provisioned EBS volumes](Vital Kubernetes Engine/User guide/Storage/EBS Volumes/Expanding by using dynamically provisioned EBS volumes.md)
+        - [Expanding by using statically provisioned EBS data volumes](Vital Kubernetes Engine/User guide/Storage/EBS Volumes/Expanding by using statically provisioned EBS data volumes.md)
+        - [Specifying formatting parameters](Vital Kubernetes Engine/User guide/Storage/EBS Volumes/Specifying formatting parameters.md)
+        - [Using dynamic EBS PVs](Vital Kubernetes Engine/User guide/Storage/EBS Volumes/Using dynamic EBS PVs.md)
+        - [Using static EBS PVs](Vital Kubernetes Engine/User guide/Storage/EBS Volumes/Using static EBS PVs.md)
+        - **EBS volume snapshots**
+          - [Snapshot overview](Vital Kubernetes Engine/User guide/Storage/EBS Volumes/EBS volume snapshots/Snapshot overview.md)
+          - [Using EBS snapshots](Vital Kubernetes Engine/User guide/Storage/EBS Volumes/EBS volume snapshots/Using EBS snapshots.md)
+      - **FSX client**
+        - [FSX authentication methods](Vital Kubernetes Engine/User guide/Storage/FSX client/FSX authentication methods.md)
+        - [FSX client introduction](Vital Kubernetes Engine/User guide/Storage/FSX client/FSX client introduction.md)
+        - [FSXSet resource introduction](Vital Kubernetes Engine/User guide/Storage/FSX client/FSXSet resource introduction.md)
+        - [Migrating FSX clients](Vital Kubernetes Engine/User guide/Storage/FSX client/Migrating FSX clients.md)
+        - [Upgrading FSX clients](Vital Kubernetes Engine/User guide/Storage/FSX client/Upgrading FSX clients.md)
+        - [Using IRSA to implement authentication for storage mounting](Vital Kubernetes Engine/User guide/Storage/FSX client/Using IRSA to implement authentication for storage mounting.md)
+      - **Local Volumes**
+        - [Using dynamic PersistentVolumes created from dedicated local storage](Vital Kubernetes Engine/User guide/Storage/Local Volumes/Using dynamic PersistentVolumes created from dedicated local storage.md)
+        - [Using dynamic PersistentVolumes created from LVM-managed local storage](Vital Kubernetes Engine/User guide/Storage/Local Volumes/Using dynamic PersistentVolumes created from LVM-managed local storage.md)
+        - [Using LVM-managed local volumes as ephemeral volumes](Vital Kubernetes Engine/User guide/Storage/Local Volumes/Using LVM-managed local volumes as ephemeral volumes.md)
+      - **NAS Volumes**
+        - **FSX access methods**
+          - [Accessing FileNAS static PV through the FSX client](Vital Kubernetes Engine/User guide/Storage/NAS Volumes/FSX access methods/Accessing FileNAS static PV through the FSX client.md)
+        - **NFS access methods**
+          - [Using dynamic FileNAS PVs](Vital Kubernetes Engine/User guide/Storage/NAS Volumes/NFS access methods/Using dynamic FileNAS PVs.md)
+          - [Using static FileNAS PVs](Vital Kubernetes Engine/User guide/Storage/NAS Volumes/NFS access methods/Using static FileNAS PVs.md)
+      - **PFS Volumes**
+        - [Selection guide](Vital Kubernetes Engine/User guide/Storage/PFS Volumes/Selection guide.md)
+        - **FSX access methods**
+          - [Accessing static PFS PV through the FSX client](Vital Kubernetes Engine/User guide/Storage/PFS Volumes/FSX access methods/Accessing static PFS PV through the FSX client.md)
+        - **NFS access methods**
+          - [Using PFS PVs via NFS](Vital Kubernetes Engine/User guide/Storage/PFS Volumes/NFS access methods/Using PFS PVs via NFS.md)
+        - **PFS Client access methods**
+          - [Using dynamic PFS PVs](Vital Kubernetes Engine/User guide/Storage/PFS Volumes/PFS Client access methods/Using dynamic PFS PVs.md)
+          - [Using static PFS PVs](Vital Kubernetes Engine/User guide/Storage/PFS Volumes/PFS Client access methods/Using static PFS PVs.md)
+      - **TOS Volumes**
+        - [Upgrading CSI for TOS](Vital Kubernetes Engine/User guide/Storage/TOS Volumes/Upgrading CSI for TOS.md)
+        - **FSX access methods**
+          - [Accessing static TOS PVs by using the FSX client](Vital Kubernetes Engine/User guide/Storage/TOS Volumes/FSX access methods/Accessing static TOS PVs by using the FSX client.md)
+          - [Encrypting data for TOS PVs](Vital Kubernetes Engine/User guide/Storage/TOS Volumes/FSX access methods/Encrypting data for TOS PVs.md)
+        - **S3fs access methods**
+          - [Using static TOS PVs](Vital Kubernetes Engine/User guide/Storage/TOS Volumes/S3fs access methods/Using static TOS PVs.md)
+    - **Workloads**
+      - [Managing workloads](Vital Kubernetes Engine/User guide/Workloads/Managing workloads.md)
+      - [Resource explorer](Vital Kubernetes Engine/User guide/Workloads/Resource explorer.md)
+      - [Workload overview](Vital Kubernetes Engine/User guide/Workloads/Workload overview.md)
+      - **Configuration management**
+        - [Creating ConfigMaps](Vital Kubernetes Engine/User guide/Workloads/Configuration management/Creating ConfigMaps.md)
+        - [Creating Secrets](Vital Kubernetes Engine/User guide/Workloads/Configuration management/Creating Secrets.md)
+        - [Managing ConfigMaps](Vital Kubernetes Engine/User guide/Workloads/Configuration management/Managing ConfigMaps.md)
+        - [Managing Secrets](Vital Kubernetes Engine/User guide/Workloads/Configuration management/Managing Secrets.md)
+        - [Using ConfigMaps in containers](Vital Kubernetes Engine/User guide/Workloads/Configuration management/Using ConfigMaps in containers.md)
+        - [Using Secrets in containers](Vital Kubernetes Engine/User guide/Workloads/Configuration management/Using Secrets in containers.md)
+      - **Configure workloads**
+        - [Implementing cloud-native container security with vArmor](Vital Kubernetes Engine/User guide/Workloads/Configure workloads/Implementing cloud-native container security with vArmor.md)
+      - **Creating workloads**
+        - [Creating CronJobs](Vital Kubernetes Engine/User guide/Workloads/Creating workloads/Creating CronJobs.md)
+        - [Creating DaemonSets](Vital Kubernetes Engine/User guide/Workloads/Creating workloads/Creating DaemonSets.md)
+        - [Creating Deployments](Vital Kubernetes Engine/User guide/Workloads/Creating workloads/Creating Deployments.md)
+        - [Creating Jobs](Vital Kubernetes Engine/User guide/Workloads/Creating workloads/Creating Jobs.md)
+        - [Creating StatefulSets](Vital Kubernetes Engine/User guide/Workloads/Creating workloads/Creating StatefulSets.md)
+        - [Creating workloads by pulling private images with the secret-free add-on](Vital Kubernetes Engine/User guide/Workloads/Creating workloads/Creating workloads by pulling private images with the secret-free add-on.md)
+        - [Cron expressions](Vital Kubernetes Engine/User guide/Workloads/Creating workloads/Cron expressions.md)
+        - [Workload configurations](Vital Kubernetes Engine/User guide/Workloads/Creating workloads/Workload configurations.md)
+      - **Image acceleration**
+        - [Image lazy loading solutions](Vital Kubernetes Engine/User guide/Workloads/Image acceleration/Image lazy loading solutions.md)
+        - **P2P acceleration**
+          - [Configuring P2P acceleration](Vital Kubernetes Engine/User guide/Workloads/Image acceleration/P2P acceleration/Configuring P2P acceleration.md)
+          - [Overview of P2P acceleration](Vital Kubernetes Engine/User guide/Workloads/Image acceleration/P2P acceleration/Overview of P2P acceleration.md)
+          - [Reference performance of P2P acceleration](Vital Kubernetes Engine/User guide/Workloads/Image acceleration/P2P acceleration/Reference performance of P2P acceleration.md)
+      - **Pods**
+        - [Creating pods](Vital Kubernetes Engine/User guide/Workloads/Pods/Creating pods.md)
+        - [Initializing applications by using init containers](Vital Kubernetes Engine/User guide/Workloads/Pods/Initializing applications by using init containers.md)
+        - [Managing pods](Vital Kubernetes Engine/User guide/Workloads/Pods/Managing pods.md)
+        - [Viewing pod information](Vital Kubernetes Engine/User guide/Workloads/Pods/Viewing pod information.md)
+  - **What's New**
+    - [Release notes](Vital Kubernetes Engine/What's New/Release notes.md)
+    - **Add-on release notes**
+      - [Overview](Vital Kubernetes Engine/What's New/Add-on release notes/Overview.md)
+      - **DNS add-ons**
+        - [core-dns](Vital Kubernetes Engine/What's New/Add-on release notes/DNS add-ons/core-dns.md)
+        - [node-local-dns](Vital Kubernetes Engine/What's New/Add-on release notes/DNS add-ons/node-local-dns.md)
+      - **GPU add-ons**
+        - [mgpu](Vital Kubernetes Engine/What's New/Add-on release notes/GPU add-ons/mgpu.md)
+        - [nvidia-device-plugin](Vital Kubernetes Engine/What's New/Add-on release notes/GPU add-ons/nvidia-device-plugin.md)
+      - **Image add-ons**
+        - [cr-credential-controller](Vital Kubernetes Engine/What's New/Add-on release notes/Image add-ons/cr-credential-controller.md)
+        - [image-accelerator](Vital Kubernetes Engine/What's New/Add-on release notes/Image add-ons/image-accelerator.md)
+        - [p2p-accelerator](Vital Kubernetes Engine/What's New/Add-on release notes/Image add-ons/p2p-accelerator.md)
+      - **Monitoring add-ons**
+        - [apmplus-opentelemetry-collector](Vital Kubernetes Engine/What's New/Add-on release notes/Monitoring add-ons/apmplus-opentelemetry-collector.md)
+        - [event-collector](Vital Kubernetes Engine/What's New/Add-on release notes/Monitoring add-ons/event-collector.md)
+        - [log-collector](Vital Kubernetes Engine/What's New/Add-on release notes/Monitoring add-ons/log-collector.md)
+        - [metrics-server](Vital Kubernetes Engine/What's New/Add-on release notes/Monitoring add-ons/metrics-server.md)
+        - [Prometheus-adapter](Vital Kubernetes Engine/What's New/Add-on release notes/Monitoring add-ons/Prometheus-adapter.md)
+        - [prometheus-agent](Vital Kubernetes Engine/What's New/Add-on release notes/Monitoring add-ons/prometheus-agent.md)
+      - **Network add-ons**
+        - [apmplus-server-agent](Vital Kubernetes Engine/What's New/Add-on release notes/Network add-ons/apmplus-server-agent.md)
+        - [flannel](Vital Kubernetes Engine/What's New/Add-on release notes/Network add-ons/flannel.md)
+        - [ingress-nginx](Vital Kubernetes Engine/What's New/Add-on release notes/Network add-ons/ingress-nginx.md)
+        - [load-balancer-controller](Vital Kubernetes Engine/What's New/Add-on release notes/Network add-ons/load-balancer-controller.md)
+        - [node-problem-detector](Vital Kubernetes Engine/What's New/Add-on release notes/Network add-ons/node-problem-detector.md)
+        - [rdma-device-plugin](Vital Kubernetes Engine/What's New/Add-on release notes/Network add-ons/rdma-device-plugin.md)
+        - [vpc-cni](Vital Kubernetes Engine/What's New/Add-on release notes/Network add-ons/vpc-cni.md)
+        - [vpc-cni-controlplane](Vital Kubernetes Engine/What's New/Add-on release notes/Network add-ons/vpc-cni-controlplane.md)
+      - **Sandbox add-on**
+        - [agent-sandbox](Vital Kubernetes Engine/What's New/Add-on release notes/Sandbox add-on/agent-sandbox.md)
+      - **Scheduling add-ons**
+        - [aibrix](Vital Kubernetes Engine/What's New/Add-on release notes/Scheduling add-ons/aibrix.md)
+        - [cluster-autoscaler](Vital Kubernetes Engine/What's New/Add-on release notes/Scheduling add-ons/cluster-autoscaler.md)
+        - [cronhpa](Vital Kubernetes Engine/What's New/Add-on release notes/Scheduling add-ons/cronhpa.md)
+        - [descheduler](Vital Kubernetes Engine/What's New/Add-on release notes/Scheduling add-ons/descheduler.md)
+        - [karpenter](Vital Kubernetes Engine/What's New/Add-on release notes/Scheduling add-ons/karpenter.md)
+        - [katalyst](Vital Kubernetes Engine/What's New/Add-on release notes/Scheduling add-ons/katalyst.md)
+        - [keda](Vital Kubernetes Engine/What's New/Add-on release notes/Scheduling add-ons/keda.md)
+        - [vci-virtual-kubelet](Vital Kubernetes Engine/What's New/Add-on release notes/Scheduling add-ons/vci-virtual-kubelet.md)
+      - **Security add-ons**
+        - [application-inspector](Vital Kubernetes Engine/What's New/Add-on release notes/Security add-ons/application-inspector.md)
+        - [pod-identity-webhook](Vital Kubernetes Engine/What's New/Add-on release notes/Security add-ons/pod-identity-webhook.md)
+        - [security-scan](Vital Kubernetes Engine/What's New/Add-on release notes/Security add-ons/security-scan.md)
+        - [varmor](Vital Kubernetes Engine/What's New/Add-on release notes/Security add-ons/varmor.md)
+      - **Storage add-ons**
+        - [csi-cloudfs](Vital Kubernetes Engine/What's New/Add-on release notes/Storage add-ons/csi-cloudfs.md)
+        - [csi-ebs](Vital Kubernetes Engine/What's New/Add-on release notes/Storage add-ons/csi-ebs.md)
+        - [csi-fsx](Vital Kubernetes Engine/What's New/Add-on release notes/Storage add-ons/csi-fsx.md)
+        - [csi-nas](Vital Kubernetes Engine/What's New/Add-on release notes/Storage add-ons/csi-nas.md)
+        - [csi-tos](Vital Kubernetes Engine/What's New/Add-on release notes/Storage add-ons/csi-tos.md)
+        - [csi-vepfs](Vital Kubernetes Engine/What's New/Add-on release notes/Storage add-ons/csi-vepfs.md)
+        - [fsxset-controller](Vital Kubernetes Engine/What's New/Add-on release notes/Storage add-ons/fsxset-controller.md)
+        - [snapshot-controller](Vital Kubernetes Engine/What's New/Add-on release notes/Storage add-ons/snapshot-controller.md)
+    - **Containerd runtime release notes**
+      - [containerd 2.3.x](Vital Kubernetes Engine/What's New/Containerd runtime release notes/containerd 2.3.x.md)
+      - [Containerd runtime release notes](Vital Kubernetes Engine/What's New/Containerd runtime release notes/Containerd runtime release notes.md)
+      - [Introduction to containerd 2.1.x](Vital Kubernetes Engine/What's New/Containerd runtime release notes/Introduction to containerd 2.1.x.md)
+    - **History feature release notes**
+      - [History feature release notes (2024)](Vital Kubernetes Engine/What's New/History feature release notes/History feature release notes (2024).md)
+      - [History feature release notes (2025)](Vital Kubernetes Engine/What's New/History feature release notes/History feature release notes (2025).md)
+    - **Kubernetes version release notes**
+      - [(EOM) Release notes of VKE based on Kubernetes v1.24](Vital Kubernetes Engine/What's New/Kubernetes version release notes/(EOM) Release notes of VKE based on Kubernetes v1.24.md)
+      - [(EOM) Release notes of VKE based on Kubernetes v1.26](Vital Kubernetes Engine/What's New/Kubernetes version release notes/(EOM) Release notes of VKE based on Kubernetes v1.26.md)
+      - [(EOM) Release notes of VKE based on Kubernetes v1.28](Vital Kubernetes Engine/What's New/Kubernetes version release notes/(EOM) Release notes of VKE based on Kubernetes v1.28.md)
+      - [(Scheduled for EOM) Release notes of VKE based on Kubernetes v1.30](Vital Kubernetes Engine/What's New/Kubernetes version release notes/(Scheduled for EOM) Release notes of VKE based on Kubernetes v1.30.md)
+      - [Kubernetes version overview and support policy](Vital Kubernetes Engine/What's New/Kubernetes version release notes/Kubernetes version overview and support policy.md)
+      - [Release notes for VKE based on Kubernetes v1.36](Vital Kubernetes Engine/What's New/Kubernetes version release notes/Release notes for VKE based on Kubernetes v1.36.md)
+      - [Release notes of VKE based on Kubernetes v1.32](Vital Kubernetes Engine/What's New/Kubernetes version release notes/Release notes of VKE based on Kubernetes v1.32.md)
+      - [Release notes of VKE based on Kubernetes v1.34](Vital Kubernetes Engine/What's New/Kubernetes version release notes/Release notes of VKE based on Kubernetes v1.34.md)
+    - **Product announcements**
+      - [\[Announcements\] Patch version upgrade for VKE clusters](Vital Kubernetes Engine/What's New/Product announcements/[Announcements] Patch version upgrade for VKE clusters.md)
+      - [\[Cluster version\] Kubernetes Version 1.24 cluster EOL announcement](Vital Kubernetes Engine/What's New/Product announcements/[Cluster version] Kubernetes Version 1.24 cluster EOL announcement.md)
+      - [\[Cluster version\] Kubernetes Version 1.26 cluster EOM announcement](Vital Kubernetes Engine/What's New/Product announcements/[Cluster version] Kubernetes Version 1.26 cluster EOM announcement.md)
+      - [\[Cluster version\] Kubernetes Version 1.28 cluster EOM announcement](Vital Kubernetes Engine/What's New/Product announcements/[Cluster version] Kubernetes Version 1.28 cluster EOM announcement.md)
+      - [\[Cluster version\] Kubernetes Version 1.30 cluster EOM announcement](Vital Kubernetes Engine/What's New/Product announcements/[Cluster version] Kubernetes Version 1.30 cluster EOM announcement.md)
+      - [\[Product announcement\] Announcing control-plane (API Server) connectivity path switch for managed VKE clusters](Vital Kubernetes Engine/What's New/Product announcements/[Product announcement] Announcing control-plane (API Server) connectivity path switch for.md)
+      - [\[Product announcement\] NGINX Ingress EOM](Vital Kubernetes Engine/What's New/Product announcements/[Product announcement] NGINX Ingress EOM.md)
+      - [\[Product announcement\] The XID error isolation feature is disabled for the nvidia-device-plugin add-on by default](Vital Kubernetes Engine/What's New/Product announcements/[Product announcement] The XID error isolation feature is disabled for the nvidia-device-p.md)
+      - [\[Product announcement\] VKE add-on optimization - addressing resource reporting exceptions in the Kubernetes Device Plugin framework](Vital Kubernetes Engine/What's New/Product announcements/[Product announcement] VKE add-on optimization - addressing resource reporting exceptions.md)
+      - [\[Product changes\] Cloud monitoring collection add-on discontinuation announcement ](Vital Kubernetes Engine/What's New/Product announcements/[Product changes] Cloud monitoring collection add-on discontinuation announcement.md)
+      - [\[Product update\] "XID exception" check item added to the check and self-healing feature](Vital Kubernetes Engine/What's New/Product announcements/[Product update] "XID exception" check item added to the check and self-healing feature.md)
+      - [\[Product update\] csi-tos add-on EOM announcement](Vital Kubernetes Engine/What's New/Product announcements/[Product update] csi-tos add-on EOM announcement.md)
+      - [\[Product update\] fsx-service deprecation notice](Vital Kubernetes Engine/What's New/Product announcements/[Product update] fsx-service deprecation notice.md)
+      - [VKE supports the Asia Pacific (Jakarta) region](Vital Kubernetes Engine/What's New/Product announcements/VKE supports the Asia Pacific (Jakarta) region.md)
+    - **Security announcements**
+      - [containerd vulnerability fixed (CVE-2026-53488)](Vital Kubernetes Engine/What's New/Security announcements/containerd vulnerability fixed (CVE-2026-53488).md)
+      - [CVE-2024-0135, CVE-2024-0136, CVE-2024-0137 security vulnerability announcement](Vital Kubernetes Engine/What's New/Security announcements/CVE-2024-0135, CVE-2024-0136, CVE-2024-0137 security vulnerability announcement.md)
+      - [Ingress-nginx add-on security vulnerability advisory (CVE-2024-7646)](Vital Kubernetes Engine/What's New/Security announcements/Ingress-nginx add-on security vulnerability advisory (CVE-2024-7646).md)
+      - [ingress-nginx vulnerability announcement (CVE-2025-1097, CVE-2025-1098, CVE-2025-1974, CVE-2025-24513, CVE-2025-24514)](Vital Kubernetes Engine/What's New/Security announcements/ingress-nginx vulnerability announcement (CVE-2025-1097, CVE-2025-1098, CVE-2025-1974, CVE.md)
+      - [ingress-nginx vulnerability fixed (CVE-2026-1580)](Vital Kubernetes Engine/What's New/Security announcements/ingress-nginx vulnerability fixed (CVE-2026-1580).md)
+      - [Ingress-nginx vulnerability fixed (CVE-2026-3288 and CVE-2026-4342)](Vital Kubernetes Engine/What's New/Security announcements/Ingress-nginx vulnerability fixed (CVE-2026-3288 and CVE-2026-4342).md)
+      - [Kubernetes security vulnerability advisory (CVE-2024-10220)](Vital Kubernetes Engine/What's New/Security announcements/Kubernetes security vulnerability advisory (CVE-2024-10220).md)
+      - [Kubernetes security vulnerability advisory (CVE-2024-21626)](Vital Kubernetes Engine/What's New/Security announcements/Kubernetes security vulnerability advisory (CVE-2024-21626).md)
+      - [NVIDIA Container Toolkit security vulnerability announcement (CVE-2024-0132)](Vital Kubernetes Engine/What's New/Security announcements/NVIDIA Container Toolkit security vulnerability announcement (CVE-2024-0132).md)

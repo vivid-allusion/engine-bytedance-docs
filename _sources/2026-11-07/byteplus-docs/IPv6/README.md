@@ -1,0 +1,74 @@
+# IPv6 Gateway
+
+52 pages. Source: https://docs.byteplus.com/en/docs/IPv6
+
+Back to the [full index](../README.md).
+
+- [IPv6 Gateway FAQs](IPv6 Gateway FAQs.md)
+- [New feature release notes](New feature release notes.md)
+- **API Reference**
+  - [API overview](API Reference/API overview.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [Overview](API Reference/Overview.md)
+  - **Call method**
+    - [Common error codes](API Reference/Call method/Common error codes.md)
+    - [Common parameters](API Reference/Call method/Common parameters.md)
+    - [Request structure](API Reference/Call method/Request structure.md)
+    - [Responses](API Reference/Call method/Responses.md)
+    - [Signature method](API Reference/Call method/Signature method.md)
+  - **IPv6 gateway instance**
+    - [CreateIpv6Gateway - Creating an IPv6 Gateway instance](API Reference/IPv6 gateway instance/CreateIpv6Gateway - Creating an IPv6 Gateway instance.md)
+    - [DeleteIpv6Gateway - Deleting an IPv6 Gateway instance](API Reference/IPv6 gateway instance/DeleteIpv6Gateway - Deleting an IPv6 Gateway instance.md)
+    - [DescribeIpv6GatewayAttribute - Querying details of a specified IPv6 Gateway](API Reference/IPv6 gateway instance/DescribeIpv6GatewayAttribute - Querying details of a specified IPv6 Gateway.md)
+    - [DescribeIpv6Gateways - Querying IPv6 Gateway instances](API Reference/IPv6 gateway instance/DescribeIpv6Gateways - Querying IPv6 Gateway instances.md)
+    - [ModifyIpv6GatewayAttribute - Modifying an IPv6 Gateway instance](API Reference/IPv6 gateway instance/ModifyIpv6GatewayAttribute - Modifying an IPv6 Gateway instance.md)
+  - **IPv6 Internet bandwidth**
+    - [AllocateIpv6AddressBandwidth - Enabling IPv6 Internet bandwidth](API Reference/IPv6 Internet bandwidth/AllocateIpv6AddressBandwidth - Enabling IPv6 Internet bandwidth.md)
+    - [DescribeIpv6AddressBandwidthAttributes - Querying details of a specified IPv6 Internet bandwidth](API Reference/IPv6 Internet bandwidth/DescribeIpv6AddressBandwidthAttributes - Querying details of a specified IPv6 Internet ban.md)
+    - [DescribeIpv6AddressBandwidths - Listing IPv6 Internet bandwidths](API Reference/IPv6 Internet bandwidth/DescribeIpv6AddressBandwidths - Listing IPv6 Internet bandwidths.md)
+    - [ModifyIpv6AddressBandwidth - Modifying IPv6 Internet bandwidth](API Reference/IPv6 Internet bandwidth/ModifyIpv6AddressBandwidth - Modifying IPv6 Internet bandwidth.md)
+    - [ReleaseIpv6AddressBandwidth - Releasing IPv6 Internet bandwidth](API Reference/IPv6 Internet bandwidth/ReleaseIpv6AddressBandwidth - Releasing IPv6 Internet bandwidth.md)
+  - **Only actively propose rules**
+    - [CreateIpv6EgressOnlyRule - Creating an Egress Only rule](API Reference/Only actively propose rules/CreateIpv6EgressOnlyRule - Creating an Egress Only rule.md)
+    - [DeleteIpv6EgressOnlyRule - Deleting an Egress Only rule](API Reference/Only actively propose rules/DeleteIpv6EgressOnlyRule - Deleting an Egress Only rule.md)
+    - [DescribeIpv6EgressOnlyRules - Listing Egress Only rules](API Reference/Only actively propose rules/DescribeIpv6EgressOnlyRules - Listing Egress Only rules.md)
+    - [ModifyIpv6EgressOnlyRuleAttribute - Modifying an Egress Only rule](API Reference/Only actively propose rules/ModifyIpv6EgressOnlyRuleAttribute - Modifying an Egress Only rule.md)
+- **Billing**
+  - [Arrears](Billing/Arrears.md)
+  - [Billing conversion](Billing/Billing conversion.md)
+  - [Pay-as-you-go](Billing/Pay-as-you-go.md)
+  - [Specification changes](Billing/Specification changes.md)
+- **Getting Started**
+  - [Configuring an IPv6 Gateway for IPv6 Internet access](Getting Started/Configuring an IPv6 Gateway for IPv6 Internet access.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Benefits](Overview/Benefits.md)
+  - [Limits](Overview/Limits.md)
+  - [Regions](Overview/Regions.md)
+  - [Terms](Overview/Terms.md)
+  - [What is IPv6 Gateway](Overview/What is IPv6 Gateway.md)
+- **Terms**
+  - [BytePlus IPv6 Gateway_Service Level Agreement](Terms/BytePlus IPv6 Gateway_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus IPv6 Gateway](Terms/Service-Specific Terms for BytePlus IPv6 Gateway.md)
+- **User Guide**
+  - [Enabling IPv6 for a VPC](User Guide/Enabling IPv6 for a VPC.md)
+  - **Egress Only Rules**
+    - [Creating an Egress Only rule](User Guide/Egress Only Rules/Creating an Egress Only rule.md)
+    - [Deleting an Egress Only rule](User Guide/Egress Only Rules/Deleting an Egress Only rule.md)
+  - **Identity and Access Management**
+    - [Accessing resources with Identity and Access Management](User Guide/Identity and Access Management/Accessing resources with Identity and Access Management.md)
+    - [Overview](User Guide/Identity and Access Management/Overview.md)
+  - **IPv6 Gateway Instance**
+    - [Creating an IPv6 Gateway](User Guide/IPv6 Gateway Instance/Creating an IPv6 Gateway.md)
+    - [Deleting an IPv6 Gateway](User Guide/IPv6 Gateway Instance/Deleting an IPv6 Gateway.md)
+  - **IPv6 Internet Bandwidth**
+    - [Disabling IPv6 Internet bandwidth](User Guide/IPv6 Internet Bandwidth/Disabling IPv6 Internet bandwidth.md)
+    - [Enabling IPv6 Internet bandwidth](User Guide/IPv6 Internet Bandwidth/Enabling IPv6 Internet bandwidth.md)
+    - [Managing a Bandwidth Package](User Guide/IPv6 Internet Bandwidth/Managing a Bandwidth Package.md)
+    - [Modifying IPv6 Internet bandwidth](User Guide/IPv6 Internet Bandwidth/Modifying IPv6 Internet bandwidth.md)
+  - **Monitoring**
+    - [Configuring an alarm strategy](User Guide/Monitoring/Configuring an alarm strategy.md)
+    - [Viewing monitoring data](User Guide/Monitoring/Viewing monitoring data.md)
+  - **Projects and Tags**
+    - [Project management](User Guide/Projects and Tags/Project management.md)
+    - [Tag management](User Guide/Projects and Tags/Tag management.md)

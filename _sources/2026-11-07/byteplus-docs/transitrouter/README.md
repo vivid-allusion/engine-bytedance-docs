@@ -1,0 +1,266 @@
+# Transit Router
+
+213 pages. Source: https://docs.byteplus.com/en/docs/transitrouter
+
+Back to the [full index](../README.md).
+
+- [New feature release notes](New feature release notes.md)
+- **API Reference**
+  - [API overview](API Reference/API overview.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [Overview](API Reference/Overview.md)
+  - **Associated forwarding**
+    - [AssociateTransitRouterAttachmentToRouteTable - Associating a TR route table with an  attachment](API Reference/Associated forwarding/AssociateTransitRouterAttachmentToRouteTable - Associating a TR route table with an attach.md)
+    - [DescribeTransitRouterRouteTableAssociations - Querying association forwarding list](API Reference/Associated forwarding/DescribeTransitRouterRouteTableAssociations - Querying association forwarding list.md)
+    - [DissociateTransitRouterAttachmentFromRouteTable - Disassociating a route table from a network instance attachment](API Reference/Associated forwarding/DissociateTransitRouterAttachmentFromRouteTable - Disassociating a route table from a netw.md)
+    - [ModifyTransitRouterRouteTableAssociationAttributes - Modifying the route table associated with an attachment](API Reference/Associated forwarding/ModifyTransitRouterRouteTableAssociationAttributes - Modifying the route table associated.md)
+  - **Call method**
+    - [Common error codes](API Reference/Call method/Common error codes.md)
+    - [Common Parameters](API Reference/Call method/Common Parameters.md)
+    - [Request Structure](API Reference/Call method/Request Structure.md)
+    - [Return structure](API Reference/Call method/Return structure.md)
+    - [Signature Method](API Reference/Call method/Signature Method.md)
+  - **Direct Connect Gateway attachments**
+    - [CreateTransitRouterDirectConnectGatewayAttachment - Creating a DC Gateway attachment](API Reference/Direct Connect Gateway attachments/CreateTransitRouterDirectConnectGatewayAttachment - Creating a DC Gateway attachment.md)
+    - [DeleteTransitRouterDirectConnectGatewayAttachment - Deleting a Direct Connect Gateway attachment](API Reference/Direct Connect Gateway attachments/DeleteTransitRouterDirectConnectGatewayAttachment - Deleting a Direct Connect Gateway atta.md)
+    - [DescribeTransitRouterDirectConnectGatewayAttachments - Querying the list of DC Gateway attachments](API Reference/Direct Connect Gateway attachments/DescribeTransitRouterDirectConnectGatewayAttachments - Querying the list of DC Gateway att.md)
+    - [ModifyTransitRouterDirectConnectGatewayAttachmentAttributes - Modifying a DC Gateway attachment](API Reference/Direct Connect Gateway attachments/ModifyTransitRouterDirectConnectGatewayAttachmentAttributes - Modifying a DC Gateway attac.md)
+  - **Flow logs**
+    - [CreateTransitRouterFlowLog - Creating a TR flow log instance](API Reference/Flow logs/CreateTransitRouterFlowLog - Creating a TR flow log instance.md)
+    - [DeleteTransitRouterFlowLog - Deleting a flow log](API Reference/Flow logs/DeleteTransitRouterFlowLog - Deleting a flow log.md)
+    - [DescribeTransitRouterFlowLogs - Querying the list of flow logs](API Reference/Flow logs/DescribeTransitRouterFlowLogs - Querying the list of flow logs.md)
+    - [ModifyTransitRouterFlowLogAttributes - Updating attributes of a specified flow log](API Reference/Flow logs/ModifyTransitRouterFlowLogAttributes - Updating attributes of a specified flow log.md)
+    - [StartTransitRouterFlowLog - Enabling flow log collection](API Reference/Flow logs/StartTransitRouterFlowLog - Enabling flow log collection.md)
+    - [StopTransitRouterFlowLog - Disabling flow log collection](API Reference/Flow logs/StopTransitRouterFlowLog - Disabling flow log collection.md)
+  - **Forwarding policies**
+    - [AssociateTransitRouterForwardPolicyTableToAttachment - Associating a forwarding policy with an attachment](API Reference/Forwarding policies/AssociateTransitRouterForwardPolicyTableToAttachment - Associating a forwarding policy wit.md)
+    - [CreateTransitRouterForwardPolicyEntry - Adding a forwarding policy entry](API Reference/Forwarding policies/CreateTransitRouterForwardPolicyEntry - Adding a forwarding policy entry.md)
+    - [CreateTransitRouterForwardPolicyTable - Create a forwarding policy](API Reference/Forwarding policies/CreateTransitRouterForwardPolicyTable - Create a forwarding policy.md)
+    - [DeleteTransitRouterForwardPolicyEntry - Deleting a forwarding policy entry](API Reference/Forwarding policies/DeleteTransitRouterForwardPolicyEntry - Deleting a forwarding policy entry.md)
+    - [DeleteTransitRouterForwardPolicyTable - Deleting a forwarding policy](API Reference/Forwarding policies/DeleteTransitRouterForwardPolicyTable - Deleting a forwarding policy.md)
+    - [DescribeTransitRouterForwardPolicyEntries - Querying forwarding policy entries list](API Reference/Forwarding policies/DescribeTransitRouterForwardPolicyEntries - Querying forwarding policy entries list.md)
+    - [DescribeTransitRouterForwardPolicyTables - Querying forwarding policies list](API Reference/Forwarding policies/DescribeTransitRouterForwardPolicyTables - Querying forwarding policies list.md)
+    - [DissociateTransitRouterForwardPolicyTableFromAttachment - Disassociating a forwarding policy from an attachment](API Reference/Forwarding policies/DissociateTransitRouterForwardPolicyTableFromAttachment - Disassociating a forwarding poli.md)
+    - [ModifyTransitRouterForwardPolicyEntryAttributes - Modifying a forwarding policy entry](API Reference/Forwarding policies/ModifyTransitRouterForwardPolicyEntryAttributes - Modifying a forwarding policy entry.md)
+    - [ModifyTransitRouterForwardPolicyTableAssociation - Modifying a forwarding policy associated with an attachment](API Reference/Forwarding policies/ModifyTransitRouterForwardPolicyTableAssociation - Modifying a forwarding policy associate.md)
+    - [ModifyTransitRouterForwardPolicyTableAttributes - Modifying a forwarding policy](API Reference/Forwarding policies/ModifyTransitRouterForwardPolicyTableAttributes - Modifying a forwarding policy.md)
+  - **Instance sharing**
+    - [CreateTransitRouterGrantRule - Creating instance sharing](API Reference/Instance sharing/CreateTransitRouterGrantRule - Creating instance sharing.md)
+  - **Inter-region attachments**
+    - [AcceptTransitRouterPeerAttachment - Accepting a cross-account inter-region attachment](API Reference/Inter-region attachments/AcceptTransitRouterPeerAttachment - Accepting a cross-account inter-region attachment.md)
+    - [CreateTransitRouterPeerAttachment - Creating an inter-region attachment](API Reference/Inter-region attachments/CreateTransitRouterPeerAttachment - Creating an inter-region attachment.md)
+    - [DescribeTransitRouterPeerAttachments - Listing inter-region attachments](API Reference/Inter-region attachments/DescribeTransitRouterPeerAttachments - Listing inter-region attachments.md)
+    - [ModifyTransitRouterPeerAttachmentAttributes - Modifying basic information for a specified inter-region attachment](API Reference/Inter-region attachments/ModifyTransitRouterPeerAttachmentAttributes - Modifying basic information for a specified.md)
+    - [RejectTransitRouterPeerAttachment - Rejecting a cross-account inter-region attachment](API Reference/Inter-region attachments/RejectTransitRouterPeerAttachment - Rejecting a cross-account inter-region attachment.md)
+  - **Local peer attachment**
+    - [CreateTransitRouterLocalPeerAttachment - Creating a local peer attachment](API Reference/Local peer attachment/CreateTransitRouterLocalPeerAttachment - Creating a local peer attachment.md)
+    - [DescribeTransitRouterLocalPeerAttachments - Querying the list of local peer attachments.](API Reference/Local peer attachment/DescribeTransitRouterLocalPeerAttachments - Querying the list of local peer attachments.md)
+  - **Multicast**
+    - [AssociateTransitRouterMulticastDomain - Attaching multicast domain to subnet](API Reference/Multicast/AssociateTransitRouterMulticastDomain - Attaching multicast domain to subnet.md)
+    - [CreateTransitRouterMulticastDomain - Creating a multicast domain](API Reference/Multicast/CreateTransitRouterMulticastDomain - Creating a multicast domain.md)
+    - [CreateTransitRouterMulticastGroupMember - Adding a multicast member](API Reference/Multicast/CreateTransitRouterMulticastGroupMember - Adding a multicast member.md)
+    - [CreateTransitRouterMulticastGroupSource - Adding a multicast source](API Reference/Multicast/CreateTransitRouterMulticastGroupSource - Adding a multicast source.md)
+    - [DeleteTransitRouterMulticastDomain - Deleting Multicast Domain](API Reference/Multicast/DeleteTransitRouterMulticastDomain - Deleting Multicast Domain.md)
+    - [DeleteTransitRouterMulticastGroupMember - Deleting multicast group member](API Reference/Multicast/DeleteTransitRouterMulticastGroupMember - Deleting multicast group member.md)
+    - [DeleteTransitRouterMulticastGroupSource - Deleting multicast source](API Reference/Multicast/DeleteTransitRouterMulticastGroupSource - Deleting multicast source.md)
+    - [DescribeTransitRouterMulticastDomainAssociations - Querying multicast domain association](API Reference/Multicast/DescribeTransitRouterMulticastDomainAssociations - Querying multicast domain association.md)
+    - [DescribeTransitRouterMulticastDomains - Querying the list of multicast domains](API Reference/Multicast/DescribeTransitRouterMulticastDomains - Querying the list of multicast domains.md)
+    - [DescribeTransitRouterMulticastGroups - Querying multicast group list](API Reference/Multicast/DescribeTransitRouterMulticastGroups - Querying multicast group list.md)
+    - [DissociateTransitRouterMulticastDomain - Detaching multicast domain from subnet](API Reference/Multicast/DissociateTransitRouterMulticastDomain - Detaching multicast domain from subnet.md)
+    - [ModifyTransitRouterMulticastDomainAttributes - Modifying a multicast domain](API Reference/Multicast/ModifyTransitRouterMulticastDomainAttributes - Modifying a multicast domain.md)
+  - **Route entries**
+    - [CreateTransitRouterRouteEntry - Adding a static route to a TR route table](API Reference/Route entries/CreateTransitRouterRouteEntry - Adding a static route to a TR route table.md)
+    - [DeleteTransitRouterRouteEntry - Deleting a static route entry](API Reference/Route entries/DeleteTransitRouterRouteEntry - Deleting a static route entry.md)
+    - [DescribeTransitRouterRouteEntries - Querying the list of route entries](API Reference/Route entries/DescribeTransitRouterRouteEntries - Querying the list of route entries.md)
+    - [ModifyTransitRouterRouteEntryAttributes - Modifying a route](API Reference/Route entries/ModifyTransitRouterRouteEntryAttributes - Modifying a route.md)
+  - **Route tables**
+    - [CreateTransitRouterRouteTable - Creating a custom route table](API Reference/Route tables/CreateTransitRouterRouteTable - Creating a custom route table.md)
+    - [DeleteTransitRouterRouteTable - Deleting custom route table](API Reference/Route tables/DeleteTransitRouterRouteTable - Deleting custom route table.md)
+    - [DescribeTransitRouterRouteTables - Listing TR route tables](API Reference/Route tables/DescribeTransitRouterRouteTables - Listing TR route tables.md)
+    - [ModifyTransitRouterRouteTableAttributes - Modifying a TR route table](API Reference/Route tables/ModifyTransitRouterRouteTableAttributes - Modifying a TR route table.md)
+  - **Route-learning**
+    - [DescribeTransitRouterRouteTablePropagations - Querying a route learning list](API Reference/Route-learning/DescribeTransitRouterRouteTablePropagations - Querying a route learning list.md)
+    - [DisableTransitRouterRouteTablePropagation - Deleting route learning](API Reference/Route-learning/DisableTransitRouterRouteTablePropagation - Deleting route learning.md)
+    - [EnableTransitRouterRouteTablePropagation - Creating route learning](API Reference/Route-learning/EnableTransitRouterRouteTablePropagation - Creating route learning.md)
+  - **Routing policies**
+    - [AssociateTransitRouterRoutePolicyToRouteTable - Associating a route policy with a TR route table](API Reference/Routing policies/AssociateTransitRouterRoutePolicyToRouteTable - Associating a route policy with a TR route.md)
+    - [CreateTransitRouterRoutePolicyEntry - Adding a policy entry to a route policy.](API Reference/Routing policies/CreateTransitRouterRoutePolicyEntry - Adding a policy entry to a route policy.md)
+    - [CreateTransitRouterRoutePolicyTable - Creating a route policy](API Reference/Routing policies/CreateTransitRouterRoutePolicyTable - Creating a route policy.md)
+    - [DeleteTransitRouterRoutePolicyEntry - Deleting route policy entry](API Reference/Routing policies/DeleteTransitRouterRoutePolicyEntry - Deleting route policy entry.md)
+    - [DeleteTransitRouterRoutePolicyTable - Deleting route policy](API Reference/Routing policies/DeleteTransitRouterRoutePolicyTable - Deleting route policy.md)
+    - [DescribeTransitRouterRoutePolicyEntries - Querying the list of route policy entries](API Reference/Routing policies/DescribeTransitRouterRoutePolicyEntries - Querying the list of route policy entries.md)
+    - [DescribeTransitRouterRoutePolicyTables - Querying the list of route policies](API Reference/Routing policies/DescribeTransitRouterRoutePolicyTables - Querying the list of route policies.md)
+    - [DissociateTransitRouterRoutePolicyFromRouteTable - Disassociating a route policy from a TR route table](API Reference/Routing policies/DissociateTransitRouterRoutePolicyFromRouteTable - Disassociating a route policy from a TR.md)
+    - [ModifyTransitRouterRoutePolicyAssociation - Modifying the TR route table attached to the route policy](API Reference/Routing policies/ModifyTransitRouterRoutePolicyAssociation - Modifying the TR route table attached to the r.md)
+    - [ModifyTransitRouterRoutePolicyEntryAttributes - Modifying a route policy entry](API Reference/Routing policies/ModifyTransitRouterRoutePolicyEntryAttributes - Modifying a route policy entry.md)
+    - [ModifyTransitRouterRoutePolicyTableAttributes - Modifying a route policy](API Reference/Routing policies/ModifyTransitRouterRoutePolicyTableAttributes - Modifying a route policy.md)
+  - **Tags**
+    - [ListTagsForResources - Querying the information of qualified tags](API Reference/Tags/ListTagsForResources - Querying the information of qualified tags.md)
+    - [TagResources - Adding a custom tag to a resource](API Reference/Tags/TagResources - Adding a custom tag to a resource.md)
+    - [UntagResources - Deleting a custom tag from a resource](API Reference/Tags/UntagResources - Deleting a custom tag from a resource.md)
+  - **TR bandwidth packages**
+    - [CreateTransitRouterBandwidthPackage - Creating a TR bandwidth package](API Reference/TR bandwidth packages/CreateTransitRouterBandwidthPackage - Creating a TR bandwidth package.md)
+    - [DescribeTransitRouterBandwidthPackages - Querying the list of TR bandwidth packages](API Reference/TR bandwidth packages/DescribeTransitRouterBandwidthPackages - Querying the list of TR bandwidth packages.md)
+    - [ModifyTransitRouterBandwidthPackageAttributes - Modifying a TR bandwidth package](API Reference/TR bandwidth packages/ModifyTransitRouterBandwidthPackageAttributes - Modifying a TR bandwidth package.md)
+  - **Traffic QoS Marking Policy**
+    - [AssociateTransitRouterTrafficQosMarkingPolicyToAttachment - Associating a traffic marking policy with an attachment](API Reference/Traffic QoS Marking Policy/AssociateTransitRouterTrafficQosMarkingPolicyToAttachment - Associating a traffic marking.md)
+    - [CreateTransitRouterTrafficQosMarkingEntry - Adding a traffic marking entry](API Reference/Traffic QoS Marking Policy/CreateTransitRouterTrafficQosMarkingEntry - Adding a traffic marking entry.md)
+    - [CreateTransitRouterTrafficQosMarkingPolicy - Creating a traffic marking policy](API Reference/Traffic QoS Marking Policy/CreateTransitRouterTrafficQosMarkingPolicy - Creating a traffic marking policy.md)
+    - [DeleteTransitRouterTrafficQosMarkingEntry - Deleting a traffic marking entry](API Reference/Traffic QoS Marking Policy/DeleteTransitRouterTrafficQosMarkingEntry - Deleting a traffic marking entry.md)
+    - [DeleteTransitRouterTrafficQosMarkingPolicy - Deleting a traffic marking policy](API Reference/Traffic QoS Marking Policy/DeleteTransitRouterTrafficQosMarkingPolicy - Deleting a traffic marking policy.md)
+    - [DescribeTransitRouterTrafficQosMarkingEntries - Querying the list of traffic marking entries](API Reference/Traffic QoS Marking Policy/DescribeTransitRouterTrafficQosMarkingEntries - Querying the list of traffic marking entri.md)
+    - [DescribeTransitRouterTrafficQosMarkingPolicies - Querying the list of traffic marking policies](API Reference/Traffic QoS Marking Policy/DescribeTransitRouterTrafficQosMarkingPolicies - Querying the list of traffic marking poli.md)
+    - [DissociateTransitRouterTrafficQosMarkingPolicyFromAttachment - Dissociating a traffic marking policy from an attachment](API Reference/Traffic QoS Marking Policy/DissociateTransitRouterTrafficQosMarkingPolicyFromAttachment - Dissociating a traffic mark.md)
+    - [ModifyTransitRouterTrafficQosMarkingPolicyAssociation - Modifying a traffic marking policy associated with an attachment](API Reference/Traffic QoS Marking Policy/ModifyTransitRouterTrafficQosMarkingPolicyAssociation - Modifying a traffic marking policy.md)
+    - [ModifyTransitRouterTrafficQosMarkingPolicyAttributes - Modifying a traffic marking policy](API Reference/Traffic QoS Marking Policy/ModifyTransitRouterTrafficQosMarkingPolicyAttributes - Modifying a traffic marking policy.md)
+  - **Traffic QoS Queue Policy**
+    - [AssociateTransitRouterTrafficQosQueuePolicyToAttachment - Associating a traffic queue policy with an attachment](API Reference/Traffic QoS Queue Policy/AssociateTransitRouterTrafficQosQueuePolicyToAttachment - Associating a traffic queue poli.md)
+    - [CreateTransitRouterTrafficQosQueueEntry - Adding a traffic queue](API Reference/Traffic QoS Queue Policy/CreateTransitRouterTrafficQosQueueEntry - Adding a traffic queue.md)
+    - [CreateTransitRouterTrafficQosQueuePolicy - Creating a traffic queue policy](API Reference/Traffic QoS Queue Policy/CreateTransitRouterTrafficQosQueuePolicy - Creating a traffic queue policy.md)
+    - [DeleteTransitRouterTrafficQosQueueEntry - Deleting a traffic queue](API Reference/Traffic QoS Queue Policy/DeleteTransitRouterTrafficQosQueueEntry - Deleting a traffic queue.md)
+    - [DeleteTransitRouterTrafficQosQueuePolicy - Deleting traffic queue policy](API Reference/Traffic QoS Queue Policy/DeleteTransitRouterTrafficQosQueuePolicy - Deleting traffic queue policy.md)
+    - [DescribeTransitRouterTrafficQosQueueEntries - Querying the list of traffic queues](API Reference/Traffic QoS Queue Policy/DescribeTransitRouterTrafficQosQueueEntries - Querying the list of traffic queues.md)
+    - [DescribeTransitRouterTrafficQosQueuePolicies - Querying traffic queue policies list](API Reference/Traffic QoS Queue Policy/DescribeTransitRouterTrafficQosQueuePolicies - Querying traffic queue policies list.md)
+    - [DissociateTransitRouterTrafficQosQueuePolicyFromAttachment - Disassociating a traffic queue policy from an attachment](API Reference/Traffic QoS Queue Policy/DissociateTransitRouterTrafficQosQueuePolicyFromAttachment - Disassociating a traffic queu.md)
+    - [ModifyTransitRouterTrafficQosQueueEntryAttributes - Modifying a traffic queue](API Reference/Traffic QoS Queue Policy/ModifyTransitRouterTrafficQosQueueEntryAttributes - Modifying a traffic queue.md)
+    - [ModifyTransitRouterTrafficQosQueuePolicyAssociation - Modifying a traffic queue policy associated with an attachment](API Reference/Traffic QoS Queue Policy/ModifyTransitRouterTrafficQosQueuePolicyAssociation - Modifying a traffic queue policy ass.md)
+    - [ModifyTransitRouterTrafficQosQueuePolicyAttributes - Modifying a traffic queue policy](API Reference/Traffic QoS Queue Policy/ModifyTransitRouterTrafficQosQueuePolicyAttributes - Modifying a traffic queue policy.md)
+  - **TransitRouter instances**
+    - [CreateTransitRouter - Creating a TR instance](API Reference/TransitRouter instances/CreateTransitRouter - Creating a TR instance.md)
+    - [DeleteTransitRouter - Deleting a Transit Router instance](API Reference/TransitRouter instances/DeleteTransitRouter - Deleting a Transit Router instance.md)
+    - [DescribeTransitRouterAttachments - Querying the attachment list](API Reference/TransitRouter instances/DescribeTransitRouterAttachments - Querying the attachment list.md)
+    - [DescribeTransitRouters - Querying the list of TR instances](API Reference/TransitRouter instances/DescribeTransitRouters - Querying the list of TR instances.md)
+    - [ModifyTransitRouterAttributes - Modifying a TR instance](API Reference/TransitRouter instances/ModifyTransitRouterAttributes - Modifying a TR instance.md)
+  - **VPC attachments**
+    - [CreateTransitRouterVpcAttachment - Creating a VPC attachment](API Reference/VPC attachments/CreateTransitRouterVpcAttachment - Creating a VPC attachment.md)
+    - [DeleteTransitRouterVpcAttachment - Deleting a VPC attachment](API Reference/VPC attachments/DeleteTransitRouterVpcAttachment - Deleting a VPC attachment.md)
+    - [DescribeTransitRouterVpcAttachments - Querying the list of VPC attachments](API Reference/VPC attachments/DescribeTransitRouterVpcAttachments - Querying the list of VPC attachments.md)
+    - [ModifyTransitRouterVpcAttachmentAttributes - Modifying a VPC attachment](API Reference/VPC attachments/ModifyTransitRouterVpcAttachmentAttributes - Modifying a VPC attachment.md)
+  - **VPN attachments**
+    - [CreateTransitRouterVpnAttachment - Creating a VPN attachment](API Reference/VPN attachments/CreateTransitRouterVpnAttachment - Creating a VPN attachment.md)
+    - [DeleteTransitRouterVpnAttachment - Deleting VPN attachment](API Reference/VPN attachments/DeleteTransitRouterVpnAttachment - Deleting VPN attachment.md)
+    - [DescribeTransitRouterVpnAttachments - Querying the list of VPN attachments](API Reference/VPN attachments/DescribeTransitRouterVpnAttachments - Querying the list of VPN attachments.md)
+    - [ModifyTransitRouterVpnAttachmentAttributes - Modifying a VPN attachment](API Reference/VPN attachments/ModifyTransitRouterVpnAttachmentAttributes - Modifying a VPN attachment.md)
+- **Best Practices**
+  - [Best practice overview](Best Practices/Best practice overview.md)
+  - [Implementing interconnectivity and isolation between specified VPCs](Best Practices/Implementing interconnectivity and isolation between specified VPCs.md)
+  - [Implementing interconnectivity between independent VPCs and a data center (cross-account, cross-region)](Best Practices/Implementing interconnectivity between independent VPCs and a data center (cross-account, (Interconnectivity-between-VPCs-and-idc-c).md)
+  - [Implementing interconnectivity between independent VPCs and a data center (cross-account, same region)](Best Practices/Implementing interconnectivity between independent VPCs and a data center (cross-account,.md)
+  - [Implementing interconnectivity between independent VPCs and a data center (same account, cross-region)](Best Practices/Implementing interconnectivity between independent VPCs and a data center (same account, c.md)
+  - [Implementing secure mutual access between different VPCs](Best Practices/Implementing secure mutual access between different VPCs.md)
+  - [Optimizing paths for different subnets within a VPC to reach an on-premises data center via Direct Connects](Best Practices/Optimizing paths for different subnets within a VPC to reach an on-premises data center vi.md)
+  - [Restricting communication between VPCs or between a VPC and an on-premises data center by route policies](Best Practices/Restricting communication between VPCs or between a VPC and an on-premises data center by.md)
+  - [Summarizing specific routes in VPCs or on-premises data centers by a Transit Router](Best Practices/Summarizing specific routes in VPCs or on-premises data centers by a Transit Router.md)
+- **Billing**
+  - [Arrears](Billing/Arrears.md)
+  - [Billing notes (including Pay-by-95th-peak)](Billing/Billing notes (including Pay-by-95th-peak).md)
+  - [Billing overview](Billing/Billing overview.md)
+  - [Expiration](Billing/Expiration.md)
+  - [Resource package billing](Billing/Resource package billing.md)
+- **FAQ**
+  - [Cross-border FAQs](FAQ/Cross-border FAQs.md)
+  - [Flow Log FAQs](FAQ/Flow Log FAQs.md)
+  - [Route FAQs](FAQ/Route FAQs.md)
+  - [Transit Router FAQs](FAQ/Transit Router FAQs.md)
+- **Getting Started**
+  - [Implementing private interconnectivity and isolation between different VPCs (cross-account, cross-region)](Getting Started/Implementing private interconnectivity and isolation between different VPCs (cross-account (Connecting-and-isolating-different-VPCs-).md)
+  - [Implementing private interconnectivity and isolation between different VPCs (cross-account, same region)](Getting Started/Implementing private interconnectivity and isolation between different VPCs (cross-account.md)
+  - [Implementing private interconnectivity and isolation between different VPCs (same account, cross-region)](Getting Started/Implementing private interconnectivity and isolation between different VPCs (same account, (Quick-start-03).md)
+  - [Implementing private interconnectivity and isolation between different VPCs (same account, same region)](Getting Started/Implementing private interconnectivity and isolation between different VPCs (same account,.md)
+  - [Quick start](Getting Started/Quick start.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Areas and regions](Overview/Areas and regions.md)
+  - [Benefits](Overview/Benefits.md)
+  - [Features](Overview/Features.md)
+  - [Limits](Overview/Limits.md)
+  - [Related cloud services](Overview/Related cloud services.md)
+  - [What is Transit Router](Overview/What is Transit Router.md)
+- **SDK Reference**
+  - [Transit Router SDK overview](SDK Reference/Transit Router SDK overview.md)
+- **Terms**
+  - [BytePlus TransitRouter Service Level Agreement](Terms/BytePlus TransitRouter Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Transit Router](Terms/Service-Specific Terms for BytePlus Transit Router.md)
+- **User Guide**
+  - **Flow Log**
+    - [Creating a flow log](User Guide/Flow Log/Creating a flow log.md)
+    - [Deleting a flow log](User Guide/Flow Log/Deleting a flow log.md)
+    - [Flow Log overview](User Guide/Flow Log/Flow Log overview.md)
+    - [Searching and analyzing a flow log](User Guide/Flow Log/Searching and analyzing a flow log.md)
+    - [Starting or stoping a flow log](User Guide/Flow Log/Starting or stoping a flow log.md)
+  - **Identity and Access Management**
+    - [IAM overview](User Guide/Identity and Access Management/IAM overview.md)
+    - [Transit Router custom policy examples](User Guide/Identity and Access Management/Transit Router custom policy examples.md)
+    - [Transit Router IAM policy types](User Guide/Identity and Access Management/Transit Router IAM policy types.md)
+  - **Instance sharing**
+    - [Accepting a cross-account peering attachment](User Guide/Instance sharing/Accepting a cross-account peering attachment.md)
+    - [Cross-account Management overview](User Guide/Instance sharing/Cross-account Management overview.md)
+    - [Cross-account Transit Router sharing​​](User Guide/Instance sharing/Cross-account Transit Router sharing​​.md)
+    - [Rejecting a cross-account peering attachment](User Guide/Instance sharing/Rejecting a cross-account peering attachment.md)
+  - **Inter-region management**
+    - **Inter-region attachments**
+      - [Cross-region traffic analysis](User Guide/Inter-region management/Inter-region attachments/Cross-region traffic analysis.md)
+      - [Deleting an inter-region attachment](User Guide/Inter-region management/Inter-region attachments/Deleting an inter-region attachment.md)
+    - **TR bandwidth packages**
+      - [Creating a bandwidth package](User Guide/Inter-region management/TR bandwidth packages/Creating a bandwidth package.md)
+      - [Deleting a bandwidth package](User Guide/Inter-region management/TR bandwidth packages/Deleting a bandwidth package.md)
+  - **Monitoring**
+    - [Configuring an alarm strategy](User Guide/Monitoring/Configuring an alarm strategy.md)
+    - [Viewing monitoring data](User Guide/Monitoring/Viewing monitoring data.md)
+  - **Multicast**
+    - [Associating or disassociating subnet for a multicast domain](User Guide/Multicast/Associating or disassociating subnet for a multicast domain.md)
+    - [Creating a multicast domain](User Guide/Multicast/Creating a multicast domain.md)
+    - [Deleting a multicast domain](User Guide/Multicast/Deleting a multicast domain.md)
+    - [Managing a multicast member](User Guide/Multicast/Managing a multicast member.md)
+    - [Managing a multicast source](User Guide/Multicast/Managing a multicast source.md)
+    - [Multicast overview](User Guide/Multicast/Multicast overview.md)
+  - **Projects and tags**
+    - [Project management](User Guide/Projects and tags/Project management.md)
+    - [Tag management](User Guide/Projects and tags/Tag management.md)
+  - **QoS Management**
+    - [QoS overview](User Guide/QoS Management/QoS overview.md)
+    - **Traffic Qos Marking Policy**
+      - [Configure traffic marking policy for an inter-region attachment](User Guide/QoS Management/Traffic Qos Marking Policy/Configure traffic marking policy for an inter-region attachment.md)
+      - [Creating a traffic marking policy](User Guide/QoS Management/Traffic Qos Marking Policy/Creating a traffic marking policy.md)
+      - [Deleting a traffic marking policy](User Guide/QoS Management/Traffic Qos Marking Policy/Deleting a traffic marking policy.md)
+      - [Managing a traffic marking entry](User Guide/QoS Management/Traffic Qos Marking Policy/Managing a traffic marking entry.md)
+    - **Traffic Qos Queue Policy**
+      - [Configuring traffic queue policy for an inter-region attachment](User Guide/QoS Management/Traffic Qos Queue Policy/Configuring traffic queue policy for an inter-region attachment.md)
+      - [Creating a traffic queue policy](User Guide/QoS Management/Traffic Qos Queue Policy/Creating a traffic queue policy.md)
+      - [Deleting a traffic queue policy](User Guide/QoS Management/Traffic Qos Queue Policy/Deleting a traffic queue policy.md)
+      - [Managing a queue](User Guide/QoS Management/Traffic Qos Queue Policy/Managing a queue.md)
+  - **Route tables**
+    - [Creating a route table](User Guide/Route tables/Creating a route table.md)
+    - [Deleting a custom route table](User Guide/Route tables/Deleting a custom route table.md)
+    - [Enabling or disabling auto publishing](User Guide/Route tables/Enabling or disabling auto publishing.md)
+    - [Managing a static route](User Guide/Route tables/Managing a static route.md)
+    - [Managing association forwarding](User Guide/Route tables/Managing association forwarding.md)
+    - [Managing route learning](User Guide/Route tables/Managing route learning.md)
+    - [Route configuration planning](User Guide/Route tables/Route configuration planning.md)
+    - [Route Table overview](User Guide/Route tables/Route Table overview.md)
+    - [Viewing route table details](User Guide/Route tables/Viewing route table details.md)
+    - **Forwarding policies**
+      - [Configuring forwarding policy for a network instance attachment](User Guide/Route tables/Forwarding policies/Configuring forwarding policy for a network instance attachment.md)
+      - [Creating a forwarding policy](User Guide/Route tables/Forwarding policies/Creating a forwarding policy.md)
+      - [Deleting a forwarding policy](User Guide/Route tables/Forwarding policies/Deleting a forwarding policy.md)
+      - [Forwarding Policy overview](User Guide/Route tables/Forwarding policies/Forwarding Policy overview.md)
+      - [Managing a forwarding policy entry](User Guide/Route tables/Forwarding policies/Managing a forwarding policy entry.md)
+    - **Route policies**
+      - [Configuring route policy for a TR route table](User Guide/Route tables/Route policies/Configuring route policy for a TR route table.md)
+      - [Creating a route policy](User Guide/Route tables/Route policies/Creating a route policy.md)
+      - [Deleting a route policy](User Guide/Route tables/Route policies/Deleting a route policy.md)
+      - [Managing a route policy entry](User Guide/Route tables/Route policies/Managing a route policy entry.md)
+      - [Route Policy overview](User Guide/Route tables/Route policies/Route Policy overview.md)
+  - **Transit Router instances**
+    - [Configuring a fee payer](User Guide/Transit Router instances/Configuring a fee payer.md)
+    - [Creating a Transit Router instance](User Guide/Transit Router instances/Creating a Transit Router instance.md)
+    - [Deleting a Transit Router instance](User Guide/Transit Router instances/Deleting a Transit Router instance.md)
+    - **Intra-region attachments**
+      - [Deleting an intra-region attachment](User Guide/Transit Router instances/Intra-region attachments/Deleting an intra-region attachment.md)
+      - [Editing attachment point for a VPC attachment](User Guide/Transit Router instances/Intra-region attachments/Editing attachment point for a VPC attachment.md)
+      - [Enabling or disabling health check convergence routing for a VPN attachment](User Guide/Transit Router instances/Intra-region attachments/Enabling or disabling health check convergence routing for a VPN attachment.md)
+      - **Creating an attachment**
+        - [Creating a DC Gateway attachment](User Guide/Transit Router instances/Intra-region attachments/Creating an attachment/Creating a DC Gateway attachment.md)
+        - [Creating a local peer attachment](User Guide/Transit Router instances/Intra-region attachments/Creating an attachment/Creating a local peer attachment.md)
+        - [Creating a VPC attachment](User Guide/Transit Router instances/Intra-region attachments/Creating an attachment/Creating a VPC attachment.md)
+        - [Creating a VPN attachment](User Guide/Transit Router instances/Intra-region attachments/Creating an attachment/Creating a VPN attachment.md)

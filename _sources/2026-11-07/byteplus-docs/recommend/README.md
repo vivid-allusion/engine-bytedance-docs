@@ -1,0 +1,141 @@
+# BytePlus Recommend
+
+96 pages. Source: https://docs.byteplus.com/en/docs/recommend
+
+Back to the [full index](../README.md).
+
+- **API Reference**
+  - **BytePlus Recommend API Reference**
+    - [BytePlus Recommend API HTTP request](API Reference/BytePlus Recommend API Reference/BytePlus Recommend API HTTP request.md)
+    - [BytePlus Recommend API list](API Reference/BytePlus Recommend API Reference/BytePlus Recommend API list.md)
+    - [BytePlus Recommend API SDK authentication](API Reference/BytePlus Recommend API Reference/BytePlus Recommend API SDK authentication.md)
+    - [BytePlus Recommend Premium API token authentication](API Reference/BytePlus Recommend API Reference/BytePlus Recommend Premium API token authentication.md)
+    - [BytePlus Recommend shared error and status codes](API Reference/BytePlus Recommend API Reference/BytePlus Recommend shared error and status codes.md)
+    - [Getting started with BytePlus Recommend APIs](API Reference/BytePlus Recommend API Reference/Getting started with BytePlus Recommend APIs.md)
+  - **BytePlus Recommend Media - Content Industry APIs**
+    - **BytePlus Recommend Media - Content Industry APIs—Project Bas**
+      - [AckServerImpressions—Recommend Content Industry](API Reference/BytePlus Recommend Media - Content Industry APIs/BytePlus Recommend Media - Content Industry APIs—Project Bas/AckServerImpressions—Recommend Content Industry.md)
+      - [Predict—Recommend Content Industry](API Reference/BytePlus Recommend Media - Content Industry APIs/BytePlus Recommend Media - Content Industry APIs—Project Bas/Predict—Recommend Content Industry.md)
+      - [WriteContents—Recommend Content Industry](API Reference/BytePlus Recommend Media - Content Industry APIs/BytePlus Recommend Media - Content Industry APIs—Project Bas/WriteContents—Recommend Content Industry.md)
+      - [WriteUserEvents—Recommend Content Industry](API Reference/BytePlus Recommend Media - Content Industry APIs/BytePlus Recommend Media - Content Industry APIs—Project Bas/WriteUserEvents—Recommend Content Industry.md)
+      - [WriteUsers—Recommend Content Industry](API Reference/BytePlus Recommend Media - Content Industry APIs/BytePlus Recommend Media - Content Industry APIs—Project Bas/WriteUsers—Recommend Content Industry.md)
+    - **BytePlus Recommend Media - Content Industry APIs—SaaS**
+      - [AckServerImpressions—Recommend SaaS Content Industry](API Reference/BytePlus Recommend Media - Content Industry APIs/BytePlus Recommend Media - Content Industry APIs—SaaS/AckServerImpressions—Recommend SaaS Content Industry.md)
+      - [Predict—Recommend SaaS Content Industry](API Reference/BytePlus Recommend Media - Content Industry APIs/BytePlus Recommend Media - Content Industry APIs—SaaS/Predict—Recommend SaaS Content Industry.md)
+      - [WriteContents—Recommend SaaS Content Industry](API Reference/BytePlus Recommend Media - Content Industry APIs/BytePlus Recommend Media - Content Industry APIs—SaaS/WriteContents—Recommend SaaS Content Industry.md)
+      - [WriteUserEvents—Recommend SaaS Content Industry](API Reference/BytePlus Recommend Media - Content Industry APIs/BytePlus Recommend Media - Content Industry APIs—SaaS/WriteUserEvents—Recommend SaaS Content Industry.md)
+      - [WriteUsers—Recommend SaaS Content Industry](API Reference/BytePlus Recommend Media - Content Industry APIs/BytePlus Recommend Media - Content Industry APIs—SaaS/WriteUsers—Recommend SaaS Content Industry.md)
+  - **BytePlus Recommend Retail - E-commerce Industry APIs**
+    - **BytePlus Recommend Retail - E-commerce Industry APIs—Project**
+      - [AckServerImpressions—Recommend Industry](API Reference/BytePlus Recommend Retail - E-commerce Industry APIs/BytePlus Recommend Retail - E-commerce Industry APIs—Project/AckServerImpressions—Recommend Industry.md)
+      - [Predict—Recommend Retail Industry](API Reference/BytePlus Recommend Retail - E-commerce Industry APIs/BytePlus Recommend Retail - E-commerce Industry APIs—Project/Predict—Recommend Retail Industry.md)
+      - [WriteProducts—Recommend Retail Industry](API Reference/BytePlus Recommend Retail - E-commerce Industry APIs/BytePlus Recommend Retail - E-commerce Industry APIs—Project/WriteProducts—Recommend Retail Industry.md)
+      - [WriteUserEvents—Recommend Retail Industry](API Reference/BytePlus Recommend Retail - E-commerce Industry APIs/BytePlus Recommend Retail - E-commerce Industry APIs—Project/WriteUserEvents—Recommend Retail Industry.md)
+      - [WriteUsers—Recommend Retail Industry](API Reference/BytePlus Recommend Retail - E-commerce Industry APIs/BytePlus Recommend Retail - E-commerce Industry APIs—Project/WriteUsers—Recommend Retail Industry.md)
+    - **BytePlus Recommend Retail - E-commerce Industry APIs—SaaS**
+      - [AckServerImpressions—Recommend SaaS Retail Industry](API Reference/BytePlus Recommend Retail - E-commerce Industry APIs/BytePlus Recommend Retail - E-commerce Industry APIs—SaaS/AckServerImpressions—Recommend SaaS Retail Industry.md)
+      - [Predict—Recommend SaaS Retail Industry](API Reference/BytePlus Recommend Retail - E-commerce Industry APIs/BytePlus Recommend Retail - E-commerce Industry APIs—SaaS/Predict—Recommend SaaS Retail Industry.md)
+      - [WriteProducts—Recommend SaaS Retail Industry](API Reference/BytePlus Recommend Retail - E-commerce Industry APIs/BytePlus Recommend Retail - E-commerce Industry APIs—SaaS/WriteProducts—Recommend SaaS Retail Industry.md)
+      - [WriteUserEvents—Recommend SaaS Retail Industry](API Reference/BytePlus Recommend Retail - E-commerce Industry APIs/BytePlus Recommend Retail - E-commerce Industry APIs—SaaS/WriteUserEvents—Recommend SaaS Retail Industry.md)
+      - [WriteUsers—Recommend SaaS Retail Industry](API Reference/BytePlus Recommend Retail - E-commerce Industry APIs/BytePlus Recommend Retail - E-commerce Industry APIs—SaaS/WriteUsers—Recommend SaaS Retail Industry.md)
+- **Guides**
+  - **BYTEPLUS RECOMMEND**
+    - [BytePlus Recommend product overview](Guides/BYTEPLUS RECOMMEND/BytePlus Recommend product overview.md)
+    - [What's changed](Guides/BYTEPLUS RECOMMEND/What's changed.md)
+  - **BytePlus Recommend Console**
+    - [BytePlus Recommend API Integration Dashboard](Guides/BytePlus Recommend Console/BytePlus Recommend API Integration Dashboard.md)
+    - [BytePlus Recommend API Monitoring Dashboard](Guides/BytePlus Recommend Console/BytePlus Recommend API Monitoring Dashboard.md)
+  - **Content Industry**
+    - [Getting started with BytePlus Recommend—Content](Guides/Content Industry/Getting started with BytePlus Recommend—Content.md)
+    - [Managing Predictions for Content Industry](Guides/Content Industry/Managing Predictions for Content Industry.md)
+    - [Measuring performance for Content Industry](Guides/Content Industry/Measuring performance for Content Industry.md)
+    - **BytePlus Recommend Content Industry Overviews**
+      - [Recommend Premium overview—Content industry](Guides/Content Industry/BytePlus Recommend Content Industry Overviews/Recommend Premium overview—Content industry.md)
+    - **Managing Content industry project models**
+      - [Training Recommend Premium Content models](Guides/Content Industry/Managing Content industry project models/Training Recommend Premium Content models.md)
+    - **Managing Data for Content Industry Projects**
+      - [Interacting with the Content industry Data dashboard](Guides/Content Industry/Managing Data for Content Industry Projects/Interacting with the Content industry Data dashboard.md)
+      - **Importing Content industry data**
+        - [Imported Content industry data dashboard](Guides/Content Industry/Managing Data for Content Industry Projects/Importing Content industry data/Imported Content industry data dashboard.md)
+        - [Importing Content industry data overview](Guides/Content Industry/Managing Data for Content Industry Projects/Importing Content industry data/Importing Content industry data overview.md)
+        - **Importing Content data in Live mode**
+          - [Importing Content data in Live Mode using Amazon S3](Guides/Content Industry/Managing Data for Content Industry Projects/Importing Content industry data/Importing Content data in Live mode/Importing Content data in Live Mode using Amazon S3.md)
+          - [Importing Content data in Live Mode using API/SDK](Guides/Content Industry/Managing Data for Content Industry Projects/Importing Content industry data/Importing Content data in Live mode/Importing Content data in Live Mode using API - SDK.md)
+          - [Importing Content data in Live Mode using GCS](Guides/Content Industry/Managing Data for Content Industry Projects/Importing Content industry data/Importing Content data in Live mode/Importing Content data in Live Mode using GCS.md)
+          - [Switching projects to Live mode—Content](Guides/Content Industry/Managing Data for Content Industry Projects/Importing Content industry data/Importing Content data in Live mode/Switching projects to Live mode—Content.md)
+        - **Importing Content data in Trial mode**
+          - [Importing Content data in Trial Mode using Amazon S3](Guides/Content Industry/Managing Data for Content Industry Projects/Importing Content industry data/Importing Content data in Trial mode/Importing Content data in Trial Mode using Amazon S3.md)
+          - [Importing Content data in Trial Mode using API/SDK](Guides/Content Industry/Managing Data for Content Industry Projects/Importing Content industry data/Importing Content data in Trial mode/Importing Content data in Trial Mode using API - SDK.md)
+          - [Importing Content data in Trial Mode using GCS](Guides/Content Industry/Managing Data for Content Industry Projects/Importing Content industry data/Importing Content data in Trial mode/Importing Content data in Trial Mode using GCS.md)
+      - **Managing the Content Industry Configuration dashboard**
+        - [Content industry Configuration dashboard overview](Guides/Content Industry/Managing Data for Content Industry Projects/Managing the Content Industry Configuration dashboard/Content industry Configuration dashboard overview.md)
+        - [Content industry data metrics](Guides/Content Industry/Managing Data for Content Industry Projects/Managing the Content Industry Configuration dashboard/Content industry data metrics.md)
+        - [Managing the Content industry attributions](Guides/Content Industry/Managing Data for Content Industry Projects/Managing the Content Industry Configuration dashboard/Managing the Content industry attributions.md)
+        - [Managing the Content industry data schema](Guides/Content Industry/Managing Data for Content Industry Projects/Managing the Content Industry Configuration dashboard/Managing the Content industry data schema.md)
+        - [Managing the Content industry scenes](Guides/Content Industry/Managing Data for Content Industry Projects/Managing the Content Industry Configuration dashboard/Managing the Content industry scenes.md)
+      - **Re-importing Content industry data**
+        - [Re-importing Content industry Live Mode data](Guides/Content Industry/Managing Data for Content Industry Projects/Re-importing Content industry data/Re-importing Content industry Live Mode data.md)
+        - [Re-importing Content industry Trial Mode data](Guides/Content Industry/Managing Data for Content Industry Projects/Re-importing Content industry data/Re-importing Content industry Trial Mode data.md)
+      - **Validating Content industry imported data**
+        - [Content Data Validation error codes ](Guides/Content Industry/Managing Data for Content Industry Projects/Validating Content industry imported data/Content Data Validation error codes.md)
+        - [Content Data Validation reports ](Guides/Content Industry/Managing Data for Content Industry Projects/Validating Content industry imported data/Content Data Validation reports.md)
+        - [Editing Content data error threshold settings](Guides/Content Industry/Managing Data for Content Industry Projects/Validating Content industry imported data/Editing Content data error threshold settings.md)
+  - **Other Industries**
+    - **Recommend Premium—Other Industries**
+      - [Getting predictions—Other industries](Guides/Other Industries/Recommend Premium—Other Industries/Getting predictions—Other industries.md)
+      - [Implementation overview—Other industries](Guides/Other Industries/Recommend Premium—Other Industries/Implementation overview—Other industries.md)
+      - [Importing and validating data—Other industries](Guides/Other Industries/Recommend Premium—Other Industries/Importing and validating data—Other industries.md)
+      - [Measuring performance—Other industries](Guides/Other Industries/Recommend Premium—Other Industries/Measuring performance—Other industries.md)
+      - [Recommend Premium overview—Other industries](Guides/Other Industries/Recommend Premium—Other Industries/Recommend Premium overview—Other industries.md)
+      - [Setting up—Other industries](Guides/Other Industries/Recommend Premium—Other Industries/Setting up—Other industries.md)
+      - [Training models—Other industries](Guides/Other Industries/Recommend Premium—Other Industries/Training models—Other industries.md)
+  - **Retail - E-commerce Industry**
+    - [Basic concepts—Retail](Guides/Retail - E-commerce Industry/Basic concepts—Retail.md)
+    - [Getting started with BytePlus Recommend—Retail](Guides/Retail - E-commerce Industry/Getting started with BytePlus Recommend—Retail.md)
+    - [Managing Predictions for Retail Industry](Guides/Retail - E-commerce Industry/Managing Predictions for Retail Industry.md)
+    - [Measuring Performance for Retail Industry](Guides/Retail - E-commerce Industry/Measuring Performance for Retail Industry.md)
+    - **BytePlus Recommend Retail - E-commerce Industry Overviews**
+      - [Recommend Premium overview—Retail](Guides/Retail - E-commerce Industry/BytePlus Recommend Retail - E-commerce Industry Overviews/Recommend Premium overview—Retail.md)
+    - **Managing Data for Retail Industry Projects**
+      - [Interacting with the Data dashboard—Retail](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Interacting with the Data dashboard—Retail.md)
+      - **Importing Retail Industry Data**
+        - [Imported data dashboard](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Importing Retail Industry Data/Imported data dashboard.md)
+        - [Importing Retail industry data overview](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Importing Retail Industry Data/Importing Retail industry data overview.md)
+        - **Importing Retail data in Live Mode**
+          - [Importing Retail data in Live Mode using GCS](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Importing Retail Industry Data/Importing Retail data in Live Mode/Importing Retail data in Live Mode using GCS.md)
+          - [Importing Retail data using Amazon S3](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Importing Retail Industry Data/Importing Retail data in Live Mode/Importing Retail data using Amazon S3.md)
+          - [Importing Retail data using API/SDK](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Importing Retail Industry Data/Importing Retail data in Live Mode/Importing Retail data using API - SDK.md)
+          - [Switching to Live Mode—Retail](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Importing Retail Industry Data/Importing Retail data in Live Mode/Switching to Live Mode—Retail.md)
+        - **Importing Retail data in Trial Mode**
+          - [Importing Retail data in Trial Mode using Amazon S3](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Importing Retail Industry Data/Importing Retail data in Trial Mode/Importing Retail data in Trial Mode using Amazon S3.md)
+          - [Importing Retail data in Trial Mode using API/SDK](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Importing Retail Industry Data/Importing Retail data in Trial Mode/Importing Retail data in Trial Mode using API - SDK.md)
+          - [Importing Retail data in Trial Mode using GCS](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Importing Retail Industry Data/Importing Retail data in Trial Mode/Importing Retail data in Trial Mode using GCS.md)
+      - **Managing the Configuration dashboard**
+        - [Managing the Retail industry attributions](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Managing the Configuration dashboard/Managing the Retail industry attributions.md)
+        - [Managing the Retail industry data schema](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Managing the Configuration dashboard/Managing the Retail industry data schema.md)
+        - [Managing the Retail industry scenes](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Managing the Configuration dashboard/Managing the Retail industry scenes.md)
+        - [Retail industry Configuration dashboard overview](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Managing the Configuration dashboard/Retail industry Configuration dashboard overview.md)
+        - [Retail industry data metrics ](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Managing the Configuration dashboard/Retail industry data metrics.md)
+      - **Re-importing Retail data**
+        - [Re-importing Retail industry Live Mode data](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Re-importing Retail data/Re-importing Retail industry Live Mode data.md)
+        - [Re-importing Retail industry Trial Mode data](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Re-importing Retail data/Re-importing Retail industry Trial Mode data.md)
+      - **Validating Retail imported data**
+        - [Editing Retail data error threshold settings](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Validating Retail imported data/Editing Retail data error threshold settings.md)
+        - [Retail Data Validation error codes ](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Validating Retail imported data/Retail Data Validation error codes.md)
+        - [Retail Data Validation reports ](Guides/Retail - E-commerce Industry/Managing Data for Retail Industry Projects/Validating Retail imported data/Retail Data Validation reports.md)
+    - **Managing Models for Retail Industry Projects**
+      - [Training Recommend Premium Retail models](Guides/Retail - E-commerce Industry/Managing Models for Retail Industry Projects/Training Recommend Premium Retail models.md)
+- **Resources**
+  - **FAQ**
+    - [Effective and efficient data synchronization](Resources/FAQ/Effective and efficient data synchronization.md)
+    - [Handling Remote Procedure Calls (RPCs) correctly](Resources/FAQ/Handling Remote Procedure Calls (RPCs) correctly.md)
+    - [Ways to improve recommendation performance](Resources/FAQ/Ways to improve recommendation performance.md)
+  - **Retail - E-commerce Industry**
+    - [Data fields—Retail](Resources/Retail - E-commerce Industry/Data fields—Retail.md)
+- **Samples**
+  - **Content**
+    - [API PROTO definitions—Content](Samples/Content/API PROTO definitions—Content.md)
+    - [Code samples—Content](Samples/Content/Code samples—Content.md)
+  - **Retail**
+    - [API PROTO definitions—Retail](Samples/Retail/API PROTO definitions—Retail.md)
+    - [Code samples—Retail](Samples/Retail/Code samples—Retail.md)

@@ -1,0 +1,84 @@
+---
+title: "Recovering a backup of a deleted instance to a new instance"
+product: "NDB for mysql"
+product_code: "NDB_for_MySQL"
+source: "https://docs.byteplus.com/en/docs/NDB_for_MySQL/Recovering_a_backup_of_a_deleted_instance_to_a_new_instance"
+---
+
+A deleted NDB for MySQL instance is saved in a deleted instance backup. You can restore data to a new instance using the backup files retained in the deleted instance backup list. This article describes how to restore a deleted instance.
+
+<span id=".5rOo5oSP5LqL6aG5"></span>
+## Precautions
+
+A deleted instance can only be restored by restoring the entire instance based on a backup set, that is, restoring the data retained in the backup set to a new instance.
+
+<span id=".5pON5L2c5q2l6aqk"></span>
+## Procedure
+
+
+1. Log on to the [NDB for MySQL console](https://console.byteplus.com/db/vedb-mysql).
+
+2. In the upper\-left corner of the top menu bar, select the project and region for the instance.
+
+3. Click **Backup management** in the left\-side navigation bar.
+
+4. In the **Backups of deleted instances** tab, click<span>![图片](https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_d49982417cacf0cf34ca1b2a4fdf0c89.png) </span>in front of the target instance name to view the saved backup file.
+
+5. Click the backup file **Actions** column for **Restore**. 
+
+6. On the **Recovery to new instance** page, configure the recovery settings related parameters.
+
+   
+   |Type |Parameter |Description |
+   |---|---|---|
+   |**Restore configuration** |Restore method |Default is **By backup set**. |
+   ||Backup set |Select backup set. |
+   ||Restore to |Location of data recovery. Full recovery only supports recovery to a new instance, that is, creating a new instance for data recovery. |
+   
+
+7. Then configure the following parameters for the restored new instance.
+
+   
+   
+   |Type |Parameter |Description |
+   |---|---|---|
+   |**Basic information** |Instance name |Instance name. The naming convention is as follows:<br><br><br>* Cannot start with digits or hyphen (\-).<br><br>* It can contain only Chinese characters, letters, digits, underscores ( _ ), and hyphens ( ).<br><br>* The length is 1~128 characters.<br><br><br><div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div><br><br><br><div data-tips="true" data-tips-type="tip">The instance name is an optional parameter. If the instance name is not set, the instance is named with the instance ID.</div><br> |
+   ||Compatible version |The MySQL version that the instance is compatible with. When restoring data, the compatible version cannot be modified and is consistent with the original instance by default. |
+   ||Minor version |Minor versions default to the original instance.<br><br>The compatible version is **MySQL 8.0**, and the minor version defaults to **NDB for MySQL 3.0**. |
+   |**Specifications** |Specification type |Please select the specification type. The default is the same as the original instance.<br><br><br>* **Exclusive type** (default): Completely exclusive CPU and memory, long\-term stable performance, will not be affected by the behavior of other instances on the physical machine. The top of the exclusive specification is exclusive TCE\-metal, completely monopolizing all the resources of a TCE\-metal.<br><br>* **General type**: Exclusive access to allocated memory, sharing CPU resources with other generic instances on the same physical machine. Enjoy scale dividends through resource reuse, with high cost performance. |
+   ||Node specification |Each specification has a corresponding number of cores and memory, and you can choose according to your business requirements. |
+   ||Primary instance availability zone |The region and availability zone where the instance is located, that is, the geographical location where the instance is located. When restoring data, the new instance and the original instance are available in different Availability Zones. |
+   ||Storage type |Select a storage type based on your business requirements.<br><br><br>* **IO performance**: The default storage type for the instance. It provides good performance and enhanced reliability and availability.<br><br>* **Intelligent compression**: A new storage type that uses intelligent compression algorithms to compress and decompress data at the physical SSD disk level. This lowers the storage cost per unit of capacity while keeping performance impact manageable.<br><br><br><div data-tips="true" data-tips-type="default" data-tips-is-title="true">Tip</div><br><br><br><br>* <div data-tips="true" data-tips-type="default">For details about the two storage types and their price differences, refer to <a href="https://docs.byteplus.com/en/docs/NDB_for_MySQL/Storage">Storage type comparison</a>.</div><br><br><br>* <div data-tips="true" data-tips-type="default">Upgrading the storage type from intelligent compression to IO\-performance is supported. For detailed instructions, refer to <a href="https://docs.byteplus.com/en/docs/NDB_for_MySQL/Upgrading_storage_type">Upgrading storage type</a>.</div><br> |
+   ||Number of primary instance nodes |Each instance supports 2 to 16 nodes, and at least two nodes are selected to ensure high availability of the cluster (one primary node and one read\-only node).<br><br><div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div><br><br><br><div data-tips="true" data-tips-type="tip">If the primary node fails, the system automatically switches the read\-only node to the new primary node.</div><br> |
+   |**Network configuration** |Virtual private cloud |Select the target VPC from the drop\-down list, and depending on the item you selected in the upper left corner of the console, the following will happen:<br><br><br>* If you select **All resources**, you can select the VPC of all accessible items under the current account.<br><br>* If you select any specific project, you can only select the VPC under that project.<br><br><br><div data-tips="true" data-tips-type="default" data-tips-is-title="true">tip</div><br><br><br><br>* <div data-tips="true" data-tips-type="default">After the instance is successfully created, the VPC cannot be changed. Please choose reasonably according to the business situation.</div><br><br><br>* <div data-tips="true" data-tips-type="default">A Virtual Private Cloud (VPC) A VPC is an isolated network environment with higher security and performance than a classic network. For detailed steps, refer to <a href="https://www.byteplus.com/en/docs/vpc/Creating-a-VPC">Creating VPC</a>.</div><br> |
+   ||Subnet |Select an available subnet in the current VPC from the drop\-down list. A subnet is an IP address block within a VPC. All cloud resources in the VPC must be deployed within a subnet. The subnet allocates private IP addresses to cloud resources. For detailed steps, refer to [Creating subnet](https://www.byteplus.com/en/docs/vpc/Creating-a-subnet). |
+   ||Database port |Specifies the port number for the connection endpoint that the instance creates by default. The default value is 3306, and the range is 1000 to 65534.<br><br><div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div><br><br><br><br>* <div data-tips="true" data-tips-type="tip">This configuration item is only valid for <strong>Primary node endpoint</strong>, <strong>Default endpoint</strong>. That is, after the instance is successfully created, the newly created custom endpoint, the port number still defaults to 3306.</div><br><br><br>* <div data-tips="true" data-tips-type="tip">After the instance is successfully created, you can also modify the port number at any time. For activity details, see <a href="https://www.byteplus.com/en/docs/NDB_for_MySQL/Modifying_address_prefix_and_port">Modifying address prefix and port</a>.</div><br> |
+   |**Advanced configuration** |Parameter configuration |Select the parameter template for the instance. If not, the system template is used by default.<br><br>You can click **View parameter template** to go to the **Parameter templates** page to create a custom parameter template, see [Creating a parameter template](https://www.byteplus.com/en/docs/NDB_for_MySQL/Creating_a_parameter_template). |
+   ||Time zone |The time zone of the instance. The default time zone for all regions in China is UTC + 08:00. The time zone of the original instance will be used when restoring data, and changes are not supported. |
+   ||Lower case table names |Whether the database table name is case sensitive. When restoring data, the table name case rules of the original instance will be used and changes are not supported. |
+   ||Affiliated project |Select the project to which the instance belongs. The default value is the project to which the original instance belongs.<br><br>A project is a virtual concept that includes a set of resources, users, and roles. A project allows you to view and manage a group of resources in a unified manner and control the permissions of users and roles to these resources.  |
+   ||Tag |Click **Add tag** and select an existing tag key and tag value from the drop\-down list or enter a new tag key and tag value based on your business needs. For tag key setting rules, see [Tag overview](https://docs.byteplus.com/en/docs/NDB_for_MySQL/Tag_overview).<br><br>A tag consists of a key\-value object that identifies cloud resources. It can help you classify cloud resources with the same characteristics (such as use, owner, or environment) for easy filtering and aggregation, so that you can easily manage the cloud resources. For more information, refer to [Managing tags](https://docs.byteplus.com/en/docs/NDB_for_MySQL/Managing_tags).<br><br><div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div><br><br><br><br>* <div data-tips="true" data-tips-type="tip">If you use IAM user management instances, you need to add a globally <code>TagFullAccess</code> permission policy for IAM user, so that all existing tag under the main account can be viewed in the drop\-down list, otherwise the drop\-down list is empty. Whether IAM user has <code>TagFullAccess</code> does not affect adding new tags to the instance. Add permissions for IAM users see <a href="https://docs.byteplus.com/en/docs/NDB_for_MySQL/Using_veDB_MySQL_with_IAM_users">Using NDB for MySQL with IAM users</a>.</div><br><br><br>* <div data-tips="true" data-tips-type="tip">You can also bind tags to an instance after it is successfully created. See <a href="https://docs.byteplus.com/en/docs/NDB_for_MySQL/Associating_or_adding_tag">Associating or adding tag</a>.</div><br> |
+   ||Deletion protection |Select whether to enable instance **Deletion protection**. Once turned on, the instance cannot be deleted. To delete an instance, you need to turn off the feature first. For more information about removal protection, see [Instance deletion protection](https://www.byteplus.com/en/docs/NDB_for_MySQL/Instance_deletion_protection). |
+   |**Billing information** |Calculate billing type |NDB for MySQL computing nodes support two billing methods: **Pay\-as\-you\-go** and **Subscription**.<br><br><br>* **Pay\-as\-you\-go**: If you plan to use instance for a short period of time, choose pay\-as\-you\-go (hourly rate). You can save money by releasing the instance when you no longer need it.<br><br>* **Subscription**: If you plan to use instance for a long period of time, please select Subscription (one\-time payment). Subscription is more affordable than Pay\-as\-you\-go, and the longer you buy, the more discounts you get.<br><br><br><div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div><br><br><br><div data-tips="true" data-tips-type="tip">You can also create a Pay\-as\-you\-go instance first and confirm that the instance meets the requirements before switching to a yearly/monthly subscription. For more information about billing, see <a href="https://docs.byteplus.com/en/docs/NDB_for_MySQL/Billing_overview">Billing overview</a>.</div><br> |
+   ||Storage billing type |Storage billing type supports two billing methods: **Pay\-as\-you\-go** and **Subscription**, including:<br><br><br>* When **Calculate billing type** selects **Pay\-as\-you\-go**, the **Storage billing type** only supports selecting **Pay\-as\-you\-go**.<br><br>* When the Calculate billing type selects the Subscription, the Storage billing type supports selecting Pay\-as\-you\-go or Subscription. |
+   ||Storage space |* If you choose the storage billing type of **Pay\-as\-you\-go**, there is no need to select the storage capacity. The storage capacity will automatically scale elastically with the increase or decrease of the amount of data, and will be billed by the hour according to the actual usage.<br><br>* If you choose the storage billing type of **Subscription**, you need to enter the storage space size, the default is 50GiB, and the step size is 10GiB.<br><br>   <div data-tips="true" data-tips-type="tip" data-tips-is-title="true" data-wrapper-indent="1">tip   </div><br>   <br><br>   * <div data-tips="true" data-tips-type="tip" data-wrapper-indent="1">If the actual storage space used exceeds the storage space size selected at the time of purchase, the excess will be billed by the hour based on the usage.   </div><br>   <br><br>   * <div data-tips="true" data-tips-type="tip" data-wrapper-indent="1">Different node specifications have different storage space value ranges. For details, please refer to the actual display of the console.   </div><br>    |
+   ||Purchase duration |When the Calculate billing type selects the subscription, you need to select the purchase duration. Support monthly purchases (can purchase 1~9 months) and yearly purchases (can purchase 1~3 years). |
+   ||Automatic renewal |If the calculate billing type is selected as subscription, you can check the box of **Auto\-renewal on expiration**, and the platform will automatically renew the subscription on a monthly basis before the expiration of the instance, so there is no need to renew the subscription manually. You can also modify the renewal configuration after successful creation. For details, see [Renewal management](https://docs.byteplus.com/en/docs/NDB_for_MySQL/Renewal_management). |
+   
+   
+
+8. Click **Confirm order**.
+
+9. Complete the subsequent steps based on the billing type selected.
+
+   * If **Pay\-as\-you\-go** is selected:
+
+      on the **Confirm order** page, confirm the order details, read and check the terms, and click **Buy now**.
+
+   * If **Subscription** is selected:
+
+      1. on the **Confirm order** page, confirm the order details, read and check the terms, and click **Submit the order**.
+
+      2. On the **Confirm order information** page, reconfirm the order information, and click **Next step**.
+
+      3. On the **Submit payment information** page, confirm the payment details and select the payment method, click **Go to payment**.

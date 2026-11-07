@@ -1,0 +1,66 @@
+# Bandwidth Package
+
+49 pages. Source: https://docs.byteplus.com/en/docs/bandwidthpackage
+
+Back to the [full index](../README.md).
+
+- [New feature release notes](New feature release notes.md)
+- **API Reference**
+  - [AddBandwidthPackageIp - Adding an EIP to a Bandwidth Package](API Reference/AddBandwidthPackageIp - Adding an EIP to a Bandwidth Package.md)
+  - [API overview](API Reference/API overview.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [CreateBandwidthPackage - Creating a Bandwidth Package](API Reference/CreateBandwidthPackage - Creating a Bandwidth Package.md)
+  - [DeleteBandwidthPackage](API Reference/DeleteBandwidthPackage.md)
+  - [DescribeBandwidthPackages - Querying Bandwidth Packages](API Reference/DescribeBandwidthPackages - Querying Bandwidth Packages.md)
+  - [Introduction​](API Reference/Introduction​.md)
+  - [ModifyBandwidthPackageAttributes - Modifying a Bandwidth Package](API Reference/ModifyBandwidthPackageAttributes - Modifying a Bandwidth Package.md)
+  - [ModifyBandwidthPackageEipBandwidth - Modifying independent bandwidth for an EIP](API Reference/ModifyBandwidthPackageEipBandwidth - Modifying independent bandwidth for an EIP.md)
+  - [ModifyBandwidthPackageSpec - Modifying the maximum bandwidth for a Bandwidth Package](API Reference/ModifyBandwidthPackageSpec - Modifying the maximum bandwidth for a Bandwidth Package.md)
+  - [RemoveBandwidthPackageIp - Removing an EIP from a Bandwidth Package](API Reference/RemoveBandwidthPackageIp - Removing an EIP from a Bandwidth Package.md)
+  - **Call method**
+    - [Common error codes](API Reference/Call method/Common error codes.md)
+    - [Common parameters](API Reference/Call method/Common parameters.md)
+    - [Request structure](API Reference/Call method/Request structure.md)
+    - [Responses](API Reference/Call method/Responses.md)
+    - [Signature method](API Reference/Call method/Signature method.md)
+- **Billing**
+  - [Arrears](Billing/Arrears.md)
+  - [Billing conversion](Billing/Billing conversion.md)
+  - [Billing overview](Billing/Billing overview.md)
+  - [Expiration](Billing/Expiration.md)
+  - [Renewal](Billing/Renewal.md)
+  - [Specification changes](Billing/Specification changes.md)
+  - [Unsubscription](Billing/Unsubscription.md)
+  - **Billing methods**
+    - [Pay-by-95th-peak](Billing/Billing methods/Pay-by-95th-peak.md)
+    - [Pay-by-bandwidth](Billing/Billing methods/Pay-by-bandwidth.md)
+    - [Pay-by-main-traffic](Billing/Billing methods/Pay-by-main-traffic.md)
+    - [Subscription](Billing/Billing methods/Subscription.md)
+- **FAQ**
+  - [FAQs](FAQ/FAQs.md)
+- **Getting Started**
+  - [Creating a Bandwidth Package and adding an EIP](Getting Started/Creating a Bandwidth Package and adding an EIP.md)
+- **Overview**
+  - [Limits](Overview/Limits.md)
+  - [Regions](Overview/Regions.md)
+  - [What is Bandwidth Package](Overview/What is Bandwidth Package.md)
+- **Terms**
+  - [BytePlus BWP_Service Level Agreement](Terms/BytePlus BWP_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Bandwidth Package](Terms/Service-Specific Terms for BytePlus Bandwidth Package.md)
+- **User Guide**
+  - [Adding an EIP](User Guide/Adding an EIP.md)
+  - [Associating or disassociating cloud resources](User Guide/Associating or disassociating cloud resources.md)
+  - [Converting protocol type for a Bandwidth Package](User Guide/Converting protocol type for a Bandwidth Package.md)
+  - [Creating a Bandwidth Package](User Guide/Creating a Bandwidth Package.md)
+  - [Identity and access management](User Guide/Identity and access management.md)
+  - [Managing resources in a Bandwidth Package](User Guide/Managing resources in a Bandwidth Package.md)
+  - [Migrating an EIP](User Guide/Migrating an EIP.md)
+  - [Modifying the maximum bandwidth for a Bandwidth Package](User Guide/Modifying the maximum bandwidth for a Bandwidth Package.md)
+  - [Releasing a Bandwidth Package](User Guide/Releasing a Bandwidth Package.md)
+  - [Removing an EIP address](User Guide/Removing an EIP address.md)
+  - **Monitoring**
+    - [Configuring an alarm strategy](User Guide/Monitoring/Configuring an alarm strategy.md)
+    - [Viewing monitoring data](User Guide/Monitoring/Viewing monitoring data.md)
+  - **Projects and tags**
+    - [Project management](User Guide/Projects and tags/Project management.md)
+    - [Tag management](User Guide/Projects and tags/Tag management.md)

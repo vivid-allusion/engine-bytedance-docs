@@ -1,0 +1,183 @@
+# DataLeap
+
+129 pages. Source: https://docs.byteplus.com/en/docs/dataleap
+
+Back to the [full index](../README.md).
+
+- **Product Billing**
+  - [Billing Instructions for Version Services](Product Billing/Billing Instructions for Version Services.md)
+  - [Overview](Product Billing/Overview.md)
+  - **Resource group billing**
+    - [Billing information for exclusive resource groups](Product Billing/Resource group billing/Billing information for exclusive resource groups.md)
+    - [Public resource group billing instructions](Product Billing/Resource group billing/Public resource group billing instructions.md)
+- **Product Introduction**
+  - [Application Scenarios](Product Introduction/Application Scenarios.md)
+  - [Introduction to DataLeap](Product Introduction/Introduction to DataLeap.md)
+- **Related agreements**
+  - [Service Level Agreement for DataLeap](Related agreements/Service Level Agreement for DataLeap.md)
+  - [Service Level Agreement for DataSail](Related agreements/Service Level Agreement for DataSail.md)
+- **User Guide**
+  - **Console**
+    - [Engines](User Guide/Console/Engines.md)
+    - [Onboarding Beginners Guide](User Guide/Console/Onboarding Beginners Guide.md)
+    - [Overview](User Guide/Console/Overview (overview).md)
+    - **Project Management**
+      - [Create a Project](User Guide/Console/Project Management/Create a Project.md)
+      - [Datasource Management](User Guide/Console/Project Management/Datasource Management.md)
+      - [Delete Project](User Guide/Console/Project Management/Delete Project.md)
+      - [Manage Member Information](User Guide/Console/Project Management/Manage Member Information.md)
+      - [Modify Project Configuration Information](User Guide/Console/Project Management/Modify Project Configuration Information.md)
+      - [Offline Downgrade Management](User Guide/Console/Project Management/Offline Downgrade Management.md)
+      - [Parameter Information Settings](User Guide/Console/Project Management/Parameter Information Settings.md)
+      - [Queue Management](User Guide/Console/Project Management/Queue Management.md)
+      - [Streaming Cluster Management](User Guide/Console/Project Management/Streaming Cluster Management.md)
+      - [Synchronization Settings](User Guide/Console/Project Management/Synchronization Settings.md)
+      - [Template Management](User Guide/Console/Project Management/Template Management.md)
+      - [View Project](User Guide/Console/Project Management/View Project.md)
+    - **Resource Group Management**
+      - [Public Resource Group Management](User Guide/Console/Resource Group Management/Public Resource Group Management.md)
+      - **Exclusive Resource Group Management**
+        - [Exclusive Computing Resource Group Management](User Guide/Console/Resource Group Management/Exclusive Resource Group Management/Exclusive Computing Resource Group Management.md)
+        - [Exclusive Integrated Resource Group Management](User Guide/Console/Resource Group Management/Exclusive Resource Group Management/Exclusive Integrated Resource Group Management.md)
+        - [Exclusive Scheduling Resource Group Management](User Guide/Console/Resource Group Management/Exclusive Resource Group Management/Exclusive Scheduling Resource Group Management.md)
+  - **Data Catalog**
+    - [Asset Album](User Guide/Data Catalog/Asset Album.md)
+    - [Asset Catalog](User Guide/Data Catalog/Asset Catalog.md)
+    - [Lineage Application](User Guide/Data Catalog/Lineage Application.md)
+    - [Metadata Ingestion](User Guide/Data Catalog/Metadata Ingestion.md)
+    - [Overview](User Guide/Data Catalog/Overview.md)
+    - **Asset Management**
+      - **Basic Management**
+        - [Category Management](User Guide/Data Catalog/Asset Management/Basic Management/Category Management.md)
+        - [Label Management](User Guide/Data Catalog/Asset Management/Basic Management/Label Management.md)
+      - **Shelf Management**
+        - [Album Management](User Guide/Data Catalog/Asset Management/Shelf Management/Album Management.md)
+        - [Asset Circling](User Guide/Data Catalog/Asset Management/Shelf Management/Asset Circling.md)
+        - [Asset Maintenance](User Guide/Data Catalog/Asset Management/Shelf Management/Asset Maintenance.md)
+        - [Rule Maintenance](User Guide/Data Catalog/Asset Management/Shelf Management/Rule Maintenance.md)
+    - **Data Retrieval**
+      - [Retrieve Data](User Guide/Data Catalog/Data Retrieval/Retrieve Data.md)
+      - [View ByteHouse CDW Tables](User Guide/Data Catalog/Data Retrieval/View ByteHouse CDW Tables.md)
+      - [View ByteHouse CE Tables](User Guide/Data Catalog/Data Retrieval/View ByteHouse CE Tables.md)
+      - [View LAS Catalog Tables](User Guide/Data Catalog/Data Retrieval/View LAS Catalog Tables.md)
+      - [View LAS Schema DB](User Guide/Data Catalog/Data Retrieval/View LAS Schema DB.md)
+    - **Management Center**
+      - [Config Management](User Guide/Data Catalog/Management Center/Config Management.md)
+      - [Glossary Management](User Guide/Data Catalog/Management Center/Glossary Management.md)
+      - **Line of Business Management**
+        - [Create Business Line](User Guide/Data Catalog/Management Center/Line of Business Management/Create Business Line.md)
+        - [Edit Bbusiness Line](User Guide/Data Catalog/Management Center/Line of Business Management/Edit Bbusiness Line.md)
+    - **My Assets**
+      - [Albums Management](User Guide/Data Catalog/My Assets/Albums Management.md)
+      - **DB Management**
+        - [Manage ByteHouse CDW DB](User Guide/Data Catalog/My Assets/DB Management/Manage ByteHouse CDW DB.md)
+        - [Manage ByteHouse CE DB](User Guide/Data Catalog/My Assets/DB Management/Manage ByteHouse CE DB.md)
+        - [Manage LAS Catalog DB](User Guide/Data Catalog/My Assets/DB Management/Manage LAS Catalog DB.md)
+      - **Table Management**
+        - [Manage ByteHouse CDW Tables](User Guide/Data Catalog/My Assets/Table Management/Manage ByteHouse CDW Tables.md)
+        - [Manage ByteHouse CE Tables](User Guide/Data Catalog/My Assets/Table Management/Manage ByteHouse CE Tables.md)
+        - [Manage LAS Catalog Tables](User Guide/Data Catalog/My Assets/Table Management/Manage LAS Catalog Tables.md)
+    - **Personal Center**
+      - [My Favorites](User Guide/Data Catalog/Personal Center/My Favorites.md)
+  - **Data Development**
+    - [Ad-hoc Query](User Guide/Data Development/Ad-hoc Query.md)
+    - [Function Library](User Guide/Data Development/Function Library.md)
+    - [Meta Data](User Guide/Data Development/Meta Data.md)
+    - [Notebook](User Guide/Data Development/Notebook.md)
+    - [Overview](User Guide/Data Development/Overview.md)
+    - [Personalize settings](User Guide/Data Development/Personalize settings.md)
+    - [Recycling bin](User Guide/Data Development/Recycling bin.md)
+    - [Resources Library](User Guide/Data Development/Resources Library.md)
+    - [Task Template](User Guide/Data Development/Task Template.md)
+    - [version history](User Guide/Data Development/version history.md)
+    - [Write local data to a Hive table](User Guide/Data Development/Write local data to a Hive table.md)
+    - **ByteHouse**
+      - [ByteHouse CDW SQL](User Guide/Data Development/ByteHouse/ByteHouse CDW SQL.md)
+      - [ByteHouse CE SQL](User Guide/Data Development/ByteHouse/ByteHouse CE SQL.md)
+    - **EMR**
+      - **EMR Serverless Spark Cluster**
+        - [EMR Serverless Spark Java/Python](User Guide/Data Development/EMR/EMR Serverless Spark Cluster/EMR Serverless Spark Java - Python.md)
+        - [EMR Serverless Spark SQL](User Guide/Data Development/EMR/EMR Serverless Spark Cluster/EMR Serverless Spark SQL.md)
+    - **general purpose**
+      - [Python](User Guide/Data Development/general purpose/Python.md)
+      - [Shell](User Guide/Data Development/general purpose/Shell.md)
+    - **Scheduling Settings**
+      - [Basic Task Attributes](User Guide/Data Development/Scheduling Settings/Basic Task Attributes.md)
+      - [Input and Output Parameter Settings](User Guide/Data Development/Scheduling Settings/Input and Output Parameter Settings.md)
+      - [Scheduling Attributes](User Guide/Data Development/Scheduling Settings/Scheduling Attributes.md)
+      - [Task scheduling depends on](User Guide/Data Development/Scheduling Settings/Task scheduling depends on.md)
+    - **Serverless Flink**
+      - [Flink Batch SQL](User Guide/Data Development/Serverless Flink/Flink Batch SQL.md)
+      - [Java Flink Batch](User Guide/Data Development/Serverless Flink/Java Flink Batch.md)
+      - [Serverless Flink SQL](User Guide/Data Development/Serverless Flink/Serverless Flink SQL.md)
+      - [Serverless Java Flink](User Guide/Data Development/Serverless Flink/Serverless Java Flink.md)
+  - **Data Integration**
+    - [Advanced parameters](User Guide/Data Integration/Advanced parameters.md)
+    - [Configure Datasource](User Guide/Data Integration/Configure Datasource.md)
+    - [Data Integration Resource Group](User Guide/Data Integration/Data Integration Resource Group.md)
+    - [Overview](User Guide/Data Integration/Overview.md)
+    - [Permission descriptions](User Guide/Data Integration/Permission descriptions.md)
+    - [Supported data sources](User Guide/Data Integration/Supported data sources.md)
+    - **Batch integration**
+      - [Batch data synchronization](User Guide/Data Integration/Batch integration/Batch data synchronization.md)
+    - **Configure network connection**
+      - [Enable public network for Resource Group VPC](User Guide/Data Integration/Configure network connection/Enable public network for Resource Group VPC.md)
+      - [Network connectivity solution](User Guide/Data Integration/Configure network connection/Network connectivity solution.md)
+    - **Data Synchronization Solutions**
+      - **Data conversion for solutions**
+        - [Data conversion function library](User Guide/Data Integration/Data Synchronization Solutions/Data conversion for solutions/Data conversion function library.md)
+        - [Guide to config data conversion for solutions](User Guide/Data Integration/Data Synchronization Solutions/Data conversion for solutions/Guide to config data conversion for solutions.md)
+    - **Datasource list**
+      - [Hive Data Source](User Guide/Data Integration/Datasource list/Hive Data Source.md)
+      - [MySQL Data source](User Guide/Data Integration/Datasource list/MySQL Data source.md)
+    - **Streaming integration**
+      - [Streaming data synchronization](User Guide/Data Integration/Streaming integration/Streaming data synchronization.md)
+  - **Data operation**
+    - [Overview](User Guide/Data operation/Overview.md)
+    - **Batch Task Operations**
+      - [Data backfill](User Guide/Data operation/Batch Task Operations/Data backfill.md)
+      - [Instance Operation](User Guide/Data operation/Batch Task Operations/Instance Operation.md)
+      - [Overview](User Guide/Data operation/Batch Task Operations/Overview.md)
+      - [Task Operation](User Guide/Data operation/Batch Task Operations/Task Operation.md)
+  - **Data Quality**
+    - [Data Comparison](User Guide/Data Quality/Data Comparison.md)
+    - [Overview](User Guide/Data Quality/Overview.md)
+    - [Quality Subscription](User Guide/Data Quality/Quality Subscription.md)
+    - **Data Monitoring**
+      - **Offline Data Monitoring**
+        - **Manage Monitoring Objects**
+          - [Configure Dual-data-source Validation Rules](User Guide/Data Quality/Data Monitoring/Offline Data Monitoring/Manage Monitoring Objects/Configure Dual-data-source Validation Rules.md)
+          - [Configure Hive Custom Rules](User Guide/Data Quality/Data Monitoring/Offline Data Monitoring/Manage Monitoring Objects/Configure Hive Custom Rules.md)
+          - [Configure Hive Template Rules](User Guide/Data Quality/Data Monitoring/Offline Data Monitoring/Manage Monitoring Objects/Configure Hive Template Rules.md)
+          - [Configure Other Data Source Rules](User Guide/Data Quality/Data Monitoring/Offline Data Monitoring/Manage Monitoring Objects/Configure Other Data Source Rules.md)
+        - **Manage Run Results**
+          - [Manage Dual-data-source Validation Rule Run Results](User Guide/Data Quality/Data Monitoring/Offline Data Monitoring/Manage Run Results/Manage Dual-data-source Validation Rule Run Results.md)
+          - [Manage Hive Customized Rules Run Results](User Guide/Data Quality/Data Monitoring/Offline Data Monitoring/Manage Run Results/Manage Hive Customized Rules Run Results.md)
+          - [Manage Hive Template Rules Run Results](User Guide/Data Quality/Data Monitoring/Offline Data Monitoring/Manage Run Results/Manage Hive Template Rules Run Results.md)
+          - [Manage Other Datasource Rule Run Results](User Guide/Data Quality/Data Monitoring/Offline Data Monitoring/Manage Run Results/Manage Other Datasource Rule Run Results.md)
+    - **Data Profiling**
+      - [Dynamic Probe](User Guide/Data Quality/Data Profiling/Dynamic Probe.md)
+      - [Full Probe](User Guide/Data Quality/Data Profiling/Full Probe.md)
+  - **Data Security**
+    - [Overview](User Guide/Data Security/Overview.md)
+    - **Approval Center**
+      - **Approval Settings**
+        - [Set Assignee](User Guide/Data Security/Approval Center/Approval Settings/Set Assignee.md)
+        - [Set Automatic Approval Rules](User Guide/Data Security/Approval Center/Approval Settings/Set Automatic Approval Rules.md)
+        - [Set Custom Role](User Guide/Data Security/Approval Center/Approval Settings/Set Custom Role.md)
+      - **Data Permission Approval**
+        - [Approve Applications](User Guide/Data Security/Approval Center/Data Permission Approval/Approve Applications.md)
+        - [Manage My Applications](User Guide/Data Security/Approval Center/Data Permission Approval/Manage My Applications.md)
+        - [View Approval Records](User Guide/Data Security/Approval Center/Data Permission Approval/View Approval Records.md)
+    - **Rights Management**
+      - [Auth Management](User Guide/Data Security/Rights Management/Auth Management.md)
+      - [Group Management](User Guide/Data Security/Rights Management/Group Management.md)
+      - **My Permission**
+        - [Apply Permission](User Guide/Data Security/Rights Management/My Permission/Apply Permission.md)
+        - [Manage Invalid Permissions](User Guide/Data Security/Rights Management/My Permission/Manage Invalid Permissions.md)
+        - [Manage Valid Permissions](User Guide/Data Security/Rights Management/My Permission/Manage Valid Permissions.md)
+      - **Permission Settings**
+        - [Set Application Permissions](User Guide/Data Security/Rights Management/Permission Settings/Set Application Permissions.md)
+        - [Set Approval Flow](User Guide/Data Security/Rights Management/Permission Settings/Set Approval Flow.md)
+        - [Set Auto Approval Rule](User Guide/Data Security/Rights Management/Permission Settings/Set Auto Approval Rule.md)
+        - [View Edit History](User Guide/Data Security/Rights Management/Permission Settings/View Edit History.md)

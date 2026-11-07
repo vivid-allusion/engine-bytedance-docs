@@ -1,0 +1,288 @@
+# Lake AI Service
+
+193 pages. Source: https://docs.byteplus.com/en/docs/Byteplus_LAS
+
+Back to the [full index](../README.md).
+
+- **Development_reference**
+  - **API reference- API for operator calls**
+    - [Asynchronous callback API](Development_reference/API reference- API for operator calls/Asynchronous callback API.md)
+    - [Online operator API](Development_reference/API reference- API for operator calls/Online operator API.md)
+  - **API reference- Data plane**
+    - [Chat API](Development_reference/API reference- Data plane/Chat API.md)
+    - [Usage methods](Development_reference/API reference- Data plane/Usage methods.md)
+    - **Responses API**
+      - [Create model response](Development_reference/API reference- Data plane/Responses API/Create model response.md)
+      - [Delete model response](Development_reference/API reference- Data plane/Responses API/Delete model response.md)
+      - [Query model response](Development_reference/API reference- Data plane/Responses API/Query model response.md)
+      - [Retrieve response context](Development_reference/API reference- Data plane/Responses API/Retrieve response context.md)
+      - [Streaming response](Development_reference/API reference- Data plane/Responses API/Streaming response.md)
+      - [The response object](Development_reference/API reference- Data plane/Responses API/The response object.md)
+  - **Component operations guide**
+    - **Apache Gravitino**
+      - [Apache® Gravitino Iceberg REST Catalog usage guide](Development_reference/Component operations guide/Apache Gravitino/Apache® Gravitino Iceberg REST Catalog usage guide.md)
+      - [Apache® Gravitino overview](Development_reference/Component operations guide/Apache Gravitino/Apache® Gravitino overview.md)
+      - [Apache® Gravitino Server OpenAPI usage guide](Development_reference/Component operations guide/Apache Gravitino/Apache® Gravitino Server OpenAPI usage guide.md)
+    - **Daft**
+      - [LAS job development](Development_reference/Component operations guide/Daft/LAS job development.md)
+      - [Overview](Development_reference/Component operations guide/Daft/Overview.md)
+      - [Quick start](Development_reference/Component operations guide/Daft/Quick start.md)
+      - [Read and write LAS datasets](Development_reference/Component operations guide/Daft/Read and write LAS datasets.md)
+      - [Technical principles](Development_reference/Component operations guide/Daft/Technical principles.md)
+      - **Best practices**
+        - [Daft distributed UDF parameter configuration](Development_reference/Component operations guide/Daft/Best practices/Daft distributed UDF parameter configuration.md)
+        - [Resuming from breakpoints and incremental computation: Daft Checkpoint](Development_reference/Component operations guide/Daft/Best practices/Resuming from breakpoints and incremental computation: Daft Checkpoint.md)
+    - **Lance**
+      - [Lance overview](Development_reference/Component operations guide/Lance/Lance overview.md)
+      - [Quick start](Development_reference/Component operations guide/Lance/Quick start.md)
+  - **Offline operators Daft call reference**
+    - [Supported operators: offline operators](Development_reference/Offline operators Daft call reference/Supported operators: offline operators.md)
+    - **Ark Large Model Series**
+      - **Text Generation**
+        - [Text Generation (Deepseek-V3)](Development_reference/Offline operators Daft call reference/Ark Large Model Series/Text Generation/Text Generation (Deepseek-V3).md)
+        - [Text Generation (Doubao/DeepSeek Series Models)](Development_reference/Offline operators Daft call reference/Ark Large Model Series/Text Generation/Text Generation (Doubao - DeepSeek Series Models).md)
+      - **Visual Understanding**
+        - [Visual Content Understanding (Doubao Series Models)](Development_reference/Offline operators Daft call reference/Ark Large Model Series/Visual Understanding/Visual Content Understanding (Doubao Series Models).md)
+        - [Visual Content Understanding (Doubao-1.5-vision-pro-32k)](Development_reference/Offline operators Daft call reference/Ark Large Model Series/Visual Understanding/Visual Content Understanding (Doubao-1.5-vision-pro-32k).md)
+    - **Audio**
+      - **Audio Generation**
+        - [Text-to-Speech (Doubao Speech Large Model)](Development_reference/Offline operators Daft call reference/Audio/Audio Generation/Text-to-Speech (Doubao Speech Large Model).md)
+      - **Audio Processing**
+        - [Audio Duration Calculation](Development_reference/Offline operators Daft call reference/Audio/Audio Processing/Audio Duration Calculation.md)
+        - [Audio File Size Calculation](Development_reference/Offline operators Daft call reference/Audio/Audio Processing/Audio File Size Calculation.md)
+        - [Audio Filter Processing](Development_reference/Offline operators Daft call reference/Audio/Audio Processing/Audio Filter Processing.md)
+        - [Audio Format Conversion](Development_reference/Offline operators Daft call reference/Audio/Audio Processing/Audio Format Conversion.md)
+        - [Audio Format Standardization](Development_reference/Offline operators Daft call reference/Audio/Audio Processing/Audio Format Standardization.md)
+        - [Audio Quality Score (DNSMOS)](Development_reference/Offline operators Daft call reference/Audio/Audio Processing/Audio Quality Score (DNSMOS).md)
+        - [Audio Segment Segmentation (with Timestamps)](Development_reference/Offline operators Daft call reference/Audio/Audio Processing/Audio Segment Segmentation (with Timestamps).md)
+        - [Audio segment splitting (by duration)](Development_reference/Offline operators Daft call reference/Audio/Audio Processing/Audio segment splitting (by duration).md)
+        - [Audio Signal-to-Noise Ratio Calculation](Development_reference/Offline operators Daft call reference/Audio/Audio Processing/Audio Signal-to-Noise Ratio Calculation.md)
+        - [Audio Silence Detection](Development_reference/Offline operators Daft call reference/Audio/Audio Processing/Audio Silence Detection.md)
+        - [Audio to MP3](Development_reference/Offline operators Daft call reference/Audio/Audio Processing/Audio to MP3.md)
+      - **Audio Recognition**
+        - [Audio Multilingual Recognition (whisper)](Development_reference/Offline operators Daft call reference/Audio/Audio Recognition/Audio Multilingual Recognition (whisper).md)
+        - [Speaker Verification (ERes2Net)](Development_reference/Offline operators Daft call reference/Audio/Audio Recognition/Speaker Verification (ERes2Net).md)
+        - [Speech to Text (FireRed)](Development_reference/Offline operators Daft call reference/Audio/Audio Recognition/Speech to Text (FireRed).md)
+        - [Speech-to-Text (Whisper Series Models)](Development_reference/Offline operators Daft call reference/Audio/Audio Recognition/Speech-to-Text (Whisper Series Models).md)
+        - [Voice Activity Detection (FSMN Model)](Development_reference/Offline operators Daft call reference/Audio/Audio Recognition/Voice Activity Detection (FSMN Model).md)
+        - [Voice Activity Detection (Silero Model)](Development_reference/Offline operators Daft call reference/Audio/Audio Recognition/Voice Activity Detection (Silero Model).md)
+      - **Audio Security Identification**
+        - [Audio Risk Identification](Development_reference/Offline operators Daft call reference/Audio/Audio Security Identification/Audio Risk Identification.md)
+    - **Document**
+      - **Document Parsing**
+        - [Intelligent PDF Document Parsing](Development_reference/Offline operators Daft call reference/Document/Document Parsing/Intelligent PDF Document Parsing.md)
+        - [Xlsx Document Parsing](Development_reference/Offline operators Daft call reference/Document/Document Parsing/Xlsx Document Parsing.md)
+    - **Image**
+      - **Image OCR**
+        - [Image OCR (EasyOCR)](Development_reference/Offline operators Daft call reference/Image/Image OCR/Image OCR (EasyOCR).md)
+      - **Image Processing**
+        - [Image Aesthetic Score](Development_reference/Offline operators Daft call reference/Image/Image Processing/Image Aesthetic Score.md)
+        - [Image Resampling](Development_reference/Offline operators Daft call reference/Image/Image Processing/Image Resampling.md)
+      - **Image Vectorization**
+        - [Image Embedding (ViT Series Models)](Development_reference/Offline operators Daft call reference/Image/Image Vectorization/Image Embedding (ViT Series Models).md)
+    - **Multimodal**
+      - **Audio Understanding**
+        - [Audio Content Understanding (Qwen Omni Model)](Development_reference/Offline operators Daft call reference/Multimodal/Audio Understanding/Audio Content Understanding (Qwen Omni Model).md)
+        - [Audio Understanding (Kimi-Audio Series Models)](Development_reference/Offline operators Daft call reference/Multimodal/Audio Understanding/Audio Understanding (Kimi-Audio Series Models).md)
+      - **Image Understanding**
+        - [Image Content Understanding (LLaVA Series Models)](Development_reference/Offline operators Daft call reference/Multimodal/Image Understanding/Image Content Understanding (LLaVA Series Models).md)
+        - [Image Content Understanding (Qwen VL Series Models)](Development_reference/Offline operators Daft call reference/Multimodal/Image Understanding/Image Content Understanding (Qwen VL Series Models).md)
+        - [Image Content Understanding (Qwen VL Series Models, supporting large-scale models)](Development_reference/Offline operators Daft call reference/Multimodal/Image Understanding/Image Content Understanding (Qwen VL Series Models, supporting large-scale models).md)
+      - **Multimodal Deep Thinking**
+        - [Multimodal Deep Thinking (Doubao Series Models)](Development_reference/Offline operators Daft call reference/Multimodal/Multimodal Deep Thinking/Multimodal Deep Thinking (Doubao Series Models).md)
+        - [Multimodal Deep Thinking (Doubao-Seed-1.6)](Development_reference/Offline operators Daft call reference/Multimodal/Multimodal Deep Thinking/Multimodal Deep Thinking (Doubao-Seed-1.6).md)
+        - [Multimodal Deep Thinking (Doubao-Seed-1.6-flash)](Development_reference/Offline operators Daft call reference/Multimodal/Multimodal Deep Thinking/Multimodal Deep Thinking (Doubao-Seed-1.6-flash).md)
+      - **Multimodal Vectorization**
+        - [Image-text embedding (CLIP model)](Development_reference/Offline operators Daft call reference/Multimodal/Multimodal Vectorization/Image-text embedding (CLIP model).md)
+      - **Video Understanding**
+        - [Video Content Understanding (Qwen VL Series Models)](Development_reference/Offline operators Daft call reference/Multimodal/Video Understanding/Video Content Understanding (Qwen VL Series Models).md)
+        - [Video Content Understanding (Qwen VL Series Models, supports large-scale models)](Development_reference/Offline operators Daft call reference/Multimodal/Video Understanding/Video Content Understanding (Qwen VL Series Models, supports large-scale models).md)
+    - **Others**
+      - [Timestamp Fragment Merging](Development_reference/Offline operators Daft call reference/Others/Timestamp Fragment Merging.md)
+    - **Text**
+      - **Text Classification**
+        - [Text Language Recognition](Development_reference/Offline operators Daft call reference/Text/Text Classification/Text Language Recognition.md)
+      - **Text Cleaning**
+        - [html tag removal](Development_reference/Offline operators Daft call reference/Text/Text Cleaning/html tag removal.md)
+        - [Specific Character Replacement](Development_reference/Offline operators Daft call reference/Text/Text Cleaning/Specific Character Replacement.md)
+      - **Text Processing**
+        - [Bullet Line Proportion Calculator](Development_reference/Offline operators Daft call reference/Text/Text Processing/Bullet Line Proportion Calculator.md)
+        - [Character Proportion Calculator](Development_reference/Offline operators Daft call reference/Text/Text Processing/Character Proportion Calculator.md)
+        - [CommonCrawl WARC File Content Extraction](Development_reference/Offline operators Daft call reference/Text/Text Processing/CommonCrawl WARC File Content Extraction.md)
+        - [Copyright Notice Removal](Development_reference/Offline operators Daft call reference/Text/Text Processing/Copyright Notice Removal.md)
+        - [Duplicate Line Calculator](Development_reference/Offline operators Daft call reference/Text/Text Processing/Duplicate Line Calculator.md)
+        - [Maximum English Word Length Calculator](Development_reference/Offline operators Daft call reference/Text/Text Processing/Maximum English Word Length Calculator.md)
+        - [MD5 Hash Calculation](Development_reference/Offline operators Daft call reference/Text/Text Processing/MD5 Hash Calculation.md)
+        - [Perplexity Calculator](Development_reference/Offline operators Daft call reference/Text/Text Processing/Perplexity Calculator.md)
+        - [Simplified and Traditional Chinese Conversion](Development_reference/Offline operators Daft call reference/Text/Text Processing/Simplified and Traditional Chinese Conversion.md)
+        - [Special Character Proportion Calculator](Development_reference/Offline operators Daft call reference/Text/Text Processing/Special Character Proportion Calculator.md)
+        - [Text chunk splitting (based on sentence structure)](Development_reference/Offline operators Daft call reference/Text/Text Processing/Text chunk splitting (based on sentence structure).md)
+        - [Text Length Calculator](Development_reference/Offline operators Daft call reference/Text/Text Processing/Text Length Calculator.md)
+        - [Text Link Removal](Development_reference/Offline operators Daft call reference/Text/Text Processing/Text Link Removal.md)
+        - [Text Security Scorer](Development_reference/Offline operators Daft call reference/Text/Text Processing/Text Security Scorer.md)
+        - [URL Proportion Calculator](Development_reference/Offline operators Daft call reference/Text/Text Processing/URL Proportion Calculator.md)
+        - [Whitespace Normalizer](Development_reference/Offline operators Daft call reference/Text/Text Processing/Whitespace Normalizer.md)
+        - [Word Repetition Ratio Calculator](Development_reference/Offline operators Daft call reference/Text/Text Processing/Word Repetition Ratio Calculator.md)
+      - **Text Quality Evaluation**
+        - [English Text Quality Scoring](Development_reference/Offline operators Daft call reference/Text/Text Quality Evaluation/English Text Quality Scoring.md)
+        - [Multilingual Text Quality Scoring](Development_reference/Offline operators Daft call reference/Text/Text Quality Evaluation/Multilingual Text Quality Scoring.md)
+      - **Text Security Identification**
+        - [Text Content Risk Identification](Development_reference/Offline operators Daft call reference/Text/Text Security Identification/Text Content Risk Identification.md)
+      - **Text Translation**
+        - [Multilingual text translation](Development_reference/Offline operators Daft call reference/Text/Text Translation/Multilingual text translation.md)
+      - **Text Vectorization**
+        - [Text embedding (BGE model)](Development_reference/Offline operators Daft call reference/Text/Text Vectorization/Text embedding (BGE model).md)
+        - [Text sparse & dense embedding (BGE model)](Development_reference/Offline operators Daft call reference/Text/Text Vectorization/Text sparse & dense embedding (BGE model).md)
+      - **TOS Path Pre-Signature**
+        - [Generate a Common Pre-Signature for TOS](Development_reference/Offline operators Daft call reference/Text/TOS Path Pre-Signature/Generate a Common Pre-Signature for TOS.md)
+    - **Video**
+      - **video Processing**
+        - [Adaptive Video Compression](Development_reference/Offline operators Daft call reference/Video/video Processing/Adaptive Video Compression.md)
+        - [Video Audio Extraction](Development_reference/Offline operators Daft call reference/Video/video Processing/Video Audio Extraction.md)
+        - [Video Clip Segmentation (Keyframe)](Development_reference/Offline operators Daft call reference/Video/video Processing/Video Clip Segmentation (Keyframe).md)
+        - [Video Clip Segmentation (Timestamp)](Development_reference/Offline operators Daft call reference/Video/video Processing/Video Clip Segmentation (Timestamp).md)
+        - [Video Clip Splitting (by Duration)](Development_reference/Offline operators Daft call reference/Video/video Processing/Video Clip Splitting (by Duration).md)
+        - [Video Frame Sampling](Development_reference/Offline operators Daft call reference/Video/video Processing/Video Frame Sampling.md)
+        - [Video Keyframe Extraction](Development_reference/Offline operators Daft call reference/Video/video Processing/Video Keyframe Extraction.md)
+        - [Video Resolution Adjustment](Development_reference/Offline operators Daft call reference/Video/video Processing/Video Resolution Adjustment.md)
+        - [Video to MP4 Conversion](Development_reference/Offline operators Daft call reference/Video/video Processing/Video to MP4 Conversion.md)
+- **Get_to_know_LAS_AI**
+  - **Product billing**
+    - [Billing instructions](Get_to_know_LAS_AI/Product billing/Billing instructions.md)
+    - [Large model invocation billing](Get_to_know_LAS_AI/Product billing/Large model invocation billing.md)
+  - **Product overview**
+    - [Limitations](Get_to_know_LAS_AI/Product overview/Limitations.md)
+    - [What is Lake AI Service](Get_to_know_LAS_AI/Product overview/What is Lake AI Service.md)
+  - **Quick start**
+    - [Preparation tasks](Get_to_know_LAS_AI/Quick start/Preparation tasks.md)
+  - **Release notes and Announcements**
+    - [Feature release log](Get_to_know_LAS_AI/Release notes and Announcements/Feature release log.md)
+    - **Product announcements**
+      - [Model deprecation and service discontinuation notice - Batch 1](Get_to_know_LAS_AI/Release notes and Announcements/Product announcements/Model deprecation and service discontinuation notice - Batch 1.md)
+  - **Terms**
+    - [BytePlus LAS_Service Level Agreement](Get_to_know_LAS_AI/Terms/BytePlus LAS_Service Level Agreement.md)
+- **Operator_hub_bp**
+  - **Audio**
+    - **Audio Generation**
+      - [Text to Speech (Doubao Speech 2.0)](Operator_hub_bp/Audio/Audio Generation/Text to Speech (Doubao Speech 2.0).md)
+      - [Voice Cloning Synthesis](Operator_hub_bp/Audio/Audio Generation/Voice Cloning Synthesis.md)
+    - **Audio Processing**
+      - [Vocal Separation](Operator_hub_bp/Audio/Audio Processing/Vocal Separation.md)
+    - **Audio Recognition**
+      - [Speech-to-Text (Doubao - Audio File Recognition) Enhanced Version](Operator_hub_bp/Audio/Audio Recognition/Speech-to-Text (Doubao - Audio File Recognition) Enhanced Version.md)
+      - [Speech-to-Text (LAS ASR Service)](Operator_hub_bp/Audio/Audio Recognition/Speech-to-Text (LAS ASR Service).md)
+  - **Document**
+    - **Document Parsing**
+      - [PDF Document Parsing (Doubao)](Operator_hub_bp/Document/Document Parsing/PDF Document Parsing (Doubao).md)
+  - **Embodied Intelligence**
+    - **Semantic Annotation**
+      - [Embodied Semantic Annotation](Operator_hub_bp/Embodied Intelligence/Semantic Annotation/Embodied Semantic Annotation.md)
+  - **Image**
+    - **Image Generation**
+      - [Image Pro Image Generation](Operator_hub_bp/Image/Image Generation/Image Pro Image Generation.md)
+      - [Seedream Image Generation](Operator_hub_bp/Image/Image Generation/Seedream Image Generation.md)
+  - **Industry practices**
+    - [AI games](Operator_hub_bp/Industry practices/AI games.md)
+    - [E-commerce marketing](Operator_hub_bp/Industry practices/E-commerce marketing.md)
+    - [Model training](Operator_hub_bp/Industry practices/Model training.md)
+    - [Short comic drama series](Operator_hub_bp/Industry practices/Short comic drama series.md)
+    - [Smart education](Operator_hub_bp/Industry practices/Smart education.md)
+    - [Store inspection](Operator_hub_bp/Industry practices/Store inspection.md)
+  - **Multimodal**
+    - **Multimodal Deep Thinking**
+      - [Multimodal Deep Thinking (Doubao-Seed-1.8)](Operator_hub_bp/Multimodal/Multimodal Deep Thinking/Multimodal Deep Thinking (Doubao-Seed-1.8).md)
+      - [Multimodal Deep Thinking (Doubao-Seed-2.0)](Operator_hub_bp/Multimodal/Multimodal Deep Thinking/Multimodal Deep Thinking (Doubao-Seed-2.0).md)
+    - **Multimodal Vectorization**
+      - [Image-Text Embedding (Skylark Models)](Operator_hub_bp/Multimodal/Multimodal Vectorization/Image-Text Embedding (Skylark Models).md)
+  - **Operator overview**
+    - [LAS intelligent data processing operators](Operator_hub_bp/Operator overview/LAS intelligent data processing operators.md)
+    - [Supported operators- online operators](Operator_hub_bp/Operator overview/Supported operators- online operators.md)
+  - **Quick start**
+    - [Quick experience](Operator_hub_bp/Quick start/Quick experience.md)
+    - **Preparations**
+      - [Obtain and configure the API Key](Operator_hub_bp/Quick start/Preparations/Obtain and configure the API Key.md)
+      - [Obtain the Base URL](Operator_hub_bp/Quick start/Preparations/Obtain the Base URL.md)
+  - **Video**
+    - **Content Safety**
+      - [Sensitive Content Masking](Operator_hub_bp/Video/Content Safety/Sensitive Content Masking.md)
+    - **Video Editing**
+      - [Fast Video Remix](Operator_hub_bp/Video/Video Editing/Fast Video Remix.md)
+      - [Intelligent video editing](Operator_hub_bp/Video/Video Editing/Intelligent video editing.md)
+      - [Intelligent Video Remix](Operator_hub_bp/Video/Video Editing/Intelligent Video Remix.md)
+      - [Video Packaging](Operator_hub_bp/Video/Video Editing/Video Packaging.md)
+      - [Viral clip generation](Operator_hub_bp/Video/Video Editing/Viral clip generation.md)
+    - **Video generation**
+      - [Audio Rebuild](Operator_hub_bp/Video/Video generation/Audio Rebuild.md)
+      - [Enhanced/basic video generation](Operator_hub_bp/Video/Video generation/Enhanced - basic video generation.md)
+      - [HyperVideo Video Generation](Operator_hub_bp/Video/Video generation/HyperVideo Video Generation.md)
+      - [Intelligent Short Drama & Film Narration](Operator_hub_bp/Video/Video generation/Intelligent Short Drama & Film Narration.md)
+      - [Video Edit Enhanced](Operator_hub_bp/Video/Video generation/Video Edit Enhanced.md)
+      - [Video Edit Enhanced 2.0](Operator_hub_bp/Video/Video generation/Video Edit Enhanced 2.0.md)
+    - **Video Processing**
+      - [Face Blur](Operator_hub_bp/Video/Video Processing/Face Blur.md)
+      - [Visual Depth Estimation](Operator_hub_bp/Video/Video Processing/Visual Depth Estimation.md)
+    - **Video Production**
+      - [Short drama script fission](Operator_hub_bp/Video/Video Production/Short drama script fission.md)
+      - [Short drama script generation](Operator_hub_bp/Video/Video Production/Short drama script generation.md)
+      - [Short drama script parsing](Operator_hub_bp/Video/Video Production/Short drama script parsing.md)
+      - [Short Drama Script Revision](Operator_hub_bp/Video/Video Production/Short Drama Script Revision.md)
+      - [Storyboard Script Generation](Operator_hub_bp/Video/Video Production/Storyboard Script Generation.md)
+      - [Video Prompt Generation](Operator_hub_bp/Video/Video Production/Video Prompt Generation.md)
+      - [Video scene segmentation](Operator_hub_bp/Video/Video Production/Video scene segmentation.md)
+      - [Video Script Planner](Operator_hub_bp/Video/Video Production/Video Script Planner.md)
+      - [Video Storyboard Gen](Operator_hub_bp/Video/Video Production/Video Storyboard Gen.md)
+    - **Video Restoration**
+      - [Video Inpaint](Operator_hub_bp/Video/Video Restoration/Video Inpaint.md)
+    - **Video Translation**
+      - [Video Subtitle Translation](Operator_hub_bp/Video/Video Translation/Video Subtitle Translation.md)
+      - [Video Translation](Operator_hub_bp/Video/Video Translation/Video Translation.md)
+    - **Video understanding**
+      - [Fine-grained video understanding](Operator_hub_bp/Video/Video understanding/Fine-grained video understanding.md)
+      - [Video-to-Prompt Generation](Operator_hub_bp/Video/Video understanding/Video-to-Prompt Generation.md)
+- **user_guide**
+  - **Best practices**
+    - **Multimodal technology applications**
+      - [Building high-quality speech-text pairs](user_guide/Best practices/Multimodal technology applications/Building high-quality speech-text pairs.md)
+      - [Image retrieval solution](user_guide/Best practices/Multimodal technology applications/Image retrieval solution.md)
+      - [Video subtitle synchronization check](user_guide/Best practices/Multimodal technology applications/Video subtitle synchronization check.md)
+  - **Data processing**
+    - [Storage mounting instructions](user_guide/Data processing/Storage mounting instructions.md)
+    - [Task management](user_guide/Data processing/Task management.md)
+    - [Workflow](user_guide/Data processing/Workflow.md)
+    - **Development machine**
+      - [Create a development machine](user_guide/Data processing/Development machine/Create a development machine.md)
+      - [Development machine overview](user_guide/Data processing/Development machine/Development machine overview.md)
+      - [Lifecycle management](user_guide/Data processing/Development machine/Lifecycle management.md)
+      - [Manage development machines](user_guide/Data processing/Development machine/Manage development machines.md)
+      - [Remote connection to the development machine](user_guide/Data processing/Development machine/Remote connection to the development machine.md)
+  - **Datasets**
+    - [Application practice- Usage instructions for datasets based on veDaft](user_guide/Datasets/Application practice- Usage instructions for datasets based on veDaft.md)
+    - [Dataset management](user_guide/Datasets/Dataset management.md)
+    - [Dataset sharing](user_guide/Datasets/Dataset sharing.md)
+  - **FAQ**
+    - [Dataset and catalog FAQ](user_guide/FAQ/Dataset and catalog FAQ.md)
+    - [Jobs, development machines, and tasks FAQ](user_guide/FAQ/Jobs, development machines, and tasks FAQ.md)
+    - [LAS operator FAQ](user_guide/FAQ/LAS operator FAQ.md)
+  - **Metadata management**
+    - [Permission Management](user_guide/Metadata management/Permission Management.md)
+    - **Catalogs, Library Tables and Functions**
+      - [Data catalog management](user_guide/Metadata management/Catalogs, Library Tables and Functions/Data catalog management.md)
+      - [Data table management](user_guide/Metadata management/Catalogs, Library Tables and Functions/Data table management.md)
+      - [Database management](user_guide/Metadata management/Catalogs, Library Tables and Functions/Database management.md)
+      - [Function management](user_guide/Metadata management/Catalogs, Library Tables and Functions/Function management.md)
+    - **Storage optimization**
+      - [Orphan file management](user_guide/Metadata management/Storage optimization/Orphan file management.md)
+      - [Partition lifecycle management](user_guide/Metadata management/Storage optimization/Partition lifecycle management.md)
+      - [Small file merge](user_guide/Metadata management/Storage optimization/Small file merge.md)
+      - [Snapshot cleanup](user_guide/Metadata management/Storage optimization/Snapshot cleanup.md)
+      - [TTL lifecycle management](user_guide/Metadata management/Storage optimization/TTL lifecycle management.md)
+  - **Online services**
+    - [Online service](user_guide/Online services/Online service.md)
+  - **Operator service**
+    - [API Key management](user_guide/Operator service/API Key management.md)
+    - [Operator monitoring](user_guide/Operator service/Operator monitoring.md)
+    - [Quota management](user_guide/Operator service/Quota management.md)
+  - **Resource management**
+    - [Image management](user_guide/Resource management/Image management.md)
+    - [Queue management](user_guide/Resource management/Queue management.md)
+    - [Queue reserved resource policy](user_guide/Resource management/Queue reserved resource policy.md)

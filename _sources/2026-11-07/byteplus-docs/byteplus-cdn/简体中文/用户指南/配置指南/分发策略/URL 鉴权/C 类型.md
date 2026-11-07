@@ -1,0 +1,171 @@
+---
+title: "C 类型"
+product: "BytePlus CDN"
+product_code: "byteplus-cdn"
+source: "https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-type-c-cn"
+---
+
+<span id="类型特点"></span>
+## 类型特点
+
+C 类型将签名和十六进制 Unix 时间戳作为路径前缀，顺序为签名、时间戳、原始路径。适用于签名信息必须位于路径中且时间戳固定使用十六进制 Unix 时间戳的场景。
+
+<span id="上线建议"></span>
+## 上线建议
+
+建议先规划独立测试文件或目录，验证客户端或签名服务器及 CDN 配置后，再将正式业务中需要鉴权的资源后缀加入生效对象，避免配置错误影响全部资源访问。
+
+<span id="配置生效对象"></span>
+## 配置生效对象
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/3c626de36f254d6a9d249cfe5751fbb9~tplv-goo7wpa0wc-topic.webp) </span>
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/9f9fde229c0440048d9f4d5c79a7c3e4~tplv-goo7wpa0wc-topic.webp) </span>
+
+开启 **URL 鉴权** 并选择 **C 类型**，然后在 **生效对象** 标签页配置。默认包含一条**文件目录**为 `/` 的规则，不能删除，也不能新增规则。您可以将规则类型改为**文件后缀**，再填写一个或多个后缀，以分号（`;`）分隔且不带句点。例如：`png;txt`；规则类型为**文件目录**时，规则内容固定为 `/`，不能修改。仅命中生效对象的请求需要鉴权。
+
+匹配值总长度不超过 1,024 个字符，且不能包含 `//`、空格、`$` 或 `?`。
+
+<span id="配置鉴权"></span>
+## 配置鉴权
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/83fb5008531e451491e64121b918df29~tplv-goo7wpa0wc-topic.webp) </span>
+
+在 **鉴权配置** 标签页配置以下参数。
+
+<span id="基础参数"></span>
+### 基础参数
+
+
+|配置项 |说明 |
+|---|---|
+|主 Key |必填，长度为 1–120 个字符，仅支持英文字母、数字和英文半角符号；不支持空格、中文或全角字符。客户端或签名服务器使用主 Key 生成签名；CDN 使用主 Key 按相同规则计算签名，并与请求中的签名比对。 |
+|备 KEY |可选。当 CDN 使用主 Key 计算的签名与请求中的签名不一致时，使用备 KEY 按相同规则再次计算并比对；输入要求与主 Key 相同。可用于平滑轮换 Key。 |
+|签名有效时间 |单位为秒，默认 `1800`，范围为 0–315,360,000。CDN 在 `timestamp + 有效时间 < 收到请求的时间` 时判定 URL 过期。 |
+|鉴权算法 |MD5 或 SHA256，默认 MD5。客户端或签名服务器必须与 CDN 配置保持一致。 |
+
+
+<span id="签名字段"></span>
+### 签名字段
+
+
+|配置项 |说明 |
+|---|---|
+|时间戳进制 |固定为十六进制 Unix 时间戳，精确到秒。URL 和签名公式中的 `timestamp` 都必须使用该格式。 |
+
+
+<span id="m3u8-改写"></span>
+## M3U8 改写
+
+C 类型支持 **M3U8 改写**。启用后，CDN 会使用 C 类型的签名计算方式为播放列表中的资源 URI 添加签名，以支持 HLS 播放。客户端或签名服务器只需为 `.m3u8` 请求生成签名。
+
+<span id="改写条件"></span>
+### 改写条件
+
+启用后，M3U8 改写仅在以下条件同时满足时生效：
+
+
+* **生效对象**的**文件后缀**包含 `m3u8`，以及播放列表中需要通过 URL 鉴权访问的资源后缀。例如，播放列表引用 `.ts` 分片以及 `.mp4` 文件时，在 **生效对象**的**文件后缀**中配置 `m3u8;ts;mp4`。播放列表中的资源 URI 只要文件后缀命中，CDN 就会执行 URL 鉴权。
+
+* 源站返回的 `.m3u8` 响应不包含 `Content-Encoding`，且 `.m3u8` 请求不命中 **智能压缩**的生效条件，因为 CDN 不会改写经压缩的 M3U8。
+
+
+播放列表中的资源 URI 可以是完整 URL、以 `/` 开头的路径或相对路径。资源 URI 为相对路径时，CDN 会按播放列表所在目录补全路径，并在路径开头插入 C 类型的签名和时间戳。
+
+例如，播放列表路径为 `/c-type-m3u8-rewrite-test/playlist.m3u8`，资源 URI 为 `segment-1.ts` 时，CDN 先补全为 `/c-type-m3u8-rewrite-test/segment-1.ts`，再改写为 `/<SIGNATURE>/<timestamp>/c-type-m3u8-rewrite-test/segment-1.ts`。
+
+<span id="配置改写参数"></span>
+### 配置改写参数
+
+
+|配置项 |说明 |
+|---|---|
+|分片 URI 原参数 |控制是否保留播放列表中资源 URI 原有的查询参数。 |
+|继承 M3U8 非签名参数 |控制是否将 `.m3u8` 请求 URL 中除签名和时间戳参数外的查询参数添加到播放列表中的资源 URI。 |
+|M3U8 标签改写 |默认情况下，CDN 仅改写 `EXTINF` 标签下的资源 URI。启用后，可指定需要改写其下资源 URI 的额外标签。播放列表必须包含 `EXTINF` 标签；否则 CDN 不会改写已指定其他标签下的资源 URI。自定义标签最多 20 个，每个长度为 1–100 个字符，且不能包含 `#` 或 `:`。 |
+
+
+**分片 URI 原参数**和**继承 M3U8 非签名参数**共同决定改写后资源 URI 的查询参数。例如，资源 URI 为 `/video.ts?version=1`，设置为删除原参数并开启继承，且 `.m3u8` 请求 URL 包含 `q_m3u8=cool` 时，改写后的资源 URI 为 `/<SIGNATURE>/<timestamp>/video.ts?q_m3u8=cool`。如果设置为保留原参数，改写后的资源 URI 为 `/<SIGNATURE>/<timestamp>/video.ts?version=1&q_m3u8=cool`。
+
+<span id="构造签名-url"></span>
+## 构造签名 URL
+
+<span id="url-格式"></span>
+### URL 格式
+
+```text
+scheme://host/<SIGNATURE>/<timestamp><uri>[?query_params]
+```
+
+
+`uri` 以 `/` 开头，`timestamp` 为十六进制 Unix 时间戳。
+
+<span id="签名计算公式"></span>
+### 签名计算公式
+
+```text
+MD5:    md5(key + uri + timestamp)
+SHA256: sha256(key + uri + timestamp)
+```
+
+
+`+` 仅表示直接拼接，不是实际字符。
+
+<span id="参数说明"></span>
+### 参数说明
+
+
+|参数 |说明 |
+|---|---|
+|`key` |主 Key 或备 KEY，仅参与签名计算。 |
+|`uri` |原始请求路径，以 `/` 开头，不含域名和查询参数；中文路径使用实际发送的编码后路径。 |
+|`timestamp` |十六进制 Unix 时间戳，精确到秒。 |
+|`SIGNATURE` |待签名字符串的哈希值。 |
+
+
+示例：
+
+```text
+https://www.example.com/b1725c0a6120092863001cd8004c4adb/6093AF7D/product/cdn?query1=value1
+```
+
+
+<span id="缓存和回源"></span>
+## 缓存和回源
+
+CDN 始终将 C 类型路径中的时间戳和签名从缓存键中移除，且回源请求中不包含这两个路径字段。该行为不可配置。
+
+<span id="验证"></span>
+## 验证
+
+
+1. 保存后，使用 **鉴权计算器** 选择 C 类型，输入当前域名下未带签名、且命中生效对象的完整原始 URL。
+
+2. 输入已配置的 Key、开始时间、有效时间和算法，生成未过期 URL；开始时间用于生成 `timestamp`。配置备 KEY 时，同时验证使用备 KEY 生成的 URL。
+
+3. 使用客户端或签名服务器生成 URL，并与 **鉴权计算器** 的结果比对。`uri`、`timestamp`、Key 和算法必须与计算器设置一致；有效时间不参与签名计算。
+
+4. 请求测试文件，确认可访问；分别使用篡改 `SIGNATURE` 的请求和过期 URL 请求，均应返回 403。
+
+5. 确认源站请求不包含路径中的时间戳和签名。
+
+6. 使用 HLS 时，确认播放列表中的资源 URI 已被签名，且相关资源可访问。
+
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/d8d2d757c1fb40778b81d1a1b31b408a~tplv-goo7wpa0wc-topic.webp) </span>
+
+<span id="cdn-校验规则"></span>
+## CDN 校验规则
+
+
+* 比对签名时，CDN 会将计算结果和请求中的 `SIGNATURE` 转为小写。
+
+* 缺少或格式错误的签名、签名不一致、签名过期均返回 403。
+
+
+<span id="上线和回滚"></span>
+## 上线和回滚
+
+首次上线时，先只将生效对象覆盖测试文件，验证客户端或签名服务器、CDN 配置、时间同步和 HLS 播放后，再逐步扩大生效后缀。
+
+轮换 Key 时，先将新 Key 配置为备 KEY，并让客户端或签名服务器使用新 Key 生成签名进行验证；随后将新 Key 升为主 Key、旧 Key 暂留为备 KEY，待旧 URL 全部过期后移除旧 Key。若出现大量非预期 403，立即缩小生效范围；必要时关闭 URL 鉴权并保存，使未签名请求恢复访问。

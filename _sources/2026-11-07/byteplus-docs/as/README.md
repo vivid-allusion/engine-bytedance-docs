@@ -1,0 +1,169 @@
+# Auto Scaling
+
+136 pages. Source: https://docs.byteplus.com/en/docs/as
+
+Back to the [full index](../README.md).
+
+- [Billing instructions](Billing instructions.md)
+- [New feature release notes](New feature release notes.md)
+- **API Reference**
+  - [API overview](API Reference/API overview.md)
+  - [API release history](API Reference/API release history.md)
+  - [Overview](API Reference/Overview.md)
+  - **Call method**
+    - [API error code list](API Reference/Call method/API error code list.md)
+    - [API response](API Reference/Call method/API response.md)
+    - [Common parameters](API Reference/Call method/Common parameters.md)
+    - [Request structure](API Reference/Call method/Request structure.md)
+    - [Service address](API Reference/Call method/Service address.md)
+    - [Signature algorithm](API Reference/Call method/Signature algorithm.md)
+  - **LifecycleHook**
+    - [CompleteLifecycleActivity - Manually ends pending status of a lifecycle activity](API Reference/LifecycleHook/CompleteLifecycleActivity - Manually ends pending status of a lifecycle activity.md)
+    - [CreateLifecycleHook - Creates a lifecycle hook](API Reference/LifecycleHook/CreateLifecycleHook - Creates a lifecycle hook.md)
+    - [DeleteLifecycleHook - Deletes a lifecycle hook](API Reference/LifecycleHook/DeleteLifecycleHook - Deletes a lifecycle hook.md)
+    - [DescribeLifecycleActivities - Queries lifecycle hook activities](API Reference/LifecycleHook/DescribeLifecycleActivities - Queries lifecycle hook activities.md)
+    - [DescribeLifecycleHooks - Queries lifecycle hooks](API Reference/LifecycleHook/DescribeLifecycleHooks - Queries lifecycle hooks.md)
+    - [ModifyLifecycleHook - Modifies a lifecycle hook](API Reference/LifecycleHook/ModifyLifecycleHook - Modifies a lifecycle hook.md)
+  - **ScalingActivities**
+    - [DescribeScalingActivities - Queries scaling activities](API Reference/ScalingActivities/DescribeScalingActivities - Queries scaling activities.md)
+  - **ScalingConfiguration**
+    - [CreateScalingConfiguration - Creates a scaling configuration](API Reference/ScalingConfiguration/CreateScalingConfiguration - Creates a scaling configuration.md)
+    - [DeleteScalingConfiguration - Deletes a scaling configuration](API Reference/ScalingConfiguration/DeleteScalingConfiguration - Deletes a scaling configuration.md)
+    - [DescribeScalingConfigurations - Queries the list of scaling configurations](API Reference/ScalingConfiguration/DescribeScalingConfigurations - Queries the list of scaling configurations.md)
+    - [EnableScalingConfiguration - Enables a scaling configuration](API Reference/ScalingConfiguration/EnableScalingConfiguration - Enables a scaling configuration.md)
+    - [ModifyScalingConfiguration - Modifies a scaling configuration](API Reference/ScalingConfiguration/ModifyScalingConfiguration - Modifies a scaling configuration.md)
+  - **ScalingGroup**
+    - [AttachDBInstances - Adds RDS instances](API Reference/ScalingGroup/AttachDBInstances - Adds RDS instances.md)
+    - [AttachServerGroups - Associates Load Balancer backend server groups](API Reference/ScalingGroup/AttachServerGroups - Associates Load Balancer backend server groups.md)
+    - [CreateScalingGroup - Creates a scaling group](API Reference/ScalingGroup/CreateScalingGroup - Creates a scaling group.md)
+    - [DeleteScalingGroup - Deletes a scaling group](API Reference/ScalingGroup/DeleteScalingGroup - Deletes a scaling group.md)
+    - [DescribeScalingGroups - Queries the list of scaling groups](API Reference/ScalingGroup/DescribeScalingGroups - Queries the list of scaling groups.md)
+    - [DetachDBInstances - Removes RDS instances](API Reference/ScalingGroup/DetachDBInstances - Removes RDS instances.md)
+    - [DetachServerGroups - Removes Load Balancer backend server groups](API Reference/ScalingGroup/DetachServerGroups - Removes Load Balancer backend server groups.md)
+    - [DisableScalingGroup - Disables a scaling group](API Reference/ScalingGroup/DisableScalingGroup - Disables a scaling group.md)
+    - [EnableScalingGroup - Enables a scaling group](API Reference/ScalingGroup/EnableScalingGroup - Enables a scaling group.md)
+    - [ModifyScalingGroup - Modifies a scaling group](API Reference/ScalingGroup/ModifyScalingGroup - Modifies a scaling group.md)
+    - [ResumeProcesses - Resumes scaling group processes](API Reference/ScalingGroup/ResumeProcesses - Resumes scaling group processes.md)
+    - [SuspendProcesses - Suspends scaling group processes](API Reference/ScalingGroup/SuspendProcesses - Suspends scaling group processes.md)
+  - **ScalingInstances**
+    - [AttachInstances - Manually adds instances to a scaling group](API Reference/ScalingInstances/AttachInstances - Manually adds instances to a scaling group.md)
+    - [DescribeScalingInstances - Queries ECS instances in a scaling group](API Reference/ScalingInstances/DescribeScalingInstances - Queries ECS instances in a scaling group.md)
+    - [DetachInstances - Manually removes instances from a scaling group](API Reference/ScalingInstances/DetachInstances - Manually removes instances from a scaling group.md)
+    - [EnterStandby - Sets an instance to standby status](API Reference/ScalingInstances/EnterStandby - Sets an instance to standby status.md)
+    - [ExitStandby - Removes an instance from standby status](API Reference/ScalingInstances/ExitStandby - Removes an instance from standby status.md)
+    - [RemoveInstances - Manually deletes instances from a scaling group](API Reference/ScalingInstances/RemoveInstances - Manually deletes instances from a scaling group.md)
+    - [SetInstancesProtection - Enables or disables protection for instances in a scaling group](API Reference/ScalingInstances/SetInstancesProtection - Enables or disables protection for instances in a scaling group.md)
+  - **ScalingPolicy**
+    - [CreateScalingPolicy - Creates a scaling rule](API Reference/ScalingPolicy/CreateScalingPolicy - Creates a scaling rule.md)
+    - [DeleteScalingPolicy - Deletes a scaling rule](API Reference/ScalingPolicy/DeleteScalingPolicy - Deletes a scaling rule.md)
+    - [DescribeScalingPolicies - Queries scaling rules](API Reference/ScalingPolicy/DescribeScalingPolicies - Queries scaling rules.md)
+    - [DisableScalingPolicy - Disables a scaling rule](API Reference/ScalingPolicy/DisableScalingPolicy - Disables a scaling rule.md)
+    - [EnableScalingPolicy - Enables a scaling rule](API Reference/ScalingPolicy/EnableScalingPolicy - Enables a scaling rule.md)
+    - [ModifyScalingPolicy - Modifies a scaling rule](API Reference/ScalingPolicy/ModifyScalingPolicy - Modifies a scaling rule.md)
+    - **Target tracking scaling rule**
+      - [CreateScalingPolicy](API Reference/ScalingPolicy/Target tracking scaling rule/CreateScalingPolicy.md)
+      - [DescribeScalingPolicies](API Reference/ScalingPolicy/Target tracking scaling rule/DescribeScalingPolicies.md)
+      - [ModifyScalingPolicy](API Reference/ScalingPolicy/Target tracking scaling rule/ModifyScalingPolicy.md)
+  - **Tag**
+    - [ListTagResources - Queries tagged resources](API Reference/Tag/ListTagResources - Queries tagged resources.md)
+    - [TagResources - Tags resources](API Reference/Tag/TagResources - Tags resources.md)
+    - [UntagResources - Untags resources](API Reference/Tag/UntagResources - Untags resources.md)
+- **Best Practices**
+  - [Building auto-scalable website](Best Practices/Building auto-scalable website.md)
+  - [Configuring multiple instance types to improve scaling success rate](Best Practices/Configuring multiple instance types to improve scaling success rate.md)
+  - [Configuring sequential and unique instance names or hostnames](Best Practices/Configuring sequential and unique instance names or hostnames.md)
+  - [Deploying high-availability disaster recovery clusters](Best Practices/Deploying high-availability disaster recovery clusters.md)
+  - [Reducing costs by using spot instances](Best Practices/Reducing costs by using spot instances.md)
+- **FAQ**
+  - [Billing FAQ](FAQ/Billing FAQ.md)
+  - [Instance management FAQ](FAQ/Instance management FAQ.md)
+  - [Lifecycle hook FAQ](FAQ/Lifecycle hook FAQ.md)
+  - [Scaling configuration source FAQ](FAQ/Scaling configuration source FAQ.md)
+  - [Scaling group FAQ](FAQ/Scaling group FAQ.md)
+  - [Scaling rule FAQ](FAQ/Scaling rule FAQ.md)
+- **Getting Started**
+  - [Procedure for creating a scaling task](Getting Started/Procedure for creating a scaling task.md)
+  - [Quick start](Getting Started/Quick start.md)
+  - [Quickly creating scaling tasks](Getting Started/Quickly creating scaling tasks.md)
+- **Overview**
+  - [Applicable scenarios](Overview/Applicable scenarios.md)
+  - [Benefits](Overview/Benefits.md)
+  - [Concepts](Overview/Concepts.md)
+  - [Limits](Overview/Limits.md)
+  - [Region and availability zone](Overview/Region and availability zone.md)
+  - [Related cloud products](Overview/Related cloud products.md)
+  - [What is Auto Scaling (AS)?](Overview/What is Auto Scaling (AS)?.md)
+- **SDK Reference**
+  - [AS SDK overview](SDK Reference/AS SDK overview.md)
+  - [Viewing all sample code](SDK Reference/Viewing all sample code.md)
+- **User Guide**
+  - [Adjustment types](User Guide/Adjustment types.md)
+  - **IAM**
+    - [AS custom policy syntax examples](User Guide/IAM/AS custom policy syntax examples.md)
+    - [AS IAM policy types](User Guide/IAM/AS IAM policy types.md)
+    - [IAM overview](User Guide/IAM/IAM overview.md)
+  - **Lifecycle hook**
+    - [Creating lifecycle hooks](User Guide/Lifecycle hook/Creating lifecycle hooks.md)
+    - [Deleting lifecycle hooks](User Guide/Lifecycle hook/Deleting lifecycle hooks.md)
+    - [Editing lifecycle hooks](User Guide/Lifecycle hook/Editing lifecycle hooks.md)
+    - [Lifecycle hook overview](User Guide/Lifecycle hook/Lifecycle hook overview.md)
+    - [Manually ending suspension](User Guide/Lifecycle hook/Manually ending suspension.md)
+  - **Managing instances**
+    - [Adding instance manually](User Guide/Managing instances/Adding instance manually.md)
+    - [Automatically scaling in instances](User Guide/Managing instances/Automatically scaling in instances.md)
+    - [Automatically scaling out instances](User Guide/Managing instances/Automatically scaling out instances.md)
+    - [Changing instance to the Disabled status](User Guide/Managing instances/Changing instance to the Disabled status.md)
+    - [Configuring instance protection](User Guide/Managing instances/Configuring instance protection.md)
+    - [Expected instance count](User Guide/Managing instances/Expected instance count.md)
+    - [Instance health check](User Guide/Managing instances/Instance health check.md)
+    - [Instance lifecycle](User Guide/Managing instances/Instance lifecycle.md)
+    - [Manually deleting instances](User Guide/Managing instances/Manually deleting instances.md)
+    - [Manually removing instances](User Guide/Managing instances/Manually removing instances.md)
+    - [Setting instance to standby status](User Guide/Managing instances/Setting instance to standby status.md)
+    - [Viewing instance details](User Guide/Managing instances/Viewing instance details.md)
+  - **Monitoring**
+    - [Viewing monitoring data](User Guide/Monitoring/Viewing monitoring data.md)
+  - **Notification channels**
+    - [Managing message notifications](User Guide/Notification channels/Managing message notifications.md)
+    - [Notification channel overview](User Guide/Notification channels/Notification channel overview.md)
+  - **Projects and tags**
+    - [Managing projects](User Guide/Projects and tags/Managing projects.md)
+    - [Tag management](User Guide/Projects and tags/Tag management.md)
+  - **Scaling configuration sources**
+    - [Associating scaling configuration source with scaling group](User Guide/Scaling configuration sources/Associating scaling configuration source with scaling group.md)
+    - [Managing scaling configurations](User Guide/Scaling configuration sources/Managing scaling configurations.md)
+    - [Scaling configuration source overview](User Guide/Scaling configuration sources/Scaling configuration source overview.md)
+  - **Scaling group**
+    - [Configuring load balancer associated with scaling group](User Guide/Scaling group/Configuring load balancer associated with scaling group.md)
+    - [Cooldown time](User Guide/Scaling group/Cooldown time.md)
+    - [Creating scaling group](User Guide/Scaling group/Creating scaling group.md)
+    - [Delete scaling groups](User Guide/Scaling group/Delete scaling groups.md)
+    - [Disabling scaling groups](User Guide/Scaling group/Disabling scaling groups.md)
+    - [Enabling scaling group](User Guide/Scaling group/Enabling scaling group.md)
+    - [Lifecycle](User Guide/Scaling group/Lifecycle.md)
+    - [Modifying health check policy of scaling group](User Guide/Scaling group/Modifying health check policy of scaling group.md)
+    - [Modifying instance counts of scaling groups](User Guide/Scaling group/Modifying instance counts of scaling groups.md)
+    - [Modifying policy information of scaling group](User Guide/Scaling group/Modifying policy information of scaling group.md)
+    - [Modifying subnets of scaling groups](User Guide/Scaling group/Modifying subnets of scaling groups.md)
+    - [Pausing/Resuming scaling group processes](User Guide/Scaling group/Pausing - Resuming scaling group processes.md)
+    - [Viewing scaling logs](User Guide/Scaling group/Viewing scaling logs.md)
+  - **Scaling rule**
+    - [Creating alert-based scaling rules](User Guide/Scaling rule/Creating alert-based scaling rules.md)
+    - [Creating periodic scaling rules](User Guide/Scaling rule/Creating periodic scaling rules.md)
+    - [Creating scheduled scaling rules](User Guide/Scaling rule/Creating scheduled scaling rules.md)
+    - [Creating target tracking scaling rules](User Guide/Scaling rule/Creating target tracking scaling rules.md)
+    - [Deleting scaling rules](User Guide/Scaling rule/Deleting scaling rules.md)
+    - [Disabling scaling rules](User Guide/Scaling rule/Disabling scaling rules.md)
+    - [Enabling scaling rules](User Guide/Scaling rule/Enabling scaling rules.md)
+    - [Modifying scaling rules](User Guide/Scaling rule/Modifying scaling rules.md)
+    - [Scaling rule overview](User Guide/Scaling rule/Scaling rule overview.md)
+    - **Appendixes**
+      - [Introduction to Cron expressions](User Guide/Scaling rule/Appendixes/Introduction to Cron expressions.md)
+      - [Monitoring metric introduction](User Guide/Scaling rule/Appendixes/Monitoring metric introduction.md)
+  - **Vertical scaling**
+    - [Canceling vertical scaling tasks](User Guide/Vertical scaling/Canceling vertical scaling tasks.md)
+    - [Creating vertical scaling tasks](User Guide/Vertical scaling/Creating vertical scaling tasks.md)
+    - [Deleting vertical scaling tasks](User Guide/Vertical scaling/Deleting vertical scaling tasks.md)
+    - [Lifecycle](User Guide/Vertical scaling/Lifecycle.md)
+    - [Vertical scaling overview](User Guide/Vertical scaling/Vertical scaling overview.md)
+    - [Viewing vertical scaling task details](User Guide/Vertical scaling/Viewing vertical scaling task details.md)

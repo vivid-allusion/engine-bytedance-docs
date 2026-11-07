@@ -1,0 +1,42 @@
+---
+title: "Data Preparation Overview"
+product: "DataAgent"
+product_code: "dataagent"
+source: "https://docs.byteplus.com/en/docs/dataagent/Data_Preparation_Overview_"
+---
+
+<span id="2425166b"></span>
+# 1. Overview
+
+Data preparation, including data access and modeling, is the foundation of data analytics. Usually, users need to perform data access before they can perform data analytics.
+
+The data connection is the first step to complete the docking with the database. After completion, the dataset can be created as input for data analytics; it can also be used as input for data lake visualization modeling. Visual modeling refers to basic data processing, data cleaning, modeling processing, etc. for existing data. After processing, the data set can be provided for data query and analysis. IT personnel, data developers, or data analysts usually perform more operations in the visual modeling process.
+
+The logic for data connectivity, datasets, and visual modeling is depicted in the following figure:
+
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIzMTlweCIgaGVpZ2h0PSIxNjVweCIgdmlld0JveD0iLTAuNSAtMC41IDMxOSAxNjUiPjxkZWZzLz48Zz48cGF0aCBkPSJNIDEyMiA4MiBMIDE0OSA4MiBRIDE1OSA4MiAxNTkgNzIgTCAxNTkgNDIgUSAxNTkgMzIgMTY5IDMyIEwgMTg5LjYzIDMyIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gMTk0Ljg4IDMyIEwgMTg3Ljg4IDM1LjUgTCAxODkuNjMgMzIgTCAxODcuODggMjguNSBaIiBmaWxsPSIjMDAwMDAwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxwYXRoIGQ9Ik0gMTIyIDgyIEwgMTQ5IDgyIFEgMTU5IDgyIDE1OSA5MiBMIDE1OSAxMjIgUSAxNTkgMTMyIDE2OSAxMzIgTCAxODkuNjMgMTMyIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gMTk0Ljg4IDEzMiBMIDE4Ny44OCAxMzUuNSBMIDE4OS42MyAxMzIgTCAxODcuODggMTI4LjUgWiIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48cmVjdCB4PSIyIiB5PSI1MiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSI2MCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMDAwMDAwIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuNSAtMC41KSI+PGZvcmVpZ25PYmplY3Qgc3R5bGU9Im92ZXJmbG93OiB2aXNpYmxlOyB0ZXh0LWFsaWduOiBsZWZ0OyIgcG9pbnRlci1ldmVudHM9Im5vbmUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiBmbGV4OyBhbGlnbi1pdGVtczogdW5zYWZlIGNlbnRlcjsganVzdGlmeS1jb250ZW50OiB1bnNhZmUgY2VudGVyOyB3aWR0aDogMTE4cHg7IGhlaWdodDogMXB4OyBwYWRkaW5nLXRvcDogODJweDsgbWFyZ2luLWxlZnQ6IDNweDsiPjxkaXYgc3R5bGU9ImJveC1zaXppbmc6IGJvcmRlci1ib3g7IGZvbnQtc2l6ZTogMDsgdGV4dC1hbGlnbjogY2VudGVyOyAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IGlubGluZS1ibG9jazsgZm9udC1zaXplOiAxMnB4OyBmb250LWZhbWlseTogSGVsdmV0aWNhOyBjb2xvcjogIzAwMDAwMDsgbGluZS1oZWlnaHQ6IDEuMjsgcG9pbnRlci1ldmVudHM6IGFsbDsgd2hpdGUtc3BhY2U6IG5vcm1hbDsgd29yZC13cmFwOiBub3JtYWw7ICI+PGI+PGZvbnQgc3R5bGU9ImZvbnQtc2l6ZToxNnB4Ij5EYXRhIENvbm5lY3Rpb248L2ZvbnQ+PC9iPjwvZGl2PjwvZGl2PjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PHJlY3QgeD0iMTk2IiB5PSIyIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC41IC0wLjUpIj48Zm9yZWlnbk9iamVjdCBzdHlsZT0ib3ZlcmZsb3c6IHZpc2libGU7IHRleHQtYWxpZ246IGxlZnQ7IiBwb2ludGVyLWV2ZW50cz0ibm9uZSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiAxMThweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiAzMnB4OyBtYXJnaW4tbGVmdDogMTk3cHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYTsgY29sb3I6ICMwMDAwMDA7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPjxiPjxmb250IHN0eWxlPSJmb250LXNpemU6MTZweCI+RGF0YXNldDwvZm9udD48L2I+PC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48cGF0aCBkPSJNIDI1NiAxMDIgTCAyNTYgNjguMzciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAyNTYgNjMuMTIgTCAyNTkuNSA3MC4xMiBMIDI1NiA2OC4zNyBMIDI1Mi41IDcwLjEyIFoiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PHJlY3QgeD0iMTk2IiB5PSIxMDIiIHdpZHRoPSIxMjAiIGhlaWdodD0iNjAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwMDAwMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjUgLTAuNSkiPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDExOHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDEzMnB4OyBtYXJnaW4tbGVmdDogMTk3cHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYTsgY29sb3I6ICMwMDAwMDA7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPjxiPjxmb250IHN0eWxlPSJmb250LXNpemU6MTZweCI+VmlzdWFsIE1vZGVsaW5nPC9mb250PjwvYj48L2Rpdj48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48L3N2Zz4=" />
+
+<span id="184978f9"></span>
+# 2. Module Entry
+
+In the top bar of the product interface, click "Data Preparation", and the drop\-down bar includes: Data Connection, Visual Modeling, and Datasets. Click on any entry to enter the corresponding module. As shown in the following figure:
+
+<span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/407099f86ee2426683cfbce8bfa0a1a5~tplv-goo7wpa0wc-image.image) </span>
+
+<span id="500e730c"></span>
+# 3. Module Introduction
+
+
+* [Data Connection Overview](https://docs.byteplus.com/docs/dataagent/Data_Connection_Overview) Create a data connection, which can be understood as creating a pass certificate to connect to the database and access the data table. Create a data connection to quickly obtain table information in the database, create a dataset, and then process or clean the input table during the visual modeling process.
+
+* [Dataset Overview](https://docs.byteplus.com/docs/dataagent/Dataset_Overview_) Datasets are the foundation for hosting data, managing data, and visualized query and analysis. In layman's terms, it can be understood as a data table. The user needs to create the data source table to be analyzed as a dataset for subsequent modeling processing. In the Datasets module, you can create, edit, and manage datasets.
+
+* [Overview of Visual Modeling](https://docs.byteplus.com/docs/dataagent/Overview_of_Visual_Modeling_) Provide data processing and modeling capabilities, commonly referred to as ETL (Extract\-Transform\-Load), or data modeling. Visual modeling, as an intermediate link between data sources and data analytics, allows users to perform drag\-and\-drop low\-threshold, intelligent and efficient data processing on initial data sets before data analytics, enabling data to be cleaned, transformed, and loaded to output data sets that are more conducive to business analysis. At the same time, this module can also realize the capabilities of model training and algorithm prediction scenarios.
+
+   <div data-tips="true" data-tips-type="warning" data-tips-is-title="true" data-wrapper-indent="1">warning   </div>
+   
+
+   <div data-tips="true" data-tips-type="warning" data-wrapper-indent="1">The visual modeling function is turned off by default in a private environment. If you want to use the visual modeling function, you need to contact the Volcano Engine technical support staff to activate the function and turn on the function switch before using it.   </div>
+   
+
+The three modules are described above, and you are welcome to go to the specific single document to learn more.

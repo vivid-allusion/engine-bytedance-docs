@@ -1,0 +1,530 @@
+# Cloud Load Balancer
+
+421 pages. Source: https://docs.byteplus.com/en/docs/clb
+
+Back to the [full index](../README.md).
+
+- [Load Balancer overview](Load Balancer overview.md)
+- **Application Load Balancer (ALB)**
+  - [FAQs](Application Load Balancer (ALB)/FAQs.md)
+  - **API Reference**
+    - [API overview](Application Load Balancer (ALB)/API Reference/API overview.md)
+    - [API release notes](Application Load Balancer (ALB)/API Reference/API release notes.md)
+    - [Call method](Application Load Balancer (ALB)/API Reference/Call method.md)
+    - [Common error codes](Application Load Balancer (ALB)/API Reference/Common error codes.md)
+    - **Access control list API**
+      - [AddAclEntries - Adding the IP entries to a specified ACL](Application Load Balancer (ALB)/API Reference/Access control list API/AddAclEntries - Adding the IP entries to a specified ACL.md)
+      - [CreateAcl - Creating an ACL](Application Load Balancer (ALB)/API Reference/Access control list API/CreateAcl - Creating an ACL.md)
+      - [DeleteAcl - Deleting an ACL](Application Load Balancer (ALB)/API Reference/Access control list API/DeleteAcl - Deleting an ACL.md)
+      - [DescribeAclAttributes - Querying the details of the specified ACL](Application Load Balancer (ALB)/API Reference/Access control list API/DescribeAclAttributes - Querying the details of the specified ACL.md)
+      - [DescribeAcls - Querying an ACL](Application Load Balancer (ALB)/API Reference/Access control list API/DescribeAcls - Querying an ACL.md)
+      - [ModifyAclAttributes - Modifying the specified ACL](Application Load Balancer (ALB)/API Reference/Access control list API/ModifyAclAttributes - Modifying the specified ACL.md)
+      - [RemoveAclEntries - Deleting the IP entries from the specified ACL](Application Load Balancer (ALB)/API Reference/Access control list API/RemoveAclEntries - Deleting the IP entries from the specified ACL.md)
+    - **AccessLog API**
+      - **TLS accessLog API**
+        - [DisableTLSAccessLog - Disabling an access log delivery to TLS](Application Load Balancer (ALB)/API Reference/AccessLog API/TLS accessLog API/DisableTLSAccessLog - Disabling an access log delivery to TLS.md)
+        - [EnableTLSAccessLog - Enabling an access log delivery to TLS](Application Load Balancer (ALB)/API Reference/AccessLog API/TLS accessLog API/EnableTLSAccessLog - Enabling an access log delivery to TLS.md)
+      - **TOS accessLog API**
+        - [DisableAccessLog - Disabling the access log](Application Load Balancer (ALB)/API Reference/AccessLog API/TOS accessLog API/DisableAccessLog - Disabling the access log.md)
+        - [EnableAccessLog - Enabling an access log](Application Load Balancer (ALB)/API Reference/AccessLog API/TOS accessLog API/EnableAccessLog - Enabling an access log.md)
+    - **Availability Zones API**
+      - [DescribeZones - Querying the ALB supported AZ List](Application Load Balancer (ALB)/API Reference/Availability Zones API/DescribeZones - Querying the ALB supported AZ List.md)
+    - **Certificate API**
+      - [DeleteCACertificate - Deleting an unassociated CA certificate](Application Load Balancer (ALB)/API Reference/Certificate API/DeleteCACertificate - Deleting an unassociated CA certificate.md)
+      - [DeleteCertificate - Deleting an unassociated server certificate](Application Load Balancer (ALB)/API Reference/Certificate API/DeleteCertificate - Deleting an unassociated server certificate.md)
+      - [DescribeAllCertificates - Querying all certificate lists](Application Load Balancer (ALB)/API Reference/Certificate API/DescribeAllCertificates - Querying all certificate lists.md)
+      - [DescribeCACertificates - Querying a CA certificate list](Application Load Balancer (ALB)/API Reference/Certificate API/DescribeCACertificates - Querying a CA certificate list.md)
+      - [DescribeCertificates - Querying the server certificate list](Application Load Balancer (ALB)/API Reference/Certificate API/DescribeCertificates - Querying the server certificate list.md)
+      - [ModifyCACertificateAttributes - Modifying the CA certificate attributes](Application Load Balancer (ALB)/API Reference/Certificate API/ModifyCACertificateAttributes - Modifying the CA certificate attributes.md)
+      - [ModifyCertificateAttributes - Modifying the server certificate attributes](Application Load Balancer (ALB)/API Reference/Certificate API/ModifyCertificateAttributes - Modifying the server certificate attributes.md)
+      - [ReplaceCACertificate - Replacing a CA certificate](Application Load Balancer (ALB)/API Reference/Certificate API/ReplaceCACertificate - Replacing a CA certificate.md)
+      - [ReplaceCertificate - Replacing a server certificate](Application Load Balancer (ALB)/API Reference/Certificate API/ReplaceCertificate - Replacing a server certificate.md)
+      - [UploadCACertificate - Uploading a CA Certificate](Application Load Balancer (ALB)/API Reference/Certificate API/UploadCACertificate - Uploading a CA Certificate.md)
+      - [UploadCertificate - Uploading a server certificate](Application Load Balancer (ALB)/API Reference/Certificate API/UploadCertificate - Uploading a server certificate.md)
+    - **Custom configuration API**
+      - [CreateCustomizedCfg - Creating a custom configuration](Application Load Balancer (ALB)/API Reference/Custom configuration API/CreateCustomizedCfg - Creating a custom configuration.md)
+      - [DeleteCustomizedCfg - Deleting a custom configuration](Application Load Balancer (ALB)/API Reference/Custom configuration API/DeleteCustomizedCfg - Deleting a custom configuration.md)
+      - [DescribeCustomizedCfgAttributes - Querying the details of a specified custom configuration](Application Load Balancer (ALB)/API Reference/Custom configuration API/DescribeCustomizedCfgAttributes - Querying the details of a specified custom configuration.md)
+      - [DescribeCustomizedCfgs - Querying the custom configuration list](Application Load Balancer (ALB)/API Reference/Custom configuration API/DescribeCustomizedCfgs - Querying the custom configuration list.md)
+      - [ModifyCustomizedCfgAttributes - Modifying the specified custom configuration](Application Load Balancer (ALB)/API Reference/Custom configuration API/ModifyCustomizedCfgAttributes - Modifying the specified custom configuration.md)
+    - **Forwarding rules API**
+      - [CreateRules - Adding the forwarding rules to a listener](Application Load Balancer (ALB)/API Reference/Forwarding rules API/CreateRules - Adding the forwarding rules to a listener.md)
+      - [DeleteRules - Deleting the specified listener forwarding rule](Application Load Balancer (ALB)/API Reference/Forwarding rules API/DeleteRules - Deleting the specified listener forwarding rule.md)
+      - [DescribeRules - Getting a forwarding rule list of the specified listener](Application Load Balancer (ALB)/API Reference/Forwarding rules API/DescribeRules - Getting a forwarding rule list of the specified listener.md)
+      - [ModifyRules - Modifying the specified listener forwarding rule](Application Load Balancer (ALB)/API Reference/Forwarding rules API/ModifyRules - Modifying the specified listener forwarding rule.md)
+    - **Health check API**
+      - [CreateHealthCheckTemplates - Creating a health check template](Application Load Balancer (ALB)/API Reference/Health check API/CreateHealthCheckTemplates - Creating a health check template.md)
+      - [DeleteHealthCheckTemplates - Deleting the health check template](Application Load Balancer (ALB)/API Reference/Health check API/DeleteHealthCheckTemplates - Deleting the health check template.md)
+      - [DescribeHealthCheckTemplates - Getting the health check template list](Application Load Balancer (ALB)/API Reference/Health check API/DescribeHealthCheckTemplates - Getting the health check template list.md)
+      - [ModifyHealthCheckTemplatesAttributes - Modifying the health check template attributes](Application Load Balancer (ALB)/API Reference/Health check API/ModifyHealthCheckTemplatesAttributes - Modifying the health check template attributes.md)
+    - **Health log API**
+      - [DisableHealthLog - Disabling the health check log collection](Application Load Balancer (ALB)/API Reference/Health log API/DisableHealthLog - Disabling the health check log collection.md)
+      - [EnableHealthLog - Enabling the health check log collection](Application Load Balancer (ALB)/API Reference/Health log API/EnableHealthLog - Enabling the health check log collection.md)
+    - **Instance API**
+      - [CloneLoadBalancer - Cloning an ALB instance](Application Load Balancer (ALB)/API Reference/Instance API/CloneLoadBalancer - Cloning an ALB instance.md)
+      - [CreateLoadBalancer - Creating an ALB instance](Application Load Balancer (ALB)/API Reference/Instance API/CreateLoadBalancer - Creating an ALB instance.md)
+      - [DeleteLoadBalancer - Deleting an ALB instance](Application Load Balancer (ALB)/API Reference/Instance API/DeleteLoadBalancer - Deleting an ALB instance.md)
+      - [DescribeLoadBalancerAttributes - Querying the details of ALB instances](Application Load Balancer (ALB)/API Reference/Instance API/DescribeLoadBalancerAttributes - Querying the details of ALB instances.md)
+      - [DescribeLoadBalancers - Querying an ALB instance](Application Load Balancer (ALB)/API Reference/Instance API/DescribeLoadBalancers - Querying an ALB instance.md)
+      - [LoadBalancerJoinSecurityGroup - Adding an ALB instance to security groups](Application Load Balancer (ALB)/API Reference/Instance API/LoadBalancerJoinSecurityGroup - Adding an ALB instance to security groups.md)
+      - [LoadBalancerLeaveSecurityGroup - Removing an ALB instance from security groups](Application Load Balancer (ALB)/API Reference/Instance API/LoadBalancerLeaveSecurityGroup - Removing an ALB instance from security groups.md)
+      - [ModifyLoadBalancerAttributes - Modifying an ALB instance](Application Load Balancer (ALB)/API Reference/Instance API/ModifyLoadBalancerAttributes - Modifying an ALB instance.md)
+      - [ModifyLoadBalancerType - Changing the ALB instance network type](Application Load Balancer (ALB)/API Reference/Instance API/ModifyLoadBalancerType - Changing the ALB instance network type.md)
+      - [ModifyLoadBalancerZones - Changing the ALB instance availability zone](Application Load Balancer (ALB)/API Reference/Instance API/ModifyLoadBalancerZones - Changing the ALB instance availability zone.md)
+    - **Listener API**
+      - [CreateListener - Creating a listener](Application Load Balancer (ALB)/API Reference/Listener API/CreateListener - Creating a listener.md)
+      - [DeleteListener - Deleting a listener](Application Load Balancer (ALB)/API Reference/Listener API/DeleteListener - Deleting a listener.md)
+      - [DescribeListenerAttributes - Querying the details of specified listener](Application Load Balancer (ALB)/API Reference/Listener API/DescribeListenerAttributes - Querying the details of specified listener.md)
+      - [DescribeListenerHealth - Querying the health check information of backend servers for a listener](Application Load Balancer (ALB)/API Reference/Listener API/DescribeListenerHealth - Querying the health check information of backend servers for a li.md)
+      - [DescribeListeners - Querying a listener list](Application Load Balancer (ALB)/API Reference/Listener API/DescribeListeners - Querying a listener list.md)
+      - [ModifyListenerAttributes - Modifying the specified listener](Application Load Balancer (ALB)/API Reference/Listener API/ModifyListenerAttributes - Modifying the specified listener.md)
+    - **Server group API**
+      - [AddServerGroupBackendServers - Adding the backend servers to a specified server group](Application Load Balancer (ALB)/API Reference/Server group API/AddServerGroupBackendServers - Adding the backend servers to a specified server group.md)
+      - [CreateServerGroup - Creating a server group](Application Load Balancer (ALB)/API Reference/Server group API/CreateServerGroup - Creating a server group.md)
+      - [DeleteServerGroup - Deleting a server group](Application Load Balancer (ALB)/API Reference/Server group API/DeleteServerGroup - Deleting a server group.md)
+      - [DescribeServerGroupAttributes - Querying the server group details](Application Load Balancer (ALB)/API Reference/Server group API/DescribeServerGroupAttributes - Querying the server group details.md)
+      - [DescribeServerGroupBackendServers - Querying the backend server information of server groups](Application Load Balancer (ALB)/API Reference/Server group API/DescribeServerGroupBackendServers - Querying the backend server information of server grou.md)
+      - [DescribeServerGroups - Querying a server group list](Application Load Balancer (ALB)/API Reference/Server group API/DescribeServerGroups - Querying a server group list.md)
+      - [ModifyServerGroupAttributes - Modifying the specified server group details](Application Load Balancer (ALB)/API Reference/Server group API/ModifyServerGroupAttributes - Modifying the specified server group details.md)
+      - [ModifyServerGroupBackendServers - Modifying a backend server within the specified server group](Application Load Balancer (ALB)/API Reference/Server group API/ModifyServerGroupBackendServers - Modifying a backend server within the specified server g.md)
+      - [RemoveServerGroupBackendServers - Removing a backend server from the specified server group](Application Load Balancer (ALB)/API Reference/Server group API/RemoveServerGroupBackendServers - Removing a backend server from the specified server grou.md)
+    - **Tag API**
+      - [ListTagsForResources - Querying the resource tag list](Application Load Balancer (ALB)/API Reference/Tag API/ListTagsForResources - Querying the resource tag list.md)
+      - [TagResources - Adding the custom tags to resources](Application Load Balancer (ALB)/API Reference/Tag API/TagResources - Adding the custom tags to resources.md)
+      - [UntagResources - Deleting a custom tag from resources](Application Load Balancer (ALB)/API Reference/Tag API/UntagResources - Deleting a custom tag from resources.md)
+  - **Best Practices**
+    - [Accessing an ALB across VPCs via PrivateLink](Application Load Balancer (ALB)/Best Practices/Accessing an ALB across VPCs via PrivateLink.md)
+    - [Attaching a cross-VPC backend server to an ALB​](Application Load Balancer (ALB)/Best Practices/Attaching a cross-VPC backend server to an ALB​.md)
+    - [Implementing IPv4+IPv6 traffic load balancing via ALB](Application Load Balancer (ALB)/Best Practices/Implementing IPv4+IPv6 traffic load balancing via ALB.md)
+    - [Integrating ALB with GTM to enable cross-region traffic scheduling and disaster recovery failover](Application Load Balancer (ALB)/Best Practices/Integrating ALB with GTM to enable cross-region traffic scheduling and disaster recovery f.md)
+    - [Obtaining client source IP via backend server](Application Load Balancer (ALB)/Best Practices/Obtaining client source IP via backend server.md)
+  - **Billing**
+    - [Arrears description](Application Load Balancer (ALB)/Billing/Arrears description.md)
+    - [Billing rules](Application Load Balancer (ALB)/Billing/Billing rules.md)
+    - [Resource Package](Application Load Balancer (ALB)/Billing/Resource Package.md)
+  - **Getting Started**
+    - [Create a server group and add backend servers](Application Load Balancer (ALB)/Getting Started/Create a server group and add backend servers.md)
+    - [Creating an ALB instance](Application Load Balancer (ALB)/Getting Started/Creating an ALB instance.md)
+    - [Creating an HTTP listener](Application Load Balancer (ALB)/Getting Started/Creating an HTTP listener.md)
+    - [Getting started overview](Application Load Balancer (ALB)/Getting Started/Getting started overview.md)
+  - **Overview**
+    - [ALB version comparison](Application Load Balancer (ALB)/Overview/ALB version comparison.md)
+    - [Application scenarios](Application Load Balancer (ALB)/Overview/Application scenarios.md)
+    - [Benefits](Application Load Balancer (ALB)/Overview/Benefits.md)
+    - [Features](Application Load Balancer (ALB)/Overview/Features.md)
+    - [Limits](Application Load Balancer (ALB)/Overview/Limits.md)
+    - [Product overview](Application Load Balancer (ALB)/Overview/Product overview.md)
+    - [Region and Availability Zone](Application Load Balancer (ALB)/Overview/Region and Availability Zone.md)
+  - **Terms**
+    - [Service-Specific Terms for BytePlus Application Load Balancer](Application Load Balancer (ALB)/Terms/Service-Specific Terms for BytePlus Application Load Balancer.md)
+    - [SLA for BytePlus ALB Service](Application Load Balancer (ALB)/Terms/SLA for BytePlus ALB Service.md)
+  - **Updates and Announcements**
+    - [New feature release notes](Application Load Balancer (ALB)/Updates and Announcements/New feature release notes.md)
+  - **User Guide**
+    - [Health check](Application Load Balancer (ALB)/User Guide/Health check.md)
+    - **Application of ALB in VKE**
+      - [ALB Ingress overview](Application Load Balancer (ALB)/User Guide/Application of ALB in VKE/ALB Ingress overview.md)
+      - [Using ALB Ingress via the console](Application Load Balancer (ALB)/User Guide/Application of ALB in VKE/Using ALB Ingress via the console.md)
+    - **Instance**
+      - [Change the network type of an ALB instance](Application Load Balancer (ALB)/User Guide/Instance/Change the network type of an ALB instance.md)
+      - [Cloning an ALB instance](Application Load Balancer (ALB)/User Guide/Instance/Cloning an ALB instance.md)
+      - [Creating an ALB instance](Application Load Balancer (ALB)/User Guide/Instance/Creating an ALB instance.md)
+      - [Instance overview](Application Load Balancer (ALB)/User Guide/Instance/Instance overview.md)
+      - [Managing an ALB instance](Application Load Balancer (ALB)/User Guide/Instance/Managing an ALB instance.md)
+      - [Resolving a custom domain name to ALB domain name](Application Load Balancer (ALB)/User Guide/Instance/Resolving a custom domain name to ALB domain name.md)
+    - **Listeners**
+      - [ALB uses certificates from the Certificate Center](Application Load Balancer (ALB)/User Guide/Listeners/ALB uses certificates from the Certificate Center.md)
+      - [Configure multiple certificates for HTTPS listener (Standard edition)](Application Load Balancer (ALB)/User Guide/Listeners/Configure multiple certificates for HTTPS listener (Standard edition).md)
+      - [Configuring multiple certificates for an HTTPS listener (Basic Edition)](Application Load Balancer (ALB)/User Guide/Listeners/Configuring multiple certificates for an HTTPS listener (Basic Edition).md)
+      - [Custom configuration](Application Load Balancer (ALB)/User Guide/Listeners/Custom configuration.md)
+      - [Managing a listener](Application Load Balancer (ALB)/User Guide/Listeners/Managing a listener.md)
+      - [Mutual authentication](Application Load Balancer (ALB)/User Guide/Listeners/Mutual authentication.md)
+      - **Creating a listener**
+        - [Create HTTP/2 listener](Application Load Balancer (ALB)/User Guide/Listeners/Creating a listener/Create HTTP - 2 listener.md)
+        - [Create QUIC listener](Application Load Balancer (ALB)/User Guide/Listeners/Creating a listener/Create QUIC listener.md)
+        - [Creating an HTTP listener](Application Load Balancer (ALB)/User Guide/Listeners/Creating a listener/Creating an HTTP listener.md)
+        - [Creating an HTTPS listener](Application Load Balancer (ALB)/User Guide/Listeners/Creating a listener/Creating an HTTPS listener.md)
+      - **Forwarding rules**
+        - [Create forwarding rules (Basic edition)](Application Load Balancer (ALB)/User Guide/Listeners/Forwarding rules/Create forwarding rules (Basic edition).md)
+        - [Creating a forwarding rule (Standard edition)](Application Load Balancer (ALB)/User Guide/Listeners/Forwarding rules/Creating a forwarding rule (Standard edition).md)
+        - [Forwarding rule overview](Application Load Balancer (ALB)/User Guide/Listeners/Forwarding rules/Forwarding rule overview.md)
+        - [Modifying/Deleting a forwarding rule](Application Load Balancer (ALB)/User Guide/Listeners/Forwarding rules/Modifying - Deleting a forwarding rule.md)
+    - **Logs and monitoring**
+      - [Access log delivery to TLS](Application Load Balancer (ALB)/User Guide/Logs and monitoring/Access log delivery to TLS.md)
+      - [Access log delivery to TOS](Application Load Balancer (ALB)/User Guide/Logs and monitoring/Access log delivery to TOS.md)
+      - [Data insight](Application Load Balancer (ALB)/User Guide/Logs and monitoring/Data insight.md)
+      - [Data Monitoring](Application Load Balancer (ALB)/User Guide/Logs and monitoring/Data Monitoring.md)
+      - [Health check log](Application Load Balancer (ALB)/User Guide/Logs and monitoring/Health check log.md)
+    - **Manage certificates**
+      - [Adding/Deleting a certificate](Application Load Balancer (ALB)/User Guide/Manage certificates/Adding - Deleting a certificate.md)
+      - [Certificate overview](Application Load Balancer (ALB)/User Guide/Manage certificates/Certificate overview.md)
+      - [Convert certificate format](Application Load Balancer (ALB)/User Guide/Manage certificates/Convert certificate format.md)
+      - [Replacing a certificate](Application Load Balancer (ALB)/User Guide/Manage certificates/Replacing a certificate.md)
+    - **Resource management**
+      - **Project management**
+        - [Managing an ALB resource by project](Application Load Balancer (ALB)/User Guide/Resource management/Project management/Managing an ALB resource by project.md)
+        - [Overview](Application Load Balancer (ALB)/User Guide/Resource management/Project management/Overview.md)
+      - **Tag management**
+        - [Managing an ALB resource by tag](Application Load Balancer (ALB)/User Guide/Resource management/Tag management/Managing an ALB resource by tag.md)
+        - [Overview](Application Load Balancer (ALB)/User Guide/Resource management/Tag management/Overview.md)
+      - **User management**
+        - [Configuration examples of ALB custom policies](Application Load Balancer (ALB)/User Guide/Resource management/User management/Configuration examples of ALB custom policies.md)
+        - [Overview](Application Load Balancer (ALB)/User Guide/Resource management/User management/Overview.md)
+        - [Using an IAM user to access ALB](Application Load Balancer (ALB)/User Guide/Resource management/User management/Using an IAM user to access ALB.md)
+    - **Security management**
+      - [Access control](Application Load Balancer (ALB)/User Guide/Security management/Access control.md)
+      - [WAF protection](Application Load Balancer (ALB)/User Guide/Security management/WAF protection.md)
+    - **Server Groups**
+      - [Add secondary network interface as backend server](Application Load Balancer (ALB)/User Guide/Server Groups/Add secondary network interface as backend server.md)
+      - [Configure cookie-based session persistence](Application Load Balancer (ALB)/User Guide/Server Groups/Configure cookie-based session persistence.md)
+      - [Configuring a backend server security group](Application Load Balancer (ALB)/User Guide/Server Groups/Configuring a backend server security group.md)
+      - [Configuring the slow start](Application Load Balancer (ALB)/User Guide/Server Groups/Configuring the slow start.md)
+      - [Creating and managing a server group](Application Load Balancer (ALB)/User Guide/Server Groups/Creating and managing a server group.md)
+      - [Cross-availability zone load balancing](Application Load Balancer (ALB)/User Guide/Server Groups/Cross-availability zone load balancing.md)
+      - [load balancing algorithm](Application Load Balancer (ALB)/User Guide/Server Groups/load balancing algorithm.md)
+      - [Server group overview](Application Load Balancer (ALB)/User Guide/Server Groups/Server group overview.md)
+- **Classic Load Balancer (CLB)**
+  - [Classic Load Balancer (CLB) Monitoring Metrics Upgrade Notice](Classic Load Balancer (CLB)/Classic Load Balancer (CLB) Monitoring Metrics Upgrade Notice.md)
+  - [What's New](Classic Load Balancer (CLB)/What's New.md)
+  - **API Reference**
+    - [API overview](Classic Load Balancer (CLB)/API Reference/API overview.md)
+    - [API release notes](Classic Load Balancer (CLB)/API Reference/API release notes.md)
+    - [Overview](Classic Load Balancer (CLB)/API Reference/Overview.md)
+    - **Access control list**
+      - [AddAclEntries - Adding the ACL entries](Classic Load Balancer (CLB)/API Reference/Access control list/AddAclEntries - Adding the ACL entries.md)
+      - [CreateAcl - Creating an ACL](Classic Load Balancer (CLB)/API Reference/Access control list/CreateAcl - Creating an ACL.md)
+      - [DeleteAcl - Deleting an ACL](Classic Load Balancer (CLB)/API Reference/Access control list/DeleteAcl - Deleting an ACL.md)
+      - [DescribeAclAttributes - Querying the ACL details](Classic Load Balancer (CLB)/API Reference/Access control list/DescribeAclAttributes - Querying the ACL details.md)
+      - [DescribeAcls - Queryng an ACL](Classic Load Balancer (CLB)/API Reference/Access control list/DescribeAcls - Queryng an ACL.md)
+      - [ModifyAclAttributes - Modifying the ACL attributes](Classic Load Balancer (CLB)/API Reference/Access control list/ModifyAclAttributes - Modifying the ACL attributes.md)
+      - [RemoveAclEntries - Removing the entries from ACL](Classic Load Balancer (CLB)/API Reference/Access control list/RemoveAclEntries - Removing the entries from ACL.md)
+    - **Access log (Layer-7)**
+      - [DisableAccessLog - Disabling the layer 7 access log collection](Classic Load Balancer (CLB)/API Reference/Access log (Layer-7)/DisableAccessLog - Disabling the layer 7 access log collection.md)
+      - [EnableAccessLog - Enabling the layer 7 access log collection](Classic Load Balancer (CLB)/API Reference/Access log (Layer-7)/EnableAccessLog - Enabling the layer 7 access log collection.md)
+    - **Call method**
+      - [Public error codes](Classic Load Balancer (CLB)/API Reference/Call method/Public error codes.md)
+      - [Public parameters](Classic Load Balancer (CLB)/API Reference/Call method/Public parameters.md)
+      - [Request structure](Classic Load Balancer (CLB)/API Reference/Call method/Request structure.md)
+      - [Responses](Classic Load Balancer (CLB)/API Reference/Call method/Responses.md)
+      - [Signature method](Classic Load Balancer (CLB)/API Reference/Call method/Signature method.md)
+    - **Certificate**
+      - [DeleteCertificate - Deleting a certificate](Classic Load Balancer (CLB)/API Reference/Certificate/DeleteCertificate - Deleting a certificate.md)
+      - [DescribeCertificates - Querying a certificate list](Classic Load Balancer (CLB)/API Reference/Certificate/DescribeCertificates - Querying a certificate list.md)
+      - [ModifyCertificateAttributes - Modifying the certificate attributes](Classic Load Balancer (CLB)/API Reference/Certificate/ModifyCertificateAttributes - Modifying the certificate attributes.md)
+      - [UploadCertificate - Uploading a certificate](Classic Load Balancer (CLB)/API Reference/Certificate/UploadCertificate - Uploading a certificate.md)
+    - **CLB instances**
+      - [ConvertLoadBalancerBillingType - Converting the CLB billing methods](Classic Load Balancer (CLB)/API Reference/CLB instances/ConvertLoadBalancerBillingType - Converting the CLB billing methods.md)
+      - [CreateLoadBalancer - Creating a CLB](Classic Load Balancer (CLB)/API Reference/CLB instances/CreateLoadBalancer - Creating a CLB.md)
+      - [DeleteLoadBalancer - Deleting a CLB](Classic Load Balancer (CLB)/API Reference/CLB instances/DeleteLoadBalancer - Deleting a CLB.md)
+      - [DescribeLoadBalancerAttributes - Querying the CLB details](Classic Load Balancer (CLB)/API Reference/CLB instances/DescribeLoadBalancerAttributes - Querying the CLB details.md)
+      - [DescribeLoadBalancers - Querying a CLB list](Classic Load Balancer (CLB)/API Reference/CLB instances/DescribeLoadBalancers - Querying a CLB list.md)
+      - [DescribeLoadBalancersBilling - Querying the CLB billing information](Classic Load Balancer (CLB)/API Reference/CLB instances/DescribeLoadBalancersBilling - Querying the CLB billing information.md)
+      - [DescribeZones - Querying the region information](Classic Load Balancer (CLB)/API Reference/CLB instances/DescribeZones - Querying the region information.md)
+      - [ModifyLoadBalancerAttributes - Modifying the CLB attributes](Classic Load Balancer (CLB)/API Reference/CLB instances/ModifyLoadBalancerAttributes - Modifying the CLB attributes.md)
+      - [RenewLoadBalancer - Renewing a CLB](Classic Load Balancer (CLB)/API Reference/CLB instances/RenewLoadBalancer - Renewing a CLB.md)
+      - [SetLoadBalancerRenewal - Setting the CLB renewal type](Classic Load Balancer (CLB)/API Reference/CLB instances/SetLoadBalancerRenewal - Setting the CLB renewal type.md)
+    - **Forwarding rules**
+      - [CreateRules - Creating a forwarding rule](Classic Load Balancer (CLB)/API Reference/Forwarding rules/CreateRules - Creating a forwarding rule.md)
+      - [DeleteRules - Deleting a forwarding rule](Classic Load Balancer (CLB)/API Reference/Forwarding rules/DeleteRules - Deleting a forwarding rule.md)
+      - [DescribeRules - Querying a forwarding rule list](Classic Load Balancer (CLB)/API Reference/Forwarding rules/DescribeRules - Querying a forwarding rule list.md)
+      - [ModifyRules - Modifying a forwarding rule](Classic Load Balancer (CLB)/API Reference/Forwarding rules/ModifyRules - Modifying a forwarding rule.md)
+    - **Health check log**
+      - [AttachHealthCheckLogTopic - Attaching the health check log topic](Classic Load Balancer (CLB)/API Reference/Health check log/AttachHealthCheckLogTopic - Attaching the health check log topic.md)
+      - [CreateHealthCheckLogProject - Creating a health check log project](Classic Load Balancer (CLB)/API Reference/Health check log/CreateHealthCheckLogProject - Creating a health check log project.md)
+      - [DeleteHealthCheckLogProject - Deleting a log project of health checks](Classic Load Balancer (CLB)/API Reference/Health check log/DeleteHealthCheckLogProject - Deleting a log project of health checks.md)
+      - [DescribeHealthCheckLogProjectAttributes - Querying the log project details of a health check](Classic Load Balancer (CLB)/API Reference/Health check log/DescribeHealthCheckLogProjectAttributes - Querying the log project details of a health che.md)
+      - [DescribeHealthCheckLogTopicAttributes - Querying the health check log topic information](Classic Load Balancer (CLB)/API Reference/Health check log/DescribeHealthCheckLogTopicAttributes - Querying the health check log topic information.md)
+      - [DetachHealthCheckLogTopic - Detaching a log topic](Classic Load Balancer (CLB)/API Reference/Health check log/DetachHealthCheckLogTopic - Detaching a log topic.md)
+    - **Listeners**
+      - [CreateListener - Creating a listener](Classic Load Balancer (CLB)/API Reference/Listeners/CreateListener - Creating a listener.md)
+      - [DeleteListener - Deleting a listener](Classic Load Balancer (CLB)/API Reference/Listeners/DeleteListener - Deleting a listener.md)
+      - [DescribeListenerAttributes - Querying the details of a listener](Classic Load Balancer (CLB)/API Reference/Listeners/DescribeListenerAttributes - Querying the details of a listener.md)
+      - [DescribeListenerHealth - Querying the backend server health check information for a listener](Classic Load Balancer (CLB)/API Reference/Listeners/DescribeListenerHealth - Querying the backend server health check information for a listen.md)
+      - [DescribeListeners - Querying a listener list](Classic Load Balancer (CLB)/API Reference/Listeners/DescribeListeners - Querying a listener list.md)
+      - [ModifyListenerAttributes - Modifying the listener attributes](Classic Load Balancer (CLB)/API Reference/Listeners/ModifyListenerAttributes - Modifying the listener attributes.md)
+      - [ModifyListenerDomainExtensions - Managing the additional domains of an HTTPS listener](Classic Load Balancer (CLB)/API Reference/Listeners/ModifyListenerDomainExtensions - Managing the additional domains of an HTTPS listener.md)
+    - **Server groups**
+      - [AddServerGroupBackendServers - Adding a backend server](Classic Load Balancer (CLB)/API Reference/Server groups/AddServerGroupBackendServers - Adding a backend server.md)
+      - [CreateServerGroup - Creating a backend server group](Classic Load Balancer (CLB)/API Reference/Server groups/CreateServerGroup - Creating a backend server group.md)
+      - [DeleteServerGroup - Deleting a server group](Classic Load Balancer (CLB)/API Reference/Server groups/DeleteServerGroup - Deleting a server group.md)
+      - [DescribeServerGroupAttributes - Querying the server group details](Classic Load Balancer (CLB)/API Reference/Server groups/DescribeServerGroupAttributes - Querying the server group details.md)
+      - [DescribeServerGroups - Querying a server group list](Classic Load Balancer (CLB)/API Reference/Server groups/DescribeServerGroups - Querying a server group list.md)
+      - [ModifyServerGroupAttributes - Modifying the server group attributes](Classic Load Balancer (CLB)/API Reference/Server groups/ModifyServerGroupAttributes - Modifying the server group attributes.md)
+      - [RemoveServerGroupBackendServers - Removing a backend server](Classic Load Balancer (CLB)/API Reference/Server groups/RemoveServerGroupBackendServers - Removing a backend server.md)
+    - **Tags**
+      - [ListTagsForResources - Querying the tag information](Classic Load Balancer (CLB)/API Reference/Tags/ListTagsForResources - Querying the tag information.md)
+      - [TagResources - Adding the tags to resources](Classic Load Balancer (CLB)/API Reference/Tags/TagResources - Adding the tags to resources.md)
+      - [UntagResources - Deleting a custom tag](Classic Load Balancer (CLB)/API Reference/Tags/UntagResources - Deleting a custom tag.md)
+  - **Best Practices**
+    - [CLB Security Protection](Classic Load Balancer (CLB)/Best Practices/CLB Security Protection.md)
+    - [Configuring cookie-based session persistence for a Layer-7 listener](Classic Load Balancer (CLB)/Best Practices/Configuring cookie-based session persistence for a Layer-7 listener.md)
+    - [Health check exception troubleshooting guide](Classic Load Balancer (CLB)/Best Practices/Health check exception troubleshooting guide.md)
+    - [Locating the abnormal backend servers through access logs](Classic Load Balancer (CLB)/Best Practices/Locating the abnormal backend servers through access logs.md)
+    - [Monitoring traffic usage](Classic Load Balancer (CLB)/Best Practices/Monitoring traffic usage.md)
+    - **Adding a cross-VPC server**
+      - [Cross-VPC Backend Server Overview](Classic Load Balancer (CLB)/Best Practices/Adding a cross-VPC server/Cross-VPC Backend Server Overview.md)
+      - [Cross-VPC ECS instance as a backend server (Transit Router)](Classic Load Balancer (CLB)/Best Practices/Adding a cross-VPC server/Cross-VPC ECS instance as a backend server (Transit Router).md)
+      - [ECS instances across VPCs as backend servers (Cloud Enterprise Network)](Classic Load Balancer (CLB)/Best Practices/Adding a cross-VPC server/ECS instances across VPCs as backend servers (Cloud Enterprise Network).md)
+      - [On-premises IDC servers as backend servers (Transit Router)](Classic Load Balancer (CLB)/Best Practices/Adding a cross-VPC server/On-premises IDC servers as backend servers (Transit Router).md)
+    - **Configuration practice of a forwarding rule**
+      - [Forwarding the traffic based on domain name or URL path](Classic Load Balancer (CLB)/Best Practices/Configuration practice of a forwarding rule/Forwarding the traffic based on domain name or URL path.md)
+      - [Traffic forwarding with the same domain name but different URL paths](Classic Load Balancer (CLB)/Best Practices/Configuration practice of a forwarding rule/Traffic forwarding with the same domain name but different URL paths.md)
+    - **Creating a static page**
+      - [Building an HTTPS static page](Classic Load Balancer (CLB)/Best Practices/Creating a static page/Building an HTTPS static page.md)
+      - [Creating an HTTP static page](Classic Load Balancer (CLB)/Best Practices/Creating a static page/Creating an HTTP static page.md)
+    - **Disaster Recovery Best Practices**
+      - [Configuring the active and standby availability zones in the same region for CLB disaster recovery](Classic Load Balancer (CLB)/Best Practices/Disaster Recovery Best Practices/Configuring the active and standby availability zones in the same region for CLB disaster.md)
+    - **Obtaining the client source IP address**
+      - [Getting the client source IP for layer-7 listener](Classic Load Balancer (CLB)/Best Practices/Obtaining the client source IP address/Getting the client source IP for layer-7 listener.md)
+      - [Layer 4 listener obtains client source IP](Classic Load Balancer (CLB)/Best Practices/Obtaining the client source IP address/Layer 4 listener obtains client source IP.md)
+  - **Billing**
+    - [Arrears description](Classic Load Balancer (CLB)/Billing/Arrears description.md)
+    - [Billing changes](Classic Load Balancer (CLB)/Billing/Billing changes.md)
+    - [Billing item](Classic Load Balancer (CLB)/Billing/Billing item.md)
+    - [Billing Overview](Classic Load Balancer (CLB)/Billing/Billing Overview.md)
+    - [Changing the billing method](Classic Load Balancer (CLB)/Billing/Changing the billing method.md)
+    - [Instructions on expiration](Classic Load Balancer (CLB)/Billing/Instructions on expiration.md)
+    - [Instructions on unsubscription](Classic Load Balancer (CLB)/Billing/Instructions on unsubscription.md)
+    - [Renewal](Classic Load Balancer (CLB)/Billing/Renewal.md)
+    - **Metering methods**
+      - [Pay-as-you-go](Classic Load Balancer (CLB)/Billing/Metering methods/Pay-as-you-go.md)
+      - [Pay-by-CU](Classic Load Balancer (CLB)/Billing/Metering methods/Pay-by-CU.md)
+      - [Subscription](Classic Load Balancer (CLB)/Billing/Metering methods/Subscription.md)
+  - **FAQ**
+    - [ACL FAQs](Classic Load Balancer (CLB)/FAQ/ACL FAQs.md)
+    - [Backend Server Group FAQs](Classic Load Balancer (CLB)/FAQ/Backend Server Group FAQs.md)
+    - [Billing FAQs](Classic Load Balancer (CLB)/FAQ/Billing FAQs.md)
+    - [Certificate FAQs](Classic Load Balancer (CLB)/FAQ/Certificate FAQs.md)
+    - [CLB instance FAQs](Classic Load Balancer (CLB)/FAQ/CLB instance FAQs.md)
+    - [Health Check FAQs](Classic Load Balancer (CLB)/FAQ/Health Check FAQs.md)
+    - [Listener FAQs](Classic Load Balancer (CLB)/FAQ/Listener FAQs.md)
+    - [Log and monitoring FAQs](Classic Load Balancer (CLB)/FAQ/Log and monitoring FAQs.md)
+  - **Getting Started**
+    - [Planning and preparation](Classic Load Balancer (CLB)/Getting Started/Planning and preparation.md)
+    - **Layer-4 CLB**
+      - [Configuring a backend server group](Classic Load Balancer (CLB)/Getting Started/Layer-4 CLB/Configuring a backend server group.md)
+      - [Creating a CLB instance](Classic Load Balancer (CLB)/Getting Started/Layer-4 CLB/Creating a CLB instance.md)
+      - [Creating a listener](Classic Load Balancer (CLB)/Getting Started/Layer-4 CLB/Creating a listener.md)
+      - [Quick start](Classic Load Balancer (CLB)/Getting Started/Layer-4 CLB/Quick start.md)
+      - [Verifying the CLB service](Classic Load Balancer (CLB)/Getting Started/Layer-4 CLB/Verifying the CLB service.md)
+    - **Layer-7 CLB**
+      - [Configuring a backend server group](Classic Load Balancer (CLB)/Getting Started/Layer-7 CLB/Configuring a backend server group.md)
+      - [Configuring a forwarding rule](Classic Load Balancer (CLB)/Getting Started/Layer-7 CLB/Configuring a forwarding rule.md)
+      - [Creating a CLB instance](Classic Load Balancer (CLB)/Getting Started/Layer-7 CLB/Creating a CLB instance.md)
+      - [Creating a listener](Classic Load Balancer (CLB)/Getting Started/Layer-7 CLB/Creating a listener.md)
+      - [Quick start](Classic Load Balancer (CLB)/Getting Started/Layer-7 CLB/Quick start.md)
+      - [Verifying the CLB service](Classic Load Balancer (CLB)/Getting Started/Layer-7 CLB/Verifying the CLB service.md)
+  - **Overview**
+    - [Application scenarios](Classic Load Balancer (CLB)/Overview/Application scenarios.md)
+    - [Benefits](Classic Load Balancer (CLB)/Overview/Benefits.md)
+    - [Features](Classic Load Balancer (CLB)/Overview/Features.md)
+    - [Limits](Classic Load Balancer (CLB)/Overview/Limits.md)
+    - [Product specifications](Classic Load Balancer (CLB)/Overview/Product specifications.md)
+    - [Regions and Availability Zones](Classic Load Balancer (CLB)/Overview/Regions and Availability Zones.md)
+    - [Traffic path description](Classic Load Balancer (CLB)/Overview/Traffic path description.md)
+    - [What is a Classic Load Balancer](Classic Load Balancer (CLB)/Overview/What is a Classic Load Balancer.md)
+  - **Terms**
+    - [BytePlus CLB_Service Level Agreement](Classic Load Balancer (CLB)/Terms/BytePlus CLB_Service Level Agreement.md)
+    - [Service-Specific Terms for BytePlus Classic Load Balancer](Classic Load Balancer (CLB)/Terms/Service-Specific Terms for BytePlus Classic Load Balancer.md)
+  - **User Guide**
+    - [Instance diagnosis and network topology](Classic Load Balancer (CLB)/User Guide/Instance diagnosis and network topology.md)
+    - **Access control list**
+      - [Access Control Lists overview](Classic Load Balancer (CLB)/User Guide/Access control list/Access Control Lists overview.md)
+      - [ACL for listeners](Classic Load Balancer (CLB)/User Guide/Access control list/ACL for listeners.md)
+      - [Managing the ACL](Classic Load Balancer (CLB)/User Guide/Access control list/Managing the ACL.md)
+    - **Certificate management**
+      - [Adding/Deleting an additional certificate](Classic Load Balancer (CLB)/User Guide/Certificate management/Adding - Deleting an additional certificate.md)
+      - [Certificate overview](Classic Load Balancer (CLB)/User Guide/Certificate management/Certificate overview.md)
+      - [Deleting a certificate](Classic Load Balancer (CLB)/User Guide/Certificate management/Deleting a certificate.md)
+      - [Modify Listener Certificate](Classic Load Balancer (CLB)/User Guide/Certificate management/Modify Listener Certificate.md)
+      - [Upload certificate](Classic Load Balancer (CLB)/User Guide/Certificate management/Upload certificate.md)
+    - **CLB instances**
+      - [Allowing backend security group](Classic Load Balancer (CLB)/User Guide/CLB instances/Allowing backend security group.md)
+      - [Changing the instance type](Classic Load Balancer (CLB)/User Guide/CLB instances/Changing the instance type.md)
+      - [Creating a CLB instance](Classic Load Balancer (CLB)/User Guide/CLB instances/Creating a CLB instance.md)
+      - [Deleting a CLB instance](Classic Load Balancer (CLB)/User Guide/CLB instances/Deleting a CLB instance.md)
+      - [Editing the modification protection](Classic Load Balancer (CLB)/User Guide/CLB instances/Editing the modification protection.md)
+      - [IPv4/IPv6 network type conversion](Classic Load Balancer (CLB)/User Guide/CLB instances/IPv4 - IPv6 network type conversion.md)
+      - [Public CLB to private CLB](Classic Load Balancer (CLB)/User Guide/CLB instances/Public CLB to private CLB.md)
+      - [Viewing the CLB details](Classic Load Balancer (CLB)/User Guide/CLB instances/Viewing the CLB details.md)
+      - **Public network access**
+        - [Adding or removing an EIP to or from the Bandwidth Package](Classic Load Balancer (CLB)/User Guide/CLB instances/Public network access/Adding or removing an EIP to or from the Bandwidth Package.md)
+        - [Binding or unbinding an EIP](Classic Load Balancer (CLB)/User Guide/CLB instances/Public network access/Binding or unbinding an EIP.md)
+        - [Managing an IPv6 internet bandwidth](Classic Load Balancer (CLB)/User Guide/CLB instances/Public network access/Managing an IPv6 internet bandwidth.md)
+        - [Modifying an internet bandwidth limit](Classic Load Balancer (CLB)/User Guide/CLB instances/Public network access/Modifying an internet bandwidth limit.md)
+    - **Configuring a forwarding rule**
+      - [Adding a forwarding rule](Classic Load Balancer (CLB)/User Guide/Configuring a forwarding rule/Adding a forwarding rule.md)
+      - [Deleting a forwarding rule](Classic Load Balancer (CLB)/User Guide/Configuring a forwarding rule/Deleting a forwarding rule.md)
+      - [Forwarding rule description](Classic Load Balancer (CLB)/User Guide/Configuring a forwarding rule/Forwarding rule description.md)
+      - [Modifying a forwarding rule](Classic Load Balancer (CLB)/User Guide/Configuring a forwarding rule/Modifying a forwarding rule.md)
+    - **Health check**
+      - [Editing health check](Classic Load Balancer (CLB)/User Guide/Health check/Editing health check.md)
+      - [Health check overview](Classic Load Balancer (CLB)/User Guide/Health check/Health check overview.md)
+      - [Viewing the health check status](Classic Load Balancer (CLB)/User Guide/Health check/Viewing the health check status.md)
+    - **Identity and Access Management**
+      - [CLB IAM policy types](Classic Load Balancer (CLB)/User Guide/Identity and Access Management/CLB IAM policy types.md)
+      - [Custom policy syntax example for CLB](Classic Load Balancer (CLB)/User Guide/Identity and Access Management/Custom policy syntax example for CLB.md)
+      - [IAM overview](Classic Load Balancer (CLB)/User Guide/Identity and Access Management/IAM overview.md)
+    - **Listeners**
+      - [Deleting a listener](Classic Load Balancer (CLB)/User Guide/Listeners/Deleting a listener.md)
+      - [Listener overview](Classic Load Balancer (CLB)/User Guide/Listeners/Listener overview.md)
+      - [Modifying a listener](Classic Load Balancer (CLB)/User Guide/Listeners/Modifying a listener.md)
+      - [Starting/Stopping a listener](Classic Load Balancer (CLB)/User Guide/Listeners/Starting - Stopping a listener.md)
+      - **Creating a Listener**
+        - [Creating a TCP protocol listener](Classic Load Balancer (CLB)/User Guide/Listeners/Creating a Listener/Creating a TCP protocol listener.md)
+        - [Creating a UDP protocol listener](Classic Load Balancer (CLB)/User Guide/Listeners/Creating a Listener/Creating a UDP protocol listener.md)
+        - [Creating an HTTP listener](Classic Load Balancer (CLB)/User Guide/Listeners/Creating a Listener/Creating an HTTP listener.md)
+        - [Creating an HTTPS listener](Classic Load Balancer (CLB)/User Guide/Listeners/Creating a Listener/Creating an HTTPS listener.md)
+    - **Logs and monitoring**
+      - **Access logs**
+        - [Access log delivery to TLS](Classic Load Balancer (CLB)/User Guide/Logs and monitoring/Access logs/Access log delivery to TLS.md)
+        - [Access log delivery to TOS](Classic Load Balancer (CLB)/User Guide/Logs and monitoring/Access logs/Access log delivery to TOS.md)
+        - [Access log overview](Classic Load Balancer (CLB)/User Guide/Logs and monitoring/Access logs/Access log overview.md)
+      - **Health check log**
+        - [Authorizing the cross-service access and creating a log project](Classic Load Balancer (CLB)/User Guide/Logs and monitoring/Health check log/Authorizing the cross-service access and creating a log project.md)
+        - [Create log topic](Classic Load Balancer (CLB)/User Guide/Logs and monitoring/Health check log/Create log topic.md)
+        - [Health check log overview](Classic Load Balancer (CLB)/User Guide/Logs and monitoring/Health check log/Health check log overview.md)
+        - [Viewing the health check log](Classic Load Balancer (CLB)/User Guide/Logs and monitoring/Health check log/Viewing the health check log.md)
+      - **Monitoring**
+        - [Configuring an alert policy](Classic Load Balancer (CLB)/User Guide/Logs and monitoring/Monitoring/Configuring an alert policy.md)
+        - [Viewing monitoring data](Classic Load Balancer (CLB)/User Guide/Logs and monitoring/Monitoring/Viewing monitoring data.md)
+    - **Projects and tags**
+      - [Project management](Classic Load Balancer (CLB)/User Guide/Projects and tags/Project management.md)
+      - [Tag management](Classic Load Balancer (CLB)/User Guide/Projects and tags/Tag management.md)
+    - **Server groups**
+      - [Adding or removing a backend server](Classic Load Balancer (CLB)/User Guide/Server groups/Adding or removing a backend server.md)
+      - [Backend server group overview](Classic Load Balancer (CLB)/User Guide/Server groups/Backend server group overview.md)
+      - [Configuring a backend server security group](Classic Load Balancer (CLB)/User Guide/Server groups/Configuring a backend server security group.md)
+      - [Configuring the secondary network interface routing](Classic Load Balancer (CLB)/User Guide/Server groups/Configuring the secondary network interface routing.md)
+      - [Creating a backend server group](Classic Load Balancer (CLB)/User Guide/Server groups/Creating a backend server group.md)
+      - [Deleting a backend server group](Classic Load Balancer (CLB)/User Guide/Server groups/Deleting a backend server group.md)
+      - [Modifying the server group](Classic Load Balancer (CLB)/User Guide/Server groups/Modifying the server group.md)
+- **Network Load Balancer (NLB)**
+  - [New feature release notes](Network Load Balancer (NLB)/New feature release notes.md)
+  - **API**
+    - [API overview](Network Load Balancer (NLB)/API/API overview.md)
+    - [API release notes](Network Load Balancer (NLB)/API/API release notes.md)
+    - [Overview](Network Load Balancer (NLB)/API/Overview.md)
+    - **Call Methods**
+      - [Common error codes](Network Load Balancer (NLB)/API/Call Methods/Common error codes.md)
+      - [Common Parameters](Network Load Balancer (NLB)/API/Call Methods/Common Parameters.md)
+      - [Request Method](Network Load Balancer (NLB)/API/Call Methods/Request Method.md)
+      - [Response Example](Network Load Balancer (NLB)/API/Call Methods/Response Example.md)
+      - [Signature Method](Network Load Balancer (NLB)/API/Call Methods/Signature Method.md)
+    - **Listener**
+      - [CreateNLBListener - Adding a listener](Network Load Balancer (NLB)/API/Listener/CreateNLBListener - Adding a listener.md)
+      - [DeleteNLBListener - Deleting a listener](Network Load Balancer (NLB)/API/Listener/DeleteNLBListener - Deleting a listener.md)
+      - [DescribeNLBListenerAttributes - Viewing the listener details](Network Load Balancer (NLB)/API/Listener/DescribeNLBListenerAttributes - Viewing the listener details.md)
+      - [DescribeNLBListenerCertificates - Querying the certificate information for a specified TLS listener](Network Load Balancer (NLB)/API/Listener/DescribeNLBListenerCertificates - Querying the certificate information for a specified TLS.md)
+      - [DescribeNLBListenerHealth - Viewing the backend server health status](Network Load Balancer (NLB)/API/Listener/DescribeNLBListenerHealth - Viewing the backend server health status.md)
+      - [DescribeNLBListeners - Querying qualified listeners](Network Load Balancer (NLB)/API/Listener/DescribeNLBListeners - Querying qualified listeners.md)
+      - [ModifyNLBListenerAdditionalCertificates - Attaching or detaching an additional certificate for TLS listeners](Network Load Balancer (NLB)/API/Listener/ModifyNLBListenerAdditionalCertificates - Attaching or detaching an additional certificate.md)
+      - [ModifyNLBListenerAttributes - Modifying a listener](Network Load Balancer (NLB)/API/Listener/ModifyNLBListenerAttributes - Modifying a listener.md)
+    - **NLB Instance**
+      - [CreateNetworkLoadBalancer - Creating a NLB instance](Network Load Balancer (NLB)/API/NLB Instance/CreateNetworkLoadBalancer - Creating a NLB instance.md)
+      - [DeleteNetworkLoadBalancer - Deleting a NLB instance](Network Load Balancer (NLB)/API/NLB Instance/DeleteNetworkLoadBalancer - Deleting a NLB instance.md)
+      - [DescribeNetworkLoadBalancerAttributes - Viewing the details of a NLB instance](Network Load Balancer (NLB)/API/NLB Instance/DescribeNetworkLoadBalancerAttributes - Viewing the details of a NLB instance.md)
+      - [DescribeNetworkLoadBalancers - Querying a qualified NLB instance](Network Load Balancer (NLB)/API/NLB Instance/DescribeNetworkLoadBalancers - Querying a qualified NLB instance.md)
+      - [DescribeNLBZones - Querying the availability zone information in the current region](Network Load Balancer (NLB)/API/NLB Instance/DescribeNLBZones - Querying the availability zone information in the current region.md)
+      - [ModifyNetworkLoadBalancerAccessLog - Configuring an access log](Network Load Balancer (NLB)/API/NLB Instance/ModifyNetworkLoadBalancerAccessLog - Configuring an access log.md)
+      - [ModifyNetworkLoadBalancerAttributes - Modifying an NLB instance](Network Load Balancer (NLB)/API/NLB Instance/ModifyNetworkLoadBalancerAttributes - Modifying an NLB instance.md)
+      - [ModifyNetworkLoadBalancerBandwidthPackage - Adding or removing a public NLB instance to or from a Bandwidth Package](Network Load Balancer (NLB)/API/NLB Instance/ModifyNetworkLoadBalancerBandwidthPackage - Adding or removing a public NLB instance to or.md)
+      - [ModifyNetworkLoadBalancerNetworkType - Modifying the network type of an NLB instance](Network Load Balancer (NLB)/API/NLB Instance/ModifyNetworkLoadBalancerNetworkType - Modifying the network type of an NLB instance.md)
+      - [ModifyNetworkLoadBalancerSecurityGroups - Modifying security groups associated with an NLB instance](Network Load Balancer (NLB)/API/NLB Instance/ModifyNetworkLoadBalancerSecurityGroups - Modifying security groups associated with an NLB.md)
+      - [ModifyNetworkLoadBalancerZones - Adding or deleting a availability zone for an NLB instance](Network Load Balancer (NLB)/API/NLB Instance/ModifyNetworkLoadBalancerZones - Adding or deleting a availability zone for an NLB instanc.md)
+    - **Server group**
+      - [CreateNLBServerGroup - Creating a server group](Network Load Balancer (NLB)/API/Server group/CreateNLBServerGroup - Creating a server group.md)
+      - [DeleteNLBServerGroup - Deleting a server group](Network Load Balancer (NLB)/API/Server group/DeleteNLBServerGroup - Deleting a server group.md)
+      - [DescribeNLBServerGroupAttributes - Viewing the server group details](Network Load Balancer (NLB)/API/Server group/DescribeNLBServerGroupAttributes - Viewing the server group details.md)
+      - [DescribeNLBServerGroups - Querying the qualified server groups](Network Load Balancer (NLB)/API/Server group/DescribeNLBServerGroups - Querying the qualified server groups.md)
+      - [ModifyNLBServerGroupAttributes - Modifying a server group](Network Load Balancer (NLB)/API/Server group/ModifyNLBServerGroupAttributes - Modifying a server group.md)
+      - **Backend Server**
+        - [AddNLBBackendServers - Adding a backend server](Network Load Balancer (NLB)/API/Server group/Backend Server/AddNLBBackendServers - Adding a backend server.md)
+        - [ModifyNLBBackendServersAttributes - Modifying the backend server information](Network Load Balancer (NLB)/API/Server group/Backend Server/ModifyNLBBackendServersAttributes - Modifying the backend server information.md)
+        - [RemoveNLBBackendServers - Removing a backend server](Network Load Balancer (NLB)/API/Server group/Backend Server/RemoveNLBBackendServers - Removing a backend server.md)
+    - **Tag**
+      - [ListTagsForNLBResources - Querying the qualified tag information](Network Load Balancer (NLB)/API/Tag/ListTagsForNLBResources - Querying the qualified tag information.md)
+      - [TagNLBResources - Adding a custom tag to NLB resources](Network Load Balancer (NLB)/API/Tag/TagNLBResources - Adding a custom tag to NLB resources.md)
+      - [UntagNLBResources - Deleting a custom tag from NLB resources](Network Load Balancer (NLB)/API/Tag/UntagNLBResources - Deleting a custom tag from NLB resources.md)
+    - **TLS Security Policy**
+      - [CreateNLBSecurityPolicy - Creating a TLS custom security policy](Network Load Balancer (NLB)/API/TLS Security Policy/CreateNLBSecurityPolicy - Creating a TLS custom security policy.md)
+      - [DeleteNLBSecurityPolicy - Deleting a TLS custom security policy](Network Load Balancer (NLB)/API/TLS Security Policy/DeleteNLBSecurityPolicy - Deleting a TLS custom security policy.md)
+      - [DescribeNLBSecurityPolicies - Querying the qualified TLS custom security policy](Network Load Balancer (NLB)/API/TLS Security Policy/DescribeNLBSecurityPolicies - Querying the qualified TLS custom security policy.md)
+      - [DescribeNLBSystemSecurityPolicies - Querying the TLS system security policy](Network Load Balancer (NLB)/API/TLS Security Policy/DescribeNLBSystemSecurityPolicies - Querying the TLS system security policy.md)
+      - [ModifyNLBSecurityPolicyAttributes - Modifying the TLS custom security policy](Network Load Balancer (NLB)/API/TLS Security Policy/ModifyNLBSecurityPolicyAttributes - Modifying the TLS custom security policy.md)
+  - **Best Practices**
+    - [Migrating from CLB to NLB](Network Load Balancer (NLB)/Best Practices/Migrating from CLB to NLB.md)
+    - [Obtaining the client Source IP address](Network Load Balancer (NLB)/Best Practices/Obtaining the client Source IP address.md)
+    - [Troubleshooting exceptions found in health check](Network Load Balancer (NLB)/Best Practices/Troubleshooting exceptions found in health check.md)
+    - **Cross-VPC Backend Server**
+      - [Cross-VPC ECS instance as a backend server (VPN connection)](Network Load Balancer (NLB)/Best Practices/Cross-VPC Backend Server/Cross-VPC ECS instance as a backend server (VPN connection).md)
+      - [Cross-VPC ECS instances as backend servers (CEN)](Network Load Balancer (NLB)/Best Practices/Cross-VPC Backend Server/Cross-VPC ECS instances as backend servers (CEN).md)
+      - [ECS instances across VPCs serve as backend servers (Transit Router)](Network Load Balancer (NLB)/Best Practices/Cross-VPC Backend Server/ECS instances across VPCs serve as backend servers (Transit Router).md)
+      - [On-premises IDC servers as backend servers](Network Load Balancer (NLB)/Best Practices/Cross-VPC Backend Server/On-premises IDC servers as backend servers.md)
+  - **Billing**
+    - [Arrears description](Network Load Balancer (NLB)/Billing/Arrears description.md)
+    - [NLB resource package](Network Load Balancer (NLB)/Billing/NLB resource package.md)
+    - [Pay-by-CU](Network Load Balancer (NLB)/Billing/Pay-by-CU.md)
+  - **FAQ**
+    - [NLB instance](Network Load Balancer (NLB)/FAQ/NLB instance.md)
+    - [NLB resource pack](Network Load Balancer (NLB)/FAQ/NLB resource pack.md)
+  - **Getting Started**
+    - [Quick start](Network Load Balancer (NLB)/Getting Started/Quick start.md)
+    - [Setting up an IPv4 Network Load Balancer](Network Load Balancer (NLB)/Getting Started/Setting up an IPv4 Network Load Balancer.md)
+    - [Setting up an IPv6 Network Load Balancer](Network Load Balancer (NLB)/Getting Started/Setting up an IPv6 Network Load Balancer.md)
+  - **Overview**
+    - [Application scenarios](Network Load Balancer (NLB)/Overview/Application scenarios.md)
+    - [Benefits](Network Load Balancer (NLB)/Overview/Benefits.md)
+    - [Features](Network Load Balancer (NLB)/Overview/Features.md)
+    - [Limitations](Network Load Balancer (NLB)/Overview/Limitations.md)
+    - [Regions and Availability Zones](Network Load Balancer (NLB)/Overview/Regions and Availability Zones.md)
+    - [What is Network Load Balancer](Network Load Balancer (NLB)/Overview/What is Network Load Balancer.md)
+  - **Terms**
+    - [Network Load Balancer Service Level Agreement](Network Load Balancer (NLB)/Terms/Network Load Balancer Service Level Agreement.md)
+    - [Product and Service Testing Agreement](Network Load Balancer (NLB)/Terms/Product and Service Testing Agreement.md)
+  - **User Guide**
+    - [Viewing monitoring data](Network Load Balancer (NLB)/User Guide/Viewing monitoring data.md)
+    - **Access Log**
+      - [Access log overview](Network Load Balancer (NLB)/User Guide/Access Log/Access log overview.md)
+      - [Managing an access log](Network Load Balancer (NLB)/User Guide/Access Log/Managing an access log.md)
+    - **Health Check**
+      - [Editing health check](Network Load Balancer (NLB)/User Guide/Health Check/Editing health check.md)
+      - [Health check overview](Network Load Balancer (NLB)/User Guide/Health Check/Health check overview.md)
+      - [Viewing the health status](Network Load Balancer (NLB)/User Guide/Health Check/Viewing the health status.md)
+    - **IAM**
+      - [IAM overview](Network Load Balancer (NLB)/User Guide/IAM/IAM overview.md)
+      - [NLB custom policy examples](Network Load Balancer (NLB)/User Guide/IAM/NLB custom policy examples.md)
+      - [NLB IAM policy types](Network Load Balancer (NLB)/User Guide/IAM/NLB IAM policy types.md)
+    - **Listener**
+      - [Adding a listener](Network Load Balancer (NLB)/User Guide/Listener/Adding a listener.md)
+      - [Deleting a listener](Network Load Balancer (NLB)/User Guide/Listener/Deleting a listener.md)
+      - [Listener overview](Network Load Balancer (NLB)/User Guide/Listener/Listener overview.md)
+      - [Modifying a listener](Network Load Balancer (NLB)/User Guide/Listener/Modifying a listener.md)
+      - [Starting/Stopping a listener](Network Load Balancer (NLB)/User Guide/Listener/Starting - Stopping a listener.md)
+    - **NLB Instance**
+      - [Adding to/Removing from a bandwidth package](Network Load Balancer (NLB)/User Guide/NLB Instance/Adding to - Removing from a bandwidth package.md)
+      - [Changing NLB instance IP version](Network Load Balancer (NLB)/User Guide/NLB Instance/Changing NLB instance IP version.md)
+      - [Changing the NLB instance availability zone](Network Load Balancer (NLB)/User Guide/NLB Instance/Changing the NLB instance availability zone.md)
+      - [Changing the NLB instance network type](Network Load Balancer (NLB)/User Guide/NLB Instance/Changing the NLB instance network type.md)
+      - [Configuring security group and Network ACL for NLB](Network Load Balancer (NLB)/User Guide/NLB Instance/Configuring security group and Network ACL for NLB.md)
+      - [Creating an NLB instance](Network Load Balancer (NLB)/User Guide/NLB Instance/Creating an NLB instance.md)
+      - [Deleting NLB instance](Network Load Balancer (NLB)/User Guide/NLB Instance/Deleting NLB instance.md)
+      - [Enabling/Disabling all zones forwarding](Network Load Balancer (NLB)/User Guide/NLB Instance/Enabling - Disabling all zones forwarding.md)
+      - [Enabling/Disabling modification protection](Network Load Balancer (NLB)/User Guide/NLB Instance/Enabling - Disabling modification protection.md)
+      - [Managing the associated security group](Network Load Balancer (NLB)/User Guide/NLB Instance/Managing the associated security group.md)
+      - [NLB Instance Overview](Network Load Balancer (NLB)/User Guide/NLB Instance/NLB Instance Overview.md)
+    - **Projects and Tags**
+      - [Project management](Network Load Balancer (NLB)/User Guide/Projects and Tags/Project management.md)
+      - [Tag management](Network Load Balancer (NLB)/User Guide/Projects and Tags/Tag management.md)
+    - **Server Group**
+      - [Adding or removing a backend server](Network Load Balancer (NLB)/User Guide/Server Group/Adding or removing a backend server.md)
+      - [Allowing backend security group](Network Load Balancer (NLB)/User Guide/Server Group/Allowing backend security group.md)
+      - [Configuring a secondary network interface routing](Network Load Balancer (NLB)/User Guide/Server Group/Configuring a secondary network interface routing.md)
+      - [Configuring backend server security group and Network ACL](Network Load Balancer (NLB)/User Guide/Server Group/Configuring backend server security group and Network ACL.md)
+      - [Creating a server group](Network Load Balancer (NLB)/User Guide/Server Group/Creating a server group.md)
+      - [Deleting a server group](Network Load Balancer (NLB)/User Guide/Server Group/Deleting a server group.md)
+      - [Modifying a server group](Network Load Balancer (NLB)/User Guide/Server Group/Modifying a server group.md)
+      - [Server group overview](Network Load Balancer (NLB)/User Guide/Server Group/Server group overview.md)
+    - **TLS Security Policy and Certificate**
+      - [Creating/Deleting a security policy](Network Load Balancer (NLB)/User Guide/TLS Security Policy and Certificate/Creating - Deleting a security policy.md)
+      - [TLS Overview](Network Load Balancer (NLB)/User Guide/TLS Security Policy and Certificate/TLS Overview.md)

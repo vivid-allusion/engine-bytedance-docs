@@ -1,0 +1,436 @@
+# Vector Database Cloud
+
+330 pages. Source: https://docs.byteplus.com/en/docs/VikingDB
+
+Back to the [full index](../README.md).
+
+- [Monitoring and Alerting (V2)](Monitoring and Alerting (V2).md)
+- **Agreements**
+  - [SLA for BytePlus Vector Database Cloud Service ](Agreements/SLA for BytePlus Vector Database Cloud Service.md)
+- **API & SDK**
+  - **API V1**
+    - **Collection**
+      - [create](API & SDK/API V1/Collection/create.md)
+      - [drop](API & SDK/API V1/Collection/drop.md)
+      - [info](API & SDK/API V1/Collection/info.md)
+      - [list](API & SDK/API V1/Collection/list.md)
+      - [update](API & SDK/API V1/Collection/update.md)
+    - **Data**
+      - [del_data](API & SDK/API V1/Data/del_data.md)
+      - [fetch_data (collection)](API & SDK/API V1/Data/fetch_data (collection).md)
+      - [fetch_data (index)](API & SDK/API V1/Data/fetch_data (index).md)
+      - [update_data(API V2)](API & SDK/API V1/Data/update_data(API V2).md)
+      - [upsert_data(API V1)](API & SDK/API V1/Data/upsert_data(API V1).md)
+    - **Embedding**
+      - [Embedding](API & SDK/API V1/Embedding/Embedding.md)
+      - [Embedding v2](API & SDK/API V1/Embedding/Embedding v2.md)
+    - **Index**
+      - [create](API & SDK/API V1/Index/create.md)
+      - [drop](API & SDK/API V1/Index/drop.md)
+      - [info](API & SDK/API V1/Index/info.md)
+      - [list](API & SDK/API V1/Index/list.md)
+      - [update](API & SDK/API V1/Index/update.md)
+    - **Quick Start**
+      - [Core process](API & SDK/API V1/Quick Start/Core process.md)
+      - [Preparation](API & SDK/API V1/Quick Start/Preparation.md)
+      - [Test tools](API & SDK/API V1/Quick Start/Test tools.md)
+    - **Search**
+      - [Aggregate](API & SDK/API V1/Search/Aggregate.md)
+      - **Search**
+        - [Hybrid dense-sparse vector retrieval](API & SDK/API V1/Search/Search/Hybrid dense-sparse vector retrieval.md)
+        - [Multimodal Retrieval](API & SDK/API V1/Search/Search/Multimodal Retrieval.md)
+        - [Vector Search](API & SDK/API V1/Search/Search/Vector Search.md)
+      - **Search Filter**
+        - [Post-processing operators](API & SDK/API V1/Search/Search Filter/Post-processing operators.md)
+        - [primary key filter](API & SDK/API V1/Search/Search Filter/primary key filter.md)
+        - [Scalar filter](API & SDK/API V1/Search/Search Filter/Scalar filter.md)
+  - **API V2**
+    - [API V2 Upgrade and Migration Guide](API & SDK/API V2/API V2 Upgrade and Migration Guide.md)
+    - **Control Plane API**
+      - [Control Plane API Calling Process](API & SDK/API V2/Control Plane API/Control Plane API Calling Process.md)
+      - **collection**
+        - [Create Vikingdb Collection](API & SDK/API V2/Control Plane API/collection/Create Vikingdb Collection.md)
+        - [Delete Vikingdb Collection](API & SDK/API V2/Control Plane API/collection/Delete Vikingdb Collection.md)
+        - [Get Vikingdb Collection](API & SDK/API V2/Control Plane API/collection/Get Vikingdb Collection.md)
+        - [List Vikingdb Collection](API & SDK/API V2/Control Plane API/collection/List Vikingdb Collection.md)
+        - [Update Vikingdb Collection](API & SDK/API V2/Control Plane API/collection/Update Vikingdb Collection.md)
+      - **index**
+        - [ Create Vikingdb Index](API & SDK/API V2/Control Plane API/index/Create Vikingdb Index.md)
+        - [Delete Vikingdb Index](API & SDK/API V2/Control Plane API/index/Delete Vikingdb Index.md)
+        - [Disable Vikingdb Index](API & SDK/API V2/Control Plane API/index/Disable Vikingdb Index.md)
+        - [Enable Vikingdb Index](API & SDK/API V2/Control Plane API/index/Enable Vikingdb Index.md)
+        - [Get Vikingdb Index](API & SDK/API V2/Control Plane API/index/Get Vikingdb Index.md)
+        - [List Vikingdb Index](API & SDK/API V2/Control Plane API/index/List Vikingdb Index.md)
+        - [Update Vikingdb Index](API & SDK/API V2/Control Plane API/index/Update Vikingdb Index.md)
+      - **task**
+        - [Create Vikingdb Task](API & SDK/API V2/Control Plane API/task/Create Vikingdb Task.md)
+        - [Delete Vikingdb Task](API & SDK/API V2/Control Plane API/task/Delete Vikingdb Task.md)
+        - [Get Vikingdb Task](API & SDK/API V2/Control Plane API/task/Get Vikingdb Task.md)
+        - [List Vikingdb Task](API & SDK/API V2/Control Plane API/task/List Vikingdb Task.md)
+        - [Update Vikingdb Task](API & SDK/API V2/Control Plane API/task/Update Vikingdb Task.md)
+    - **Data Plane API**
+      - [Aggregate Statistics](API & SDK/API V2/Data Plane API/Aggregate Statistics.md)
+      - [Data Plane API Calling Process](API & SDK/API V2/Data Plane API/Data Plane API Calling Process.md)
+      - [Embedding Calculation](API & SDK/API V2/Data Plane API/Embedding Calculation.md)
+      - **Data operation**
+        - [DeleteData](API & SDK/API V2/Data Plane API/Data operation/DeleteData.md)
+        - [FetchDataIn(Collection)](API & SDK/API V2/Data Plane API/Data operation/FetchDataIn(Collection).md)
+        - [FetchDataIn(Index)](API & SDK/API V2/Data Plane API/Data operation/FetchDataIn(Index).md)
+        - [UpdateData](API & SDK/API V2/Data Plane API/Data operation/UpdateData.md)
+        - [UpsertData](API & SDK/API V2/Data Plane API/Data operation/UpsertData.md)
+      - **Search**
+        - [Common Search Parameters](API & SDK/API V2/Data Plane API/Search/Common Search Parameters.md)
+        - [Id Search](API & SDK/API V2/Data Plane API/Search/Id Search.md)
+        - [Keyword Search](API & SDK/API V2/Data Plane API/Search/Keyword Search.md)
+        - [Multimodal Search](API & SDK/API V2/Data Plane API/Search/Multimodal Search.md)
+        - [Random Search](API & SDK/API V2/Data Plane API/Search/Random Search.md)
+        - [Scalar Sort Search](API & SDK/API V2/Data Plane API/Search/Scalar Sort Search.md)
+        - [Vector Search](API & SDK/API V2/Data Plane API/Search/Vector Search.md)
+  - **SDK V1**
+    - **Go SDK**
+      - [Core process](API & SDK/SDK V1/Go SDK/Core process.md)
+      - [SDK installation and initialization](API & SDK/SDK V1/Go SDK/SDK installation and initialization.md)
+      - **Collection**
+        - [CreateCollection](API & SDK/SDK V1/Go SDK/Collection/CreateCollection.md)
+        - [DropCollection](API & SDK/SDK V1/Go SDK/Collection/DropCollection.md)
+        - [GetCollection](API & SDK/SDK V1/Go SDK/Collection/GetCollection.md)
+        - [ListCollections](API & SDK/SDK V1/Go SDK/Collection/ListCollections.md)
+        - [UpdateCollection](API & SDK/SDK V1/Go SDK/Collection/UpdateCollection.md)
+      - **Data**
+        - [DeleteData](API & SDK/SDK V1/Go SDK/Data/DeleteData.md)
+        - [FetchData (collection)](API & SDK/SDK V1/Go SDK/Data/FetchData (collection).md)
+        - [FetchData (index)](API & SDK/SDK V1/Go SDK/Data/FetchData (index).md)
+        - [UpdateData](API & SDK/SDK V1/Go SDK/Data/UpdateData.md)
+        - [UpsertData](API & SDK/SDK V1/Go SDK/Data/UpsertData.md)
+      - **Embedding**
+        - [Embedding](API & SDK/SDK V1/Go SDK/Embedding/Embedding.md)
+        - [Embedding v2](API & SDK/SDK V1/Go SDK/Embedding/Embedding v2.md)
+      - **Index**
+        - [CreateIndex](API & SDK/SDK V1/Go SDK/Index/CreateIndex.md)
+        - [DropIndex](API & SDK/SDK V1/Go SDK/Index/DropIndex.md)
+        - [GetIndex](API & SDK/SDK V1/Go SDK/Index/GetIndex.md)
+        - [ListIndexes](API & SDK/SDK V1/Go SDK/Index/ListIndexes.md)
+        - [UpdateIndex](API & SDK/SDK V1/Go SDK/Index/UpdateIndex.md)
+      - **Search**
+        - [SearchAgg](API & SDK/SDK V1/Go SDK/Search/SearchAgg.md)
+        - **Search**
+          - [Search](API & SDK/SDK V1/Go SDK/Search/Search/Search.md)
+          - [SearchById](API & SDK/SDK V1/Go SDK/Search/Search/SearchById.md)
+          - [SearchByText](API & SDK/SDK V1/Go SDK/Search/Search/SearchByText.md)
+          - [SearchByVector](API & SDK/SDK V1/Go SDK/Search/Search/SearchByVector.md)
+          - [SearchWithMultiModal](API & SDK/SDK V1/Go SDK/Search/Search/SearchWithMultiModal.md)
+        - **Search Filter**
+          - [postprocessing operator](API & SDK/SDK V1/Go SDK/Search/Search Filter/postprocessing operator.md)
+          - [primary key filtering](API & SDK/SDK V1/Go SDK/Search/Search Filter/primary key filtering.md)
+          - [scalar filtering](API & SDK/SDK V1/Go SDK/Search/Search Filter/scalar filtering.md)
+    - **Java SDK**
+      - [Core process](API & SDK/SDK V1/Java SDK/Core process.md)
+      - [SDK installation and initialization](API & SDK/SDK V1/Java SDK/SDK installation and initialization.md)
+      - **Collection**
+        - [createCollection](API & SDK/SDK V1/Java SDK/Collection/createCollection.md)
+        - [dropCollection](API & SDK/SDK V1/Java SDK/Collection/dropCollection.md)
+        - [getCollection](API & SDK/SDK V1/Java SDK/Collection/getCollection.md)
+        - [listCollections](API & SDK/SDK V1/Java SDK/Collection/listCollections.md)
+        - [updateCollection](API & SDK/SDK V1/Java SDK/Collection/updateCollection.md)
+      - **Data**
+        - [deleteData](API & SDK/SDK V1/Java SDK/Data/deleteData.md)
+        - [fetchData (collection)](API & SDK/SDK V1/Java SDK/Data/fetchData (collection).md)
+        - [fetchData (index)](API & SDK/SDK V1/Java SDK/Data/fetchData (index).md)
+        - [updateData](API & SDK/SDK V1/Java SDK/Data/updateData.md)
+        - [upsertData](API & SDK/SDK V1/Java SDK/Data/upsertData.md)
+      - **Embedding**
+        - [Embedding](API & SDK/SDK V1/Java SDK/Embedding/Embedding.md)
+        - [Embedding v2](API & SDK/SDK V1/Java SDK/Embedding/Embedding v2.md)
+      - **Index**
+        - [createIndex](API & SDK/SDK V1/Java SDK/Index/createIndex.md)
+        - [dropIndex](API & SDK/SDK V1/Java SDK/Index/dropIndex.md)
+        - [getIndex](API & SDK/SDK V1/Java SDK/Index/getIndex.md)
+        - [listIndexes](API & SDK/SDK V1/Java SDK/Index/listIndexes.md)
+        - [updateIndex](API & SDK/SDK V1/Java SDK/Index/updateIndex.md)
+      - **Search**
+        - [searchAgg](API & SDK/SDK V1/Java SDK/Search/searchAgg.md)
+        - **Search**
+          - [Search](API & SDK/SDK V1/Java SDK/Search/Search/Search.md)
+          - [searchById](API & SDK/SDK V1/Java SDK/Search/Search/searchById.md)
+          - [searchByText](API & SDK/SDK V1/Java SDK/Search/Search/searchByText.md)
+          - [searchByVector](API & SDK/SDK V1/Java SDK/Search/Search/searchByVector.md)
+          - [searchWithMultiModal](API & SDK/SDK V1/Java SDK/Search/Search/searchWithMultiModal.md)
+        - **Search Filter**
+          - [postprocessing operator](API & SDK/SDK V1/Java SDK/Search/Search Filter/postprocessing operator.md)
+          - [primary key filtering](API & SDK/SDK V1/Java SDK/Search/Search Filter/primary key filtering.md)
+          - [scalar filtering](API & SDK/SDK V1/Java SDK/Search/Search Filter/scalar filtering.md)
+    - **Node.js SDK**
+      - [Core process](API & SDK/SDK V1/Node.js SDK/Core process.md)
+      - [SDK installation and initialization](API & SDK/SDK V1/Node.js SDK/SDK installation and initialization.md)
+      - **Collection**
+        - [CreateCollection](API & SDK/SDK V1/Node.js SDK/Collection/CreateCollection.md)
+        - [DropCollection](API & SDK/SDK V1/Node.js SDK/Collection/DropCollection.md)
+        - [GetCollectionInfo](API & SDK/SDK V1/Node.js SDK/Collection/GetCollectionInfo.md)
+        - [ListCollections](API & SDK/SDK V1/Node.js SDK/Collection/ListCollections.md)
+        - [UpdateCollection](API & SDK/SDK V1/Node.js SDK/Collection/UpdateCollection.md)
+      - **Data**
+        - [DeleteData](API & SDK/SDK V1/Node.js SDK/Data/DeleteData.md)
+        - [FetchCollectionData](API & SDK/SDK V1/Node.js SDK/Data/FetchCollectionData.md)
+        - [FetchIndexData](API & SDK/SDK V1/Node.js SDK/Data/FetchIndexData.md)
+        - [UpsertData](API & SDK/SDK V1/Node.js SDK/Data/UpsertData.md)
+      - **Embedding**
+        - [Embedding](API & SDK/SDK V1/Node.js SDK/Embedding/Embedding.md)
+      - **Index**
+        - [CreateIndex](API & SDK/SDK V1/Node.js SDK/Index/CreateIndex.md)
+        - [DropIndex](API & SDK/SDK V1/Node.js SDK/Index/DropIndex.md)
+        - [GetIndexInfo](API & SDK/SDK V1/Node.js SDK/Index/GetIndexInfo.md)
+        - [ListIndexes](API & SDK/SDK V1/Node.js SDK/Index/ListIndexes.md)
+        - [UpdateIndex](API & SDK/SDK V1/Node.js SDK/Index/UpdateIndex.md)
+      - **Search**
+        - [SearchByPrimaryKeys](API & SDK/SDK V1/Node.js SDK/Search/SearchByPrimaryKeys.md)
+        - [SearchByScalar](API & SDK/SDK V1/Node.js SDK/Search/SearchByScalar.md)
+        - [SearchByText](API & SDK/SDK V1/Node.js SDK/Search/SearchByText.md)
+        - [SearchByVector](API & SDK/SDK V1/Node.js SDK/Search/SearchByVector.md)
+    - **Python SDK**
+      - [Core process](API & SDK/SDK V1/Python SDK/Core process.md)
+      - [SDK installation and initialization](API & SDK/SDK V1/Python SDK/SDK installation and initialization.md)
+      - **Collection**
+        - [create_collection](API & SDK/SDK V1/Python SDK/Collection/create_collection.md)
+        - [drop_collection](API & SDK/SDK V1/Python SDK/Collection/drop_collection.md)
+        - [get_collection](API & SDK/SDK V1/Python SDK/Collection/get_collection.md)
+        - [list_collections](API & SDK/SDK V1/Python SDK/Collection/list_collections.md)
+        - [update_collection](API & SDK/SDK V1/Python SDK/Collection/update_collection.md)
+      - **Data**
+        - [delete_data](API & SDK/SDK V1/Python SDK/Data/delete_data.md)
+        - [fetch_data (collection)](API & SDK/SDK V1/Python SDK/Data/fetch_data (collection).md)
+        - [fetch_data (index)](API & SDK/SDK V1/Python SDK/Data/fetch_data (index).md)
+        - [update_data](API & SDK/SDK V1/Python SDK/Data/update_data.md)
+        - [upsert_data](API & SDK/SDK V1/Python SDK/Data/upsert_data.md)
+      - **Embedding**
+        - [Embedding](API & SDK/SDK V1/Python SDK/Embedding/Embedding.md)
+        - [Embedding_v2](API & SDK/SDK V1/Python SDK/Embedding/Embedding_v2.md)
+      - **Index**
+        - [create_index](API & SDK/SDK V1/Python SDK/Index/create_index.md)
+        - [drop_index](API & SDK/SDK V1/Python SDK/Index/drop_index.md)
+        - [get_index](API & SDK/SDK V1/Python SDK/Index/get_index.md)
+        - [list_indexes](API & SDK/SDK V1/Python SDK/Index/list_indexes.md)
+        - [update_index](API & SDK/SDK V1/Python SDK/Index/update_index.md)
+      - **Search**
+        - [search_agg](API & SDK/SDK V1/Python SDK/Search/search_agg.md)
+        - **Search**
+          - [Search](API & SDK/SDK V1/Python SDK/Search/Search/Search.md)
+          - [search_by_id](API & SDK/SDK V1/Python SDK/Search/Search/search_by_id.md)
+          - [search_by_text](API & SDK/SDK V1/Python SDK/Search/Search/search_by_text.md)
+          - [search_by_vector](API & SDK/SDK V1/Python SDK/Search/Search/search_by_vector.md)
+          - [search_with_multi_modal](API & SDK/SDK V1/Python SDK/Search/Search/search_with_multi_modal.md)
+        - **Search Filter**
+          - [postprocessing operator](API & SDK/SDK V1/Python SDK/Search/Search Filter/postprocessing operator.md)
+          - [primary key filtering](API & SDK/SDK V1/Python SDK/Search/Search Filter/primary key filtering.md)
+          - [scalar filtering](API & SDK/SDK V1/Python SDK/Search/Search Filter/scalar filtering.md)
+  - **SDK V2**
+    - **Go SDK**
+      - [SDK Installation and Initialization](API & SDK/SDK V2/Go SDK/SDK Installation and Initialization.md)
+      - **Control Plane SDK**
+        - **Collection**
+          - [CreateVikingdbCollection](API & SDK/SDK V2/Go SDK/Control Plane SDK/Collection/CreateVikingdbCollection.md)
+          - [DeleteVikingdbCollection](API & SDK/SDK V2/Go SDK/Control Plane SDK/Collection/DeleteVikingdbCollection.md)
+          - [GetVikingdbCollection](API & SDK/SDK V2/Go SDK/Control Plane SDK/Collection/GetVikingdbCollection.md)
+          - [ListVikingdbCollection](API & SDK/SDK V2/Go SDK/Control Plane SDK/Collection/ListVikingdbCollection.md)
+          - [UpdateVikingdbCollection](API & SDK/SDK V2/Go SDK/Control Plane SDK/Collection/UpdateVikingdbCollection.md)
+        - **Index**
+          - [CreateVikingIndex](API & SDK/SDK V2/Go SDK/Control Plane SDK/Index/CreateVikingIndex.md)
+          - [GetVikingdbIndex](API & SDK/SDK V2/Go SDK/Control Plane SDK/Index/GetVikingdbIndex.md)
+          - [ListVikingIndexes](API & SDK/SDK V2/Go SDK/Control Plane SDK/Index/ListVikingIndexes.md)
+          - [UpdateVikingdbIndex](API & SDK/SDK V2/Go SDK/Control Plane SDK/Index/UpdateVikingdbIndex.md)
+        - **Task**
+          - [DeleteVikingdbTask](API & SDK/SDK V2/Go SDK/Control Plane SDK/Task/DeleteVikingdbTask.md)
+          - [GetVikingdbTask](API & SDK/SDK V2/Go SDK/Control Plane SDK/Task/GetVikingdbTask.md)
+          - [ListVikingdbTask](API & SDK/SDK V2/Go SDK/Control Plane SDK/Task/ListVikingdbTask.md)
+          - [UpdateVikingdbTask](API & SDK/SDK V2/Go SDK/Control Plane SDK/Task/UpdateVikingdbTask.md)
+          - **CreateVikingdbTask**
+            - [DataExport](API & SDK/SDK V2/Go SDK/Control Plane SDK/Task/CreateVikingdbTask/DataExport.md)
+            - [DataImport](API & SDK/SDK V2/Go SDK/Control Plane SDK/Task/CreateVikingdbTask/DataImport.md)
+            - [FilterDelete](API & SDK/SDK V2/Go SDK/Control Plane SDK/Task/CreateVikingdbTask/FilterDelete.md)
+            - [FilterUpdate](API & SDK/SDK V2/Go SDK/Control Plane SDK/Task/CreateVikingdbTask/FilterUpdate.md)
+      - **Data Plane SDK**
+        - [aggregate](API & SDK/SDK V2/Go SDK/Data Plane SDK/aggregate.md)
+        - [embedding](API & SDK/SDK V2/Go SDK/Data Plane SDK/embedding.md)
+        - **Data**
+          - [deleteData](API & SDK/SDK V2/Go SDK/Data Plane SDK/Data/deleteData.md)
+          - [fetchDataInCollection](API & SDK/SDK V2/Go SDK/Data Plane SDK/Data/fetchDataInCollection.md)
+          - [fetchDataInIndex](API & SDK/SDK V2/Go SDK/Data Plane SDK/Data/fetchDataInIndex.md)
+          - [updateData](API & SDK/SDK V2/Go SDK/Data Plane SDK/Data/updateData.md)
+          - [upsertData](API & SDK/SDK V2/Go SDK/Data Plane SDK/Data/upsertData.md)
+        - **Search**
+          - [Search Common Parameters](API & SDK/SDK V2/Go SDK/Data Plane SDK/Search/Search Common Parameters.md)
+          - [Search Post Processors](API & SDK/SDK V2/Go SDK/Data Plane SDK/Search/Search Post Processors.md)
+          - [searchById](API & SDK/SDK V2/Go SDK/Data Plane SDK/Search/searchById.md)
+          - [searchByKeywords](API & SDK/SDK V2/Go SDK/Data Plane SDK/Search/searchByKeywords.md)
+          - [searchByMultiModal](API & SDK/SDK V2/Go SDK/Data Plane SDK/Search/searchByMultiModal.md)
+          - [searchByRandom](API & SDK/SDK V2/Go SDK/Data Plane SDK/Search/searchByRandom.md)
+          - [searchByScalar](API & SDK/SDK V2/Go SDK/Data Plane SDK/Search/searchByScalar.md)
+          - [searchByVector](API & SDK/SDK V2/Go SDK/Data Plane SDK/Search/searchByVector.md)
+    - **Java SDK**
+      - [SDK Installation and Initialization](API & SDK/SDK V2/Java SDK/SDK Installation and Initialization.md)
+      - **Control Plane SDK**
+        - **Collection**
+          - [createVikingdbCollection](API & SDK/SDK V2/Java SDK/Control Plane SDK/Collection/createVikingdbCollection.md)
+          - [deleteVikingdbCollection](API & SDK/SDK V2/Java SDK/Control Plane SDK/Collection/deleteVikingdbCollection.md)
+          - [getVikingdbCollection](API & SDK/SDK V2/Java SDK/Control Plane SDK/Collection/getVikingdbCollection.md)
+          - [listVikingdbCollection](API & SDK/SDK V2/Java SDK/Control Plane SDK/Collection/listVikingdbCollection.md)
+          - [updateVikingdbCollection](API & SDK/SDK V2/Java SDK/Control Plane SDK/Collection/updateVikingdbCollection.md)
+        - **Index**
+          - [createVikingdbIndex](API & SDK/SDK V2/Java SDK/Control Plane SDK/Index/createVikingdbIndex.md)
+          - [deleteVikingdbIndex](API & SDK/SDK V2/Java SDK/Control Plane SDK/Index/deleteVikingdbIndex.md)
+          - [getVikingdbIndex](API & SDK/SDK V2/Java SDK/Control Plane SDK/Index/getVikingdbIndex.md)
+          - [listVikingdbIndex](API & SDK/SDK V2/Java SDK/Control Plane SDK/Index/listVikingdbIndex.md)
+          - [updateVikingdbIndex](API & SDK/SDK V2/Java SDK/Control Plane SDK/Index/updateVikingdbIndex.md)
+        - **Task**
+          - [deleteVikingdbTask](API & SDK/SDK V2/Java SDK/Control Plane SDK/Task/deleteVikingdbTask.md)
+          - [getVikingdbTask](API & SDK/SDK V2/Java SDK/Control Plane SDK/Task/getVikingdbTask.md)
+          - [listVikingdbTask](API & SDK/SDK V2/Java SDK/Control Plane SDK/Task/listVikingdbTask.md)
+          - [updateVikingdbTask](API & SDK/SDK V2/Java SDK/Control Plane SDK/Task/updateVikingdbTask.md)
+          - **createVikingdbTask**
+            - [DataExport](API & SDK/SDK V2/Java SDK/Control Plane SDK/Task/createVikingdbTask/DataExport.md)
+            - [DataImport](API & SDK/SDK V2/Java SDK/Control Plane SDK/Task/createVikingdbTask/DataImport.md)
+            - [FilterDelete](API & SDK/SDK V2/Java SDK/Control Plane SDK/Task/createVikingdbTask/FilterDelete.md)
+            - [FilterUpdate](API & SDK/SDK V2/Java SDK/Control Plane SDK/Task/createVikingdbTask/FilterUpdate.md)
+      - **Data Plane SDK**
+        - [aggregate](API & SDK/SDK V2/Java SDK/Data Plane SDK/aggregate.md)
+        - [embedding](API & SDK/SDK V2/Java SDK/Data Plane SDK/embedding.md)
+        - **Data**
+          - [deleteData](API & SDK/SDK V2/Java SDK/Data Plane SDK/Data/deleteData.md)
+          - [fetchDataInCollection](API & SDK/SDK V2/Java SDK/Data Plane SDK/Data/fetchDataInCollection.md)
+          - [fetchDataInIndex](API & SDK/SDK V2/Java SDK/Data Plane SDK/Data/fetchDataInIndex.md)
+          - [updateData](API & SDK/SDK V2/Java SDK/Data Plane SDK/Data/updateData.md)
+          - [upsertData](API & SDK/SDK V2/Java SDK/Data Plane SDK/Data/upsertData.md)
+        - **Search**
+          - [Search Common Parameters](API & SDK/SDK V2/Java SDK/Data Plane SDK/Search/Search Common Parameters.md)
+          - [Search Post Processors](API & SDK/SDK V2/Java SDK/Data Plane SDK/Search/Search Post Processors.md)
+          - [searchById](API & SDK/SDK V2/Java SDK/Data Plane SDK/Search/searchById.md)
+          - [searchByKeywords](API & SDK/SDK V2/Java SDK/Data Plane SDK/Search/searchByKeywords.md)
+          - [searchByMultiModal](API & SDK/SDK V2/Java SDK/Data Plane SDK/Search/searchByMultiModal.md)
+          - [searchByRandom](API & SDK/SDK V2/Java SDK/Data Plane SDK/Search/searchByRandom.md)
+          - [searchByScalar](API & SDK/SDK V2/Java SDK/Data Plane SDK/Search/searchByScalar.md)
+          - [searchByVector](API & SDK/SDK V2/Java SDK/Data Plane SDK/Search/searchByVector.md)
+    - **Python SDK**
+      - [SDK Installation and Initialization](API & SDK/SDK V2/Python SDK/SDK Installation and Initialization.md)
+      - **Control Plane SDK**
+        - **Collection**
+          - [createVikingdbCollection](API & SDK/SDK V2/Python SDK/Control Plane SDK/Collection/createVikingdbCollection.md)
+          - [deleteVikingdbCollection](API & SDK/SDK V2/Python SDK/Control Plane SDK/Collection/deleteVikingdbCollection.md)
+          - [getVikingdbCollection](API & SDK/SDK V2/Python SDK/Control Plane SDK/Collection/getVikingdbCollection.md)
+          - [listVikingdbCollection](API & SDK/SDK V2/Python SDK/Control Plane SDK/Collection/listVikingdbCollection.md)
+          - [updateVikingdbCollection](API & SDK/SDK V2/Python SDK/Control Plane SDK/Collection/updateVikingdbCollection.md)
+        - **Index**
+          - [createVikingdbIndex](API & SDK/SDK V2/Python SDK/Control Plane SDK/Index/createVikingdbIndex.md)
+          - [deleteVikingdbIndex](API & SDK/SDK V2/Python SDK/Control Plane SDK/Index/deleteVikingdbIndex.md)
+          - [getVikingdbIndex](API & SDK/SDK V2/Python SDK/Control Plane SDK/Index/getVikingdbIndex.md)
+          - [listVikingdbIndex](API & SDK/SDK V2/Python SDK/Control Plane SDK/Index/listVikingdbIndex.md)
+          - [updateVikingdbIndex](API & SDK/SDK V2/Python SDK/Control Plane SDK/Index/updateVikingdbIndex.md)
+        - **Task**
+          - [deleteVikingdbTask](API & SDK/SDK V2/Python SDK/Control Plane SDK/Task/deleteVikingdbTask.md)
+          - [getVikingdbTask](API & SDK/SDK V2/Python SDK/Control Plane SDK/Task/getVikingdbTask.md)
+          - [listVikingdbTask](API & SDK/SDK V2/Python SDK/Control Plane SDK/Task/listVikingdbTask.md)
+          - [updateVikingdbTask](API & SDK/SDK V2/Python SDK/Control Plane SDK/Task/updateVikingdbTask.md)
+          - **createVikingdbTask**
+            - [DataExport](API & SDK/SDK V2/Python SDK/Control Plane SDK/Task/createVikingdbTask/DataExport.md)
+            - [DataImport](API & SDK/SDK V2/Python SDK/Control Plane SDK/Task/createVikingdbTask/DataImport.md)
+            - [FilterDelete](API & SDK/SDK V2/Python SDK/Control Plane SDK/Task/createVikingdbTask/FilterDelete.md)
+            - [FilterUpdate](API & SDK/SDK V2/Python SDK/Control Plane SDK/Task/createVikingdbTask/FilterUpdate.md)
+      - **Data Plane SDK**
+        - [aggregate](API & SDK/SDK V2/Python SDK/Data Plane SDK/aggregate.md)
+        - [embedding](API & SDK/SDK V2/Python SDK/Data Plane SDK/embedding.md)
+        - **Data**
+          - [deleteData](API & SDK/SDK V2/Python SDK/Data Plane SDK/Data/deleteData.md)
+          - [fetchDataInCollection](API & SDK/SDK V2/Python SDK/Data Plane SDK/Data/fetchDataInCollection.md)
+          - [fetchDataInIndex](API & SDK/SDK V2/Python SDK/Data Plane SDK/Data/fetchDataInIndex.md)
+          - [updateData](API & SDK/SDK V2/Python SDK/Data Plane SDK/Data/updateData.md)
+          - [upsertData](API & SDK/SDK V2/Python SDK/Data Plane SDK/Data/upsertData.md)
+        - **Search**
+          - [Search Common Parameters](API & SDK/SDK V2/Python SDK/Data Plane SDK/Search/Search Common Parameters.md)
+          - [Search Post Processors](API & SDK/SDK V2/Python SDK/Data Plane SDK/Search/Search Post Processors.md)
+          - [searchById](API & SDK/SDK V2/Python SDK/Data Plane SDK/Search/searchById.md)
+          - [searchByKeywords](API & SDK/SDK V2/Python SDK/Data Plane SDK/Search/searchByKeywords.md)
+          - [searchByMultiModal](API & SDK/SDK V2/Python SDK/Data Plane SDK/Search/searchByMultiModal.md)
+          - [searchByRandom](API & SDK/SDK V2/Python SDK/Data Plane SDK/Search/searchByRandom.md)
+          - [searchByScalar](API & SDK/SDK V2/Python SDK/Data Plane SDK/Search/searchByScalar.md)
+          - [searchByVector](API & SDK/SDK V2/Python SDK/Data Plane SDK/Search/searchByVector.md)
+- **Best Practice**
+  - [\[Vector database\] Multimodal auto-tagging based on the VikingDB vector database and the Doubao LLM](Best Practice/[Vector database] Multimodal auto-tagging based on the VikingDB vector database and the Do.md)
+  - [Multimodal Search in Vector Database (Text-to-Image / Image-to-Image Search)](Best Practice/Multimodal Search in Vector Database (Text-to-Image - Image-to-Image Search).md)
+  - [Representation Configuration Reference (Tensor Rerank)](Best Practice/Representation Configuration Reference (Tensor Rerank).md)
+- **FAQ**
+  - [ Common Error Codes](FAQ/Common Error Codes.md)
+  - [API V2 Error Codes and Troubleshooting Guide](FAQ/API V2 Error Codes and Troubleshooting Guide.md)
+  - [Error codes for troubleshooting](FAQ/Error codes for troubleshooting.md)
+  - [FAQs about operations](FAQ/FAQs about operations.md)
+  - [FAQs about performance](FAQ/FAQs about performance.md)
+  - [FAQs about products](FAQ/FAQs about products.md)
+  - [Vector database quota limits](FAQ/Vector database quota limits.md)
+- **Introduction**
+  - [Application scenarios](Introduction/Application scenarios.md)
+  - [Architecture](Introduction/Architecture.md)
+  - [Benefits](Introduction/Benefits.md)
+  - [Glossary](Introduction/Glossary.md)
+  - [Overview](Introduction/Overview.md)
+- **Pricing**
+  - [Billing of a vector database](Pricing/Billing of a vector database.md)
+  - [Billing of Viking Memory](Pricing/Billing of Viking Memory.md)
+- **Quick Start**
+  - [Getting started with vector databases](Quick Start/Getting started with vector databases.md)
+  - [Getting started with vector databases- API V2](Quick Start/Getting started with vector databases- API V2.md)
+  - [Registering an account and activating the service](Quick Start/Registering an account and activating the service.md)
+- **Updates**
+  - [Release notes](Updates/Release notes.md)
+- **User Guide**
+  - **Memory**
+    - [Quick Start](User Guide/Memory/Quick Start.md)
+    - **API Reference**
+      - [Signature Authentication and Usage Examples](User Guide/Memory/API Reference/Signature Authentication and Usage Examples.md)
+      - **Memory Collection**
+        - [CollectionInfo](User Guide/Memory/API Reference/Memory Collection/CollectionInfo.md)
+        - [CreateCollection](User Guide/Memory/API Reference/Memory Collection/CreateCollection.md)
+        - [DeleteCollection](User Guide/Memory/API Reference/Memory Collection/DeleteCollection.md)
+        - [ListCollection](User Guide/Memory/API Reference/Memory Collection/ListCollection.md)
+        - [UpdateCollection](User Guide/Memory/API Reference/Memory Collection/UpdateCollection.md)
+      - **Memory Management**
+        - **Event Memory**
+          - [BatchDeleteEvent](User Guide/Memory/API Reference/Memory Management/Event Memory/BatchDeleteEvent.md)
+          - [DeleteEvent](User Guide/Memory/API Reference/Memory Management/Event Memory/DeleteEvent.md)
+          - [UpdateEvent](User Guide/Memory/API Reference/Memory Management/Event Memory/UpdateEvent.md)
+        - **Profile Memory**
+          - [AddProfile](User Guide/Memory/API Reference/Memory Management/Profile Memory/AddProfile.md)
+          - [BatchDeleteProfile](User Guide/Memory/API Reference/Memory Management/Profile Memory/BatchDeleteProfile.md)
+          - [DeleteProfile](User Guide/Memory/API Reference/Memory Management/Profile Memory/DeleteProfile.md)
+          - [TriggerUpdateProfile](User Guide/Memory/API Reference/Memory Management/Profile Memory/TriggerUpdateProfile.md)
+          - [UpdateProfile](User Guide/Memory/API Reference/Memory Management/Profile Memory/UpdateProfile.md)
+      - **Memory Retrieval**
+        - [SearchMemory](User Guide/Memory/API Reference/Memory Retrieval/SearchMemory.md)
+      - **Session**
+        - [AddSession](User Guide/Memory/API Reference/Session/AddSession.md)
+        - [SessionInfo](User Guide/Memory/API Reference/Session/SessionInfo.md)
+    - **Best Practice**
+      - [Integrating LLM with Memory](User Guide/Memory/Best Practice/Integrating LLM with Memory.md)
+      - [Specify the Profile Update Scope to Ensure Accurate Updates to the Profiles](User Guide/Memory/Best Practice/Specify the Profile Update Scope to Ensure Accurate Updates to the Profiles.md)
+    - **Console Instructions**
+      - [Add Memories](User Guide/Memory/Console Instructions/Add Memories.md)
+      - [Create Memory Collection](User Guide/Memory/Console Instructions/Create Memory Collection.md)
+      - [Delete Memory Collection](User Guide/Memory/Console Instructions/Delete Memory Collection.md)
+      - [Retrieve Memories](User Guide/Memory/Console Instructions/Retrieve Memories.md)
+      - [View Memory Details](User Guide/Memory/Console Instructions/View Memory Details.md)
+  - **RAG Cloud**
+    - [RAG Cloud](User Guide/RAG Cloud/RAG Cloud.md)
+  - **Vector Database**
+    - **Collection**
+      - [Create Collection](User Guide/Vector Database/Collection/Create Collection.md)
+      - [Delete Collection](User Guide/Vector Database/Collection/Delete Collection.md)
+      - [Edit Collection](User Guide/Vector Database/Collection/Edit Collection.md)
+      - [Insert Data](User Guide/Vector Database/Collection/Insert Data.md)
+      - [Query Data by primary key](User Guide/Vector Database/Collection/Query Data by primary key.md)
+      - [View collection details](User Guide/Vector Database/Collection/View collection details.md)
+      - [View the collection list](User Guide/Vector Database/Collection/View the collection list.md)
+    - **Index**
+      - [Create an index](User Guide/Vector Database/Index/Create an index.md)
+      - [Drop an index](User Guide/Vector Database/Index/Drop an index.md)
+      - [Edit an index](User Guide/Vector Database/Index/Edit an index.md)
+      - [View index details](User Guide/Vector Database/Index/View index details.md)
+      - [View the index list](User Guide/Vector Database/Index/View the index list.md)
+    - **Search**
+      - [Retrieve vectors](User Guide/Vector Database/Search/Retrieve vectors.md)
+      - [Specify scalar filters in retrieval](User Guide/Vector Database/Search/Specify scalar filters in retrieval.md)

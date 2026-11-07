@@ -1,0 +1,3177 @@
+---
+title: "UpdateCdnConfig"
+product: "BytePlus CDN"
+product_code: "byteplus-cdn"
+source: "https://docs.byteplus.com/en/docs/byteplus-cdn/UpdateCdnConfig_zh-cn"
+---
+
+在 BytePlus CDN 中修改一个域名的配置。
+
+在 BytePlus CDN 中，如果您需要修改一个域名的配置，可以使用以下任意方法：
+
+
+* 方法一：直接修改该域名的配置。
+
+* 方法二：修改该域名所绑定的策略配置。
+
+
+本文介绍的是通过 API 来实现方法一。
+
+当您调用 `UpdateCdnConfig` 修改一个域名的配置时，CDN 会执行以下操作：
+
+
+1. 对于该域名所绑定的策略，确定该配置所属的策略。
+
+2. 复制该策略以生成新策略。新策略的命名规范是在原策略名称末尾加上 `(system-tpl)`。例如，原策略的名称是 `example-delivery-policy`，则新策略的名称是 `example-delivery-policy(system-tpl)`。
+
+3. 将域名配置的变更合入新策略。
+
+4. 将该域名与新策略绑定。
+
+
+<div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div>
+
+
+
+* <div data-tips="true" data-tips-type="tip">关于这两种方法的区别，参见 <a href="https://docs.byteplus.com/en/docs/byteplus-cdn/domain-management_zh-cn">域名配置</a>。</div>
+
+
+* <div data-tips="true" data-tips-type="tip">关于如何通过 API 来实现方法二，参见：</div>
+
+
+   * <div data-tips="true" data-tips-type="tip"><a href="https://docs.byteplus.com/en/docs/byteplus-cdn/reference_cn-updateservicetemplate-cn">UpdateServiceTemplate</a>：修改域名所绑定的分发策略。</div>
+
+
+   * <div data-tips="true" data-tips-type="tip"><a href="https://docs.byteplus.com/en/docs/byteplus-cdn/reference_cn-updateciphertemplate-ac087-cn">UpdateCipherTemplate</a>：修改域名所绑定的加密策略。</div>
+
+
+
+<div data-tips="true" data-tips-type="warning" data-tips-is-title="true">warning</div>
+
+
+<div data-tips="true" data-tips-type="warning">该 API 在域名级别对配置模块进行覆盖式修改，说明如下：</div>
+
+
+
+* <div data-tips="true" data-tips-type="warning">在您创建一个 API 请求时，如果未指定某个模块，在您提交 API 请求后，该模块的已有配置不会发生改变。</div>
+
+
+* <div data-tips="true" data-tips-type="warning">如果您指定了某个模块，但没有指定该模块下的某个可选参数，则该参数会使用默认值。在您提交 API 请求后，该参数的已有值就会被默认值覆盖。</div>
+
+
+
+<span id="使用限制"></span>
+## 使用限制
+
+节流限制：您每秒最多可以提交 20 个 API 请求。
+
+<span id="usage"></span>
+## Usage
+
+
+* Request Method：POST
+
+* Request URL：https://cdn.byteplusapi.com/?Action=UpdateCdnConfig&Version=2021\-03\-01
+
+
+<span id="request-parameters"></span>
+## Request Parameters
+
+<span id="query-parameters"></span>
+### Query Parameters
+
+
+|Parameter |Data Type |Required |Description |
+|---|---|---|---|
+|Action |String |Yes |接口名称。当前 API 的名称为 `UpdateCdnConfig`。 |
+|Version |String |Yes |接口版本。当前 API 的版本为 `2021-03-01`。 |
+
+
+<span id="body"></span>
+### Body
+
+<span id="基础配置"></span>
+## 基础配置
+
+<span id="域名"></span>
+### 域名
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|Domain |String |Yes |表示要修改配置的域名。 |`www.example.com` |
+
+
+<span id="ipv6"></span>
+### IPv6
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|IPv6 |Object |No |表示 IPv6 配置。 | |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "IPv6": {
+        "Switch": false
+    }
+}
+```
+
+
+<span id="源站清单"></span>
+### 源站清单
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|Origin |Object[] |No |表示源站配置。 | |
+|OriginAction |Object |Yes |表示源站配置，应用于所有用户请求。 | |
+|OriginLines |Object[] |Yes |表示一个源站列表。列表中最多可以包含 50 个源站。 | |
+|Address |String |Yes |表示列表中一个源站的地址。该参数有以下说明：<br><br><br>* 如果 `InstanceType` 是 `ip`，您指定的是源站的 IP 地址。IP 地址可以是 IPv4 或 IPv6 地址。<br><br>* 如果 `InstanceType` 是 `domain`，您指定的是源站的域名。该域名不能是泛域名，也不能与该策略要绑定的域名相同。<br><br>* 如果 `InstanceType` 是 `tos`，您指定的是存储桶域名，可以是云厂商分配的桶域名，也可以是您在云厂商处为存储桶设置的自定义域名。桶域名不能包含 `https://`，长度不能超过 100 个字符。存储桶可以来自 BytePlus TOS、阿里云 OSS、腾讯云 COS、AWS S3 或者任何使用鉴权方式与 S3 兼容的第三方对象存储服务。<br><br><br>说明<br><br><br>* 如果存储桶来自您账号下的 TOS 服务，在调用该 API 前，您需要在 CDN 控制台中打开该域名的配置页面。在该页面中，点击 **授权** CDN 访问您账号下的 TOS 服务。<br><br>* 在 Azure Blob Storage 中，对象存储桶称为 container。 |`www.example.com` |
+|InstanceType |String |Yes |表示源站的类型。该参数有以下取值：<br><br><br>* `ip`：表示 IP 地址。<br><br>* `domain`：表示域名。<br><br>* `tos`：表示对象存储桶。<br><br><br>注意<br><br>在 CDN 向对象存储源站发送回源请求时，回源请求使用的方法与用户请求相同。默认情况下，用户请求可以使用的请求方法有 DELETE、GET、HEAD、POST、PUT、PATCH、OPTIONS、CONNECT。如果您不希望回源请求使用某些请求方法，例如您不希望回源请求使用 DELETE 方法，可能导致误删源站上的文件，建议您采取以下步骤：<br><br><br>1. 在存储桶所在的对象存储服务中设置权限，组织不符合预期的操作。<br><br>2. 在 CDN 的 `MethodDeniedRule` 特性中，指定 CDN 不支持的请求方法。 |`ip` |
+|OriginType |String |Yes |表示该源站的类别。该参数有以下取值：<br><br><br>* `primary`：表示主源站。<br><br>* `backup`：表示备源站。<br><br><br>源站列表中至少需要包含一个主源站。备源站是可选的。 |`primary` |
+|HttpPort |String |No |表示 CDN 使用 HTTP 协议访问该源站时所访问的端口，取值范围是 1\-65535，默认值是 `80`。如果源站服务器没有开放该端口，您无需指定该参数。<br><br>该参数仅当 `InstanceType` 为 `ip` 或 `domain` 时才有效。 |`80` |
+|HttpsPort |String |No |表示 CDN 使用 HTTPS 协议访问该源站时所访问的端口，取值范围是 1\-65535，默认值是 `443`。如果源站服务器没有开放该端口，您无需指定该参数。<br><br>该参数仅当 `InstanceType` 为 `ip` 或 `domain` 时才有效。 |`443` |
+|OriginHost |String |No |表示回源请求访问的站点域名，适用于源站服务器上有多个站点的情况。<br><br><br>* 该参数的默认值与全局 `OriginHost` 相同，但优先级高于全局 `OriginHost` 参数。<br><br>* 该参数值的长度不能超过 1,024 个字符。<br><br>* 如果您在调用该 API 时，即没有修改 `Address`，也没有指定 `OriginHost`，`OriginHost` 不会被默认值覆盖，而是保持当前值。 |`img.example.com` |
+|PrivateBucketAccess |Boolean |No |表示存储桶是否是私有桶。该参数仅当 `InstanceType` 为 `tos` 时有效。该参数有以下取值：<br><br><br>* `true`：表示该存储桶是私有桶。<br><br>* `false`：表示该存储桶不是私有桶。<br><br><br>该参数的默认值是 `false`。 |`false` |
+|PrivateBucketAuth |Object |No |表示访问存储桶的鉴权配置。<br><br>说明<br><br>如果存储桶是本账号下的 TOS 存储桶并且您希望使用跨服务授权方式访问 TOS 存储桶，该参数无需指定。跨服务授权访问方式无需指定 AccessKey。 | |
+|Switch |Boolean |Yes |表示访问存储桶是否需要凭证。如果您指定了 `PrivateBucketAuth` 结构体，该参数值必须是 `true`。 |`false` |
+|AuthType |String |No |表示存储桶使用的是哪个对象存储服务所提供的鉴权方式。该参数有以下取值：<br><br><br>* `tos`：表示 BytePlus TOS，您使用 AccessKey 访问 TOS 存储桶。<br><br>* `cos`：表示腾讯云 COS。<br><br>* `oss`：表示阿里云 OSS。<br><br>* `azure`：表示 Microsoft Azure。<br><br>* `aws_common`：表示 AWS S3 和 S3 兼容的鉴权方式。 |`cos` |
+|TosAuthInformation |Object |No |表示存储桶的访问凭证（AccessKey）。 | |
+|AccessKeyId |String |No |表示访问凭证中的 AccessKey ID，在腾讯云称为 SecretId，长度为 5\-100 个字符。 |`xxxxxxxx` |
+|AccessKeySecret |String |No |表示访问凭证中的 AccessKey Secret，在腾讯云称为 SecretKey，长度为 5\-100 个字符。 |`xxxxxx` |
+|AccountKey |String |No |表示您 Azure 存储账号的共享密钥（Key）。该参数仅当 `AuthType` 为 `azure` 时有效。 |`xxxxxx` |
+|Region |String |No |表示存储桶所在地域的信息，也就是存储桶的 region code。Region code 参与签名的计算。<br><br>如果 `AuthType` 是 `aws_common` 并且 `PrivateBucketAccess` 是 `true`，您必须指定该参数。 |`us-east-1` |
+|Weight |String |No |表示该源站的权重，取值范围是 1\-100，默认值是 `1`。权重越大，该源站在 CDN 发送回源请求时被选择到的概率也越大。<br><br>该参数仅当 `InstanceType` 为 `ip` 或 `domain` 时才有效。 |`100` |
+|BucketName |String |No |表示您 Azure 存储账号的名称。该参数仅当 `AuthType` 为 `azure` 时有效。 |`mystorageaccount` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "Origin": [
+        {
+            "OriginAction": {
+                "OriginLines": [
+                    {
+                        "Address": "xx.xxx.xx.xx",
+                        "HttpPort": "80",
+                        "HttpsPort": "443",
+                        "InstanceType": "ip",
+                        "OriginHost": "",
+                        "OriginType": "primary",
+                        "PrivateBucketAccess": false,
+                        "Region": "",
+                        "Weight": "10",
+                        "sort": 1
+                    },
+                    {
+                        "OriginType": "primary",
+                        "InstanceType": "tos",
+                        "PrivateBucketAuth": {
+                            "AuthType": "aws_common",
+                            "TosAuthInformation": {
+                                "AccessKeyId": "xxxxxx",
+                                "AccessKeySecret": "xxxxxxxxxxxxxxxxxxxxxxx"
+                            },
+                            "Switch": true
+                        },
+                        "PrivateBucketAccess": true,
+                        "Weight": "1",
+                        "OriginHost": "www.example.com",
+                        "Address": "test.s3-website-us-east-1.amazonaws.com",
+                        "Region": "us-east-1"
+                    }
+                ]
+            }
+        }
+    ],
+}
+```
+
+
+<span id="条件源站"></span>
+### 条件源站
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|ConditionalOrigin |Object |No |表示 "条件源站" 特性的配置。 | |
+|OriginRules |Object[] |No |表示一个规则列表。列表中的每条规则中定义了一组匹配条件以及 CDN 对满足匹配条件的请求所执行的操作。<br><br>列表中最多可以包含 20 条规则。<br><br>当收到一个用户请求时，CDN 按规则的优先级，从高到低将规则与请求匹配。如果一条规则匹配了请求，CDN 就停止处理其余规则。 | |
+|Actions |Object |No |表示一条规则中定义的操作配置。 | |
+|OriginLines |Object[] |No |表示一个源站列表。当前，列表中只能包含一个源站。 | |
+|Address |String |No |表示一个源站的地址。<br><br><br>* 当 `InstanceType` 是 `ip` 时，`Address` 表示一个 IPv4 或者 IPv6 地址。<br><br>* 当 `InstanceType` 是 `domain` 时，`Address` 表示一个域名。该域名不能是泛域名。<br><br>* 如果 `InstanceType` 是 `storage`，您指定的是存储桶域名，可以是云厂商分配的桶域名，也可以是您在云厂商处为存储桶设置的自定义域名。桶域名不能包含 `https://`，长度不能超过 100 个字符。存储桶可以来自火山引擎 TOS、阿里云 OSS、腾讯云 COS、AWS S3 或者任何使用鉴权方式与 S3 兼容的第三方对象存储服务，如七牛云、华为云等。 |`203.0.113.8` |
+|HttpPort |String |No |表示 CDN 使用 HTTP 协议访问该源站时所使用的端口，取值范围是 1\-65535，默认值是 `80`。如果源站服务器没有开放该端口，您无需指定该参数。 |`80` |
+|HttpsPort |String |No |表示 CDN 使用 HTTPS 协议访问该源站时所使用的端口，取值范围是 1\-65535，默认值是 `443`。如果源站服务器没有开放该端口，您无需指定该参数。 |`443` |
+|InstanceType |String |No |表示源站的类型。该参数有以下取值：<br><br><br>* `ip`：表示 IP 地址。<br><br>* `domain`：表示域名。<br><br>* `storage`：表示对象存储桶。<br><br><br>注意<br><br>在 CDN 向对象存储源站发送回源请求时，回源请求使用的方法与用户请求相同。默认情况下，用户请求可以使用的请求方法有 DELETE、GET、HEAD、POST、PUT、PATCH、OPTIONS、CONNECT。如果您不希望回源请求使用某些请求方法，例如您不希望回源请求使用 DELETE 方法，可能导致误删源站上的文件，建议您采取以下步骤：<br><br><br>1. 在存储桶所在的对象存储服务中设置权限，组织不符合预期的操作。<br><br>2. 在 CDN 的 `MethodDeniedRule` 特性中，指定 CDN 不支持的请求方法。 |`ip` |
+|OriginHost |String |No |表示回源请求访问的站点域名，适用于源站服务器上有多个站点的情况。<br><br><br>* 该参数的默认值与全局 `OriginHost` 相同，但优先级高于全局 `OriginHost` 参数。<br><br>* 该参数值的长度不能超过 1,024 个字符。<br><br>* 如果您在调用该 API 时，即没有修改 `Address`，也没有指定 `OriginHost`，`OriginHost` 不会被默认值覆盖，而是保持当前值。 |`img.example.com` |
+|BucketSource |String |No |表示存储桶使用的是哪个对象存储服务所提供的鉴权方式。该参数有以下取值：<br><br><br>* `tos`：表示 BytePlus TOS。<br><br>* `cos`：表示腾讯云 COS。<br><br>* `oss`：表示阿里云 OSS。<br><br>* `azure`：表示 Microsoft Azure。<br><br>* `aws_common`：表示 AWS S3 和 S3 兼容的鉴权方式。 |`aws_common` |
+|PrivateBucketAccess |Boolean |No |表示存储桶是否是私有桶。该参数仅当 `InstanceType` 为 `storage` 时有效。该参数有以下取值：<br><br><br>* `true`：表示该存储桶是私有桶。<br><br>* `false`：表示该存储桶不是私有桶。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|TosAuthInformation |Object |No |表示存储桶的访问凭证（AccessKey）。<br><br>说明<br><br>如果存储桶是本账号下的 TOS 存储桶并且您使用跨服务授权方式访问 TOS 存储桶，该参数无需指定。跨服务授权访问方式无需指定 AccessKey。 | |
+|AccessKeyId |String |No |表示访问凭证中的 AccessKey ID，在腾讯云称为 SecretId。 |`xxxxxxxx` |
+|AccessKeySecret |String |No |表示访问凭证中的 AccessKey Secret，在腾讯云称为 SecretKey。 |`xxxxxxx` |
+|Region |String |No |表示存储桶所在地域的信息，也就是存储桶的 region code。Region code 参与签名的计算。<br><br>如果 `BucketSource` 是 `aws_common` 并且 `PrivateBucketAccess` 是 `true`，您必须指定该参数。 |`us-east-1` |
+|AccountName |String |No |表示您 Azure 存储账号的共享密钥（Key）。该参数仅当 `AuthType` 为 `azure` 时有效。 |`xxxxxxxxxxxxxxxxx` |
+|OriginType |String |No |表示源站的类别。该参数有以下取值：<br><br><br>* `primary`：表示主源站。<br><br>* `backup`：表示备源站。<br><br><br>源站列表中至少需要包含一个主源站。备源站是可选的。 |`primary` |
+|Weight |String |No |表示该源站的权重，取值范围是 1\-100，默认值是 `1`。权重越大，该源站在 CDN 发送回源请求时被选择到的概率也越大。 |`1` |
+|Condition |Object |No |表示该规则中匹配条件的配置。 | |
+|ConditionGroups |Object[] |No |表示一个匹配条件列表。列表中可以包含最多 50 个匹配条件。 | |
+|Condition |Object |No |表示一个匹配条件的配置。 | |
+|Object |String |No |表示一个匹配对象。该参数有以下取值：<br><br><br>* `path`：表示请求 URL 中的完整路径。<br><br>* `directory`：表示请求 URL 中的某个目录。<br><br>* `filetype`：表示请求 URL 中的扩展名。<br><br>* `full_querystring`：表示请求 URL 中的所有查询参数。<br><br>* `client_ip`：表示客户端的 IP 地址。<br><br>* `query_name`：表示请求 URL 中的而某个查询参数。<br><br>* `customize`：表示用户请求中的某个头部。 |`path` |
+|Operator |String |No |表示匹配类型。对于每个 `Object`，可指定的 `Operator` 如下所示：<br><br><br>* `path`：可指定 `equal`、`not_equal`、`regex_match`、`regex_not_match`。<br><br>* `directory`：可指定 `equal`、`not_equal`。<br><br>* `filetype`：可指定 `equal`、`not_equal`。<br><br>* `full_querystring`：可指定 `regex_match`、`regex_not_match`。<br><br>* `client_ip`：可指定 `equal`、`not_equal`、`belong`、`not_belong`。<br><br>* `query_name`：可指定 `equal`、`not_equal`、`regex_match`、`regex_not_match`、`exist`、`not_exist`、`empty`、`not_empty`。<br><br>* `customize`：可指定 `equal`、`not_equal`、`empty`、`not_empty`。<br><br><br>在以上取值中，`belong` 和 `not_belong` 的说明如下：<br><br><br>* `belong`：表示如果客户端 IP 地址归属地在 `Value` 所表示国家和地区列表中，该请求就满足这个匹配条件。<br><br>* `not_belong`：表示如果客户端 IP 地址归属地不在 `Value` 所表示国家和地区列表中，该请求才满足这个匹配条件。 |`equal` |
+|Value |String[] |No |表示一个或者多个匹配值，多个匹配值之间以分号（;）分隔。但是当 `Object` 是 `customize` 时，多个头部值之间以竖线（\\|）分隔。关于配置值的输入要求，参见 [控制台说明文档](https://docs.byteplus.com/en/docs/byteplus-cdn/conditional_origins_cn)。<br><br>说明<br><br>当 `Object` 是 `client_ip` 并且 `Operator` 是 `belong` 或者 `not_belong` 时，匹配值是一个或者多个国家或地区的代号。您可以调用 [DescribeCdnRegionAndIsp](https://docs.byteplus.com/en/docs/byteplus-cdn/DescribeCdnRegionAndIsp)，以获取 CDN 支持的所有国家和地区的代号。在调用 `DescribeCdnRegionAndIsp` 时，请指定请求参数 `Area` 为 `Global`。 |`/www/img/my*image.png;/doc` |
+|Name |String |No |* 当 `Object` 为 `query_name` 时，该参数表示指定的查询参数的名称。<br><br>* 当 `Object` 为 `customize` 时，该参数表示指定的请求头的名称。<br><br>* 当 `Object` 为其他值时，该参数无需指定。 |`param1` |
+|Type |String |No |* 当 `Object` 为 `query_name` 时，该参数值必须是 `querystring`。<br><br>* 当 `Object` 为 `customize` 时，该参数值必须是 `request_header`。<br><br>* 当 `Object` 为其他值时，该参数无需指定。 |`request_header` |
+|Connective |String |No |表示这些匹配条件之间的关系。该参数有以下取值：<br><br><br>* `or`：表示关系是 "或"。<br><br>* `and`：表示关系是 "与"。<br><br><br>该参数的默认值是 `or`。 |`and` |
+|IsGroup |Boolean |Yes |该参数值必须是 `true`。 |`true` |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>该参数的默认值是 `false`。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https: //cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "ConditionalOrigin": {
+        "OriginRules": [
+            {
+                "Actions": {
+                    "OriginLines": [
+                        {
+                            "Address": "203.0.113.6",
+                            "HttpPort": "80",
+                            "HttpsPort": "443",
+                            "InstanceType": "ip",
+                            "OriginHost": "",
+                            "OriginType": "primary",
+                            "Weight": "10"
+                        }
+                    ]
+                },
+                "Condition": {
+                    "ConditionGroups": [
+                        {
+                            "Condition": {
+                                "Name": "myparam",
+                                "Object": "query_name",
+                                "Operator": "equal",
+                                "Type": "querystring",
+                                "Value": [
+                                    "myvalue"
+                                ]
+                            },
+                            "IsGroup": false
+                        }
+                    ],
+                    "Connective": "and",
+                    "IsGroup": true
+                }
+            },
+            {
+                "Actions": {
+                    "OriginLines": [
+                        {
+                            "Address": "mybucket.s3-ap-southeast-1.amazonaws.com",
+                            "BucketSource": "aws_common",
+                            "HttpPort": "",
+                            "HttpsPort": "",
+                            "InstanceType": "storage",
+                            "OriginHost": "",
+                            "PrivateBucketAccess": true,
+                            "OriginType": "primary",
+                            "Weight": "20"
+                            "TosAuthInformation": {
+                                "AccessKeyId": "xxxxxxxxxxxxx",
+                                "AccessKeySecret": "xxxxx",
+                                "Region": "ap-southeast-1"
+                            }
+                        }
+                    ]
+                },
+                "Condition": {
+                    "ConditionGroups": [
+                        {
+                            "Condition": {
+                                "Name": "myheader",
+                                "Object": "customize",
+                                "Operator": "match",
+                                "Type": "request_header",
+                                "Value": [
+                                    "myvalue"
+                                ]
+                            },
+                            "IsGroup": false
+                        }
+                    ],
+                    "Connective": "and",
+                    "IsGroup": true
+                }
+            },
+            {
+                "Actions": {
+                    "OriginLines": [
+                        {
+                            "Address": "mybucket.cos.ap-singapore.myqcloud.com",
+                            "BucketSource": "cos",
+                            "HttpPort": "",
+                            "HttpsPort": "",
+                            "InstanceType": "storage",
+                            "OriginHost": "",
+                            "OriginType": "primary",
+                            "Weight": "30"
+                            "PrivateBucketAccess": true,
+                            "TosAuthInformation": {
+                                "AccessKeyId": "xxxxxxxxxxxxx",
+                                "AccessKeySecret": "xxxxx"
+                            }
+                        }
+                    ]
+                },
+                "Condition": {
+                    "ConditionGroups": [
+                        {
+                            "Condition": {
+                                "Object": "client_ip",
+                                "Operator": "belong",
+                                "Value": [
+                                    "HKG",
+                                    "CHE"
+                                ]
+                            },
+                            "IsGroup": false
+                        }
+                    ],
+                    "Connective": "and",
+                    "IsGroup": true
+                }
+            },
+            {
+                "Actions": {
+                    "OriginLines": [
+                        {
+                            "Address": "banana-health.tos-ap-southeast-1.bytepluses.com",
+                            "BucketSource": "tos",
+                            "HttpPort": "",
+                            "HttpsPort": "",
+                            "InstanceType": "storage",
+                            "OriginType": "primary",
+                            "Weight": "10"
+                            "OriginHost": "banana-health.tos-ap-southeast-1.bytepluses.com",
+                            "PrivateBucketAccess": true
+                        }
+                    ]
+                },
+                "Condition": {
+                    "ConditionGroups": [
+                        {
+                            "Condition": {
+                                "Object": "filetype",
+                                "Operator": "equal",
+                                "Value": [
+                                    "png"
+                                ]
+                            },
+                            "IsGroup": false
+                        }
+                    ],
+                    "Connective": "and",
+                    "IsGroup": true
+                }
+            },
+            {
+                "Actions": {
+                    "OriginLines": [
+                        {
+                            "Address": "www.example.com",
+                            "HttpPort": "80",
+                            "HttpsPort": "443",
+                            "InstanceType": "domain",
+                            "OriginType": "primary",
+                            "Weight": "10"
+                            "OriginHost": "non-img.example.com"
+                        }
+                    ]
+                },
+                "Condition": {
+                    "ConditionGroups": [
+                        {
+                            "Condition": {
+                                "Object": "directory",
+                                "Operator": "not_equal",
+                                "Value": [
+                                    "/img/"
+                                ]
+                            },
+                            "IsGroup": false
+                        }
+                    ],
+                    "Connective": "and",
+                    "IsGroup": true
+                }
+            },
+            {
+                "Actions": {
+                    "OriginLines": [
+                        {
+                            "Address": "198.51.100.5",
+                            "HttpPort": "80",
+                            "HttpsPort": "443",
+                            "InstanceType": "ip",
+                            "OriginType": "primary",
+                            "Weight": "10"
+                            "OriginHost": "img.example.com"
+                        }
+                    ]
+                },
+                "Condition": {
+                    "ConditionGroups": [
+                        {
+                            "Condition": {
+                                "Object": "full_querystring",
+                                "Operator": "regex_match",
+                                "Value": [
+                                    "^/a{1,2}.*g$"
+                                ]
+                            },
+                            "IsGroup": false
+                        }
+                    ],
+                    "Connective": "and",
+                    "IsGroup": true
+                }
+            },
+            {
+                "Actions": {
+                    "OriginLines": [
+                        {
+                            "Address": "mybucket.oss-ap-southeast-1.aliyuncs.com",
+                            "BucketSource": "oss",
+                            "HttpPort": "",
+                            "HttpsPort": "",
+                            "InstanceType": "storage",
+                            "OriginHost": "",
+                            "PrivateBucketAccess": true,
+                            "OriginType": "primary",
+                            "Weight": "10"
+                            "TosAuthInformation": {
+                                "AccessKeyId": "xxxxxxxxxxxxx",
+                                "AccessKeySecret": "xxxxx"
+                            }
+                        }
+                    ]
+                },
+                "Condition": {
+                    "ConditionGroups": [
+                        {
+                            "Condition": {
+                                "Object": "path",
+                                "Operator": "equal",
+                                "Value": [
+                                    "/docs/file1",
+                                    "/docs/file2/"
+                                ]
+                            },
+                            "IsGroup": false
+                        },
+                        {
+                            "Condition": {
+                                "Object": "path",
+                                "Operator": "equal",
+                                "Value": [
+                                    "/docs/file3",
+                                    "/docs/file4/"
+                                ]
+                            },
+                            "IsGroup": false
+                        }
+                    ],
+                    "Connective": "or",
+                    "IsGroup": true
+                }
+            }
+        ],
+        "Switch": true
+    }
+}
+```
+
+
+<span id="回源协议"></span>
+### 回源协议
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginProtocol |String |Yes |表示回源请求使用的协议。该参数有以下取值：<br><br><br>* `http`：表示回源请求使用 HTTP 协议。<br><br>* `https`：表示回源请求使用 HTTPS 协议。<br><br>* `followclient`：表示回源协议与用户请求使用的协议相同。 |`http` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginProtocol": "http"
+}
+```
+
+
+<span id="源站证书校验"></span>
+### 源站证书校验
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginCertCheck |Object |No |表示 "源站证书校验" 特性的配置。要使用此特性，请 [提交工单](https://console.byteplus.com/workorder/create)。<br><br>该特性启用后，CDN 会校验源站证书的合法性，包括证书是否已被吊销、证书是否由可信 CA 签发、证书与源站域名是否匹配等。CDN 内置了常见可信 CA 的根证书。如果源站证书未通过校验，CDN 进行 [回源重试](https://docs.byteplus.com/en/docs/byteplus-cdn/origin_retry-cn)。如果回源重试时源站证书依然未通过校验，CDN 判定无法从该源站获取文件，并对用户请求响应 504 状态码。 | |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|CertInfoList |Object[] |No |表示一个 CA 证书列表，列表中的 CA 证书托管在 CDN，且不能是国密证书。CDN 使用该列表中的 CA 证书对来自源站的服务器证书进行校验。<br><br>当前，该列表中只能包含一本 CA 证书。 | |
+|CertId |String |No |表示列表中一本 CA 证书的 ID，以 `cert_hosting` 开头。<br><br>您可以调用 [ListCertInfo](https://docs.byteplus.com/en/docs/byteplus-cdn/reference_cn-listcertinfo-cn) 查询托管在 CDN 的 CA 证书列表以获取您要指定的证书的 ID。 |`cert_hosting-104663` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginCertCheck": {
+        "Switch": true
+    }
+}
+```
+
+
+<span id="ipv6-回源"></span>
+### IPv6 回源
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginIPv6 |String |No |表示 "IPv6 回源" 的配置。该参数有以下取值：<br><br><br>* `ipv6_first`：表示 CDN 始终尝试获取源站域名的 IPv6 地址。如果无法获取该 IP 地址，CDN 才尝试获取源站域名的 IPv4 地址。<br><br>* `ipv4_first`：表示 CDN 始终尝试获取源站域名的 IPv4 地址。如果无法获取该 IP 地址，CDN 才尝试获取源站域名的 IPv6 地址。<br><br>* `followclient`：表示 CDN 尝试获取与用户请求相同类型的 IP 地址。<br><br><br>该参数的默认值是 `followclient`。<br><br>由于海外部分 CDN 回源节点不支持向 IPv6 地址发送回源请求，该功能仅适用于位于中国内地的回源节点。 |`followclient` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginIPv6": "ipv6_first"
+}
+```
+
+
+<span id="回源-host"></span>
+### 回源 Host
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginHost |String |No |如果源站服务器上有多个站点，该参数表示回源请求访问的站点域名。该参数对所有源站配置生效，但是优先级低于源站配置中 `OriginHost` 参数。<br><br>该参数的默认值与 `Domain` 相同。<br><br>如果源站是一个对象存储桶，您无需指定该参数。其默认值与源站配置中的 `Address` 相同。 |`img.example.com` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginHost": "img.example.com"
+}
+```
+
+
+<span id="https-配置"></span>
+## HTTPS 配置
+
+<span id="https"></span>
+### HTTPS
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|HTTPS |Object |No |表示 HTTPS 加密服务的配置。 | |
+|Switch |Boolean |Yes |表示是否启用 HTTPS 加密服务。该参数有以下取值：<br><br><br>* `true`：表示启用 HTTPS 加密服务。<br><br>* `false`：表示禁用 HTTPS 加密服务。<br><br><br>如果 `Switch` 是 `true`，您必须指定 `CertInfo`。<br><br>您指定的证书可以托管在 BytePlus 证书中心，也可以托管在 CDN。 |`true` |
+|CertInfo |Object |No |表示要与域名关联的证书。<br><br><br>* 如果该证书已托管在 BytePlus 证书中心或者 CDN，您必须在 `CertId` 中指定该证书的 ID。<br><br>* 否则，您可以调用 [AddCertificate](https://docs.byteplus.com/en/docs/byteplus-cdn/reference-cn-addcertificate) 上传您的证书或者在证书中心控制台购买证书，然后调用 `UpdateCdnConfig` 关联该证书。 | |
+|CertId |String |No |表示要关联的证书 ID。<br><br>您可以调用 [ListCertInfo](https://docs.byteplus.com/en/docs/byteplus-cdn/reference_cn-listcertinfo-cn) 获取您想要关联的证书 ID。 |`cert-eb5d99026753499a8a34d2a4f0a08d92` |
+|DisableHttp |Boolean |No |表示是否允许请求 URL 中 Scheme 是 `HTTP` 的请求。该参数有以下取值：<br><br><br>* `true`：表示允许 Scheme 是 `HTTP` 的请求。<br><br>* `false`：表示不允许 Scheme 是 `HTTP` 的请求。<br><br><br>该参数的默认值是 `false`。 |`false` |
+|ForcedRedirect |Object |No |表示 "HTTP 强制跳转到 HTTPS" 特性的配置。<br><br>说明<br><br>CDN 提供了两种协议重定向的特性。<br><br><br>* HTTP 重定向到 HTTPS，也就是 `ForcedRedirect` 特性。<br><br>* HTTPS 重定向到 HTTP，也就是 `HttpForcedRedirect` 特性。<br><br><br>这两个协议重定向特性是互斥的。也就是说，如果您启用了其中任意一个特性，就不能启用另一个。 | |
+|EnableForcedRedirect |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。启用后，CDN 会将收到的 HTTP 请求重定向到 HTTPS 请求。<br><br>* `false`：表示禁用该特性。禁用后，CDN 不会将 HTTP 请求重定向到 HTTPS 请求。<br><br><br>要启用该特性，您的域名必须已启用 HTTPS。 |`true` |
+|StatusCode |String |Yes |表示当收到 HTTPS 请求时 CDN 的重定向响应状态码。该参数有以下取值：<br><br><br>* `301`：表示返回的状态码是 301。<br><br>* `302`：表示返回的状态码是 302。<br><br><br>该参数的默认值是 `301`。 |`301` |
+|HTTP2 |Boolean |No |表示是否为用户请求启用 HTTP/2 支持。该参数有以下取值：<br><br><br>* `true`：表示启用 HTTP/2。<br><br>* `false`：表示禁用 HTTP/2。<br><br><br>要启用该特性，您的域名必须已经启用了 HTTPS 加密服务。<br><br>该参数的默认值是 `false`。 |`true` |
+|Hsts |Object |No |表示 HSTS 特性的配置。 | |
+|Subdomain |String |No |表示 HSTS 配置是否也应用于域名的子域名。该参数有以下取值：<br><br><br>* `include`：表示 HSTS 配置应用于子域名站点。<br><br>* `exclude`：表示 HSTS 配置不应用于子域名站点。<br><br><br>该参数的默认值是 `exclude`。 |`include` |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|Ttl |Long |No |表示 `Strict-Transport-Security` 响应头在浏览器中的缓存过期时间，单位是秒。如果 `Switch` 是 `true`，该参数为必填。该参数的取值范围是 0 \- 31,536,000。31,536,000 秒表示 365 天。如果该参数值为 `0`，其效果等同于禁用 HSTS 设置。 |`300` |
+|OCSP |Boolean |No |表示是否启用 "OCSP 装订" 特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>要启用该特性，您的域名必须启用了 HTTPS。该参数的默认值是 `false`。 |`true` |
+|TlsVersion |String[] |No |表示 "TLS 版本" 特性的配置。该参数指定用户请求可以使用的 TLS 版本，有以下取值：<br><br><br>* `tlsv1.0`：表示 TLS 1.0。<br><br>* `tlsv1.1`：表示 TLS 1.1。<br><br>* `tlsv1.2`：表示 TLS 1.2。<br><br>* `tlsv1.3`：表示 TLS 1.3。<br><br><br>该参数的默认值是 `["tlsv1.1", "tlsv1.2", "tlsv1.3"]` |`["tlsv1.1","tlsv1.2"]` |
+|CertCheck |Object |No |表示 "访问双向认证" 特性的配置。 | |
+|CertInfoList |Object[] |No |表示一个 CA 证书列表。列表中最多包含两个 CA 证书。这些 CA 证书必须是已经托管在 CDN 的。CA 证书使用的加密算法可以是 RSA 或者 ECC。<br><br>如果要关联的证书还未上传，您可以先调用 [AddCertificate](https://docs.byteplus.com/en/docs/byteplus-cdn/reference-cn-addcertificate) 将该证书上传到 CDN。 | |
+|CertId |String |No |表示一个 CA 证书的 ID。ID 是以 `cert_hosting-` 开头的。<br><br>您可以调用 [ListCertInfo](https://docs.byteplus.com/en/docs/byteplus-cdn/reference_cn-listcertinfo-cn) 获取您需要关联的证书的 ID。 |`cert_hosting-31869` |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>该参数的默认值是 `false`。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "HTTPS": {
+        "CertInfo": {
+            "CertId": "cert-a80d734dc36b78l6b7d927b386e65ee4"
+        },
+        "DisableHttp": false,
+        "ForcedRedirect": {
+            "EnableForcedRedirect": true,
+            "StatusCode": "301"
+        },
+        "HTTP2": true,
+        "Switch": true,
+        "OCSP": true,
+        "TlsVersion": [
+            "tlsv1.1",
+            "tlsv1.2"
+        ],
+        "Hsts": {
+            "Switch": true,
+            "Ttl": 10,
+            "Subdomain": "exclude"
+        },
+        "CertCheck": {
+            "Switch": true,
+            "CertInfoList": [
+                {
+                    "CertId": "cert_hosting-1000034057"
+                },
+                {
+                    "CertId": "cert_hosting-1000009760"
+                }
+            ]
+        }
+    }
+}
+
+```
+
+
+<span id="https-强制跳转到-http-设置"></span>
+### HTTPS 强制跳转到 HTTP 设置
+
+<div data-tips="true" data-tips-type="tip" data-tips-is-title="true">tip</div>
+
+
+<div data-tips="true" data-tips-type="tip">要配置 HTTP 重定向至 HTTPS，参见 <code>HTTPS</code> 下的 <code>ForcedRedirect</code> 特性。<code>HttpForcedRedirect</code> 与 <code>ForcedRedirect</code> 是互斥的。也就是说，如果您配置了其中任意一个特性，就不能配置另一个。</div>
+
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|HttpForcedRedirect |Object |No |表示 "HTTPS 强制跳转到 HTTP" 特性的配置。 | |
+|EnableForcedRedirect |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。启用后，CDN 会将收到的 HTTPS 请求重定向到 HTTP 请求。<br><br>* `false`：表示禁用该特性。CDN 不会将 HTTPS 请求重定向到 HTTP 请求。<br><br><br>要启用该特性，您的域名必须已启用 HTTPS。 |`true` |
+|StatusCode |String |Yes |表示当收到 HTTPS 请求时，CDN 返回的重定向状态码。该参数有以下取值：**301**、**302**、**303**、**307**、**308**。<br><br>该参数的默认值是 `301`。<br><br>需要留意的是：<br><br><br>* 对于 301 和 302，如果原请求使用的方法不是GET，那么客户端向新的URL发送请求时，新请求使用的方法可能变成 GET。<br><br>* 对于 303，新请求使用的方法是 GET。<br><br>* 对于 307 和 308，新请求使用的方法与原请求相同，不会被改变。 |`302` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "HttpForcedRedirect": {
+        "EnableForcedRedirect": false,
+        "StatusCode": "301"
+    }
+}
+```
+
+
+<span id="quic-设置"></span>
+### QUIC 设置
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|Quic |Object |No |表示 QUIC 配置。 | |
+|Switch |Boolean |Yes |表示是否为用户请求启用 QUIC。该参数有以下取值：<br><br><br>* `true`：表示启用 QUIC。<br><br>* `false`：表示禁用 QUIC。<br><br><br>要启用该特性，您的域名必须已启用 HTTPS。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "Quic": {
+        "Switch": true
+    }
+}
+```
+
+
+<span id="访问控制"></span>
+## 访问控制
+
+<span id="websocket"></span>
+### WebSocket
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|Websocket |Object |No |表示 WebSocket 配置。 | |
+|Switch |Boolean |No |表示是否为用户请求启用 WebSocket 支持。该参数有以下取值：<br><br><br>* `true`：表示启用 WebSocket。该特性启用后，CDN 可以响应来自客户端的 Websocket 请求。<br><br>* `false`：表示禁用 WebSocket。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|Timeout |Long |No |表示 Websocket 连接的超时时间，单位是秒，取值范围是 1\-900。<br><br>该参数的默认值是 60 秒。 |`60` |
+
+
+<span id="proxy-protocol"></span>
+### PROXY Protocol
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|ProxyProtocol |Object |No |表示 PROXY Protocol 的配置。 | |
+|Switch |Boolean |No |表示是否为用户请求启用 PROXY Protocol 支持。该参数有以下取值：<br><br><br>* `true`：表示启用 PROXY Protocol。该特性启用后，CDN 就可以对收到的 PROXY 协议头进行解析，以获取客户端的真实 IP 地址。<br><br>* `false`：表示禁用 PROXY Protocol。<br><br><br>该参数的默认值是 `false`。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "ProxyProtocol": {
+        "Switch": true
+    }
+}
+```
+
+
+<span id="server-send-events-sse"></span>
+### Server\-Send Events (SSE)
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|ServerSentEvent |Object |No |表示 SSE 的设置。 | |
+|Switch |Boolean |No |表示是否为用户请求启用 SSE 支持。该参数有以下取值：<br><br><br>* `true`：表示启用 SSE。该特性启用后，对于收到的客户端 SSE 请求，CDN 扮演 SSE 代理的角色，将客户端请求透传到源站，并将源站 SSE 格式数据流推送至客户端。<br><br>* `false`：表示禁用 SSE。<br><br><br>该参数的默认值是 `false`。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "ServerSentEvent": {
+        "Switch": true
+    }
+}
+```
+
+
+<span id="url-标准化"></span>
+### URL 标准化
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|UrlNormalize |Object |No |表示 "URL 标准化" 特性的配置。 | |
+|NormalizeObject |String[] |No |表示一个 URL 标准化选项列表。当 `Switch` 为 `true` 时，该参数为必填。列表中可以包含以下选项：<br><br><br>* `dot_segments`：表示将请求 URL 中的以下内容进行替换：<br><br>   * `/./`：替换为单个斜杠（/）。<br><br>   * `/../`：如果 `/../` 前还有一个级别的目录，则删除 `/../` 与该目录。如果 `/../` 前没有目录，则保留原 URL。<br><br>* `back_slashes`：表示将请求 URL 中的反斜杠（\）替换为单个斜杠（/）。<br><br>* `successive_slashes`：表示将请求 URL 中双斜杠（//）替换为单个斜杠（/）。 |`["dot_segments","back_slashes","successive_slashes"]` |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>该参数的默认值是 `false`。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "UrlNormalize": {
+        "Switch": true,
+        "NormalizeObject": [
+            "dot_segments",
+            "back_slashes",
+            "successive_slashes"
+        ]
+    }
+}
+```
+
+
+<span id="禁用-http-method"></span>
+### 禁用 HTTP Method
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|MethodDeniedRule |Object |No |表示 "禁用 HTTP Method" 特性的配置。 | |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+|Methods |String |No |表示被禁用的一个或多个 HTTP 请求方法。当 `Switch` 是 `true` 时，该参数为必填。多个方法使用逗号（,）分隔。该参数有以下取值：<br><br><br>* `get`：表示禁用 GET 请求方法。<br><br>* `post`：表示禁用 POST 请求方法。<br><br>* `delete`：表示禁用 DELETE 请求方法。<br><br>* `put`：表示禁用 PUT 请求方法。<br><br>* `head`：表示禁用 HEAD 请求方法。<br><br>* `patch`：表示 PATCH 请求方法。<br><br>* `connect`：表示 CONNECT 请求方法。<br><br>* `options`：表示 OPTIONS 请求方法。 |`delete,put` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "MethodDeniedRule": {
+        "Switch": true,
+        "Methods": "delete,get"
+    }
+}
+```
+
+
+<span id="地域访问控制"></span>
+### 地域访问控制
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|AreaAccessRule |Object |No |表示 "地域访问控制" 特性的配置。 | |
+|Area |String[] |No |表示一个国家和地区的列表，对该列表应用地域访问限制。当 `Switch` 是 `true` 时，该参数为必填。国家和地区的名称使用简写来表示。您可以调用 [DescribeCdnRegionAndIsp](https://docs.byteplus.com/en/docs/byteplus-cdn/DescribeCdnRegionAndIsp) 并指定 `Area` 为 `Global` 以获取国家和地区的简写。 |`["CHE","AZE"]` |
+|RuleType |String |No |表示 `Area` 的类型。当 `Switch` 是 `true` 时，该参数为必填。该参数有以下取值：<br><br><br>* `deny`: 表示 `Area` 是一个黑名单。CDN 将阻止来自这些国家和地区的请求。<br><br>* `allow`: 表示 `Area` 是一个白名单。CDN 仅允许来自这些国家和地区的请求。 |`allow` |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "AreaAccessRule": {
+        "Switch": true,
+        "RuleType": "allow",
+        "Area": [
+            "CHE",
+            "AZE"
+        ]
+    }
+}
+```
+
+
+<span id="ip-黑白名单"></span>
+### IP 黑白名单
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|IpAccessRule |Object |No |表示 "IP 黑白名单" 特性的配置。<br><br>该特性提供了两种配置方式：<br><br><br>* 常规配置：指定 `RuleType` 和 `Ip` 对当前域名进行配置。<br><br>* 全局配置：指定 `SharedConfig` 使用一个全局配置。<br><br><br>您只能选择一种配置方式。 | |
+|Ip |String[] |Yes |表示黑名单或白名单中的 IP 地址。当 `Switch` 是 `true` 时，该参数为必填。您可以指定一个或者多个 IP 地址和 IP 地址网段。IP 地址和网段可以是 IPv4 或 IPv6 格式。您最多可输入 1,000 个地址。<br><br>如果您指定了 `SharedConfig`，就不能指定该参数。 |`["xx.xxx.xx.xx","x.x.x.x"]` |
+|RuleType |String |Yes |表示 IP 名单的类型。当 `Switch` 是 `true` 时，该参数为必填。该参数有以下取值：<br><br><br>* `allow`：表示白名单。<br><br>* `deny`：表示黑名单。<br><br><br>如果您指定了 `SharedConfig`，就不能指定该参数。 |`deny` |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+|SharedConfig |Object |No |表示一个全局配置。<br><br>如果您指定了该参数，就不能指定 `RuleType` 和 `Ip`。 | |
+|ConfigName |String |No |表示一个全局配置的名称。该全局配置的 `ConfigType` 必须是 `deny_ip_access_rule` 或者 `allow_ip_access_rule`。<br><br><br>* `deny_ip_access_rule`：表示 IP 黑名单。<br><br>* `allow_ip_access_rule`：表示 IP 白名单。<br><br><br>您可以调用 [ListSharedConfig](https://docs.byteplus.com/en/docs/byteplus-cdn/ListSharedConfig_cn) 获取全局配置的列表。 |`my_whitelist` |
+|DenyStatusCode |Long |No |表示 CDN 在拒绝请求时响应的状态码，范围是 200 \- 999。如果不指定该配置，则 CDN 默认响应 403 状态码。 |`402` |
+|IpSource |Object |No |表示客户端 IP 地址获取方式的配置。 | |
+|SourceList |String[] |No |表示当 `Type` 为 `custom` 时，用于判断客户端 IP 地址的一个或多个来源。<br><br>取值：<br><br><br>* `x-real-ip`：表示从 `X-Real-IP` 请求头获取的 IP 地址。<br><br>* `x-forwarded-for`：表示从 `X-Forwarded-For` 请求头获取的 IP 地址。<br><br>* `client-ip`：表示真实建连 IP，即与 CDN 节点直接建立网络连接的对端 IP 地址。<br><br><br>对于 IP 黑名单，只要任一指定来源中获取的 IP 地址匹配黑名单规则，CDN 就拒绝请求。对于 IP 白名单，只有所有指定来源中获取的 IP 地址均匹配白名单规则，CDN 才允许请求。 |`["x-real-ip", "x-forwarded-for"]` |
+|Type |String |No |表示 CDN 判断客户端 IP 地址的方式。<br><br>取值：<br><br><br>* `default`：使用真实建连 IP。<br><br>* `custom`：使用 `SourceList` 中指定的一个或多个来源。无法从已选请求头获取 IP 地址时，CDN 对该来源使用真实建连 IP。<br><br><br>该参数的默认值是 `default`。 |`custom` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "IpAccessRule": {
+        "Switch": true,
+        "DenyStatusCode": 402,
+        "RuleType": "allow",
+        "Ip": [
+            "xxx.xxx.xx.xx",
+            "xxx.xxx.xx.xxx"
+        ],
+        "IpSource": {
+            "SourceList": ["x-forwarded-for","x-real-ip"],
+            "Type": "custom"
+        }
+    }
+}
+```
+
+
+<span id="referer-黑白名单"></span>
+### Referer 黑白名单
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|RefererAccessRule |Object |No |表示 "Referer 黑白名单" 特性的配置。关于不同配置对请求匹配结果的影响，参见 [配置示例](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-referer-restrictions-cn#%E9%85%8D%E7%BD%AE%E7%A4%BA%E4%BE%8B)。 | |
+|AllowEmpty |Boolean |Yes |表示是否允许 Referer 头部为空（""）或者不包含 Referer 头部的请求。该参数有以下取值：<br><br><br>* `true`：表示允许。<br><br>* `false`：表示不允许。如果请求的 Referer 头部为空（""）或者不包含 Referer 头部，CDN 拒绝请求。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|Referers |String[] |Yes |表示一个 Referer 列表，该参数的输入要求与 `ReferersType` 下 `CommonType` 类型的 `Referers` 的输入要求相同。建议您使用 `ReferersType` 来指定 Referer 列表。<br><br>另外，如果您指定了 `SharedConfig`，就不能指定该参数。 |`["www.test.com","xxx.xx.x.x","xx.xx.xx.x/24"]` |
+|ReferersType |Object |Yes |表示一个 `ReferersType` 对象。其包含一个 `CommonType` 对象和一个 `RegularType` 对象，分别表示一个常规 Referer 列表和一个用于匹配 Referer 的正则表达式列表。您可以同时定义这两个对象。<br><br>如果您指定了 `SharedConfig`，就不能指定该参数。 | |
+|CommonType |Object |Yes |表示一个 `CommonType` 对象，其包含一个常规 Referer 列表。 | |
+|IgnoreCase |Boolean |No |表示 `CommonType` 下的 `Referers` 列表是否是大小写敏感的。该参数有以下取值：<br><br><br>* `true`: 表示大小写不敏感。<br><br>* `false`: 表示大小写敏感。<br><br><br>该参数的默认值是 `true`。 |`true` |
+|Referers |String[] |Yes |表示一个常规 Referer 列表。在该列表中，您可以指定一个或者多个 IP 地址，CIDR 网段，域名和泛域名。域名可以是二级域名。IP 地址只能是 IPv4 格式的地址。您最多可输入 1,000 个 IP 地址。输入的域名不能包含 `http://` 或 `https://`。该参数值的长度不能超过 30,000 个字符。 |`["www.test.com","xxx.xxx.xx.xxx","1xx.xx.xx.x/24"]` |
+|IgnoreScheme |Boolean |No |表示 CDN 是否对 Referer 中的 scheme 进行校验，也就是校验 Referer 是否包含 `http://` 或者 `https://`。该参数有以下取值：<br><br><br>* `true`: 表示 CDN 不校验 Referer 是否包含 scheme。在这个情况下，无论 Referer 是否包含 scheme，CDN 都会将 Referer 与您配置的名单进行匹配校验。<br><br>* `false`: 表示 CDN 会先校验 Referer 是否包含 scheme。只有 Referer 包含 scheme，CDN 才会将 Referer 与您配置的名单进行匹配校验。否则，CDN 判定请求与您配置的名单不匹配。<br><br><br>该参数的默认值是 `false`。<br><br>另外，该配置对 `RegularType` 下的正则表达式列表不生效，因为 CDN 依赖正则表达式来判断 Referer 是否匹配正则名单。 |`false` |
+|RegularType |Object |Yes |表示一个 `RegularType` 对象，其包含一个正则表达式列表用来匹配请求中的 Referer 头部。要使用该参数，请 [提交工单](https://console.byteplus.com/workorder/create)。 | |
+|Referers |String[] |Yes |表示一个用于匹配 Referer 的正则表达式列表。该参数值的长度不能超过 30,000 个字符。 |`^http://a.com` |
+|RuleType |String |Yes |表示 Referer 名单的类型。当 `Switch` 是 `true` 时，该参数为必填。该参数有以下取值：<br><br><br>* `allow`：表示白名单。<br><br>* `deny`：表示黑名单。 |`deny` |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+|SharedConfig |Object |No |表示一个全局配置。<br><br>如果您指定了该参数，就不能指定 `Referers`，也不能指定 `ReferersType`。 | |
+|ConfigName |String |No |表示一个全局配置的名称。该全局配置的 `ConfigType` 必须是 `deny_referer_access_rule` 或者 `allow_referer_access_rule`。<br><br><br>* `deny_referer_access_rule`：表示 Referer 黑名单。<br><br>* `allow_referer_access_rule`：表示 Referer 白名单。<br><br><br>您可以调用 [ListSharedConfig](https://docs.byteplus.com/en/docs/byteplus-cdn/ListSharedConfig_cn) 获取全局配置的列表。 |`my_allowlist` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "RefererAccessRule": {
+        "AllowEmpty": true,
+        "ReferersType": {
+            "CommonType": {
+                "IgnoreCase": true,
+                "IgnoreScheme": true,
+                "Referers": [
+                    "xxx.x.x.x"
+                ]
+            },
+            "RegularType": {
+                "Referers": [
+                    "^http\\://a\\.com"
+                ]
+            }
+        },
+        "RuleType": "deny",
+        "Switch": true
+    }
+}
+```
+
+
+<span id="ua-黑白名单"></span>
+### UA 黑白名单
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|UaAccessRule |Object |No |表示 "UA 黑白名单" 特性的配置。 | |
+|AllowEmpty |Boolean |Yes |表示是否允许 User\-Agent 头部为空（""）或者不包含 User\-Agent 头部的请求。该参数有以下取值：<br><br><br>* `true`：表示允许。<br><br>* `false`：表示不允许。如果请求的 User\-Agent 头部为空（""）或者不包含 User\-Agent 头部，CDN 拒绝请求。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|IgnoreCase |Boolean |Yes |表示 UA 字符串是否是大小写敏感的。该参数有以下取值：<br><br><br>* `true`: 表示 UA 字符串是大小写不敏感的。<br><br>* `false`: 表示 UA 字符串是大小写敏感的。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|RuleType |String |Yes |表示 UA 名单的类型。当 `Switch` 是 `true` 时，该参数为必填。该参数有以下取值：<br><br><br>* `allow`：表示白名单。<br><br>* `deny`：表示黑名单。 |`deny` |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+|UserAgent |String[] |Yes |表示一个 UA 的列表。当 `Switch` 是 `true` 时，该参数为必填。该列表最多包含 1,000 个 UA。该参数的说明如下：<br><br><br>* 该参数值的长度不能超过 30,000 个字符。<br><br>* 如果 `RuleType` 是 `allow`，表示仅允许包含列表中的 UA 的请求访问域名。<br><br>* 如果 `RuleType` 是 `deny`，表示如果访问请求包含列表中的 UA，则不允许访问域名。<br><br><br>UA 能包含的字符有以下限制：<br><br><br>* UA 中可以使用 `*` 表示一个或者多个字符。`*` 仅可以出现在 UA 的开头和末尾。<br><br>* UA 不能只包含 `*`或者空格。<br><br>* UA 如果包含符号，符号必须是被 HTML 编码的。 |`["*curl*","*Mozilla*"]` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "UaAccessRule": {
+        "AllowEmpty": true,
+        "RuleType": "deny",
+        "Switch": true,
+        "UserAgent": [
+            "*curl*",
+            "*firefox*"
+        ]
+    }
+}
+```
+
+
+<span id="origin-黑白名单"></span>
+### Origin 黑白名单
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginAccessRule |Object |No |表示 "Origin 黑白名单" 特性的配置。 | |
+|AllowEmpty |Boolean |Yes |表示当用户请求不包含 Origin 头部时，CDN 处理请求的方式。该参数有以下取值：<br><br><br>* `true`：表示如果请求不包含 Origin 头部，则该请求被认为匹配您配置的 Origin 列表。<br><br>* `false`：表示如果请求不包含 Origin 头部，则该请求被认为不匹配您配置的 Origin 列表。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|IgnoreCase |Boolean |Yes |表示 Origin 列表是否是大小写敏感的。该参数有以下取值：<br><br><br>* `true`: 表示 Origin 列表是大小写不敏感的。<br><br>* `false`: 表示 Origin 列表是大小写敏感的。<br><br><br>该参数的默认值是 `true`。 |`true` |
+|Origins |String[] |Yes |表示一个 Origin 列表。列表中可以包含最多 100 个 Origins，总长度不能超过 3,000 个字符。Origin 可以是 IP 地址，CIDR 网段，域名或泛域名。域名可以是二级域名。IP 地址可以是 IPv4 或 IPv6 格式的地址。 |`["www.test.com"]` |
+|RuleType |String |Yes |表示 Origin 列表的类型。该参数有以下取值：<br><br><br>* `allow`：表示白名单。<br><br>* `deny`：表示黑名单。 |`deny` |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginAccessRule": {
+        "Switch": true,
+        "RuleType": "allow",
+        "Origins": [
+            "test.abc.com"
+        ],
+        "AllowEmpty": true
+    }
+}
+```
+
+
+<span id="自定义拦截规则"></span>
+### 自定义拦截规则
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|RequestBlockRule |Object |No |表示 "自定义拦截" 特性的配置。要使用该功能，请 [提交工单](https://console.byteplus.com/workorder/create)。 | |
+|BlockRule |Object[] |Yes |表示一个规则列表。列表中最多可以包含 10 条规则。当 `Switch` 是 `true` 时，该参数为必填。<br><br>当收到一个用户请求时，CDN 按规则的优先级，从高到低将规则与请求匹配。如果一条规则匹配了请求，CDN 就停止处理其余规则。 | |
+|BlockAction |Object |Yes |表示一条规则中 CDN 行为的配置。 | |
+|Action |String |Yes |表示 CDN 如何处理匹配 `Condition` 的请求。该参数有以下取值：<br><br><br>* `refuse`：表示 CDN 拒绝请求并响应一个 4xx 的错误码。错误码在 `StatusCode` 中指定。<br><br>* `redirect`：表示 CDN 将请求重定向到 `RedirectUrl` 中指定的 URL。 |`refuse` |
+|StatusCode |String |Yes |表示对于匹配 `Condition` 的用户请求，CDN 的响应状态码。<br><br><br>* 当 `Action` 是 `refuse` 时，该参数表示一个 400\-499 范围内的错误码。<br><br>* 当 `Action` 是 `redirect` 时，该参数有以下取值：<br><br>   * `301`：表示响应状态码是 301。<br><br>   * `302`：表示响应状态码是 302。 |`403` |
+|ErrorPage |String |No |* 当 `Action` 是 `refuse` 时，该参数是可选的，说明如下：<br><br>   * 如果指定该参数，该参数表示 "全局配置" 特性中的一个自定义响应页面的名称。也就是说，当 CDN 拒绝请求时，返回该自定义页面。<br><br>   * 如果不指定该参数，表示 CDN 使用 `StatusCode` 中指定错误码的标准响应正文。<br><br>* 当 `Action` 是 `redirect` 时，该参数无效，可以不指定。 |`GlobalConfigName` |
+|RedirectUrl |String |No |* 当 `Action` 是 `redirect` 时，该参数必填，表示重定向 URL。URL 必须以 `http://` 或 `https://` 开头，长度不能超过 1,024 个字符。<br><br>* 当 `Action` 是 `refuse` 时，该参数无效，可以不指定。 |`http://www.example.com` |
+|Condition |Object |Yes |表示该规则中匹配条件的定义。 | |
+|ConditionRule |Object[] |Yes |表示一个匹配条件列表，用于匹配请求 URL 中的路径和查询参数、以及请求来自的客户端 IP 地址。列表中最多可以包含 5 个匹配条件。每个匹配条件包含匹配类型、对比类型和匹配值。 | |
+|Object |String |Yes |表示一个匹配类型。<br><br><br>* 当 `Type` 是 `url` 时，该参数有以下取值：<br><br>   * `path`：表示表示请求 URL 中的路径。<br><br>   * `directory`：表示路径中的一个目录。<br><br>   * `filetype`：表示路径末尾的扩展名。<br><br>   * `regex`：表示请求 URL 中的路径，通过正则表达式匹配。<br><br>* 当 `Type` 是 `querystring` 时，该参数有以下取值：<br><br>   * `query_name`：表示请求 URL 中的一个查询参数。<br><br>   * `full_querystring`：表示请求 URL 中的查询字符串。<br><br>* 当 `Type` 是 `client_ip` 时，该参数有以下取值：<br><br>   * `client_ip`：表示客户端的 IP 地址。<br><br>* 当 `Type` 是 `request_header` 时，该参数有以下取值：<br><br>   * `ua`：表示请求中 User\-Agent 头部。<br><br>   * `customize`：表示请求中的自定义头部。 |`filetype` |
+|Operator |String |Yes |表示一个对比类型。<br><br><br>* 当 `Object` 是 `path`、`directory`、`filetype` 时，该参数有以下取值：<br><br>   * `equal`：表示如果匹配 `Value` 中的任何值，该请求就满足这个匹配条件。<br><br>   * `not_equal`：表示如果不匹配 `Value` 中的所有值，该请求才满足这个匹配条件。<br><br>* 当 `Object` 是 `query_name` 时，该参数有以下取值：<br><br>   * `exist`：表示存在。匹配逻辑与 `equal` 相同。<br><br>   * `not_exist`：表示不存在。匹配逻辑与 `not_equal` 相同。<br><br>   * `belong_shared_config`：表示如果匹配 `Value` 表示的全局配置中所包含的任何值，该请求就满足这个匹配条件。<br><br>   * `not_belong_shared_config`：表示如果不匹配 `Value` 表示的全局配置中的所有值，该请求才满足这个匹配条件。<br><br>   * `empty`：表示值为空。<br><br>   * `not_empty`：表示值不为空。<br><br>   * `equal`：参见以上描述。<br><br>   * `not_equal`：参见以上描述。<br><br>* 当 `Object` 是 `regex`、`full_querystring`、`client_ip` 或 `ua` 时，该参数有以下取值：<br><br>   * `match`：描述与 `equal` 相同。<br><br>   * `not_match`：描述与 `not_equal` 相同。<br><br>* 当 `Object` 是 `ua` 或 `customize` 时，该参数还有以下**额外**取值：<br><br>   * `empty`：参见以上描述。<br><br>   * `not_empty`：参见以上描述。 |`not_equal` |
+|Type |String |Yes |表示一个匹配对象的类型。该参数有以下取值：<br><br><br>* `url`：表示请求 URL。<br><br>* `querystring`：表示请求 URL 中的查询字符串。<br><br>* `request_header`：表示请求中的头部。 |`url` |
+|Value |String |Yes |表示一个或者多个匹配值。<br><br><br>* 如果 `Type` 是 `request_header`，多个匹配值之间使用竖线（\\|）分隔。<br><br>* 如果 `Type` 不是 `request_header`，多个匹配值之间使用分号（;）分隔。<br><br><br>&nbsp;<br><br>该参数的输入要求如下：<br><br><br>* 当 `Object` 是 `path`、`directory` 或 `filetype` 时，所有匹配值的总长度不能超过 1,024 个字符，不能包含以下字符：<br><br>   * 双斜杠（//）、空格、美元符号（$）、问号（?）、句点（.）<br><br>* 当 `Object` 是 `path` 时，该参数有以下**额外**要求：<br><br>   * 每个匹配值必须以斜杠（/）开头。您可以在匹配值中使用一个或者多个星号（\*），每个星号表示一个或者多个字符。例如：`/www/img/my*image.png`。<br><br>* 当 `Object` 是 `directory` 时，该参数有以下**额外**要求：<br><br>   * 每个匹配值必须以斜杠（/）开头和结尾。例如：`/www/img/`。<br><br>* 当 `Object` 是 `filetype` 时，该参数有以下**额外**要求：<br><br>   * 每个匹配值无需以句点（.）开头。例如：`png;txt`。<br><br>* 当 `Object` 是 `query_name` 时，<br><br>   * 如果 `Operator` 是 `equal` 或者 `not_equal`，您只能指定一个匹配值，表示 `Name` 所表示的查询参数的值。该值的长度不能超过 256 个字符，可以包含数字、字母、百分号（%）、下划线（_）、中划线（\-）。<br><br>   * 如果 `Operator` 是 `belong_shared_config`、`not_belong_shared_config` 时，您只能指定一个匹配值。该匹配值是一个全局配置的名称。<br><br>   * 如果 `Operator` 是 `exist`、`not_exist`、`empty`、`not_empty`，该参数无效，可以不指定。<br><br>* 当 `Object` 是 `full_querystring` 或者 `regex` 时，每个匹配值都是一个正则表达式。多个匹配值之间使用分号（;）分隔。所有匹配值的总长度不能超过 1,024 个字符。<br><br>* 当 `Object` 是 `client_ip` 时，`Value` 中最多可以包含 50 个匹配值，总长度不能超过 30,000 个字符。每个匹配值是一个 IP 地址。IP 地址可以是 IPv4 地址、IPv4 CIDR 地址、IPv6 地址、IPv6 CIDR 地址。<br><br>* 当 `Object` 是 `custom` 或者 `ua` 时，`Value` 中最多可以包含 50 个匹配值，总长度不能超过 1,024 个字符。匹配值可以以 \* 开头和结尾。\* 表示任意连续字符。<br><br>   * 如果 `Object` 是 `custom`，每个匹配值是 `Name` 所表示的头部的值。<br><br>   * 如果 `Object` 是 `ua`，每个匹配值是一个 User\-Agent 头部值。<br><br>   * 如果 `Operator` 是 `empty`、`not_empty`，该参数无效，可以不指定。 |`png;txt` |
+|Name |String |No |当 `Object` 是 `query_name` 或者 `customize` 时，该参数有效。<br><br><br>* 如果 `Object` 是 `query_name`，该参数表示一个查询参数的名称。<br><br>* 如果 `Object` 是 `customize`，该参数表示一个自定义请求头的名称。<br><br><br>`Name` 的长度不能超过 256 个字符，可以包含数字、字母、百分号（%）、下划线（_）、中划线（\-）。 |`color` |
+|Connective |String |Yes |表示多条 `ConditionRule` 之间的关系。该参数有以下取值：<br><br><br>* `AND`：表示 "和"。<br><br>* `OR`：表示 "或"。<br><br><br>该参数的默认值是 `OR`。 |`AND` |
+|RuleName |String |Yes |表示规则的名称，长度不超过 20 个字符，可以包含字母、数字、下划线（_）、中划线（\-）、汉字。一个汉字占 3 个字符。 |`MyRule` |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "RequestBlockRule": {
+        "BlockRule": [
+            {
+                "BlockAction": {
+                    "Action": "refuse",
+                    "StatusCode": "403"
+                },
+                "Condition": {
+                    "ConditionRule": [
+                        {
+                            "Object": "path",
+                            "Operator": "equal",
+                            "Type": "url",
+                            "Value": "/img/*.jpg;/doc/output"
+                        },
+                        {
+                            "Object": "directory",
+                            "Operator": "equal",
+                            "Type": "url",
+                            "Value": "/food/;/finance/global/"
+                        },
+                        {
+                            "Object": "filetype",
+                            "Operator": "not_equal",
+                            "Type": "url",
+                            "Value": "png;jpg"
+                        }
+                    ],
+                    "Connective": "OR"
+                },
+                "RuleName": "url-demo-rule"
+            },
+            {
+                "BlockAction": {
+                    "Action": "refuse",
+                    "ErrorPage": "my_page",
+                    "StatusCode": "406"
+                },
+                "Condition": {
+                    "ConditionRule": [
+                        {
+                            "Name": "qn1",
+                            "Object": "query_name",
+                            "Operator": "equal",
+                            "Type": "querystring",
+                            "Value": "val1"
+                        },
+                        {
+                            "Name": "qn2",
+                            "Object": "query_name",
+                            "Operator": "belong_shared_config",
+                            "Type": "querystring",
+                            "Value": "rstest0101"
+                        },
+                        {
+                            "Name": "qn3",
+                            "Object": "query_name",
+                            "Operator": "empty",
+                            "Type": "querystring"
+                        },
+                        {
+                            "Name": "qn4",
+                            "Object": "query_name",
+                            "Operator": "exist",
+                            "Type": "querystring"
+                        }
+                    ],
+                    "Connective": "OR"
+                },
+                "RuleName": "req-query_demo_rule"
+            },
+            {
+                "BlockAction": {
+                    "Action": "redirect",
+                    "RedirectUrl": "https://error.example.com",
+                    "StatusCode": "301"
+                },
+                "Condition": {
+                    "ConditionRule": [
+                        {
+                            "Object": "regex",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "a.c;^/colou?r$"
+                        },
+                        {
+                            "Object": "full_querystring",
+                            "Operator": "not_match",
+                            "Type": "querystring",
+                            "Value": "co{1,3}r=chapter[1-5]"
+                        },
+                        {
+                            "Object": "client_ip",
+                            "Operator": "match",
+                            "Type": "client_ip",
+                            "Value": "x.x.x.x;xx.xx.xx.xx/24"
+                        },
+                        {
+                            "Name": "",
+                            "Object": "ua",
+                            "Operator": "match",
+                            "Type": "request_header",
+                            "Value": "*firefox*|ua"
+                        },
+                        {
+                            "Name": "custom-header",
+                            "Object": "customize",
+                            "Operator": "match",
+                            "Type": "request_header",
+                            "Value": "val1|val2|val3|val4"
+                        }
+                    ],
+                    "Connective": "OR"
+                },
+                "RuleName": "others-demo-rule"
+            }
+        ],
+        "Switch": true
+    }
+}
+```
+
+
+<span id="url-重定向改写"></span>
+### URL 重定向改写
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|RedirectionRewrite |Object |No |表示 "URL 重定向改写" 特性的配置。要使用该功能，请 [提交工单](https://console.byteplus.com/workorder/create)。 | |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+|RedirectionRule |Object[] |No |表示一个 URL 重定向改写的规则的列表。当 `Switch` 是 `true` 时，该参数为必填。该列表最多可以包含 50 条规则。<br><br>当收到一个用户请求时，CDN 按规则的优先级，从高到低将规则与请求匹配。如果一条规则匹配了请求，CDN 就停止处理其余规则。 | |
+|RedirectionAction |Object |Yes |表示一个 URL 重定向改写的规则。 | |
+|RedirectCode |String |Yes |表示 URL 重定向的响应状态码。该参数的取值有 `301`、`302`、`303`、`307`、`308`。<br><br>需要留意的是：<br><br><br>* 对于 301 和 302，如果原请求使用的方法不是 GET，那么客户端向新的URL发送请求时，新请求使用的方法可能变成 GET。<br><br>* 对于 303，新请求使用的方法是 GET。<br><br>* 对于 307 和 308，新请求使用的方法与原请求相同，不会被改变。 |`301` |
+|SourcePath |String |Yes |表示文件的原路径。也就是请求中包含的路径。路径必须以斜杠（/）开头并且不能包含双斜杠（//）、百分号（%）、空格。该参数值的长度不能超过 1,024 个字符。 |`/img/image.png` |
+|TargetHost |String |Yes |表示目标路径所归属站点的域名或者 IP 地址。IP 地址必须是 IPv4 类型的地址。该参数值的长度不能超过 1,024 个字符。该参数的默认值就是您的域名。 |`www.test.com` |
+|TargetPath |String |Yes |表示跳转后的目标路径。路径必须以斜杠（/）开头并且不能包含双斜杠（//）、百分号（%）、空格。该参数值的长度不能超过 1,024 个字符。 |`/png/image.png` |
+|TargetProtocol |String |Yes |表示 URL重定向后的新请求所使用的协议。该参数有以下取值：<br><br><br>* `followclient`：表示使用原请求的协议。<br><br>* `http`：表示新请求强制使用 HTTP 协议。<br><br>* `https`：表示新请求强制使用 HTTPS 协议。 |`followclient` |
+|TargetQueryComponents |Object |Yes |表示原请求 URL 中的查询参数的处理方式。 | |
+|Action |String |Yes |表示原请求 URL 中的查询参数的处理方式。该参数有以下取值：<br><br><br>* `include`：表示在跳转后的 URL 中包含原请求 URL 中的所有查询参数。<br><br>* `exclude`：表示在跳转后的 URL 中不包含原请求 URL 中的任何查询参数。<br><br>* `includePart`：表示在跳转后的 URL 中包含原请求 URL 中特定的查询参数。<br><br>* `excludePart`：表示在跳转后的 URL 中不包含原请求 URL 中特定的查询参数。 |`include` |
+|Value |String |Yes |表示要保留或删除的查询参数。多个查询参数间使用英文分号（;）分隔。指定的查询参数不能包含双斜杠（//）、百分号（"）、空格。`Value` 的默认值是 `*`，表示所有的查询参数。<br><br><br>* 如果 `Action` 是 `include` 或者 `exclude`, 则 `Value` 必须为 `*`。<br><br>* 如果 `Action` 是 `includePart` 或者 `excludePart`，您可以指定一个或者多个查询参数。此时，您指定的查询参数不能是 `*`。 |`seq` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "RedirectionRewrite": {
+        "Switch": true,
+        "RedirectionRule": [
+            {
+                "RedirectionAction": {
+                    "SourcePath": "/img/test.png",
+                    "RedirectCode": "301",
+                    "TargetHost": "www.test.com",
+                    "TargetProtocol": "followclient",
+                    "TargetPath": "/png/test.png",
+                    "TargetQueryComponents": {
+                        "Action": "include",
+                        "Value": ""
+                    }
+                }
+            }
+        ]
+    }
+}
+```
+
+
+<span id="url-鉴权"></span>
+### URL 鉴权
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|SignedUrlAuth |Object |No |表示 "URL 鉴权" 特性的配置。 | |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+|SignedUrlAuthRules |Object[] |No |表示一个规则列表。每条规则包含匹配条件配置和鉴权配置。当前，列表中只能包含一条规则。当 `Switch` 是 `true` 时，该参数为必填。 | |
+|Condition |Object |Yes |表示匹配条件的配置。CDN 对符合条件的用户请求进行鉴权。 | |
+|ConditionRule |Object[] |Yes |表示一个匹配条件列表。<br><br><br>* 当 `URLAuthType` 是 `typea`、`typed`、`typee` 时，您最多可以创建 10 个条件。<br><br>* 当 `URLAuthType` 是 `typeb`、`typec` 时，您只能创建 1 个条件。 | |
+|Object |String |Yes |表示匹配条件中的匹配类型。该参数有以下取值：<br><br><br>* `filetype`：表示 URL 路径末尾的扩展名。<br><br>* `directory`：表示 URL 路径中的一个目录。<br><br>* `path`：表示完整的 URL 路径。<br><br>* `regex`: 表示完整的 URL 路径，通过正则表达式匹配。要指定该参数值，请 [提交工单](https://console.byteplus.com/workorder/create)。<br><br><br>需要留意的是，当 `URLAuthType` 是 `typeb`、`typec` 时，您只能指定该参数值为 `filetype` 或 `directory`。 |`directory` |
+|Operator |String |Yes |表示匹配条件中的匹配方式。该参数有以下取值：<br><br><br>* `match`：表示如果 `object` 匹配 `Value`，该请求就满足了这个匹配条件。<br><br>* `not_match`：表示如果 `object` 不匹配 `Value`，该请求就满足了这个匹配条件。<br><br><br>该参数的默认值是`match`。<br><br>需要留意的是，当 `URLAuthType` 是 `typeb`、`typec` 时，您只能指定该参数值为 `match`。 |`match` |
+|Type |String |Yes |该参数值只能是 `url`，表示 "请求 URL"。 |`url` |
+|Value |String |Yes |表示匹配条件中的匹配值。多个匹配值之间以分号（;）分隔，总长度不能超过 1,024 个字符，不能包含以下字符：<br><br><br>* 双斜杠（//）、空格、美元符号（$）、问号（?）<br><br><br>另外，<br><br><br>* 如果 `Object` 是 `filetype`，则每个匹配值是一个文件后缀，不能以句点（.）开头。例如：`png;txt`。<br><br>* 如果 `Object` 是 `directory`，则每个匹配值是一个目录路径，必须以斜杠（/）开头和结尾。例如：`/chs/foods/;/us/birds/`。<br><br>* 如果 `Object` 是 `path`，则每个匹配值是一个 URL 路径，必须以斜杠（/）开头。匹配值可以包含星号（\*）用来表示一个或者多个任意字符。例如：`/chs/foods/local*sets;/us/birds/chickadee`。<br><br>* 如果 `Object` 是 `regex`，则每个匹配值是一个正则表达式，用于匹配 URL 路径。例如：`^/a{1,2}.*g$`。 |`png;jpg` |
+|Connective |String |Yes |表示多个 `ConditionRule` 之间的逻辑关系。该参数有以下取值：<br><br><br>* `AND`: 表示逻辑关系是 "AND"。<br><br>* `OR`：表示逻辑关系是 "OR"。<br><br><br>该参数的默认值是 `OR`。<br><br><br>* 当 `URLAuthType` 是 `typeb`、`typec` 时，该参数值必须是 `OR`。 |`OR` |
+|SignedUrlAuthAction |Object |Yes |表示签名计算的配置。 | |
+|Duration |Long |Yes |表示签名的有效时间，单位是秒。该参数与请求中包含时间戳搭配使用，用来计算签名的过期时间。该参数的取值范围是 `0-315,360,000`。签名的过期时间 = 时间戳 + `Duration`。在 CDN 收到某个请求时，如果签名的过期时间小于当前时间，CDN 判定签名已过期。 |`1000` |
+|MasterSecretKey |String |Yes |表示主密钥，长度不超过 120 个字符。 |`abcdefg` |
+|URLAuthType |String |Yes |签名类型。该参数有以下取值：`typea`、`typeb`、`typec`、`typed`、`typee`，每种类型得鉴权说明见 [配置 URL 鉴权](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-overview-cn) 。 |`typea` |
+|BackupSecretKey |String |No |表示备密钥，长度不超过 120 个字符。 |`abcdefg` |
+|CustomVariableRules |Object |No |表示自定义签算变量。 | |
+|CustomVariableInstances |Object[] |Yes |表示一个变量列表。 | |
+|Operator |String |Yes |表示变量的匹配方式。该参数的取值只能是 `match`。 |`match` |
+|Type |String |Yes |表示变量的类型。该参数有以下取值：<br><br><br>* `queryString`：表示该变量是请求中的一个查询参数。<br><br>* `requestHeader`：表示该变量是请求中的一个头部字段。 |`queryString` |
+|Value |String |Yes |表示变量的名称，长度不超过 100 个字符。变量名称的要求如下：<br><br><br>* 如果 `Type` 是 `queryString`，变量名称可以包含以下字符：<br><br>   * 字母、数字、连字符（\-）、逗号（,）、句号（.）、感叹号（!）<br><br>* 如果 `Type` 是 `requestHeader`，变量名称不能包含以下字符：<br><br>   * 下划线（_）、空格、双引号（"）、冒号（:） |`myparam1` |
+|KeepOriginArg |Boolean |No |表示 CDN 是否在回源请求中包含用户请求中的签名参数，仅当 `URLAuthType` 是 `typea` 或 `typed` 时有效。<br><br>该参数有以下取值：<br><br><br>* `true`：表示 CDN 在回源请求中包含签名参数。<br><br>* `false`：表示 CDN 在回源请求中不包含签名参数。<br><br><br>该参数的默认值是 `false`。<br><br>当 `URLAuthType` 是 `typeb`、`typec` 或 `typee` 时，该参数不生效。<br><br><br>* 对于 `typeb` 和 `typec`CDN 在回源请求中不包含签名参数。<br><br>* 对于 `typee`，CDN 基于 `DeleteAuthCacheAndOrigin` 来判定是否在回源请求中包含签名参数。 |`true` |
+|RewriteM3u8 |Boolean |No |对于 HLS Manifest (.m3u8) 的请求，该参数表示 CDN 是否要修改 Manifest，从而为每个视频分片生成签名并将签名添加到 URI 中。<br><br>该参数有以下取值：<br><br><br>* `true`：表示需要修改 Manifest。<br><br>* `false`：表示不需要修改 Manifest。<br><br><br>该参数的默认值是 `false`。<br><br>说明<br><br>当前，CDN 不会修改压缩文件。因此，在以下任何情况下，CDN 都不会修改 Manifest。<br><br><br>* 源站响应中包含 `Content-Encoding` 头部。该标头表明该 Manifest 已被压缩。<br><br>* 用户请求匹配 "智能压缩" 特性中的规则。 |`true` |
+|SignName |String |No |表示签名参数的名称。该参数的说明如下：<br><br><br>* 可以包括英文字母、数字、下划线（_）、中划线（\-）、句号（.）、逗号（,）、感叹号（!）。<br><br>* 长度不能超过 100 个字符。<br><br>* 至少包含一个字母。<br><br>* 不能与 `TimeName` 相同。<br><br><br>当 `URLAuthType` 为 `typea`、`typed`、`typee` 时，该参数为必填。对于其他类型，该参数不生效。 |`sign` |
+|SignatureRule |String[] |No |当 `URLAuthType` 为 `typee` 时，该参数为必填，表示需要纳入签名计算的字段。必须纳入签名计算的字段如下：<br><br><br>* `key`：表示`MasterSecretKey`或 `BackupSecretKey` 指定的密钥。<br><br>* `uri`：表示用户请求的 URI，仅包含字路径和查询参数。如果 URI 包含中文字符，您需要对 URI 编码。<br><br>* `TimeName`：表示 `TimeFormat` 指定的时间戳。<br><br><br>可选择纳入签名计算的字段如下：<br><br><br>* `domain`：表示域名。<br><br>* `referer`：表示用户请求携带的 referer 值。<br><br>* `ua`：表示用户请求携带的 User\-Agent 值。<br><br>* `ip`：表示用户请求的客户端 IP。<br><br>* `origin`：表示用户请求携带的 Origin 值。<br><br>* 自定义变量：表示您在 `CustomVariableInstances` 中定义的变量的值。<br><br><br>CDN 按列表中字段的顺序将这些字段拼接成一个字符串，然后计算该字符串的 MD5 值。该 MD5 值就是签名。 |`["domain","ip","key","TimeName","uri"]` |
+|TimeFormat |String |No |表示 `TimeName` 使用的时间格式。该参数有以下取值：<br><br><br>* `basicFormat2m`：格式为 YYYYMMDDHHMM。<br><br>* `decimal`：十进制时间戳。<br><br>* `heximal`：十六进制时间戳。<br><br><br>该参数的使用说明如下：<br><br><br>* 当 `URLAuthType` 为 `typea` 时，该参数可以不指定，其值始终为 `decimal`。<br><br>* 当 `URLAuthType` 为 `typeb` 时，该参数为必填，可选取值为 `decimal`、`heximal` 和 `basicFormat2m`。<br><br>* 当 `URLAuthType` 为 `typec` 时，该参数可以不指定，其值始终为 `heximal`。<br><br>* 当 `URLAuthType` 为 `typed`、`typee` 时，该参数为必填，可选取值为 `decimal` 和 `heximal`。 |`heximal` |
+|TimeName |String |No |表示时间戳参数的名称。`TimeName` 的值可以包括英文字母、数字、下划线（_）、中划线（\-）、句号（.）、逗号（,）、感叹号（!），长度为 `1-100` 个字符。`TimenName` 不能与 `SignName` 相同。<br><br>当 `URLAuthType` 为 `typed`、`typee` 时，该参数为必填。对于其他类型，该参数不生效。 |`TimeParam` |
+|RewriteM3u8Rule |Object |No |表示 "M3U8 改写" 功能的配置。该配置仅当 `RewriteM3u8` 是 `true` 时才有效。 | |
+|DeleteParam |Boolean |No |表示在改写分片 URL 时是否保留 URL 中原有的参数。该参数有以下取值：<br><br><br>* `true`：表示删除原有参数。<br><br>* `false`：表示保留原有参数。<br><br><br>该参数的默认值是 `false`。需要留意的是，该参数的设置影响签名的计算。 |`true` |
+|KeepM3u8Param |Boolean |No |表示是否将来自该 M3U8 文件请求的不表示签名的查询参数添加到分片 URL 中。该参数有以下取值：<br><br><br>* `true`：表示在分片 URL 中添加查询参数。<br><br>* `false`：表示不添加查询参数。<br><br><br>该参数的默认值是 `false`。需要留意的是，该参数的设置影响签名的计算。 |`true` |
+|RewriteTag |Object |No |表示 "标签改写" 的配置。您可以定义除了 `EXTINF` 以外的标签。 | |
+|Switch |Boolean |No |表示是否需要改写额外标签中的分片 URL。该参数有以下取值：<br><br><br>* `true`: 表示需要改写额外标签。<br><br>* `false`：表示无额外标签需要改写。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|Tags |String[] |No |表示除默认标签外，需要对其下分片 URI 进行改写的额外标签列表。<br><br>列表中最多包含 20 个标签，每个标签的长度为 1\-100 个字符，不能包含 `#` 和 `:`。 |`["EXT-X-MAP", "My-TAG"]` |
+|AuthAlgorithm |String |No |表示签名计算使用的算法。该配置有以下取值：<br><br><br>* `md5`：表示 MD5 算法。<br><br>* `sha256`：表示 SHA\-256 算法。<br><br><br>该参数的默认值是 `md5`。 |`md5` |
+|DeleteAuthCacheAndOrigin |Boolean |No |表示 CDN 是否在回源请求和缓存键中包含用户请求中的签名参数，仅当 `URLAuthType` 是 `typee` 时有效。<br><br>该参数有以下取值：<br><br><br>* `true`：表示回源请求和缓存键中均不包含签名参数。<br><br>* `false`：表示回源请求和缓存键中均包含签名参数。<br><br><br>该参数的默认值是 `false`。 |`false` |
+|AuthRulesF |Object[] |No |表示 Type\-F 配置，包含一个规则列表。列表中可以包含最多 5 条规则。列表中第一条规则的优先级最高。<br><br>当收到一个用户请求时，CDN 按规则的优先级，从高到低将规则与请求匹配。如果一条规则匹配了请求，CDN 就停止处理其余规则。 | |
+|RuleName |String |No |表示规则列表中一条规则的名称，长度不能超过 120 个字符。规则名称可以包含汉字、字母、数字、连字符（\-）、下划线（_）和空格。一个汉字占 3 个字符。 |`Authentication rule A` |
+|Condition |Object |No |表示匹配条件的配置。如果一个请求符合匹配条件，CDN 对该请求进行 URL 鉴权。 | |
+|ConditionRule |Object[] |Yes |表示一个匹配条件列表。列表中最多可以包含 10 个匹配条件。 | |
+|Object |String |Yes |表示匹配对象。该参数有以下取值：<br><br><br>* `filetype`：表示请求文件的扩展名。<br><br>* `directory`：表示请求路径中的某个目录。<br><br>* `path`：表示请求的完整路径，不包含查询字符串。<br><br>* `regex`：表示用于匹配完整路径的正则表达式。 |`directory` |
+|Operator |String |Yes |表示匹配操作符。该参数有以下取值：<br><br><br>* `match`：表示如果 `Value` 匹配了请求中的 `Object`，则该请求符合这个匹配条件。<br><br>* `not_match`：表示如果 `Value` 不匹配请求中的 `Object`，该请求就符合这个匹配条件。 |`match` |
+|Type |String |Yes |表示匹配对象的来源。当前，该参数值只能是 `url`，表示请求 URL。 |`url` |
+|Value |String |Yes |表示一个或者多个匹配值，总长度不能超过 1,024 个字符。多个匹配值之间使用分号（;）分隔。匹配值不能包含以下字符：<br><br><br>* 双斜杠（//）、空格、美元符号（$）、问号（?）。<br><br><br>另外，<br><br><br>* 如果 `Object` 是 `filetype`，每个匹配值表示一个文件扩展名，无需以句点（.）开头，只能包含字母和数字。例如：`png;txt`。<br><br>* 如果 `Object` 是 `directory`，每个匹配值表示一个路径目录，以斜杠（/）开头和结尾。例如 `/chs/foods/;/us/birds/`。<br><br>* 如果 `Object` 是 `path`，每个匹配值表示一个完整路径，不包含查询字符串。完整路径以斜杠（/）开头。另外，每个匹配值中可以包含通配符（\*）用来表示一个或者多个任意字符。例如 `/chs/foods/local*sets;/us/birds/chickadee`。<br><br>* 如果 `Object` 是 `regex`，每个匹配值表示一个正则表达式。例如 `/a{1,2}(.*)g`。 |`/chs/foods/;/us/birds/` |
+|Connective |String |Yes |表示匹配条件之间的关系。该参数有以下取值：<br><br><br>* `OR`：表示关系是 "或"。<br><br>* `AND`：表示关系是 "和"。<br><br><br>该参数的默认值是 `OR`。 |`OR` |
+|SecretKey |Object |No |表示用于计算令牌的密钥。包含一个主密钥和一个备密钥。 | |
+|MasterSecretKey |String |No |表示主密钥，长度在 6\-40 个字符之间。 |`primary-key-123` |
+|BackupSecretKey |String |No |表示备密钥，长度在 6\-40 个字符之间。 |`secondary-key-456` |
+|SignCapRule |Object |No |表示从用户请求中获取令牌的方式。 | |
+|ArgSegment |Object |No |表示基于 `ParamName` 或者 `UriLevel` 获取的内容是否需要被拆分，以提取某个层级的片段。该层级的片段才是您需要获取的令牌。 | |
+|Switch |Boolean |No |表示获取到的内容是否需要被拆分。该参数有以下取值：<br><br><br>* `true`：表示内容需要被拆分。<br><br>* `false`：表示内容无需被拆分。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|Level |Long |No |表示将内容拆分为多个层级的片段后，令牌所在的层级，要求如下：<br><br><br>* 层级是非 0 的整数。<br><br>* 层级的绝对值不能大于层级总数。<br><br><br>如果层级是负整数，表示从最右边的片段开始向左计数。<br><br>当 `Switch` 为 `true` 时，您必须指定该参数。 |`2` |
+|SplitSymbol |String |No |表示用于拆分内容的分隔符。<br><br>当 `Switch` 为 `true` 时，您必须指定该参数。 |`//` |
+|CapMode |String |No |表示令牌的来源。该参数有以下取值：<br><br><br>* `name`：表示查询参数。相关配置在 `ParamName` 中指定。<br><br>* `uri`：表示请求路径中的一个目录。相关配置在 `UriLevel` 中指定。<br><br>* `header`：表示请求中的一个头部。相关配置在 `CustomValue` 中指定。<br><br>* `cookie`：表示请求中的一个 cookie。相关配置在 `CustomValue` 中指定。 |`name` |
+|CustomValue |String |No |该参数的含义如下：<br><br><br>* 当 `CapMode` 是 `header` 时，您必须指定该参数。该参数表示您要指定的请求头。<br><br>* 当 `CapMode` 是 `cookie` 时，您必须指定该参数。该参数表示您要指定的 cookie 的 key，CDN 会获取相应的 value。 |`myheader` |
+|ParamName |String |No |当 `CapMode` 是 `name` 时，您必须指定该参数。该参数表示您要指定的查询参数。 |`myparam` |
+|UriLevel |Long |No |当 `CapMode` 是 `uri` 时，您必须指定该参数。该参数表示您要指定的目录层级。<br><br>该参数的要求如下：<br><br><br>* 层级是一个非 0 的整数。<br><br>* 绝对值不能大于层级总数。<br><br><br>如果层级是负整数，表示从路径最右边的目录开始向左计数。 |`3` |
+|ExpireTimeRule |Object |No |表示令牌过期时间的相关设置。 | |
+|Duration |Long |No |表示令牌的有效时长（TTL），单位是秒，取值范围是 0\-315,360,000，默认值是 `0`。<br><br><br>* 令牌过期时间 = 基于 `ExpTimeCapRule` 获取的令牌时间戳 + `Duration` |`20` |
+|ExpTimeCapRule |Object |No |表示令牌时间戳的获取方式。令牌时间戳是一个 Unix 时间戳。 | |
+|CapMode |String |No |表示令牌时间戳的来源。该参数有以下取值：<br><br><br>* `name`：表示查询参数。相关配置在 `ParamName` 和 `ArgSegment` 中指定。<br><br>* `uri`：表示请求路径中的一个目录。相关配置在 `UriLevel` 和 `ArgSegment` 中指定。<br><br>* `header`：表示请求中的一个头部。相关配置在 `CustomValue` 中指定。<br><br>* `cookie`：表示请求中的一个 cookie。相关配置在 `CustomValue` 中指定。 |`header` |
+|ParamName |String |No |当 `ParamType` 是 `ReqHeader` 时，您必须指定该参数。该参数表示您要指定的查询参数。 |`myparm1` |
+|UriLevel |Long |No |当 `ParamType` 是 `uri` 时，您必须指定该参数。该参数表示您要指定的目录层级。<br><br>该参数的要求如下：<br><br><br>* 层级是非 0 的整数。<br><br>* 层级的绝对值不能大于层级总数。<br><br><br>如果层级是负整数，表示从路径最右边的目录开始向左计数。 |`2` |
+|ArgSegment |Object |No |表示基于 `ParamName` 或者 `UriLevel` 获取的内容是否需要被拆分，以提取某个层级的片段。该层级的片段才是您需要获取的令牌时间戳。 | |
+|Switch |Boolean |No |表示获取到的内容是否需要被拆分。该参数有以下取值：<br><br><br>* `true`：表示内容需要被拆分。<br><br>* `false`：表示内容无需被拆分。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|Level |Long |No |表示将内容拆分为多个层级的片段后，令牌时间戳所在的层级，要求如下：<br><br><br>* 层级是非 0 的整数。<br><br>* 层级的绝对值不能大于层级总数。<br><br><br>如果层级是负整数，表示从最右边的片段开始向左计数。<br><br>当 `Switch` 为 `true` 时，您必须指定该参数。 |`2` |
+|SplitSymbol |String |No |表示用于拆分内容的分隔符。<br><br>当 `Switch` 为 `true` 时，您必须指定该参数。 |`-` |
+|CustomValue |String |No |该参数的含义如下：<br><br><br>* 当 `CapMode` 是 `header` 时，您必须指定该参数。该参数表示您要指定的请求头。<br><br>* 当 `CapMode` 是 `cookie` 时，您必须指定该参数。该参数表示您要指定的 cookie 的 key，CDN 会获取相应的 value。 |`myheader1` |
+|TimeFormat |String |No |表示令牌时间戳的格式。<br><br><br>* `octal`：表示八进制。例如 `14751410031`。<br><br>* `decimal`：表示十进制。例如 `1738936345`。<br><br>* `heximal`：表示十六进制。例如 `67a61019`。 |`heximal` |
+|AuthTokenCalRule |Object |No |表示令牌计算的设置。请参考 示例代码 在客户端部署令牌计算逻辑，将生成的令牌包含在用户请求中。<br><br>CDN 使用 `SignJoinSymbol` 将 `SignParam` 中的各对象进行拼接，然后对拼接后的对象应用 `ParamCalRules` 中指定的算法计算令牌，用于与用户请求中包含的令牌进行比较。 | |
+|ParamCalRules |String[] |No |表示计算令牌所使用的算法列表，列表中最多包含 5 个算法。CDN 按列表中算法的出现顺序生成令牌的计算公式。<br><br>该参数有以下取值：`md5_bin`、`base64url`、`sha256`、`md5`、`base64_encode`、`sha1`、`sha224`、`sha384`、`sha512`、`sha3_224`、`sha3_256`、`sha3_384`、`sha3_512`、`upper_case`、`lower_case`。<br><br>说明<br><br>如果您指定了 `md5_bin`，您必须指定下一个算法为 `base64url`。<br><br><br>* 正确配置：`sha1`、`md5_bin`、`base64url`<br><br>* 错误配置：`sha1`、`md5_bin`、`base64url`、`base64url`、`md5_bin` |`["sha1"、"md5_bin"、"base64url"]` |
+|SignJoinSymbol |String |No |表示拼接 `SignParam` 中各对象而使用的拼接符。该参数的默认值为空（""）。 |`00` |
+|SignParam |Object[] |No |表示 CDN 在计算令牌时使用的对象列表。每个对象由 `ParamType` 和相关配置组成。例如，以下示例表示对象是一个字符串，字符串的值是 `str-for-token-calc`。<br><br>```json```<br>```{```<br>```    "ParamType": "SupString",```<br>```    "SupContent": "str-for-token-calc"```<br>```}```<br> | |
+|ParamType |String |No |表示对象的类型。该参数有以下取值：<br><br><br>* `SecretKey`：表示 `SecretKey` 结构体中的 `MasterSecretKey` 或者 `BackupSecretKey`。当鉴权失败时，CDN 会使用 `BackupSecretKey` 计算令牌，重新对用户请求进行鉴权。<br><br>* `SupString`：表示一个字符串。相关配置在 `SupContent` 中指定。<br><br>* `URI`：表示请求路径中的连续片段。路径不包含查询字符串。相关配置在 `UriParamSup` 与 `ParamSource` 中指定。<br><br>* `URLParam`：表示请求 URL 中的某类对象。对象可以是一个查询参数或者某个目录。相关配置在 `UriParam` 与 `ParamSource` 中指定。<br><br>* `ClientDomain`：表示请求域名。<br><br>* `Referer`：表示用户请求中 Referer 头部的值。<br><br>* `Origin`：表示用户请求中 Origin 头部的值。<br><br>* `ClientIP`：表示发送用户请求的客户端 IP 地址。<br><br>* `UA`：表示用户请求中 Use\-Agent 头部的值。<br><br>* `ReqHeader`：表示用户请求中某个头部的值。相关配置在 `RequestHeader` 中指定。<br><br>* `Cookie`：表示请求中的一个 cookie。相关配置在 `CookieToken` 中指定。<br><br>* `FullURI`：表示请求的完整路径，不包含查询字符串。相关配置在 `ParamSource` 中指定。 |`URI` |
+|CookieToken |String |No |当 `ParamType` 是 `Cookie` 时，您必须指定该参数。该参数表示您要指定的 cookie 的 key。CDN 会获取该 cookie 的 value。 |`mycookiekey` |
+|RequestHeader |String |No |当 `ParamType` 是 `ReqHeader` 时，您必须指定该参数。该参数表示您要指定的请求头。 |`myheader2` |
+|SupContent |String |No |当 `ParamType` 是 `SupString` 时，您必须指定该参数。该参数表示您要指定的字符串。 |`123abc` |
+|UriParamSup |Object |No |表示从请求路径中获取连续片段的方式。当 `ParamType` 是 `URI` 时，您必须指定该参数。<br><br>该参数是一个结构体，包含以下配置：<br><br><br>* 拆分请求路径所使用的分隔符。<br><br>* 所需连续路径片段的开始层级和结束层级。<br><br>* 拼接这些路径片段所使用的拼接符。拼接后的路径片段用于计算令牌。 | |
+|SplitSymbol |String |No |表示拆分请求路径所使用的分隔符，要求如下：<br><br><br>* 长度为 1 个字符，可以是字母、数字、下划线（_）、连字符（\-）、反斜杠（/）、感叹号（!）。 |`-` |
+|StartLevel |Long |No |表示起始片段所在的层级，要求如下：<br><br><br>* 必须是一个正整数。<br><br>* 不能大于层级总数。<br><br>* `StartLevel` 所表示的路径片段不能在 `TermLevel` 所表示的路径片段右侧。 |`2` |
+|TermLevel |Long |No |表示结束片段所在的层级，要求如下：<br><br><br>* 只能是非 0 的整数。<br><br>* 绝对值不能大于层级总数。<br><br><br>如果 `TermLevel` 是负整数，表示从最右边的片段开始向左计数。 |`3` |
+|JoinSymbol |String |No |表示拼接这些路径片段所使用的拼接符，要求如下：<br><br><br>* 长度为 1 个字符，可以是字母、数字、下划线（_）、连字符（\-）、反斜杠（/）、感叹号（!）。<br><br><br>该参数的默认值是空（""）。 |`00` |
+|UrlParam |Object |No |表示从 URL 中获取所需对象的方式。当 `ParamType` 是 `URLParam` 时，您必须指定该参数。<br><br>该参数是一个结构体，包含对象的来源以及相关配置。 | |
+|CapMode |String |No |表示对象的来源。该参数有以下取值：<br><br><br>* `name`：表示查询参数。相关配置在 `ParamName` 和 `ArgSegment` 中指定。<br><br>* `uri`：表示请求路径中指定的目录。相关配置在 `UriLevel` 和 `ArgSegment` 中指定。 |`uri` |
+|ParamName |String |No |当 `ParamType` 是 `name` 时，您必须指定该参数。该参数表示您要指定的查询参数。 |`myparam3` |
+|UriLevel |Long |No |当 `ParamType` 是 `uri` 时，您必须指定该参数。该参数表示您要指定的目录层级。<br><br>该参数的要求如下：<br><br><br>* 层级是非 0 的整数。<br><br>* 绝对值不能大于层级总数。<br><br><br>如果层级是负整数，表示从最右边的目录开始向左计数。 |`2` |
+|ArgSegment |Object |No |表示基于 `ParamName` 或者 `UriLevel` 获取的内容是否需要被拆分，以提取某个层级的片段。该片段才是您需要获取的对象。 | |
+|Switch |Boolean |No |表示获取到的内容是否需要被拆分。该参数有以下取值：<br><br><br>* `true`：表示内容需要被拆分。<br><br>* `false`：表示内容无需被拆分。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|Level |Long |No |表示将获取到的内容拆分为多个层级的片段后，您需要的对象所在的层级。该参数的要求如下：<br><br><br>* 层级是非 0 的整数。<br><br>* 层级的绝对值不能大于层级总数。<br><br><br>如果层级是负整数，表示从最右边层级的片段开始向左计数。<br><br>当 `Switch` 为 `true` 时，您必须指定该参数。 |`2` |
+|SplitSymbol |String |No |表示用于拆分内容而使用的分隔符。<br><br>当 `Switch` 为 `true` 时，您必须指定该参数。 |`-` |
+|ParamSource |String |No |当 `RewriteMPD` 或者 `RewriteM3U8` 为启用，并且对象的 `ParamType` 是 `URI`、`URLParam` 或者 `FullURI` 时，您可以指定该参数。<br><br>对于添加到 Manifest 中的令牌，该参数表示 CDN 在使用该对象计算令牌时，该对象的来源。<br><br>该参数有以下取值：<br><br><br>* `ParentLink`：表示该对象来自用户请求中的 URL。<br><br>* `ChildLink`：表示该对象来自 Manifest 中视频分片的 URI。<br><br><br>该参数的默认值是 `ChildLink`。 |`ParentLink` |
+|RewriteM3U8 |Object |No |表示 HLS Manifest 改写的配置，也就是配置如何在 Manifest 中的视频分片 URI 中添加令牌。<br><br>如果 `SignCapRule` 下的 `CapMode` 是 `header` 或 `cookie`，您不能设置该参数。 | |
+|Switch |Boolean |No |表示是否需要改写 HLS Manifest。该参数有以下取值：<br><br><br>* `true`：表示需要改写 Manifest。<br><br>* `false`：表示无需改写 Manifest。<br><br><br>默认情况下，CDN 仅对 Manifest 中 `EXTINF` 标签下的视频分片 URI 添加令牌。 |`true` |
+|RewriteM3U8Tag |Object |No |表示额外的标签。对于 `Tags` 中包含的标签，CDN 会将令牌添加到这些标签下的 URL 中。参见 [该设置的示例](https://docs.byteplus.com/en/docs/byteplus-cdn/typef_zh-cn#m3u8-%E9%A2%9D%E5%A4%96%E6%A0%87%E7%AD%BE%E7%9A%84%E6%94%B9%E5%86%99%E7%A4%BA%E4%BE%8B)。 | |
+|Switch |Boolean |No |表示是否需要设置额外的标签。该参数有以下取值：<br><br><br>* `true`：表示需要设置额外的标签。<br><br>* `false`：表示无需设置额外的标签。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|Tags |String[] |No |表示额外标签的列表。 |`["tag1","tag2","tag3"]` |
+|RewriteMPD |Object |No |表示 DASH Manifest 改写的配置，也就是配置如何在 Manifest 中的视频分片 URI 中添加令牌。<br><br>如果 `SignCapRule` 下的 `CapMode` 是 `header` 或 `cookie`，您不能设置该参数。 | |
+|Switch |Boolean |No |表示是否需要改写 DASH Manifest。该参数有以下取值：<br><br><br>* `true`：表示需要改写 Manifest。<br><br>* `false`：表示无需改写 Manifest。 |`true` |
+|MpdVarExpand |Boolean |No |表示是否要将 `SegmentTemplate` 下 URI 中的变量替换为实际值。该参数有以下取值：<br><br><br>* `true`：表示启用该配置。该配置启用后，CDN 会先将视频分片 URI 中的变量替换为实际值，然后基于包含实际值的 URI 生成令牌，最后将令牌添加到 URI 中。<br><br>* `false`：表示不启用该配置。变量名本身会作为固定字符串用于生成令牌。<br><br><br>该参数的默认值是 `false`。<br><br>该配置启用后，当前只有满足以下所有条件的变量才会被替换为实际值：<br><br><br>* 变量为 `$RepresentationID$`。<br><br>* `SegmentTemplate` 下存在至少一个 URI 符合以下条件：<br><br>   * 在该 URI 中，至少有一个 `$RepresentationID$` 出现的位置不是 URI 路径中的最后一段。<br><br>* `<SegmentTemplate ... />` 和 `<Representation .../>` 之间不能出现其他内容。<br><br><br>另外，在改写后的 DASH Manifest 中，原始的 `SegmentTemplate` 会被保留。<br><br>参见 [示例](https://docs.byteplus.com/en/docs/byteplus-cdn/typef_zh-cn#dash-mpd-%E5%8F%98%E9%87%8F%E6%89%A9%E5%B1%95-%E7%A4%BA%E4%BE%8B)。 |`true` |
+|CustomRewrite |Object |No |表示视频 Manifest 的扩展改写配置。该配置启用后，CDN 使用 [特殊改写逻辑](https://docs.byteplus.com/en/docs/byteplus-cdn/typef_zh-cn#%E8%A7%86%E9%A2%91-manifest-%E7%9A%84%E7%89%B9%E6%AE%8A%E6%94%B9%E5%86%99%E9%80%BB%E8%BE%91) 覆盖 [默认改写逻辑](https://docs.byteplus.com/en/docs/byteplus-cdn/typef_zh-cn#%E8%A7%86%E9%A2%91-manifest-%E7%9A%84%E9%BB%98%E8%AE%A4%E6%94%B9%E5%86%99%E9%80%BB%E8%BE%91)。 | |
+|Switch |Boolean |No |表示是否启用扩展改写配置。该参数有以下取值：<br><br><br>* `true`：表示启用扩展改写配置。<br><br>* `false`：表示不启用扩展改写配置。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|RewriteParam |Object[] |No |表示一个对象列表。CDN 将这些对象拼接而生成令牌，添加到视频分片的 URL 中。 | |
+|ParamType |String |No |表示对象的类型。该参数有以下取值：<br><br><br>* `ParentLinkUrlParam`：表示用户请求 URL 中的某类对象。对象可以是一个查询参数或者某个层级的路径目录。相关配置在 `ParentLinkUrlParam` 结构体中指定。<br><br>* `SupString`：表示一个字符串。相关配置在 `SupContent` 中指定。<br><br>* `ParentLinkURI`：表示用户请求路径中的连续片段。路径不包含查询字符串。相关配置在 `ParentLinkUriParamSup` 中指定。<br><br>* `ParentLinkExpire`：表示用户请求中令牌的时间戳。参见 `ExpireTimeRule` 下 `Duration` 参数的说明。<br><br>* `AuthToken`：表示基于 `AuthTokenCalRule` 计算的令牌。<br><br>* `ParentFullURI`：表示用户请求的完整路径，不包含查询字符串。 |`ParentLinkURI` |
+|SupContent |String |No |当 `ParamType` 是 `SupString` 时，您必须指定该参数。该参数表示您要指定的字符串。 |`abc-13343` |
+|ParentLinkUriParamSup |Object |No |表示从用户请求路径中获取对象的方式。当 `ParamType` 是 `ParentLinkURI` 时，您必须指定该参数。<br><br>该参数是一个结构体，包含以下配置：<br><br><br>* 拆分请求路径所使用的分隔符。<br><br>* 连续路径片段的开始层级和结束层级。<br><br>* 拼接这些路径片段所使用的拼接符。拼接后的路径片段用于生成令牌。 | |
+|SplitSymbol |String |No |表示拆分请求路径所使用的分隔符，要求与 `JoinSymbol` 相同。 |`-` |
+|StartLevel |Long |No |表示起始片段所在的层级，要求如下：<br><br><br>* 必须是正整数。<br><br>* 不能大于层级总数。<br><br>* `StartLevel` 所表示的路径片段不能在 `TermLevel` 所表示的路径片段右侧。 |`1` |
+|TermLevel |Long |No |表示结束片段所在的层级，要求如下：<br><br><br>* 只能是非 0 的整数。<br><br>* 绝对值不能大于层级总数。<br><br><br>如果 `TermLevel` 是负整数，表示从最右边的片段开始向左计数。 |`3` |
+|JoinSymbol |String |No |表示拼接这些路径片段所使用的拼接符，要求如下：<br><br><br>* 长度为 1 个字符，可以是字母、数字、下划线（_）、连字符（\-）、反斜杠（/）、感叹号（!）。 |`00` |
+|ParentLinkUrlParam |Object |No |表示从 URL 中获取对象的方式。当 `ParamType` 是 `ParentLinkUrlParam` 时，您必须指定该参数。<br><br>该参数是一个结构体，包含对象的来源以及相关配置。 | |
+|CapMode |String |No |表示对象的来源。该参数有以下取值：<br><br><br>* `name`：表示查询参数。相关配置在 `ParamName` 和 `ArgSegment` 中指定。<br><br>* `uri`：表示请求路径中指定的目录。相关配置在 `UriLevel` 和 `ArgSegment` 中指定。 |`name` |
+|ParamName |String |No |当 `CapMode` 是 `name` 时，您必须指定该参数。该参数表示您要指定的查询参数。 |`myparam5` |
+|UriLevel |Long |No |当 `CapMode` 是 `uri` 时，您必须指定该参数。该参数表示您要指定的目录层级。<br><br>该参数的要求如下：<br><br><br>* 层级是非 0 的整数。<br><br>* 绝对值不能大于层级总数。<br><br><br>如果层级是负整数，表示从最右边的目录开始向左计数。 |`4` |
+|ArgSegment |Object |No |表示基于 `ParamName` 或者 `UriLevel` 获取的内容是否需要被拆分，以提取某个层级的片段。该片段才是您需要获取的对象。 | |
+|Switch |Boolean |No |表示获取的内容是否需要被拆分。该参数有以下取值：<br><br><br>* `true`：表示内容需要被拆分。<br><br>* `false`：表示内容无需被拆分。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|Level |Long |No |表示将获取的内容拆分为多个层级的片段后，您需要的片段所在的层级。该参数的要求如下：<br><br><br>* 层级是非 0 的整数。<br><br>* 绝对值不能大于层级总数。<br><br><br>如果层级是负整数，表示从最右边的片段开始向左计数。<br><br>当 `Switch` 为 `true` 时，您必须指定该参数。 |`2` |
+|SplitSymbol |String |No |表示用于拆分内容的分隔符。<br><br>当 `Switch` 为 `true` 时，您必须指定该参数。 |`-` |
+|RewriteRule |Object |No |表示 CDN 在视频分片 URI 中添加令牌的方式。 | |
+|CapMode |String |No |表示 CDN 如何在视频分片 URI 中添加生成的令牌。该参数有以下取值：<br><br><br>* `name`：表示将 URI 中指定的查询参数设置为令牌。相关配置在 `ParamName` 中指定。<br><br>* `uri`：表示在 URI 中指定的目录层级插入一个目录，并将该目录设置为令牌。相关配置在 `UriLevel` 中指定。 |`name` |
+|ParamName |String |No |当 `CapMode` 是 `name` 时，您必须指定该参数。该参数表示您要指定的查询参数。 |`myparam4` |
+|UriLevel |Long |No |当 `CapMode` 是 `uri` 时，您必须指定该参数。该参数表示您要指定的目录层级。<br><br>该参数的要求如下：<br><br><br>* 层级是非 0 的整数。<br><br>* 绝对值不能大于层级总数。<br><br><br>如果层级是负整数，表示从最右边层级的目录开始向左计数。 |`2` |
+|SignJoinSymbol |String |No |表示拼接 `RewriteParam` 中各对象而使用的拼接符。 |`00` |
+|ArgumentRule |Object |No |表示回源参数相关的配置。 | |
+|KeepOriginArg |Boolean |No |表示是否在回源请求中包含基于 `AuthTokenCalRule` 计算的令牌。该参数有以下取值：<br><br><br>* `true`：表示在回源请求中包含令牌。回源请求中令牌出现的位置与 `SignCapRule` 中的设置相同。<br><br>* `false`：表示不在回源请求中包含令牌。 |`true` |
+|GeneralParamRule |Object |No |表示 CDN 设置视频分片 URI 中查询参数的方式。 | |
+|ParentLinkParamInherit |String |No |表示改写后的视频分片 URI 是否包含用户请求 URL 中除表示令牌和令牌时间戳的参数之外的所有查询参数。该参数有以下取值：<br><br><br>* `not_inherit`：表示改写后的分片 URI 不会包含这些查询参数。<br><br>* `inherit`：表示改写后的分片 URI 会包含这些查询参数。 |`not_inherit` |
+|SubLinkParamRule |Object |No |该结构体包含额外的查询参数设置。该结构体包含额外的查询参数设置。 | |
+|InheritMode |String |No |表示当视频分片 URI 和用户请求 URL 中存在相同的查询参数时，CDN 如何设置视频分片 URI 中该参数的值。当 `ParentLinkParamInherit` 为 `inherit` 时，您可以设置该参数。<br><br>该参数有以下取值：<br><br><br>* `sub_link_first`：表示使用视频分片 URI 中该参数的值。<br><br>* `inherit_first`：表示使用用户请求 URL 中该参数的值。 |`inherit_first` |
+|KeepSubLinkArg |String |No |表示改写后的视频分片 URI 是否保留 URI 中原有的查询参数。该参数有以下取值：<br><br><br>* `delete`：表示改写后的分片 URI 不会保留这些查询参数。<br><br>* `keep`：表示改写后的分片 URI 会保留这些查询参数。 |`delete` |
+|RewriteFormat |String |No |表示改写后的视频分片 URI 格式。该参数有以下取值：<br><br><br>* `default`：该参数值的含义与 `absolute` 相同。<br><br>* `relative`：保持 URI 的当前格式。需要留意的是，如果 `ExpireTimeRule` 下的 `CapMode` 或者 `SignCapRule` 下的 `CapMode` 为 `uri`，则您不能设置 `RewriteFormat` 为 `relative`。<br><br>* `absolute`：如果 URI 的格式是相对路径，CDN 将格式转换成绝对路径。如果 URI 是绝对路径或者完整 URL，则保持当前格式。<br><br>* `full`：如果 URI 的格式是绝对路径或者相对路径，CDN 将格式转换成完整 URL。<br><br><br>该参数的默认值是 `default`。 |`default` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+Typea 鉴权类型的示例（包含 M3U8 改写功能的配置）。
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "SignedUrlAuth": {
+        "SignedUrlAuthRules": [
+            {
+                "Condition": {
+                    "ConditionRule": [
+                        {
+                            "Name": "",
+                            "Object": "filetype",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "asp"
+                        },
+                        {
+                            "Name": "",
+                            "Object": "directory",
+                            "Operator": "not_match",
+                            "Type": "url",
+                            "Value": "/abc/"
+                        }
+                    ],
+                    "Connective": "OR"
+                },
+                "SignedUrlAuthAction": {
+                    "Duration": 1800,
+                    "MasterSecretKey": "abce1235",
+                    "RewriteM3u8": true,
+                    "RewriteM3u8Rule": {
+                        "DeleteParam": true,
+                        "KeepM3u8Param": true
+                    },
+                    "SignName": "sign",
+                    "URLAuthType": "typea"
+                }
+            }
+        ],
+        "Switch": true
+    }
+}
+```
+
+
+Type\-E 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain":"www.example.com",
+    "SignedUrlAuth": {
+        "SignedUrlAuthRules": [
+            {
+                "Condition": {
+                    "ConditionRule": [
+                        {
+                            "Object": "filetype",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "png;jpg;txt;mp4"
+                        },
+                        {
+                            "Object": "directory",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "/test/dir1/;/test/dir2/"
+                        },
+                        {
+                            "Object": "path",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "/www/abc;/www/def"
+                        }
+                    ],
+                    "Connective": "OR"
+                },
+                "SignedUrlAuthAction": {
+                    "Duration": 1800,
+                    "MasterSecretKey": "abce1235",
+                    "SignName": "sign",
+                    "CustomVariableRules": {
+                        "CustomVariableInstances": [
+                            {
+                                "Operator": "match",
+                                "Type": "queryString",
+                                "Value": "myqueryparam"
+                            }
+                        ]
+                    },
+                    "SignatureRule": [
+                        "domain",
+                        "referer",
+                        "ua",
+                        "ip",
+                        "key",
+                        "TimeName",
+                        "uri",
+                        "myqueryparam"
+                    ],
+                    "TimeFormat": "decimal",
+                    "TimeName": "t",
+                    "URLAuthType": "typee"
+                }
+            }
+        ],
+        "Switch": true
+    }
+}
+```
+
+
+Type\-F 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain":"www.example.com",
+    "SignedUrlAuth": {
+        "Switch": true,
+        "AuthRulesF": [
+            {
+                "RuleName": "Authentication rule A",
+                "Condition": {
+                    "ConditionRule": [
+                        {
+                            "Name": "",
+                            "Object": "directory",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "/doc/"
+                        },
+                        {
+                            "Name": "",
+                            "Object": "filetype",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "png"
+                        },
+                        {
+                            "Name": "",
+                            "Object": "path",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "/a/b/c"
+                        },
+                        {
+                            "Name": "",
+                            "Object": "regex",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "\\/doc.*"
+                        }
+                    ],
+                    "Connective": "OR"
+                },
+                "SecretKey": {
+                    "MasterSecretKey": "primary-key-123",
+                    "BackupSecretKey": "secondary-key-456"
+                },
+                "SignCapRule": {
+                    "CapMode": "name",
+                    "ParamName": "param-with-token"
+                },
+                "ExpireTimeRule": {
+                    "ExpTimeCapRule": {
+                        "CapMode": "uri",
+                        "UriLevel": -2,
+                        "ArgSegment": {
+                            "Switch": true,
+                            "SplitSymbol": "-",
+                            "Level": 3
+                        }
+                    },
+                    "Duration": 20,
+                    "TimeFormat": "decimal"
+                },
+                "AuthTokenCalRule": {
+                    "SignParam": [
+                        {
+                            "ParamType": "SecretKey"
+                        },
+                        {
+                            "ParamType": "SupString",
+                            "SupContent": "str-for-token-calc"
+                        },
+                        {
+                            "ParamType": "URI",
+                            "UriParamSup": {
+                                "SplitSymbol": "/",
+                                "JoinSymbol": "-",
+                                "StartLevel": 2,
+                                "TermLevel": 3
+                            },
+                            "ParamSource": "ChildLink"
+                        },
+                        {
+                            "ParamType": "URLParam",
+                            "UrlParam": {
+                                "CapMode": "name",
+                                "ArgSegment": {
+                                    "Switch": true,
+                                    "SplitSymbol": "-",
+                                    "Level": 3
+                                },
+                                "ParamName": "query-for-token-calc"
+                            },
+                            "ParamSource": "ChildLink"
+                        },
+                        {
+                            "ParamType": "URLParam",
+                            "UrlParam": {
+                                "CapMode": "uri",
+                                "UriLevel": -3,
+                                "ArgSegment": {
+                                    "Switch": true,
+                                    "SplitSymbol": "-",
+                                    "Level": 3
+                                }
+                            },
+                            "ParamSource": "ParentLink"
+                        },
+                        {
+                            "ParamType": "ClientDomain"
+                        },
+                        {
+                            "ParamType": "Referer"
+                        },
+                        {
+                            "ParamType": "Origin"
+                        },
+                        {
+                            "ParamType": "ClientIP"
+                        },
+                        {
+                            "ParamType": "UA"
+                        },
+                        {
+                            "ParamType": "ReqHeader",
+                            "RequestHeader": "header-for-token-calc"
+                        },
+                        {
+                            "ParamType": "Cookie",
+                            "CookieToken": "cookie-for-token-calc"
+                        },
+                        {
+                            "ParamType": "FullURI",
+                            "ParamSource": "ParentLink"
+                        }
+                    ],
+                    "SignJoinSymbol": "param-concat-string",
+                    "ParamCalRules": [
+                        "sha512",
+                        "sha3_224",
+                        "sha3_256",
+                        "sha3_384",
+                        "sha3_512"
+                    ]
+                },
+                "ArgumentRule": {
+                    "KeepOriginArg": false,
+                    "GeneralParamRule": {
+                        "ParentLinkParamInherit": "inherit",
+                        "SubLinkParamRule": {
+                            "KeepSubLinkArg": "delete",
+                            "InheritMode": "inherit_first"
+                        }
+                    }
+                },
+                "RewriteFormat": "full",
+                "RewriteM3U8": {
+                    "RewriteM3U8Tag": {
+                        "Switch": true,
+                        "Tags": [
+                            "additional-tag-1",
+                            "additional-tag-2"
+                        ]
+                    },
+                    "Switch": true
+                },
+                "RewriteMPD": {
+                    "MpdVarExpand": true,
+                    "Switch": true
+                },
+                "CustomRewrite": {
+                    "RewriteRule": {
+                        "CapMode": "name",
+                        "ParamName": "ts-query-param"
+                    },
+                    "SignJoinSymbol": "-",
+                    "RewriteParam": [
+                        {
+                            "ParamType": "ParentLinkUrlParam",
+                            "ParentLinkUrlParam": {
+                                "CapMode": "name",
+                                "ParamName": "man-query-param",
+                                "ArgSegment": {
+                                    "Switch": true,
+                                    "SplitSymbol": "-",
+                                    "Level": 2
+                                }
+                            }
+                        },
+                        {
+                            "ParamType": "ParentLinkUrlParam",
+                            "ParentLinkUrlParam": {
+                                "CapMode": "uri",
+                                "UriLevel": 3,
+                                "ArgSegment": {
+                                    "Switch": true,
+                                    "SplitSymbol": "-",
+                                    "Level": -2
+                                }
+                            }
+                        },
+                        {
+                            "ParamType": "SupString",
+                            "SupContent": "man-fixed-string"
+                        },
+                        {
+                            "ParamType": "ParentLinkURI",
+                            "ParentLinkUriParamSup": {
+                                "SplitSymbol": "-",
+                                "JoinSymbol": "asdf",
+                                "StartLevel": 1,
+                                "TermLevel": 2
+                            }
+                        },
+                        {
+                            "ParamType": "ParentLinkExpire"
+                        },
+                        {
+                            "ParamType": "AuthToken"
+                        },
+                        {
+                            "ParamType": "ParentFullURI"
+                        }
+                    ],
+                    "Switch": true
+                }
+            }
+        ]
+    }
+}
+```
+
+
+<span id="远程鉴权"></span>
+### 远程鉴权
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|RemoteAuth |Object |No |表示 "远程鉴权" 特性的配置。 | |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+|RemoteAuthRules |Object[] |No |表示一个鉴权规则的列表。当前，列表中只能包含一条规则。该规则包含匹配条件配置和鉴权配置。当 `Switch` 是 `true` 时，该参数为必填。 | |
+|Condition |Object |Yes |表示匹配条件的配置。如果一个请求满足匹配条件，CDN 对该请求执行 `RemoteAuthRuleAction` 中指定的操作。 | |
+|ConditionRule |Object[] |Yes |表示匹配条件列表。列表中最多可以包含 50 个匹配条件。<br><br>这些匹配条件之间的关系是 "或"，表示如果一个请求满足任意匹配条件，CDN 就对该请求执行 `RemoteAuthRuleAction` 中指定的操作。 | |
+|Object |String |Yes |表示匹配对象。该参数有以下取值：<br><br><br>* `filetype`：表示请求 URL 中的扩展名。<br><br>* `directory`：表示请求 URL 中的某个目录。<br><br>* `path`：表示请求 URL 中的完整路径。 |`filetype` |
+|Operator |String |Yes |表示匹配类型。该参数有以下取值：<br><br><br>* `match`：表示如果 `Value` 匹配了请求中的 `Object`，该请求就满足这个匹配条件。<br><br>* `not_match`：表示如果 `Value` 不匹配请求中的 `Object`，该请求就满足这个匹配条件。<br><br><br>需要留意的是，所有匹配条件中的 `Operator` 必须相同。 |`match` |
+|Type |String |Yes |该参数值只能是 `url`，表示 "请求 URL"。 |`url` |
+|Value |String |Yes |表示一个或者多个匹配值，总长度不能超过 1,024 个字符。多个匹配值之间使用分号（;）分隔。匹配值不能包含以下字符：<br><br><br>* 双斜杠（//）、空格、美元符号（$）、问号（?）<br><br><br>同时，<br><br><br>* 如果 `Object` 是 `filetype`，每个匹配值表示一个请求 URL 后缀，无需以句点（.）开头，只能包含字母和数字。例如：`png;txt`。<br><br>* 如果 `Object` 是 `directory`，每个匹配值表示一个目录路径，以斜杠（/）开头和结尾。例如 `/chs/foods/;/us/birds/`。<br><br>* 如果 `Object` 是 `path`，每个匹配值表示一个 URL 路径，以斜杠（/）开头。每个匹配值中可以包含通配符（\*）表示一个或者多个字符。例如 `/chs/foods/local*sets;/us/birds/chickadee`。 |`png;jpg` |
+|RemoteAuthRuleAction |Object |Yes |表示鉴权相关的配置。<br><br>当一个请求满足 `Condition` 中的匹配条件时，CDN 会将其发送至鉴权服务器进行鉴权，并基于鉴权的结果接受或者拒绝该请求。 | |
+|AuthModeConfig |Object |Yes |表示鉴权服务器的配置。 | |
+|MasterRemoteAddr |String |Yes |表示鉴权服务器的主地址，长度不能超过 100 个字符。主地址的格式是 `<scheme>://<domain>:<port>` 或 `<scheme>://<ip>:<port>`，其中：<br><br><br>* `<scheme>` 是 `http` 或者 `https`。<br><br>* `<domain>` 不能是 `localhost`。<br><br>* `<ip>` 不能是 `127.0.0.1`。<br><br>* `<port>` 是可选的。 |`https://primary.example.com` |
+|PathType |String |Yes |表示鉴权请求的路径。鉴权地址和请求路径组成了完整的鉴权 URL。CDN 会把用户的请求转发到该鉴权 URL。该参数有以下取值：<br><br><br>* `constant`：表示鉴权请求中的路径与用户请求中的路径相同。<br><br>* `variable`：表示您需要在 `pathValue` 参数中指定一个鉴权请求中的路径。 |`constant` |
+|RequestMethod |String |Yes |表示在发送鉴权请求时，CDN 所使用的请求方法。该参数有以下取值：<br><br><br>* `default`：表示鉴权请求所使用的方法与用户的请求相同。<br><br>* `get`：表示鉴权请求使用 GET 方法。<br><br>* `post`：表示鉴权请求使用 POST方法。<br><br>* `head`：表示鉴权请求使用 HEAD 方法。 |`get` |
+|BackupRemoteAddr |String |No |表示鉴权服务器的备地址。地址格式和要求与主地址相同。 |`https://secondary.example.com` |
+|PathValue |String |No |表示一个鉴权请求的路径，长度不能超过 100 个字符。路径必须以斜杠（/）开头，不能包含以下字符：<br><br><br>* 双斜杠（//）、百分号（%）、美元符号（$）、空格、问号（?） |`/auth` |
+|AuthResponseConfig |Object |Yes |CDN 需要对鉴权服务器返回的鉴权状态码进行处理。该参数表示相关的配置。 | |
+|CacheAction |Object |No |CDN 可以缓存鉴权状态码。该参数表示相关的配置。 | |
+|Action |String |Yes |表示 CDN 是否缓存鉴权状态码。该参数有以下取值：<br><br><br>* `nocache`：表示 CDN 不缓存鉴权状态码。<br><br>* `cache`：CDN 缓存鉴权状态码。 |`nocache` |
+|Ttl |Long |Yes |表示鉴权状态码的缓存时间。单位是秒。取值范围是 1\-86400。86400秒表示 24小时。 |`5` |
+|CacheKey |String[] |No |缓存 key 指定了用于区分不同请求 URI 的查询参数。每个参数都必须以 `$` 开头。您也可以指定 [变量字段说明](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-remote-authentication_1-cn#variables)中的参数。 |`[$URI,$host]` |
+|ResponseAction |Object |No |表示鉴权失败时，CDN 如何响应用户。 | |
+|StatusCode |String |No |表示鉴权失败时，CDN 响应用户的状态码。您可以指定范围在 400\-499 中的任意一个状态码。该参数的默认值是 `403`。 |`403` |
+|StatusCodeAction |Object |No |表示 CDN 对鉴权状态码的处理方式。 | |
+|DefaultAction |String |Yes |表示如果鉴权状态码既不是 `FailCode`，又不是 `SuccessCode` 时，CDN 处理鉴权请求的方式。该参数有以下取值：<br><br><br>* `reject`：表示 CDN 认为鉴权失败。<br><br>* `pass`：表示 CDN 认为鉴权成功。 |`pass` |
+|FailCode |String |Yes |表示鉴权失败时的鉴权状态码。您可以指定范围在 400\-499 中的一个或者多个状态码。多个状态码使用英文分号（;）分隔。您也可以指定 4xx 表示 400\-499 中的任意一个状态码。 |`403` |
+|SuccessCode |String |Yes |表示鉴权成功时的鉴权状态码。您可以指定范围在 200\-299 中的一个或者多个状态码。多个状态码使用英文分号（;）分隔。您也可以指定 2xx 表示 200\-299 中的任意一个状态码。 |`200` |
+|TimeOutAction |Object |No |表示鉴权超时后，CDN 如何处理鉴权请求。 | |
+|Action |String |Yes |表示鉴权超时后，CDN 处理鉴权请求的策略。该参数有以下取值：<br><br><br>* `reject`：表示 CDN 认为鉴权失败。<br><br>* `pass`：表示 CDN 认为鉴权成功。 |`reject` |
+|Time |Long |Yes |表示鉴权超时的时间，单位是毫秒，取值范围是 200 \- 3600。 |`200` |
+|QueryStringRules |Object |Yes |表示鉴权请求的参数设置。 | |
+|QueryStringComponents |Object |No |表示鉴权请求参数的设置策略。 | |
+|Action |String |No |表示鉴权请求是否包含用户请求 URL 中的查询参数。该参数有以下取值：<br><br><br>* `exclude`：表示鉴权请求不包含任何查询参数。<br><br>* `include`：表示鉴权请求包含所有查询参数。<br><br>* `includePart`：表示鉴权请求包含指定的查询参数。 |`exclude` |
+|Value |String |No |表示 `Action` 参数所对应的参数值，长度不能超过1,024 个字符。该参数有以下取值：<br><br><br>* 如果 `Action` 是 `exclude` 或 `include`，`Value` 必须是 `*`。<br><br>* 如果 `Action` 是 `includePart`，您需要在 `Value` 参数中指定用户请求 URL 中的一个或者多个查询参数，多个查询参数使用英文分号（;）分隔。您不能指定 `*`。查询参数是区分大小写的，不能包含双引号（"），也不能包含空格。<br><br><br>该参数的默认值是 `*`。 |`*` |
+|QueryStringInstances |Object[] |No |表示鉴权请求中额外的参数设置。您最多可以设置 50 个参数。 | |
+|Action |String |No |表示如何设置鉴权请求参数。当前您只能设置 `Action` 为 `set`。`set` 表示设置参数。您需要在 `Key` 中指定您需要设置的鉴权请求参数。如果您指定的鉴权请求参数不存在，CDN 会在鉴权请求中添加该参数。如果您指定的鉴权请求参数已存在，CDN 会使用 `Value` 的值作为该鉴权请求参数的值。 |`set` |
+|Key |String |No |表示您需要设置的鉴权请求参数，长度不能超过 1,024 个字符，不能包含双引号（"），也不能包含空格。 |`sign` |
+|Value |String |No |表示鉴权请求参数的值，长度不能超过 1,024 个字符，并且区分大小写。`Value`有以下取值：<br><br><br>* 当 `ValueType` 是 `constant` 时，表示鉴权请求参数的值是一个常量。您需要指定该常量值。常量值不能以美元符号（$）开头，也不能包含双引号（"）。<br><br>* 当 `ValueType` 是 `variable` 时，表示鉴权请求参数的值来自一个变量。您可以指定该[变量列表](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-remote-authentication_1-cn#variables)中的变量。<br><br>* 当 `ValueType` 是 `customize` 时，表示鉴权请求参数的值是列表中的变量与固定字符串拼接后的字符串。在拼接的字符串中，变量使用 `${变量名}` 表示。示例值：`bind${request_uri}to${local_ip}done` |`1235565` |
+|ValueType |String |No |表示您在 `Key` 中设置的鉴权请求参数的类型。`ValueType` 有以下取值：<br><br><br>* `constant`：表示鉴权请求参数是一个常量。此时，您需要在 `Value` 中指定该常量的值。<br><br>* `variable`：表示鉴权请求参数的值来自一个变量。参见 `Value` 的说明。<br><br>* `customize`：表示鉴权请求参数的值是一个变量与固定字符串拼接后的字符串。 |`variable` |
+|RequestHeaderRules |Object |Yes |表示鉴权请求头的设置。您最多可以设置 50 个请求头。 | |
+|RequestHeaderComponents |Object |No |表示鉴权请求头的设置策略。 | |
+|Action |String |Yes |表示鉴权请求头是否包含用户请求头。该参数有以下取值：<br><br><br>* `exclude`：表示鉴权请求头中不包含任何用户请求头。<br><br>* `include`：表示鉴权请求头中包含所有用户请求头。<br><br>* `includePart`：表示鉴权请求头包含指定的用户请求头。 |`exclude` |
+|Value |String |No |表示 `Action` 参数所对应的参数值，长度不能超过 1,024 个字符。该参数有以下说明：<br><br><br>* 如果 `Action` 是 `exclude` 或 `include`，`Value` 必须是 `*`。<br><br>* 如果 `Action` 是 `includePart`，`Value` 参数的取值是用户请求中的一个或者多个头部。多个头部使用英文分号（;）分隔。其取值不能只是 `*`，不能包含以下字符：<br><br>   * 下划线（_）、空格、双引号（"）<br><br><br>该参数的默认值是 `*`。 |`*` |
+|RequestHeaderInstances |Object[] |No |表示一组鉴权请求头的设置。<br><br>需要留意的是，在 CDN 发起鉴权请求时，请求中可能已经包含了以下头部：<br><br><br>* `X-Forwarded-Protocol`，`X-Forwarded-Proto`，`X-Client-Scheme`：这三个头部都表示用户请求所使用协议，没有区别。<br><br>* `X-Real-IP`：表示用户真实的 IP 地址。该头部的值不会受代理服务器的影响。<br><br>* `X-Forwarded-For`：表示用户的 IP 地址。如果用户的请求经过了代理服务器，该头部的值会变成代理服务器的 IP 地址。<br><br><br>不建议您在该参数中对这些头部进行设置。如果您设置了这些头部，这些头部的原始值会被覆盖。 | |
+|Action |String |Yes |表示如何设置鉴权请求头。当前您只能设置该参数值为 `set`。`set` 表示设置请求头。此时，您需要在 `Key` 中指定您需要设置的请求头。如果您设置的请求头不存在，CDN 会在鉴权请求中添加该请求头。如果您设置的请求头已存在，CDN 会使用 `Value` 的值作为该请求头的值。 |`set` |
+|Key |String |Yes |表示您需要设置的请求头。请求头不能是 `host`，长度不能超过 1,024 个字符，并且不区分大小写。<br><br>请求头不能包含以下字符：<br><br><br>* 下划线（_）、空格、双引号（"） |`x-test-header` |
+|ValueType |String |Yes |表示请求头的类型。该参数有以下取值：<br><br><br>* `constant`：表示请求头的值是一个常量。您需要在 `Value` 参数中指定该常量的值。<br><br>* `variable`：表示请求头的值来自一个变量。参见 `Value` 的说明。<br><br>* `customize`：表示请求头的值是一个变量与固定字符串拼接后的字符串。 |`variable` |
+|Value |String |No |表示请求头的值。该参数有以下取值：<br><br><br>* 当 `ValueType` 是 `constant` 时，您需要指定一个常量值。该常量值的长度不能超过 1,024 个字符，并且区分大小写。同时，该常量值不能以美元符号（$）开头，不能包含双引号（"）。<br><br>* 当 `ValueType` 是 `variable` 时，表示请求头的值来自一个变量。您可以指定该[变量列表](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-remote-authentication_1-cn#variables)中的变量。<br><br>* 当 `ValueType` 是 `customize` 时，表示请求头的值是列表中的变量与固定字符串拼接后的字符串。在拼接的字符串中，变量使用 `${变量名}` 表示。示例值：`my${host}is${referer}great` |`1234fdf` |
+|RequestHost |String |No |表示鉴权请求中 HOST 头部的值。该参数的默认值是 `default`，表示 HOST 头部的值与您的域名相同。 |`www.example.com` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "RemoteAuth": {
+        "RemoteAuthRules": [
+            {
+                "Condition": {
+                    "ConditionRule": [
+                        {
+                            "Name": "",
+                            "Object": "filetype",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "jpg;png"
+                        },
+                        {
+                            "Name": "",
+                            "Object": "directory",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "/test/dir1/;/test/dir2/"
+                        },
+                        {
+                            "Name": "",
+                            "Object": "path",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "/index.php"
+                        }
+                    ],
+                    "Connective": "OR"
+                },
+                "RemoteAuthRuleAction": {
+                    "AuthModeConfig": {
+                        "BackupRemoteAddr": "http://auth1.example.com:8080",
+                        "MasterRemoteAddr": "http://auth2.example.com:8080",
+                        "PathType": "variable",
+                        "PathValue": "/auth",
+                        "RequestMethod": "default"
+                    },
+                    "AuthResponseConfig": {
+                        "CacheAction": {
+                            "Action": "cache",
+                            "CacheKey": [
+                                "URI",
+                                "content_type"
+                            ],
+                            "IgnoreCase": false,
+                            "Ttl": 10
+                        },
+                        "ResponseAction": {
+                            "StatusCode": "403"
+                        },
+                        "StatusCodeAction": {
+                            "DefaultAction": "pass",
+                            "FailCode": "401",
+                            "SuccessCode": "200"
+                        },
+                        "TimeOutAction": {
+                            "Action": "pass",
+                            "Time": 200
+                        }
+                    },
+                    "QueryStringRules": {
+                        "QueryStringComponents": {
+                            "Action": "includePart",
+                            "Value": "color;size"
+                        },
+                        "QueryStringInstances": [
+                            {
+                                "Action": "set",
+                                "Key": "param1",
+                                "Value": "val1",
+                                "ValueType": "constant"
+                            },
+                            {
+                                "Action": "set",
+                                "Key": "param2",
+                                "Value": "referer",
+                                "ValueType": "variable"
+                            },
+                            {
+                                "Action": "set",
+                                "Key": "param3",
+                                "Value": "val3${referer}!",
+                                "ValueType": "customize"
+                            }
+                        ]
+                    },
+                    "RequestBodyRules": "default",
+                    "RequestHeaderRules": {
+                        "RequestHeaderComponents": {
+                            "Action": "includePart",
+                            "Value": "header1;header2"
+                        },
+                        "RequestHeaderInstances": [
+                            {
+                                "Action": "set",
+                                "Key": "hd1",
+                                "Value": "val1",
+                                "ValueType": "constant"
+                            },
+                            {
+                                "Action": "set",
+                                "Key": "hd2",
+                                "Value": "content_type",
+                                "ValueType": "variable"
+                            },
+                            {
+                                "Action": "set",
+                                "Key": "hd3",
+                                "Value": "val3${client_ip}a${URI}",
+                                "ValueType": "customize"
+                            }
+                        ],
+                        "RequestHost": "test.example.com"
+                    }
+                }
+            }
+        ],
+        "Switch": true
+    }
+}
+```
+
+
+<span id="下载限速"></span>
+### 下载限速
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|DownloadSpeedLimit |Object |No |表示 "下载限速" 特性的配置。 | |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+|DownloadSpeedLimitRules |Object[] |No |表示一个限速规则的列表。当 `Switch` 是 `true` 时，该参数为必填。该参数的其他说明如下：<br><br><br>* 每条规则包含匹配条件配置和限速配置。<br><br>* 列表中最多可以包含 50 条规则。<br><br>* 列表中规则的出现顺序表示规则的优先级排序。列表中第一条规则的优先级最高。<br><br>* 当收到一个用户请求时，CDN 按规则的优先级，从高到低将规则与请求匹配。如果一条规则匹配了请求，CDN 就停止处理其余规则。 | |
+|DownloadSpeedLimitAction |Object |Yes |表示限速配置。 | |
+|SpeedLimitRate |Long |Yes |表示 CDN 在响应单个请求时的最大数据传输速度，单位是 `B/S`，使用的进制是 `1,024`。该参数的取值范围是 1\-1,073,741,824,000,000。`1,073,741,824,000,000` 是 1,000,000 Gbps。 |`500000` |
+|SpeedLimitRateAfter |Long |No |表示一个初始数据量，单位是 `bytes`，使用的进制是 `1,024`。该参数的取值范围是 0\-1,073,741,824,000,000。<br><br>当 CDN 对一个请求开始传输数据时，在传输的数据量达到该初始数据量前，该限速规则不会启用。<br><br>如果该参数值是 `0`，表示在 CDN 对一个请求开始传输第一个字节时，该限速规则就启用了。 |`1000` |
+|SpeedLimitTime |Object |No |表示限速规则启用的日期和时间段。 | |
+|DayWeek |String |Yes |表示该限速规则启用的日期，有以下取值：`monday`，`tuesday`，`wednesday`，`thursday`，`friday`，`saturday`，`sunday`，`unlimited`。`unlimited` 表示每天。<br><br>您可以指定一个或多个日期，多个日期之间使用分号（;）分隔。 |`monday;friday` |
+|BeginTime |String |No |表示该限速规则启用的开始时间，格式是 `mm:ss`。<br><br>如果 `DayWeek` 是 `unlimited`, `BeginTime` 会被设置为 `00:00`，您无法更改。 |`05:08` |
+|EndTime |String |No |表示该限速规则启用的结束时间，格式是 `mm:ss`。<br><br>如果 `DayWeek` 是 `unlimited`, `EndTime` 会被设置为 `23:59`，您无法更改。 |`16:48` |
+|Condition |Object |No |表示匹配条件的配置。如果请求匹配了某个条件，CDN 对该请求执行 `DownloadSpeedLimitAction` 中指定的操作。<br><br>如果不指定该参数，CDN 对所有请求执行 `DownloadSpeedLimitAction` 中指定的操作。 | |
+|ConditionRule |Object[] |Yes |表示匹配条件列表。当前，列表中只能包含一个匹配条件。 | |
+|Object |String |Yes |表示匹配对象。该参数有以下取值：<br><br><br>* `filetype`：表示请求 URL 中的扩展名。<br><br>* `directory`：表示请求 URL 中的某个目录。<br><br>* `path`：表示完整的请求路径。<br><br>* `unlimited`：表示域名下的所有文件。<br><br>* `regex`：表示完整的请求路径，通过正则表达式匹配。 |`filetype` |
+|Operator |String |Yes |表示匹配类型。该参数的值只能是 `match`，表示如果 `Value` 匹配了请求中的 `Object`，该请求就满足这个匹配条件。 |`match` |
+|Type |String |Yes |该参数值只能是 `url`，表示 "请求 URL"。 |`url` |
+|Value |String |Yes |表示一个或者多个匹配值，总长度不能超过 1,024 个字符。多个匹配值之间使用分号（;）分隔。匹配值不能包含以下字符：<br><br><br>* 双斜杠（//）、空格、美元符号（$）、问号（?）<br><br><br>同时，<br><br><br>* 如果 `Object` 是 `filetype`，每个匹配值表示一个请求 URL 后缀，无需以句点（.）开头，只能包含字母和数字。例如：`png;txt`。<br><br>* 如果 `Object` 是 `directory`，每个匹配值表示一个目录路径，以斜杠（/）开头和结尾。例如 `/chs/foods/;/us/birds/`。<br><br>* 如果 `Object` 是 `path`，每个匹配值表示一个 URL 路径，以斜杠（/）开头。每个匹配值中可以包含通配符（\*）表示一个或者多个字符。例如 `/chs/foods/local*sets;/us/birds/chickadee`。<br><br>* 如果 `Object` 是 `unlimited`，该参数值必须为空（""）。<br><br>* 如果 `Object` 是 `regex`，表示一个或者多个正则表达式。多个正则表达式使用分号（;）分隔。例如 `/a/*.jpg`。 |`/www/img/f1/;/www/doc/` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "DownloadSpeedLimit": {
+        "Switch": true,
+        "DownloadSpeedLimitRules": [
+            {
+                "Condition": {
+                    "ConditionRule": [
+                        {
+                            "Type": "url",
+                            "Object": "filetype",
+                            "Operator": "match",
+                            "Value": "png;js"
+                        }
+                    ]
+                },
+                "DownloadSpeedLimitAction": {
+                    "SpeedLimitRate": 2048,
+                    "SpeedLimitRateAfter": 1024,
+                    "SpeedLimitTime": {
+                        "DayWeek": "monday",
+                        "BeginTime": "18:00",
+                        "EndTime": "23:00"
+                    }
+                }
+            }
+        ]
+    }
+}
+```
+
+
+<span id="ip-访问限频"></span>
+### IP 访问限频
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|IpFreqLimit |Object |No |表示 "IP 访问限频" 特性的配置模块。该特性默认为禁用。要使用该特性，[提交工单](https://console.byteplus.com/workorder/create)。 | |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+|IpFreqLimitRules |Object[] |No |表示一组限频的规则。当 `Switch` 为 `true` 时，该参数为必填。当前您只能指定一条规则。 | |
+|IpFreqLimitAction |Object |Yes |表示限频操作的配置。 | |
+|Action |String |Yes |表示当一个 IP 地址的 QPS 达到 `FreqLimitRate` 时，CDN 的行为。当前，您只能指定该参数值为 `deny`，表示 CDN 拒绝来自该 IP 地址的新请求。 |`deny` |
+|FreqLimitRate |Long |Yes |指定 IP 的 QPS 阈值。该参数的取值范围是 1\-1,000,000。 |`5000` |
+|StatusCode |String |Yes |表示当 CDN 拒绝来自某个 IP 地址的请求时， CDN 的响应状态码。当前，该参数值只能为 `403`。 |`403` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "IpFreqLimit": {
+        "IpFreqLimitRules": [
+            {
+                "IpFreqLimitAction": {
+                    "FreqLimitRate": 1000,
+                    "Action": "deny"
+                }
+            }
+        ],
+        "Switch": true
+    }
+}
+```
+
+
+<span id="缓存配置"></span>
+## 缓存配置
+
+<span id="缓存键值"></span>
+### 缓存键值
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|CacheKey |Object[] |No |表示 "缓存键值" 特性的配置。在该配置中，您可以创建一个规则列表，说明如下：<br><br><br>* 每条规则包含匹配条件配置和操作配置。<br><br>* 列表中最多可以包含 50 条规则。<br><br>* 规则在列表中出现的顺序表示规则的优先级。列表中第一条规则的优先级最高。<br><br>* 当收到一个用户请求时，CDN 按规则的优先级，从高到低将规则与请求匹配。如果一条规则匹配了请求，CDN 就停止处理其余规则。<br><br><br>您**必须**在规则列表的最后添加以下默认规则。该默认规则用于匹配任何未能匹配其他规则的用户请求。在默认规则中，您可以调整 `CacheKeyAction` 的设置，但不能调整 `Condition` 的配置。<br><br>```json```<br>```{```<br>```            "CacheKeyAction": {```<br>```                "CacheKeyComponents": [```<br>```                    {```<br>```                        "Action": "include",```<br>```                        "IgnoreCase": true,```<br>```                        "Object": "queryString",```<br>```                        "Subobject": "*"```<br>```                    }```<br>```                ]```<br>```            },```<br>```            "Condition": {```<br>```                "ConditionRule": [```<br>```                    {```<br>```                        "Name": "",```<br>```                        "Object": "directory",```<br>```                        "Operator": "match",```<br>```                        "Type": "url",```<br>```                        "Value": "/"```<br>```                    }```<br>```                ]```<br>```            }```<br>```        }```<br> | |
+|CacheKeyAction |Object |Yes |当一个请求满足 `Condition` 中的匹配条件时，CDN 会为请求文件设置缓存键。该参数表示缓存键的配置。 | |
+|CacheKeyComponents |Object[] |Yes |缓存键是由请求中的 host、路径和查询字符串等部分组成。该参数表示其中各组成部分的配置。当前，您只能对缓存键中包含的查询字符串进行配置。 | |
+|Action |String |Yes |表示 CDN 如何在请求文件的缓存键中设置查询字符串。该参数有以下取值：<br><br><br>* `exclude`：表示缓存键不包含请求中的任何查询参数。<br><br>* `include`：表示缓存键包含请求中所有的查询参数。缓存键中查询参数的顺序与请求 URL 中的顺序相同。<br><br>* `includePart`：表示缓存键仅包含 `Subobject` 中指定的查询参数。CDN 对包含在缓存键中的查询参数按字母顺序排序后生成缓存键。<br><br>* `excludePart`：表示缓存键包含请求中除了 `Subobject` 中指定的查询参数之外的所有查询参数。CDN 对包含在缓存键中的查询参数按字母顺序排序后生成缓存键。<br><br><br>说明<br><br>缓存键中查询参数的顺序影响缓存匹配。如果请求 URL 中查询参数的顺序与缓存键中的查询参数的顺序不同，则 CDN 判定请求未命中缓存。 |`excludePart` |
+|IgnoreCase |Boolean |Yes |表示 `Subobject` 是否是大小写敏感的。该参数有以下取值：<br><br><br>* `true`：表示大小写不敏感。<br><br>* `false`：表示大小写敏感。<br><br><br>该参数的默认值为 `false`，并且仅当 `Action` 是 `includePart` 或 `excluePart` 时有效。 |`true` |
+|Object |String |Yes |表示缓存键中的一个组成部分。当前该参数值只能是 `querystring`，表示查询字符串。 |`queryString` |
+|Subobject |String |Yes |该参数对应于 `Action`，表示 CDN 在缓存键中包含的具体查询参数。该参数的说明如下：<br><br><br>* 如果 `Action` 是 `include` 或者 `exclude`，`Subobject` 必须是 `*`，表示请求中的全部查询参数。<br><br>* 如果 `Action` 是 `includePart` 或者 `excludePart`，表示需要保留或者不保留的查询参数。多个查询参数之间使用分号（;）分隔。您指定的查询参数不能是 `*`，也不能包含双斜杠（//）、百分号（%）、空格。 |`sign;testParams` |
+|Condition |Object |Yes |表示匹配条件的配置。如果请求匹配了某个条件，CDN 对该请求执行 `CacheKeyAction` 中指定的操作。<br><br>`CacheKey` 中最后一条规则的 `Condition` 必须是以下设置。参见 请求示例。<br><br>```json```<br>```"Condition": {```<br>```  "ConditionRule": [```<br>```    {```<br>```      "Object": "directory",```<br>```      "Operator": "match",```<br>```      "Type": "url",```<br>```      "Value": "/"```<br>```    }```<br>```  ]```<br>```}```<br> | |
+|ConditionRule |Object[] |Yes |表示匹配条件列表。列表中只能包含一个匹配条件。 | |
+|Object |String |Yes |表示匹配对象。该参数有以下取值：<br><br><br>* `filetype`：表示请求 URL 中的扩展名。<br><br>* `directory`：表示请求 URL 中的某个目录。<br><br>* `path`：表示请求 URL 中的完整路径。<br><br>* `regex`：表示请求 URL 中的路径，通过正则表达式匹配。 |`directory` |
+|Operator |String |Yes |表示匹配类型。该参数的值只能是 `match`，表示如果 `Value` 匹配了请求中的 `Object`，该请求就满足这个匹配条件。 |`match` |
+|Type |String |Yes |该参数值只能是 `url`，表示 "请求 URL"。 |`url` |
+|Value |String |Yes |表示一个或者多个匹配值，总长度不能超过 1,024 个字符。多个匹配值之间使用分号（;）分隔。匹配值不能包含以下字符：<br><br><br>* 双斜杠（//）、空格、美元符号（$）、问号（?）<br><br><br>同时，<br><br><br>* 如果 `Object` 是 `filetype`，每个匹配值表示一个请求 URL 后缀，无需以句点（.）开头，只能包含字母和数字。例如：`png;txt`。<br><br>* 如果 `Object` 是 `directory`，每个匹配值表示一个目录路径，以斜杠（/）开头和结尾。例如 `/chs/foods/;/us/birds/`。<br><br>* 如果 `Object` 是 `path`，每个匹配值表示一个 URL 路径，以斜杠（/）开头。每个匹配值中可以包含通配符（\*）表示一个或者多个字符。例如 `/chs/foods/local*sets;/us/birds/chickadee`。 |`png` |
+|IgnoreCase |Boolean |No |表示 `Value` 是否是大小写敏感的。该参数有以下取值：<br><br><br>* `true`：表示大小写不敏感。<br><br>* `false`：表示大小写敏感。<br><br><br>该参数的默认值为 `false`。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "CacheKey": [
+        {
+            "CacheKeyAction": {
+                "CacheKeyComponents": [
+                    {
+                        "Action": "excludePart",
+                        "IgnoreCase": true,
+                        "Object": "queryString",
+                        "Subobject": "version"
+                    }
+                ]
+            },
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "path",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "/www/img/image.png",
+                        "IgnoreCase": true
+                    }
+                ]
+            }
+        },
+        {
+            "CacheKeyAction": {
+                "CacheKeyComponents": [
+                    {
+                        "Action": "include",
+                        "IgnoreCase": true,
+                        "Object": "queryString",
+                        "Subobject": "*"
+                    }
+                ]
+            },
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "directory",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "/"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
+
+<span id="节点缓存规则"></span>
+### 节点缓存规则
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|Cache |Object[] |No |表示 "缓存规则" 特性的配置。该特性默认为禁用，表示不创建自定义规则。<br><br><br>* 列表中最多可以包含 50 条规则。<br><br>* 列表中规则的顺序定义了规则的优先级。列表中第一条规则的优先级最高。<br><br>* 当收到一个用户请求时，CDN 按规则的优先级，从高到低将规则与请求匹配。如果一条规则匹配了请求，CDN 就停止处理其余规则。<br><br><br>CDN 中有一条 [默认缓存规则](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-caching-rules-cn#%E9%BB%98%E8%AE%A4%E7%BC%93%E5%AD%98%E8%A7%84%E5%88%99)，用于匹配任何未能匹配其他规则的用户请求。该默认规则始终生效，并且优先级最低。您**无需**在配置该特性时指定该默认规则。 | |
+|CacheAction |Object |Yes |当一个请求满足 `Condition` 中的匹配条件时，CDN 会对请求文件执行指定的操作。该参数定义了该操作相关的配置。 | |
+|Action |String |Yes |表示 CDN 执行的操作。当前该参数值只能是 `cache`，表示缓存请求的文件。`DefaultPolicy` 中指定了如何缓存请求的文件。 |`cache` |
+|IgnoreCase |Boolean |Yes |表示 `Value` 是否是大小写敏感的。该参数有以下取值：<br><br><br>* `true`：表示大小写不敏感。<br><br>* `false`：表示大小写敏感<br><br><br>该参数的默认值为 `false`。 |`true` |
+|Ttl |Long |Yes |表示请求文件的缓存时长，单位为`秒`，范围为 `0-315,360,000`。`315,360,000` 是 10 年。<br><br>如果该参数值为 `0`，CDN 在收到匹配规则的请求时，会按以下方式处理：<br><br><br>* 如果文件尚未被缓存，CDN 不会缓存该文件。<br><br>* 如果文件已被缓存，该文件会立即过期，后续对该文件的请求将触发 [回源校验](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-caching-rules-cn#%E5%9B%9E%E6%BA%90%E6%A0%A1%E9%AA%8C)。这种情况通常发生在您修改缓存规则，将一个已缓存文件的缓存时长从非零值改为 `0` 时。 |`100` |
+|DefaultPolicy |String |No |表示 CDN 对请求文件的缓存行为。该参数有以下取值：<br><br><br>* `force_cache`：对应 CDN 控制台中的 **CDN缓存** + **强制缓存（开）**  的配置组合。<br><br>* `default`：对应 CDN 控制台中的 **CDN缓存** + **强制缓存（关）**  的配置组合。<br><br>* `origin_first`：对应 CDN 控制台中的 **遵循源站** + **补充缓存（开）**  的配置组合。<br><br>* `origin_first_Replenish`：对应 CDN 控制台中的 **遵循源站** + **补充缓存（关）**  的配置组合。<br><br>* `no_cache`：对应 CDN 控制台中的 **不缓存** 配置。<br><br><br>该参数的默认值是 `default`。关于这些缓存策略的描述，参见 [缓存规则](https://docs.byteplus.com/zh-CN/byteplus-cdn/docs/caching-rules)。 |`force_cache` |
+|SetCookieNoCache |Boolean |No |表示是否缓存包含 `Set-Cookie` 头部的源站响应。该参数有以下取值：<br><br><br>* `true`：表示 CDN 会缓存这类响应。<br><br>* `false`：表示 CDN 不会缓存这类响应。<br><br><br>该参数的默认值是 `false`。<br><br>说明<br><br>如果 `DefaultPolicy` 为 `force_cache`，`SetCookieNoCache` 不生效。 |`true` |
+|Condition |Object |Yes |表示匹配条件的配置。如果请求匹配了某个条件，CDN 对该请求执行 `CacheAction` 中指定的操作。 | |
+|ConditionRule |Object[] |Yes |表示匹配条件列表。当前，列表中只能包含一个匹配条件。 | |
+|Object |String |Yes |表示匹配对象。该参数有以下取值：<br><br><br>* `filetype`：表示请求 URL 中的扩展名。<br><br>* `directory`：表示请求 URL 中的某个目录。<br><br>* `path`：表示请求 URL 中的完整路径。<br><br>* `regex`：表示请求 URL 中的路径，通过正则表达式匹配。 |`directory` |
+|Operator |String |Yes |表示匹配类型。该参数的值只能是 `match`，表示如果 `Value` 匹配了请求中的 `Object`，该请求就满足这个匹配条件。 |`match` |
+|Type |String |Yes |该参数值只能是 `url`，表示 "请求 URL"。 |`url` |
+|Value |String |Yes |表示一个或者多个匹配值，总长度不能超过 1,024 个字符。多个匹配值之间使用分号（;）分隔。匹配值不能包含以下字符：<br><br><br>* 双斜杠（//）、空格、美元符号（$）、问号（?）<br><br><br>同时，<br><br><br>* 如果 `Object` 是 `filetype`，每个匹配值表示一个请求 URL 后缀，无需以句点（.）开头，只能包含字母和数字。例如：`png;txt`。<br><br>* 如果 `Object` 是 `directory`，每个匹配值表示一个目录路径，以斜杠（/）开头和结尾。例如 `/chs/foods/;/us/birds/`。<br><br>* 如果 `Object` 是 `path`，每个匹配值表示一个 URL 路径，以斜杠（/）开头。每个匹配值中可以包含通配符（\*）表示一个或者多个字符。例如 `/chs/foods/local*sets;/us/birds/chickadee`。 |`png` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "Cache": [
+        {
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "filetype",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "png;js"
+                    }
+                ]
+            },
+            "CacheAction": {
+                "Action": "cache",
+                "IgnoreCase": true,
+                "Ttl": 1000
+            }
+        },
+        {
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "directory",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "/test/dir/"
+                    }
+                ]
+            },
+            "CacheAction": {
+                "Action": "cache",
+                "Ttl": 2000
+            }
+        },
+        {
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "directory",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "/"
+                    }
+                ]
+            },
+            "CacheAction": {
+                "Action": "cache",
+                "Ttl": 2000,
+                "DefaultPolicy": "force_cache"
+            }
+        }
+    ]
+}
+```
+
+
+<span id="状态码缓存规则"></span>
+### 状态码缓存规则
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|NegativeCache |Object[] |No |表示 "状态码缓存" 特性的配置。在该配置中，您可以创建一个规则列表，说明如下：<br><br><br>* 每条规则包含过匹配条件配置和操作配置。<br><br>* 列表中最多可以包含 50 条规则。<br><br>* 规则在列表中出现的顺序表示规则的优先级。列表中第一条规则的优先级最高。<br><br>* 当收到一个用户请求时，CDN 按规则的优先级，从高到低将规则与请求匹配。如果一条规则匹配了请求，CDN 就停止处理其余规则。 | |
+|NegativeCacheRule |Object |Yes |当一个请求满足 `Condition` 中的匹配条件时，CDN 会对请求文件执行指定的操作。该参数定义了该操作相关的配置。 | |
+|Action |String |Yes |表示 CDN 执行的操作。当前该参数值只能是 `cache`，表示缓存源站的响应状态码。 |`cache` |
+|StatusCode |String |Yes |指定一个需要缓存的状态码。状态码的范围是 `400-599`。您也可以指定 `4xx` 或者 `5xx`。`4xx` 表示 400 到 499 之间的所有状态码。`5xx` 表示 500 到 599 之间的所有状态码。 |`404` |
+|Ttl |Long |Yes |表示状态码的缓存时间。单位是`秒`。时间的范围是 `1-315,360,000`。`315,360,000` 表示 10 年。 |`100` |
+|IgnoreCase |Boolean |No |表示 `Value` 是否是大小写敏感的。<br><br><br>* `true`：表示大小写不敏感。<br><br>* `false`：表示大小写敏感。<br><br><br>该参数的默认值为 `false`。 |`true` |
+|Condition |Object |No |表示匹配条件的配置。如果请求匹配了某个条件，CDN 对该请求执行 `NegativeCacheRule` 中指定的操作。 | |
+|ConditionRule |Object[] |Yes |表示匹配条件列表。当前，列表中只能包含一个匹配条件。 | |
+|Object |String |Yes |表示匹配对象。该参数有以下取值：<br><br><br>* `filetype`：表示请求 URL 中的扩展名。<br><br>* `directory`：表示请求 URL 中的某个目录。<br><br>* `path`：表示请求 URL 中的完整路径。 |`directory` |
+|Operator |String |Yes |表示匹配类型。该参数的值只能是 `match`，表示如果 `Value` 匹配了请求中的 `Object`，该请求就满足这个匹配条件。 |`match` |
+|Type |String |Yes |该参数值只能是 `url`，表示 "请求 URL"。 |`url` |
+|Value |String |Yes |表示一个或者多个匹配值，总长度不能超过 1,024 个字符。多个匹配值之间使用分号（;）分隔。匹配值不能包含以下字符：<br><br><br>* 双斜杠（//）、空格、美元符号（$）、问号（?）<br><br><br>同时，<br><br><br>* 如果 `Object` 是 `filetype`，每个匹配值表示一个请求 URL 后缀，无需以句点（.）开头，只能包含字母和数字。例如：`png;txt`。<br><br>* 如果 `Object` 是 `directory`，每个匹配值表示一个目录路径，以斜杠（/）开头和结尾。例如 `/chs/foods/;/us/birds/`。<br><br>* 如果 `Object` 是 `path`，每个匹配值表示一个 URL 路径，以斜杠（/）开头。每个匹配值中可以包含通配符（\*）表示一个或者多个字符。例如 `/chs/foods/local*sets;/us/birds/chickadee`。 |`png` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+在这个示例中，第二个 `NegativeCache` 的规则不生效。状态码 405 的实际 Ttl 是 1000。
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain":"www.example.com",
+    "NegativeCache": [
+        {
+            "Condition":{
+                "ConditionRule":[
+                    {
+                        "Object":"filetype",
+                        "Operator":"match",
+                        "Type":"url",
+                        "Value":"png;js"
+                    }
+                ]
+            },
+            "NegativeCacheRule": {
+                "Action":"cache",
+                "StatusCode":"4xx",
+                "Ttl":1000
+            }
+        },
+        {
+            "Condition":{
+                "ConditionRule":[
+                    {
+                        "Object":"filetype",
+                        "Operator":"match",
+                        "Type":"url",
+                        "Value":"png;js"
+                    }
+                ]
+            },
+            "NegativeCacheRule":{
+                "Action":"cache",
+                "StatusCode":"405",
+                "Ttl":2000
+            }
+        }
+    ]
+}
+```
+
+
+<span id="浏览器缓存规则"></span>
+### 浏览器缓存规则
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|BrowserCache |Object[] |No |表示 "浏览器缓存" 特性的配置。在该配置中，您可以创建一个规则列表，说明如下：<br><br><br>* 每条规则包含匹配条件配置和操作配置。<br><br>* 列表中最多可以包含 50 条规则。<br><br>* 规则在列表中出现的顺序表示规则的优先级。列表中第一条规则的优先级最高。<br><br>* 当收到一个用户请求时，CDN 按规则的优先级，从高到低将规则与请求匹配。如果一条规则匹配了请求，CDN 就停止处理其余规则。 | |
+|CacheAction |Object |Yes |当一个请求满足 `Condition` 中的匹配条件时，CDN 会对请求文件执行指定的操作。该参数定义了该操作相关的配置。 | |
+|Action |String |Yes |表示浏览器需要执行的操作。当前该参数值只能是 `cache`，表示缓存请求的文件。`DefaultPolicy` 中指定了如何缓存请求的文件。 |`cache` |
+|IgnoreCase |Boolean |Yes |表示 `Value` 是否是大小写敏感的。<br><br><br>* `true`：表示大小写不敏感。<br><br>* `false`：表示大小写敏感。<br><br><br>该参数的默认值为 `false`。 |`true` |
+|Ttl |Long |Yes |表示浏览器需要缓存请求文件的时长，单位是秒。CDN 会在响应头中包含 `Cache-Control: max-age` 头部，头部值就是该参数值。 |`100` |
+|DefaultPolicy |String |No |表示浏览器该如何缓存请求的文件。该参数有以下取值：<br><br><br>* `cache`：表示需要缓存请求的文件。<br><br>* `origin_first`：表示遵循来自源站的缓存策略。该策略会包含在 CDN 的响应中。<br><br>* `no_cache`：表示不需要缓存请求的文件。<br><br><br>关于浏览器缓存策略的详细信息，参见 [浏览器缓存策略](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-browser-caching-cn)。 |`cache` |
+|SetCookieNoCache |Boolean |No |是否设置cookie不缓存，仅支持节点缓存规则 | |
+|Condition |Object |Yes |表示匹配条件的配置。如果请求匹配了某个条件，CDN 对该请求执行 `CacheAction` 中指定的操作。 | |
+|ConditionRule |Object[] |Yes |表示匹配条件列表。当前，列表中只能包含一个匹配条件。 | |
+|Object |String |Yes |表示匹配对象。该参数有以下取值：<br><br><br>* `filetype`：表示请求 URL 中的扩展名。<br><br>* `directory`：表示请求 URL 中的某个目录。<br><br>* `path`：表示请求 URL 中的完整路径。<br><br>* `regex`：表示请求 URL 中的路径，通过正则表达式匹配。 |`directory` |
+|Operator |String |Yes |表示匹配类型。该参数的值只能是 `match`，表示如果 `Value` 匹配了请求中的 `Object`，该请求就满足这个匹配条件。 |`match` |
+|Type |String |Yes |该参数值只能是 `url`，表示 "请求 URL"。 |`url` |
+|Value |String |Yes |表示一个或者多个匹配值，总长度不能超过 1,024 个字符。多个匹配值之间使用分号（;）分隔。匹配值不能包含以下字符：<br><br><br>* 双斜杠（//）、空格、美元符号（$）、问号（?）<br><br><br>同时，<br><br><br>* 如果 `Object` 是 `filetype`，每个匹配值表示一个请求 URL 后缀，无需以句点（.）开头，只能包含字母和数字。例如：`png;txt`。<br><br>* 如果 `Object` 是 `directory`，每个匹配值表示一个目录路径，以斜杠（/）开头和结尾。例如 `/chs/foods/;/us/birds/`。<br><br>* 如果 `Object` 是 `path`，每个匹配值表示一个 URL 路径，以斜杠（/）开头。每个匹配值中可以包含通配符（\*）表示一个或者多个字符。例如 `/chs/foods/local*sets;/us/birds/chickadee`。 |`png` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "BrowserCache": [
+        {
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "filetype",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "png;js"
+                    }
+                ]
+            },
+            "CacheAction": {
+                "Action": "cache",
+                "IgnoreCase": true,
+                "Ttl": 1000,
+                "DefaultPolicy": "cache"
+            }
+        }
+    ]
+}
+```
+
+
+<span id="http-响应头设置"></span>
+### HTTP 响应头设置
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|ResponseHeader |Object[] |No |表示 "HTTP 响应头" 特性的配置。 | |
+|ResponseHeaderAction |Object |Yes |表示 CDN 在响应用户请求的时候，对响应头的操作。 | |
+|ResponseHeaderInstances |Object[] |Yes |表示一个响应头的配置规则列表。每个规则都包含一个头部的相关操作设置。您最多可以添加 50 条规则。 | |
+|Action |String |Yes |指定对响应头的操作。该参数有以下取值：<br><br><br>* `set`：表示设置一个头部。设置操作包括添加与修改。如果源站响应中已包含该头部，该头部的值会被覆盖。如果源站响应中没有包含该头部，该头部会被添加。<br><br>* `delete`，表示删除一个头部。 |`set` |
+|Key |String |Yes |指定一个头部的名称。名称不能超过 1,024个字符，不区分大小写，不能包含以下字符：<br><br><br>* 下划线（_）、空格、双引号（"）<br><br><br>同时，头部名称不能使用这些 [特定的名称](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-cdn-response-headers-cn#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)。 |`Content-Disposition` |
+|ValueType |String |Yes |指定 `Key` 的取值类型。该参数仅当 `Action` 是 `set` 的时候才有效。如果 `Action` 不是 `set`，该参数无效。该参数有以下取值：<br><br><br>* `constant`：表示 `Key` 的值是一个字符串。<br><br>* `variable`：表示 `Key` 的值来自一个变量。<br><br>* `customize`：表示 `Key` 的值是一个变量与字符串拼接后的字符串。 |`constant` |
+|AccessOriginControl |Boolean |No |表示在 CDN 响应用户请求时，是否校验请求中的 Origin 头部。<br><br>该参数有以下取值：<br><br><br>* `true`：表示 CDN 会校验 Origin 头部。如果校验成功，CDN 会在响应中包含 Access\-Control\-Allow\-Origin 头部。头部值与 Origin 头部值相同。如果校验失败，响应中不会包含 Access\-Control\-Allow\-Origin 头部。<br><br>* `false`：表示 CDN 不会校验 Origin 头部。在响应中，CDN 会包含 Access\-Control\-Allow\-Origin 头部。头部值是您配置的 Access\-Control\-Allow\-Origin 的内容。<br><br><br>该参数的默认值是 `false`。<br><br>该参数仅在以下条件都满足的情况下有效：<br><br><br>* `Action` 是 `set`。<br><br>* `Key` 是 `Access-Control-Allow-Origin`。<br><br>* `ValueType` 是 `constant`。 | |
+|Value |String |No |表示 `Key` 的值。该参数仅当 `Action` 是 `set` 的时候才有效。如果 `Action` 不是 `set`，该参数无效。当 `ValueType` 是 `constant` 时，您需要指定一个字符串作为头部的值。头部值的长度不能超过 1,024 个字符，不能包含美元符号（$）。<br><br>当 `ValueType` 是 `variable` 时，`Key` 的值可以是来自 [该列表中的某个变量](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-cdn-response-headers-cn#%E5%8F%98%E9%87%8F%E5%88%97%E8%A1%A8)。除了名称包含下划线的变量，列表中的任何一个变量都可以作为 `Key`，并赋予一个字符串来替换其已有的值。也就是说，当您使用任意这些名称不包含下划线的变量作为 `Key` 时，其值是可以被覆盖的。<br><br>当 `ValueType` 是 `customize` 时，表示 `Key` 的值是列表中的变量与字符串拼接后的一个字符串。在拼接的字符串中，变量使用 `${变量名}` 表示。示例值：`${remote_addr}aaa${host}ccc` |`attachment;filename=FileName.xls` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "ResponseHeader": [
+        {
+            "ResponseHeaderAction": {
+                "ResponseHeaderInstances": [
+                    {
+                        "Action": "set",
+                        "Key": "Content-Disposition",
+                        "Value": "attachment;filename=FileName.xls",
+                        "ValueType": "constant"
+                    },
+                    {
+                        "Action": "set",
+                        "Key": "Access-Control-Allow-Origin",
+                        "Value": "https://www.test.com",
+                        "AccessOriginControl": true,
+                        "ValueType": "constant"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
+
+<span id="自定义错误页面"></span>
+### 自定义错误页面
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|CustomErrorPage |Object |No |表示 "自定义错误页面" 特性的配置。 | |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+|ErrorPageRule |Object[] |No |表示一个配置规则的集合。您最多可以添加 50 条规则。 | |
+|ErrorPageAction |Object |Yes |表示规则的相关配置。 | |
+|Action |String |No |表示实际的操作。当前您只能指定该参数值为 `redirect`。表示对客户端请求进行重定向。 |`redirect` |
+|RedirectCode |String |Yes |表示重定向的响应状态码。您可以根据需求选择合适的状态码。该参数的取值有 `301`、`302`、`303`、`307`、`308`。<br><br>需要留意的是：<br><br><br>* 对于 301 和 302，如果原请求使用的方法不是 GET，那么客户端向新的URL发送请求时，新请求使用的方法可能变成 GET。<br><br>* 对于 303，新请求使用的方法是 GET。<br><br>* 对于 307 和 308，新请求使用的方法与原请求相同，不会被改变。 |`302` |
+|RedirectUrl |String |Yes |表示跳转的目标地址，长度不能超过 1,024 个字符。地址必须包含协议，域名以及路径，并且符合 URL 的规范。 |`http://www.test.com/friendlyurl.html` |
+|StatusCode |String |Yes |表示一个状态码，取值范围是 400\-599。您可以输入 4xx 或者 5xx。4xx 表示 400\-499 之间的所有状态码。5xx 表示 500\-599 之间的所有状态码。 |`4xx` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "CustomErrorPage": {
+        "Switch": true,
+        "ErrorPageRule": [
+            {
+                "Condition": {},
+                "ErrorPageAction": {
+                    "StatusCode": "4xx",
+                    "Action": "redirect",
+                    "RedirectCode": "301",
+                    "RedirectUrl": "http://www.test.com/friendlyurl.html"
+                }
+            }
+        ]
+    }
+}
+```
+
+
+<span id="multi-range"></span>
+### Multi Range
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|MultiRange |Object |No |表示 "多重范围（Multi\-range)" 特性的配置。 | |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。该特性启用后，CDN 允许指定了多重范围的 Range 请求。<br><br>* `false`：表示不启用该特性。如果收到一个指定了多重范围的 Range 请求，CDN 会拒绝该请求并返回 416 响应状态码。<br><br><br>该参数的默认值是 `false`。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "MultiRange": {
+        "Switch": true
+    }
+}
+```
+
+
+<span id="离线缓存"></span>
+### 离线缓存
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OfflineCache |Object |No |表示 "离线缓存" 特性的配置。要使用该功能，请 [提交工单](https://console.byteplus.com/workorder/create)。 | |
+|Object |String |No |表示该特性的触发条件，该参数有以下取值：<br><br><br>* `request_error`：表示回源请求异常。当回源请求出现异常时，没有获得源站响应。<br><br>* `error_code`：表示源站的响应状态码是 5xx。<br><br>* `request_error,error_code`：表示以上两个条件都包含。 |`request_error` |
+|StatusCode |String |No |表示一个或者多个响应状态码，范围是 500\-599。多个状态码之间使用分号（;）分隔。您也可以输入 `5xx`，表示任意以数字 5 开头的状态码。<br><br>当 `Object` 是 `error_code` 或者 `request_error,error_code` 时，该参数才有效。 |`508` |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OfflineCache": {
+        "Object": "request_error,error_code",
+        "StatusCode": "504;505",
+        "Switch": true
+    }
+}
+```
+
+
+<span id="回源配置"></span>
+## 回源配置
+
+<span id="range-回源设置"></span>
+### Range 回源设置
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginRange |Boolean |No |表示 "Range 回源" 特性的配置。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>该参数的默认值是 `false`。请求分片大小默认是 1 MB。<br><br>说明<br><br>如果 `Range` 结构体中 `Switch` 为 `true`，则该特性为启用，即使 `OriginRange` 为 `false`。 |`true` |
+|Range |Object |No |表示分片大小的设置。 | |
+|Switch |Boolean |No |表示是否启用该设置。该参数有以下取值：<br><br><br>* `true`：表示启用该设置。<br><br>* `false`：表示禁用该设置。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|RangeSize |Long |No |表示分片的大小。<br><br><br>* 如果 `Unit` 是 `MB`，该参数的取值范围是 1\-40。<br><br>* 如果 `Unit` 是 `KB`，该参数值只能是 `512`。<br><br><br>该参数的默认值是 `1`。 |`512` |
+|Unit |String |No |表示 `RangeSize` 的单位。该参数有以下取值：<br><br><br>* `KB`<br><br>* `MB`<br><br><br>该参数的默认值是 `MB`。 |`KB` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginRange": true,
+    "Range": {
+        "Switch": true,
+        "RangeSize": "2",
+        "Unit": "MB"
+    }
+}
+```
+
+
+<span id="回源超时时间设置"></span>
+### 回源超时时间设置
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|Timeout |Object |No |表示 "回源请求超时" 特性的配置。 | |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。此时，TCP 请求和 HTTP 请求的超时时间使用默认值，分别是 2 秒和 60 秒。<br><br><br>该参数的默认值是 `false`。 |`true` |
+|TimeoutRules |Object[] |No |表示一组超时时间的配置。当前您只能指定一个配置。当 `Switch` 是 `true` 时，该参数为必填。 | |
+|TimeoutAction |Object |No |表示超时时间的配置。 | |
+|HttpTimeout |Long |No |表示 CDN 节点收到源站返回的首个响应字节后，持续未收到后续响应正文数据的最长等待时间，单位是秒，取值范围是 1\-900。 |`60` |
+|TcpTimeout |Long |No |表示 CDN 节点向源站建立 TCP 连接的最长等待时间，单位是秒，取值范围是 2\-60。 |`2` |
+|HttpFirstByteTimeout |Long |No |表示 CDN 节点向源站发送 HTTP 请求后，等待源站返回首个响应字节的最长时间，单位是秒，取值范围是 1\-900。 |`90` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "Timeout": {
+        "Switch": true,
+        "TimeoutRules": [
+            {
+                "TimeoutAction": {
+                    "TcpTimeout": 2,
+                    "HttpTimeout": 60,
+                    "HttpFirstByteTimeout": 90
+                }
+            }
+        ]
+    }
+}
+```
+
+
+<span id="回源重试设置"></span>
+### 回源重试设置
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginRetry |Object |No |表示 "回源重试设置" 特性的配置模块。要使用该功能，请 [提交工单](https://console.byteplus.com/workorder/create)。 | |
+|StatusCode |String |No |表示范围在 400\-599 之间的一个或者多个状态码。多个状态码之间使用分号（;）分隔。您可以输入 `4xx` 或者 5xx，表示所有以数字 4 或 数字 5 开头的状态码。 |`404;408;5xx` |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>该参数的默认值是 `false`。 |`false` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginRetry": {
+        "Switch": true,
+        "StatusCode": "408;5xx"
+    }
+}
+```
+
+
+<span id="回源重定向跟随"></span>
+### 回源重定向跟随
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|FollowRedirect |Boolean |No |表示 "回源重定向跟随" 特性的配置。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>该参数的默认值是 `false`。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "FollowRedirect": true
+}
+```
+
+
+<span id="回源-http-请求头设置"></span>
+### 回源 HTTP 请求头设置
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|RequestHeader |Object[] |No |表示 "回源 HTTP 请求头" 特性的配置。 | |
+|RequestHeaderAction |Object |Yes |表示一个请求头的配置规则列表。每个规则都包含一个头部的相关操作设置。您最多可以添加 50 条规则。 | |
+|RequestHeaderInstances |Object[] |Yes |表示一个请求头的配置规则列表。每个规则都包含一个头部的相关操作设置。您最多可以添加 50 条规则。 | |
+|Action |String |Yes |指定对请求头的操作。该参数有以下取值：<br><br><br>* `set`：表示设置一个头部。设置操作包括添加与修改。如果请求中已包含该头部，该头部的值会被覆盖。如果请求中没有包含该头部，该头部会被添加。<br><br>* `delete`，表示删除一个头部。 |`set` |
+|Key |String |Yes |指定一个头部的名称。名称的长度不能超过 1,024 个字符，不区分大小写。同时，名称不能包含以下字符：<br><br><br>* 下划线（_）、空格、双引号（"）<br><br><br>另外，头部名称不能使用这些 [特定的名称](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-origin-request-headers-cn#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)。 |`Cdn-provider` |
+|ValueType |String |Yes |指定 `Key` 的取值类型。该参数仅当 `Action` 是 `set` 的时候才有效。如果 `Action` 不是 `set`，该参数无效。该参数有以下取值：<br><br><br>* `constant`：表示 `Key` 的值是一个固定字符串。<br><br>* `variable`：表示 `Key` 的值来自一个变量。<br><br>* `customize`：表示 `Key` 的值是变量与固定字符串拼接后的一个字符串。 |`constant` |
+|Value |String |No |表示 `Key` 的值。该参数仅当 `Action` 是 `set` 的时候才有效。如果 `Action` 不是 `set`，该参数无效。当 `ValueType` 是 `constant` 时，您需要指定一个字符串作为头部的值。该头部值的长度不能超过 1,024 个字符，不能包含美元符号（$）。<br><br>当 `ValueType` 是 `variable` 时，`Key` 的值可以是来自 [该列表中的某个变量](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-origin-request-headers-cn#%E5%8F%98%E9%87%8F%E5%88%97%E8%A1%A8)。除了名称包含下划线的变量，列表中的任何一个变量都可以作为 `Key`，并赋予一个字符串来替换其已有的值。也就是说，当您使用任意这些名称不包含下划线的变量作为 `Key` 时，其值是可以被覆盖的。<br><br>当 `ValueType` 是 `customize` 时，表示 `Key` 的值是列表中的变量与字符串拼接后的字符串。在拼接的字符串中，变量使用 `${变量名}` 表示。示例值：`aaa${http_host}bbb${msec}ccc` |`bp-cdn` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "RequestHeader": [
+        {
+            "RequestHeaderAction": {
+                "RequestHeaderInstances": [
+                    {
+                        "Action": "set",
+                        "Key": "cdn-servce",
+                        "Value": "my_service",
+                        "ValueType": "constant"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
+
+<span id="回源参数设置"></span>
+### 回源参数设置
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginArg |Object[] |No |表示 "回源参数" 配置的规则列表。<br><br><br>* 列表中最多可以包含 50 条规则。<br><br>* 每条规则包含一个匹配条件（`Condition`）和 CDN 执行操作（`OriginArgAction`）。<br><br>* 列表中规则的顺序定义了规则的优先级。列表中第一条规则的优先级最高。<br><br>* 当收到一个用户请求时，CDN 按规则的优先级，从高到低将规则与请求匹配。如果一条规则匹配了请求，CDN 就停止处理其余规则。<br><br><br>您**必须**在规则列表的最后添加以下这条默认规则。该默认规则用于匹配任何未能匹配其他规则的用户请求。您不可更改该规则中的 `Condition`，但可以更改 `OriginArgAction` 中的配置。<br><br>```json```<br>```{```<br>```            "Condition": {```<br>```                "ConditionRule": [```<br>```                    {```<br>```                        "Object": "directory",```<br>```                        "Operator": "match",```<br>```                        "Type": "url",```<br>```                        "Value": "/"```<br>```                    }```<br>```                ]```<br>```            },```<br>```            "OriginArgAction": {```<br>```                "OriginArgComponents": [```<br>```                    {```<br>```                        "Action": "include",```<br>```                        "Object": "queryString",```<br>```                        "Subobject": "*"```<br>```                    }```<br>```                ]```<br>```            }```<br>```        }```<br> | |
+|Condition |Object |Yes |表示匹配条件的配置。如果请求满足该匹配条件，CDN 执行 `OriginArgAction` 中指定的操作。当前您必须且只能指定一个条件。 | |
+|ConditionRule |Object[] |Yes |表示一个匹配条件的列表。当前，列表中只能包含一个匹配条件。 | |
+|Object |String |Yes |表示匹配类型。该参数有以下取值：<br><br><br>* `filetype`：表示请求 URL 中的扩展名。<br><br>* `directory`：表示请求 URL 中的某个目录。<br><br>* `path`：表示请求 URL 中的完整路径。<br><br>* `regex`：表示请求 URL 中的完整路径，通过正则表达式匹配。 |`directory` |
+|Operator |String |Yes |表示匹配类型。当前，该参数值只能是 `match`，表示只有匹配成功才算是满足了匹配条件。 |`match` |
+|Type |String |Yes |该参数值只能是 `url`，表示 "请求 URL"。 |`url` |
+|Value |String |Yes |表示一个或者多个匹配值，总长度不能超过 1,024 个字符。多个匹配值之间使用分号（;）分隔。匹配值不能包含以下字符：<br><br><br>* 双斜杠（//）、空格、美元符号（$）、问号（?）<br><br><br>同时，<br><br><br>* 如果 `Object` 是 `filetype`，每个匹配值表示一个请求 URL 后缀，无需以句点（.）开头，只能包含字母和数字。例如：`png;txt`。<br><br>* 如果 `Object` 是 `directory`，每个匹配值表示一个目录路径，以斜杠（/）开头和结尾。例如 `/chs/foods/;/us/birds/`。<br><br>* 如果 `Object` 是 `path`，每个匹配值表示一个 URL 路径，以斜杠（/）开头。每个匹配值中可以包含通配符（\*）表示一个或者多个字符。例如 `/chs/foods/local*sets;/us/birds/chickadee`。<br><br>* 如果 `Object` 是 `regex`，每个匹配值表示一个正则表达式。关于正则表达式的示例，参见 [配置示例](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-query-parameters_1-cn#%E5%85%A8%E8%B7%AF%E5%BE%84%E6%AD%A3%E5%88%99%E9%85%8D%E7%BD%AE%E7%A4%BA%E4%BE%8B)。 |`/` |
+|OriginArgAction |Object |Yes |表示在请求满足 `Condition` 时 CDN 执行的操作。 | |
+|OriginArgComponents |Object[] |Yes |表示一个操作列表。这些操作定义了 CDN 如何处理回源请求中的查询参数。<br><br>当前，列表中只能包含一个操作。 | |
+|Action |String |Yes |表示 CDN 执行的操作。该参数有以下取值：<br><br><br>* `include`: 表示回源请求 URL 中包含用户请求 URL 中的全部查询参数。<br><br>* `exclude`：表示回源请求 URL 中不包含用户请求 URL 中的任何查询参数。<br><br>* `addPart`：表示回源请求 URL 中包含用户请求 URL 中的全部查询参数，并额外包含 `Subobject` 中指定的查询参数。<br><br>* `includePart`：表示如果用户请求 URL 中包含 `Subobject` 中指定的查询参数，那么回源请求 URL 中包含这些指定的查询参数。<br><br>* `excludePart`：表示回源请求 URL 中包含用户请求 URL 中的全部查询参数，除了`Subobject` 中指定的查询参数。<br><br>* `set`：表示回源请求 URL 中包含用户请求 URL 中的全部查询参数。同时，对于您在 `Subobject` 中指定的查询参数和参数值，CDN 会执行以下操作:<br><br>   * 如果这些查询参数在用户请求 URL 中，CDN 会在回源请求 URL 中将这些参数的值设置为您指定的值。<br><br>   * 如果用户请求 URL 中不包含这些查询参数，CDN 会在回源请求 URL 中添加这些查询参数。 |`exclude` |
+|Object |String |Yes |表示 CDN 对哪个对象执行 `Action`。当前，该参数值只能是 `queryString`，表示请求 URL 中的查询字符串。 |`queryString` |
+|Subobject |String |Yes |表示一个或者多个查询参数。多个查询参数之间使用分号（;）分隔，总长度不能超过 1,024 个字符。`Subobject` 只能包含字母、数字、下划线（_）、逗号（,）、短横线（\-）、句点（.）和感叹号（!）。<br><br>在匹配请求 URL 中的查询参数时，`Subobject` 中的参数是大小写敏感的。<br><br>`Subobject` 的额外说明如下：<br><br><br>* 当 `Action` 是 `include` 或 `exclude` 时，`Subobject` 必须是 `*`，表示请求 URL 中的所有查询参数。<br><br>* 当 `Action` 是 `includePart` 或 `excludePart` 时，`Subobject` 表示一个或者多个查询参数。例如 `param1;param2`。<br><br>* 当 `Action` 是 `addPart` 或 `set` 时，`Subobject` 表示一个或者多个查询参数和参数值，格式是 `key=value`。例如 `param1=val1;param2=val2;param3=val3`。 |`*` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginArg": [
+        {
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "directory",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "/dir4/path6/"
+                    }
+                ]
+            },
+            "OriginArgAction": {
+                "OriginArgComponents": [
+                    {
+                        "Action": "set",
+                        "Object": "queryString",
+                        "Subobject": "param6=val6;param7=val7"
+                    }
+                ]
+            }
+        },
+        {
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "filetype",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "docx"
+                    }
+                ]
+            },
+            "OriginArgAction": {
+                "OriginArgComponents": [
+                    {
+                        "Action": "excludePart",
+                        "Object": "queryString",
+                        "Subobject": "param5"
+                    }
+                ]
+            }
+        },
+        {
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "regex",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "^/a{1,2}(.*)g$;aaa(.*)"
+                    }
+                ]
+            },
+            "OriginArgAction": {
+                "OriginArgComponents": [
+                    {
+                        "Action": "includePart",
+                        "Object": "queryString",
+                        "Subobject": "param3;param4"
+                    }
+                ]
+            }
+        },
+        {
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "filetype",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "png;jpg"
+                    }
+                ]
+            },
+            "OriginArgAction": {
+                "OriginArgComponents": [
+                    {
+                        "Action": "addPart",
+                        "Object": "queryString",
+                        "Subobject": "param1=val1;param2=val2"
+                    }
+                ]
+            }
+        },
+        {
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "path",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "/dir1/file;/dir2/image.jpg"
+                    }
+                ]
+            },
+            "OriginArgAction": {
+                "OriginArgComponents": [
+                    {
+                        "Action": "include",
+                        "Object": "queryString",
+                        "Subobject": "*"
+                    }
+                ]
+            }
+        },
+        {
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "directory",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "/dir1/path1/;/dir2/path2/"
+                    }
+                ]
+            },
+            "OriginArgAction": {
+                "OriginArgComponents": [
+                    {
+                        "Action": "exclude",
+                        "Object": "queryString",
+                        "Subobject": "*"
+                    }
+                ]
+            }
+        },
+        {
+            "Condition": {
+                "ConditionRule": [
+                    {
+                        "Object": "directory",
+                        "Operator": "match",
+                        "Type": "url",
+                        "Value": "/"
+                    }
+                ]
+            },
+            "OriginArgAction": {
+                "OriginArgComponents": [
+                    {
+                        "Action": "include",
+                        "Object": "queryString",
+                        "Subobject": "*"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
+
+<span id="回源-sni-设置"></span>
+### 回源 SNI 设置
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginSni |Object |No |表示 "回源 SNI" 特性的配置。 | |
+|SniDomain |String |No |指定回源 SNI 的域名。当 `Switch` 是 `true` 时，该参数为必填。该参数值的长度不能超过 1,024 个字符。 |`img.example.com` |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>该参数的默认值是 `false`。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginSni": {
+        "SniDomain": "www.test.com",
+        "Switch": true
+    }
+}
+```
+
+
+<span id="回源-url-改写"></span>
+### 回源 URL 改写
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginRewrite |Object |No |表示 "回源 URL 改写" 特性的配置。要使用该特性，请 [提交工单](https://console.byteplus.com/workorder/create)。 | |
+|OriginRewriteRule |Object[] |No |表示一个规则列表。当 `Switch` 是 `true` 时，该参数为必填。<br><br><br>* 列表中最多可以包含 50 条规则。<br><br>* 列表中规则的顺序定义了规则的优先级。列表中第一条规则的优先级最高。<br><br>* 当收到一个用户请求时，CDN 按规则的优先级，从高到低将规则与请求匹配。如果一条规则匹配了请求，CDN 就停止处理其余规则。 | |
+|OriginRewriteAction |Object |No |表示 CDN 执行的动作。 | |
+|SourcePath |String |No |表示一个正则表达式，长度不能超过 1,024 个字符，用于匹配用户请求 URL 中的对象。<br><br><br>* 当 `RewriteType` 是 `rewrite_path` 时，该对象指的是请求 URL 中的路径。<br><br>* 当 `RewriteType` 是 `rewrite_url` 时，该对象指的是请求 URL 中的路径和查询字符串。<br><br><br>参见 [配置示例](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-origin-path-rewrite_1-cn?lang=en#%E9%85%8D%E7%BD%AE%E7%A4%BA%E4%BE%8B)。<br><br>说明<br><br>假设您在调用该 API 时在 `SourcePath` 中使用 `\?` 表示查询字符串中开头的 `?`。当您调用相应的查询 API（例如 DescribeCdnConfig）查看 `SourcePath` 的值时，您会发现 `\?` 变成了 `\\?`。这个变化是符合预期的，因为 `DescribeCdnConfig` 返回内容是 JSON 格式，内容中的 `\` 被转义成了 `\\`。 |`^/img/food.png$` |
+|TargetPath |String |No |表示改写后，回源请求 URL 中的对象，长度不能超过 1,024 个字符。<br><br><br>* 当 `RewriteType` 是 `rewrite_path` 时，该对象是回源请求 URL 中的路径。<br><br>* 当 `RewriteType` 是 `rewrite_url` 时，该对象是回源请求 URL 中的路径和查询字符串。<br><br><br>您可以在 `TargetPath` 中使用 `$1`、`$2`、`$3` 等捕获 `SourcePath` 中定义的组。<br><br>参见 [配置示例](https://docs.byteplus.com/en/docs/byteplus-cdn/docs_cn-origin-path-rewrite_1-cn?lang=en#%E9%85%8D%E7%BD%AE%E7%A4%BA%E4%BE%8B)。 |`/png/food.webp` |
+|RewriteType |String |No |表示改写类型。该参数有以下取值：<br><br><br>* `rewrite_path`：表示对请求 URL 中的路径进行改写。<br><br>* `rewrite_url`：表示对请求 URL 中的路径和查询字符串进行改写。<br><br><br>该参数的默认值是 `rewrite_path`。 |`rewrite_path` |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>该参数的默认值是 `false`。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginRewrite": {
+        "OriginRewriteRule": [
+            {
+                "OriginRewriteAction": {
+                    "RewriteType": "rewrite_url",
+                    "SourcePath": "^/aaa/(.*),txt\?param=(.*)",
+                    "TargetPath": "/life/$1?size=$2"
+                }
+            },
+            {
+                "OriginRewriteAction": {
+                    "RewriteType": "rewrite_path",
+                    "SourcePath": "^/a(1,2)(.*)g$",
+                    "TargetPath": "/food/$1"
+                }
+            }
+        ],
+        "Switch": true
+    }
+}
+```
+
+
+<span id="源站响应头设置"></span>
+### 源站响应头设置
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginResponseHeader |Object[] |No |表示 "源站响应头设置" 的配置模块。要使用该功能，请 [提交工单](https://console.byteplus.com/workorder/create)。 | |
+|OriginResponseHeaderAction |Object |No |表示 CDN 在收到源站响应时，对响应头的操作。 | |
+|OriginResponseHeaderInstances |Object[] |No |表示一个响应头的配置规则列表。每个规则都包含一个头部的相关操作设置。您最多可以添加 50 条规则。 | |
+|Action |String |No |表示 CDN 对响应头的操作。该参数有以下取值：<br><br><br>* `set`：表示设置一个头部。设置操作包括添加与修改。如果源站响应中已包含该头部，该头部的值会被覆盖。如果源站响应中没有包含该头部，该头部会被添加。<br><br>* `delete`：表示删除一个头部。 |`set` |
+|Key |String |No |表示一个头部的名称。名称不能超过 1,024 个字符，不区分大小写，不能包含汉字以及以下字符：<br><br><br>* 汉字、下划线（_）、空格、双引号（"）、冒号（:）<br><br><br>参见 [常用头部](https://docs.byteplus.com/en/docs/byteplus-cdn/origin-response-header-configuration_zh-cn?lang=en#%E5%B8%B8%E7%94%A8%E5%A4%B4%E9%83%A8)。 |`MyHeader` |
+|Value |String |No |表示 `Key` 的值。该参数仅当 `Action` 是 `set` 的时候才有效。如果 `Action` 不是 `set`，该参数无效。<br><br><br>* 当 `ValueType` 是 `constant` 时，您需要指定一个固定字符串作为头部的值。头部值的长度不能超过 1,024 个字符，不能包含美元符号（$）。<br><br>* 当 `ValueType` 是 `variable` 时，`Key` 的值可以是来自 [该列表中的某个变量](https://docs.byteplus.com/en/docs/byteplus-cdn/origin-response-header-configuration_zh-cn?lang=en#%E5%8F%98%E9%87%8F%E5%88%97%E8%A1%A8)。除了名称包含下划线的变量，列表中的任何一个变量都可以作为 `Key`，并赋予一个固定字符串来替换其已有的值。也就是说，当您使用任意这些名称不包含下划线的变量作为 `Key` 时，其值是可以被覆盖的。<br><br>* 当 `ValueType` 是 `customize` 时，表示 `Key` 的值是列表中的变量与固定字符串拼接后的字符串。在拼接的字符串中，变量使用 `${变量名}` 表示。示例值：`${remote_addr}aaa${host}ccc` |`hello` |
+|ValueType |String |No |表示 `Key` 的取值类型。该参数仅当 `Action` 是 `set` 的时候才有效。如果 `Action` 不是 `set`，该参数无效。该参数有以下取值：<br><br><br>* `constant`：表示 `Key` 的值是一个固定字符串。<br><br>* `variable`：表示 `Key` 的值来自一个变量。<br><br>* `customize`：表示 `Key` 的值是一个变量与固定字符串拼接后的字符串。 |`constant` |
+|Object |String |No |表示该规则对哪些用户请求生效。该参数有以下取值：<br><br><br>* `default`：表示该规则仅对源站响应中包含以下响应码的用户请求生效：<br><br>   * 200、201、204、206、301、302、303、304、307、308<br><br>* `all_request`：表示该规则对所有用户请求生效。<br><br><br>该参数的默认值是 `default`。另外，当 `Action` 是 `delete` 时，该参数的值只能是 `all_request`。 |`default` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginResponseHeader": [
+        {
+            "OriginResponseHeaderAction": {
+                "OriginResponseHeaderInstances": [
+                    {
+                        "Action": "set",
+                        "Key": "myHeader2",
+                        "ValueType": "constant",
+                        "Value": "HelloWorld",
+                        "Object": "default"
+                    },
+                    {
+                        "Action": "set",
+                        "Key": "Access-Control-Allow-Methods",
+                        "ValueType": "variable",
+                        "Value": "request_uri",
+                        "Object": "all_request"
+                    },
+                    {
+                        "Action": "delete",
+                        "Key": "Access-Control-Allow-Credentials"
+                    },
+                    {
+                        "Action": "set",
+                        "Key": "Access-Control-Allow-Headers",
+                        "ValueType": "customize",
+                        "Value": "Notice${query_string}!",
+                        "Object": "default"
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
+
+<span id="内容优化"></span>
+## 内容优化
+
+<span id="智能压缩"></span>
+### 智能压缩
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|Compression |Object |No |表示 "智能压缩" 特性的配置。 | |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+|CompressionRules |Object[] |No |表示一组规则。每条规则包含匹配条件配置以及操作配置。 | |
+|CompressionAction |Object |Yes |表示当用户请求满足 `Condition` 时，CDN 对请求文件执行的压缩操作的配置。 | |
+|CompressionType |String[] |Yes |表示 CDN 使用的压缩算法。该参数有以下取值：<br><br><br>* `br`：表示 Brotli 压缩算法。<br><br>* `gzip`：表示 Gzip 压缩算法。<br><br><br>您可以同时指定这两个算法。<br><br>需要留意的是，CDN 基于用户请求中 `Accept-Encoding` 头部来决定是否对请求文件进行压缩以及使用的压缩算法。 |`["gzip","br"]` |
+|CompressionFormat |String |No |表示 CDN 基于请求中的 `Content-Type` 头部对请求进行匹配。该参数有以下取值：<br><br><br>* `default`：表示如果 `Content-Type` 头部值在下方的默认列表中，CDN 对请求文件执行 `CompressionAction` 中配置的操作。<br><br>* `customize`：表示如果 `Content-Type` 头部值在 `CompressionFormat` 指定的头部值中，CDN 对请求文件执行 `CompressionAction` 中配置的操作。<br><br><br>如果您需要 CDN 基于 `Condition` 中的匹配条件对请求进行匹配，您无需指定 `CompressionFormat` 或者指定 `CompressionFormat` 为 `all`。<br><br>**默认列表**<br><br>text/html、text/xml、text/plain、text/css、application/javascript、application/x\-javascript、application/rss+xml、text/javascript、image/tiff、image/svg+xml、application/json、application/xml、text/plain; charset=utf\-8 |`customize` |
+|CompressionTarget |String |No |表示 `Content-Type` 的过滤值。<br><br><br>* 如果 `CompressionFormat` 为 `default` 或者 `all`，该参数必须为 `*`。<br><br>* 如果 `CompressionFormat` 为 `customize`，您需要指定一个或者多个文件类型。多个文件类型之间以逗号（,）分隔。 |`application/xml,hello/world` |
+|MinFileSizeKB |Long |No |表示文件大小范围的最小值，CDN 仅对大小在 `MinFileSizeKB` 和 `MaxFileSizeKB` 所表示的范围内的文件进行压缩。该参数的取值范围是 0 \- 2,147,483,647，单位是 KB，使用的进制是 1,024。该参数的默认值是 `0`。 |`10` |
+|MaxFileSizeKB |Long |No |表示文件大小范围的最大值，取值范围是 0 \- 2,147,483,647，单位是 KB，使用的进制是 1,024。如果不指定该参数，表示您不限制文件大小的上限。 |`1000` |
+|Condition |Object |No |表示匹配条件的配置。如果请求匹配了某个条件，CDN 对该请求执行 `CompressionAction` 中指定的操作。<br><br>需要留意的是，如果您指定了 `CompressionFormat`，`Condition` 必须为 `null` 或者不指定。 | |
+|ConditionRule |Object[] |Yes |表示匹配条件列表。当前，列表中只能包含一个匹配条件。 | |
+|Object |String |Yes |表示匹配对象。该参数有以下取值：<br><br><br>* `filetype`：表示请求 URL 中的扩展名。<br><br>* `directory`：表示请求 URL 中的某个目录。<br><br>* `path`：表示请求 URL 中的完整路径。 |`directory` |
+|Operator |String |Yes |表示匹配类型。该参数的值只能是 `match`，表示如果 `Value` 匹配了请求中的 `Object`，该请求就满足这个匹配条件。 |`match` |
+|Type |String |Yes |该参数值只能是 `url`，表示 "请求 URL"。 |`url` |
+|Value |String |Yes |表示一个或者多个匹配值，总长度不能超过 1,024 个字符。多个匹配值之间使用分号（;）分隔。匹配值不能包含以下字符：<br><br><br>* 双斜杠（//）、空格、美元符号（$）、问号（?）<br><br><br>同时，<br><br><br>* 如果 `Object` 是 `filetype`，每个匹配值表示一个请求 URL 后缀，无需以句点（.）开头，只能包含字母和数字。例如：`png;txt`。<br><br>* 如果 `Object` 是 `directory`，每个匹配值表示一个目录路径，以斜杠（/）开头和结尾。例如 `/chs/foods/;/us/birds/`。<br><br>* 如果 `Object` 是 `path`，每个匹配值表示一个 URL 路径，以斜杠（/）开头。每个匹配值中可以包含通配符（\*）表示一个或者多个字符。例如 `/chs/foods/local*sets;/us/birds/chickadee`。 |`/img/` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "Compression": {
+        "CompressionRules": [
+            {
+                "CompressionAction": {
+                    "CompressionFormat": "all",
+                    "CompressionTarget": "*",
+                    "CompressionType": [
+                        "gzip"
+                    ]
+                },
+                "Condition": {
+                    "ConditionRule": [
+                        {
+                            "Object": "filetype",
+                            "Operator": "match",
+                            "Type": "url",
+                            "Value": "png"
+                        }
+                    ]
+                }
+            },
+            {
+                "CompressionAction": {
+                    "CompressionFormat": "customize",
+                    "CompressionTarget": "text/xml,text/css",
+                    "CompressionType": [
+                        "gzip",
+                        "br"
+                    ],
+                    "MinFileSizeKB": 512,
+                    "MaxFileSizeKB": 2048
+                }
+            }
+        ],
+        "Switch": true
+    }
+}
+```
+
+
+<span id="页面优化"></span>
+### 页面优化
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|PageOptimization |Object |No |表示 "页面优化" 特性的配置。 | |
+|OptimizationType |String[] |Yes |表示优化的对象。该参数有以下取值：<br><br><br>* `html`: 表示 HTML 页面。<br><br>* `js`: 表示 Javascript 代码。<br><br>* `css`: 表示 CSS 代码。<br><br><br>该参数的默认值是 `html`。如果您指定了 `js` 或者 `js`，`html` 也必须指定。 |`["html","js"]` |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "PageOptimization": {
+        "Switch": true,
+        "OptimizationType": [
+            "html",
+            "css"
+        ]
+    }
+}
+```
+
+
+<span id="视频拖拽"></span>
+### 视频拖拽
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|VideoDrag |Object |No |表示 "视频拖拽" 特性的配置。 | |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "VideoDrag": {
+        "Switch": false
+    }
+}
+```
+
+
+<span id="ai-流量管理"></span>
+## AI 流量管理
+
+<span id="html-转-markdown"></span>
+### HTML 转 Markdown
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|HTMLToMarkdown |Object |No |表示 "HTML 转 Markdown" 特性的配置。 | |
+|Switch |Boolean |Yes |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。无 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "HTMLToMarkdown": {
+        "Switch": true
+    }
+}
+```
+
+
+<span id="性能优化"></span>
+## 性能优化
+
+<span id="智能路由"></span>
+### 智能路由
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|SmartOriginRouting |Object |No |表示 "智能路由" 特性的配置。 | |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "SmartOriginRouting": {
+        "Switch": true
+    }
+}
+```
+
+
+<span id="源站预建连"></span>
+### 源站预建连
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|OriginPreconnect |Object |No |表示 "源站预建连" 特性的配置。 | |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "OriginPreconnect": {
+        "Switch": true
+    }
+}
+```
+
+
+<span id="高级配置"></span>
+## 高级配置
+
+<span id="共享缓存"></span>
+### 共享缓存
+
+
+|Parameter |Data Type |Required |Description |Value |
+|---|---|---|---|---|
+|CacheHost |Object |No |表示 "共享缓存" 特性的配置。要使用该特性，请 [提交工单](https://console.byteplus.com/workorder/create)。<br><br>如果您要对多个域名配置共享缓存，您需要调用该 API 对每个域名配置目标域名。 | |
+|CacheHostRule |Object[] |No |表示一组共享缓存的配置。当前您只能只能创建一个配置。当 `Switch` 是 `true` 时，该参数为必填。 | |
+|CacheHostAction |Object |No |表示配置的详情。 | |
+|CacheHost |String |No |表示目标域名。 该目标域名必须是您账户下的一个域名。该参数指示 `Domain` 共享 `CacheHost` 的 CDN 缓存。 |`www.test.com` |
+|Switch |Boolean |No |表示是否启用该特性。该参数有以下取值：<br><br><br>* `true`：表示启用该特性。<br><br>* `false`：表示禁用该特性。<br><br><br>该参数的默认值是 `false`。 |`true` |
+
+
+<span id="请求示例"></span>
+#### 请求示例
+
+```json
+POST https://cdn.byteplusapi.com/?Version=2021-03-01&Action=UpdateCdnConfig
+{
+    "Domain": "www.example.com",
+    "CacheHost": {
+        "Switch": true,
+        "CacheHostRule": [
+            {
+                "CacheHostAction": {
+                    "CacheHost": "www.test.com"
+                }
+            }
+        ]
+    }
+}
+```
+
+
+<span id="response-parameters"></span>
+## Response Parameters
+
+该 API 响应中没有与操作结果相关的参数，只有包含请求元数据的 `ResponseMetadata` 结构体。
+
+<span id="响应示例"></span>
+## 响应示例
+
+```json
+{
+    "ResponseMetadata": {
+        "RequestId": "202503280935590CE461423F3F6904BA20",
+        "Action": "UpdateCdnConfig",
+        "Version": "2021-03-01",
+        "Service": "CDN",
+        "Region": "ap-singapore-1"
+    }
+}
+```

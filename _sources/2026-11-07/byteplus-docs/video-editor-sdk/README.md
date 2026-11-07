@@ -1,0 +1,676 @@
+# BytePlus Video Editor
+
+515 pages. Source: https://docs.byteplus.com/en/docs/video-editor-sdk
+
+Back to the [full index](../README.md).
+
+- **1.0.0**
+  - [Downloading the demo app](1.0.0/Downloading the demo app.md)
+  - [FAQ](1.0.0/FAQ.md)
+  - **Common Advanced Features**
+    - **Panels and configuration files**
+      - [Camera panels and configurations](1.0.0/Common Advanced Features/Panels and configuration files/Camera panels and configurations.md)
+      - [Preview Editor panels and configurations](1.0.0/Common Advanced Features/Panels and configuration files/Preview Editor panels and configurations.md)
+      - [Track Editor panels and configuration](1.0.0/Common Advanced Features/Panels and configuration files/Track Editor panels and configuration.md)
+    - **UI customization**
+      - [Android UI customization overview](1.0.0/Common Advanced Features/UI customization/Android UI customization overview.md)
+      - [Basic components](1.0.0/Common Advanced Features/UI customization/Basic components.md)
+      - [Camera module UI](1.0.0/Common Advanced Features/UI customization/Camera module UI.md)
+      - [Camera roll selection screen](1.0.0/Common Advanced Features/UI customization/Camera roll selection screen.md)
+      - [Draft mode UI](1.0.0/Common Advanced Features/UI customization/Draft mode UI.md)
+      - [iOS UI customization overview](1.0.0/Common Advanced Features/UI customization/iOS UI customization overview.md)
+      - [Music library panel](1.0.0/Common Advanced Features/UI customization/Music library panel.md)
+      - [Music volume panel](1.0.0/Common Advanced Features/UI customization/Music volume panel.md)
+      - [Preview Editor feature UI](1.0.0/Common Advanced Features/UI customization/Preview Editor feature UI.md)
+      - [Sound effects panel](1.0.0/Common Advanced Features/UI customization/Sound effects panel.md)
+      - [Track Editor feature UI](1.0.0/Common Advanced Features/UI customization/Track Editor feature UI.md)
+      - [Video Editor SDK Color Chart](1.0.0/Common Advanced Features/UI customization/Video Editor SDK Color Chart.md)
+  - **Product Introduction**
+    - [Pricing](1.0.0/Product Introduction/Pricing.md)
+    - [Product overview](1.0.0/Product Introduction/Product overview.md)
+    - [Use cases](1.0.0/Product Introduction/Use cases.md)
+    - [Video Editor SDK assets list](1.0.0/Product Introduction/Video Editor SDK assets list.md)
+    - **Video Editor SDK features**
+      - [Camera feature](1.0.0/Product Introduction/Video Editor SDK features/Camera feature.md)
+      - [Preview Editor feature](1.0.0/Product Introduction/Video Editor SDK features/Preview Editor feature.md)
+      - [Track Editor feature](1.0.0/Product Introduction/Video Editor SDK features/Track Editor feature.md)
+  - **SDK Integration Guide for Android**
+    - [Getting started with Android ](1.0.0/SDK Integration Guide for Android/Getting started with Android.md)
+    - **Android Advanced Features and Configurations**
+      - [Android Camera module configuration and features](1.0.0/SDK Integration Guide for Android/Android Advanced Features and Configurations/Android Camera module configuration and features.md)
+      - [Android Editor module configuration and features](1.0.0/SDK Integration Guide for Android/Android Advanced Features and Configurations/Android Editor module configuration and features.md)
+      - [Draft function](1.0.0/SDK Integration Guide for Android/Android Advanced Features and Configurations/Draft function.md)
+      - [SDK initialization—Android](1.0.0/SDK Integration Guide for Android/Android Advanced Features and Configurations/SDK initialization—Android.md)
+      - **Android Video Export UI API references**
+        - [Android dependency data models](1.0.0/SDK Integration Guide for Android/Android Advanced Features and Configurations/Android Video Export UI API references/Android dependency data models.md)
+        - [Cover image APIs](1.0.0/SDK Integration Guide for Android/Android Advanced Features and Configurations/Android Video Export UI API references/Cover image APIs.md)
+        - [Export function APIs](1.0.0/SDK Integration Guide for Android/Android Advanced Features and Configurations/Android Video Export UI API references/Export function APIs.md)
+        - [Export page customization](1.0.0/SDK Integration Guide for Android/Android Advanced Features and Configurations/Android Video Export UI API references/Export page customization.md)
+        - [Initializing EOExportManager](1.0.0/SDK Integration Guide for Android/Android Advanced Features and Configurations/Android Video Export UI API references/Initializing EOExportManager.md)
+        - [Preview Editor Android APIs](1.0.0/SDK Integration Guide for Android/Android Advanced Features and Configurations/Android Video Export UI API references/Preview Editor Android APIs.md)
+      - **Resources import and configuration**
+        - [Android resources import and configuration](1.0.0/SDK Integration Guide for Android/Android Advanced Features and Configurations/Resources import and configuration/Android resources import and configuration.md)
+    - **Configuring VE SDK Android using other languages**
+      - [Configuring libraries and dependencies using gradle](1.0.0/SDK Integration Guide for Android/Configuring VE SDK Android using other languages/Configuring libraries and dependencies using gradle.md)
+      - [Integrating VE SDK using Java](1.0.0/SDK Integration Guide for Android/Configuring VE SDK Android using other languages/Integrating VE SDK using Java.md)
+      - [Integrating VE SDK using Jetpack Compose](1.0.0/SDK Integration Guide for Android/Configuring VE SDK Android using other languages/Integrating VE SDK using Jetpack Compose.md)
+    - **References**
+      - [Android sample SDK deliverables list](1.0.0/SDK Integration Guide for Android/References/Android sample SDK deliverables list.md)
+  - **SDK Integration Guide for iOS**
+    - [Getting started with iOS](1.0.0/SDK Integration Guide for iOS/Getting started with iOS.md)
+    - **Integrating VE SDK iOS with other languages**
+      - [Integrating VE SDK using Objective-C](1.0.0/SDK Integration Guide for iOS/Integrating VE SDK iOS with other languages/Integrating VE SDK using Objective-C.md)
+      - [Integrating VE SDK using SwiftUI](1.0.0/SDK Integration Guide for iOS/Integrating VE SDK iOS with other languages/Integrating VE SDK using SwiftUI.md)
+      - **Managing dependency libraries for iOS**
+        - [Managing dependencies using Cocoapods](1.0.0/SDK Integration Guide for iOS/Integrating VE SDK iOS with other languages/Managing dependency libraries for iOS/Managing dependencies using Cocoapods.md)
+        - [Managing dependencies using SPM](1.0.0/SDK Integration Guide for iOS/Integrating VE SDK iOS with other languages/Managing dependency libraries for iOS/Managing dependencies using SPM.md)
+    - **iOS Advanced Features and Configurations**
+      - [Album configuration and features](1.0.0/SDK Integration Guide for iOS/iOS Advanced Features and Configurations/Album configuration and features.md)
+      - [Authentication configuration and feature](1.0.0/SDK Integration Guide for iOS/iOS Advanced Features and Configurations/Authentication configuration and feature.md)
+      - [Camera module configuration and features](1.0.0/SDK Integration Guide for iOS/iOS Advanced Features and Configurations/Camera module configuration and features.md)
+      - [Configure APIs globally](1.0.0/SDK Integration Guide for iOS/iOS Advanced Features and Configurations/Configure APIs globally.md)
+      - [Draft UI configuration and features](1.0.0/SDK Integration Guide for iOS/iOS Advanced Features and Configurations/Draft UI configuration and features.md)
+      - [Editor module configuration and features](1.0.0/SDK Integration Guide for iOS/iOS Advanced Features and Configurations/Editor module configuration and features.md)
+      - **Export function configuration and APIs**
+        - [Export function configuration and features](1.0.0/SDK Integration Guide for iOS/iOS Advanced Features and Configurations/Export function configuration and APIs/Export function configuration and features.md)
+        - [Video export APIs for iOS](1.0.0/SDK Integration Guide for iOS/iOS Advanced Features and Configurations/Export function configuration and APIs/Video export APIs for iOS.md)
+      - **iOS resources import and configuration**
+        - [iOS resources import and configuration](1.0.0/SDK Integration Guide for iOS/iOS Advanced Features and Configurations/iOS resources import and configuration/iOS resources import and configuration.md)
+    - **References**
+      - [iOS package deliverables list](1.0.0/SDK Integration Guide for iOS/References/iOS package deliverables list.md)
+- **1.1.0**
+  - [FAQ](1.1.0/FAQ.md)
+  - [Managing the demo app](1.1.0/Managing the demo app.md)
+  - **Common Advanced Features**
+    - **Panels and configuration files**
+      - [Camera panels and configurations](1.1.0/Common Advanced Features/Panels and configuration files/Camera panels and configurations.md)
+      - [Preview Editor panels and configurations](1.1.0/Common Advanced Features/Panels and configuration files/Preview Editor panels and configurations.md)
+      - [Track Editor panels and configuration](1.1.0/Common Advanced Features/Panels and configuration files/Track Editor panels and configuration.md)
+    - **UI customization**
+      - [Android UI customization overview](1.1.0/Common Advanced Features/UI customization/Android UI customization overview.md)
+      - [Basic components](1.1.0/Common Advanced Features/UI customization/Basic components.md)
+      - [Camera module UI](1.1.0/Common Advanced Features/UI customization/Camera module UI.md)
+      - [Camera roll selection screen](1.1.0/Common Advanced Features/UI customization/Camera roll selection screen.md)
+      - [Draft mode UI](1.1.0/Common Advanced Features/UI customization/Draft mode UI.md)
+      - [iOS UI customization overview](1.1.0/Common Advanced Features/UI customization/iOS UI customization overview.md)
+      - [Music library panel](1.1.0/Common Advanced Features/UI customization/Music library panel.md)
+      - [Music volume panel](1.1.0/Common Advanced Features/UI customization/Music volume panel.md)
+      - [Preview Editor feature UI](1.1.0/Common Advanced Features/UI customization/Preview Editor feature UI.md)
+      - [Sound effects panel](1.1.0/Common Advanced Features/UI customization/Sound effects panel.md)
+      - [Track Editor feature UI](1.1.0/Common Advanced Features/UI customization/Track Editor feature UI.md)
+      - [Video Editor SDK Color Chart](1.1.0/Common Advanced Features/UI customization/Video Editor SDK Color Chart.md)
+  - **Product Introduction**
+    - [Pricing](1.1.0/Product Introduction/Pricing.md)
+    - [Product overview](1.1.0/Product Introduction/Product overview.md)
+    - [Use cases](1.1.0/Product Introduction/Use cases.md)
+    - [Video Editor SDK assets list](1.1.0/Product Introduction/Video Editor SDK assets list.md)
+    - **Video Editor SDK features**
+      - [Camera feature](1.1.0/Product Introduction/Video Editor SDK features/Camera feature.md)
+      - [Preview Editor feature](1.1.0/Product Introduction/Video Editor SDK features/Preview Editor feature.md)
+      - [Track Editor feature](1.1.0/Product Introduction/Video Editor SDK features/Track Editor feature.md)
+  - **SDK Integration Guide for Android**
+    - [Getting started with Android ](1.1.0/SDK Integration Guide for Android/Getting started with Android.md)
+    - **Android Advanced Features**
+      - [Android Camera module configuration and features](1.1.0/SDK Integration Guide for Android/Android Advanced Features/Android Camera module configuration and features.md)
+      - [Android Editor module configuration and features](1.1.0/SDK Integration Guide for Android/Android Advanced Features/Android Editor module configuration and features.md)
+      - [Android resources import and configuration](1.1.0/SDK Integration Guide for Android/Android Advanced Features/Android resources import and configuration.md)
+      - [Draft function](1.1.0/SDK Integration Guide for Android/Android Advanced Features/Draft function.md)
+      - [SDK initialization—Android](1.1.0/SDK Integration Guide for Android/Android Advanced Features/SDK initialization—Android.md)
+      - [Third-party stickers resource import and configuration](1.1.0/SDK Integration Guide for Android/Android Advanced Features/Third-party stickers resource import and configuration.md)
+      - **Android Video Export UI API references**
+        - [Android dependency data models](1.1.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Android dependency data models.md)
+        - [Cover image APIs](1.1.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Cover image APIs.md)
+        - [Export function APIs](1.1.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Export function APIs.md)
+        - [Export page customization](1.1.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Export page customization.md)
+        - [Initializing EOExportManager](1.1.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Initializing EOExportManager.md)
+        - [Preview Editor Android APIs](1.1.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Preview Editor Android APIs.md)
+    - **Configuring VE SDK using other languages**
+      - [Configuring repositories and dependencies using gradle](1.1.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Configuring repositories and dependencies using gradle.md)
+      - [Integrating VE SDK for Android using Flutter](1.1.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Integrating VE SDK for Android using Flutter.md)
+      - [Integrating VE SDK using Java](1.1.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Integrating VE SDK using Java.md)
+      - [Integrating VE SDK using Jetpack Compose](1.1.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Integrating VE SDK using Jetpack Compose.md)
+    - **Resources**
+      - [Android sample SDK deliverables list](1.1.0/SDK Integration Guide for Android/Resources/Android sample SDK deliverables list.md)
+  - **SDK Integration Guide for iOS**
+    - [Getting started with iOS](1.1.0/SDK Integration Guide for iOS/Getting started with iOS.md)
+    - **Integrating VE SDK with other languages**
+      - [Integrating VE SDK using Objective-C](1.1.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK using Objective-C.md)
+      - [Integrating VE SDK using SwiftUI](1.1.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK using SwiftUI.md)
+      - **Integrating VE SDK with Flutter**
+        - [Adding iOS camera and draft box features to flutter projects](1.1.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Adding iOS camera and draft box features to flutter projects.md)
+        - [Configuring flutter projects in Objective-C](1.1.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Configuring flutter projects in Objective-C.md)
+        - [Configuring flutter projects in Swift](1.1.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Configuring flutter projects in Swift.md)
+        - [Creating iOS flutter projects](1.1.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Creating iOS flutter projects.md)
+      - **Managing dependency libraries for iOS**
+        - [Managing dependencies using Cocoapods](1.1.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Managing dependency libraries for iOS/Managing dependencies using Cocoapods.md)
+        - [Managing dependencies using SPM](1.1.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Managing dependency libraries for iOS/Managing dependencies using SPM.md)
+    - **iOS Advanced Features**
+      - [Album configuration and features](1.1.0/SDK Integration Guide for iOS/iOS Advanced Features/Album configuration and features.md)
+      - [Authentication configuration and feature](1.1.0/SDK Integration Guide for iOS/iOS Advanced Features/Authentication configuration and feature.md)
+      - [Camera module configuration and features](1.1.0/SDK Integration Guide for iOS/iOS Advanced Features/Camera module configuration and features.md)
+      - [Configure APIs globally](1.1.0/SDK Integration Guide for iOS/iOS Advanced Features/Configure APIs globally.md)
+      - [Draft UI configuration and features](1.1.0/SDK Integration Guide for iOS/iOS Advanced Features/Draft UI configuration and features.md)
+      - [Editor module configuration and features](1.1.0/SDK Integration Guide for iOS/iOS Advanced Features/Editor module configuration and features.md)
+      - [iOS resources import and configuration](1.1.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS resources import and configuration.md)
+      - **Export function configuration and APIs**
+        - [Export function configuration and features](1.1.0/SDK Integration Guide for iOS/iOS Advanced Features/Export function configuration and APIs/Export function configuration and features.md)
+        - [Video export APIs for iOS](1.1.0/SDK Integration Guide for iOS/iOS Advanced Features/Export function configuration and APIs/Video export APIs for iOS.md)
+    - **References**
+      - [iOS package deliverables list](1.1.0/SDK Integration Guide for iOS/References/iOS package deliverables list.md)
+- **1.2.0**
+  - [FAQ](1.2.0/FAQ.md)
+  - [Managing the demo app](1.2.0/Managing the demo app.md)
+  - **Common Advanced Features**
+    - **Panels and configuration files**
+      - [Camera panels and configurations](1.2.0/Common Advanced Features/Panels and configuration files/Camera panels and configurations.md)
+      - [Preview Editor panels and configurations](1.2.0/Common Advanced Features/Panels and configuration files/Preview Editor panels and configurations.md)
+      - [Track Editor panels and configuration](1.2.0/Common Advanced Features/Panels and configuration files/Track Editor panels and configuration.md)
+    - **UI customization**
+      - [Android UI customization overview](1.2.0/Common Advanced Features/UI customization/Android UI customization overview.md)
+      - [Basic components UI customization](1.2.0/Common Advanced Features/UI customization/Basic components UI customization.md)
+      - [Camera module UI](1.2.0/Common Advanced Features/UI customization/Camera module UI.md)
+      - [Camera roll selection screen](1.2.0/Common Advanced Features/UI customization/Camera roll selection screen.md)
+      - [Draft mode UI](1.2.0/Common Advanced Features/UI customization/Draft mode UI.md)
+      - [iOS UI customization overview](1.2.0/Common Advanced Features/UI customization/iOS UI customization overview.md)
+      - [Music library panel](1.2.0/Common Advanced Features/UI customization/Music library panel.md)
+      - [Music volume panel](1.2.0/Common Advanced Features/UI customization/Music volume panel.md)
+      - [Preview Editor feature UI](1.2.0/Common Advanced Features/UI customization/Preview Editor feature UI.md)
+      - [Sound effects panel](1.2.0/Common Advanced Features/UI customization/Sound effects panel.md)
+      - [Track Editor feature UI](1.2.0/Common Advanced Features/UI customization/Track Editor feature UI.md)
+      - [Video Editor SDK Color Chart](1.2.0/Common Advanced Features/UI customization/Video Editor SDK Color Chart.md)
+  - **Product Introduction**
+    - [Pricing](1.2.0/Product Introduction/Pricing.md)
+    - [Product overview](1.2.0/Product Introduction/Product overview.md)
+    - [Use cases](1.2.0/Product Introduction/Use cases.md)
+    - [Video Editor SDK assets list](1.2.0/Product Introduction/Video Editor SDK assets list.md)
+    - **Video Editor SDK features**
+      - [Camera feature](1.2.0/Product Introduction/Video Editor SDK features/Camera feature.md)
+      - [Preview Editor feature](1.2.0/Product Introduction/Video Editor SDK features/Preview Editor feature.md)
+      - [Track Editor feature](1.2.0/Product Introduction/Video Editor SDK features/Track Editor feature.md)
+  - **SDK Integration Guide for Android**
+    - **Android Advanced Features**
+      - [Android Camera module configuration and features](1.2.0/SDK Integration Guide for Android/Android Advanced Features/Android Camera module configuration and features.md)
+      - [Android Editor module configuration and features](1.2.0/SDK Integration Guide for Android/Android Advanced Features/Android Editor module configuration and features.md)
+      - [Android resources import and configuration](1.2.0/SDK Integration Guide for Android/Android Advanced Features/Android resources import and configuration.md)
+      - [Draft function](1.2.0/SDK Integration Guide for Android/Android Advanced Features/Draft function.md)
+      - [SDK initialization—Android](1.2.0/SDK Integration Guide for Android/Android Advanced Features/SDK initialization—Android.md)
+      - [Third-party stickers resource import and configuration](1.2.0/SDK Integration Guide for Android/Android Advanced Features/Third-party stickers resource import and configuration.md)
+      - **Android Video Export UI API references**
+        - [Android dependency data models](1.2.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Android dependency data models.md)
+        - [Cover image APIs](1.2.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Cover image APIs.md)
+        - [Export function APIs](1.2.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Export function APIs.md)
+        - [Export page customization](1.2.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Export page customization.md)
+        - [Initializing EOExportManager](1.2.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Initializing EOExportManager.md)
+        - [Preview Editor Android APIs](1.2.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export UI API references/Preview Editor Android APIs.md)
+    - **Android Resources**
+      - [Android sample SDK deliverables list](1.2.0/SDK Integration Guide for Android/Android Resources/Android sample SDK deliverables list.md)
+    - **Configuring VE SDK using other languages**
+      - [Configuring repositories and dependencies using gradle](1.2.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Configuring repositories and dependencies using gradle.md)
+      - [Integrating VE SDK for Android using Flutter](1.2.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Integrating VE SDK for Android using Flutter.md)
+      - [Integrating VE SDK using Java](1.2.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Integrating VE SDK using Java.md)
+      - [Integrating VE SDK using Jetpack Compose](1.2.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Integrating VE SDK using Jetpack Compose.md)
+    - **Getting Started with Android SDK**
+      - [Android SDK Quick Start Guide](1.2.0/SDK Integration Guide for Android/Getting Started with Android SDK/Android SDK Quick Start Guide.md)
+      - [Getting started with Android ](1.2.0/SDK Integration Guide for Android/Getting Started with Android SDK/Getting started with Android.md)
+  - **SDK Integration Guide for iOS**
+    - **Getting Started with iOS SDK**
+      - [Getting started with iOS](1.2.0/SDK Integration Guide for iOS/Getting Started with iOS SDK/Getting started with iOS.md)
+      - [iOS SDK Quick Start Guide](1.2.0/SDK Integration Guide for iOS/Getting Started with iOS SDK/iOS SDK Quick Start Guide.md)
+    - **Integrating VE SDK with other languages**
+      - [Integrating VE SDK using Objective-C](1.2.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK using Objective-C.md)
+      - [Integrating VE SDK using SwiftUI](1.2.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK using SwiftUI.md)
+      - **Integrating VE SDK with Flutter**
+        - [Adding iOS camera and draft box features to flutter projects](1.2.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Adding iOS camera and draft box features to flutter projects.md)
+        - [Configuring flutter projects in Objective-C](1.2.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Configuring flutter projects in Objective-C.md)
+        - [Configuring flutter projects in Swift](1.2.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Configuring flutter projects in Swift.md)
+        - [Creating iOS flutter projects](1.2.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Creating iOS flutter projects.md)
+      - **Managing dependency libraries**
+        - [Managing dependencies using Cocoapods](1.2.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Managing dependency libraries/Managing dependencies using Cocoapods.md)
+        - [Managing dependencies using SPM](1.2.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Managing dependency libraries/Managing dependencies using SPM.md)
+    - **iOS Advanced Features**
+      - [Album configuration and features](1.2.0/SDK Integration Guide for iOS/iOS Advanced Features/Album configuration and features.md)
+      - [Authentication configuration and features](1.2.0/SDK Integration Guide for iOS/iOS Advanced Features/Authentication configuration and features.md)
+      - [Configure APIs globally](1.2.0/SDK Integration Guide for iOS/iOS Advanced Features/Configure APIs globally.md)
+      - [iOS camera module configuration and features](1.2.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS camera module configuration and features.md)
+      - [iOS draft UI configuration and features](1.2.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS draft UI configuration and features.md)
+      - [iOS editor module configuration and features](1.2.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS editor module configuration and features.md)
+      - [iOS resources import and configuration](1.2.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS resources import and configuration.md)
+      - **Export Function Configurations and APIs**
+        - [Export function configuration and features](1.2.0/SDK Integration Guide for iOS/iOS Advanced Features/Export Function Configurations and APIs/Export function configuration and features.md)
+        - [Video export APIs for iOS](1.2.0/SDK Integration Guide for iOS/iOS Advanced Features/Export Function Configurations and APIs/Video export APIs for iOS.md)
+    - **iOS Resources**
+      - [iOS package deliverables list](1.2.0/SDK Integration Guide for iOS/iOS Resources/iOS package deliverables list.md)
+- **1.3.0**
+  - [FAQ](1.3.0/FAQ.md)
+  - [Managing the demo app](1.3.0/Managing the demo app.md)
+  - **Common Advanced Features**
+    - **Panels and configuration files**
+      - [Camera panels and configurations](1.3.0/Common Advanced Features/Panels and configuration files/Camera panels and configurations.md)
+      - [Function panels and configurations](1.3.0/Common Advanced Features/Panels and configuration files/Function panels and configurations.md)
+      - [Preview Editor panels and configurations](1.3.0/Common Advanced Features/Panels and configuration files/Preview Editor panels and configurations.md)
+      - [Track Editor panels and configuration](1.3.0/Common Advanced Features/Panels and configuration files/Track Editor panels and configuration.md)
+    - **UI customization**
+      - [Android UI customization overview](1.3.0/Common Advanced Features/UI customization/Android UI customization overview.md)
+      - [Basic components UI customization](1.3.0/Common Advanced Features/UI customization/Basic components UI customization.md)
+      - [Camera module UI](1.3.0/Common Advanced Features/UI customization/Camera module UI.md)
+      - [Camera roll selection screen](1.3.0/Common Advanced Features/UI customization/Camera roll selection screen.md)
+      - [Draft mode UI](1.3.0/Common Advanced Features/UI customization/Draft mode UI.md)
+      - [iOS UI customization overview](1.3.0/Common Advanced Features/UI customization/iOS UI customization overview.md)
+      - [Music library panel](1.3.0/Common Advanced Features/UI customization/Music library panel.md)
+      - [Music volume panel](1.3.0/Common Advanced Features/UI customization/Music volume panel.md)
+      - [Preview Editor feature UI](1.3.0/Common Advanced Features/UI customization/Preview Editor feature UI.md)
+      - [Sound effects panel](1.3.0/Common Advanced Features/UI customization/Sound effects panel.md)
+      - [Track Editor feature UI](1.3.0/Common Advanced Features/UI customization/Track Editor feature UI.md)
+      - [Video Editor SDK Color Chart](1.3.0/Common Advanced Features/UI customization/Video Editor SDK Color Chart.md)
+  - **Product Introduction**
+    - [Pricing](1.3.0/Product Introduction/Pricing.md)
+    - [Product overview](1.3.0/Product Introduction/Product overview.md)
+    - [Use cases](1.3.0/Product Introduction/Use cases.md)
+    - [Video Editor SDK assets list](1.3.0/Product Introduction/Video Editor SDK assets list.md)
+    - **Video Editor SDK features**
+      - [Camera feature](1.3.0/Product Introduction/Video Editor SDK features/Camera feature.md)
+      - [Preview Editor feature](1.3.0/Product Introduction/Video Editor SDK features/Preview Editor feature.md)
+      - [Track Editor feature](1.3.0/Product Introduction/Video Editor SDK features/Track Editor feature.md)
+  - **SDK Integration Guide for Android**
+    - **Android Advanced Features**
+      - [Android Camera module configuration and features](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Android Camera module configuration and features.md)
+      - [Android Editor module configuration and features](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Android Editor module configuration and features.md)
+      - [Android resources import and configuration](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Android resources import and configuration.md)
+      - [Draft function](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Draft function.md)
+      - [SDK initialization-Android](1.3.0/SDK Integration Guide for Android/Android Advanced Features/SDK initialization-Android.md)
+      - [Third-party stickers resource import and configuration](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Third-party stickers resource import and configuration.md)
+      - **Android Video Export API References**
+        - [Android dependency data models](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Android dependency data models.md)
+        - [Cover image APIs](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Cover image APIs.md)
+        - [Export function APIs](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Export function APIs.md)
+        - [Export page customization](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Export page customization.md)
+        - [Initializing EOExportManager](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Initializing EOExportManager.md)
+        - [Preview Editor Android APIs](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Preview Editor Android APIs.md)
+      - **Magic Template SDK Integration Guide for Android**
+        - [Exporting Magic Template videos in Android](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Exporting Magic Template videos in Android.md)
+        - [Getting started with Android Magic Template](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Getting started with Android Magic Template.md)
+        - [Initializing and preparing the Android Magic Template SDK](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Initializing and preparing the Android Magic Template SDK.md)
+        - [Managing Magic Template objects in Android](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Managing Magic Template objects in Android.md)
+        - [Utilizing Magic Template objects in Android](1.3.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Utilizing Magic Template objects in Android.md)
+    - **Android Resources**
+      - [Android sample SDK deliverables list](1.3.0/SDK Integration Guide for Android/Android Resources/Android sample SDK deliverables list.md)
+    - **Configuring VE SDK using other languages**
+      - [Configuring repositories and dependencies using gradle](1.3.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Configuring repositories and dependencies using gradle.md)
+      - [Integrating VE SDK for Android using Flutter](1.3.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Integrating VE SDK for Android using Flutter.md)
+      - [Integrating VE SDK using Java](1.3.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Integrating VE SDK using Java.md)
+      - [Integrating VE SDK using Jetpack Compose](1.3.0/SDK Integration Guide for Android/Configuring VE SDK using other languages/Integrating VE SDK using Jetpack Compose.md)
+    - **Getting Started with Android SDK**
+      - [Android SDK Quick Start Guide](1.3.0/SDK Integration Guide for Android/Getting Started with Android SDK/Android SDK Quick Start Guide.md)
+      - [Getting started with Android ](1.3.0/SDK Integration Guide for Android/Getting Started with Android SDK/Getting started with Android.md)
+  - **SDK Integration Guide for iOS**
+    - **Getting Started with iOS SDK**
+      - [Getting started with iOS](1.3.0/SDK Integration Guide for iOS/Getting Started with iOS SDK/Getting started with iOS.md)
+      - [iOS SDK Quick Start Guide](1.3.0/SDK Integration Guide for iOS/Getting Started with iOS SDK/iOS SDK Quick Start Guide.md)
+    - **Integrating VE SDK with other languages**
+      - [Integrating VE SDK using Objective-C](1.3.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK using Objective-C.md)
+      - [Integrating VE SDK using SwiftUI](1.3.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK using SwiftUI.md)
+      - **Integrating VE SDK with Flutter**
+        - [Adding iOS camera and draft box features to flutter projects](1.3.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Adding iOS camera and draft box features to flutter projects.md)
+        - [Configuring flutter projects in Objective-C](1.3.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Configuring flutter projects in Objective-C.md)
+        - [Configuring flutter projects in Swift](1.3.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Configuring flutter projects in Swift.md)
+        - [Creating iOS flutter projects](1.3.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Integrating VE SDK with Flutter/Creating iOS flutter projects.md)
+      - **Managing dependency libraries**
+        - [Managing dependencies using Cocoapods](1.3.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Managing dependency libraries/Managing dependencies using Cocoapods.md)
+        - [Managing dependencies using SPM](1.3.0/SDK Integration Guide for iOS/Integrating VE SDK with other languages/Managing dependency libraries/Managing dependencies using SPM.md)
+    - **iOS Advanced Features**
+      - [Album configuration and features](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/Album configuration and features.md)
+      - [Authentication configuration and features](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/Authentication configuration and features.md)
+      - [Configure APIs globally](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/Configure APIs globally.md)
+      - [iOS camera module configuration and features](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS camera module configuration and features.md)
+      - [iOS draft UI configuration and features](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS draft UI configuration and features.md)
+      - [iOS editor module configuration and features](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS editor module configuration and features.md)
+      - [iOS resources import and configuration](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS resources import and configuration.md)
+      - **Export function configurations and APIs**
+        - [Export function configuration and features](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/Export function configurations and APIs/Export function configuration and features.md)
+        - [Video export APIs for iOS](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/Export function configurations and APIs/Video export APIs for iOS.md)
+      - **Magic Template SDK Integration Guide for iOS**
+        - [Exporting Magic Template videos in iOS](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Exporting Magic Template videos in iOS.md)
+        - [Getting started with iOS Magic Template](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Getting started with iOS Magic Template.md)
+        - [Initializing and preparing the iOS Magic Template SDK](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Initializing and preparing the iOS Magic Template SDK.md)
+        - [Managing Magic Template objects in iOS](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Managing Magic Template objects in iOS.md)
+        - [Utilizing Magic Template objects in iOS](1.3.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Utilizing Magic Template objects in iOS.md)
+    - **iOS Resources**
+      - [iOS package deliverables list](1.3.0/SDK Integration Guide for iOS/iOS Resources/iOS package deliverables list.md)
+- **1.4.0**
+  - [FAQ](1.4.0/FAQ.md)
+  - [Managing the demo app](1.4.0/Managing the demo app.md)
+  - **Common Advanced Features**
+    - **Panels and Configuration Files**
+      - [Camera panels and configurations](1.4.0/Common Advanced Features/Panels and Configuration Files/Camera panels and configurations.md)
+      - [Function panels and configurations](1.4.0/Common Advanced Features/Panels and Configuration Files/Function panels and configurations.md)
+      - [Preview Editor panels and configurations](1.4.0/Common Advanced Features/Panels and Configuration Files/Preview Editor panels and configurations.md)
+      - [Track Editor panels and configurations](1.4.0/Common Advanced Features/Panels and Configuration Files/Track Editor panels and configurations.md)
+    - **UI Customization**
+      - [Android UI customization overview](1.4.0/Common Advanced Features/UI Customization/Android UI customization overview.md)
+      - [Basic components UI customization](1.4.0/Common Advanced Features/UI Customization/Basic components UI customization.md)
+      - [Camera module UI](1.4.0/Common Advanced Features/UI Customization/Camera module UI.md)
+      - [Camera roll selection screen](1.4.0/Common Advanced Features/UI Customization/Camera roll selection screen.md)
+      - [Draft mode UI](1.4.0/Common Advanced Features/UI Customization/Draft mode UI.md)
+      - [iOS UI customization overview](1.4.0/Common Advanced Features/UI Customization/iOS UI customization overview.md)
+      - [Music library panel](1.4.0/Common Advanced Features/UI Customization/Music library panel.md)
+      - [Music volume panel](1.4.0/Common Advanced Features/UI Customization/Music volume panel.md)
+      - [Preview Editor feature UI](1.4.0/Common Advanced Features/UI Customization/Preview Editor feature UI.md)
+      - [Sound effects panel](1.4.0/Common Advanced Features/UI Customization/Sound effects panel.md)
+      - [Track Editor feature UI](1.4.0/Common Advanced Features/UI Customization/Track Editor feature UI.md)
+      - [Video Editor SDK Color Chart](1.4.0/Common Advanced Features/UI Customization/Video Editor SDK Color Chart.md)
+  - **Product Introduction**
+    - [Pricing](1.4.0/Product Introduction/Pricing.md)
+    - [Product overview](1.4.0/Product Introduction/Product overview.md)
+    - [Use cases](1.4.0/Product Introduction/Use cases.md)
+    - [Video Editor SDK assets list](1.4.0/Product Introduction/Video Editor SDK assets list.md)
+    - **Video Editor SDK Features**
+      - [Camera feature](1.4.0/Product Introduction/Video Editor SDK Features/Camera feature.md)
+      - [Preview Editor feature](1.4.0/Product Introduction/Video Editor SDK Features/Preview Editor feature.md)
+      - [Track Editor feature](1.4.0/Product Introduction/Video Editor SDK Features/Track Editor feature.md)
+  - **SDK Integration Guide for Android**
+    - **Android Advanced Features**
+      - [Android Camera module configuration and features](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Android Camera module configuration and features.md)
+      - [Android Editor module configuration and features](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Android Editor module configuration and features.md)
+      - [Android resources import and configuration](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Android resources import and configuration.md)
+      - [Draft function](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Draft function.md)
+      - [SDK initialization—Android](1.4.0/SDK Integration Guide for Android/Android Advanced Features/SDK initialization—Android.md)
+      - [Third-party stickers resource import and configuration](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Third-party stickers resource import and configuration.md)
+      - **Android Video Export API References**
+        - [Android dependency data models](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Android dependency data models.md)
+        - [Cover image APIs](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Cover image APIs.md)
+        - [Export function APIs](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Export function APIs.md)
+        - [Export page customization](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Export page customization.md)
+        - [Initializing EOExportManager](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Initializing EOExportManager.md)
+        - [Preview Editor Android APIs](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Preview Editor Android APIs.md)
+      - **Magic Template SDK Integration Guide for Android**
+        - [Exporting Magic Template videos in Android](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Exporting Magic Template videos in Android.md)
+        - [Getting started with Android Magic Template](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Getting started with Android Magic Template.md)
+        - [Initializing and preparing the Android Magic Template SDK](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Initializing and preparing the Android Magic Template SDK.md)
+        - [Managing Magic Template objects in Android](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Managing Magic Template objects in Android.md)
+        - [Utilizing Magic Template objects in Android](1.4.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Utilizing Magic Template objects in Android.md)
+    - **Android Resources**
+      - [Android Encoding and Composition Parameters ](1.4.0/SDK Integration Guide for Android/Android Resources/Android Encoding and Composition Parameters.md)
+      - [Android sample SDK deliverables list](1.4.0/SDK Integration Guide for Android/Android Resources/Android sample SDK deliverables list.md)
+    - **Configuring VE SDK Using Other Languages**
+      - [Configuring repositories and dependencies using gradle](1.4.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Configuring repositories and dependencies using gradle.md)
+      - [Integrating VE SDK for Android using Flutter](1.4.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using Flutter.md)
+      - [Integrating VE SDK using Java](1.4.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK using Java.md)
+      - [Integrating VE SDK using Jetpack Compose](1.4.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK using Jetpack Compose.md)
+      - **Integrating VE SDK for Android using React Native**
+        - [Configuring React Native projects in Android](1.4.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Configuring React Native projects in Android.md)
+        - [Creating React Native projects in Android](1.4.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Creating React Native projects in Android.md)
+        - [Integrating the Android SDK using RN](1.4.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Integrating the Android SDK using RN.md)
+        - [Running the Android React Native project](1.4.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Running the Android React Native project.md)
+    - **Getting Started with Android SDK**
+      - [Android SDK Quick Start Guide](1.4.0/SDK Integration Guide for Android/Getting Started with Android SDK/Android SDK Quick Start Guide.md)
+      - [Getting started with Android ](1.4.0/SDK Integration Guide for Android/Getting Started with Android SDK/Getting started with Android.md)
+  - **SDK Integration Guide for iOS**
+    - **Getting Started with iOS SDK**
+      - [Getting started with iOS](1.4.0/SDK Integration Guide for iOS/Getting Started with iOS SDK/Getting started with iOS.md)
+      - [iOS SDK Quick Start Guide](1.4.0/SDK Integration Guide for iOS/Getting Started with iOS SDK/iOS SDK Quick Start Guide.md)
+    - **Integrating VE SDK with Other Languages**
+      - [Integrating VE SDK using Objective-C](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using Objective-C.md)
+      - [Integrating VE SDK using SwiftUI](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using SwiftUI.md)
+      - **Integrating VE SDK using React Native in iOS**
+        - [Configuring React Native projects in iOS](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Configuring React Native projects in iOS.md)
+        - [Configuring Xcode in React Native projects](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Configuring Xcode in React Native projects.md)
+        - [Creating React Native projects in iOS](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Creating React Native projects in iOS.md)
+        - [iOS React Native FAQ](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/iOS React Native FAQ.md)
+        - [Running the iOS React Native project](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Running the iOS React Native project.md)
+      - **Integrating VE SDK with Flutter**
+        - [Adding iOS camera and draft box features to flutter projects](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Adding iOS camera and draft box features to flutter projects.md)
+        - [Configuring flutter projects in Objective-C](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Configuring flutter projects in Objective-C.md)
+        - [Configuring flutter projects in Swift](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Configuring flutter projects in Swift.md)
+        - [Creating iOS flutter projects](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Creating iOS flutter projects.md)
+      - **Managing iOS Dependency Libraries**
+        - [Managing dependencies using Cocoapods](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Managing iOS Dependency Libraries/Managing dependencies using Cocoapods.md)
+        - [Managing dependencies using SPM](1.4.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Managing iOS Dependency Libraries/Managing dependencies using SPM.md)
+    - **iOS Advanced Features**
+      - [Album configuration and features](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/Album configuration and features.md)
+      - [Authentication configuration and features](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/Authentication configuration and features.md)
+      - [Configure APIs globally](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/Configure APIs globally.md)
+      - [iOS camera module configuration and features](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS camera module configuration and features.md)
+      - [iOS draft UI configuration and features](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS draft UI configuration and features.md)
+      - [iOS editor module configuration and features](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS editor module configuration and features.md)
+      - [iOS resources import and configuration](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS resources import and configuration.md)
+      - **Export Function Configurations and APIs**
+        - [Export function configuration and features](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/Export Function Configurations and APIs/Export function configuration and features.md)
+        - [Video export APIs for iOS](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/Export Function Configurations and APIs/Video export APIs for iOS.md)
+      - **Magic Template SDK Integration Guide for iOS**
+        - [Exporting Magic Template videos in iOS](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Exporting Magic Template videos in iOS.md)
+        - [Getting started with iOS Magic Template](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Getting started with iOS Magic Template.md)
+        - [Initializing and preparing the iOS Magic Template SDK](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Initializing and preparing the iOS Magic Template SDK.md)
+        - [Managing Magic Template objects in iOS](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Managing Magic Template objects in iOS.md)
+        - [Utilizing Magic Template objects in iOS](1.4.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Utilizing Magic Template objects in iOS.md)
+    - **iOS Resources**
+      - [iOS package deliverables list](1.4.0/SDK Integration Guide for iOS/iOS Resources/iOS package deliverables list.md)
+- **1.5.0**
+  - [FAQ](1.5.0/FAQ.md)
+  - [Managing the demo app](1.5.0/Managing the demo app.md)
+  - **Common Advanced Features**
+    - **Panels and Configuration Files**
+      - [Camera panels and configurations](1.5.0/Common Advanced Features/Panels and Configuration Files/Camera panels and configurations.md)
+      - [Function panels and configurations](1.5.0/Common Advanced Features/Panels and Configuration Files/Function panels and configurations.md)
+      - [Preview Editor panels and configurations](1.5.0/Common Advanced Features/Panels and Configuration Files/Preview Editor panels and configurations.md)
+      - [Track Editor panels and configurations](1.5.0/Common Advanced Features/Panels and Configuration Files/Track Editor panels and configurations.md)
+    - **UI Customization**
+      - [Android UI customization overview](1.5.0/Common Advanced Features/UI Customization/Android UI customization overview.md)
+      - [Basic components UI customization](1.5.0/Common Advanced Features/UI Customization/Basic components UI customization.md)
+      - [Camera module UI](1.5.0/Common Advanced Features/UI Customization/Camera module UI.md)
+      - [Camera roll selection screen](1.5.0/Common Advanced Features/UI Customization/Camera roll selection screen.md)
+      - [Draft mode UI](1.5.0/Common Advanced Features/UI Customization/Draft mode UI.md)
+      - [iOS UI customization overview](1.5.0/Common Advanced Features/UI Customization/iOS UI customization overview.md)
+      - [Magic Template feature UI](1.5.0/Common Advanced Features/UI Customization/Magic Template feature UI.md)
+      - [Music library panel](1.5.0/Common Advanced Features/UI Customization/Music library panel.md)
+      - [Music volume panel](1.5.0/Common Advanced Features/UI Customization/Music volume panel.md)
+      - [Preview Editor feature UI](1.5.0/Common Advanced Features/UI Customization/Preview Editor feature UI.md)
+      - [Sound effects panel](1.5.0/Common Advanced Features/UI Customization/Sound effects panel.md)
+      - [Track Editor feature UI](1.5.0/Common Advanced Features/UI Customization/Track Editor feature UI.md)
+      - [Video Editor SDK Color Chart](1.5.0/Common Advanced Features/UI Customization/Video Editor SDK Color Chart.md)
+  - **Product Introduction**
+    - [Pricing](1.5.0/Product Introduction/Pricing.md)
+    - [Product overview](1.5.0/Product Introduction/Product overview.md)
+    - [Use cases](1.5.0/Product Introduction/Use cases.md)
+    - [Video Editor SDK assets list](1.5.0/Product Introduction/Video Editor SDK assets list.md)
+    - **Video Editor SDK Features**
+      - [Camera feature](1.5.0/Product Introduction/Video Editor SDK Features/Camera feature.md)
+      - [Preview Editor feature](1.5.0/Product Introduction/Video Editor SDK Features/Preview Editor feature.md)
+      - [Track Editor feature](1.5.0/Product Introduction/Video Editor SDK Features/Track Editor feature.md)
+  - **SDK Integration Guide for Android**
+    - **Android Advanced Features**
+      - [Android Camera module configuration and features](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Android Camera module configuration and features.md)
+      - [Android Editor module configuration and features](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Android Editor module configuration and features.md)
+      - [Android resources import and configuration](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Android resources import and configuration.md)
+      - [Draft function](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Draft function.md)
+      - [SDK initialization—Android](1.5.0/SDK Integration Guide for Android/Android Advanced Features/SDK initialization—Android.md)
+      - [Third-party stickers resource import and configuration](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Third-party stickers resource import and configuration.md)
+      - **Android Video Export API References**
+        - [Android dependency data models](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Android dependency data models.md)
+        - [Cover image APIs](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Cover image APIs.md)
+        - [Export function APIs](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Export function APIs.md)
+        - [Export page customization](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Export page customization.md)
+        - [Initializing EOExportManager](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Initializing EOExportManager.md)
+        - [Preview Editor Android APIs](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Preview Editor Android APIs.md)
+      - **Magic Template SDK Integration Guide for Android**
+        - [Exporting Magic Template videos in Android](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Exporting Magic Template videos in Android.md)
+        - [Getting started with Android Magic Template](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Getting started with Android Magic Template.md)
+        - [Initializing and preparing the Android Magic Template SDK](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Initializing and preparing the Android Magic Template SDK.md)
+        - [Managing Android highlight clippings](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Managing Android highlight clippings.md)
+        - [Managing Magic Template objects in Android](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Managing Magic Template objects in Android.md)
+        - [Utilizing Magic Template objects in Android](1.5.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK Integration Guide for Android/Utilizing Magic Template objects in Android.md)
+    - **Android Resources**
+      - [Android Encoding and Composition Parameters ](1.5.0/SDK Integration Guide for Android/Android Resources/Android Encoding and Composition Parameters.md)
+      - [Android sample SDK deliverables list](1.5.0/SDK Integration Guide for Android/Android Resources/Android sample SDK deliverables list.md)
+    - **Configuring VE SDK Using Other Languages**
+      - [Configuring repositories and dependencies using gradle](1.5.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Configuring repositories and dependencies using gradle.md)
+      - [Integrating VE SDK for Android using Flutter](1.5.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using Flutter.md)
+      - [Integrating VE SDK using DFM](1.5.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK using DFM.md)
+      - [Integrating VE SDK using Java](1.5.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK using Java.md)
+      - [Integrating VE SDK using Jetpack Compose](1.5.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK using Jetpack Compose.md)
+      - **Integrating VE SDK for Android using React Native**
+        - [Configuring React Native projects in Android](1.5.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Configuring React Native projects in Android.md)
+        - [Creating React Native projects in Android](1.5.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Creating React Native projects in Android.md)
+        - [Integrating the Android SDK using RN](1.5.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Integrating the Android SDK using RN.md)
+        - [Running the Android React Native project](1.5.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Running the Android React Native project.md)
+    - **Getting Started with Android SDK**
+      - [Android SDK Quick Start Guide](1.5.0/SDK Integration Guide for Android/Getting Started with Android SDK/Android SDK Quick Start Guide.md)
+      - [Getting started with Android ](1.5.0/SDK Integration Guide for Android/Getting Started with Android SDK/Getting started with Android.md)
+  - **SDK Integration Guide for iOS**
+    - **Getting Started with iOS SDK**
+      - [Getting started with iOS](1.5.0/SDK Integration Guide for iOS/Getting Started with iOS SDK/Getting started with iOS.md)
+      - [iOS SDK Quick Start Guide](1.5.0/SDK Integration Guide for iOS/Getting Started with iOS SDK/iOS SDK Quick Start Guide.md)
+    - **Integrating VE SDK with Other Languages**
+      - [Integrating VE SDK using Objective-C](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using Objective-C.md)
+      - [Integrating VE SDK using SwiftUI](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using SwiftUI.md)
+      - **Integrating VE SDK using React Native in iOS**
+        - [Configuring React Native projects in iOS](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Configuring React Native projects in iOS.md)
+        - [Configuring Xcode in React Native projects](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Configuring Xcode in React Native projects.md)
+        - [Creating React Native projects in iOS](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Creating React Native projects in iOS.md)
+        - [iOS React Native FAQ](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/iOS React Native FAQ.md)
+        - [Running the iOS React Native project](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Running the iOS React Native project.md)
+      - **Integrating VE SDK with Flutter**
+        - [Adding iOS camera and draft box features to flutter projects](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Adding iOS camera and draft box features to flutter projects.md)
+        - [Configuring flutter projects in Objective-C](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Configuring flutter projects in Objective-C.md)
+        - [Configuring flutter projects in Swift](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Configuring flutter projects in Swift.md)
+        - [Creating iOS flutter projects](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Creating iOS flutter projects.md)
+      - **Managing iOS Dependency Libraries**
+        - [Managing dependencies using Cocoapods](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Managing iOS Dependency Libraries/Managing dependencies using Cocoapods.md)
+        - [Managing dependencies using SPM](1.5.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Managing iOS Dependency Libraries/Managing dependencies using SPM.md)
+    - **iOS Advanced Features**
+      - [Album configuration and features](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/Album configuration and features.md)
+      - [Authentication configuration and features](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/Authentication configuration and features.md)
+      - [Configure APIs globally](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/Configure APIs globally.md)
+      - [iOS camera module configuration and features](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS camera module configuration and features.md)
+      - [iOS draft UI configuration and features](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS draft UI configuration and features.md)
+      - [iOS editor module configuration and features](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS editor module configuration and features.md)
+      - [iOS resources import and configuration](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS resources import and configuration.md)
+      - **Export Function Configurations and APIs**
+        - [Export function configuration and features](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/Export Function Configurations and APIs/Export function configuration and features.md)
+        - [Video export APIs for iOS](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/Export Function Configurations and APIs/Video export APIs for iOS.md)
+      - **Magic Template SDK Integration Guide for iOS**
+        - [Exporting Magic Template videos in iOS](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Exporting Magic Template videos in iOS.md)
+        - [Getting started with iOS Magic Template](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Getting started with iOS Magic Template.md)
+        - [Initializing and preparing the iOS Magic Template SDK](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Initializing and preparing the iOS Magic Template SDK.md)
+        - [Managing iOS highlight clippings](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Managing iOS highlight clippings.md)
+        - [Managing Magic Template objects in iOS](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Managing Magic Template objects in iOS.md)
+        - [Utilizing Magic Template objects in iOS](1.5.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Utilizing Magic Template objects in iOS.md)
+    - **iOS Resources**
+      - [iOS package deliverables list](1.5.0/SDK Integration Guide for iOS/iOS Resources/iOS package deliverables list.md)
+- **1.6.0**
+  - [FAQ](1.6.0/FAQ.md)
+  - [Managing the demo app](1.6.0/Managing the demo app.md)
+  - **Common Advanced Features**
+    - **Panels and Configurations**
+      - [Camera panels and configurations](1.6.0/Common Advanced Features/Panels and Configurations/Camera panels and configurations.md)
+      - [Function panels and configurations](1.6.0/Common Advanced Features/Panels and Configurations/Function panels and configurations.md)
+      - [Preview Editor panels and configurations](1.6.0/Common Advanced Features/Panels and Configurations/Preview Editor panels and configurations.md)
+      - [Track Editor panels and configurations](1.6.0/Common Advanced Features/Panels and Configurations/Track Editor panels and configurations.md)
+    - **UI Customization**
+      - [Android UI customization overview](1.6.0/Common Advanced Features/UI Customization/Android UI customization overview.md)
+      - [Basic components UI customization](1.6.0/Common Advanced Features/UI Customization/Basic components UI customization.md)
+      - [Camera module UI](1.6.0/Common Advanced Features/UI Customization/Camera module UI.md)
+      - [Camera roll selection screen](1.6.0/Common Advanced Features/UI Customization/Camera roll selection screen.md)
+      - [Draft mode UI](1.6.0/Common Advanced Features/UI Customization/Draft mode UI.md)
+      - [iOS UI customization overview](1.6.0/Common Advanced Features/UI Customization/iOS UI customization overview.md)
+      - [Magic Template feature UI](1.6.0/Common Advanced Features/UI Customization/Magic Template feature UI.md)
+      - [Music library panel](1.6.0/Common Advanced Features/UI Customization/Music library panel.md)
+      - [Music volume panel](1.6.0/Common Advanced Features/UI Customization/Music volume panel.md)
+      - [Preview Editor feature UI](1.6.0/Common Advanced Features/UI Customization/Preview Editor feature UI.md)
+      - [Sound effects panel](1.6.0/Common Advanced Features/UI Customization/Sound effects panel.md)
+      - [Track Editor feature UI](1.6.0/Common Advanced Features/UI Customization/Track Editor feature UI.md)
+      - [Video Editor SDK Color Chart](1.6.0/Common Advanced Features/UI Customization/Video Editor SDK Color Chart.md)
+  - **Product Introduction**
+    - [Pricing](1.6.0/Product Introduction/Pricing.md)
+    - [Product overview](1.6.0/Product Introduction/Product overview.md)
+    - [Use cases](1.6.0/Product Introduction/Use cases.md)
+    - [Video Editor SDK assets list](1.6.0/Product Introduction/Video Editor SDK assets list.md)
+    - **Video Editor SDK Features**
+      - [Camera feature](1.6.0/Product Introduction/Video Editor SDK Features/Camera feature.md)
+      - [Preview Editor feature](1.6.0/Product Introduction/Video Editor SDK Features/Preview Editor feature.md)
+      - [Track Editor feature](1.6.0/Product Introduction/Video Editor SDK Features/Track Editor feature.md)
+  - **SDK Integration Guide for Android**
+    - **Android Advanced Features**
+      - [Android Camera module configuration and features](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Android Camera module configuration and features.md)
+      - [Android Editor module configuration and features](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Android Editor module configuration and features.md)
+      - [Android resources import and configuration](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Android resources import and configuration.md)
+      - [Draft function](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Draft function.md)
+      - [SDK initialization—Android](1.6.0/SDK Integration Guide for Android/Android Advanced Features/SDK initialization—Android.md)
+      - [Third-party stickers resource import and configuration](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Third-party stickers resource import and configuration.md)
+      - **Android Video Export API References**
+        - [Android dependency data models](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Android dependency data models.md)
+        - [Cover image APIs](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Cover image APIs.md)
+        - [Export function APIs](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Export function APIs.md)
+        - [Export page customization](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Export page customization.md)
+        - [Initializing EOExportManager](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Initializing EOExportManager.md)
+        - [Preview Editor Android APIs](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Android Video Export API References/Preview Editor Android APIs.md)
+      - **Magic Template SDK integration Guide for Android**
+        - [Exporting Magic Template videos in Android](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK integration Guide for Android/Exporting Magic Template videos in Android.md)
+        - [Getting started with Android Magic Template](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK integration Guide for Android/Getting started with Android Magic Template.md)
+        - [Initializing and preparing the Android Magic Template SDK](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK integration Guide for Android/Initializing and preparing the Android Magic Template SDK.md)
+        - [Managing Android highlight clippings](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK integration Guide for Android/Managing Android highlight clippings.md)
+        - [Managing Magic Template objects in Android](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK integration Guide for Android/Managing Magic Template objects in Android.md)
+        - [Utilizing Magic Template objects in Android](1.6.0/SDK Integration Guide for Android/Android Advanced Features/Magic Template SDK integration Guide for Android/Utilizing Magic Template objects in Android.md)
+    - **Android Resources**
+      - [Android Encoding and Composition Parameters ](1.6.0/SDK Integration Guide for Android/Android Resources/Android Encoding and Composition Parameters.md)
+      - [Android Sample SDK Deliverables List](1.6.0/SDK Integration Guide for Android/Android Resources/Android Sample SDK Deliverables List.md)
+    - **Configuring VE SDK Using Other Languages**
+      - [Configuring repositories and dependencies using gradle](1.6.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Configuring repositories and dependencies using gradle.md)
+      - [Integrating VE SDK for Android using Flutter](1.6.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using Flutter.md)
+      - [Integrating VE SDK using DFM](1.6.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK using DFM.md)
+      - [Integrating VE SDK using Java](1.6.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK using Java.md)
+      - [Integrating VE SDK using Jetpack Compose](1.6.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK using Jetpack Compose.md)
+      - **Integrating VE SDK for Android using React Native**
+        - [Configuring React Native projects in Android](1.6.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Configuring React Native projects in Android.md)
+        - [Creating React Native projects in Android](1.6.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Creating React Native projects in Android.md)
+        - [Integrating the Android SDK using RN](1.6.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Integrating the Android SDK using RN.md)
+        - [Running the Android React Native project](1.6.0/SDK Integration Guide for Android/Configuring VE SDK Using Other Languages/Integrating VE SDK for Android using React Native/Running the Android React Native project.md)
+    - **Getting Started with Android SDK**
+      - [Android SDK Quick Start Guide](1.6.0/SDK Integration Guide for Android/Getting Started with Android SDK/Android SDK Quick Start Guide.md)
+      - [Getting started with Android ](1.6.0/SDK Integration Guide for Android/Getting Started with Android SDK/Getting started with Android.md)
+  - **SDK Integration Guide for iOS**
+    - **Getting Started with iOS SDK**
+      - [Getting started with iOS](1.6.0/SDK Integration Guide for iOS/Getting Started with iOS SDK/Getting started with iOS.md)
+      - [iOS SDK Quick Start Guide](1.6.0/SDK Integration Guide for iOS/Getting Started with iOS SDK/iOS SDK Quick Start Guide.md)
+    - **Integrating VE SDK with Other Languages**
+      - [Integrating VE SDK using Objective-C](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using Objective-C.md)
+      - [Integrating VE SDK using SwiftUI](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using SwiftUI.md)
+      - **Integrating VE SDK using React Native in iOS**
+        - [Configuring React Native projects in iOS](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Configuring React Native projects in iOS.md)
+        - [Configuring Xcode in React Native projects](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Configuring Xcode in React Native projects.md)
+        - [Creating React Native projects in iOS](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Creating React Native projects in iOS.md)
+        - [iOS React Native FAQ](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/iOS React Native FAQ.md)
+        - [Running the iOS React Native project](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK using React Native in iOS/Running the iOS React Native project.md)
+      - **Integrating VE SDK with Flutter**
+        - [Adding iOS camera and draft box features to flutter projects](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Adding iOS camera and draft box features to flutter projects.md)
+        - [Configuring flutter projects in Objective-C](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Configuring flutter projects in Objective-C.md)
+        - [Configuring flutter projects in Swift](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Configuring flutter projects in Swift.md)
+        - [Creating iOS flutter projects](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Integrating VE SDK with Flutter/Creating iOS flutter projects.md)
+      - **Managing iOS Dependency Libraries**
+        - [Managing dependencies using Cocoapods](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Managing iOS Dependency Libraries/Managing dependencies using Cocoapods.md)
+        - [Managing dependencies using SPM](1.6.0/SDK Integration Guide for iOS/Integrating VE SDK with Other Languages/Managing iOS Dependency Libraries/Managing dependencies using SPM.md)
+    - **iOS Advanced Features**
+      - [Album configuration and features](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/Album configuration and features.md)
+      - [Authentication configuration and features](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/Authentication configuration and features.md)
+      - [Configure APIs globally](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/Configure APIs globally.md)
+      - [iOS camera module configuration and features](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS camera module configuration and features.md)
+      - [iOS draft UI configuration and features](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS draft UI configuration and features.md)
+      - [iOS editor module configuration and features](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS editor module configuration and features.md)
+      - [iOS resources import and configuration](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/iOS resources import and configuration.md)
+      - **Export Function Configuration and APIs**
+        - [Export function configuration and features](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/Export Function Configuration and APIs/Export function configuration and features.md)
+        - [Video export APIs for iOS](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/Export Function Configuration and APIs/Video export APIs for iOS.md)
+      - **Magic Template SDK Integration Guide for iOS**
+        - [Exporting Magic Template videos in iOS](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Exporting Magic Template videos in iOS.md)
+        - [Getting started with iOS Magic Template](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Getting started with iOS Magic Template.md)
+        - [Initializing and preparing the iOS Magic Template SDK](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Initializing and preparing the iOS Magic Template SDK.md)
+        - [Managing iOS highlight clippings](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Managing iOS highlight clippings.md)
+        - [Managing Magic Template objects in iOS](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Managing Magic Template objects in iOS.md)
+        - [Utilizing Magic Template objects in iOS](1.6.0/SDK Integration Guide for iOS/iOS Advanced Features/Magic Template SDK Integration Guide for iOS/Utilizing Magic Template objects in iOS.md)
+    - **iOS Resources**
+      - [iOS package deliverables list](1.6.0/SDK Integration Guide for iOS/iOS Resources/iOS package deliverables list.md)
+- **1.8.1**
+  - **SDK Integration Guide**
+    - **Android SDK Integration Guide**
+      - [Android SDK Quick Start Guide](1.8.1/SDK Integration Guide/Android SDK Integration Guide/Android SDK Quick Start Guide.md)
+- **Release Notes**
+  - [Video Editor SDK release notes 2024](Release Notes/Video Editor SDK release notes 2024.md)

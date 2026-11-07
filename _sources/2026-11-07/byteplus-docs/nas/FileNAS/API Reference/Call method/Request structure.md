@@ -1,0 +1,73 @@
+---
+title: "Request structure"
+product: "FileNAS"
+product_code: "nas"
+source: "https://docs.byteplus.com/en/docs/nas/Request-structure"
+---
+
+This topic introduces the request structure used by FileNAS APIs.
+
+<span id="bc0212d8"></span>
+## Service endpoints
+
+FileNAS is now available in regions listed in the table below.
+
+
+|Region |RegionId |Endpoint |
+|---|---|---|
+|Asia Pacific (Johor) |ap\-southeast\-1 |open.ap\-southeast\-1.byteplusapi.com |
+
+
+<span id="30a44d7a"></span>
+## Communication protocol
+
+HTTP and HTTPS protocols are supported for request communication, while the latter is recommended for sending requests to ensure higher security.
+
+<span id="e26db3f8"></span>
+## Request method
+
+The HTTP POST method is supported, where the recommended Content\-Type for POST requests is `application/json`.
+
+<div data-tips="true" data-tips-type="tip" data-tips-is-title="true">Tip</div>
+
+
+<div data-tips="true" data-tips-type="tip">Requests must use the BytePlus <a href="https://docs.byteplus.com/en/docs/byteplus-platform/reference-how-to-calculate-a-signature">Calculating a signature</a>.</div>
+
+
+<span id="9644b173"></span>
+## Request URL
+
+Call the API services by sending HTTPS POST requests. The URL format for HTTPS requests is:
+
+```JSON
+POST {URI-scheme}://{Endpoint}/?Action={Action}&Version={Version} HTTP/1.1
+```
+
+
+Where:
+
+
+* `URI-scheme`: The protocol used for transferring requests. All APIs currently use the HTTPS protocol.
+
+* `Endpoint`： The domain name or IP address of the server assigned to host the service endpoint. It is also called the URL. The URL of FileNAS is `open.ap-southeast-1.byteplusapi.com`.
+
+* `Action`： The action to be performed. Enter the name of the API to be called here. For the APIs supported by FileNAS, refer to [API overview](https://docs.byteplus.com/en/docs/nas/API-overview).
+
+* `Version`： API version in the format `YYYY-MM-DD`. The API version of FileNAS is `2022-01-01`.
+
+
+<span id="c4c39a8d"></span>
+## Request parameters
+
+Every API request consists of two types of parameters:
+
+
+* Common request parameters: Parameters that are required for every API. For more information on common request parameters, refer to [Common parameters](https://docs.byteplus.com/en/docs/nas/Common-parameters).
+
+* API\-specific request parameters: Parameters specific to each API. For more information on the request parameters of each API, refer to the API descriptions in [API overview](https://docs.byteplus.com/en/docs/nas/API-overview).
+
+
+<span id="1363b9f5"></span>
+## Character encoding
+
+`UTF-8` encoding is used for all requests.

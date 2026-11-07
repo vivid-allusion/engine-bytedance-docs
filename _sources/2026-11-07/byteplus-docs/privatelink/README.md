@@ -1,0 +1,133 @@
+# PrivateLink
+
+103 pages. Source: https://docs.byteplus.com/en/docs/privatelink
+
+Back to the [full index](../README.md).
+
+- [FAQs](FAQs.md)
+- [New feature release notes](New feature release notes.md)
+- **API Reference**
+  - [API overview](API Reference/API overview.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [Overview](API Reference/Overview.md)
+  - **Availability Zones of interface endpoints**
+    - [AddZoneToVpcEndpoint - Adding an availability zone to endpoint](API Reference/Availability Zones of interface endpoints/AddZoneToVpcEndpoint - Adding an availability zone to endpoint.md)
+    - [DescribePrivateLinkAvailableZones - Querying the supported availability zones for PrivateLink](API Reference/Availability Zones of interface endpoints/DescribePrivateLinkAvailableZones - Querying the supported availability zones for PrivateL.md)
+    - [DescribeVpcEndpointZones - Querying the list of endpoint availability zones](API Reference/Availability Zones of interface endpoints/DescribeVpcEndpointZones - Querying the list of endpoint availability zones.md)
+    - [RemoveZoneFromVpcEndpoint - Removing an availability zone from endpoint](API Reference/Availability Zones of interface endpoints/RemoveZoneFromVpcEndpoint - Removing an availability zone from endpoint.md)
+  - **Call method**
+    - [Common Parameters](API Reference/Call method/Common Parameters.md)
+    - [Public error codes](API Reference/Call method/Public error codes.md)
+    - [Request Structure](API Reference/Call method/Request Structure.md)
+    - [Response Example](API Reference/Call method/Response Example.md)
+    - [Signature method](API Reference/Call method/Signature method.md)
+  - **Endpoint connections**
+    - [DescribeVpcEndpointConnections - Querying the list of endpoint connections](API Reference/Endpoint connections/DescribeVpcEndpointConnections - Querying the list of endpoint connections.md)
+    - [DisableVpcEndpointConnection - Denying an endpoint connection](API Reference/Endpoint connections/DisableVpcEndpointConnection - Denying an endpoint connection.md)
+    - [EnableVpcEndpointConnection - Accepting an endpoint connection](API Reference/Endpoint connections/EnableVpcEndpointConnection - Accepting an endpoint connection.md)
+    - [ModifyVpcEndpointConnections - Modifying the bandwidth limit of an endpoint connection](API Reference/Endpoint connections/ModifyVpcEndpointConnections - Modifying the bandwidth limit of an endpoint connection.md)
+    - [ModifyVpcEndpointZoneConnectionResourceAttributes - Modifying the service resources for an endpoint connection](API Reference/Endpoint connections/ModifyVpcEndpointZoneConnectionResourceAttributes - Modifying the service resources for an.md)
+  - **Endpoint services**
+    - [CreateUniqueResourceTypeVpcEndpointService - Creating the RDS endpoint service](API Reference/Endpoint services/CreateUniqueResourceTypeVpcEndpointService - Creating the RDS endpoint service.md)
+    - [CreateVpcEndpointService - Creating an endpoint service](API Reference/Endpoint services/CreateVpcEndpointService - Creating an endpoint service.md)
+    - [DeleteVpcEndpointService - Deleting an endpoint service](API Reference/Endpoint services/DeleteVpcEndpointService - Deleting an endpoint service.md)
+    - [DescribeVpcEndpointServiceAttributes - Querying the endpoint service attributes](API Reference/Endpoint services/DescribeVpcEndpointServiceAttributes - Querying the endpoint service attributes.md)
+    - [DescribeVpcEndpointServices - Querying the endpoint service list](API Reference/Endpoint services/DescribeVpcEndpointServices - Querying the endpoint service list.md)
+    - [ModifyEndpointPayerAccount - Changing the billing payer for an endpoint service](API Reference/Endpoint services/ModifyEndpointPayerAccount - Changing the billing payer for an endpoint service.md)
+    - [ModifyUniqueResourceTypeVpcEndpointServiceAttributes - Updating the attributes of an RDS-type endpoint service](API Reference/Endpoint services/ModifyUniqueResourceTypeVpcEndpointServiceAttributes - Updating the attributes of an RDS-t.md)
+    - [ModifyVpcEndpointServiceAttributes - Updating the endpoint service attributes](API Reference/Endpoint services/ModifyVpcEndpointServiceAttributes - Updating the endpoint service attributes.md)
+    - [VerifyVpcEndpointServicePrivateDNS - Verifying the private DNS for an endpoint service](API Reference/Endpoint services/VerifyVpcEndpointServicePrivateDNS - Verifying the private DNS for an endpoint service.md)
+  - **Gateway endpoint**
+    - [CreateVpcGatewayEndpoint - Creating the gateway endpoint instance](API Reference/Gateway endpoint/CreateVpcGatewayEndpoint - Creating the gateway endpoint instance.md)
+    - [DeleteVpcGatewayEndpoint - Deleting the gateway endpoint instance](API Reference/Gateway endpoint/DeleteVpcGatewayEndpoint - Deleting the gateway endpoint instance.md)
+    - [DescribeVpcGatewayEndpointAttributes - Querying the gateway endpoint attribute](API Reference/Gateway endpoint/DescribeVpcGatewayEndpointAttributes - Querying the gateway endpoint attribute.md)
+    - [DescribeVpcGatewayEndpoints - Querying the list of qualified gateway endpoints](API Reference/Gateway endpoint/DescribeVpcGatewayEndpoints - Querying the list of qualified gateway endpoints.md)
+    - [DescribeVpcGatewayEndpointServices - Querying the list of gateway endpoint services](API Reference/Gateway endpoint/DescribeVpcGatewayEndpointServices - Querying the list of gateway endpoint services.md)
+    - [ModifyVpcGatewayEndpointAttributes - Modifying the gateway endpoint configuration attribute](API Reference/Gateway endpoint/ModifyVpcGatewayEndpointAttributes - Modifying the gateway endpoint configuration attribut.md)
+  - **Interface endpoints**
+    - [CreateVpcEndpoint - Creating an endpoint](API Reference/Interface endpoints/CreateVpcEndpoint - Creating an endpoint.md)
+    - [DeleteVpcEndpoint - Deleting an endpoint](API Reference/Interface endpoints/DeleteVpcEndpoint - Deleting an endpoint.md)
+    - [DescribeVpcEndpointAttributes - Querying the endpoint attributes](API Reference/Interface endpoints/DescribeVpcEndpointAttributes - Querying the endpoint attributes.md)
+    - [DescribeVpcEndpoints - Querying the endpoint list](API Reference/Interface endpoints/DescribeVpcEndpoints - Querying the endpoint list.md)
+    - [DescribeVpcEndpointServicesByEndUser - Querying the list of endpoint services by user permissions](API Reference/Interface endpoints/DescribeVpcEndpointServicesByEndUser - Querying the list of endpoint services by user perm.md)
+    - [ModifyVpcEndpointAttributes - Modifying the endpoint attribute](API Reference/Interface endpoints/ModifyVpcEndpointAttributes - Modifying the endpoint attribute.md)
+  - **PrivateEgressService**
+    - [CreatePrivateEgressEndpoint - Creating a private egress endpoint](API Reference/PrivateEgressService/CreatePrivateEgressEndpoint - Creating a private egress endpoint.md)
+    - [DeletePrivateEgressEndpoint - Deleting a private egress endpoint](API Reference/PrivateEgressService/DeletePrivateEgressEndpoint - Deleting a private egress endpoint.md)
+    - [DescribePrivateEgress - Viewing the private egress details](API Reference/PrivateEgressService/DescribePrivateEgress - Viewing the private egress details.md)
+    - [DescribePrivateEgressEndpoints - Listing private egress endpoints](API Reference/PrivateEgressService/DescribePrivateEgressEndpoints - Listing private egress endpoints.md)
+    - [DisablePrivateEgressDns - Disabling private egress DNS resolution](API Reference/PrivateEgressService/DisablePrivateEgressDns - Disabling private egress DNS resolution.md)
+    - [EnablePrivateEgressDns - Enabling private egress DNS resolution](API Reference/PrivateEgressService/EnablePrivateEgressDns - Enabling private egress DNS resolution.md)
+    - [ModifyPrivateEgressEndpoint - Modifying a private egress endpoint](API Reference/PrivateEgressService/ModifyPrivateEgressEndpoint - Modifying a private egress endpoint.md)
+  - **Security groups of interface endpoint**
+    - [AttachSecurityGroupToVpcEndpoint - Attaching a security group to endpoints](API Reference/Security groups of interface endpoint/AttachSecurityGroupToVpcEndpoint - Attaching a security group to endpoints.md)
+    - [DescribeVpcEndpointSecurityGroups - Querying an endpoint security group list](API Reference/Security groups of interface endpoint/DescribeVpcEndpointSecurityGroups - Querying an endpoint security group list.md)
+    - [DetachSecurityGroupFromVpcEndpoint - Detaching a security group from endpoint](API Reference/Security groups of interface endpoint/DetachSecurityGroupFromVpcEndpoint - Detaching a security group from endpoint.md)
+  - **Service accounts in the allowlist**
+    - [AddPermissionToVpcEndpointService - Adding an allowlist account to endpoint service](API Reference/Service accounts in the allowlist/AddPermissionToVpcEndpointService - Adding an allowlist account to endpoint service.md)
+    - [DescribeVpcEndpointServicePermissions - Querying the list of allowlist accounts for an endpoint service](API Reference/Service accounts in the allowlist/DescribeVpcEndpointServicePermissions - Querying the list of allowlist accounts for an end.md)
+    - [RemovePermissionFromVpcEndpointService - Removing an allowlist account from an endpoint service](API Reference/Service accounts in the allowlist/RemovePermissionFromVpcEndpointService - Removing an allowlist account from an endpoint se.md)
+  - **Service resources**
+    - [AttachResourceToVpcEndpointService - Attaching the service resource to endpoint service](API Reference/Service resources/AttachResourceToVpcEndpointService - Attaching the service resource to endpoint service.md)
+    - [DescribeVpcEndpointServiceResources - Querying the list of resources bound to an endpoint service](API Reference/Service resources/DescribeVpcEndpointServiceResources - Querying the list of resources bound to an endpoint.md)
+    - [DetachResourceFromVpcEndpointService - Detaching the service resource from endpoint service](API Reference/Service resources/DetachResourceFromVpcEndpointService - Detaching the service resource from endpoint servic.md)
+  - **Tags**
+    - [ListTagsForResources - Querying the resource tags](API Reference/Tags/ListTagsForResources - Querying the resource tags.md)
+    - [TagResources - Associating a resource tag](API Reference/Tags/TagResources - Associating a resource tag.md)
+    - [UntagResources - Detaching a resource tag](API Reference/Tags/UntagResources - Detaching a resource tag.md)
+- **Best Practices**
+  - [Accessing an NLB across VPCs via PrivateLink](Best Practices/Accessing an NLB across VPCs via PrivateLink.md)
+  - [Accessing TOS through a custom domain name](Best Practices/Accessing TOS through a custom domain name.md)
+  - [IDC shared cloud Torch Object Storage service](Best Practices/IDC shared cloud Torch Object Storage service.md)
+  - [Sharing VPC CLB services with an on-premises IDC​​](Best Practices/Sharing VPC CLB services with an on-premises IDC​​.md)
+  - [​Sharing PLB resources from other VPCs​​](Best Practices/​Sharing PLB resources from other VPCs​​.md)
+  - [​Sharing RDS resources from other VPCs​​](Best Practices/​Sharing RDS resources from other VPCs​​.md)
+- **Billing**
+  - [Arrears description](Billing/Arrears description.md)
+  - [Billing description](Billing/Billing description.md)
+- **Getting Started**
+  - [Implementing private access between VPCs across accounts](Getting Started/Implementing private access between VPCs across accounts.md)
+  - [Implementing private access between VPCs within the same account](Getting Started/Implementing private access between VPCs within the same account.md)
+  - [Quick start](Getting Started/Quick start.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Benefits](Overview/Benefits.md)
+  - [Limits](Overview/Limits.md)
+  - [Regions and Availability Zones](Overview/Regions and Availability Zones.md)
+  - [What is PrivateLink](Overview/What is PrivateLink.md)
+- **Terms**
+  - [BytePlus PL_Service Level Agreement](Terms/BytePlus PL_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus PrivateLink](Terms/Service-Specific Terms for BytePlus PrivateLink.md)
+- **User Guide**
+  - **Endpoint**
+    - [Creating a GWLB endpoint](User Guide/Endpoint/Creating a GWLB endpoint.md)
+    - [Deleting an endpoint](User Guide/Endpoint/Deleting an endpoint.md)
+    - [Endpoint overview](User Guide/Endpoint/Endpoint overview.md)
+    - [Managing official service endpoints not operable](User Guide/Endpoint/Managing official service endpoints not operable.md)
+    - [Modifying an endpoint](User Guide/Endpoint/Modifying an endpoint.md)
+    - [Modifying an interface endpoint availability zone](User Guide/Endpoint/Modifying an interface endpoint availability zone.md)
+    - [Modifying the associated security group](User Guide/Endpoint/Modifying the associated security group.md)
+    - [Viewing endpoint details](User Guide/Endpoint/Viewing endpoint details.md)
+    - **Creating endpoints**
+      - [Creating a gateway endpoint](User Guide/Endpoint/Creating endpoints/Creating a gateway endpoint.md)
+      - [Creating an interface endpoint](User Guide/Endpoint/Creating endpoints/Creating an interface endpoint.md)
+  - **Endpoint services**
+    - [Accepting or rejecting an endpoint connection](User Guide/Endpoint services/Accepting or rejecting an endpoint connection.md)
+    - [Creating an endpoint service](User Guide/Endpoint services/Creating an endpoint service.md)
+    - [Deleting an endpoint service](User Guide/Endpoint services/Deleting an endpoint service.md)
+    - [Endpoint service overview](User Guide/Endpoint services/Endpoint service overview.md)
+    - [Managing an allowlist](User Guide/Endpoint services/Managing an allowlist.md)
+    - [Managing service resource](User Guide/Endpoint services/Managing service resource.md)
+    - [Modifying an endpoint connection](User Guide/Endpoint services/Modifying an endpoint connection.md)
+    - [Modifying endpoint services](User Guide/Endpoint services/Modifying endpoint services.md)
+    - [Modifying/Verifying a private DNS name](User Guide/Endpoint services/Modifying - Verifying a private DNS name.md)
+  - **Identity and Access Management**
+    - [IAM overview](User Guide/Identity and Access Management/IAM overview.md)
+    - [PrivateLink custom policy syntax examples](User Guide/Identity and Access Management/PrivateLink custom policy syntax examples.md)
+    - [PrivateLink IAM policy type](User Guide/Identity and Access Management/PrivateLink IAM policy type.md)
+  - **Monitor**
+    - [Configuring an alert policy](User Guide/Monitor/Configuring an alert policy.md)
+    - [Viewing monitoring data](User Guide/Monitor/Viewing monitoring data.md)
+  - **Projects and tags**
+    - [Project management](User Guide/Projects and tags/Project management.md)
+    - [Tag management](User Guide/Projects and tags/Tag management.md)

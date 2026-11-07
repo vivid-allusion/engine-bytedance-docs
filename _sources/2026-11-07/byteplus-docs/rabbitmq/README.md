@@ -1,0 +1,133 @@
+# Message Queue for RabbitMQ
+
+99 pages. Source: https://docs.byteplus.com/en/docs/rabbitmq
+
+Back to the [full index](../README.md).
+
+- **API Reference**
+  - **V2 (2022-01-01)**
+    - [API overview](API Reference/V2 (2022-01-01)/API overview.md)
+    - [Usage note](API Reference/V2 (2022-01-01)/Usage note.md)
+    - **Appendix**
+      - [Error code](API Reference/V2 (2022-01-01)/Appendix/Error code.md)
+      - [Request idempotency](API Reference/V2 (2022-01-01)/Appendix/Request idempotency.md)
+    - **Extension management**
+      - [DescribePlugins - Query instance extension status](API Reference/V2 (2022-01-01)/Extension management/DescribePlugins - Query instance extension status.md)
+      - [ModifyPlugin - modify extension instance status](API Reference/V2 (2022-01-01)/Extension management/ModifyPlugin - modify extension instance status.md)
+    - **How to call the API**
+      - [Common parameters](API Reference/V2 (2022-01-01)/How to call the API/Common parameters.md)
+      - [Request structure](API Reference/V2 (2022-01-01)/How to call the API/Request structure.md)
+      - [Response](API Reference/V2 (2022-01-01)/How to call the API/Response.md)
+      - [Service address](API Reference/V2 (2022-01-01)/How to call the API/Service address.md)
+      - [Signature method](API Reference/V2 (2022-01-01)/How to call the API/Signature method.md)
+    - **Instance lifecycle management**
+      - [CreateInstance - Create instance](API Reference/V2 (2022-01-01)/Instance lifecycle management/CreateInstance - Create instance.md)
+      - [DeleteInstance - Delete instance](API Reference/V2 (2022-01-01)/Instance lifecycle management/DeleteInstance - Delete instance.md)
+      - [ModifyInstanceChargeType - change billing method](API Reference/V2 (2022-01-01)/Instance lifecycle management/ModifyInstanceChargeType - change billing method.md)
+      - [ModifyInstanceSpec - Modify instance specification](API Reference/V2 (2022-01-01)/Instance lifecycle management/ModifyInstanceSpec - Modify instance specification.md)
+    - **Instance management**
+      - [DescribeInstanceDetail - Query instance details](API Reference/V2 (2022-01-01)/Instance management/DescribeInstanceDetail - Query instance details.md)
+      - [DescribeInstances - Get the current instances list](API Reference/V2 (2022-01-01)/Instance management/DescribeInstances - Get the current instances list.md)
+      - [ModifyInstanceAttributes - Modify instance information](API Reference/V2 (2022-01-01)/Instance management/ModifyInstanceAttributes - Modify instance information.md)
+      - [ModifyUserPassword - Modify Username and Password](API Reference/V2 (2022-01-01)/Instance management/ModifyUserPassword - Modify Username and Password.md)
+      - [RestartInstance - Restart instance](API Reference/V2 (2022-01-01)/Instance management/RestartInstance - Restart instance.md)
+    - **Network management**
+      - [CreatePublicAddress - Enable public network access](API Reference/V2 (2022-01-01)/Network management/CreatePublicAddress - Enable public network access.md)
+      - [DeletePublicAddress - Disable public network access](API Reference/V2 (2022-01-01)/Network management/DeletePublicAddress - Disable public network access.md)
+    - **Resource check**
+      - [DescribeAvailabilityZones - View the availability zone list](API Reference/V2 (2022-01-01)/Resource check/DescribeAvailabilityZones - View the availability zone list.md)
+      - [DescribeRegions - Query available Region list](API Reference/V2 (2022-01-01)/Resource check/DescribeRegions - Query available Region list.md)
+    - **Tag management**
+      - [AddTagsToResource - Add instance tags](API Reference/V2 (2022-01-01)/Tag management/AddTagsToResource - Add instance tags.md)
+      - [DescribeTagsByResource - Batch query instance tags](API Reference/V2 (2022-01-01)/Tag management/DescribeTagsByResource - Batch query instance tags.md)
+      - [RemoveTagsFromResource - Unbind instance tags](API Reference/V2 (2022-01-01)/Tag management/RemoveTagsFromResource - Unbind instance tags.md)
+- **Best practices**
+  - [Best practices for RabbitMQ permission management](Best practices/Best practices for RabbitMQ permission management.md)
+  - [Best practices for RabbitMQ policy](Best practices/Best practices for RabbitMQ policy.md)
+  - [Configure data persistence](Best practices/Configure data persistence.md)
+  - [High availability for RabbitMQ queues](Best practices/High availability for RabbitMQ queues.md)
+  - [Practical approaches for handling excessive data backlog in RabbitMQ](Best practices/Practical approaches for handling excessive data backlog in RabbitMQ.md)
+  - [RabbitMQ supports public network allowlist via CLB](Best practices/RabbitMQ supports public network allowlist via CLB.md)
+  - **RabbitMQ business migration**
+    - [How to confirm cluster messages have been fully consumed](Best practices/RabbitMQ business migration/How to confirm cluster messages have been fully consumed.md)
+    - [Migration overview](Best practices/RabbitMQ business migration/Migration overview.md)
+    - [RabbitMQ migration to the cloud (Solution 1)](Best practices/RabbitMQ business migration/RabbitMQ migration to the cloud (Solution 1).md)
+    - [RabbitMQ migration to the cloud (solution 2)](Best practices/RabbitMQ business migration/RabbitMQ migration to the cloud (solution 2).md)
+- **FAQ**
+  - [Product inquiry](FAQ/Product inquiry.md)
+- **Product Billing**
+  - [Billing items](Product Billing/Billing items.md)
+  - [Billing overview](Product Billing/Billing overview.md)
+  - [Costs for unsubscribing or configuration change](Product Billing/Costs for unsubscribing or configuration change.md)
+  - [Description of arrears or expiration](Product Billing/Description of arrears or expiration.md)
+  - [Instance renewal](Product Billing/Instance renewal.md)
+  - [Switch to subscription](Product Billing/Switch to subscription.md)
+  - [Taxes and invoices](Product Billing/Taxes and invoices.md)
+  - **Billing Methods**
+    - [Pay-as-you-go](Product Billing/Billing Methods/Pay-as-you-go.md)
+    - [Subscriptions](Product Billing/Billing Methods/Subscriptions.md)
+- **Product Overview**
+  - [Data security](Product Overview/Data security.md)
+  - [Limits](Product Overview/Limits.md)
+  - [Product advantages](Product Overview/Product advantages.md)
+  - [Product features](Product Overview/Product features.md)
+  - [Product specifications](Product Overview/Product specifications.md)
+  - [Related concepts](Product Overview/Related concepts.md)
+  - [What is the message queue for RabbitMQ?](Product Overview/What is the message queue for RabbitMQ?.md)
+- **Quick Start**
+  - [Create instance](Quick Start/Create instance.md)
+  - [Overview](Quick Start/Overview.md)
+  - [Prepare the environment](Quick Start/Prepare the environment.md)
+  - [Query messages](Quick Start/Query messages.md)
+  - **Produce and consume messages**
+    - [Bind user and Vhost](Quick Start/Produce and consume messages/Bind user and Vhost.md)
+    - [Connect to the RabbitMQ management address](Quick Start/Produce and consume messages/Connect to the RabbitMQ management address.md)
+    - [Produce and consume messages (non-SSL mode)](Quick Start/Produce and consume messages/Produce and consume messages (non-SSL mode).md)
+    - [Produce and consume messages (SSL mode)](Quick Start/Produce and consume messages/Produce and consume messages (SSL mode).md)
+- **SDK reference**
+  - [Java SDK (AMQP protocol)](SDK reference/Java SDK (AMQP protocol).md)
+  - [Java SDK (MQTT protocol)](SDK reference/Java SDK (MQTT protocol).md)
+  - [Overview](SDK reference/Overview.md)
+  - [Preparations](SDK reference/Preparations.md)
+  - [Spring Boot SDK](SDK reference/Spring Boot SDK.md)
+- **Terms of Service**
+  - [BytePlus Message Queue for RabbitMQ Service Level Agreement](Terms of Service/BytePlus Message Queue for RabbitMQ Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Message Queue for RabbitMQ](Terms of Service/Service-Specific Terms for BytePlus Message Queue for RabbitMQ.md)
+- **User Guide**
+  - [Task management](User Guide/Task management.md)
+  - **Access control**
+    - [Cross-service access authorization](User Guide/Access control/Cross-service access authorization.md)
+    - [Manage permissions based on IAM](User Guide/Access control/Manage permissions based on IAM.md)
+  - **Allowlist management**
+    - [Associate instances with the allowlist](User Guide/Allowlist management/Associate instances with the allowlist.md)
+    - [Create allowlist](User Guide/Allowlist management/Create allowlist.md)
+    - [Delete allowlist](User Guide/Allowlist management/Delete allowlist.md)
+    - [Disassociate instances from the allowlist](User Guide/Allowlist management/Disassociate instances from the allowlist.md)
+    - [Edit allowlist](User Guide/Allowlist management/Edit allowlist.md)
+    - [View allowlist information](User Guide/Allowlist management/View allowlist information.md)
+  - **Extension management**
+    - [Enable extension](User Guide/Extension management/Enable extension.md)
+    - [Use the Rabbitmq_tracing extension](User Guide/Extension management/Use the Rabbitmq_tracing extension.md)
+  - **Instance management**
+    - [Create instance](User Guide/Instance management/Create instance.md)
+    - [Create quorum queue](User Guide/Instance management/Create quorum queue.md)
+    - [Delete instance](User Guide/Instance management/Delete instance.md)
+    - [Modify instance information](User Guide/Instance management/Modify instance information.md)
+    - [Reset administrator user password](User Guide/Instance management/Reset administrator user password.md)
+    - [Restart instance](User Guide/Instance management/Restart instance.md)
+    - [Set public network access](User Guide/Instance management/Set public network access.md)
+    - [Set public network parse](User Guide/Instance management/Set public network parse.md)
+    - [Set up mirrored queue for instance](User Guide/Instance management/Set up mirrored queue for instance.md)
+    - [Upgrade instance specifications](User Guide/Instance management/Upgrade instance specifications.md)
+    - [View instance information](User Guide/Instance management/View instance information.md)
+  - **Monitoring**
+    - [Recommended alarm rules](User Guide/Monitoring/Recommended alarm rules.md)
+    - [Set alarm rules](User Guide/Monitoring/Set alarm rules.md)
+    - [View monitoring data](User Guide/Monitoring/View monitoring data.md)
+  - **Tag management**
+    - [Bind tags](User Guide/Tag management/Bind tags.md)
+    - [Edit and unbind tags](User Guide/Tag management/Edit and unbind tags.md)
+    - [Filter instances by tag](User Guide/Tag management/Filter instances by tag.md)
+    - [Tag overview](User Guide/Tag management/Tag overview.md)
+  - **Terraform**
+    - [Manage Message Queue for RabbitMQ through Terraform](User Guide/Terraform/Manage Message Queue for RabbitMQ through Terraform.md)

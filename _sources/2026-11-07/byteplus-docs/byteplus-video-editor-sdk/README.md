@@ -1,0 +1,135 @@
+# BytePlus Video Editor (Archive)
+
+97 pages. Source: https://docs.byteplus.com/en/docs/byteplus-video-editor-sdk
+
+Back to the [full index](../README.md).
+
+- **v.4.0.2**
+  - **Guides**
+    - **Video Editor SDK - Basic Editing**
+      - [Feature Details](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Feature Details.md)
+      - [One Pager Overview](v.4.0.2/Guides/Video Editor SDK - Basic Editing/One Pager Overview.md)
+      - [Product Overview](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Product Overview.md)
+      - [Terminology Explanation](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Terminology Explanation.md)
+      - **Access Notice**
+        - [Format Requirements](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Access Notice/Format Requirements.md)
+        - [Licensing Guide](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Access Notice/Licensing Guide.md)
+        - [Package Size - Android - VE SDK](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Access Notice/Package Size - Android - VE SDK.md)
+        - [Package Size - iOS - VE SDK](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Access Notice/Package Size - iOS - VE SDK.md)
+      - **Common Issues**
+        - [FAQ - Licensing](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Common Issues/FAQ - Licensing.md)
+        - [FAQ - VE](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Common Issues/FAQ - VE.md)
+      - **Integration Guide (with UI)**
+        - [Integrating VE SDK with UI—Android](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Integration Guide (with UI)/Integrating VE SDK with UI—Android.md)
+        - [Integrating VE SDK with UI—iOS](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Integration Guide (with UI)/Integrating VE SDK with UI—iOS.md)
+        - [Integrating VE SDK with UI—iOS & Swift](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Integration Guide (with UI)/Integrating VE SDK with UI—iOS & Swift.md)
+        - [Integrating VE SDK with UI—iOS (Lite)](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Integration Guide (with UI)/Integrating VE SDK with UI—iOS (Lite).md)
+      - **Sample File Structure**
+        - [Sample File Structure - Android - VE](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Sample File Structure/Sample File Structure - Android - VE.md)
+        - [Sample File Structure - iOS - VE](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Sample File Structure/Sample File Structure - iOS - VE.md)
+      - **Sample Operation Guide**
+        - [Sample Operation Guide - Android - VE](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Sample Operation Guide/Sample Operation Guide - Android - VE.md)
+        - [Sample Operation Guide - iOS - VE](v.4.0.2/Guides/Video Editor SDK - Basic Editing/Sample Operation Guide/Sample Operation Guide - iOS - VE.md)
+      - **SDK Detailed Development Guide**
+        - [Detailed Development Guide - Android - VE SDK](v.4.0.2/Guides/Video Editor SDK - Basic Editing/SDK Detailed Development Guide/Detailed Development Guide - Android - VE SDK.md)
+        - [Detailed Development Guide - iOS - VE SDK](v.4.0.2/Guides/Video Editor SDK - Basic Editing/SDK Detailed Development Guide/Detailed Development Guide - iOS - VE SDK.md)
+      - **SDK Quick Access Guide**
+        - [Quick Integration Guide - Android - VE SDK](v.4.0.2/Guides/Video Editor SDK - Basic Editing/SDK Quick Access Guide/Quick Integration Guide - Android - VE SDK.md)
+        - [Quick Integration Guide - iOS - VE SDK](v.4.0.2/Guides/Video Editor SDK - Basic Editing/SDK Quick Access Guide/Quick Integration Guide - iOS - VE SDK.md)
+    - **Video Editor SDK - Magic Template**
+      - [Licensing Guide](v.4.0.2/Guides/Video Editor SDK - Magic Template/Licensing Guide.md)
+      - [One Pager Overview](v.4.0.2/Guides/Video Editor SDK - Magic Template/One Pager Overview.md)
+      - [Product Overview](v.4.0.2/Guides/Video Editor SDK - Magic Template/Product Overview.md)
+      - [Terminology Explanation](v.4.0.2/Guides/Video Editor SDK - Magic Template/Terminology Explanation.md)
+      - **Integration Guide (with UI)**
+        - [BytePlus Magic Template SDK Integration Guide (with UI) — iOS & Swift](v.4.0.2/Guides/Video Editor SDK - Magic Template/Integration Guide (with UI)/BytePlus Magic Template SDK Integration Guide (with UI) — iOS & Swift.md)
+        - [Integration Guide (with UI) - Magic Template SDK - Android](v.4.0.2/Guides/Video Editor SDK - Magic Template/Integration Guide (with UI)/Integration Guide (with UI) - Magic Template SDK - Android.md)
+        - [Integration Guide (with UI) - Magic Template SDK - iOS](v.4.0.2/Guides/Video Editor SDK - Magic Template/Integration Guide (with UI)/Integration Guide (with UI) - Magic Template SDK - iOS.md)
+      - **Sample File Structure**
+        - [Sample File Structure - Android - Magic Template](v.4.0.2/Guides/Video Editor SDK - Magic Template/Sample File Structure/Sample File Structure - Android - Magic Template.md)
+        - [Sample File Structure - iOS - Magic Template](v.4.0.2/Guides/Video Editor SDK - Magic Template/Sample File Structure/Sample File Structure - iOS - Magic Template.md)
+      - **Sample Operation Guide**
+        - [Sample Operation Guide - Android - Magic Template](v.4.0.2/Guides/Video Editor SDK - Magic Template/Sample Operation Guide/Sample Operation Guide - Android - Magic Template.md)
+        - [Sample Operation Guide - iOS - Magic Template](v.4.0.2/Guides/Video Editor SDK - Magic Template/Sample Operation Guide/Sample Operation Guide - iOS - Magic Template.md)
+      - **SDK Detailed Development Guide**
+        - [Detailed Development Guide - Android - Magic Template](v.4.0.2/Guides/Video Editor SDK - Magic Template/SDK Detailed Development Guide/Detailed Development Guide - Android - Magic Template.md)
+        - [Detailed Development Guide - iOS - Magic Template](v.4.0.2/Guides/Video Editor SDK - Magic Template/SDK Detailed Development Guide/Detailed Development Guide - iOS - Magic Template.md)
+      - **SDK Quick Access Guide**
+        - [Quick Integration Guide - iOS - Magic Template](v.4.0.2/Guides/Video Editor SDK - Magic Template/SDK Quick Access Guide/Quick Integration Guide - iOS - Magic Template.md)
+        - [Quickstart Guide - Android - Magic Template](v.4.0.2/Guides/Video Editor SDK - Magic Template/SDK Quick Access Guide/Quickstart Guide - Android - Magic Template.md)
+      - **Server-end Deployment**
+        - [Magic Template Materials & Service Guide](v.4.0.2/Guides/Video Editor SDK - Magic Template/Server-end Deployment/Magic Template Materials & Service Guide.md)
+        - [Template File Details](v.4.0.2/Guides/Video Editor SDK - Magic Template/Server-end Deployment/Template File Details.md)
+- **v4.0.3**
+  - **Guides**
+    - **Video Editor SDK - Basic Editing**
+      - [Feature Details](v4.0.3/Guides/Video Editor SDK - Basic Editing/Feature Details.md)
+      - [One Pager Overview](v4.0.3/Guides/Video Editor SDK - Basic Editing/One Pager Overview.md)
+      - [Product Overview](v4.0.3/Guides/Video Editor SDK - Basic Editing/Product Overview.md)
+      - [Terminology Explanation](v4.0.3/Guides/Video Editor SDK - Basic Editing/Terminology Explanation.md)
+      - **Access Notice**
+        - [Format Requirements](v4.0.3/Guides/Video Editor SDK - Basic Editing/Access Notice/Format Requirements.md)
+        - [Licensing Guide](v4.0.3/Guides/Video Editor SDK - Basic Editing/Access Notice/Licensing Guide.md)
+        - [Package Size - Android - VE SDK](v4.0.3/Guides/Video Editor SDK - Basic Editing/Access Notice/Package Size - Android - VE SDK.md)
+        - [Package Size - iOS - VE SDK](v4.0.3/Guides/Video Editor SDK - Basic Editing/Access Notice/Package Size - iOS - VE SDK.md)
+      - **Common Issues**
+        - [FAQ - Licensing](v4.0.3/Guides/Video Editor SDK - Basic Editing/Common Issues/FAQ - Licensing.md)
+        - [FAQ - VE](v4.0.3/Guides/Video Editor SDK - Basic Editing/Common Issues/FAQ - VE.md)
+      - **Integrating SDKs in Android Guides (Without UI)**
+        - [Audio editing modules in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Audio editing modules in Android.md)
+        - [Canvas modules in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Canvas modules in Android.md)
+        - [Common NLETrack and NLETrackSlot functions](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Common NLETrack and NLETrackSlot functions.md)
+        - [Draft modules in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Draft modules in Android.md)
+        - [Effects modules in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Effects modules in Android.md)
+        - [Exporting in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Exporting in Android.md)
+        - [Filter modules in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Filter modules in Android.md)
+        - [Importing in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Importing in Android.md)
+        - [Initializing VE SDK without UI](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Initializing VE SDK without UI.md)
+        - [NLESDK overview](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/NLESDK overview.md)
+        - [Playback Control in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Playback Control in Android.md)
+        - [Sticker modules in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Sticker modules in Android.md)
+        - [Text editing modules in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Text editing modules in Android.md)
+        - [Transition modules in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Transition modules in Android.md)
+        - [Video editing modules in Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in Android Guides (Without UI)/Video editing modules in Android.md)
+      - **Integrating SDKs in iOS Guides (Without UI)**
+        - [Audio editing module in iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Audio editing module in iOS.md)
+        - [Canvas module in iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Canvas module in iOS.md)
+        - [Common NLETrack and NLETrackSlot operations—iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Common NLETrack and NLETrackSlot operations—iOS.md)
+        - [Draft module in iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Draft module in iOS.md)
+        - [Effects module in iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Effects module in iOS.md)
+        - [Exporting in iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Exporting in iOS.md)
+        - [Filter module in iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Filter module in iOS.md)
+        - [Importing in iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Importing in iOS.md)
+        - [Initializing VE SDK without UI—iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Initializing VE SDK without UI—iOS.md)
+        - [NLESDK overview](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/NLESDK overview.md)
+        - [Sticker module in iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Sticker module in iOS.md)
+        - [Text editing module in iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Text editing module in iOS.md)
+        - [Transition module in iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Transition module in iOS.md)
+        - [Video editing module in iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integrating SDKs in iOS Guides (Without UI)/Video editing module in iOS.md)
+      - **Integration Guide (with UI)**
+        - [Integrating VE SDK with UI—Android](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integration Guide (with UI)/Integrating VE SDK with UI—Android.md)
+        - [Integrating VE SDK with UI—Flutter](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integration Guide (with UI)/Integrating VE SDK with UI—Flutter.md)
+        - [Integrating VE SDK with UI—iOS](v4.0.3/Guides/Video Editor SDK - Basic Editing/Integration Guide (with UI)/Integrating VE SDK with UI—iOS.md)
+    - **Video Editor SDK - Magic Template**
+      - [Licensing Guide](v4.0.3/Guides/Video Editor SDK - Magic Template/Licensing Guide.md)
+      - [One Pager Overview](v4.0.3/Guides/Video Editor SDK - Magic Template/One Pager Overview.md)
+      - [Product Overview](v4.0.3/Guides/Video Editor SDK - Magic Template/Product Overview.md)
+      - [Terminology Explanation](v4.0.3/Guides/Video Editor SDK - Magic Template/Terminology Explanation.md)
+      - **Integration Guide (with UI)**
+        - [Integrating Magic Template SDK with UI—Android](v4.0.3/Guides/Video Editor SDK - Magic Template/Integration Guide (with UI)/Integrating Magic Template SDK with UI—Android.md)
+        - [Integrating Magic Template SDK with UI—iOS](v4.0.3/Guides/Video Editor SDK - Magic Template/Integration Guide (with UI)/Integrating Magic Template SDK with UI—iOS.md)
+      - **Sample File Structure**
+        - [Sample File Structure - Android - Magic Template](v4.0.3/Guides/Video Editor SDK - Magic Template/Sample File Structure/Sample File Structure - Android - Magic Template.md)
+        - [Sample File Structure - iOS - Magic Template](v4.0.3/Guides/Video Editor SDK - Magic Template/Sample File Structure/Sample File Structure - iOS - Magic Template.md)
+      - **Sample Operation Guide**
+        - [Sample Operation Guide - Android - Magic Template](v4.0.3/Guides/Video Editor SDK - Magic Template/Sample Operation Guide/Sample Operation Guide - Android - Magic Template.md)
+        - [Sample Operation Guide - iOS - Magic Template](v4.0.3/Guides/Video Editor SDK - Magic Template/Sample Operation Guide/Sample Operation Guide - iOS - Magic Template.md)
+      - **SDK Detailed Development Guide**
+        - [Detailed Development Guide - Android - Magic Template](v4.0.3/Guides/Video Editor SDK - Magic Template/SDK Detailed Development Guide/Detailed Development Guide - Android - Magic Template.md)
+        - [Detailed Development Guide - iOS - Magic Template](v4.0.3/Guides/Video Editor SDK - Magic Template/SDK Detailed Development Guide/Detailed Development Guide - iOS - Magic Template.md)
+      - **SDK Quick Access Guide**
+        - [Quick Integration Guide - iOS - Magic Template](v4.0.3/Guides/Video Editor SDK - Magic Template/SDK Quick Access Guide/Quick Integration Guide - iOS - Magic Template.md)
+        - [Quickstart Guide - Android - Magic Template](v4.0.3/Guides/Video Editor SDK - Magic Template/SDK Quick Access Guide/Quickstart Guide - Android - Magic Template.md)
+      - **Server-end Deployment**
+        - [Magic Template Materials & Service Guide](v4.0.3/Guides/Video Editor SDK - Magic Template/Server-end Deployment/Magic Template Materials & Service Guide.md)
+        - [Template File Details](v4.0.3/Guides/Video Editor SDK - Magic Template/Server-end Deployment/Template File Details.md)

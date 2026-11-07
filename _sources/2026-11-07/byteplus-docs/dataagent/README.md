@@ -1,0 +1,782 @@
+# DataAgent
+
+614 pages. Source: https://docs.byteplus.com/en/docs/dataagent
+
+Back to the [full index](../README.md).
+
+- **Billing**
+  - [Billing for BytePlus DataAgent Products and Services](Billing/Billing for BytePlus DataAgent Products and Services.md)
+- **FAQs**
+  - **Intelligent Analysis Agent FAQs**
+    - [Data Query FAQ](FAQs/Intelligent Analysis Agent FAQs/Data Query FAQ.md)
+    - [Deep Research FAQ](FAQs/Intelligent Analysis Agent FAQs/Deep Research FAQ.md)
+- **Get Started**
+  - [DataAgent Product Glossary](Get Started/DataAgent Product Glossary.md)
+  - [DataAgent Product Purchase Guide](Get Started/DataAgent Product Purchase Guide.md)
+  - [DataAgent Product Trial Application](Get Started/DataAgent Product Trial Application.md)
+  - **Intelligent Marketing Agent Experience and Get Started**
+    - [Intelligent Marketing Agent User Learning Path](Get Started/Intelligent Marketing Agent Experience and Get Started/Intelligent Marketing Agent User Learning Path.md)
+    - [Intelligent Marketing Strategy Demo Experience Guide](Get Started/Intelligent Marketing Agent Experience and Get Started/Intelligent Marketing Strategy Demo Experience Guide.md)
+    - **Marketing Interaction Assistant Quick Start**
+      - [Marketing Interaction Assistant Administrator Getting Started Guide](Get Started/Intelligent Marketing Agent Experience and Get Started/Marketing Interaction Assistant Quick Start/Marketing Interaction Assistant Administrator Getting Started Guide.md)
+      - [Marketing Interaction Assistant Demo Experience Guide](Get Started/Intelligent Marketing Agent Experience and Get Started/Marketing Interaction Assistant Quick Start/Marketing Interaction Assistant Demo Experience Guide.md)
+      - [Marketing Interaction Assistant Quick Start](Get Started/Intelligent Marketing Agent Experience and Get Started/Marketing Interaction Assistant Quick Start/Marketing Interaction Assistant Quick Start.md)
+    - **Unstructured Data Labeling Quick Start**
+      - [Getting Started with Unstructured Data Labeling for Administrators](Get Started/Intelligent Marketing Agent Experience and Get Started/Unstructured Data Labeling Quick Start/Getting Started with Unstructured Data Labeling for Administrators.md)
+      - [Unstructured Data Labeling Quick Start](Get Started/Intelligent Marketing Agent Experience and Get Started/Unstructured Data Labeling Quick Start/Unstructured Data Labeling Quick Start.md)
+  - **Quick Start and Learning Paths for iDA**
+    - [ Quick Guide for iDA - Getting Started with Administrators](Get Started/Quick Start and Learning Paths for iDA/Quick Guide for iDA - Getting Started with Administrators.md)
+    - [iDA Interface Introduction](Get Started/Quick Start and Learning Paths for iDA/iDA Interface Introduction.md)
+    - [iDA Learning Path](Get Started/Quick Start and Learning Paths for iDA/iDA Learning Path.md)
+    - [Quickly Guide for iDA - Getting Started](Get Started/Quick Start and Learning Paths for iDA/Quickly Guide for iDA - Getting Started.md)
+  - **Quick Start and Learning Paths for Intelligent Analysis Agen**
+    - [Guide to Building an Intelligent Agent from 0 to 1](Get Started/Quick Start and Learning Paths for Intelligent Analysis Agen/Guide to Building an Intelligent Agent from 0 to 1.md)
+    - [Guide to Experiencing the Intelligent Analysis Agent Sample Room](Get Started/Quick Start and Learning Paths for Intelligent Analysis Agen/Guide to Experiencing the Intelligent Analysis Agent Sample Room.md)
+    - [Quick Start Guide for Intelligent Analysis Agent](Get Started/Quick Start and Learning Paths for Intelligent Analysis Agen/Quick Start Guide for Intelligent Analysis Agent.md)
+    - [User Learning Path for Intelligent Analysis Agent](Get Started/Quick Start and Learning Paths for Intelligent Analysis Agen/User Learning Path for Intelligent Analysis Agent.md)
+  - **User Research Agent Experience and Get Started**
+    - [Model Room Case: AI Behavior Research](Get Started/User Research Agent Experience and Get Started/Model Room Case: AI Behavior Research.md)
+    - [Model Room Case: AI Virtual Research](Get Started/User Research Agent Experience and Get Started/Model Room Case: AI Virtual Research.md)
+- **Intelligent Analysis Agent User Guide**
+  - [Description of Agent Types: General and Custom Agents](Intelligent Analysis Agent User Guide/Description of Agent Types: General and Custom Agents.md)
+  - [Intelligent Analysis Agent Overview](Intelligent Analysis Agent User Guide/Intelligent Analysis Agent Overview.md)
+  - **Best Practices**
+    - **Configuration and Tuning Practices**
+      - [Best Practices: Data ETL Processing Guidelines](Intelligent Analysis Agent User Guide/Best Practices/Configuration and Tuning Practices/Best Practices: Data ETL Processing Guidelines.md)
+      - [Best Practices: Deep Research Configuration and Tuning](Intelligent Analysis Agent User Guide/Best Practices/Configuration and Tuning Practices/Best Practices: Deep Research Configuration and Tuning.md)
+      - [Best Practices: Recommendations and Examples for Intelligent Data Query Questions](Intelligent Analysis Agent User Guide/Best Practices/Configuration and Tuning Practices/Best Practices: Recommendations and Examples for Intelligent Data Query Questions.md)
+      - [Best Practices: Supported Chart Types and Usage Practices](Intelligent Analysis Agent User Guide/Best Practices/Configuration and Tuning Practices/Best Practices: Supported Chart Types and Usage Practices.md)
+      - [Intelligent Agent Planning and Application Approach](Intelligent Analysis Agent User Guide/Best Practices/Configuration and Tuning Practices/Intelligent Agent Planning and Application Approach.md)
+      - **Best Practice: Intelligent Analysis Agent Configuration and**
+        - [Dataset Configuration Practices](Intelligent Analysis Agent User Guide/Best Practices/Configuration and Tuning Practices/Best Practice: Intelligent Analysis Agent Configuration and/Dataset Configuration Practices.md)
+        - [Prompt Configuration Practices](Intelligent Analysis Agent User Guide/Best Practices/Configuration and Tuning Practices/Best Practice: Intelligent Analysis Agent Configuration and/Prompt Configuration Practices.md)
+    - **Intelligent Analysis Agent Usage**
+      - [Best Practices for Intelligent Analysis Agent: Complex Data Chart Output](Intelligent Analysis Agent User Guide/Best Practices/Intelligent Analysis Agent Usage/Best Practices for Intelligent Analysis Agent: Complex Data Chart Output.md)
+    - **OA Applications Integration Practices**
+      - [Lark-Side Intelligent Agent Configuration and Testing](Intelligent Analysis Agent User Guide/Best Practices/OA Applications Integration Practices/Lark-Side Intelligent Agent Configuration and Testing.md)
+  - **Creation and Configuration for Intelligent Analysis Agent**
+    - [Overview of Creation and Configuration Procedures](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Overview of Creation and Configuration Procedures.md)
+    - [Publish and Manage Intelligent Analysis Agents](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Publish and Manage Intelligent Analysis Agents.md)
+    - **Create and Configure Intelligent Analysis Agent**
+      - [Audit](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Create and Configure Intelligent Analysis Agent/Audit.md)
+      - [Basic Information Configuration](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Create and Configure Intelligent Analysis Agent/Basic Information Configuration.md)
+      - [Content Configuration](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Create and Configure Intelligent Analysis Agent/Content Configuration.md)
+      - [Intent Clarification Configuration (in limited release)](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Create and Configure Intelligent Analysis Agent/Intent Clarification Configuration (in limited release).md)
+      - [Knowledge Document](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Create and Configure Intelligent Analysis Agent/Knowledge Document.md)
+      - [Model Configuration](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Create and Configure Intelligent Analysis Agent/Model Configuration.md)
+      - [Prompt Configuration](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Create and Configure Intelligent Analysis Agent/Prompt Configuration.md)
+      - **Data Source Configuration**
+        - [Dataset Configuration](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Create and Configure Intelligent Analysis Agent/Data Source Configuration/Dataset Configuration.md)
+        - [Date Filter](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Create and Configure Intelligent Analysis Agent/Data Source Configuration/Date Filter.md)
+        - [Dimension Filtering](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Create and Configure Intelligent Analysis Agent/Data Source Configuration/Dimension Filtering.md)
+        - [Metric Filtering](Intelligent Analysis Agent User Guide/Creation and Configuration for Intelligent Analysis Agent/Create and Configure Intelligent Analysis Agent/Data Source Configuration/Metric Filtering.md)
+  - **Data Access and Processing**
+    - [Data Preparation Overview](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Preparation Overview.md)
+    - **Data Connection**
+      - [HBase](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/HBase.md)
+      - [MongoDB](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/MongoDB.md)
+      - [Overview of Data Connection](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Overview of Data Connection.md)
+      - [REST API 2.0](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/REST API 2.0.md)
+      - **BytePlus Matrix**
+        - [LAS](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/BytePlus Matrix/LAS.md)
+      - **Data Warehouse**
+        - [EMR Serverless Spark](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Data Warehouse/EMR Serverless Spark.md)
+        - [Hive](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Data Warehouse/Hive.md)
+        - [MaxCompute](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Data Warehouse/MaxCompute.md)
+        - [StarRocks](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Data Warehouse/StarRocks.md)
+        - [Tencent Cloud DLC](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Data Warehouse/Tencent Cloud DLC.md)
+        - [Transwarp ArgoDB](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Data Warehouse/Transwarp ArgoDB.md)
+      - **Local Files**
+        - [Access](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Local Files/Access.md)
+        - [Local Excel/CSV Files](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Local Files/Local Excel - CSV Files.md)
+      - **OLAP Database**
+        - [Amazon Athena](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/Amazon Athena.md)
+        - [Amazon Redshift](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/Amazon Redshift.md)
+        - [AnalyticDB for MySQL 2.0](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/AnalyticDB for MySQL 2.0.md)
+        - [AnalyticDB for MySQL 3.0](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/AnalyticDB for MySQL 3.0.md)
+        - [ByteHouse CDW](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/ByteHouse CDW.md)
+        - [ByteHouse CE](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/ByteHouse CE.md)
+        - [ClickHouse](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/ClickHouse.md)
+        - [Databricks](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/Databricks.md)
+        - [GreenPlum](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/GreenPlum.md)
+        - [Hbase Phoenix](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/Hbase Phoenix.md)
+        - [Hetu](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/Hetu.md)
+        - [Hologres](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/Hologres.md)
+        - [Impala](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/Impala.md)
+        - [Presto](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/Presto.md)
+        - [SAP HANA](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/SAP HANA.md)
+        - [Transwarp ArgoDB](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/Transwarp ArgoDB.md)
+        - [Vertica](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/OLAP Database/Vertica.md)
+      - **Online SpreadSheet**
+        - [Lark Base Tables](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Online SpreadSheet/Lark Base Tables.md)
+        - [Lark Sheets](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Online SpreadSheet/Lark Sheets.md)
+      - **Relational Database**
+        - [Damon](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/Damon.md)
+        - [Doris](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/Doris.md)
+        - [GoldenDB](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/GoldenDB.md)
+        - [IBM DB2](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/IBM DB2.md)
+        - [MySQL](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/MySQL.md)
+        - [OceanBase MySQL](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/OceanBase MySQL.md)
+        - [OceanBase Oracle](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/OceanBase Oracle.md)
+        - [OpenGauss](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/OpenGauss.md)
+        - [Oracle](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/Oracle.md)
+        - [PostgreSQL](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/PostgreSQL.md)
+        - [SQL Server](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/SQL Server.md)
+        - [Teradata](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/Teradata.md)
+        - [TiDB](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/TiDB.md)
+        - [VastBase](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Relational Database/VastBase.md)
+      - **Web Connector**
+        - [Alibaba Cloud OSS](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Web Connector/Alibaba Cloud OSS.md)
+        - [Tencent Cloud COS](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Web Connector/Tencent Cloud COS.md)
+        - [Volcano Engine TOS](Intelligent Analysis Agent User Guide/Data Access and Processing/Data Connection/Web Connector/Volcano Engine TOS.md)
+    - **Dataset**
+      - [Dataset Overview](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Overview.md)
+      - [Multilingual Support for Datasets](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Multilingual Support for Datasets.md)
+      - **Dataset Creation**
+        - [Custom SQL](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/Custom SQL.md)
+        - [Data Filtering](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/Data Filtering.md)
+        - [Joined Datasets](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/Joined Datasets.md)
+        - [LAS Dataset](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/LAS Dataset.md)
+        - [Model Configuration](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/Model Configuration.md)
+        - [Overview of Dataset Creation](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/Overview of Dataset Creation.md)
+        - **Fields Configuration**
+          - [Add or Modify Fields](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/Fields Configuration/Add or Modify Fields.md)
+          - [Dimensions and Metrics](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/Fields Configuration/Dimensions and Metrics.md)
+          - [Field Configuration](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/Fields Configuration/Field Configuration.md)
+          - [Introduction to Commonly Used Functions](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/Fields Configuration/Introduction to Commonly Used Functions.md)
+        - **Synchronization Settings**
+          - [Extraction Parameters](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/Synchronization Settings/Extraction Parameters.md)
+          - [Synchronization Settings](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Creation/Synchronization Settings/Synchronization Settings.md)
+      - **Dataset Lists**
+        - [Dataset List Management](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Lists/Dataset List Management.md)
+        - [Dataset List Overview](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Lists/Dataset List Overview.md)
+        - [Parameter Management](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Lists/Parameter Management.md)
+        - [Tag Management](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Lists/Tag Management.md)
+      - **Dataset Management**
+        - [Data Row and Column Permissions](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Management/Data Row and Column Permissions.md)
+        - [Impact Analysis](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Management/Impact Analysis.md)
+        - [Modify Dataset](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Management/Modify Dataset.md)
+        - [Overview of Dataset Management](Intelligent Analysis Agent User Guide/Data Access and Processing/Dataset/Dataset Management/Overview of Dataset Management.md)
+    - **Visual Modeling**
+      - [Overview of Visual Modeling](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Overview of Visual Modeling.md)
+      - [Resource Migration](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Resource Migration.md)
+      - [Task Creation](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Task Creation.md)
+      - [Task Management](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Task Management.md)
+      - **Common Template: Case Introduction**
+        - [Commercial Bank Customer Churn Prediction](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Common Template: Case Introduction/Commercial Bank Customer Churn Prediction.md)
+        - [Key Behavior Statistics for Automotive Users](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Common Template: Case Introduction/Key Behavior Statistics for Automotive Users.md)
+        - [Predict Intent Tags for Automotive Users](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Common Template: Case Introduction/Predict Intent Tags for Automotive Users.md)
+      - **Data Operation**
+        - [Data Input](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Data Operation/Data Input.md)
+        - [Feature Engineering](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Data Operation/Feature Engineering.md)
+        - [Machine Learning](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Data Operation/Machine Learning.md)
+        - [Natural Language Processing](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Data Operation/Natural Language Processing.md)
+        - **Data Cleaning**
+          - [Data Cleaning](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Data Operation/Data Cleaning/Data Cleaning.md)
+          - [Data Splitting Operators](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Data Operation/Data Cleaning/Data Splitting Operators.md)
+      - **Data Output**
+        - [Data Output](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Data Output/Data Output.md)
+        - [External Output](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Data Output/External Output.md)
+        - [Output Real-Time Tag](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Data Output/Output Real-Time Tag.md)
+        - [Stream Splitting Output](Intelligent Analysis Agent User Guide/Data Access and Processing/Visual Modeling/Data Output/Stream Splitting Output.md)
+  - **Operations and Maintenance**
+    - **Permission Guide**
+      - [Detailed Explanation of User Permissions](Intelligent Analysis Agent User Guide/Operations and Maintenance/Permission Guide/Detailed Explanation of User Permissions.md)
+      - [Permission Approval Integration with Lark](Intelligent Analysis Agent User Guide/Operations and Maintenance/Permission Guide/Permission Approval Integration with Lark.md)
+      - [Permission Management](Intelligent Analysis Agent User Guide/Operations and Maintenance/Permission Guide/Permission Management.md)
+      - [Role Management](Intelligent Analysis Agent User Guide/Operations and Maintenance/Permission Guide/Role Management.md)
+    - **Project Center**
+      - [Project Information](Intelligent Analysis Agent User Guide/Operations and Maintenance/Project Center/Project Information.md)
+      - [Resource-Based Authorization](Intelligent Analysis Agent User Guide/Operations and Maintenance/Project Center/Resource-Based Authorization.md)
+      - [User Group Management](Intelligent Analysis Agent User Guide/Operations and Maintenance/Project Center/User Group Management.md)
+      - [User Management](Intelligent Analysis Agent User Guide/Operations and Maintenance/Project Center/User Management.md)
+      - [User-Based Authorization](Intelligent Analysis Agent User Guide/Operations and Maintenance/Project Center/User-Based Authorization.md)
+    - **System Operations and Maintenance**
+      - [Data Operation and Maintenance Configuration](Intelligent Analysis Agent User Guide/Operations and Maintenance/System Operations and Maintenance/Data Operation and Maintenance Configuration.md)
+      - [Office Platform Integration](Intelligent Analysis Agent User Guide/Operations and Maintenance/System Operations and Maintenance/Office Platform Integration.md)
+  - **Use Intelligent Analysis Agent**
+    - [Deep Research Agent](Intelligent Analysis Agent User Guide/Use Intelligent Analysis Agent/Deep Research Agent.md)
+    - [Insight Report](Intelligent Analysis Agent User Guide/Use Intelligent Analysis Agent/Insight Report.md)
+    - [Intelligent Query Agent](Intelligent Analysis Agent User Guide/Use Intelligent Analysis Agent/Intelligent Query Agent.md)
+    - [Knowledge Document Configuration](Intelligent Analysis Agent User Guide/Use Intelligent Analysis Agent/Knowledge Document Configuration.md)
+    - [Web Search](Intelligent Analysis Agent User Guide/Use Intelligent Analysis Agent/Web Search.md)
+- **Intelligent Analytic Assistant iDA**
+  - [Agent Type Description](Intelligent Analytic Assistant iDA/Agent Type Description.md)
+  - [My Files](Intelligent Analytic Assistant iDA/My Files.md)
+  - [Operations Analysis](Intelligent Analytic Assistant iDA/Operations Analysis.md)
+  - [Overview of iDA](Intelligent Analytic Assistant iDA/Overview of iDA.md)
+  - [Session Memory](Intelligent Analytic Assistant iDA/Session Memory.md)
+  - [Skill Center](Intelligent Analytic Assistant iDA/Skill Center.md)
+  - [Skill Market](Intelligent Analytic Assistant iDA/Skill Market.md)
+  - **Background Management**
+    - [Connector MCP Function Configuration](Intelligent Analytic Assistant iDA/Background Management/Connector MCP Function Configuration.md)
+    - [Member Management](Intelligent Analytic Assistant iDA/Background Management/Member Management.md)
+    - **Agent Management**
+      - [Model Intergration](Intelligent Analytic Assistant iDA/Background Management/Agent Management/Model Intergration.md)
+    - **Permission Management**
+      - [Authorize by User](Intelligent Analytic Assistant iDA/Background Management/Permission Management/Authorize by User.md)
+    - **Subscription and Usage**
+      - [Package Management](Intelligent Analytic Assistant iDA/Background Management/Subscription and Usage/Package Management.md)
+      - [Usage Management](Intelligent Analytic Assistant iDA/Background Management/Subscription and Usage/Usage Management.md)
+  - **Connector**
+    - [Connect to Personal Knowledge Base](Intelligent Analytic Assistant iDA/Connector/Connect to Personal Knowledge Base.md)
+    - [DingTalk Binding and Authorization](Intelligent Analytic Assistant iDA/Connector/DingTalk Binding and Authorization.md)
+    - [Operation Processes of Lark Binding and Authorization](Intelligent Analytic Assistant iDA/Connector/Operation Processes of Lark Binding and Authorization.md)
+    - [WeCom Binding and Authorization](Intelligent Analytic Assistant iDA/Connector/WeCom Binding and Authorization.md)
+  - **Creation and Configuration for iDA**
+    - [Quick Overview of Creation and Configuration for Agents](Intelligent Analytic Assistant iDA/Creation and Configuration for iDA/Quick Overview of Creation and Configuration for Agents.md)
+    - [Scheduled Task](Intelligent Analytic Assistant iDA/Creation and Configuration for iDA/Scheduled Task.md)
+    - [Template Center](Intelligent Analytic Assistant iDA/Creation and Configuration for iDA/Template Center.md)
+    - **Agent Configuration for General Scenarios**
+      - [Application Mode Configuration](Intelligent Analytic Assistant iDA/Creation and Configuration for iDA/Agent Configuration for General Scenarios/Application Mode Configuration.md)
+      - [Basic Information Configuration](Intelligent Analytic Assistant iDA/Creation and Configuration for iDA/Agent Configuration for General Scenarios/Basic Information Configuration.md)
+      - [Content Configuration](Intelligent Analytic Assistant iDA/Creation and Configuration for iDA/Agent Configuration for General Scenarios/Content Configuration.md)
+      - **Data and Knowledge Configuration**
+        - [Data Asset](Intelligent Analytic Assistant iDA/Creation and Configuration for iDA/Agent Configuration for General Scenarios/Data and Knowledge Configuration/Data Asset.md)
+        - [Knowledge Base](Intelligent Analytic Assistant iDA/Creation and Configuration for iDA/Agent Configuration for General Scenarios/Data and Knowledge Configuration/Knowledge Base.md)
+        - [Prompts](Intelligent Analytic Assistant iDA/Creation and Configuration for iDA/Agent Configuration for General Scenarios/Data and Knowledge Configuration/Prompts.md)
+  - **Data Preparation and Access**
+    - [Data Preparation Overview](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Preparation Overview.md)
+    - **Data Connection**
+      - [Data Connection Overview](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Data Connection Overview.md)
+      - [HBase](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/HBase.md)
+      - [MongoDB](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/MongoDB.md)
+      - [REST API 2.0](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/REST API 2.0.md)
+      - **Data Warehouse**
+        - [EMR Serverless Spark](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Data Warehouse/EMR Serverless Spark.md)
+        - [Hive](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Data Warehouse/Hive.md)
+        - [MaxCompute](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Data Warehouse/MaxCompute.md)
+        - [StarRocks](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Data Warehouse/StarRocks.md)
+        - [Tencent Cloud DLC](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Data Warehouse/Tencent Cloud DLC.md)
+        - [Transwarp ArgoDB](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Data Warehouse/Transwarp ArgoDB.md)
+      - **Local Files**
+        - [Access](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Local Files/Access.md)
+        - [Local Excel/CSV File](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Local Files/Local Excel - CSV File.md)
+      - **OLAP Database**
+        - [Amazon Athena](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/Amazon Athena.md)
+        - [Amazon Redshift](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/Amazon Redshift.md)
+        - [AnalyticDB for MySQL 2.0](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/AnalyticDB for MySQL 2.0.md)
+        - [AnalyticDB for MySQL 3.0](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/AnalyticDB for MySQL 3.0.md)
+        - [ByteHouse CDW](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/ByteHouse CDW.md)
+        - [ByteHouse CE](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/ByteHouse CE.md)
+        - [ClickHouse](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/ClickHouse.md)
+        - [Databricks](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/Databricks.md)
+        - [GreenPlum](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/GreenPlum.md)
+        - [Hbase Phoenix](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/Hbase Phoenix.md)
+        - [Hetu](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/Hetu.md)
+        - [Hologres](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/Hologres.md)
+        - [Impala](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/Impala.md)
+        - [Presto](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/Presto.md)
+        - [SAP HANA](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/SAP HANA.md)
+        - [Transwarp ArgoDB](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/Transwarp ArgoDB.md)
+        - [Vertica](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/OLAP Database/Vertica.md)
+      - **Online Files**
+        - [Lark Base Table](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Online Files/Lark Base Table.md)
+        - [Lark SpreadSheet](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Online Files/Lark SpreadSheet.md)
+      - **Relational Database**
+        - [Damon](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/Damon.md)
+        - [Doris](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/Doris.md)
+        - [GoldenDB](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/GoldenDB.md)
+        - [IBM DB2](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/IBM DB2.md)
+        - [MySQL](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/MySQL.md)
+        - [OceanBase MySQL](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/OceanBase MySQL.md)
+        - [OceanBase Oracle](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/OceanBase Oracle.md)
+        - [OpenGauss](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/OpenGauss.md)
+        - [Oracle](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/Oracle.md)
+        - [PostgreSQL](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/PostgreSQL.md)
+        - [SQL Server](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/SQL Server.md)
+        - [Teradata](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/Teradata.md)
+        - [TiDB](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/TiDB.md)
+        - [VastBase](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Relational Database/VastBase.md)
+      - **Volcano Engine Matrix**
+        - [LAS](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Volcano Engine Matrix/LAS.md)
+      - **Web Connector**
+        - [Alibaba Cloud OSS](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Web Connector/Alibaba Cloud OSS.md)
+        - [Tencent Cloud COS](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Web Connector/Tencent Cloud COS.md)
+        - [Volcanic Cloud TOS](Intelligent Analytic Assistant iDA/Data Preparation and Access/Data Connection/Web Connector/Volcanic Cloud TOS.md)
+    - **Dataset**
+      - [Dataset Overview](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Overview.md)
+      - [Multilingual Support for Datasets](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Multilingual Support for Datasets.md)
+      - **Dataset Creation**
+        - [Custom SQL](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/Custom SQL.md)
+        - [Data Filtering](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/Data Filtering.md)
+        - [LAS Dataset](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/LAS Dataset.md)
+        - [Linked Datasets](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/Linked Datasets.md)
+        - [Model Configuration](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/Model Configuration.md)
+        - [Overview of Dataset Creation](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/Overview of Dataset Creation.md)
+        - **Fields Configuration**
+          - [Add or Modify Fields](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/Fields Configuration/Add or Modify Fields.md)
+          - [Dimensions and Metrics](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/Fields Configuration/Dimensions and Metrics.md)
+          - [Field Configuration](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/Fields Configuration/Field Configuration.md)
+          - [Introduction to Commonly Used Functions](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/Fields Configuration/Introduction to Commonly Used Functions.md)
+        - **Synchronization Settings**
+          - [Extraction Parameters](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/Synchronization Settings/Extraction Parameters.md)
+          - [Synchronization Settings](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Creation/Synchronization Settings/Synchronization Settings.md)
+      - **Dataset Lists**
+        - [Dataset List Management](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Lists/Dataset List Management.md)
+        - [Dataset List Overview](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Lists/Dataset List Overview.md)
+        - [Parameter Management](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Lists/Parameter Management.md)
+        - [Tag Management](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Lists/Tag Management.md)
+      - **Dataset Management**
+        - [Data Row and Column Permissions](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Management/Data Row and Column Permissions.md)
+        - [Impact Analysis](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Management/Impact Analysis.md)
+        - [Modify a Dataset](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Management/Modify a Dataset.md)
+        - [Overview of Dataset Management](Intelligent Analytic Assistant iDA/Data Preparation and Access/Dataset/Dataset Management/Overview of Dataset Management.md)
+    - **Visual Modeling**
+      - [Overview of Visual Modeling](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Overview of Visual Modeling.md)
+      - [Resource Migration](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Resource Migration.md)
+      - [Task Creation](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Task Creation.md)
+      - [Task Management](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Task Management.md)
+      - **Common Template: Case Introduction**
+        - [Commercial Bank Customer Churn Prediction](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Common Template: Case Introduction/Commercial Bank Customer Churn Prediction.md)
+        - [Prediction of Automotive User Intent Tags](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Common Template: Case Introduction/Prediction of Automotive User Intent Tags.md)
+        - [⁣Statistical Analysis of Key Behaviors of Automotive Users](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Common Template: Case Introduction/⁣Statistical Analysis of Key Behaviors of Automotive Users.md)
+      - **Data Operation**
+        - [Data Input](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Data Operation/Data Input.md)
+        - [Feature Engineering](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Data Operation/Feature Engineering.md)
+        - [Machine Learning](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Data Operation/Machine Learning.md)
+        - [Natural Language Processing](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Data Operation/Natural Language Processing.md)
+        - **Data Cleaning**
+          - [Data Cleaning](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Data Operation/Data Cleaning/Data Cleaning.md)
+          - [Data Splitting Operators](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Data Operation/Data Cleaning/Data Splitting Operators.md)
+      - **Data Output**
+        - [Data Output](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Data Output/Data Output.md)
+        - [External Output](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Data Output/External Output.md)
+        - [Output Real-Time Tags](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Data Output/Output Real-Time Tags.md)
+        - [Stream Splitting Output](Intelligent Analytic Assistant iDA/Data Preparation and Access/Visual Modeling/Data Output/Stream Splitting Output.md)
+  - **OpenAPI**
+    - [Get jwt token](Intelligent Analytic Assistant iDA/OpenAPI/Get jwt token.md)
+    - [Open API Description](Intelligent Analytic Assistant iDA/OpenAPI/Open API Description.md)
+    - [Set token and domain Global Variables](Intelligent Analytic Assistant iDA/OpenAPI/Set token and domain Global Variables.md)
+    - **A2A**
+      - [Cancel Task](Intelligent Analytic Assistant iDA/OpenAPI/A2A/Cancel Task.md)
+      - [Get a Task Snapshot](Intelligent Analytic Assistant iDA/OpenAPI/A2A/Get a Task Snapshot.md)
+      - [Get Session Task List](Intelligent Analytic Assistant iDA/OpenAPI/A2A/Get Session Task List.md)
+      - [iDA - Acquiring Available Scenes and Skills](Intelligent Analytic Assistant iDA/OpenAPI/A2A/iDA - Acquiring Available Scenes and Skills.md)
+      - [Resubscribe to the Task](Intelligent Analytic Assistant iDA/OpenAPI/A2A/Resubscribe to the Task.md)
+      - [Start Streaming Q & A](Intelligent Analytic Assistant iDA/OpenAPI/A2A/Start Streaming Q & A.md)
+    - **Agent**
+      - [Agent Binding Knowledge Base](Intelligent Analytic Assistant iDA/OpenAPI/Agent/Agent Binding Knowledge Base.md)
+      - [Delete Knowledge Base Bindings](Intelligent Analytic Assistant iDA/OpenAPI/Agent/Delete Knowledge Base Bindings.md)
+      - [Get Agent Details](Intelligent Analytic Assistant iDA/OpenAPI/Agent/Get Agent Details.md)
+      - [Get Default Agent](Intelligent Analytic Assistant iDA/OpenAPI/Agent/Get Default Agent.md)
+      - [iDA - Acquisition Knowledge Base Project](Intelligent Analytic Assistant iDA/OpenAPI/Agent/iDA - Acquisition Knowledge Base Project.md)
+      - [iDA - File Upload](Intelligent Analytic Assistant iDA/OpenAPI/Agent/iDA - File Upload.md)
+      - [iDA - Get a List of Documents Under the Knowledge Base](Intelligent Analytic Assistant iDA/OpenAPI/Agent/iDA - Get a List of Documents Under the Knowledge Base.md)
+      - [iDA - Get List of Knowledge Bases Under the Project](Intelligent Analytic Assistant iDA/OpenAPI/Agent/iDA - Get List of Knowledge Bases Under the Project.md)
+      - [Read Agent List](Intelligent Analytic Assistant iDA/OpenAPI/Agent/Read Agent List.md)
+      - [View Agent Binding Knowledge](Intelligent Analytic Assistant iDA/OpenAPI/Agent/View Agent Binding Knowledge.md)
+    - **Prompt Templates**
+      - [iDA - Get List of Prompt Templates](Intelligent Analytic Assistant iDA/OpenAPI/Prompt Templates/iDA - Get List of Prompt Templates.md)
+      - [iDA - Update Prompt Template](Intelligent Analytic Assistant iDA/OpenAPI/Prompt Templates/iDA - Update Prompt Template.md)
+      - [iDA -Create Prompt Template](Intelligent Analytic Assistant iDA/OpenAPI/Prompt Templates/iDA -Create Prompt Template.md)
+    - **Session Management**
+      - [iDA - Create Session](Intelligent Analytic Assistant iDA/OpenAPI/Session Management/iDA - Create Session.md)
+      - [iDA - Get Session Details](Intelligent Analytic Assistant iDA/OpenAPI/Session Management/iDA - Get Session Details.md)
+      - [iDA - Get Session History/Hide Specified Tasks](Intelligent Analytic Assistant iDA/OpenAPI/Session Management/iDA - Get Session History - Hide Specified Tasks.md)
+      - [iDA - Get Session List](Intelligent Analytic Assistant iDA/OpenAPI/Session Management/iDA - Get Session List.md)
+    - **Skill Center**
+      - [Upload Skills to Skill Center](Intelligent Analytic Assistant iDA/OpenAPI/Skill Center/Upload Skills to Skill Center.md)
+  - **Openness and Integration**
+    - [iDA Tripartite Integration Description](Intelligent Analytic Assistant iDA/Openness and Integration/iDA Tripartite Integration Description.md)
+  - **Use iDA**
+    - [Best Practices: How to Use iDA in Different Scenarios](Intelligent Analytic Assistant iDA/Use iDA/Best Practices: How to Use iDA in Different Scenarios.md)
+- **Intelligent Marketing Agent**
+  - [Overview of Intelligent Marketing Agent](Intelligent Marketing Agent/Overview of Intelligent Marketing Agent.md)
+  - [Permission Management](Intelligent Marketing Agent/Permission Management.md)
+  - **Marketing Interactive Assistant**
+    - [Ability Square](Intelligent Marketing Agent/Marketing Interactive Assistant/Ability Square.md)
+    - [Automate Tasks](Intelligent Marketing Agent/Marketing Interactive Assistant/Automate Tasks.md)
+    - [Create an Intent Planning Engine](Intelligent Marketing Agent/Marketing Interactive Assistant/Create an Intent Planning Engine.md)
+    - [Marketing Interactive Assistant Overview](Intelligent Marketing Agent/Marketing Interactive Assistant/Marketing Interactive Assistant Overview.md)
+    - [My App](Intelligent Marketing Agent/Marketing Interactive Assistant/My App.md)
+    - [Observation](Intelligent Marketing Agent/Marketing Interactive Assistant/Observation.md)
+    - [Session Memory](Intelligent Marketing Agent/Marketing Interactive Assistant/Session Memory.md)
+    - **Agent Center**
+      - [Agent Center Overview](Intelligent Marketing Agent/Marketing Interactive Assistant/Agent Center/Agent Center Overview.md)
+      - [New Autonomous Planning Agent](Intelligent Marketing Agent/Marketing Interactive Assistant/Agent Center/New Autonomous Planning Agent.md)
+      - [Register External Agents](Intelligent Marketing Agent/Marketing Interactive Assistant/Agent Center/Register External Agents.md)
+    - **Best Practices**
+      - [Building an Enterprise Intelligent Customer Service Assistant](Intelligent Marketing Agent/Marketing Interactive Assistant/Best Practices/Building an Enterprise Intelligent Customer Service Assistant.md)
+      - [Intent Writing Skills](Intelligent Marketing Agent/Marketing Interactive Assistant/Best Practices/Intent Writing Skills.md)
+    - **Tool**
+      - [MCP](Intelligent Marketing Agent/Marketing Interactive Assistant/Tool/MCP.md)
+      - [Skill](Intelligent Marketing Agent/Marketing Interactive Assistant/Tool/Skill.md)
+  - **Unstructured Data Labeling**
+    - [Overview of Unstructured Data Labeling](Intelligent Marketing Agent/Unstructured Data Labeling/Overview of Unstructured Data Labeling.md)
+    - **Authorization Management**
+      - [Authorization Configuration](Intelligent Marketing Agent/Unstructured Data Labeling/Authorization Management/Authorization Configuration.md)
+      - [Authorization Management Overview](Intelligent Marketing Agent/Unstructured Data Labeling/Authorization Management/Authorization Management Overview.md)
+    - **Best Practices**
+      - [Interpretation of Outbound Telemarketing Data](Intelligent Marketing Agent/Unstructured Data Labeling/Best Practices/Interpretation of Outbound Telemarketing Data.md)
+      - [Label Mining for Conversation Content in the Securities Industry](Intelligent Marketing Agent/Unstructured Data Labeling/Best Practices/Label Mining for Conversation Content in the Securities Industry.md)
+    - **Create and Configure Unstructured Data Labeling Tasks**
+      - [Data Preparation](Intelligent Marketing Agent/Unstructured Data Labeling/Create and Configure Unstructured Data Labeling Tasks/Data Preparation.md)
+      - [Processing Result Output Configuration](Intelligent Marketing Agent/Unstructured Data Labeling/Create and Configure Unstructured Data Labeling Tasks/Processing Result Output Configuration.md)
+      - [Task Creation](Intelligent Marketing Agent/Unstructured Data Labeling/Create and Configure Unstructured Data Labeling Tasks/Task Creation.md)
+      - [Unstructured Data Processing Operators Configuration](Intelligent Marketing Agent/Unstructured Data Labeling/Create and Configure Unstructured Data Labeling Tasks/Unstructured Data Processing Operators Configuration.md)
+    - **Intelligent Labeling**
+      - [Manage Label Library](Intelligent Marketing Agent/Unstructured Data Labeling/Intelligent Labeling/Manage Label Library.md)
+      - [Overview of Intelligent Labeling](Intelligent Marketing Agent/Unstructured Data Labeling/Intelligent Labeling/Overview of Intelligent Labeling.md)
+      - [Task Management](Intelligent Marketing Agent/Unstructured Data Labeling/Intelligent Labeling/Task Management.md)
+    - **Session Insight**
+      - [Overview of Conversation Insights](Intelligent Marketing Agent/Unstructured Data Labeling/Session Insight/Overview of Conversation Insights.md)
+- **Knowledge Engine VeKnow**
+  - [Overview of Enterprise Knowledge Engine](Knowledge Engine VeKnow/Overview of Enterprise Knowledge Engine.md)
+  - [Q&A](Knowledge Engine VeKnow/Q&A.md)
+  - **Best Practices**
+    - [API-Based Access to Knowledge Base Retrieval Capability](Knowledge Engine VeKnow/Best Practices/API-Based Access to Knowledge Base Retrieval Capability.md)
+  - **Data Access**
+    - [Data Access Overview](Knowledge Engine VeKnow/Data Access/Data Access Overview.md)
+    - [Dataset](Knowledge Engine VeKnow/Data Access/Dataset.md)
+    - **Knowledge Access**
+      - [Knowledge Access Overview](Knowledge Engine VeKnow/Data Access/Knowledge Access/Knowledge Access Overview.md)
+      - **API**
+        - [Rest API 2.0](Knowledge Engine VeKnow/Data Access/Knowledge Access/API/Rest API 2.0.md)
+      - **Application Data Source**
+        - [Miracle Data](Knowledge Engine VeKnow/Data Access/Knowledge Access/Application Data Source/Miracle Data.md)
+      - **Columnar Database**
+        - [ByteHouse CDW](Knowledge Engine VeKnow/Data Access/Knowledge Access/Columnar Database/ByteHouse CDW.md)
+        - [ByteHouse CE](Knowledge Engine VeKnow/Data Access/Knowledge Access/Columnar Database/ByteHouse CE.md)
+        - [ClickHouse](Knowledge Engine VeKnow/Data Access/Knowledge Access/Columnar Database/ClickHouse.md)
+        - [HBase](Knowledge Engine VeKnow/Data Access/Knowledge Access/Columnar Database/HBase.md)
+        - [Vetica](Knowledge Engine VeKnow/Data Access/Knowledge Access/Columnar Database/Vetica.md)
+      - **Data Warehouse**
+        - [Emr Serverless Spark](Knowledge Engine VeKnow/Data Access/Knowledge Access/Data Warehouse/Emr Serverless Spark.md)
+        - [Google BigQuery](Knowledge Engine VeKnow/Data Access/Knowledge Access/Data Warehouse/Google BigQuery.md)
+        - [Hive](Knowledge Engine VeKnow/Data Access/Knowledge Access/Data Warehouse/Hive.md)
+        - [Huawei FusionInsight](Knowledge Engine VeKnow/Data Access/Knowledge Access/Data Warehouse/Huawei FusionInsight.md)
+        - [LAS](Knowledge Engine VeKnow/Data Access/Knowledge Access/Data Warehouse/LAS.md)
+        - [MaxCompute](Knowledge Engine VeKnow/Data Access/Knowledge Access/Data Warehouse/MaxCompute.md)
+        - [Ring Inceptor](Knowledge Engine VeKnow/Data Access/Knowledge Access/Data Warehouse/Ring Inceptor.md)
+        - [StarRocks](Knowledge Engine VeKnow/Data Access/Knowledge Access/Data Warehouse/StarRocks.md)
+        - [Tencent Cloud DLC](Knowledge Engine VeKnow/Data Access/Knowledge Access/Data Warehouse/Tencent Cloud DLC.md)
+        - [Transwarp ArgoDB](Knowledge Engine VeKnow/Data Access/Knowledge Access/Data Warehouse/Transwarp ArgoDB.md)
+      - **Document Database**
+        - [MongoDB](Knowledge Engine VeKnow/Data Access/Knowledge Access/Document Database/MongoDB.md)
+      - **Local File**
+        - [Access Data Connection](Knowledge Engine VeKnow/Data Access/Knowledge Access/Local File/Access Data Connection.md)
+        - [Excel/CSV Data Connection](Knowledge Engine VeKnow/Data Access/Knowledge Access/Local File/Excel - CSV Data Connection.md)
+      - **OLAP Database**
+        - [Amazon Athena](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Amazon Athena.md)
+        - [Amazon Redshift](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Amazon Redshift.md)
+        - [AnalyticDB for MySQL 2.0](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/AnalyticDB for MySQL 2.0.md)
+        - [AnalyticDB for MySQL 3.0](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/AnalyticDB for MySQL 3.0.md)
+        - [ByteHouse CDW](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/ByteHouse CDW.md)
+        - [ByteHouse CE](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/ByteHouse CE.md)
+        - [Clickhouse](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Clickhouse.md)
+        - [Databricks](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Databricks.md)
+        - [Gauss DWS](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Gauss DWS.md)
+        - [GBase 8a](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/GBase 8a.md)
+        - [Greenplum](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Greenplum.md)
+        - [HBase Phoenix](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/HBase Phoenix.md)
+        - [Hetu](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Hetu.md)
+        - [Hologres](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Hologres.md)
+        - [Impala](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Impala.md)
+        - [Kyuubi Trino Engine](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Kyuubi Trino Engine.md)
+        - [Presto](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Presto.md)
+        - [SAP HANA](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/SAP HANA.md)
+        - [Transwarp ArgoDB](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Transwarp ArgoDB.md)
+        - [Trino](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Trino.md)
+        - [Vertica](Knowledge Engine VeKnow/Data Access/Knowledge Access/OLAP Database/Vertica.md)
+      - **Platform**
+        - [Huawei Data Lake Insight DLI](Knowledge Engine VeKnow/Data Access/Knowledge Access/Platform/Huawei Data Lake Insight DLI.md)
+      - **Relational Database**
+        - [Damon](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/Damon.md)
+        - [Doris](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/Doris.md)
+        - [GoldenDB](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/GoldenDB.md)
+        - [IBM DB2](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/IBM DB2.md)
+        - [KingbaseES](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/KingbaseES.md)
+        - [MySQL](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/MySQL.md)
+        - [OceanBase](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/OceanBase.md)
+        - [OpenGauss](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/OpenGauss.md)
+        - [Oracle](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/Oracle.md)
+        - [PostgreSQL](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/PostgreSQL.md)
+        - [SQL Server](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/SQL Server.md)
+        - [Teradata](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/Teradata.md)
+        - [TiDB](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/TiDB.md)
+        - [VastBase](Knowledge Engine VeKnow/Data Access/Knowledge Access/Relational Database/VastBase.md)
+      - **Unstructured Data**
+        - [Alibaba Cloud OSS_ Unstructured](Knowledge Engine VeKnow/Data Access/Knowledge Access/Unstructured Data/Alibaba Cloud OSS_ Unstructured.md)
+        - [File Upload _ Unstructured](Knowledge Engine VeKnow/Data Access/Knowledge Access/Unstructured Data/File Upload _ Unstructured.md)
+        - [Huawei Cloud OBS_ Unstructured](Knowledge Engine VeKnow/Data Access/Knowledge Access/Unstructured Data/Huawei Cloud OBS_ Unstructured.md)
+        - [Internet Public Chain](Knowledge Engine VeKnow/Data Access/Knowledge Access/Unstructured Data/Internet Public Chain.md)
+        - [Lark Cloud Documentation](Knowledge Engine VeKnow/Data Access/Knowledge Access/Unstructured Data/Lark Cloud Documentation.md)
+        - [SCHEMA_LESS FTP](Knowledge Engine VeKnow/Data Access/Knowledge Access/Unstructured Data/SCHEMA_LESS FTP.md)
+        - [SCHEMA_LESS NAS](Knowledge Engine VeKnow/Data Access/Knowledge Access/Unstructured Data/SCHEMA_LESS NAS.md)
+        - [SCHEMA_LESS S3](Knowledge Engine VeKnow/Data Access/Knowledge Access/Unstructured Data/SCHEMA_LESS S3.md)
+        - [Tencent Cloud COS_ Unstructured](Knowledge Engine VeKnow/Data Access/Knowledge Access/Unstructured Data/Tencent Cloud COS_ Unstructured.md)
+        - [Volcano Engine Clouds TOS_ Unstructured](Knowledge Engine VeKnow/Data Access/Knowledge Access/Unstructured Data/Volcano Engine Clouds TOS_ Unstructured.md)
+      - **Volcano Engine Matrix**
+        - [ByteHouse CDW](Knowledge Engine VeKnow/Data Access/Knowledge Access/Volcano Engine Matrix/ByteHouse CDW.md)
+        - [ByteHouse CE](Knowledge Engine VeKnow/Data Access/Knowledge Access/Volcano Engine Matrix/ByteHouse CE.md)
+        - [Emr Serverless Spark](Knowledge Engine VeKnow/Data Access/Knowledge Access/Volcano Engine Matrix/Emr Serverless Spark.md)
+        - [LAS](Knowledge Engine VeKnow/Data Access/Knowledge Access/Volcano Engine Matrix/LAS.md)
+      - **Web Connector**
+        - [Alibaba Cloud OSS](Knowledge Engine VeKnow/Data Access/Knowledge Access/Web Connector/Alibaba Cloud OSS.md)
+        - [FTP Data Connection](Knowledge Engine VeKnow/Data Access/Knowledge Access/Web Connector/FTP Data Connection.md)
+        - [Tencent Cloud COS](Knowledge Engine VeKnow/Data Access/Knowledge Access/Web Connector/Tencent Cloud COS.md)
+        - [Volcanic Cloud TOS](Knowledge Engine VeKnow/Data Access/Knowledge Access/Web Connector/Volcanic Cloud TOS.md)
+    - **Unstructured Data Labeling**
+      - [Intelligent Marking Overview](Knowledge Engine VeKnow/Data Access/Unstructured Data Labeling/Intelligent Marking Overview.md)
+      - [Manage Tag Library](Knowledge Engine VeKnow/Data Access/Unstructured Data Labeling/Manage Tag Library.md)
+      - [Task Management](Knowledge Engine VeKnow/Data Access/Unstructured Data Labeling/Task Management.md)
+    - **Visual Knowledge Processing**
+      - [Overview of Visual Knowledge Processing](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Overview of Visual Knowledge Processing.md)
+      - **Data Output**
+        - [Dataset Output](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Output/Dataset Output.md)
+        - [External Output](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Output/External Output.md)
+        - [Import Knowledge Engine](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Output/Import Knowledge Engine.md)
+      - **Data Processing**
+        - [AI-Feature Engineering](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Feature Engineering.md)
+        - [AI-Machine Learning](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Machine Learning.md)
+        - [AI-Natural Language Processing](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Natural Language Processing.md)
+        - [AI-Vectorized Model](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Vectorized Model.md)
+        - [Audio Processing](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/Audio Processing.md)
+        - [Data Cleaning](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/Data Cleaning.md)
+        - [Data Input](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/Data Input.md)
+        - [Document Processing](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/Document Processing.md)
+        - [Image Processing](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/Image Processing.md)
+        - [REST API 2.0](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/REST API 2.0.md)
+        - [Text Processing](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/Text Processing.md)
+        - [Video Processing](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/Video Processing.md)
+        - **Advanced Configuration**
+          - [Configure Large Model Invocation](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/Advanced Configuration/Configure Large Model Invocation.md)
+          - [Manage Custom Operators](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/Advanced Configuration/Manage Custom Operators.md)
+        - **AI-Large Model Processing**
+          - [Custom Large Model](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Large Model Processing/Custom Large Model.md)
+          - [DeepSeek Large Model](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Large Model Processing/DeepSeek Large Model.md)
+          - [Qwen Large Model](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Large Model Processing/Qwen Large Model.md)
+          - [Volcano Ark Large Model](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Large Model Processing/Volcano Ark Large Model.md)
+        - **AI-Large Model Processing V2**
+          - [Custom Large Model V2](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Large Model Processing V2/Custom Large Model V2.md)
+          - [DeepSeek Large Model V2](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Large Model Processing V2/DeepSeek Large Model V2.md)
+          - [Qwen Large Model V2](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Large Model Processing V2/Qwen Large Model V2.md)
+          - [Volcano Ark Large Model V2](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Data Processing/AI-Large Model Processing V2/Volcano Ark Large Model V2.md)
+      - **Modeling Case**
+        - [\[Case\] Automotive User Intention Label Prediction](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Modeling Case/[Case] Automotive User Intention Label Prediction.md)
+        - [\[Case\] Forecast of Customer Churn in Commercial Banks](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Modeling Case/[Case] Forecast of Customer Churn in Commercial Banks.md)
+        - [\[Case\] Key Behavior Statistics of Automobile Users](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Modeling Case/[Case] Key Behavior Statistics of Automobile Users.md)
+      - **Task Creation**
+        - [Offline Task](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Task Creation/Offline Task.md)
+        - [Real-Time Task](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Task Creation/Real-Time Task.md)
+      - **Task Management**
+        - [Task Operation and Maintenance](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Task Management/Task Operation and Maintenance.md)
+        - [Task Overview and Details](Knowledge Engine VeKnow/Data Access/Visual Knowledge Processing/Task Management/Task Overview and Details.md)
+  - **Knowledge Application**
+    - [CLI/MCP Services](Knowledge Engine VeKnow/Knowledge Application/CLI - MCP Services.md)
+    - [Search Application](Knowledge Engine VeKnow/Knowledge Application/Search Application.md)
+  - **Knowledge Management**
+    - [Knowledge Compilation](Knowledge Engine VeKnow/Knowledge Management/Knowledge Compilation.md)
+    - [Knowledge Graph](Knowledge Engine VeKnow/Knowledge Management/Knowledge Graph.md)
+    - **Knowledge Base**
+      - [Create a New Knowledge Base](Knowledge Engine VeKnow/Knowledge Management/Knowledge Base/Create a New Knowledge Base.md)
+      - [Import Knowledge](Knowledge Engine VeKnow/Knowledge Management/Knowledge Base/Import Knowledge.md)
+      - [Knowledge Management](Knowledge Engine VeKnow/Knowledge Management/Knowledge Base/Knowledge Management.md)
+      - [Manage Enterprise Knowledge Base Permissions](Knowledge Engine VeKnow/Knowledge Management/Knowledge Base/Manage Enterprise Knowledge Base Permissions.md)
+      - [Manage Personal Knowledge Base](Knowledge Engine VeKnow/Knowledge Management/Knowledge Base/Manage Personal Knowledge Base.md)
+  - **Project Center**
+    - [Data Visualization](Knowledge Engine VeKnow/Project Center/Data Visualization.md)
+    - [Open API](Knowledge Engine VeKnow/Project Center/Open API.md)
+    - [Permission Management](Knowledge Engine VeKnow/Project Center/Permission Management.md)
+    - [System Monitoring](Knowledge Engine VeKnow/Project Center/System Monitoring.md)
+    - [Visit Statistics](Knowledge Engine VeKnow/Project Center/Visit Statistics.md)
+    - **Group Settings**
+      - [Access Cloud Documents](Knowledge Engine VeKnow/Project Center/Group Settings/Access Cloud Documents.md)
+      - [Allocate Personal Knowledge Base Seats(Accounts)](Knowledge Engine VeKnow/Project Center/Group Settings/Allocate Personal Knowledge Base Seats(Accounts).md)
+      - [Configure Resource Cap](Knowledge Engine VeKnow/Project Center/Group Settings/Configure Resource Cap.md)
+- **Openness and Integration**
+  - **Intelligent Analysis Agent**
+    - [Intelligent Analysis Agent Openness Overview](Openness and Integration/Intelligent Analysis Agent/Intelligent Analysis Agent Openness Overview.md)
+    - **Embedded Analysis**
+      - [JS SDK Integration Solution](Openness and Integration/Intelligent Analysis Agent/Embedded Analysis/JS SDK Integration Solution.md)
+    - **OA Applications Integrations**
+      - [Intelligent Analysis Agent Third-Party Integration Guide](Openness and Integration/Intelligent Analysis Agent/OA Applications Integrations/Intelligent Analysis Agent Third-Party Integration Guide.md)
+      - [Lark Integration](Openness and Integration/Intelligent Analysis Agent/OA Applications Integrations/Lark Integration.md)
+      - **Lark Integration**
+        - [Basic Configuration for Lark Integration](Openness and Integration/Intelligent Analysis Agent/OA Applications Integrations/Lark Integration/Basic Configuration for Lark Integration.md)
+        - [How to Bind Lark Accounts and Batch Create Users](Openness and Integration/Intelligent Analysis Agent/OA Applications Integrations/Lark Integration/How to Bind Lark Accounts and Batch Create Users.md)
+        - [How to Integrate Lark Data Sources](Openness and Integration/Intelligent Analysis Agent/OA Applications Integrations/Lark Integration/How to Integrate Lark Data Sources.md)
+        - [How to Integrate with Lark Mobile Client](Openness and Integration/Intelligent Analysis Agent/OA Applications Integrations/Lark Integration/How to Integrate with Lark Mobile Client.md)
+        - [How to Push Lark Messages](Openness and Integration/Intelligent Analysis Agent/OA Applications Integrations/Lark Integration/How to Push Lark Messages.md)
+        - [Lark Integrated Application Effects](Openness and Integration/Intelligent Analysis Agent/OA Applications Integrations/Lark Integration/Lark Integrated Application Effects.md)
+    - **OpenAPI**
+      - [API Release History](Openness and Integration/Intelligent Analysis Agent/OpenAPI/API Release History.md)
+      - [Invocation Methods](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Invocation Methods.md)
+      - [Reference: Common Error Codes](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Reference: Common Error Codes.md)
+      - [Reference: Methods for Obtaining Resource IDs](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Reference: Methods for Obtaining Resource IDs.md)
+      - **Deep Research**
+        - [Deep Research API Description and Common Parameters](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Deep Research/Deep Research API Description and Common Parameters.md)
+        - [Execute Deep Research Task](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Deep Research/Execute Deep Research Task.md)
+        - [File Upload](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Deep Research/File Upload.md)
+        - [Get Task Details](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Deep Research/Get Task Details.md)
+        - [Retrieve Task Status](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Deep Research/Retrieve Task Status.md)
+      - **Intelligent Data Query(New Version)**
+        - [Create a Session](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Intelligent Data Query(New Version)/Create a Session.md)
+        - [Intelligent Data Query API Description and Common Parameters (new version)](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Intelligent Data Query(New Version)/Intelligent Data Query API Description and Common Parameters (new version).md)
+        - [Retrieve Session Information](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Intelligent Data Query(New Version)/Retrieve Session Information.md)
+        - [Retrieve Session Result](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Intelligent Data Query(New Version)/Retrieve Session Result.md)
+        - [Session Completion](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Intelligent Data Query(New Version)/Session Completion.md)
+        - [Update Session](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Intelligent Data Query(New Version)/Update Session.md)
+      - **Intelligent Data Query(Old Version)**
+        - [Intelligent Data Query API Description and Public Parameters (old version)](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Intelligent Data Query(Old Version)/Intelligent Data Query API Description and Public Parameters (old version).md)
+        - [Intelligent Data Query for Lark Client](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Intelligent Data Query(Old Version)/Intelligent Data Query for Lark Client.md)
+        - [Intelligent Data Query for PC](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Intelligent Data Query(Old Version)/Intelligent Data Query for PC.md)
+        - [Reference: Intelligent Analysis Agent OpenAPI Chart Consumption Instructions](Openness and Integration/Intelligent Analysis Agent/OpenAPI/Intelligent Data Query(Old Version)/Reference: Intelligent Analysis Agent OpenAPI Chart Consumption Instructions.md)
+  - **Intelligent Marketing Agent**
+    - [Intelligent Marketing Agent Openness and Integration Overview](Openness and Integration/Intelligent Marketing Agent/Intelligent Marketing Agent Openness and Integration Overview.md)
+    - **OpenAPI**
+      - **Knowledge Engine VeKnow**
+        - [Create Temporary Token](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Create Temporary Token.md)
+        - [Introduction to Enterprise Knowledge Engine OpenAPI](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Introduction to Enterprise Knowledge Engine OpenAPI.md)
+        - **Account Center**
+          - [Account Center Access Process](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Account Center/Account Center Access Process.md)
+          - [Batch New Users](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Account Center/Batch New Users.md)
+        - **Chunk Management**
+          - [Batch Export of QA Knowledge](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Chunk Management/Batch Export of QA Knowledge.md)
+          - [Batch Import of QA Knowledge](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Chunk Management/Batch Import of QA Knowledge.md)
+          - [Get Chunk List](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Chunk Management/Get Chunk List.md)
+          - [Knowledge Base Retrieval](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Chunk Management/Knowledge Base Retrieval.md)
+          - [Modify Chunk](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Chunk Management/Modify Chunk.md)
+          - [Multi-Knowledge Base Retrieval](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Chunk Management/Multi-Knowledge Base Retrieval.md)
+          - [Query Knowledge Import Task of QA Type](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Chunk Management/Query Knowledge Import Task of QA Type.md)
+        - **Document Management**
+          - [Add Document Version](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Add Document Version.md)
+          - [Batch Deletion of Documents](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Batch Deletion of Documents.md)
+          - [Create Document](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Create Document.md)
+          - [Create Folder](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Create Folder.md)
+          - [Delete Document](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Delete Document.md)
+          - [Delete Document Version](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Delete Document Version.md)
+          - [Delete Folder](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Delete Folder.md)
+          - [Document Recall](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Document Recall.md)
+          - [Edit Document Configuration](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Edit Document Configuration.md)
+          - [Enable or Disable Documents in Bulk](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Enable or Disable Documents in Bulk.md)
+          - [Get Document](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Get Document.md)
+          - [Get Document Information in Bulk](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Get Document Information in Bulk.md)
+          - [Get Document Version Content](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Get Document Version Content.md)
+          - [Move Documents or Folders](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Move Documents or Folders.md)
+          - [Query Document](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Query Document.md)
+          - [Query Document Version List](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Query Document Version List.md)
+          - [Query Document Version Settings](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Query Document Version Settings.md)
+          - [Query Folder List](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Query Folder List.md)
+          - [Query the Knowledge Base Directory File Tree](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Query the Knowledge Base Directory File Tree.md)
+          - [Start Parsing the Document](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Start Parsing the Document.md)
+          - [Switch Document Version](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Switch Document Version.md)
+          - [Update Document Version Settings](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Update Document Version Settings.md)
+          - [Update Folder Name](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Management/Update Folder Name.md)
+        - **Document Permission Management**
+          - [Batch Configuring Document Valid Period](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Batch Configuring Document Valid Period.md)
+          - [Bind or Create a Label](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Bind or Create a Label.md)
+          - [Delete Label](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Delete Label.md)
+          - [Download QA Label CSV](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Download QA Label CSV.md)
+          - [Get Document Label](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Get Document Label.md)
+          - [Get Label Details by Label ID](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Get Label Details by Label ID.md)
+          - [Get Label Details by Label Name](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Get Label Details by Label Name.md)
+          - [Get the QA Label](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Get the QA Label.md)
+          - [Label Documents in Batches](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Label Documents in Batches.md)
+          - [Label the Document](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Label the Document.md)
+          - [New Label](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/New Label.md)
+          - [Query Label List](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Query Label List.md)
+          - [Remove Document Labels](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Remove Document Labels.md)
+          - [Remove the Specified Document Label](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Remove the Specified Document Label.md)
+          - [Set Document Valid Period](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Document Permission Management/Set Document Valid Period.md)
+        - **File Convert to Document**
+          - [File Associate with Knowledge Base](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/File Convert to Document/File Associate with Knowledge Base.md)
+          - [Read Table Header](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/File Convert to Document/Read Table Header.md)
+        - **File Management**
+          - [Upload File](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/File Management/Upload File.md)
+        - **Hybrid Retrieval**
+          - [Append Hybrid Retrieval Field](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Hybrid Retrieval/Append Hybrid Retrieval Field.md)
+          - [Bulk Removal of Hybrid Retrieval Fields](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Hybrid Retrieval/Bulk Removal of Hybrid Retrieval Fields.md)
+          - [Create Table Structure](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Hybrid Retrieval/Create Table Structure.md)
+          - [Delete Data](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Hybrid Retrieval/Delete Data.md)
+          - [Delete Data by Filter](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Hybrid Retrieval/Delete Data by Filter.md)
+          - [Delete Hybrid Retrieval Field](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Hybrid Retrieval/Delete Hybrid Retrieval Field.md)
+          - [Hybrid Recall](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Hybrid Retrieval/Hybrid Recall.md)
+          - [Query Table Structure](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Hybrid Retrieval/Query Table Structure.md)
+          - [Write Data](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Hybrid Retrieval/Write Data.md)
+        - **Knowledge Base Management**
+          - [Create Knowledge Bases](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Knowledge Base Management/Create Knowledge Bases.md)
+          - [Delete Knowledge Base](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Knowledge Base Management/Delete Knowledge Base.md)
+          - [Get a List of Knowledge Bases](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Knowledge Base Management/Get a List of Knowledge Bases.md)
+          - [Knowledge Base Details](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Knowledge Base Management/Knowledge Base Details.md)
+          - [Update Knowledge Base](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Knowledge Base Management/Update Knowledge Base.md)
+        - **Personal Wiki Workspace Content**
+          - [Acquire Original Personal Knowledge Base File](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Personal Wiki Workspace Content/Acquire Original Personal Knowledge Base File.md)
+          - [Acquire Personal Knowledge Base Markdown](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Personal Wiki Workspace Content/Acquire Personal Knowledge Base Markdown.md)
+          - [Personal Knowledge Base Search](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Personal Wiki Workspace Content/Personal Knowledge Base Search.md)
+        - **Personal Wiki Workspace Document**
+          - [Get the List of Personal Knowledge Base Documents](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Personal Wiki Workspace Document/Get the List of Personal Knowledge Base Documents.md)
+        - **Personal Wiki Workspace Import**
+          - [Import Personal Knowledge Base Documents](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Personal Wiki Workspace Import/Import Personal Knowledge Base Documents.md)
+        - **Personal Wiki Workspace Resource**
+          - [Get the Sublist of Personal Knowledge Base Resources](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Personal Wiki Workspace Resource/Get the Sublist of Personal Knowledge Base Resources.md)
+        - **Query and Graph Retrieval**
+          - [Graph Retrieval](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Query and Graph Retrieval/Graph Retrieval.md)
+        - **Session Management**
+          - [Create a Session](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Session Management/Create a Session.md)
+          - [Fetch Chat Content in Session](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Session Management/Fetch Chat Content in Session.md)
+          - [Fetch Session List](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Session Management/Fetch Session List.md)
+          - [Retrieval Application Call](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Session Management/Retrieval Application Call.md)
+          - [V4 Session Creation or Renaming](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Session Management/V4 Session Creation or Renaming.md)
+          - [V4 Session List](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Session Management/V4 Session List.md)
+          - [V4 Session Message List](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Session Management/V4 Session Message List.md)
+          - [V4 Smart Q&A](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Session Management/V4 Smart Q&A.md)
+          - [V4 Smart Q&A Attachment Upload](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Session Management/V4 Smart Q&A Attachment Upload.md)
+        - **Structured Knowledge Base Import**
+          - [Create Structured Data Assets](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Import/Create Structured Data Assets.md)
+          - [Initiate Structured Data Import](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Import/Initiate Structured Data Import.md)
+          - [Query Structured Task](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Import/Query Structured Task.md)
+          - [Upload Structured File](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Import/Upload Structured File.md)
+        - **Structured Knowledge Base Management**
+          - [Create a Structured Knowledge Base](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Management/Create a Structured Knowledge Base.md)
+          - [Delete Structured Data Assets](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Management/Delete Structured Data Assets.md)
+          - [Delete the Structured Knowledge Base](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Management/Delete the Structured Knowledge Base.md)
+          - [Query Structured Data Asset Details](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Management/Query Structured Data Asset Details.md)
+          - [Query the List of Structured Data Assets](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Management/Query the List of Structured Data Assets.md)
+          - [Query the List of Structured Knowledge Bases](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Management/Query the List of Structured Knowledge Bases.md)
+          - [Query the Structured Knowledge Base Directory](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Management/Query the Structured Knowledge Base Directory.md)
+        - **Structured Knowledge Base Query**
+          - [Add a Structured Data Row](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Query/Add a Structured Data Row.md)
+          - [Delete Structured Data Rows](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Query/Delete Structured Data Rows.md)
+          - [Edit Structured Data Rows](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Query/Edit Structured Data Rows.md)
+          - [Query Field Enumeration Value Sample](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Query/Query Field Enumeration Value Sample.md)
+          - [Query Structured Data Rows](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Query/Query Structured Data Rows.md)
+          - [Query Structured Data Table Structure](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Query/Query Structured Data Table Structure.md)
+          - [Query Structured Row Details](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Query/Query Structured Row Details.md)
+          - [Recall Structured Knowledge](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Query/Recall Structured Knowledge.md)
+          - [Update Structured Data Table Structure](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Structured Knowledge Base Query/Update Structured Data Table Structure.md)
+        - **System Permission Management**
+          - [Add Tenant Users in Bulk](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/System Permission Management/Add Tenant Users in Bulk.md)
+          - [Batch Query Current User Resource Permissions](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/System Permission Management/Batch Query Current User Resource Permissions.md)
+          - [Module Authorization in Bulk/Cancel Module Permissions](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/System Permission Management/Module Authorization in Bulk - Cancel Module Permissions.md)
+          - [Query Current User Authorization Resource ID Range](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/System Permission Management/Query Current User Authorization Resource ID Range.md)
+          - [Remove Users from Tenants](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/System Permission Management/Remove Users from Tenants.md)
+          - [Resource Permission Authorization/Cancel Authorization](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/System Permission Management/Resource Permission Authorization - Cancel Authorization.md)
+          - [Update User Status](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/System Permission Management/Update User Status.md)
+        - **Version Management**
+          - [Enable Version Management](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Version Management/Enable Version Management.md)
+          - [Get Version List](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Version Management/Get Version List.md)
+          - [New Version Type](Openness and Integration/Intelligent Marketing Agent/OpenAPI/Knowledge Engine VeKnow/Version Management/New Version Type.md)
+- **Product Introduction**
+  - [What is the DataAgent Solution?](Product Introduction/What is the DataAgent Solution?.md)
+- **Product Updates**
+  - **Intelligent Analysis Agent**
+    - [Release Log](Product Updates/Intelligent Analysis Agent/Release Log.md)
+  - **Intelligent Analytic Assistant iDA**
+    - [V4.0.0](Product Updates/Intelligent Analytic Assistant iDA/V4.0.0.md)
+    - [V4.1.0](Product Updates/Intelligent Analytic Assistant iDA/V4.1.0.md)
+    - [V4.2.0](Product Updates/Intelligent Analytic Assistant iDA/V4.2.0.md)
+    - [V4.3.0](Product Updates/Intelligent Analytic Assistant iDA/V4.3.0.md)
+    - [V4.3.1](Product Updates/Intelligent Analytic Assistant iDA/V4.3.1.md)
+  - **Intelligent Marketing Agent**
+    - [Release Log](Product Updates/Intelligent Marketing Agent/Release Log.md)
+  - **User Research Agent**
+    - [Release Log](Product Updates/User Research Agent/Release Log.md)
+- **Related Agreements**
+  - [BytePlus DataAgent Service Level Agreement](Related Agreements/BytePlus DataAgent Service Level Agreement.md)
+  - [BytePlus DataAgent Service Usage Guidelines and Disclaimer](Related Agreements/BytePlus DataAgent Service Usage Guidelines and Disclaimer.md)
+  - [Special Terms for Growth Marketing Suite Products and Services](Related Agreements/Special Terms for Growth Marketing Suite Products and Services.md)
+- **User Research Agent User Guide**
+  - [AI Behavior Research](User Research Agent User Guide/AI Behavior Research.md)
+  - [User Research Agent Overview](User Research Agent User Guide/User Research Agent Overview.md)

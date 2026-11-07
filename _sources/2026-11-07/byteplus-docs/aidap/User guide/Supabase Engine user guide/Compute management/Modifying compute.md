@@ -1,0 +1,50 @@
+---
+title: "Modifying compute"
+product: "AI Native BaaS for Supabase"
+product_code: "aidap"
+source: "https://docs.byteplus.com/en/docs/aidap/Supabase-Modifying_compute"
+---
+
+This topic introduces the procedure for modifying compute.
+
+<span id="2Y6nrmD1"></span>
+## Prerequisites
+
+A workspace is created and its status is **Running** or **Suspended**.
+
+<span id="8e4wIvqL"></span>
+## Procedure
+
+
+1. Login to [AI Native Database Platform](https://console.byteplus.com/aidap).
+
+2. Select the target project and target region in the top navigation bar.
+
+3. Enter the **Branch management** page of the target workspace. You can enter the **Branch management** page of the target workspace by either of the following two ways.
+
+   * Click <span>![图片](https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_2d6a6bd14e29a4147670589c8181cc1a.png)<sub> </sub></span>**Branch management** in the center navigation bar of the page, then click the icon<span>![图片](https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_a1b21e2628b99b7cc66d1f2a7f9b1fcb.png)<sub> </sub></span> to the right of the workspace name at the top left of the page to select the target workspace from the dropdown list and enter the **Branch management** page of the target workspace.
+
+   * Click <span>![图片](https://portal.volccdn.com/obj/volcfe/cloud-universal-doc/upload_91cbf438e775b519ccb60e548fbb0a79.png)<sub> </sub></span>**Workspaces** in the center navigation bar to enter the **Workspaces** page **.**  Click the target workspace name on the **Workspaces** page to enter the target workspace **Overview** page. On the **Overview** page, click **All branches** at the top right of the branches list to enter the target workspace **Branch management** page.
+
+4. On the **Branch management** page, click the name of the target branch to access the **Branch overview** page.
+
+5. On the **Branch overview** page, under the **Supabase service** or **Database management service** tab, click  **…**  \> **Modify** on the target compute row to enter the **Modify** page.
+
+6. On the **Modify** page, modify the compute name and configure the compute expansion range. After completing the settings, click **OK**.
+
+   
+   |**Configuration item** |**Decscription** |
+   |---|---|
+   |Name |Set the name of the compute. The compute name must meet the following rules:<br><br><br>* Must be 2 to 64 characters in length.<br><br>* It can only contain letters (a~z and A~Z), numbers (0~9), hyphens (\-), and underscores (_).<br><br>* It must start with a letter (a~z and A~Z) and end with a letter (a~z and A~Z) or a number (0~9). |
+   |Compute expansion range |Configure the compute expansion range.<br><br><div data-tips="true" data-tips-type="default" data-tips-is-title="true">tip</div><br><br><br><br>* <div data-tips="true" data-tips-type="default">The upper and lower limits of the compute expansion range have the same value range.</div><br><br><br>   * <div data-tips="true" data-tips-type="default">For the database management service compute, the valid values are [0.25\|0.5\|1\|2\|3\|4\|5\|6\|7\|8\|9\|10\|11\|12\|13\|14\|15\|16\|18\|20\|22\|24\|26\|28\|30\|32].</div><br><br><br>   * <div data-tips="true" data-tips-type="default">For the Supabase service compute, the valid values are [0.5\|1\|2\|3\|4\|5\|6\|7\|8\|9\|10\|11\|12\|13\|14\|15\|16\|18\|20\|22\|24\|26\|28\|30\|32].</div><br><br><br>* <div data-tips="true" data-tips-type="default">The ratio of the upper limit to the lower limit of the compute expansion range should not exceed 8.</div><br> |
+   
+
+
+<span id="BICQDMuv"></span>
+## Related APIs
+
+
+|**API** |**Decscription** |
+|---|---|
+|[ModifyComputeSpec](https://docs.byteplus.com/en/docs/330/ModifyComputeSpec) |Call the ModifyComputeSpec API to modify the specification. |
+|[ModifyComputeName](https://docs.byteplus.com/en/docs/330/ModifyComputeName) |Call the ModifyComputeName API to modify the compute name. |

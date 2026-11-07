@@ -1,0 +1,68 @@
+# Seed Speech
+
+38 pages. Source: https://docs.byteplus.com/en/docs/byteplusvoice
+
+Back to the [full index](../README.md).
+
+- **API_Reference**
+  - **Audio Creation**
+    - [Audio 1.0](API_Reference/Audio Creation/Audio 1.0.md)
+  - **Legacy**
+    - **Speech-to-Text**
+      - [ASR 1.0](API_Reference/Legacy/Speech-to-Text/ASR 1.0.md)
+      - [ASR-Audio File](API_Reference/Legacy/Speech-to-Text/ASR-Audio File.md)
+      - [ASR-Streaming](API_Reference/Legacy/Speech-to-Text/ASR-Streaming.md)
+    - **Text-to-Speech**
+      - [TTS 1.0](API_Reference/Legacy/Text-to-Speech/TTS 1.0.md)
+    - **Voice Replication**
+      - [Voice Replication - Old Version](API_Reference/Legacy/Voice Replication/Voice Replication - Old Version.md)
+  - **Live Interpretation**
+    - [Live Interpretation - API guide](API_Reference/Live Interpretation/Live Interpretation - API guide.md)
+  - **Speech SDK**
+    - **ASR**
+      - [Streaming ASR - Android SDK](API_Reference/Speech SDK/ASR/Streaming ASR - Android SDK.md)
+      - [Streaming ASR - iOS SDK](API_Reference/Speech SDK/ASR/Streaming ASR - iOS SDK.md)
+    - **TTS**
+      - [Bi-directional Streaming TTS - Android SDK](API_Reference/Speech SDK/TTS/Bi-directional Streaming TTS - Android SDK.md)
+      - [Bi-directional Streaming TTS - iOS SDK](API_Reference/Speech SDK/TTS/Bi-directional Streaming TTS - iOS SDK.md)
+  - **Speech-to-Text (ASR)**
+    - **ASR - Audio File**
+      - [ASR - Audio File Fast Mode](API_Reference/Speech-to-Text (ASR)/ASR - Audio File/ASR - Audio File Fast Mode.md)
+      - **ASR - Audio File Standard Mode**
+        - [Query Result - HTTP](API_Reference/Speech-to-Text (ASR)/ASR - Audio File/ASR - Audio File Standard Mode/Query Result - HTTP.md)
+        - [Submit Task - HTTP](API_Reference/Speech-to-Text (ASR)/ASR - Audio File/ASR - Audio File Standard Mode/Submit Task - HTTP.md)
+        - [Usage Guide - ASR Audio File Standard Mode](API_Reference/Speech-to-Text (ASR)/ASR - Audio File/ASR - Audio File Standard Mode/Usage Guide - ASR Audio File Standard Mode.md)
+    - **ASR - Streaming**
+      - [ASR - Bidirectional Streaming - WebSocket](API_Reference/Speech-to-Text (ASR)/ASR - Streaming/ASR - Bidirectional Streaming - WebSocket.md)
+      - [ASR - Unidirectional Streaming - WebSocket](API_Reference/Speech-to-Text (ASR)/ASR - Streaming/ASR - Unidirectional Streaming - WebSocket.md)
+      - [Usage Guide - ASR Streaming](API_Reference/Speech-to-Text (ASR)/ASR - Streaming/Usage Guide - ASR Streaming.md)
+  - **Text-to-Speech (TTS)**
+    - [TTS - Bi-directional Streaming (WebSocket)](API_Reference/Text-to-Speech (TTS)/TTS - Bi-directional Streaming (WebSocket).md)
+    - [TTS - Unidirectional Streaming (HTTP)](API_Reference/Text-to-Speech (TTS)/TTS - Unidirectional Streaming (HTTP).md)
+  - **Voice Replication**
+    - [Error Code Reference](API_Reference/Voice Replication/Error Code Reference.md)
+    - [Voice Enrollment](API_Reference/Voice Replication/Voice Enrollment.md)
+    - [Voice Replication Management APIs](API_Reference/Voice Replication/Voice Replication Management APIs.md)
+    - [Voice Status Query](API_Reference/Voice Replication/Voice Status Query.md)
+    - [Voice Upgrade](API_Reference/Voice Replication/Voice Upgrade.md)
+- **Product Overview**
+  - **Live Interpretation**
+    - [Live Interpretation](Product Overview/Live Interpretation/Live Interpretation.md)
+  - **Speech-to-Text (ASR)**
+    - [ASR 2.0](Product Overview/Speech-to-Text (ASR)/ASR 2.0.md)
+  - **Text-to-Speech (TTS)**
+    - [TTS 2.0](Product Overview/Text-to-Speech (TTS)/TTS 2.0.md)
+    - [Voice List](Product Overview/Text-to-Speech (TTS)/Voice List.md)
+  - **Voice Replication**
+    - [Voice Replication 2.0](Product Overview/Voice Replication/Voice Replication 2.0.md)
+- **Product_Billing**
+  - [Audio 1.0](Product_Billing/Audio 1.0.md)
+  - [Live Interpretaion](Product_Billing/Live Interpretaion.md)
+  - [Speech-to-Text (ASR)](Product_Billing/Speech-to-Text (ASR).md)
+  - [Text-to-Speech (TTS)](Product_Billing/Text-to-Speech (TTS).md)
+  - [Voice Replication](Product_Billing/Voice Replication.md)
+- **Quickstart**
+  - [Speech Console Guide](Quickstart/Speech Console Guide.md)
+  - [Voice Replication Order and Usage Guide](Quickstart/Voice Replication Order and Usage Guide.md)
+- **Terms & Policy**
+  - [Seed Speech Commitment Statement](Terms & Policy/Seed Speech Commitment Statement.md)

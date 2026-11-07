@@ -1,0 +1,217 @@
+# BytePlus DataTester
+
+156 pages. Source: https://docs.byteplus.com/en/docs/DataTester
+
+Back to the [full index](../README.md).
+
+- [FAQs](FAQs.md)
+- **Administrator Guide**
+  - **Global Settings**
+    - **Audience Management**
+      - [Scan the Code to Enter the Device ID](Administrator Guide/Global Settings/Audience Management/Scan the Code to Enter the Device ID.md)
+      - [Server Side Filtering Parameters](Administrator Guide/Global Settings/Audience Management/Server Side Filtering Parameters.md)
+      - [User Cohorts](Administrator Guide/Global Settings/Audience Management/User Cohorts.md)
+      - [User Details](Administrator Guide/Global Settings/Audience Management/User Details.md)
+      - [User Testing Whitelist](Administrator Guide/Global Settings/Audience Management/User Testing Whitelist.md)
+    - **Workflows Management**
+      - [Approval and Workflows](Administrator Guide/Global Settings/Workflows Management/Approval and Workflows.md)
+  - **Project and Application Management**
+    - [Project and Application Management](Administrator Guide/Project and Application Management/Project and Application Management.md)
+  - **System, Data, and Task Management**
+    - [Data Overview](Administrator Guide/System, Data, and Task Management/Data Overview.md)
+    - [System Settings](Administrator Guide/System, Data, and Task Management/System Settings.md)
+    - [Task Management](Administrator Guide/System, Data, and Task Management/Task Management.md)
+  - **User and Permission Management**
+    - [Create and Manage Roles](Administrator Guide/User and Permission Management/Create and Manage Roles.md)
+    - [Create and Manage Users](Administrator Guide/User and Permission Management/Create and Manage Users.md)
+    - [User and Permission Management Overview](Administrator Guide/User and Permission Management/User and Permission Management Overview.md)
+- **Developer Guide**
+  - [\[Growth Marketing Suite SDK\] Privacy Policy](Developer Guide/[Growth Marketing Suite SDK] Privacy Policy.md)
+  - [Data Access Overview](Developer Guide/Data Access Overview.md)
+  - **Data Access**
+    - **Client Side SDK**
+      - [Control Data Sending After Applog Initialization](Developer Guide/Data Access/Client Side SDK/Control Data Sending After Applog Initialization.md)
+      - [Cordova SDK Integration Development Guide](Developer Guide/Data Access/Client Side SDK/Cordova SDK Integration Development Guide.md)
+      - [React Native SDK Integration Development Guide](Developer Guide/Data Access/Client Side SDK/React Native SDK Integration Development Guide.md)
+      - [SDK Changelog](Developer Guide/Data Access/Client Side SDK/SDK Changelog.md)
+      - [Windows SDK Integration and Event Tracking](Developer Guide/Data Access/Client Side SDK/Windows SDK Integration and Event Tracking.md)
+      - **Android SDK**
+        - [Android SDK Debugging and Data Verification](Developer Guide/Data Access/Client Side SDK/Android SDK/Android SDK Debugging and Data Verification.md)
+        - [Android SDK Event Tracking and Properties (Experimental Metrics)](Developer Guide/Data Access/Client Side SDK/Android SDK/Android SDK Event Tracking and Properties (Experimental Metrics).md)
+        - [Android SDK Integration](Developer Guide/Data Access/Client Side SDK/Android SDK/Android SDK Integration.md)
+      - **HarmonyOS Next SDK (Beta Version)**
+        - [HarmonyOS Next SDK Event Tracking and Properties](Developer Guide/Data Access/Client Side SDK/HarmonyOS Next SDK (Beta Version)/HarmonyOS Next SDK Event Tracking and Properties.md)
+        - [HarmonyOS Next SDK Integration](Developer Guide/Data Access/Client Side SDK/HarmonyOS Next SDK (Beta Version)/HarmonyOS Next SDK Integration.md)
+      - **iOS SDK**
+        - [iOS Event Tracking and Properties (Experimental Metrics)](Developer Guide/Data Access/Client Side SDK/iOS SDK/iOS Event Tracking and Properties (Experimental Metrics).md)
+        - [iOS SDK Debugging and Data Validation](Developer Guide/Data Access/Client Side SDK/iOS SDK/iOS SDK Debugging and Data Validation.md)
+        - [iOS SDK Integration](Developer Guide/Data Access/Client Side SDK/iOS SDK/iOS SDK Integration.md)
+      - **Mini Program SDK**
+        - [Alipay Mini Program SDK](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/Alipay Mini Program SDK.md)
+        - [ByteDance Mini Program SDK](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/ByteDance Mini Program SDK.md)
+        - [WeChat Mini Program SDK Debugging and Data Verification](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/WeChat Mini Program SDK Debugging and Data Verification.md)
+        - [WeChat Mini Program SDK Event Tracking and Properties](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/WeChat Mini Program SDK Event Tracking and Properties.md)
+        - [WeChat Mini Program SDK Integration (Universal)](Developer Guide/Data Access/Client Side SDK/Mini Program SDK/WeChat Mini Program SDK Integration (Universal).md)
+      - **Web JS SDK**
+        - [Web/JavaScript SDK Integration](Developer Guide/Data Access/Client Side SDK/Web JS SDK/Web - JavaScript SDK Integration.md)
+        - [Web/JS SDK Debugging and Data Validation](Developer Guide/Data Access/Client Side SDK/Web JS SDK/Web - JS SDK Debugging and Data Validation.md)
+        - [Web/JS SDK Event Tracking and Properties (Experimental Metrics)](Developer Guide/Data Access/Client Side SDK/Web JS SDK/Web - JS SDK Event Tracking and Properties (Experimental Metrics).md)
+    - **Server Side Access**
+      - [Go SDK](Developer Guide/Data Access/Server Side Access/Go SDK.md)
+      - [HTTP API](Developer Guide/Data Access/Server Side Access/HTTP API.md)
+      - [Java SDK](Developer Guide/Data Access/Server Side Access/Java SDK.md)
+      - [Python SDK](Developer Guide/Data Access/Server Side Access/Python SDK.md)
+      - [Server Side SDK Overall Description](Developer Guide/Data Access/Server Side Access/Server Side SDK Overall Description.md)
+      - [Traffic Shunt Agent](Developer Guide/Data Access/Server Side Access/Traffic Shunt Agent.md)
+  - **Key Basics (Prerequisite)**
+    - [Supported Data Formats (Custom Events/Properties)](Developer Guide/Key Basics (Prerequisite)/Supported Data Formats (Custom Events - Properties).md)
+    - [Supported User Unique Identifiers](Developer Guide/Key Basics (Prerequisite)/Supported User Unique Identifiers.md)
+    - **Supported Preset Events and Properties**
+      - [APP Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/APP Preset Events and Properties.md)
+      - [Disable Property List](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Disable Property List.md)
+      - [Full Event Tracking Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Full Event Tracking Preset Events and Properties.md)
+      - [Inter-Side Preset Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Inter-Side Preset Properties.md)
+      - [Mini Program Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Mini Program Preset Events and Properties.md)
+      - [Preset Property Summary](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Preset Property Summary.md)
+      - [Preset User Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Preset User Properties.md)
+      - [Push Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Push Preset Events and Properties.md)
+      - [Web Preset Events and Properties](Developer Guide/Key Basics (Prerequisite)/Supported Preset Events and Properties/Web Preset Events and Properties.md)
+  - **Open Capabilities**
+    - [Integrated Workbench](Developer Guide/Open Capabilities/Integrated Workbench.md)
+    - [Open Interface (Old Version)](Developer Guide/Open Capabilities/Open Interface (Old Version).md)
+    - [Open Interface V3](Developer Guide/Open Capabilities/Open Interface V3.md)
+- **Function Guide**
+  - [Advanced Feature: Multi-Application/Multi-Agent/Multi-ID Type](Function Guide/Advanced Feature: Multi-Application - Multi-Agent - Multi-ID Type.md)
+  - **Configuration Management**
+    - **Function Introduction**
+      - [Featured Flag Introduction](Function Guide/Configuration Management/Function Introduction/Featured Flag Introduction.md)
+      - [Our Advantages](Function Guide/Configuration Management/Function Introduction/Our Advantages.md)
+      - [Typical Application Scenarios](Function Guide/Configuration Management/Function Introduction/Typical Application Scenarios.md)
+    - **Get Started Quickly**
+      - [Get Started Quickly](Function Guide/Configuration Management/Get Started Quickly/Get Started Quickly.md)
+    - **Operation Guide**
+      - [AB Testing Full Amount](Function Guide/Configuration Management/Operation Guide/AB Testing Full Amount.md)
+      - [Create Features](Function Guide/Configuration Management/Operation Guide/Create Features.md)
+      - [Feature key Usage Monitoring](Function Guide/Configuration Management/Operation Guide/Feature key Usage Monitoring.md)
+      - [Feature Lifecycle Management](Function Guide/Configuration Management/Operation Guide/Feature Lifecycle Management.md)
+      - [Feature List](Function Guide/Configuration Management/Operation Guide/Feature List.md)
+      - [Feature Management](Function Guide/Configuration Management/Operation Guide/Feature Management.md)
+      - [Feature Version Management](Function Guide/Configuration Management/Operation Guide/Feature Version Management.md)
+      - [Global Release History](Function Guide/Configuration Management/Operation Guide/Global Release History.md)
+      - [Publishing Features](Function Guide/Configuration Management/Operation Guide/Publishing Features.md)
+      - [Rollback Features](Function Guide/Configuration Management/Operation Guide/Rollback Features.md)
+      - [Whitelist Test](Function Guide/Configuration Management/Operation Guide/Whitelist Test.md)
+      - [Workflow Management](Function Guide/Configuration Management/Operation Guide/Workflow Management.md)
+  - **Create and Manage Experiments**
+    - [Editing and Restoring of Experiment](Function Guide/Create and Manage Experiments/Editing and Restoring of Experiment.md)
+    - **Create Common A - B Experiments**
+      - [Multi-Link Experiment](Function Guide/Create and Manage Experiments/Create Common A - B Experiments/Multi-Link Experiment.md)
+      - [Multi-Variant Visualization Experiment](Function Guide/Create and Manage Experiments/Create Common A - B Experiments/Multi-Variant Visualization Experiment.md)
+      - [Programming Experiment](Function Guide/Create and Manage Experiments/Create Common A - B Experiments/Programming Experiment.md)
+      - [Programming Experiment - Client Side Local Allocation](Function Guide/Create and Manage Experiments/Create Common A - B Experiments/Programming Experiment - Client Side Local Allocation.md)
+      - [Programming Experiment - Customer Group Experiment](Function Guide/Create and Manage Experiments/Create Common A - B Experiments/Programming Experiment - Customer Group Experiment.md)
+      - [Programming Experiment - Pre-Distribution Experiment](Function Guide/Create and Manage Experiments/Create Common A - B Experiments/Programming Experiment - Pre-Distribution Experiment.md)
+      - [Push Notification Experiment](Function Guide/Create and Manage Experiments/Create Common A - B Experiments/Push Notification Experiment.md)
+      - [Visual Experiment](Function Guide/Create and Manage Experiments/Create Common A - B Experiments/Visual Experiment.md)
+    - **Create Dependent - Backtest Experiment**
+      - [Backtest Experiment](Function Guide/Create and Manage Experiments/Create Dependent - Backtest Experiment/Backtest Experiment.md)
+      - [Dependent Experiment](Function Guide/Create and Manage Experiments/Create Dependent - Backtest Experiment/Dependent Experiment.md)
+    - **Create MAB Intelligent Tuning Experiment**
+      - [MAB(Multi-Armed Bandit) Experimental SDK Integration: Support In and Out of Groups (Turn Off Experience Consistency)](Function Guide/Create and Manage Experiments/Create MAB Intelligent Tuning Experiment/MAB(Multi-Armed Bandit) Experimental SDK Integration: Support In and Out of Groups (Turn O.md)
+      - [MAB(Multi-Armed Bandit) Intelligent Tuning Experiment](Function Guide/Create and Manage Experiments/Create MAB Intelligent Tuning Experiment/MAB(Multi-Armed Bandit) Intelligent Tuning Experiment.md)
+    - **Create Personalization Experiments**
+      - [Programming Personalization](Function Guide/Create and Manage Experiments/Create Personalization Experiments/Programming Personalization.md)
+      - [Web Personalization](Function Guide/Create and Manage Experiments/Create Personalization Experiments/Web Personalization.md)
+      - [Web Personalization: AI Intelligent Copywriting Generation](Function Guide/Create and Manage Experiments/Create Personalization Experiments/Web Personalization: AI Intelligent Copywriting Generation.md)
+    - **Experimental Advanced Applications**
+      - [Close a Single Experimental Group](Function Guide/Create and Manage Experiments/Experimental Advanced Applications/Close a Single Experimental Group.md)
+      - [Experiment Quick Full Release](Function Guide/Create and Manage Experiments/Experimental Advanced Applications/Experiment Quick Full Release.md)
+      - [Experiment Templates: Use Templates to Create Experiments](Function Guide/Create and Manage Experiments/Experimental Advanced Applications/Experiment Templates: Use Templates to Create Experiments.md)
+      - [Visual Editor](Function Guide/Create and Manage Experiments/Experimental Advanced Applications/Visual Editor.md)
+    - **Experimental Permission and Diagnosis Management**
+      - [Experimental Diagnosis Tool](Function Guide/Create and Manage Experiments/Experimental Permission and Diagnosis Management/Experimental Diagnosis Tool.md)
+      - [Experimental Permission Management](Function Guide/Create and Manage Experiments/Experimental Permission and Diagnosis Management/Experimental Permission Management.md)
+    - **Required Read Before Creating Experiments**
+      - **Experimental Effectuate Strategy**
+        - [Enhanced Shunt Uniformity](Function Guide/Create and Manage Experiments/Required Read Before Creating Experiments/Experimental Effectuate Strategy/Enhanced Shunt Uniformity.md)
+        - [Traffic Calculator](Function Guide/Create and Manage Experiments/Required Read Before Creating Experiments/Experimental Effectuate Strategy/Traffic Calculator.md)
+        - [Traffic Layer and Mutual Exclusion Domain](Function Guide/Create and Manage Experiments/Required Read Before Creating Experiments/Experimental Effectuate Strategy/Traffic Layer and Mutual Exclusion Domain.md)
+      - **Experimental Metrics**
+        - [App Crash Analysis](Function Guide/Create and Manage Experiments/Required Read Before Creating Experiments/Experimental Metrics/App Crash Analysis.md)
+        - [Optimization Plan](Function Guide/Create and Manage Experiments/Required Read Before Creating Experiments/Experimental Metrics/Optimization Plan.md)
+      - **Experimental Version**
+        - [How to Configure Experimental Parameters](Function Guide/Create and Manage Experiments/Required Read Before Creating Experiments/Experimental Version/How to Configure Experimental Parameters.md)
+  - **Data Management**
+    - **Data Access**
+      - [External Data Source](Function Guide/Data Management/Data Access/External Data Source.md)
+    - **Dataset Management**
+      - [Data Warehouse Dataset](Function Guide/Data Management/Dataset Management/Data Warehouse Dataset.md)
+      - **UBA Data Integration**
+        - [Custom Configuration and Integration](Function Guide/Data Management/Dataset Management/UBA Data Integration/Custom Configuration and Integration.md)
+        - [Visual Data Integration](Function Guide/Data Management/Dataset Management/UBA Data Integration/Visual Data Integration.md)
+    - **Metadata Management**
+      - [Circle Events](Function Guide/Data Management/Metadata Management/Circle Events.md)
+      - [Event Properties](Function Guide/Data Management/Metadata Management/Event Properties.md)
+      - [Event Tracking Real-Time Verification](Function Guide/Data Management/Metadata Management/Event Tracking Real-Time Verification.md)
+      - [General Events](Function Guide/Data Management/Metadata Management/General Events.md)
+      - [Passive and Relational Events](Function Guide/Data Management/Metadata Management/Passive and Relational Events.md)
+      - [SQL Custom Query](Function Guide/Data Management/Metadata Management/SQL Custom Query.md)
+      - [User Properties](Function Guide/Data Management/Metadata Management/User Properties.md)
+      - [Virtual Events](Function Guide/Data Management/Metadata Management/Virtual Events.md)
+      - [Virtual Properties](Function Guide/Data Management/Metadata Management/Virtual Properties.md)
+  - **Metric Management**
+    - **List of Metric Groups**
+      - [Advanced Features: Flexible Properties for Metrics](Function Guide/Metric Management/List of Metric Groups/Advanced Features: Flexible Properties for Metrics.md)
+      - [Create Event Metric](Function Guide/Metric Management/List of Metric Groups/Create Event Metric.md)
+      - [Create Funnel Metric](Function Guide/Metric Management/List of Metric Groups/Create Funnel Metric.md)
+      - [Create Retention Metrics](Function Guide/Metric Management/List of Metric Groups/Create Retention Metrics.md)
+      - [Create Warehouse Metric](Function Guide/Metric Management/List of Metric Groups/Create Warehouse Metric.md)
+      - [Experimental Metric](Function Guide/Metric Management/List of Metric Groups/Experimental Metric.md)
+      - [Metrics Viewing and Permissions](Function Guide/Metric Management/List of Metric Groups/Metrics Viewing and Permissions.md)
+    - **Metric Monitoring**
+      - [Alert Task](Function Guide/Metric Management/Metric Monitoring/Alert Task.md)
+      - [Mandatory Metric Dashboard](Function Guide/Metric Management/Metric Monitoring/Mandatory Metric Dashboard.md)
+  - **Scenario Capability**
+    - **Campaigns**
+      - [Create and Manage Push Tasks](Function Guide/Scenario Capability/Campaigns/Create and Manage Push Tasks.md)
+      - [Dynamic Variable](Function Guide/Scenario Capability/Campaigns/Dynamic Variable.md)
+      - [Function Introduction](Function Guide/Scenario Capability/Campaigns/Function Introduction.md)
+      - [General Settings](Function Guide/Scenario Capability/Campaigns/General Settings.md)
+      - [Push Channel Management](Function Guide/Scenario Capability/Campaigns/Push Channel Management.md)
+      - [Workflows](Function Guide/Scenario Capability/Campaigns/Workflows.md)
+  - **View and Analyze Experiment Reports**
+    - [Experimental Report Overview](Function Guide/View and Analyze Experiment Reports/Experimental Report Overview.md)
+    - [Sensitive Population Insights](Function Guide/View and Analyze Experiment Reports/Sensitive Population Insights.md)
+    - **Experiment Report Data - Metric Criteria**
+      - [Cumulative Trend of Report Pages](Function Guide/View and Analyze Experiment Reports/Experiment Report Data - Metric Criteria/Cumulative Trend of Report Pages.md)
+      - [Experimental User Criteria Description](Function Guide/View and Analyze Experiment Reports/Experiment Report Data - Metric Criteria/Experimental User Criteria Description.md)
+    - **Experimental Report Function**
+      - [Report Page Custom Filter Template](Function Guide/View and Analyze Experiment Reports/Experimental Report Function/Report Page Custom Filter Template.md)
+      - [Report Summary (Old Version)](Function Guide/View and Analyze Experiment Reports/Experimental Report Function/Report Summary (Old Version).md)
+    - **Interpretation of Experimental Report**
+      - [Advanced Analysis: Cohort Analysis](Function Guide/View and Analyze Experiment Reports/Interpretation of Experimental Report/Advanced Analysis: Cohort Analysis.md)
+      - [Advanced Analysis: Difference Analysis and Group Comparison](Function Guide/View and Analyze Experiment Reports/Interpretation of Experimental Report/Advanced Analysis: Difference Analysis and Group Comparison.md)
+      - [How to Interpret the Experiment Report](Function Guide/View and Analyze Experiment Reports/Interpretation of Experimental Report/How to Interpret the Experiment Report.md)
+      - [Metric Analysis: Funnel Metric Analysis](Function Guide/View and Analyze Experiment Reports/Interpretation of Experimental Report/Metric Analysis: Funnel Metric Analysis.md)
+      - [Metrics Analysis: Event Metrics & Retention Metrics](Function Guide/View and Analyze Experiment Reports/Interpretation of Experimental Report/Metrics Analysis: Event Metrics & Retention Metrics.md)
+      - [Report Interpretation: Customer Group Experiment](Function Guide/View and Analyze Experiment Reports/Interpretation of Experimental Report/Report Interpretation: Customer Group Experiment.md)
+      - [Report Interpretation: Heat Map Analysis Experiment](Function Guide/View and Analyze Experiment Reports/Interpretation of Experimental Report/Report Interpretation: Heat Map Analysis Experiment.md)
+    - **Interpretation of MAB Experiment Report**
+      - [Interpretation of MAB Experiment Report: Non-Experiential Consistency Scenarios](Function Guide/View and Analyze Experiment Reports/Interpretation of MAB Experiment Report/Interpretation of MAB Experiment Report: Non-Experiential Consistency Scenarios.md)
+      - [Overview of Intelligent Traffic Tuning (MAB) Reports](Function Guide/View and Analyze Experiment Reports/Interpretation of MAB Experiment Report/Overview of Intelligent Traffic Tuning (MAB) Reports.md)
+- **Product Release Logs**
+  - [V5.4.1 Release Log](Product Release Logs/V5.4.1 Release Log.md)
+- **Quick Start (Hands-on Experience)**
+  - [Overview of How to Get Started for Beginners](Quick Start (Hands-on Experience)/Overview of How to Get Started for Beginners.md)
+  - [Quick Start: Administrator](Quick Start (Hands-on Experience)/Quick Start: Administrator.md)
+  - [Quick Start: Research and Development](Quick Start (Hands-on Experience)/Quick Start: Research and Development.md)
+  - **Quick Start: Experimenter**
+    - [How to Start an Experiment](Quick Start (Hands-on Experience)/Quick Start: Experimenter/How to Start an Experiment.md)
+    - [Preparation for Experiments](Quick Start (Hands-on Experience)/Quick Start: Experimenter/Preparation for Experiments.md)
+- **Required Read for Getting Started**
+  - [Basic Concept](Required Read for Getting Started/Basic Concept.md)
+  - [Learn about A/B Testing Products: DataTester](Required Read for Getting Started/Learn about A - B Testing Products: DataTester.md)
+  - **A - B Testing General Knowledge**
+    - [How to Design an A/B Testing](Required Read for Getting Started/A - B Testing General Knowledge/How to Design an A - B Testing.md)
+    - [How to Start an A/B Testing](Required Read for Getting Started/A - B Testing General Knowledge/How to Start an A - B Testing.md)
+    - [What is A/B Testing?](Required Read for Getting Started/A - B Testing General Knowledge/What is A - B Testing?.md)

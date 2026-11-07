@@ -1,0 +1,110 @@
+# Parallel File Storage
+
+80 pages. Source: https://docs.byteplus.com/en/docs/pfs
+
+Back to the [full index](../README.md).
+
+- **API Reference**
+  - [API overview](API Reference/API overview.md)
+  - **Call method**
+    - [Common parameters](API Reference/Call method/Common parameters.md)
+    - [Request structure](API Reference/Call method/Request structure.md)
+    - [Responses](API Reference/Call method/Responses.md)
+    - [Signature method](API Reference/Call method/Signature method.md)
+  - **Filesets**
+    - [CreateFileset](API Reference/Filesets/CreateFileset.md)
+    - [DeleteFileset](API Reference/Filesets/DeleteFileset.md)
+    - [DescribeFilesets](API Reference/Filesets/DescribeFilesets.md)
+    - [SetFilesetQos](API Reference/Filesets/SetFilesetQos.md)
+    - [SetFilesetQuota](API Reference/Filesets/SetFilesetQuota.md)
+    - [UpdateFileset](API Reference/Filesets/UpdateFileset.md)
+  - **Filesystems**
+    - [CreateFileSystem](API Reference/Filesystems/CreateFileSystem.md)
+    - [DeleteFileSystem](API Reference/Filesystems/DeleteFileSystem.md)
+    - [DescribeFileSystems](API Reference/Filesystems/DescribeFileSystems.md)
+    - [ExpandFileSystem](API Reference/Filesystems/ExpandFileSystem.md)
+    - [UpdateFileSystem](API Reference/Filesystems/UpdateFileSystem.md)
+  - **MountServices**
+    - [AttachMountServiceToSelfFileSystem](API Reference/MountServices/AttachMountServiceToSelfFileSystem.md)
+    - [CreateMountService](API Reference/MountServices/CreateMountService.md)
+    - [DeleteMountService](API Reference/MountServices/DeleteMountService.md)
+    - [DescribeMountServiceNodeTypes](API Reference/MountServices/DescribeMountServiceNodeTypes.md)
+    - [DescribeMountServices](API Reference/MountServices/DescribeMountServices.md)
+    - [DetachMountServiceFromSelfFileSystem](API Reference/MountServices/DetachMountServiceFromSelfFileSystem.md)
+    - [UpdateMountService](API Reference/MountServices/UpdateMountService.md)
+  - **Overviews**
+    - [DescribeFileSystemOverview](API Reference/Overviews/DescribeFileSystemOverview.md)
+    - [DescribeFileSystemStatistics](API Reference/Overviews/DescribeFileSystemStatistics.md)
+  - **Regions**
+    - [DescribeRegions](API Reference/Regions/DescribeRegions.md)
+    - [DescribeZones](API Reference/Regions/DescribeZones.md)
+  - **Tags**
+    - [ListTagsForResources](API Reference/Tags/ListTagsForResources.md)
+    - [TagResources](API Reference/Tags/TagResources.md)
+    - [UntagResources](API Reference/Tags/UntagResources.md)
+- **Best Practices**
+  - [Turn off mmap read-ahead](Best Practices/Turn off mmap read-ahead.md)
+- **FAQ**
+  - [Expanding file systems FAQ](FAQ/Expanding file systems FAQ.md)
+  - [Mounting file systems FAQ](FAQ/Mounting file systems FAQ.md)
+- **Getting Started**
+  - [Procedure](Getting Started/Procedure.md)
+- **Product Billing**
+  - [Arrears](Product Billing/Arrears.md)
+  - [Billing overview](Product Billing/Billing overview.md)
+- **Product Overview**
+  - [Application scenarios](Product Overview/Application scenarios.md)
+  - [Basic concept](Product Overview/Basic concept.md)
+  - [Limits](Product Overview/Limits.md)
+  - [Product advantages](Product Overview/Product advantages.md)
+  - [Product specifications](Product Overview/Product specifications.md)
+  - [Regions and Availability Zones](Product Overview/Regions and Availability Zones.md)
+  - [What is PFS?](Product Overview/What is PFS?.md)
+- **Terms**
+  - [BytePlus PFS_Service Level Agreement ](Terms/BytePlus PFS_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Storage Products and Services](Terms/Service-Specific Terms for BytePlus Storage Products and Services.md)
+- **User Guide**
+  - [Cross-service authorization](User Guide/Cross-service authorization.md)
+  - **Data flow**
+    - [Best practices for configuring PFS data flow directories](User Guide/Data flow/Best practices for configuring PFS data flow directories.md)
+    - [Configure data flow bandwidth](User Guide/Data flow/Configure data flow bandwidth.md)
+    - [Creating manual tasks](User Guide/Data flow/Creating manual tasks.md)
+    - [Data flow overview](User Guide/Data flow/Data flow overview.md)
+    - [Managing manual tasks](User Guide/Data flow/Managing manual tasks.md)
+    - [View data flow task analysis logs](User Guide/Data flow/View data flow task analysis logs.md)
+  - **Data insight**
+    - [Analysis dashboard](User Guide/Data insight/Analysis dashboard.md)
+    - [Data insight overview](User Guide/Data insight/Data insight overview.md)
+    - [Enable data insight service](User Guide/Data insight/Enable data insight service.md)
+    - [Manage data insight policies](User Guide/Data insight/Manage data insight policies.md)
+    - [Manage data insight tasks](User Guide/Data insight/Manage data insight tasks.md)
+    - [Usage statistics](User Guide/Data insight/Usage statistics.md)
+    - [View data insight results](User Guide/Data insight/View data insight results.md)
+  - **Data monitoring**
+    - [Configuring alarm rules](User Guide/Data monitoring/Configuring alarm rules.md)
+    - [Viewing performance monitoring](User Guide/Data monitoring/Viewing performance monitoring.md)
+  - **File system management**
+    - [Creating a file system](User Guide/File system management/Creating a file system.md)
+    - [Data balancing](User Guide/File system management/Data balancing.md)
+    - [Deleting a file system](User Guide/File system management/Deleting a file system.md)
+    - [Expanding a file system](User Guide/File system management/Expanding a file system.md)
+    - [Modifying file system attributes](User Guide/File system management/Modifying file system attributes.md)
+    - [Viewing file system details](User Guide/File system management/Viewing file system details.md)
+  - **File system mounting**
+    - [Mounting a file system](User Guide/File system mounting/Mounting a file system.md)
+    - [Unmount a file system](User Guide/File system mounting/Unmount a file system.md)
+  - **Fileset**
+    - [Managing fileset](User Guide/Fileset/Managing fileset.md)
+    - [Managing fileset quota](User Guide/Fileset/Managing fileset quota.md)
+  - **Mount service management**
+    - [Binding a file system](User Guide/Mount service management/Binding a file system.md)
+    - [Creating a mount service](User Guide/Mount service management/Creating a mount service.md)
+    - [Deleting a mount service](User Guide/Mount service management/Deleting a mount service.md)
+    - [Unbinding a file system](User Guide/Mount service management/Unbinding a file system.md)
+  - **Tag management**
+    - [Binding or adding tags](User Guide/Tag management/Binding or adding tags.md)
+    - [Filtering file systems by tags](User Guide/Tag management/Filtering file systems by tags.md)
+    - [Overview](User Guide/Tag management/Overview.md)
+    - [Unbinding or deleting tags](User Guide/Tag management/Unbinding or deleting tags.md)
+- **What's New**
+  - [New feature release notes](What's New/New feature release notes.md)

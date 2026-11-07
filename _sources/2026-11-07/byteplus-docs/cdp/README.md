@@ -1,0 +1,80 @@
+# BytePlus CDP
+
+52 pages. Source: https://docs.byteplus.com/en/docs/cdp
+
+Back to the [full index](../README.md).
+
+- **Product Introduction**
+  - [Common Nouns](Product Introduction/Common Nouns.md)
+  - [Product Introduction](Product Introduction/Product Introduction.md)
+  - **Application Scenarios**
+    - [Intelligent Analysis and Operation Scenarios](Product Introduction/Application Scenarios/Intelligent Analysis and Operation Scenarios.md)
+    - [Overview](Product Introduction/Application Scenarios/Overview.md)
+    - [Refined Operation Scenarios](Product Introduction/Application Scenarios/Refined Operation Scenarios.md)
+- **Quick Start**
+  - **Data Transmission Service and Development Beginner's Guide**
+    - [1. Learning Overview](Quick Start/Data Transmission Service and Development Beginner's Guide/1. Learning Overview.md)
+    - [2. Data Connection](Quick Start/Data Transmission Service and Development Beginner's Guide/2. Data Connection.md)
+    - [3. Visual Modeling](Quick Start/Data Transmission Service and Development Beginner's Guide/3. Visual Modeling.md)
+    - [4. ID-Mapping](Quick Start/Data Transmission Service and Development Beginner's Guide/4. ID-Mapping.md)
+    - [5. Data Source Registration](Quick Start/Data Transmission Service and Development Beginner's Guide/5. Data Source Registration.md)
+  - **Introduction to Business Analysis**
+    - [1. Learning Overview](Quick Start/Introduction to Business Analysis/1. Learning Overview.md)
+    - [2. Create Tag](Quick Start/Introduction to Business Analysis/2. Create Tag.md)
+    - [3. Analytical Insights](Quick Start/Introduction to Business Analysis/3. Analytical Insights.md)
+    - [4. Summary Analysis Insights](Quick Start/Introduction to Business Analysis/4. Summary Analysis Insights.md)
+- **User Guide**
+  - **Audience Segmentation**
+    - **Multi-Entity Segmentation**
+      - [Multi-Subject Segmentation](User Guide/Audience Segmentation/Multi-Entity Segmentation/Multi-Subject Segmentation.md)
+      - [Segment Entity Transition](User Guide/Audience Segmentation/Multi-Entity Segmentation/Segment Entity Transition.md)
+    - **Segment Creation**
+      - [Create Private Domain Segmentation](User Guide/Audience Segmentation/Segment Creation/Create Private Domain Segmentation.md)
+    - **Segment Management**
+      - [Private Segment Management](User Guide/Audience Segmentation/Segment Management/Private Segment Management.md)
+      - [Segment Data Lineage](User Guide/Audience Segmentation/Segment Management/Segment Data Lineage.md)
+      - [Segment Execution Logs](User Guide/Audience Segmentation/Segment Management/Segment Execution Logs.md)
+      - [Segment Unbundling](User Guide/Audience Segmentation/Segment Management/Segment Unbundling.md)
+      - [Segmentation Workflow](User Guide/Audience Segmentation/Segment Management/Segmentation Workflow.md)
+  - **Building a Labeling System**
+    - [Overview](User Guide/Building a Labeling System/Overview.md)
+    - **Create Tags**
+      - **Expansion**
+        - [Custom Model Tags](User Guide/Building a Labeling System/Create Tags/Expansion/Custom Model Tags.md)
+      - **Filling-out Class**
+        - [Manual Entry of Tags](User Guide/Building a Labeling System/Create Tags/Filling-out Class/Manual Entry of Tags.md)
+      - **Import Class**
+        - [Import Tags](User Guide/Building a Labeling System/Create Tags/Import Class/Import Tags.md)
+      - **Insights**
+        - [Life Cycle Tags](User Guide/Building a Labeling System/Create Tags/Insights/Life Cycle Tags.md)
+        - [RFM Tags](User Guide/Building a Labeling System/Create Tags/Insights/RFM Tags.md)
+      - **Rule Class**
+        - [Calculation Tags](User Guide/Building a Labeling System/Create Tags/Rule Class/Calculation Tags.md)
+        - [First and Last Tags](User Guide/Building a Labeling System/Create Tags/Rule Class/First and Last Tags.md)
+        - [Preference Tags](User Guide/Building a Labeling System/Create Tags/Rule Class/Preference Tags.md)
+        - [Rule Tags](User Guide/Building a Labeling System/Create Tags/Rule Class/Rule Tags.md)
+        - [Sort Tags](User Guide/Building a Labeling System/Create Tags/Rule Class/Sort Tags.md)
+        - [Statistical Tags](User Guide/Building a Labeling System/Create Tags/Rule Class/Statistical Tags.md)
+    - **Management Tags**
+      - [Label Management](User Guide/Building a Labeling System/Management Tags/Label Management.md)
+      - [Label On/Off](User Guide/Building a Labeling System/Management Tags/Label On - Off.md)
+      - [Label System Tree](User Guide/Building a Labeling System/Management Tags/Label System Tree.md)
+      - [Label Task](User Guide/Building a Labeling System/Management Tags/Label Task.md)
+      - [Label Template](User Guide/Building a Labeling System/Management Tags/Label Template.md)
+      - [Label Update](User Guide/Building a Labeling System/Management Tags/Label Update.md)
+    - **View Tags**
+      - [Label Details Page](User Guide/Building a Labeling System/View Tags/Label Details Page.md)
+  - **Data Transmission Service and Integration**
+    - **Data Archive Management**
+      - [Data Archive Management](User Guide/Data Transmission Service and Integration/Data Archive Management/Data Archive Management.md)
+      - [Dimensional Profile](User Guide/Data Transmission Service and Integration/Data Archive Management/Dimensional Profile.md)
+      - [Overview](User Guide/Data Transmission Service and Integration/Data Archive Management/Overview.md)
+      - [Subject File](User Guide/Data Transmission Service and Integration/Data Archive Management/Subject File.md)
+    - **ID Graph Construction**
+      - [ID - Mapping Operations and Management](User Guide/Data Transmission Service and Integration/ID Graph Construction/ID - Mapping Operations and Management.md)
+      - [ID Mapping FAQ](User Guide/Data Transmission Service and Integration/ID Graph Construction/ID Mapping FAQ.md)
+      - [ID Mapping Product Configuration Best Practices](User Guide/Data Transmission Service and Integration/ID Graph Construction/ID Mapping Product Configuration Best Practices.md)
+      - [ID-Mapping Configuration Logic](User Guide/Data Transmission Service and Integration/ID Graph Construction/ID-Mapping Configuration Logic.md)
+      - [Multi-Principal ID - Mapping Configuration](User Guide/Data Transmission Service and Integration/ID Graph Construction/Multi-Principal ID - Mapping Configuration.md)
+      - [Overview](User Guide/Data Transmission Service and Integration/ID Graph Construction/Overview.md)
+      - [Single Subject ID-Mapping Configuration](User Guide/Data Transmission Service and Integration/ID Graph Construction/Single Subject ID-Mapping Configuration.md)

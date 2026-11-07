@@ -1,0 +1,398 @@
+---
+title: "以低延遲 FLV（Web 端 Player SDK）實現 2-3 秒直播延遲"
+product: "BytePlus MediaLive"
+product_code: "byteplus-media-live"
+source: "https://docs.byteplus.com/en/docs/byteplus-media-live/achieving_2-3s_live_stream_latency_with_low-latency_FLV_web-zh-TW"
+---
+
+傳統的 HTTP\-FLV 直播方案（即 [拉取 FLV 串流](https://docs.byteplus.com/docs/byteplus-media-live/docs-flv-streaming-integration-zh-TW)）通常延遲約 5 秒，這會影響觀眾的即時互動體驗，並導致觀眾觀看精彩時刻時有延遲。為了解決此問題，BytePlus MediaLive Web 端 Player SDK 提供低延遲 FLV 直播方案。此方案可將**直播延遲降低至 2\-3 秒**，並支援 3\-5 個畫質等級的動態切換。在確保低延遲的同時，能有效降低弱網環境下的視頻卡頓率。本主題將指導你快速集成此方案，為觀眾帶來更低延遲且流暢的即時觀看體驗。
+
+<span id="185ce4d3"></span>
+# 適用場景
+
+若你正在搭建對即時性要求較高的直播場景，此方案是你的理想選擇：
+
+
+* **體育直播**：例如足球、電子競技及其他大型競技賽事，讓觀眾與現場賽事同步觀看。
+
+* **企業發布會**：例如媒體報導、新品發布等，確保資訊即時傳達給觀眾。
+
+* **大型晚會**：例如跨年晚會、企業年會，打造沉浸式體驗。
+
+* **一般娛樂直播**：滿足各類互動網頁直播播放需求。
+
+
+<span id="eb7ead5c"></span>
+# 方案優勢
+
+集成此方案後，你的直播應用將獲得以下核心優勢：
+
+
+* **超低延遲，延遲最低可達 2\-3 秒**：通過優化 GOP（圖像組）緩存策略、採用逐幀推送、零緩衝傳輸及播放器動態追幀技術，直播延遲從約 5 秒大幅降低。
+
+* **弱網抗卡頓，視頻卡頓率降低超過 30%** ：該方案內建自適應碼率（ABR）技術，支援 3–5 個畫質等級的動態切換。播放器會根據觀眾的網路狀況自動調整畫質等級。當網路狀況較差時，會切換至較低碼率以確保流暢播放；網路恢復後，則切回較高碼率以保障畫質。
+
+
+<span id="b811078b"></span>
+# 核心原理：為何你的直播會產生延遲？
+
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIxOTU1cHgiIGhlaWdodD0iMzMwcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSAxOTU1IDMzMCI+PGRlZnMvPjxnPjxyZWN0IHg9IjE0MTAiIHk9IjU3IiB3aWR0aD0iNTQyIiBoZWlnaHQ9IjI3MCIgcng9IjQwLjUiIHJ5PSI0MC41IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48cmVjdCB4PSI1NDAuNSIgeT0iMiIgd2lkdGg9IjY2MCIgaGVpZ2h0PSIzMDAiIHJ4PSI0NSIgcnk9IjQ1IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48cmVjdCB4PSIyIiB5PSIxNTIiIHdpZHRoPSI0MTAiIGhlaWdodD0iMTcwIiByeD0iMjUuNSIgcnk9IjI1LjUiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwMDAwMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxwYXRoIGQ9Ik0gMTAyIDI1MiBMIDE0NS42MyAyNTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAxNTAuODggMjUyIEwgMTQzLjg4IDI1NS41IEwgMTQ1LjYzIDI1MiBMIDE0My44OCAyNDguNSBaIiBmaWxsPSIjMDAwMDAwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxyZWN0IHg9IjEyIiB5PSIyMjIiIHdpZHRoPSI5MCIgaGVpZ2h0PSI2MCIgcng9IjkiIHJ5PSI5IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC41IC0wLjUpIj48Zm9yZWlnbk9iamVjdCBzdHlsZT0ib3ZlcmZsb3c6IHZpc2libGU7IHRleHQtYWxpZ246IGxlZnQ7IiBwb2ludGVyLWV2ZW50cz0ibm9uZSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiA4OHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDI1MnB4OyBtYXJnaW4tbGVmdDogMTNweDsiPjxkaXYgc3R5bGU9ImJveC1zaXppbmc6IGJvcmRlci1ib3g7IGZvbnQtc2l6ZTogMDsgdGV4dC1hbGlnbjogY2VudGVyOyAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IGlubGluZS1ibG9jazsgZm9udC1zaXplOiAxMnB4OyBmb250LWZhbWlseTogSGVsdmV0aWNhOyBjb2xvcjogIzAwMDAwMDsgbGluZS1oZWlnaHQ6IDEuMjsgcG9pbnRlci1ldmVudHM6IGFsbDsgd2hpdGUtc3BhY2U6IG5vcm1hbDsgd29yZC13cmFwOiBub3JtYWw7ICI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxOHB4Ij5WaWRlbyBjYXB0dXJpbmc8L3NwYW4+PC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48cGF0aCBkPSJNIDIzMiAyNTIgTCAyNjUuNjMgMjUyIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gMjcwLjg4IDI1MiBMIDI2My44OCAyNTUuNSBMIDI2NS42MyAyNTIgTCAyNjMuODggMjQ4LjUgWiIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48cmVjdCB4PSIxNTIiIHk9IjIyMiIgd2lkdGg9IjgwIiBoZWlnaHQ9IjYwIiByeD0iOSIgcnk9IjkiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwMDAwMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjUgLTAuNSkiPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDc4cHg7IGhlaWdodDogMXB4OyBwYWRkaW5nLXRvcDogMjUycHg7IG1hcmdpbi1sZWZ0OiAxNTNweDsiPjxkaXYgc3R5bGU9ImJveC1zaXppbmc6IGJvcmRlci1ib3g7IGZvbnQtc2l6ZTogMDsgdGV4dC1hbGlnbjogY2VudGVyOyAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IGlubGluZS1ibG9jazsgZm9udC1zaXplOiAxMnB4OyBmb250LWZhbWlseTogSGVsdmV0aWNhOyBjb2xvcjogIzAwMDAwMDsgbGluZS1oZWlnaHQ6IDEuMjsgcG9pbnRlci1ldmVudHM6IGFsbDsgd2hpdGUtc3BhY2U6IG5vcm1hbDsgd29yZC13cmFwOiBub3JtYWw7ICI+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxOHB4Ij5FbmNvZGluZzwvc3Bhbj48L2Rpdj48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjxyZWN0IHg9IjI3MiIgeT0iMjIyIiB3aWR0aD0iMTMwIiBoZWlnaHQ9IjYwIiByeD0iOSIgcnk9IjkiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwMDAwMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjUgLTAuNSkiPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDEyOHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDI1MnB4OyBtYXJnaW4tbGVmdDogMjczcHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYTsgY29sb3I6ICMwMDAwMDA7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPjxmb250IHN0eWxlPSJmb250LXNpemU6MThweCI+UGFja2FnaW5nIGFuZCBzdHJlYW0gcHVzaGluZzwvZm9udD48L2Rpdj48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjxyZWN0IHg9IjE3MiIgeT0iMTcyIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0ibm9uZSIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjUgLTAuNSkiPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDFweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiAxODJweDsgbWFyZ2luLWxlZnQ6IDE5MnB4OyI+PGRpdiBzdHlsZT0iYm94LXNpemluZzogYm9yZGVyLWJveDsgZm9udC1zaXplOiAwOyB0ZXh0LWFsaWduOiBjZW50ZXI7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2E7IGNvbG9yOiAjMDAwMDAwOyBsaW5lLWhlaWdodDogMS4yOyBwb2ludGVyLWV2ZW50czogYWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyAiPjxmb250IHN0eWxlPSJmb250LXNpemU6MjVweCI+SG9zdC1zaWRlIHB1c2ggc3RyZWFtaW5nPC9mb250PjwvZGl2PjwvZGl2PjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PHBhdGggZD0iTSA2OTIgMjQyIEwgODE1LjYzIDI0MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJzdHJva2UiLz48cGF0aCBkPSJNIDgyMC44OCAyNDIgTCA4MTMuODggMjQ1LjUgTCA4MTUuNjMgMjQyIEwgODEzLjg4IDIzOC41IFoiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PHJlY3QgeD0iNTcyIiB5PSIyMTIiIHdpZHRoPSIxMjAiIGhlaWdodD0iNjAiIHJ4PSI5IiByeT0iOSIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMDAwMDAwIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuNSAtMC41KSI+PGZvcmVpZ25PYmplY3Qgc3R5bGU9Im92ZXJmbG93OiB2aXNpYmxlOyB0ZXh0LWFsaWduOiBsZWZ0OyIgcG9pbnRlci1ldmVudHM9Im5vbmUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiBmbGV4OyBhbGlnbi1pdGVtczogdW5zYWZlIGNlbnRlcjsganVzdGlmeS1jb250ZW50OiB1bnNhZmUgY2VudGVyOyB3aWR0aDogMTE4cHg7IGhlaWdodDogMXB4OyBwYWRkaW5nLXRvcDogMjQycHg7IG1hcmdpbi1sZWZ0OiA1NzNweDsiPjxkaXYgc3R5bGU9ImJveC1zaXppbmc6IGJvcmRlci1ib3g7IGZvbnQtc2l6ZTogMDsgdGV4dC1hbGlnbjogY2VudGVyOyAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IGlubGluZS1ibG9jazsgZm9udC1zaXplOiAxMnB4OyBmb250LWZhbWlseTogSGVsdmV0aWNhOyBjb2xvcjogIzAwMDAwMDsgbGluZS1oZWlnaHQ6IDEuMjsgcG9pbnRlci1ldmVudHM6IGFsbDsgd2hpdGUtc3BhY2U6IG5vcm1hbDsgd29yZC13cmFwOiBub3JtYWw7ICI+PGZvbnQgc3R5bGU9ImZvbnQtc2l6ZToxOHB4Ij5DRE4gcHVzaCBub2RlPC9mb250PjwvZGl2PjwvZGl2PjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PHBhdGggZD0iTSA5NDIgMjQyIEwgMTA0NS42MyAyNDIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAxMDUwLjg4IDI0MiBMIDEwNDMuODggMjQ1LjUgTCAxMDQ1LjYzIDI0MiBMIDEwNDMuODggMjM4LjUgWiIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48cGF0aCBkPSJNIDg4MiAyMTIgTCA4ODIgMTI4LjM3IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gODgyIDEyMy4xMiBMIDg4NS41IDEzMC4xMiBMIDg4MiAxMjguMzcgTCA4NzguNSAxMzAuMTIgWiIgZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48cmVjdCB4PSI4MjIiIHk9IjIxMiIgd2lkdGg9IjEyMCIgaGVpZ2h0PSI2MCIgcng9IjkiIHJ5PSI5IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC41IC0wLjUpIj48Zm9yZWlnbk9iamVjdCBzdHlsZT0ib3ZlcmZsb3c6IHZpc2libGU7IHRleHQtYWxpZ246IGxlZnQ7IiBwb2ludGVyLWV2ZW50cz0ibm9uZSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiAxMThweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiAyNDJweDsgbWFyZ2luLWxlZnQ6IDgyM3B4OyI+PGRpdiBzdHlsZT0iYm94LXNpemluZzogYm9yZGVyLWJveDsgZm9udC1zaXplOiAwOyB0ZXh0LWFsaWduOiBjZW50ZXI7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2E7IGNvbG9yOiAjMDAwMDAwOyBsaW5lLWhlaWdodDogMS4yOyBwb2ludGVyLWV2ZW50czogYWxsOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB3b3JkLXdyYXA6IG5vcm1hbDsgIj48Zm9udCBzdHlsZT0iZm9udC1zaXplOjE4cHgiPkNETiBvcmlnaW4gc2VydmVyPC9mb250PjwvZGl2PjwvZGl2PjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PHBhdGggZD0iTSA5MjQuNSAxMjIgTCA5MjQuNSAxNTUuNSBMIDkyNC40IDE1NS41IEwgOTI0LjQgMjAzLjY5IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gOTI0LjQgMjA4Ljk0IEwgOTIwLjkgMjAxLjk0IEwgOTI0LjQgMjAzLjY5IEwgOTI3LjkgMjAxLjk0IFoiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PHJlY3QgeD0iNzk3IiB5PSI2MiIgd2lkdGg9IjE3MCIgaGVpZ2h0PSI2MCIgcng9IjkiIHJ5PSI5IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC41IC0wLjUpIj48Zm9yZWlnbk9iamVjdCBzdHlsZT0ib3ZlcmZsb3c6IHZpc2libGU7IHRleHQtYWxpZ246IGxlZnQ7IiBwb2ludGVyLWV2ZW50cz0ibm9uZSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiAxNjhweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiA5MnB4OyBtYXJnaW4tbGVmdDogNzk4cHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYTsgY29sb3I6ICMwMDAwMDA7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPjxmb250IHN0eWxlPSJmb250LXNpemU6MThweCI+Q0ROIHRyYW5zY29kaW5nIG5vZGU8L2ZvbnQ+PC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48cmVjdCB4PSIxMDUyIiB5PSIyMTIiIHdpZHRoPSIxMjAiIGhlaWdodD0iNjAiIHJ4PSI5IiByeT0iOSIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMDAwMDAwIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuNSAtMC41KSI+PGZvcmVpZ25PYmplY3Qgc3R5bGU9Im92ZXJmbG93OiB2aXNpYmxlOyB0ZXh0LWFsaWduOiBsZWZ0OyIgcG9pbnRlci1ldmVudHM9Im5vbmUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiBmbGV4OyBhbGlnbi1pdGVtczogdW5zYWZlIGNlbnRlcjsganVzdGlmeS1jb250ZW50OiB1bnNhZmUgY2VudGVyOyB3aWR0aDogMTE4cHg7IGhlaWdodDogMXB4OyBwYWRkaW5nLXRvcDogMjQycHg7IG1hcmdpbi1sZWZ0OiAxMDUzcHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYTsgY29sb3I6ICMwMDAwMDA7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPjxmb250IHN0eWxlPSJmb250LXNpemU6MThweCI+Q0ROIHB1bGwgbm9kZTwvZm9udD48L2Rpdj48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjxyZWN0IHg9Ijk2NyIgeT0iMTQyIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0ibm9uZSIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjUgLTAuNSkiPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDFweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiAxNTJweDsgbWFyZ2luLWxlZnQ6IDk4N3B4OyI+PGRpdiBzdHlsZT0iYm94LXNpemluZzogYm9yZGVyLWJveDsgZm9udC1zaXplOiAwOyB0ZXh0LWFsaWduOiBjZW50ZXI7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2E7IGNvbG9yOiAjMDAwMDAwOyBsaW5lLWhlaWdodDogMS4yOyBwb2ludGVyLWV2ZW50czogYWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyAiPjxmb250IHN0eWxlPSJmb250LXNpemU6MTVweCI+UHVzaCBzdHJlYW0gZGF0YTwvZm9udD48L2Rpdj48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjxyZWN0IHg9IjkxMiIgeT0iMTg5IiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwIiBmaWxsPSJub25lIiBzdHJva2U9Im5vbmUiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC41IC0wLjUpIj48Zm9yZWlnbk9iamVjdCBzdHlsZT0ib3ZlcmZsb3c6IHZpc2libGU7IHRleHQtYWxpZ246IGxlZnQ7IiBwb2ludGVyLWV2ZW50cz0ibm9uZSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiAxOThweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiAxOTlweDsgbWFyZ2luLWxlZnQ6IDkxM3B4OyI+PGRpdiBzdHlsZT0iYm94LXNpemluZzogYm9yZGVyLWJveDsgZm9udC1zaXplOiAwOyB0ZXh0LWFsaWduOiBjZW50ZXI7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2E7IGNvbG9yOiAjMDAwMDAwOyBsaW5lLWhlaWdodDogMS4yOyBwb2ludGVyLWV2ZW50czogYWxsOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB3b3JkLXdyYXA6IG5vcm1hbDsgIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjE1cHgiPkRpc3RyaWJ1dGUgc3RyZWFtIGRhdGE8L3NwYW4+PC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48cmVjdCB4PSI3MzciIHk9IjIyIiB3aWR0aD0iMjY3IiBoZWlnaHQ9IjIwIiBmaWxsPSJub25lIiBzdHJva2U9Im5vbmUiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC41IC0wLjUpIj48Zm9yZWlnbk9iamVjdCBzdHlsZT0ib3ZlcmZsb3c6IHZpc2libGU7IHRleHQtYWxpZ246IGxlZnQ7IiBwb2ludGVyLWV2ZW50cz0ibm9uZSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiAyNjVweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiAzMnB4OyBtYXJnaW4tbGVmdDogNzM4cHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYTsgY29sb3I6ICMwMDAwMDA7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPjxmb250IHN0eWxlPSJmb250LXNpemU6MjVweCI+Q29udGVudCBkZWxpdmVyeSBjaGFpbjwvZm9udD48L2Rpdj48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjxwYXRoIGQ9Ik0gMTE3MiAyNDIgTCAxNDA1LjYzIDI0MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJzdHJva2UiLz48cGF0aCBkPSJNIDE0MTAuODggMjQyIEwgMTQwMy44OCAyNDUuNSBMIDE0MDUuNjMgMjQyIEwgMTQwMy44OCAyMzguNSBaIiBmaWxsPSIjMDAwMDAwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxyZWN0IHg9IjEyMjMiIHk9IjIwNyIgd2lkdGg9IjE3MCIgaGVpZ2h0PSIyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJub25lIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuNSAtMC41KSI+PGZvcmVpZ25PYmplY3Qgc3R5bGU9Im92ZXJmbG93OiB2aXNpYmxlOyB0ZXh0LWFsaWduOiBsZWZ0OyIgcG9pbnRlci1ldmVudHM9Im5vbmUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJkaXNwbGF5OiBmbGV4OyBhbGlnbi1pdGVtczogdW5zYWZlIGNlbnRlcjsganVzdGlmeS1jb250ZW50OiB1bnNhZmUgY2VudGVyOyB3aWR0aDogMTY4cHg7IGhlaWdodDogMXB4OyBwYWRkaW5nLXRvcDogMjE3cHg7IG1hcmdpbi1sZWZ0OiAxMjI0cHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYTsgY29sb3I6ICMwMDAwMDA7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPjxkaXYgc3R5bGU9InRleHQtYWxpZ246c3RhcnQiPjxmb250IGNvbG9yPSIjMjIyMjIyIiBmYWNlPSJQaW5nRmFuZyBTQywgTm90byBTYW5zIFNDLCBzYW5zLXNlcmlmIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjE0cHgiPkNhY2hlIGFuZCBkaXN0cmlidXRlIHN0cmVhbSBkYXRhPC9zcGFuPjwvZm9udD48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjxwYXRoIGQ9Ik0gMTU1MiAyMzcgTCAxNjA1LjYzIDIzNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJzdHJva2UiLz48cGF0aCBkPSJNIDE2MTAuODggMjM3IEwgMTYwMy44OCAyNDAuNSBMIDE2MDUuNjMgMjM3IEwgMTYwMy44OCAyMzMuNSBaIiBmaWxsPSIjMDAwMDAwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxyZWN0IHg9IjE0MzIiIHk9IjIwNyIgd2lkdGg9IjEyMCIgaGVpZ2h0PSI2MCIgcng9IjkiIHJ5PSI5IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMwMDAwMDAiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC41IC0wLjUpIj48Zm9yZWlnbk9iamVjdCBzdHlsZT0ib3ZlcmZsb3c6IHZpc2libGU7IHRleHQtYWxpZ246IGxlZnQ7IiBwb2ludGVyLWV2ZW50cz0ibm9uZSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiAxMThweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiAyMzdweDsgbWFyZ2luLWxlZnQ6IDE0MzNweDsiPjxkaXYgc3R5bGU9ImJveC1zaXppbmc6IGJvcmRlci1ib3g7IGZvbnQtc2l6ZTogMDsgdGV4dC1hbGlnbjogY2VudGVyOyAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IGlubGluZS1ibG9jazsgZm9udC1zaXplOiAxMnB4OyBmb250LWZhbWlseTogSGVsdmV0aWNhOyBjb2xvcjogIzAwMDAwMDsgbGluZS1oZWlnaHQ6IDEuMjsgcG9pbnRlci1ldmVudHM6IGFsbDsgd2hpdGUtc3BhY2U6IG5vcm1hbDsgd29yZC13cmFwOiBub3JtYWw7ICI+PGZvbnQgc3R5bGU9ImZvbnQtc2l6ZToxOHB4Ij5TdHJlYW0gcHVsbGluZyBhbmQgYnVmZmVyaW5nPC9mb250PjwvZGl2PjwvZGl2PjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PHBhdGggZD0iTSAxNzMyIDIzNyBMIDE4MDUuNjMgMjM3IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gMTgxMC44OCAyMzcgTCAxODAzLjg4IDI0MC41IEwgMTgwNS42MyAyMzcgTCAxODAzLjg4IDIzMy41IFoiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PHJlY3QgeD0iMTYxMiIgeT0iMjA3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiByeD0iOSIgcnk9IjkiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwMDAwMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjUgLTAuNSkiPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDExOHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDIzN3B4OyBtYXJnaW4tbGVmdDogMTYxM3B4OyI+PGRpdiBzdHlsZT0iYm94LXNpemluZzogYm9yZGVyLWJveDsgZm9udC1zaXplOiAwOyB0ZXh0LWFsaWduOiBjZW50ZXI7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2E7IGNvbG9yOiAjMDAwMDAwOyBsaW5lLWhlaWdodDogMS4yOyBwb2ludGVyLWV2ZW50czogYWxsOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB3b3JkLXdyYXA6IG5vcm1hbDsgIj48Zm9udCBzdHlsZT0iZm9udC1zaXplOjE4cHgiPkRlbXV4aW5nPC9mb250PjwvZGl2PjwvZGl2PjwvZGl2PjwvZm9yZWlnbk9iamVjdD48L2c+PHJlY3QgeD0iMTgxMiIgeT0iMjA3IiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiByeD0iOSIgcnk9IjkiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iIzAwMDAwMCIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjUgLTAuNSkiPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDExOHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDIzN3B4OyBtYXJnaW4tbGVmdDogMTgxM3B4OyI+PGRpdiBzdHlsZT0iYm94LXNpemluZzogYm9yZGVyLWJveDsgZm9udC1zaXplOiAwOyB0ZXh0LWFsaWduOiBjZW50ZXI7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2E7IGNvbG9yOiAjMDAwMDAwOyBsaW5lLWhlaWdodDogMS4yOyBwb2ludGVyLWV2ZW50czogYWxsOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB3b3JkLXdyYXA6IG5vcm1hbDsgIj48Zm9udCBzdHlsZT0iZm9udC1zaXplOjE4cHgiPkRlY29kaW5nIGFuZCByZW5kZXJpbmc8L2ZvbnQ+PC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48cmVjdCB4PSIxNjAyIiB5PSIxMDIiIHdpZHRoPSIxOTAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0ibm9uZSIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjUgLTAuNSkiPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDE4OHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDExMnB4OyBtYXJnaW4tbGVmdDogMTYwM3B4OyI+PGRpdiBzdHlsZT0iYm94LXNpemluZzogYm9yZGVyLWJveDsgZm9udC1zaXplOiAwOyB0ZXh0LWFsaWduOiBjZW50ZXI7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2E7IGNvbG9yOiAjMDAwMDAwOyBsaW5lLWhlaWdodDogMS4yOyBwb2ludGVyLWV2ZW50czogYWxsOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB3b3JkLXdyYXA6IG5vcm1hbDsgIj48Zm9udCBzdHlsZT0iZm9udC1zaXplOjI1cHgiPlBsYXliYWNrLXNpZGU8L2ZvbnQ+PC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48cmVjdCB4PSI0NTIiIHk9IjIwNyIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiBmaWxsPSJub25lIiBzdHJva2U9Im5vbmUiIHBvaW50ZXItZXZlbnRzPSJhbGwiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC41IC0wLjUpIj48Zm9yZWlnbk9iamVjdCBzdHlsZT0ib3ZlcmZsb3c6IHZpc2libGU7IHRleHQtYWxpZ246IGxlZnQ7IiBwb2ludGVyLWV2ZW50cz0ibm9uZSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+PGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgc3R5bGU9ImRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiB1bnNhZmUgY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2FmZSBjZW50ZXI7IHdpZHRoOiAxcHg7IGhlaWdodDogMXB4OyBwYWRkaW5nLXRvcDogMjE3cHg7IG1hcmdpbi1sZWZ0OiA0NzJweDsiPjxkaXYgc3R5bGU9ImJveC1zaXppbmc6IGJvcmRlci1ib3g7IGZvbnQtc2l6ZTogMDsgdGV4dC1hbGlnbjogY2VudGVyOyAiPjxkaXYgc3R5bGU9ImRpc3BsYXk6IGlubGluZS1ibG9jazsgZm9udC1zaXplOiAxMnB4OyBmb250LWZhbWlseTogSGVsdmV0aWNhOyBjb2xvcjogIzAwMDAwMDsgbGluZS1oZWlnaHQ6IDEuMjsgcG9pbnRlci1ldmVudHM6IGFsbDsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjE1cHgiPlB1c2ggc3RyZWFtIGRhdGE8L3NwYW4+PC9kaXY+PC9kaXY+PC9kaXY+PC9mb3JlaWduT2JqZWN0PjwvZz48cGF0aCBkPSJNIDQxMi44MiAyNDMuOCBMIDU2NC42MyAyNDMuOTkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSA1NjkuODggMjQ0IEwgNTYyLjg4IDI0Ny40OSBMIDU2NC42MyAyNDMuOTkgTCA1NjIuODkgMjQwLjQ5IFoiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PHJlY3QgeD0iNjkyIiB5PSIxNTIiIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0ibm9uZSIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjUgLTAuNSkiPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDE5OHB4OyBoZWlnaHQ6IDFweDsgcGFkZGluZy10b3A6IDE2MnB4OyBtYXJnaW4tbGVmdDogNjkzcHg7Ij48ZGl2IHN0eWxlPSJib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LXNpemU6IDA7IHRleHQtYWxpZ246IGNlbnRlcjsgIj48ZGl2IHN0eWxlPSJkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYTsgY29sb3I6ICMwMDAwMDA7IGxpbmUtaGVpZ2h0OiAxLjI7IHBvaW50ZXItZXZlbnRzOiBhbGw7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtd3JhcDogbm9ybWFsOyAiPjxmb250IHN0eWxlPSJmb250LXNpemU6MTVweCI+RGlzdHJpYnV0ZSBzdHJlYW0gZGF0YTwvZm9udD48L2Rpdj48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjxyZWN0IHg9IjczMiIgeT0iMjA5IiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0ibm9uZSIgcG9pbnRlci1ldmVudHM9ImFsbCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjUgLTAuNSkiPjxmb3JlaWduT2JqZWN0IHN0eWxlPSJvdmVyZmxvdzogdmlzaWJsZTsgdGV4dC1hbGlnbjogbGVmdDsiIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGl2IHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIiBzdHlsZT0iZGlzcGxheTogZmxleDsgYWxpZ24taXRlbXM6IHVuc2FmZSBjZW50ZXI7IGp1c3RpZnktY29udGVudDogdW5zYWZlIGNlbnRlcjsgd2lkdGg6IDFweDsgaGVpZ2h0OiAxcHg7IHBhZGRpbmctdG9wOiAyMTlweDsgbWFyZ2luLWxlZnQ6IDc1MnB4OyI+PGRpdiBzdHlsZT0iYm94LXNpemluZzogYm9yZGVyLWJveDsgZm9udC1zaXplOiAwOyB0ZXh0LWFsaWduOiBjZW50ZXI7ICI+PGRpdiBzdHlsZT0iZGlzcGxheTogaW5saW5lLWJsb2NrOyBmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2E7IGNvbG9yOiAjMDAwMDAwOyBsaW5lLWhlaWdodDogMS4yOyBwb2ludGVyLWV2ZW50czogYWxsOyB3aGl0ZS1zcGFjZTogbm93cmFwOyAiPjxmb250IHN0eWxlPSJmb250LXNpemU6MTVweCI+UHVzaCBzdHJlYW0gZGF0YTwvZm9udD48L2Rpdj48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9nPjwvZz48L3N2Zz4=" />
+
+要了解此方案如何將延遲降低至 2 秒，需先了解直播延遲的產生機制。其中，主端推流與內容傳輸鏈路所耗時間相對固定，而**內容分發網路（CDN）節點緩存**與**播放端緩衝**則是造成延遲的兩大瓶頸，且可進行優化。
+
+
+1. **主端推流**：指視頻採集、編碼、封裝並推送至 CDN 節點的過程。此階段的延遲受設備性能、上行網路、GOP（關鍵幀間隔）大小等因素影響，通常佔比不高，且優化空間有限。
+
+2. **內容傳輸鏈路**：指視頻流通過 CDN 全球節點傳輸的路徑。雖然 BytePlus MediaLive CDN 採用「即收即轉」策略，但數據每經過網路中的一個節點（一次跳轉），仍會產生約 100 毫秒的傳輸延遲。
+
+3. **CDN 節點快取（關鍵延遲瓶頸）** ：為確保快速啟動與流暢觀看體驗，CDN 節點會在一段時間內快取部分影片內容（通常為一個或多個 GOP）。當觀眾請求播放時，CDN 會從最近快取的關鍵畫格（I\-frame）開始傳輸資料。此**快取時長**作為基礎延遲，會直接計入觀眾感知的總延遲中。
+
+4. **播放端緩衝（關鍵延遲瓶頸）** ：為應對觀眾網路波動並避免頻繁卡頓，播放器會預先載入並維持安全緩衝區。此**緩衝區大小**會直接影響觀眾所見內容與現場事件的時間差。
+
+
+<span id="630a478d"></span>
+# 核心功能
+
+<span id="05db368b"></span>
+## 平均直播延遲降至 2 秒，讓觀眾與現場事件同步
+
+<video src="https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/78d61ef4fa7a40899d52549b593b8305~tplv-goo7wpa0wc-image.image" controls></video>
+
+
+
+* **更快的播放啟動**：已優化 CDN 節點的 GOP 快取策略，觀眾點擊播放後可更快速載入影片。
+
+* **持續低延遲狀態**：播放器引入動態緩衝調整與加速追幀機制。即使在播放過程中，也能動態調整緩衝區大小，始終保持觀眾影片處於低延遲狀態。
+
+
+<span id="85a38ee2"></span>
+## ABR 技術：智慧切換畫質等級，兼顧流暢播放與畫面品質
+
+
+<Tabs>
+<Tab zoneid="XgIz4un3He" title="啟用 ABR 功能前">
+<TabTitle>啟用 ABR 功能前</TabTitle>
+
+<video src="https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/e98b032e6745474eba892b49018566c7~tplv-goo7wpa0wc-image.image" controls></video>
+
+
+
+</Tab>
+<Tab zoneid="Jl4PFWFbrw" title="啟用 ABR 功能後">
+<TabTitle>啟用 ABR 功能後</TabTitle>
+
+<video src="https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/1998e0a0facd48e79776fa59f50e14df~tplv-goo7wpa0wc-image.image" controls></video>
+
+
+
+</Tab>
+</Tabs>
+
+
+在低延遲場景下，觀眾網路波動容易導致影片卡頓。為解決此問題，BytePlus MediaLive 提供 ABR 技術。此技術可根據觀眾網路狀況，在確保低延遲的同時，自動平衡流暢播放與畫面品質。
+
+你可設定 3–5 種不同畫質等級，例如超高畫質（UHD）、高畫質（HD）與標準畫質（SD）。播放器會即時監控觀眾網路狀況，自動無縫切換這些等級：
+
+
+* **當觀眾網路較差時**：自動切換至較低碼率的畫質等級，犧牲部分畫質以確保播放流暢。
+
+* **當觀眾網路恢復時**：自動切換回較高碼率的畫質等級，呈現更佳畫面品質。
+
+
+整個切換過程不僅能讓差網路環境下的影片卡頓率降低超過 30%，還能持續維持 2–3 秒的低延遲，為你的觀眾帶來流暢且高畫質的觀看體驗。
+
+<span id="a36c7a79"></span>
+## 無需發布新版本，動態優化線上播放效能
+
+除了預設標準配置外，若需根據即時播放效能進一步優化觀看體驗，可隨時[聯繫 MediaLive 技術支援](https://console.byteplus.com/workorder/create)，為你調整播放策略。整個流程**無需修改程式碼或發佈新版本**，讓你能夠快速且靈活地應對業務變化。
+
+你可以動態調整的關鍵維度包括：
+
+
+* **低延遲模式**：可根據直播內容的重要性（如重大事件或互動直播）按需啟用或停用低延遲模式。
+
+* **快取策略**：精細調整快取策略，為你的業務在直播延遲與播放流暢之間找到最佳平衡。
+
+* **碼率切換靈敏度**：可根據你的業務場景靈活調整策略，在畫質與播放流暢度之間取得平衡。透過動態調整這些策略，即使在複雜的網路條件下，也能為觀眾在不同直播場景中提供最佳觀看體驗。
+
+   * **優先保障播放流暢**：在高互動性的直播中，可將播放器配置為在網路波動時快速切換至較低碼率的畫質等級，最大程度減少卡頓，確保互動體驗流暢。
+
+   * **優先保障畫質**：在對畫質要求較高的直播中，可將播放器配置為盡可能維持高碼率播放，帶來良好的視覺體驗。
+
+
+動態配置可讓你的播放策略快速響應線上變化，實現延遲控制、播放流暢等關鍵指標的動態優化，從而為觀眾提供更穩定且高品質的直播觀看體驗。
+
+<span id="dc2c1755"></span>
+# 計費
+
+使用本方案時涉及以下費用：
+
+
+* **SDK 高級授權費**：低延遲 FLV 與 ABR 功能均屬於高級授權功能。詳情請參見[Pricing](https://docs.byteplus.com/docs/byteplus-media-live/docs-sdk-licenses-zh-TW#6ff167b2)。
+
+* **轉碼費**：使用 ABR 功能需對原始串流進行多檔位轉碼，將產生轉碼費用。詳情請參見[轉碼](https://docs.byteplus.com/docs/byteplus-media-live/docs-transcoding-zh-TW)。
+
+
+<span id="eb9e6601"></span>
+# 前置條件
+
+
+* 請確保你已在同一域名空間下新增推流與拉流的域名。詳情請參見[新增網域名稱](https://docs.byteplus.com/docs/byteplus-media-live/docs-domain-zh-TW)。
+
+* 為在使用 OBS 推流時獲得最佳低延遲效果，建議你採用以下關鍵配置。
+
+   建議將**關鍵影格間隔**（GOP）設為 1–2 秒。下圖以 1 秒為例。
+
+   <span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/30b8cfef9cd44ab8be10982cdfa5c6e3~tplv-goo7wpa0wc-image.image) </span>
+
+
+<span id="e09008cc"></span>
+# 整合步驟
+
+<span id="6b176349"></span>
+## Step 1: 在控制台新增 ABR 配置
+
+要實現 ABR 功能，你需要在控制台為原始串流配置多檔位轉碼。
+
+
+1. 登入[BytePlus MediaLive 控制台](https://console.byteplus.com/live)。
+
+2. 在左側導航欄選擇**功能配置**，並點擊右側的**自適應碼率**分頁。
+
+3. 從**域名空間**下拉清單中選擇所需的域名空間，然後點擊**新增配置**。
+
+4. 在彈出的對話框中：
+
+   1. 輸入你的推流地址中的`AppName`。例如，若推流地址為`rtmp:// push.example.com/live/test?authinfo`，則`AppName`為`live`。
+
+   2. 新增 UHD、HD、SD、LD 檔位的子串流。
+
+   其他配置可保持預設值。詳情請參見[管理自適應碼率設定](https://docs.byteplus.com/docs/byteplus-media-live/standbystream-zh-TW)。
+
+   <span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/85e4c93d717348bc833e252afc75eded~tplv-goo7wpa0wc-image.image) </span>
+
+
+<span id="71e9acef"></span>
+## Step 2: 獲取不同檔位的 FLV 拉流地址
+
+新增 ABR 配置後，您需要為每個畫質等級生成專用的 FLV 拉流地址。
+
+
+1. 登入 [BytePlus MediaLive 控制台](https://console.byteplus.com/live)。
+
+2. 在左側導航欄中，點擊 **地址生成器**。
+
+3. 完成以下配置，點擊 **生成拉流地址**，即可在右側獲取對應畫質等級的 FLV 拉流地址。
+
+   <span>![图片](https://p9-arcosite.byteimg.com/tos-cn-i-goo7wpa0wc/795e50db176d41db8d3a03069538a2c4~tplv-goo7wpa0wc-image.image) </span>
+
+   * **地址類型**：選擇 **拉流地址**。
+
+   * **域名**：選擇新增 ABR 配置時所用域名空間內的拉流域名。
+
+   * **AppName** 和 **StreamName**：根據您的推流地址確定這兩個欄位的值。如果您的推流地址為 `rtmp:// push.example.com/live/test?authinfo`：
+
+      * **AppName**：`AppName` 為域名之後的地址部分。此時，您應輸入 `live`。
+
+      * **StreamName**：首先從地址中確定 **基礎流名稱**，即 `test`。然後，對於每個畫質等級，在該基礎名稱後添加對應的子流字尾。例如：
+
+         * 對於 UHD 畫質等級，輸入 `test_uhd`
+
+         * 對於 HD 畫質等級，輸入 `test_hd`
+
+   重複此步驟，為每個畫質等級生成並記錄 FLV 拉流地址。
+
+
+**範例**
+
+下表列出了不同畫質等級的 FLV 拉流地址範例及對應的碼率值。
+
+
+|畫質等級 |FLV 拉流地址 |位元率（kbps） |
+|---|---|---|
+|UHD |https://pull.example.com/live/123456_uhd.flv |3200 |
+|HD |https://pull.example.com/live/123456_hd.flv |2048 |
+|SD |https://pull.example.com/live/123456_sd.flv |1638 |
+|低畫質（LD） |https://pull.example.com/live/123456_ld.flv |1024 |
+
+
+<span id="4fd58690"></span>
+## Step 3: 整合 Player SDK for Web
+
+將 2.11.0 或以上版本的 Player SDK for Web 整合到您的專案中。如需更多資訊，請參見 [整合 Web 端 Player SDK](https://docs.byteplus.com/docs/byteplus-media-live/docs-integrating-the-player-sdk-for-web_1-zh-TW)。
+
+若您採用 NPM 方式引入依賴，必須引入並註冊 `flv` 和 `abr` 插件，以確保低延遲 FLV 及 ABR 功能可用。範例程式碼如下。
+
+```JavaScript
+import { flv, abr } from '@byteplus/veplayer-plugin'
+register([flv, abr]);
+```
+
+
+由於部分行動瀏覽器（如 iOS 16 之前的 Safari）無法播放 FLV 流，為確保直播在這些裝置上仍可正常播放，SDK 提供 HLS 回退方案。啟用該方案後，當播放器偵測到當前瀏覽器不支援播放 FLV 流時，會自動切換至備用的 HLS 流進行播放。為確保回退功能正常運作，若您通過 NPM 引入依賴，請務必同時引入並註冊 `hlsjs` 插件。範例程式碼如下。
+
+```JavaScript
+import { flv, hlsjs, abr } from '@byteplus/veplayer-plugin';
+register([flv, hlsjs, abr]);
+```
+
+
+<span id="d64fecdd"></span>
+## Step 4: 配置 ABR 並在 SDK 中啟用低延遲 FLV
+
+建立播放器時，您可使用以下配置，為觀眾提供低延遲、流暢且全平台兼容的直播體驗：
+
+
+* **配置 ABR 功能**：SDK 預設啟用 ABR 功能。您只需提供包含多個碼率及其對應 FLV 拉流地址的列表。播放器會根據觀眾的網路狀況，在直播過程中自動切換畫質等級，確保播放流暢並提供良好畫質。
+
+* **監聽畫質等級切換事件**：如需在切換畫質等級時實現自訂邏輯（如更新 UI 或上報切換資料），可監聽以下事件：
+
+   * `ABR_SWITCH_START`：開始切換畫質等級。
+
+   * `ABR_SWITCH_SUCCESS`：畫質等級切換成功。
+
+   * `ABR_SWITCH_FAILED`：畫質等級切換失敗。
+
+* **行動裝置 HLS 備援解決方案**：部分行動瀏覽器（如 iOS 16 之前的 Safari）不支援播放 FLV 串流。為確保直播串流能在這些裝置上正常播放，您可在配置 FLV 拉流地址時提供備用的 HLS 拉流地址。當播放器偵測到目前瀏覽器不支援播放 FLV 串流時，會自動切換至 HLS 串流進行播放。
+
+
+範例程式碼如下。
+
+<div data-tips="true" data-tips-type="warning" data-tips-is-title="true">warning</div>
+
+
+<div data-tips="true" data-tips-type="warning">為確保 ABR 功能正常運作，請確認您在程式碼中為各畫質等級設定的位元率與控制台 ABR 配置一致。</div>
+
+
+<div data-tips="true" data-tips-type="warning"><strong>請特別注意單位換算：</strong></div>
+
+
+
+* <div data-tips="true" data-tips-type="warning"><strong>控制台中的位元率單位：</strong> <code>kbps</code></div>
+
+
+* <div data-tips="true" data-tips-type="warning"><strong>程式碼中的位元率單位：</strong> <code>bps</code></div>
+
+
+
+<div data-tips="true" data-tips-type="warning">因此，程式碼中設定的位元率值必須是控制台值的<strong>1000</strong>倍。</div>
+
+
+<div data-tips="true" data-tips-type="warning">例如，若控制台設定為<code>3200</code> kbps，則程式碼中應傳入<code>3200000</code>。</div>
+
+
+
+<Tabs>
+<Tab zoneid="cFVtxXs6Xi" title="CDN">
+<TabTitle>CDN</TabTitle>
+
+```JavaScript
+VePlayer.createLivePlayer({
+    width: 640,
+    height: 360,
+    playlist: [
+      {
+        definitions: [
+          // FLV pull stream address for the initial playback quality level.
+          'https://pull.example.com/live/123456_uhd.flv',
+          // 備援播放用的 HLS 拉流地址，可透過控制台地址生成器產生。
+          'https://pull.example.com/live/123456_uhd.m3u8',
+        ],
+      },
+    ],
+    flv: {
+      abr: {
+        // Bitrate for the initial playback quality level.單位為 bps。
+        bitrate: 3200000,
+        // 各畫質等級的位元率與 FLV 拉流地址。位元率單位為 bps。
+        urls: {
+          3200000: 'https://pull.example.com/live/123456_uhd.flv',
+          2048000: 'https://pull.example.com/live/123456_hd.flv',
+          1638000: 'https://pull.example.com/live/123456_sd.flv',
+          1024000: 'https://pull.example.com/live/123456_ld.flv',
+         }
+     }
+  },
+    fallback: {
+      // 優先嘗試播放低延遲 FLV 串流。當播放器偵測到目前瀏覽器無法播放低延遲FLV 串流時，會自動切換至 HLS 串流播放。
+      fallbackOrder: ['ll-flv', 'hls'],
+    }
+}).then(function (veplayer) {
+    // Listen for quality level switching events.
+    veplayer.on(VePlayer.live.Events.ABR_SWITCH_START, function (data) {
+      console.log('ABR_SWITCH_START', data.bitrate);
+    });
+
+    veplayer.on(VePlayer.live.Events.ABR_SWITCH_SUCCESS, function (data) {
+      console.log('ABR_SWITCH_SUCCESS', data.bitrate);
+    });
+
+    veplayer.on(VePlayer.live.Events.ABR_SWITCH_FAILED, function (data) {
+      console.log('ABR_SWITCH_FAILED', data.bitrate);
+    });
+})
+```
+
+
+
+</Tab>
+<Tab zoneid="kVuCqlnAvt" title="NPM">
+<TabTitle>NPM</TabTitle>
+
+```JavaScript
+import { createLivePlayer, register, live } from '@byteplus/veplayer';
+import { flv, hlsjs, abr } from '@byteplus/veplayer-plugin';
+import '@byteplus/veplayer/style'
+
+register([flv, hlsjs, abr]);
+
+createLivePlayer({
+    width: 640,
+    height: 360,
+    playlist: [
+      {
+        definitions: [
+           // FLV pull stream address for the initial playback quality level.
+          'https://pull.example.com/live/123456_uhd.flv',
+          // HLS pull stream address for fallback playback, which can be generated through the console's address generator.
+          'https://pull.example.com/live/123456_uhd.m3u8',
+        ],
+      },
+    ],
+    flv: {
+      abr: {
+        // Bitrate for the initial playback quality level.單位為 bps。
+        bitrate: 3200000,
+        // 位元率與 FLV 拉流地址，分別對應各畫質等級。位元率單位為 bps。
+        urls: {
+          3200000: 'https://pull.example.com/live/123456_uhd.flv',
+          2048000: 'https://pull.example.com/live/123456_hd.flv',
+          1638000: 'https://pull.example.com/live/123456_sd.flv',
+          1024000: 'https://pull.example.com/live/123456_ld.flv',
+      }
+    }
+  },
+    fallback: {
+      // 優先嘗試播放低延遲 FLV 串流。當播放器偵測到目前瀏覽器無法播放低延遲FLV 串流時，會自動切換至 HLS 串流播放。
+      fallbackOrder: ['ll-flv', 'hls'],
+    }
+}).then(function (veplayer) {
+    // Listen for quality level switching events.
+    veplayer.on(live.Events.ABR_SWITCH_START, function (data) {
+      console.log('ABR_SWITCH_START', data.bitrate);
+    });
+
+    veplayer.on(live.Events.ABR_SWITCH_SUCCESS, function (data) {
+      console.log('ABR_SWITCH_SUCCESS', data.bitrate);
+    });
+
+    veplayer.on(live.Events.ABR_SWITCH_FAILED, function (data) {
+      console.log('ABR_SWITCH_FAILED', data.bitrate);
+    });
+})
+```
+
+
+
+</Tab>
+</Tabs>

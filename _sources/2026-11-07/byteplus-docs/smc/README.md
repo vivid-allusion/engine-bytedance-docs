@@ -1,0 +1,96 @@
+# Server Migration Center
+
+68 pages. Source: https://docs.byteplus.com/en/docs/smc
+
+Back to the [full index](../README.md).
+
+- [Billing](Billing.md)
+- [FAQ](FAQ.md)
+- **API Reference**
+  - [API error code list](API Reference/API error code list.md)
+  - [API overview](API Reference/API overview.md)
+  - [API release history](API Reference/API release history.md)
+  - [Overview](API Reference/Overview.md)
+  - **Call method**
+    - [Common parameters](API Reference/Call method/Common parameters.md)
+    - [Request structure](API Reference/Call method/Request structure.md)
+    - [Response structure](API Reference/Call method/Response structure.md)
+    - [Signature mechanism](API Reference/Call method/Signature mechanism.md)
+  - **Migration Job**
+    - [CreateMigrationJob - Creates a migration task](API Reference/Migration Job/CreateMigrationJob - Creates a migration task.md)
+    - [DeleteMigrationJob - Deletes a migration task](API Reference/Migration Job/DeleteMigrationJob - Deletes a migration task.md)
+    - [DescribeMigrationJobs - Queries migration task information](API Reference/Migration Job/DescribeMigrationJobs - Queries migration task information.md)
+    - [DescribeMigrationLogs - Queries migration logs](API Reference/Migration Job/DescribeMigrationLogs - Queries migration logs.md)
+    - [DescribeMigrationSystemSupportTypes - Queries the target operating systems that the source system supports for migration](API Reference/Migration Job/DescribeMigrationSystemSupportTypes - Queries the target operating systems that the source.md)
+    - [ModifyMigrationJobAttribute - Modifies the basic information of a migration task](API Reference/Migration Job/ModifyMigrationJobAttribute - Modifies the basic information of a migration task.md)
+    - [SetIncrementalSyncInterval - Set automatic incremental synchronization interval](API Reference/Migration Job/SetIncrementalSyncInterval - Set automatic incremental synchronization interval.md)
+    - [TriggerLastIncrementalSync - Performs the last automatic incremental synchronization](API Reference/Migration Job/TriggerLastIncrementalSync - Performs the last automatic incremental synchronization.md)
+  - **Migration Sources**
+    - [DeleteMigrationSource - Deletes a migration source](API Reference/Migration Sources/DeleteMigrationSource - Deletes a migration source.md)
+    - [DescribeMigrationSources - Queries migration source information](API Reference/Migration Sources/DescribeMigrationSources - Queries migration source information.md)
+    - [ModifyMigrationSourceAttribute - Modifies the basic information of the migration source](API Reference/Migration Sources/ModifyMigrationSourceAttribute - Modifies the basic information of the migration source.md)
+  - **Tags**
+    - [TagResources - Creates tags](API Reference/Tags/TagResources - Creates tags.md)
+    - [UnTagResources - Deletes tags](API Reference/Tags/UnTagResources - Deletes tags.md)
+- **Best Practice**
+  - [Batch importing migration sources via Ansible](Best Practice/Batch importing migration sources via Ansible.md)
+  - [Estimating cloud resources and fees for migration tasks](Best Practice/Estimating cloud resources and fees for migration tasks.md)
+  - [Manually releasing temporary resources](Best Practice/Manually releasing temporary resources.md)
+  - **Migration Source Tuning**
+    - [Configuring proxy servers](Best Practice/Migration Source Tuning/Configuring proxy servers.md)
+    - [Disabling AppArmor service](Best Practice/Migration Source Tuning/Disabling AppArmor service.md)
+    - [Disabling SELinux](Best Practice/Migration Source Tuning/Disabling SELinux.md)
+    - [Disabling UAC](Best Practice/Migration Source Tuning/Disabling UAC.md)
+  - **Server Migration**
+    - [Migrating ECS instances within an account or between accounts](Best Practice/Server Migration/Migrating ECS instances within an account or between accounts.md)
+    - [Migrating local VMware virtual machines to the cloud](Best Practice/Server Migration/Migrating local VMware virtual machines to the cloud.md)
+    - [Stopping services that generate incremental data on source servers](Best Practice/Server Migration/Stopping services that generate incremental data on source servers.md)
+- **Getting Started**
+  - [Migration process overview](Getting Started/Migration process overview.md)
+  - [Preparations](Getting Started/Preparations.md)
+  - **Step 1: Import Migration Sources**
+    - [Manually installing migration tool Agent and importing migration sources](Getting Started/Step 1: Import Migration Sources/Manually installing migration tool Agent and importing migration sources.md)
+    - [One-click import of migration source in the console](Getting Started/Step 1: Import Migration Sources/One-click import of migration source in the console.md)
+    - [Overview of migration source import](Getting Started/Step 1: Import Migration Sources/Overview of migration source import.md)
+  - **Step 2: Create and launch the migration job**
+    - [Operating system migration tasks](Getting Started/Step 2: Create and launch the migration job/Operating system migration tasks.md)
+    - [Server migration task](Getting Started/Step 2: Create and launch the migration job/Server migration task.md)
+- **Overview**
+  - [Applicable scenarios](Overview/Applicable scenarios.md)
+  - [Benefits](Overview/Benefits.md)
+  - [What is Server Migration Center?](Overview/What is Server Migration Center?.md)
+  - **Limits**
+    - [Operating system compatibility](Overview/Limits/Operating system compatibility.md)
+    - [Resource limits](Overview/Limits/Resource limits.md)
+- **SDK Reference**
+  - [SMC SDK overview](SDK Reference/SMC SDK overview.md)
+- **Troubleshooting**
+  - [How to handle exceptions during "File replication" migrations?](Troubleshooting/How to handle exceptions during "File replication" migrations?.md)
+  - [How to solve the error "checkVirtioInstall fail" or "Check initramfs failed" reported by migration tool Agent?](Troubleshooting/How to solve the error "checkVirtioInstall fail" or "Check initramfs failed" reported by m.md)
+  - [How to troubleshoot startup failure after migrating a server in UEFI boot mode to a 3rd-generation ECS instance via file-level replication?](Troubleshooting/How to troubleshoot startup failure after migrating a server in UEFI boot mode to a 3rd-ge.md)
+- **User Guide**
+  - [Clearing task resources](User Guide/Clearing task resources.md)
+  - [Create and manage migration templates](User Guide/Create and manage migration templates.md)
+  - [Managing migration sources](User Guide/Managing migration sources.md)
+  - [Managing migration tasks](User Guide/Managing migration tasks.md)
+  - [Managing migration tool Agent](User Guide/Managing migration tool Agent.md)
+  - [Migration task event monitoring](User Guide/Migration task event monitoring.md)
+  - **Identity and Access Management**
+    - [Common system default policy](User Guide/Identity and Access Management/Common system default policy.md)
+    - [Granting permissions to IAM users to use cloud resources required by SMC](User Guide/Identity and Access Management/Granting permissions to IAM users to use cloud resources required by SMC.md)
+    - [IAM overview](User Guide/Identity and Access Management/IAM overview.md)
+    - [SMC IAM policy types](User Guide/Identity and Access Management/SMC IAM policy types.md)
+  - **Migration Precheck**
+    - [Migration pre-check overview](User Guide/Migration Precheck/Migration pre-check overview.md)
+    - **Migration source precheck**
+      - [Check item description](User Guide/Migration Precheck/Migration source precheck/Check item description.md)
+      - [Performing migration source pre-checks](User Guide/Migration Precheck/Migration source precheck/Performing migration source pre-checks.md)
+    - **Precheck migration jobs**
+      - [Check item description](User Guide/Migration Precheck/Precheck migration jobs/Check item description.md)
+      - [Network exception repair suggestions](User Guide/Migration Precheck/Precheck migration jobs/Network exception repair suggestions.md)
+      - [Performing migration task pre-checks](User Guide/Migration Precheck/Precheck migration jobs/Performing migration task pre-checks.md)
+  - **Projects and Tags**
+    - [Managing projects](User Guide/Projects and Tags/Managing projects.md)
+    - [Tag management](User Guide/Projects and Tags/Tag management.md)
+- **What's New**
+  - [New feature release notes](What's New/New feature release notes.md)

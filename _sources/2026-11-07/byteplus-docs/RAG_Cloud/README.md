@@ -1,0 +1,77 @@
+# VikingDB Knowledge Engine
+
+58 pages. Source: https://docs.byteplus.com/en/docs/RAG_Cloud
+
+Back to the [full index](../README.md).
+
+- [Introduction](Introduction.md)
+- [Release Note](Release Note.md)
+- **Product Pricing**
+  - [VikingDB Knowledge Engine](Product Pricing/VikingDB Knowledge Engine.md)
+- **User guides**
+  - [Knowledge base free trial benefits](User guides/Knowledge base free trial benefits.md)
+  - **API reference**
+    - [Rerank](User guides/API reference/Rerank.md)
+    - [Signature authentication and examples](User guides/API reference/Signature authentication and examples.md)
+    - **Document**
+      - [add](User guides/API reference/Document/add.md)
+      - [add (new)](User guides/API reference/Document/add (new).md)
+      - [delete](User guides/API reference/Document/delete.md)
+      - [info](User guides/API reference/Document/info.md)
+      - [list](User guides/API reference/Document/list.md)
+      - [update](User guides/API reference/Document/update.md)
+      - [update_meta](User guides/API reference/Document/update_meta.md)
+    - **Experimental version (new)**
+      - [batch-to-pipeline](User guides/API reference/Experimental version (new)/batch-to-pipeline.md)
+      - [create](User guides/API reference/Experimental version (new)/create.md)
+      - [delete](User guides/API reference/Experimental version (new)/delete.md)
+      - [info](User guides/API reference/Experimental version (new)/info.md)
+      - [list](User guides/API reference/Experimental version (new)/list.md)
+      - [re-process](User guides/API reference/Experimental version (new)/re-process.md)
+      - [set-default-pipeline](User guides/API reference/Experimental version (new)/set-default-pipeline.md)
+      - [update](User guides/API reference/Experimental version (new)/update.md)
+    - **Knowledge base**
+      - [chat_completions (new)](User guides/API reference/Knowledge base/chat_completions (new).md)
+      - [create](User guides/API reference/Knowledge base/create.md)
+      - [delete](User guides/API reference/Knowledge base/delete.md)
+      - [info](User guides/API reference/Knowledge base/info.md)
+      - [list](User guides/API reference/Knowledge base/list.md)
+      - [Mixed text and image output sample](User guides/API reference/Knowledge base/Mixed text and image output sample.md)
+      - [Multi-turn Q&A sample](User guides/API reference/Knowledge base/Multi-turn Q&A sample.md)
+      - [Multimodal Q&A sample](User guides/API reference/Knowledge base/Multimodal Q&A sample.md)
+      - [search_knowledge (new)](User guides/API reference/Knowledge base/search_knowledge (new).md)
+      - [service_chat (recommended)](User guides/API reference/Knowledge base/service_chat (recommended).md)
+      - [update](User guides/API reference/Knowledge base/update.md)
+    - **Point**
+      - [add](User guides/API reference/Point/add.md)
+      - [delete](User guides/API reference/Point/delete.md)
+      - [info](User guides/API reference/Point/info.md)
+      - [list](User guides/API reference/Point/list.md)
+      - [update](User guides/API reference/Point/update.md)
+  - **Operation guide**
+    - [Core process of knowledge Q&A](User guides/Operation guide/Core process of knowledge Q&A.md)
+    - [Knowledge base quota description](User guides/Operation guide/Knowledge base quota description.md)
+    - **Document management**
+      - [Delete documents](User guides/Operation guide/Document management/Delete documents.md)
+      - [Import documents](User guides/Operation guide/Document management/Import documents.md)
+      - [Tag editing](User guides/Operation guide/Document management/Tag editing.md)
+    - **Knowledge base management**
+      - [Configure experimental versions](User guides/Operation guide/Knowledge base management/Configure experimental versions.md)
+      - [Create a knowledge base](User guides/Operation guide/Knowledge base management/Create a knowledge base.md)
+      - [Delete knowledge base](User guides/Operation guide/Knowledge base management/Delete knowledge base.md)
+      - [Edit knowledge base](User guides/Operation guide/Knowledge base management/Edit knowledge base.md)
+      - [Knowledge Q&A](User guides/Operation guide/Knowledge base management/Knowledge Q&A.md)
+      - [Knowledge retrieval](User guides/Operation guide/Knowledge base management/Knowledge retrieval.md)
+      - [Unsubscribe](User guides/Operation guide/Knowledge base management/Unsubscribe.md)
+      - [View knowledge base details](User guides/Operation guide/Knowledge base management/View knowledge base details.md)
+      - [View knowledge base list](User guides/Operation guide/Knowledge base management/View knowledge base list.md)
+    - **Knowledge Service Management**
+      - [Create a knowledge service](User guides/Operation guide/Knowledge Service Management/Create a knowledge service.md)
+      - [Knowledge Service Management](User guides/Operation guide/Knowledge Service Management/Knowledge Service Management.md)
+    - **Slice management**
+      - [Add slice](User guides/Operation guide/Slice management/Add slice.md)
+      - [Delete slice](User guides/Operation guide/Slice management/Delete slice.md)
+      - [Edit slice](User guides/Operation guide/Slice management/Edit slice.md)
+      - [View slice](User guides/Operation guide/Slice management/View slice.md)
+  - **Related agreements**
+    - [Data authorization rules and disclaimer for Knowledge Base (Free Edition)](User guides/Related agreements/Data authorization rules and disclaimer for Knowledge Base (Free Edition).md)

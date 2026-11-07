@@ -1,0 +1,386 @@
+# SealSuite
+
+299 pages. Source: https://docs.byteplus.com/en/docs/sealsuite
+
+Back to the [full index](../README.md).
+
+- [Downloading the SealSuite client](Downloading the SealSuite client.md)
+- [SealSuite Pricing](SealSuite Pricing.md)
+- **Admin guide**
+  - [Managing license](Admin guide/Managing license.md)
+  - **AI Security**
+    - [AI Security overview](Admin guide/AI Security/AI Security overview.md)
+    - **AI Asset Inventory**
+      - [AI Tool Control Capabilities List](Admin guide/AI Security/AI Asset Inventory/AI Tool Control Capabilities List.md)
+    - **AI Security Protection**
+      - [Monitoring and remediating malicious Skills](Admin guide/AI Security/AI Security Protection/Monitoring and remediating malicious Skills.md)
+    - **Asset Inventory**
+      - [Agent Asset Inventory](Admin guide/AI Security/Asset Inventory/Agent Asset Inventory.md)
+      - [AI website Asset Inventory](Admin guide/AI Security/Asset Inventory/AI website Asset Inventory.md)
+      - [CLI Asset Inventory](Admin guide/AI Security/Asset Inventory/CLI Asset Inventory.md)
+      - [Large model API Asset Inventory](Admin guide/AI Security/Asset Inventory/Large model API Asset Inventory.md)
+      - [MCP Asset Inventory](Admin guide/AI Security/Asset Inventory/MCP Asset Inventory.md)
+    - **Runtime Security**
+      - [Agent behavior guardrails](Admin guide/AI Security/Runtime Security/Agent behavior guardrails.md)
+      - [Agent full link audit](Admin guide/AI Security/Runtime Security/Agent full link audit.md)
+      - [LLM semantic protection](Admin guide/AI Security/Runtime Security/LLM semantic protection.md)
+    - **Supply Chain Security**
+      - [CLI Call Protection](Admin guide/AI Security/Supply Chain Security/CLI Call Protection.md)
+      - [MCP Call Audit](Admin guide/AI Security/Supply Chain Security/MCP Call Audit.md)
+      - [Skill download protection](Admin guide/AI Security/Supply Chain Security/Skill download protection.md)
+      - [Skill Security Detection](Admin guide/AI Security/Supply Chain Security/Skill Security Detection.md)
+  - **Audit Logs**
+    - [Adjust the log retention period (private deployment)](Admin guide/Audit Logs/Adjust the log retention period (private deployment).md)
+    - [Configure log forwarding](Admin guide/Audit Logs/Configure log forwarding.md)
+    - [DLP log forwarding field format](Admin guide/Audit Logs/DLP log forwarding field format.md)
+    - [Log forwarding field reference](Admin guide/Audit Logs/Log forwarding field reference.md)
+    - [View audit logs](Admin guide/Audit Logs/View audit logs.md)
+  - **Branding**
+    - [Customizing client Banner](Admin guide/Branding/Customizing client Banner.md)
+    - [Customizing client interface and feature visibility](Admin guide/Branding/Customizing client interface and feature visibility.md)
+    - [Customizing employee Wi-Fi page content](Admin guide/Branding/Customizing employee Wi-Fi page content.md)
+    - [Customizing SealSuite Portal](Admin guide/Branding/Customizing SealSuite Portal.md)
+    - [Customizing the guest network access page](Admin guide/Branding/Customizing the guest network access page.md)
+  - **DLP (Data Loss Prevention)**
+    - [Configuring data collection policy](Admin guide/DLP (Data Loss Prevention)/Configuring data collection policy.md)
+    - [Data security overview](Admin guide/DLP (Data Loss Prevention)/Data security overview.md)
+    - [Employee insights](Admin guide/DLP (Data Loss Prevention)/Employee insights.md)
+    - [Viewing eDiscovery](Admin guide/DLP (Data Loss Prevention)/Viewing eDiscovery.md)
+    - **Data Identification**
+      - [Data identification overview](Admin guide/DLP (Data Loss Prevention)/Data Identification/Data identification overview.md)
+      - [Manage classification and grading rules](Admin guide/DLP (Data Loss Prevention)/Data Identification/Manage classification and grading rules.md)
+      - [Managing sensitive thesaurus](Admin guide/DLP (Data Loss Prevention)/Data Identification/Managing sensitive thesaurus.md)
+      - [Managing the File Fingerprint Library](Admin guide/DLP (Data Loss Prevention)/Data Identification/Managing the File Fingerprint Library.md)
+      - [Managing the File Source Library](Admin guide/DLP (Data Loss Prevention)/Data Identification/Managing the File Source Library.md)
+      - [Managing the File Type Library](Admin guide/DLP (Data Loss Prevention)/Data Identification/Managing the File Type Library.md)
+      - [Managing the hierarchical configuration](Admin guide/DLP (Data Loss Prevention)/Data Identification/Managing the hierarchical configuration.md)
+    - **Removable Endpoint**
+      - [Configuring removable endpoint control policies](Admin guide/DLP (Data Loss Prevention)/Removable Endpoint/Configuring removable endpoint control policies.md)
+      - [Configuring removable endpoint control policy allowlist](Admin guide/DLP (Data Loss Prevention)/Removable Endpoint/Configuring removable endpoint control policy allowlist.md)
+      - [Viewing removable endpoint control alerts](Admin guide/DLP (Data Loss Prevention)/Removable Endpoint/Viewing removable endpoint control alerts.md)
+    - **Risk Monitoring and Insights**
+      - [View GenAI data outbound logs](Admin guide/DLP (Data Loss Prevention)/Risk Monitoring and Insights/View GenAI data outbound logs.md)
+      - [View Web data outbound logs](Admin guide/DLP (Data Loss Prevention)/Risk Monitoring and Insights/View Web data outbound logs.md)
+      - [Viewing AI development tools operation logs](Admin guide/DLP (Data Loss Prevention)/Risk Monitoring and Insights/Viewing AI development tools operation logs.md)
+      - [Viewing channel blocking alerts](Admin guide/DLP (Data Loss Prevention)/Risk Monitoring and Insights/Viewing channel blocking alerts.md)
+      - [Viewing clipboard logs](Admin guide/DLP (Data Loss Prevention)/Risk Monitoring and Insights/Viewing clipboard logs.md)
+      - [Viewing file outbound alerts](Admin guide/DLP (Data Loss Prevention)/Risk Monitoring and Insights/Viewing file outbound alerts.md)
+    - **Strategy Center**
+      - [Configuring document sensitivity labels](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Configuring document sensitivity labels.md)
+      - [Control policy system configuration](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Control policy system configuration.md)
+      - [Internal address configuration](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Internal address configuration.md)
+      - **Allowlist Management**
+        - [Managing file outbound control whitelists](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Allowlist Management/Managing file outbound control whitelists.md)
+        - [Managing file scan whitelists](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Allowlist Management/Managing file scan whitelists.md)
+        - [Managing process injection whitelists](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Allowlist Management/Managing process injection whitelists.md)
+      - **Channel List Management**
+        - [Channel lookup and custom configuration](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Channel List Management/Channel lookup and custom configuration.md)
+        - [Customizing macOS process configuration](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Channel List Management/Customizing macOS process configuration.md)
+        - [Customizing Windows process configuration](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Channel List Management/Customizing Windows process configuration.md)
+      - **Control Policy Configuration**
+        - [Configure a GenAI data protection policy](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Control Policy Configuration/Configure a GenAI data protection policy.md)
+        - [Configure a Web data protection policy](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Control Policy Configuration/Configure a Web data protection policy.md)
+        - [Configuring AI development tools operation control policies](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Control Policy Configuration/Configuring AI development tools operation control policies.md)
+        - [Configuring block policy for application](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Control Policy Configuration/Configuring block policy for application.md)
+        - [Configuring clipboard control policies](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Control Policy Configuration/Configuring clipboard control policies.md)
+        - [Outbound file control policy management](Admin guide/DLP (Data Loss Prevention)/Strategy Center/Control Policy Configuration/Outbound file control policy management.md)
+    - **Watermark**
+      - [Configure print watermarks](Admin guide/DLP (Data Loss Prevention)/Watermark/Configure print watermarks.md)
+      - [Configuring watermark policy](Admin guide/DLP (Data Loss Prevention)/Watermark/Configuring watermark policy.md)
+      - [Extracting invisible watermark](Admin guide/DLP (Data Loss Prevention)/Watermark/Extracting invisible watermark.md)
+  - **Dynamic control**
+    - [Configuring dynamic policies](Admin guide/Dynamic control/Configuring dynamic policies.md)
+    - [Dynamic control overview](Admin guide/Dynamic control/Dynamic control overview.md)
+    - [Managing trigger logs](Admin guide/Dynamic control/Managing trigger logs.md)
+    - [Viewing remediation logs](Admin guide/Dynamic control/Viewing remediation logs.md)
+  - **Endpoint**
+    - **Assets**
+      - [Assets overview](Admin guide/Endpoint/Assets/Assets overview.md)
+      - [Managing trusted devices and policy configuration](Admin guide/Endpoint/Assets/Managing trusted devices and policy configuration.md)
+      - [Viewing security posture](Admin guide/Endpoint/Assets/Viewing security posture.md)
+      - **Asset Enrollment**
+        - [Adding device registration policies](Admin guide/Endpoint/Assets/Asset Enrollment/Adding device registration policies.md)
+        - [Managing device registration policies](Admin guide/Endpoint/Assets/Asset Enrollment/Managing device registration policies.md)
+        - [Reviewing device registration applications](Admin guide/Endpoint/Assets/Asset Enrollment/Reviewing device registration applications.md)
+      - **Asset List**
+        - [Adding custom attributes to devices](Admin guide/Endpoint/Assets/Asset List/Adding custom attributes to devices.md)
+        - [Managing device groups](Admin guide/Endpoint/Assets/Asset List/Managing device groups.md)
+        - [Managing endpoint devices](Admin guide/Endpoint/Assets/Asset List/Managing endpoint devices.md)
+    - **Endpoint control**
+      - [Configuring device scanning items](Admin guide/Endpoint/Endpoint control/Configuring device scanning items.md)
+      - [Configuring endpoint control policy](Admin guide/Endpoint/Endpoint control/Configuring endpoint control policy.md)
+      - [Configuring endpoint network control](Admin guide/Endpoint/Endpoint control/Configuring endpoint network control.md)
+      - [Endpoint control overview](Admin guide/Endpoint/Endpoint control/Endpoint control overview.md)
+      - [Managing Windows patches and repairs](Admin guide/Endpoint/Endpoint control/Managing Windows patches and repairs.md)
+      - [Viewing risk alerts](Admin guide/Endpoint/Endpoint control/Viewing risk alerts.md)
+    - **MDM management**
+      - [Configuring and managing MDM disk encryption](Admin guide/Endpoint/MDM management/Configuring and managing MDM disk encryption.md)
+      - [Configuring and managing MDM policies](Admin guide/Endpoint/MDM management/Configuring and managing MDM policies.md)
+      - [Configuring and managing MDM privilege policies](Admin guide/Endpoint/MDM management/Configuring and managing MDM privilege policies.md)
+      - [Configuring and managing MDM script execution](Admin guide/Endpoint/MDM management/Configuring and managing MDM script execution.md)
+      - [Configuring Apple MDM services](Admin guide/Endpoint/MDM management/Configuring Apple MDM services.md)
+      - [Configuring operating system Single Sign-On (OS SSO)](Admin guide/Endpoint/MDM management/Configuring operating system Single Sign-On (OS SSO).md)
+      - [Managing macOS firmware locks](Admin guide/Endpoint/MDM management/Managing macOS firmware locks.md)
+      - [Managing VPP applications](Admin guide/Endpoint/MDM management/Managing VPP applications.md)
+    - **Software management**
+      - [Configure a software library for the client](Admin guide/Endpoint/Software management/Configure a software library for the client.md)
+      - [Configuring Process Running Control Policies](Admin guide/Endpoint/Software management/Configuring Process Running Control Policies.md)
+      - [Distributing software to user devices](Admin guide/Endpoint/Software management/Distributing software to user devices.md)
+      - [Managing software installation control policies](Admin guide/Endpoint/Software management/Managing software installation control policies.md)
+      - [Managing software licenses](Admin guide/Endpoint/Software management/Managing software licenses.md)
+      - [Software management overview](Admin guide/Endpoint/Software management/Software management overview.md)
+      - [Viewing software statistics](Admin guide/Endpoint/Software management/Viewing software statistics.md)
+  - **Endpoint Security**
+    - [Managing threat response tasks](Admin guide/Endpoint Security/Managing threat response tasks.md)
+    - **Endpoint Firewall**
+      - [Configuring endpoint firewall policies](Admin guide/Endpoint Security/Endpoint Firewall/Configuring endpoint firewall policies.md)
+      - [Domain name intelligence](Admin guide/Endpoint Security/Endpoint Firewall/Domain name intelligence.md)
+    - **Endpoint security strategy center**
+      - [Configuring blacklist](Admin guide/Endpoint Security/Endpoint security strategy center/Configuring blacklist.md)
+      - [Configuring EDR behavior collection policy](Admin guide/Endpoint Security/Endpoint security strategy center/Configuring EDR behavior collection policy.md)
+      - [Configuring general settings](Admin guide/Endpoint Security/Endpoint security strategy center/Configuring general settings.md)
+      - [Configuring whitelist](Admin guide/Endpoint Security/Endpoint security strategy center/Configuring whitelist.md)
+      - [Endpoint security strategy overview](Admin guide/Endpoint Security/Endpoint security strategy center/Endpoint security strategy overview.md)
+      - **Anti-Virus**
+        - [Configuring file intelligence library](Admin guide/Endpoint Security/Endpoint security strategy center/Anti-Virus/Configuring file intelligence library.md)
+        - [Configuring virus detection policy](Admin guide/Endpoint Security/Endpoint security strategy center/Anti-Virus/Configuring virus detection policy.md)
+    - **Threat Alerts**
+      - [EDR Log Investigation and Analysis](Admin guide/Endpoint Security/Threat Alerts/EDR Log Investigation and Analysis.md)
+      - [Malicious File Monitoring and Handling](Admin guide/Endpoint Security/Threat Alerts/Malicious File Monitoring and Handling.md)
+      - [Threat Behavior Analysis and Management](Admin guide/Endpoint Security/Threat Alerts/Threat Behavior Analysis and Management.md)
+      - [Threat Event Analysis and Handling](Admin guide/Endpoint Security/Threat Alerts/Threat Event Analysis and Handling.md)
+  - **Enterprise Settings**
+    - [Configuring and viewing enterprise information](Admin guide/Enterprise Settings/Configuring and viewing enterprise information.md)
+    - [Managing Client Versions and Patches](Admin guide/Enterprise Settings/Managing Client Versions and Patches.md)
+    - **Admin Access**
+      - [Configuring Administrator Access](Admin guide/Enterprise Settings/Admin Access/Configuring Administrator Access.md)
+      - [Editing Administrator Access](Admin guide/Enterprise Settings/Admin Access/Editing Administrator Access.md)
+    - **Admin Center**
+      - [Approving application access requests](Admin guide/Enterprise Settings/Admin Center/Approving application access requests.md)
+      - [Handle user feedback](Admin guide/Enterprise Settings/Admin Center/Handle user feedback.md)
+      - **Help center**
+        - [Adding and Managing Help Center Articles](Admin guide/Enterprise Settings/Admin Center/Help center/Adding and Managing Help Center Articles.md)
+        - [Adding categories and subcategories for frequently asked questions](Admin guide/Enterprise Settings/Admin Center/Help center/Adding categories and subcategories for frequently asked questions.md)
+        - [Instruction for use](Admin guide/Enterprise Settings/Admin Center/Help center/Instruction for use.md)
+    - **Workflow**
+      - [Creating workflows](Admin guide/Enterprise Settings/Workflow/Creating workflows.md)
+      - [Managing workflows](Admin guide/Enterprise Settings/Workflow/Managing workflows.md)
+  - **Identity**
+    - [Identity overview](Admin guide/Identity/Identity overview.md)
+    - [Managing roles](Admin guide/Identity/Managing roles.md)
+    - [Multi-Tenant management](Admin guide/Identity/Multi-Tenant management.md)
+    - **Account Settings**
+      - [Configure multi-factor authentication](Admin guide/Identity/Account Settings/Configure multi-factor authentication.md)
+      - [Configuring account security policies](Admin guide/Identity/Account Settings/Configuring account security policies.md)
+      - [Configuring advanced authentication policies](Admin guide/Identity/Account Settings/Configuring advanced authentication policies.md)
+      - [Configuring custom attributes](Admin guide/Identity/Account Settings/Configuring custom attributes.md)
+      - [Configuring data protection rules for sync tasks](Admin guide/Identity/Account Settings/Configuring data protection rules for sync tasks.md)
+      - [Configuring login by LDAP account](Admin guide/Identity/Account Settings/Configuring login by LDAP account.md)
+      - [Managing global LDAP Server settings](Admin guide/Identity/Account Settings/Managing global LDAP Server settings.md)
+      - [Setting up account systems and identity authentication](Admin guide/Identity/Account Settings/Setting up account systems and identity authentication.md)
+      - **Configuring third-party authentication source**
+        - [Configuring CAS authentication source](Admin guide/Identity/Account Settings/Configuring third-party authentication source/Configuring CAS authentication source.md)
+        - [Configuring OIDC authentication source](Admin guide/Identity/Account Settings/Configuring third-party authentication source/Configuring OIDC authentication source.md)
+        - [Configuring RADIUS protocol source](Admin guide/Identity/Account Settings/Configuring third-party authentication source/Configuring RADIUS protocol source.md)
+      - **Importing external data source**
+        - [Azure AD organizational import and third-party login configuration tutorial](Admin guide/Identity/Account Settings/Importing external data source/Azure AD organizational import and third-party login configuration tutorial.md)
+        - [Configuring Data Source Mappings](Admin guide/Identity/Account Settings/Importing external data source/Configuring Data Source Mappings.md)
+        - [Google LDAP organizational structure import and third-party login configuration tutorial](Admin guide/Identity/Account Settings/Importing external data source/Google LDAP organizational structure import and third-party login configuration tutorial.md)
+        - [Importing organizational data from Lark](Admin guide/Identity/Account Settings/Importing external data source/Importing organizational data from Lark.md)
+        - [Importing organizational data from WeCom](Admin guide/Identity/Account Settings/Importing external data source/Importing organizational data from WeCom.md)
+        - [Integrating third-party data sources](Admin guide/Identity/Account Settings/Importing external data source/Integrating third-party data sources.md)
+        - [LDAP organizational architecture import configuration tutorial](Admin guide/Identity/Account Settings/Importing external data source/LDAP organizational architecture import configuration tutorial.md)
+        - [Managing upstream third-party data source synchronization rules](Admin guide/Identity/Account Settings/Importing external data source/Managing upstream third-party data source synchronization rules.md)
+    - **Directory**
+      - [Managing departments](Admin guide/Identity/Directory/Managing departments.md)
+      - [Managing resigned members](Admin guide/Identity/Directory/Managing resigned members.md)
+      - [Managing users](Admin guide/Identity/Directory/Managing users.md)
+    - **SSO**
+      - [Adding SSO application](Admin guide/Identity/SSO/Adding SSO application.md)
+      - [Configuring application group](Admin guide/Identity/SSO/Configuring application group.md)
+      - [Configuring password autofill rules](Admin guide/Identity/SSO/Configuring password autofill rules.md)
+      - [Managing SSO application](Admin guide/Identity/SSO/Managing SSO application.md)
+      - **SSO Application Integration Example**
+        - [Configure OIDC login for JumpServer](Admin guide/Identity/SSO/SSO Application Integration Example/Configure OIDC login for JumpServer.md)
+        - [Configuring SAML for 15Five](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for 15Five.md)
+        - [Configuring SAML for AlertOps](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for AlertOps.md)
+        - [Configuring SAML for Alibaba Cloud (International)](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for Alibaba Cloud (International).md)
+        - [Configuring SAML for Alimail](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for Alimail.md)
+        - [Configuring SAML for AssetSonar](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for AssetSonar.md)
+        - [Configuring SAML for Atlassian Cloud](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for Atlassian Cloud.md)
+        - [Configuring SAML for BambooHR](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for BambooHR.md)
+        - [Configuring SAML for Dropbox](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for Dropbox.md)
+        - [Configuring SAML for Google Workspace](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for Google Workspace.md)
+        - [Configuring SAML for Microsoft Office 365](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for Microsoft Office 365.md)
+        - [Configuring SAML for Notion](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for Notion.md)
+        - [Configuring SAML for Slack](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for Slack.md)
+        - [Configuring SAML for Zendesk](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for Zendesk.md)
+        - [Configuring SAML for Zoom](Admin guide/Identity/SSO/SSO Application Integration Example/Configuring SAML for Zoom.md)
+        - [Connecting Applications via LDAP: General Configuration](Admin guide/Identity/SSO/SSO Application Integration Example/Connecting Applications via LDAP: General Configuration.md)
+  - **Instructions for use**
+    - [Admin Console Homepage Overview](Admin guide/Instructions for use/Admin Console Homepage Overview.md)
+    - [Using the Admin Console](Admin guide/Instructions for use/Using the Admin Console.md)
+    - [Using the User Portal](Admin guide/Instructions for use/Using the User Portal.md)
+    - [Viewing the Dashboard](Admin guide/Instructions for use/Viewing the Dashboard.md)
+  - **NAC (Network Access Control)**
+    - [Managing dumb terminals](Admin guide/NAC (Network Access Control)/Managing dumb terminals.md)
+    - [Network Access Control (NAC) overview](Admin guide/NAC (Network Access Control)/Network Access Control (NAC) overview.md)
+    - [Selecting Network Access Authentication Methods](Admin guide/NAC (Network Access Control)/Selecting Network Access Authentication Methods.md)
+    - **Configuration**
+      - [Adding a RADIUS server](Admin guide/NAC (Network Access Control)/Configuration/Adding a RADIUS server.md)
+      - [Adding a switch](Admin guide/NAC (Network Access Control)/Configuration/Adding a switch.md)
+      - [Adding a wireless router](Admin guide/NAC (Network Access Control)/Configuration/Adding a wireless router.md)
+      - [Editing or deleting a RADIUS server](Admin guide/NAC (Network Access Control)/Configuration/Editing or deleting a RADIUS server.md)
+      - [Editing or deleting routers and switches](Admin guide/NAC (Network Access Control)/Configuration/Editing or deleting routers and switches.md)
+      - [Managing portal server node](Admin guide/NAC (Network Access Control)/Configuration/Managing portal server node.md)
+      - [Setting up Wi-Fi SSID](Admin guide/NAC (Network Access Control)/Configuration/Setting up Wi-Fi SSID.md)
+    - **Guest Network**
+      - [Managing guest network](Admin guide/NAC (Network Access Control)/Guest Network/Managing guest network.md)
+    - **Staff Network**
+      - [Managing Staff Network Access with 802.1x Authentication](Admin guide/NAC (Network Access Control)/Staff Network/Managing Staff Network Access with 802.1x Authentication.md)
+      - [Managing Staff Network Access with Portal Authentication](Admin guide/NAC (Network Access Control)/Staff Network/Managing Staff Network Access with Portal Authentication.md)
+  - **SD-WAN**
+    - [Application Routing: Intelligent Traffic Steering](Admin guide/SD-WAN/Application Routing: Intelligent Traffic Steering.md)
+    - [Monitoring bandwidth usage](Admin guide/SD-WAN/Monitoring bandwidth usage.md)
+    - [SD-WAN overview](Admin guide/SD-WAN/SD-WAN overview.md)
+    - **Branch Gateway**
+      - [Adding a hardware-based branch gateway](Admin guide/SD-WAN/Branch Gateway/Adding a hardware-based branch gateway.md)
+      - [Adding a software-based branch gateway](Admin guide/SD-WAN/Branch Gateway/Adding a software-based branch gateway.md)
+      - [Configuring branch gateway routing](Admin guide/SD-WAN/Branch Gateway/Configuring branch gateway routing.md)
+      - [Editing or deleting a branch gateway](Admin guide/SD-WAN/Branch Gateway/Editing or deleting a branch gateway.md)
+      - [Enabling remote working on the cloud](Admin guide/SD-WAN/Branch Gateway/Enabling remote working on the cloud.md)
+      - [Managing devices and networks for hardware-based branch gateways](Admin guide/SD-WAN/Branch Gateway/Managing devices and networks for hardware-based branch gateways.md)
+      - [Viewing basic information and performance statistics of a branch gateway](Admin guide/SD-WAN/Branch Gateway/Viewing basic information and performance statistics of a branch gateway.md)
+  - **Settings**
+    - **Integration**
+      - [Managing components](Admin guide/Settings/Integration/Managing components.md)
+      - [OpenAPI Management](Admin guide/Settings/Integration/OpenAPI Management.md)
+      - [Subscribe to events](Admin guide/Settings/Integration/Subscribe to events.md)
+    - **IT Tools**
+      - [Building an enterprise IT service desk](Admin guide/Settings/IT Tools/Building an enterprise IT service desk.md)
+      - [Configure DNS reset](Admin guide/Settings/IT Tools/Configure DNS reset.md)
+      - [Configure IT Assistant](Admin guide/Settings/IT Tools/Configure IT Assistant.md)
+      - [Configure network diagnostics](Admin guide/Settings/IT Tools/Configure network diagnostics.md)
+      - [Configure network monitoring](Admin guide/Settings/IT Tools/Configure network monitoring.md)
+      - [Configure proxy servers](Admin guide/Settings/IT Tools/Configure proxy servers.md)
+    - **Resource management**
+      - [Managing address resources (domains and IPs)](Admin guide/Settings/Resource management/Managing address resources (domains and IPs).md)
+      - [Managing the SWG Web resource library](Admin guide/Settings/Resource management/Managing the SWG Web resource library.md)
+      - [Managing the tag Library](Admin guide/Settings/Resource management/Managing the tag Library.md)
+      - [Network zone management](Admin guide/Settings/Resource management/Network zone management.md)
+      - [SWG sensitive word library management](Admin guide/Settings/Resource management/SWG sensitive word library management.md)
+    - **System Settings**
+      - [Configuring global allowlist](Admin guide/Settings/System Settings/Configuring global allowlist.md)
+      - [Managing client settings](Admin guide/Settings/System Settings/Managing client settings.md)
+      - **Notifications**
+        - [Adding a Lark robot](Admin guide/Settings/System Settings/Notifications/Adding a Lark robot.md)
+        - [Adding a Slack robot](Admin guide/Settings/System Settings/Notifications/Adding a Slack robot.md)
+        - [Adding a WeCom robot](Admin guide/Settings/System Settings/Notifications/Adding a WeCom robot.md)
+        - [Overview of notifications](Admin guide/Settings/System Settings/Notifications/Overview of notifications.md)
+  - **SWG（Secure Web Gateway）**
+    - [Configure cloud application control policies](Admin guide/SWG（Secure Web Gateway）/Configure cloud application control policies.md)
+    - [Configure SSL decryption policies](Admin guide/SWG（Secure Web Gateway）/Configure SSL decryption policies.md)
+    - [Configure threat protection](Admin guide/SWG（Secure Web Gateway）/Configure threat protection.md)
+    - [Configure traffic routing policies](Admin guide/SWG（Secure Web Gateway）/Configure traffic routing policies.md)
+    - [Configure web content filtering policies](Admin guide/SWG（Secure Web Gateway）/Configure web content filtering policies.md)
+    - [Manage advanced configuration](Admin guide/SWG（Secure Web Gateway）/Manage advanced configuration.md)
+    - [Manage connected devices](Admin guide/SWG（Secure Web Gateway）/Manage connected devices.md)
+    - [Secure Web Gateway overview](Admin guide/SWG（Secure Web Gateway）/Secure Web Gateway overview.md)
+    - **AI Security Protection**
+      - [AI access security overview](Admin guide/SWG（Secure Web Gateway）/AI Security Protection/AI access security overview.md)
+      - [AI Asset Discovery Management](Admin guide/SWG（Secure Web Gateway）/AI Security Protection/AI Asset Discovery Management.md)
+      - [AI Protection Log Audit](Admin guide/SWG（Secure Web Gateway）/AI Security Protection/AI Protection Log Audit.md)
+      - [Configure AI Protection Policy](Admin guide/SWG（Secure Web Gateway）/AI Security Protection/Configure AI Protection Policy.md)
+  - **Zero Trust Access**
+    - **Application**
+      - [Managing VPN App](Admin guide/Zero Trust Access/Application/Managing VPN App.md)
+      - **Managing Web App**
+        - [Configuring app advanced settings](Admin guide/Zero Trust Access/Application/Managing Web App/Configuring app advanced settings.md)
+        - [Configuring application security rules](Admin guide/Zero Trust Access/Application/Managing Web App/Configuring application security rules.md)
+        - [Managing Web App](Admin guide/Zero Trust Access/Application/Managing Web App/Managing Web App.md)
+    - **Gateway Config**
+      - [Viewing and managing online devices across VPN gateways](Admin guide/Zero Trust Access/Gateway Config/Viewing and managing online devices across VPN gateways.md)
+      - **APP Gateway**
+        - [Managing application gateway](Admin guide/Zero Trust Access/Gateway Config/APP Gateway/Managing application gateway.md)
+      - **VPN Gateway**
+        - [Adding VPN gateway](Admin guide/Zero Trust Access/Gateway Config/VPN Gateway/Adding VPN gateway.md)
+        - [Configuring user groups for VPN gateways](Admin guide/Zero Trust Access/Gateway Config/VPN Gateway/Configuring user groups for VPN gateways.md)
+        - [Configuring VPN client speed limits](Admin guide/Zero Trust Access/Gateway Config/VPN Gateway/Configuring VPN client speed limits.md)
+        - [Managing VPN gateways](Admin guide/Zero Trust Access/Gateway Config/VPN Gateway/Managing VPN gateways.md)
+        - [Setting network mode for VPN gateways](Admin guide/Zero Trust Access/Gateway Config/VPN Gateway/Setting network mode for VPN gateways.md)
+    - **Proxy Pattern**
+      - [Access proxy gateway](Admin guide/Zero Trust Access/Proxy Pattern/Access proxy gateway.md)
+      - [Configure a proxy mode client access policy](Admin guide/Zero Trust Access/Proxy Pattern/Configure a proxy mode client access policy.md)
+      - [Configure a proxy mode traffic steering policy](Admin guide/Zero Trust Access/Proxy Pattern/Configure a proxy mode traffic steering policy.md)
+      - [Configure client rate limiting in proxy mode](Admin guide/Zero Trust Access/Proxy Pattern/Configure client rate limiting in proxy mode.md)
+      - [Configure fine-grained control policies for proxy mode](Admin guide/Zero Trust Access/Proxy Pattern/Configure fine-grained control policies for proxy mode.md)
+      - [Configure proxy mode ACL policies](Admin guide/Zero Trust Access/Proxy Pattern/Configure proxy mode ACL policies.md)
+      - [Manage fine-grained control for Web applications](Admin guide/Zero Trust Access/Proxy Pattern/Manage fine-grained control for Web applications.md)
+      - [Manage proxy applications](Admin guide/Zero Trust Access/Proxy Pattern/Manage proxy applications.md)
+      - [Proxy mode configuration guide](Admin guide/Zero Trust Access/Proxy Pattern/Proxy mode configuration guide.md)
+    - **VPN Policies**
+      - [Adding VPN access permissions](Admin guide/Zero Trust Access/VPN Policies/Adding VPN access permissions.md)
+      - [Configuring VPN access control policies](Admin guide/Zero Trust Access/VPN Policies/Configuring VPN access control policies.md)
+      - [Manage VPN advanced configurations](Admin guide/Zero Trust Access/VPN Policies/Manage VPN advanced configurations.md)
+      - [Managing split tunnel network resources](Admin guide/Zero Trust Access/VPN Policies/Managing split tunnel network resources.md)
+      - [Viewing users' VPN permissions](Admin guide/Zero Trust Access/VPN Policies/Viewing users' VPN permissions.md)
+- **Administrator Guide**
+  - **Network Access Control**
+    - **Practical Tutorial on Network Access Configuration**
+      - [SealSuite Network Toolbox](Administrator Guide/Network Access Control/Practical Tutorial on Network Access Configuration/SealSuite Network Toolbox.md)
+  - **System Settings**
+    - **IT Tools**
+      - [Configure Alert Center](Administrator Guide/System Settings/IT Tools/Configure Alert Center.md)
+      - [Configure feedback](Administrator Guide/System Settings/IT Tools/Configure feedback.md)
+      - [IT tools overview](Administrator Guide/System Settings/IT Tools/IT tools overview.md)
+- **Best practices**
+  - [Best practices for anti-virus control on devices](Best practices/Best practices for anti-virus control on devices.md)
+  - [Best practices for data security scenarios](Best practices/Best practices for data security scenarios.md)
+  - [Best practices for global network management through SD-WAN](Best practices/Best practices for global network management through SD-WAN (best-practices-for-global-network-manage).md)
+  - [Best practices for remote work scenarios](Best practices/Best practices for remote work scenarios.md)
+  - [Best practices for security compliance scenarios](Best practices/Best practices for security compliance scenarios.md)
+  - [Best practices for Wi-Fi management](Best practices/Best practices for Wi-Fi management.md)
+  - [SealSuite SD-WAN domain scheduling principles and rules](Best practices/SealSuite SD-WAN domain scheduling principles and rules.md)
+- **Client User Guide**
+  - [Distribute the iOS client](Client User Guide/Distribute the iOS client.md)
+- **FAQ**
+  - [Anti-virus control FAQ](FAQ/Anti-virus control FAQ.md)
+  - [Client related FAQ](FAQ/Client related FAQ.md)
+  - [Data Leakage Prevention (DLP) FAQ](FAQ/Data Leakage Prevention (DLP) FAQ.md)
+  - [Device management FAQ](FAQ/Device management FAQ.md)
+  - [Dynamic control FAQ](FAQ/Dynamic control FAQ.md)
+  - [General settings FAQ](FAQ/General settings FAQ.md)
+  - [Identity management FAQ](FAQ/Identity management FAQ.md)
+  - [Integration FAQ](FAQ/Integration FAQ.md)
+  - [IT application FAQ](FAQ/IT application FAQ.md)
+  - [System settings FAQ](FAQ/System settings FAQ.md)
+  - [VPN management FAQ](FAQ/VPN management FAQ.md)
+  - [Wi-Fi managemant FAQ](FAQ/Wi-Fi managemant FAQ.md)
+  - **Related to Network Admission Control**
+    - [Portal authentication (employees/visitors) network access failure](FAQ/Related to Network Admission Control/Portal authentication (employees - visitors) network access failure.md)
+    - [Principles of 802.1X authentication and authorization](FAQ/Related to Network Admission Control/Principles of 802.1X authentication and authorization.md)
+    - [Quick troubleshooting for macOS 802.1X network access](FAQ/Related to Network Admission Control/Quick troubleshooting for macOS 802.1X network access.md)
+    - [Use packet capture tools to troubleshoot Network Access Control (NAC) issues](FAQ/Related to Network Admission Control/Use packet capture tools to troubleshoot Network Access Control (NAC) issues.md)
+- **Frequently Asked Questions**
+  - **Related to Office Networking**
+    - [Troubleshooting cloud VPN domain access exceptions](Frequently Asked Questions/Related to Office Networking/Troubleshooting cloud VPN domain access exceptions.md)
+- **Getting Started**
+  - [Quick Start Guide](Getting Started/Quick Start Guide.md)
+  - [SealSuite Deployment Guide](Getting Started/SealSuite Deployment Guide.md)
+- **Product introduction**
+  - [Basic concepts](Product introduction/Basic concepts.md)
+  - [Product advantages](Product introduction/Product advantages.md)
+  - [User scenarios](Product introduction/User scenarios.md)
+  - [What is SealSuite？](Product introduction/What is SealSuite？.md)
+- **Product Updates**
+  - [Release Notes](Product Updates/Release Notes.md)
+  - [V3.3.2 Data Security policy configuration changes and upgrade guide](Product Updates/V3.3.2 Data Security policy configuration changes and upgrade guide.md)
+  - **Product Announcements**
+    - [Important Notice: 2025 Product Upgrade Announcement](Product Updates/Product Announcements/Important Notice: 2025 Product Upgrade Announcement.md)
+- **SealSuite Client User Guide**
+  - [Download, Install, and Activate the Client](SealSuite Client User Guide/Download, Install, and Activate the Client.md)
+  - [Endpoint Security and AI Protection](SealSuite Client User Guide/Endpoint Security and AI Protection.md)
+  - [Labs](SealSuite Client User Guide/Labs.md)
+  - [Log in to the Client](SealSuite Client User Guide/Log in to the Client.md)
+  - [Network Connection and Management](SealSuite Client User Guide/Network Connection and Management.md)
+  - [Operation Guide](SealSuite Client User Guide/Operation Guide.md)

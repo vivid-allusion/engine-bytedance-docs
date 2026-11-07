@@ -1,0 +1,1919 @@
+# BytePlus CDN
+
+1,489 pages. Source: https://docs.byteplus.com/en/docs/byteplus-cdn
+
+Back to the [full index](../README.md).
+
+- **English**
+  - **API Reference**
+    - **Certificate Management**
+      - [AddCertificate](English/API Reference/Certificate Management/AddCertificate.md)
+      - [BatchDeployCert](English/API Reference/Certificate Management/BatchDeployCert.md)
+      - [DeleteCdnCertificate](English/API Reference/Certificate Management/DeleteCdnCertificate.md)
+      - [DescribeCertConfig](English/API Reference/Certificate Management/DescribeCertConfig.md)
+      - [ListCdnCertInfo](English/API Reference/Certificate Management/ListCdnCertInfo.md)
+      - [ListCertInfo](English/API Reference/Certificate Management/ListCertInfo.md)
+    - **Domain Management**
+      - **Add - Remove Domains**
+        - [AddCdnDomain](English/API Reference/Domain Management/Add - Remove Domains/AddCdnDomain.md)
+        - [DeleteCdnDomain](English/API Reference/Domain Management/Add - Remove Domains/DeleteCdnDomain.md)
+      - **Configure Domains**
+        - [BatchUpdateCdnConfig](English/API Reference/Domain Management/Configure Domains/BatchUpdateCdnConfig.md)
+        - [UpdateCdnConfig](English/API Reference/Domain Management/Configure Domains/UpdateCdnConfig.md)
+      - **Query Domains**
+        - [DescribeCdnConfig](English/API Reference/Domain Management/Query Domains/DescribeCdnConfig.md)
+        - [ListCdnDomains](English/API Reference/Domain Management/Query Domains/ListCdnDomains.md)
+      - **Start - Stop Domains**
+        - [StartCdnDomain](English/API Reference/Domain Management/Start - Stop Domains/StartCdnDomain.md)
+        - [StopCdnDomain](English/API Reference/Domain Management/Start - Stop Domains/StopCdnDomain.md)
+      - **Verify Domains**
+        - [CheckCdnDomain](English/API Reference/Domain Management/Verify Domains/CheckCdnDomain.md)
+    - **Domain Statistics**
+      - [DescribeDistrictData](English/API Reference/Domain Statistics/DescribeDistrictData.md)
+      - [DescribeDistrictRanking](English/API Reference/Domain Statistics/DescribeDistrictRanking.md)
+      - [DescribeDistrictSummary](English/API Reference/Domain Statistics/DescribeDistrictSummary.md)
+      - [DescribeEdgeData](English/API Reference/Domain Statistics/DescribeEdgeData.md)
+      - [DescribeEdgeRanking](English/API Reference/Domain Statistics/DescribeEdgeRanking.md)
+      - [DescribeEdgeStatusCodeRanking](English/API Reference/Domain Statistics/DescribeEdgeStatusCodeRanking.md)
+      - [DescribeEdgeSummary](English/API Reference/Domain Statistics/DescribeEdgeSummary.md)
+      - [DescribeOriginData](English/API Reference/Domain Statistics/DescribeOriginData.md)
+      - [DescribeOriginRanking](English/API Reference/Domain Statistics/DescribeOriginRanking.md)
+      - [DescribeOriginStatusCodeRanking](English/API Reference/Domain Statistics/DescribeOriginStatusCodeRanking.md)
+      - [DescribeOriginSummary](English/API Reference/Domain Statistics/DescribeOriginSummary.md)
+      - [DescribeStatisticalRanking](English/API Reference/Domain Statistics/DescribeStatisticalRanking.md)
+      - [DescribeUserData](English/API Reference/Domain Statistics/DescribeUserData.md)
+      - [Statistical Time Period](English/API Reference/Domain Statistics/Statistical Time Period.md)
+    - **Edge Functions**
+      - **Code**
+        - [GetScriptSourceCode](English/API Reference/Edge Functions/Code/GetScriptSourceCode.md)
+        - [GetSnapshot](English/API Reference/Edge Functions/Code/GetSnapshot.md)
+        - [GetSourceCode](English/API Reference/Edge Functions/Code/GetSourceCode.md)
+        - [ListVersions](English/API Reference/Edge Functions/Code/ListVersions.md)
+        - [UpdateSourceCode](English/API Reference/Edge Functions/Code/UpdateSourceCode.md)
+      - **Cron**
+        - [CreateCronJob](English/API Reference/Edge Functions/Cron/CreateCronJob.md)
+        - [DeleteCronJob](English/API Reference/Edge Functions/Cron/DeleteCronJob.md)
+        - [GetCronJob](English/API Reference/Edge Functions/Cron/GetCronJob.md)
+        - [ListCronJob](English/API Reference/Edge Functions/Cron/ListCronJob.md)
+        - [ListCronJobTask](English/API Reference/Edge Functions/Cron/ListCronJobTask.md)
+        - [ListCronJobTaskLog](English/API Reference/Edge Functions/Cron/ListCronJobTaskLog.md)
+        - [StartCronJob](English/API Reference/Edge Functions/Cron/StartCronJob.md)
+        - [StopCronJob](English/API Reference/Edge Functions/Cron/StopCronJob.md)
+        - [UpdateCronJob](English/API Reference/Edge Functions/Cron/UpdateCronJob.md)
+      - **Domains**
+        - [FunctionBindDomains](English/API Reference/Edge Functions/Domains/FunctionBindDomains.md)
+        - [FunctionUnBindDomains](English/API Reference/Edge Functions/Domains/FunctionUnBindDomains.md)
+        - [ListFunctionDomains](English/API Reference/Edge Functions/Domains/ListFunctionDomains.md)
+      - **Edge KV**
+        - [CreateKeyValue](English/API Reference/Edge Functions/Edge KV/CreateKeyValue.md)
+        - [CreateKvNamespace](English/API Reference/Edge Functions/Edge KV/CreateKvNamespace.md)
+        - [DeleteKvKey](English/API Reference/Edge Functions/Edge KV/DeleteKvKey.md)
+        - [DeleteKvNamespace](English/API Reference/Edge Functions/Edge KV/DeleteKvNamespace.md)
+        - [DeleteMultiKeys](English/API Reference/Edge Functions/Edge KV/DeleteMultiKeys.md)
+        - [GetKeyValue](English/API Reference/Edge Functions/Edge KV/GetKeyValue.md)
+        - [GetKvNamespace](English/API Reference/Edge Functions/Edge KV/GetKvNamespace.md)
+        - [ListKvKey](English/API Reference/Edge Functions/Edge KV/ListKvKey.md)
+        - [ListKvNamespace](English/API Reference/Edge Functions/Edge KV/ListKvNamespace.md)
+        - [UpdateKeyValue](English/API Reference/Edge Functions/Edge KV/UpdateKeyValue.md)
+        - [UpdateKvNamespace](English/API Reference/Edge Functions/Edge KV/UpdateKvNamespace.md)
+      - **Edge Nodes**
+        - [ListContinent](English/API Reference/Edge Functions/Edge Nodes/ListContinent.md)
+        - [ListContinentCluster](English/API Reference/Edge Functions/Edge Nodes/ListContinentCluster.md)
+        - [ListCountry](English/API Reference/Edge Functions/Edge Nodes/ListCountry.md)
+        - [UpdateCountryCluster](English/API Reference/Edge Functions/Edge Nodes/UpdateCountryCluster.md)
+      - **Environment Variables**
+        - [AddEnv](English/API Reference/Edge Functions/Environment Variables/AddEnv.md)
+        - [DeleteEnv](English/API Reference/Edge Functions/Environment Variables/DeleteEnv.md)
+        - [EditEnv](English/API Reference/Edge Functions/Environment Variables/EditEnv.md)
+        - [GetEnv](English/API Reference/Edge Functions/Environment Variables/GetEnv.md)
+      - **Functions**
+        - [CreateFunction](English/API Reference/Edge Functions/Functions/CreateFunction.md)
+        - [DeleteFunction](English/API Reference/Edge Functions/Functions/DeleteFunction.md)
+        - [GetFunction](English/API Reference/Edge Functions/Functions/GetFunction.md)
+        - [ListFunction](English/API Reference/Edge Functions/Functions/ListFunction.md)
+        - [UpdateFunction](English/API Reference/Edge Functions/Functions/UpdateFunction.md)
+      - **Publish**
+        - [CanaryPublish](English/API Reference/Edge Functions/Publish/CanaryPublish.md)
+        - [FullPublish](English/API Reference/Edge Functions/Publish/FullPublish.md)
+        - [SnapshotPublish](English/API Reference/Edge Functions/Publish/SnapshotPublish.md)
+      - **Release History**
+        - [GetTicket](English/API Reference/Edge Functions/Release History/GetTicket.md)
+        - [ListTicket](English/API Reference/Edge Functions/Release History/ListTicket.md)
+    - **Edge Functions (Legacy)**
+      - **Clusters**
+        - [ListContinent](English/API Reference/Edge Functions (Legacy)/Clusters/ListContinent.md)
+        - [ListContinentCluster](English/API Reference/Edge Functions (Legacy)/Clusters/ListContinentCluster.md)
+        - [ListCountry](English/API Reference/Edge Functions (Legacy)/Clusters/ListCountry.md)
+        - [UpdateCountryCluster](English/API Reference/Edge Functions (Legacy)/Clusters/UpdateCountryCluster.md)
+      - **Code**
+        - [GetScriptSourceCode](English/API Reference/Edge Functions (Legacy)/Code/GetScriptSourceCode.md)
+        - [GetSnapshot](English/API Reference/Edge Functions (Legacy)/Code/GetSnapshot.md)
+        - [GetSourceCode](English/API Reference/Edge Functions (Legacy)/Code/GetSourceCode.md)
+        - [ListVersions](English/API Reference/Edge Functions (Legacy)/Code/ListVersions.md)
+        - [UpdateSourceCode](English/API Reference/Edge Functions (Legacy)/Code/UpdateSourceCode.md)
+      - **Cron**
+        - [CreateCronJob](English/API Reference/Edge Functions (Legacy)/Cron/CreateCronJob.md)
+        - [DeleteCronJob](English/API Reference/Edge Functions (Legacy)/Cron/DeleteCronJob.md)
+        - [GetCronJob](English/API Reference/Edge Functions (Legacy)/Cron/GetCronJob.md)
+        - [ListCronJob](English/API Reference/Edge Functions (Legacy)/Cron/ListCronJob.md)
+        - [ListCronJobTask](English/API Reference/Edge Functions (Legacy)/Cron/ListCronJobTask.md)
+        - [ListCronJobTaskLog](English/API Reference/Edge Functions (Legacy)/Cron/ListCronJobTaskLog.md)
+        - [StartCronJob](English/API Reference/Edge Functions (Legacy)/Cron/StartCronJob.md)
+        - [StopCronJob](English/API Reference/Edge Functions (Legacy)/Cron/StopCronJob.md)
+        - [UpdateCronJob](English/API Reference/Edge Functions (Legacy)/Cron/UpdateCronJob.md)
+      - **Domains**
+        - [ListSparrowDomains](English/API Reference/Edge Functions (Legacy)/Domains/ListSparrowDomains.md)
+        - [SparrowBindDomains](English/API Reference/Edge Functions (Legacy)/Domains/SparrowBindDomains.md)
+        - [SparrowUnBindDomains](English/API Reference/Edge Functions (Legacy)/Domains/SparrowUnBindDomains.md)
+      - **Edge KV**
+        - [CreateKeyValue](English/API Reference/Edge Functions (Legacy)/Edge KV/CreateKeyValue.md)
+        - [CreateKvNamespace](English/API Reference/Edge Functions (Legacy)/Edge KV/CreateKvNamespace.md)
+        - [DeleteKvKey](English/API Reference/Edge Functions (Legacy)/Edge KV/DeleteKvKey.md)
+        - [DeleteKvNamespace](English/API Reference/Edge Functions (Legacy)/Edge KV/DeleteKvNamespace.md)
+        - [GetKeyValue](English/API Reference/Edge Functions (Legacy)/Edge KV/GetKeyValue.md)
+        - [GetKvNamespace](English/API Reference/Edge Functions (Legacy)/Edge KV/GetKvNamespace.md)
+        - [ListKvKey](English/API Reference/Edge Functions (Legacy)/Edge KV/ListKvKey.md)
+        - [ListKvNamespace](English/API Reference/Edge Functions (Legacy)/Edge KV/ListKvNamespace.md)
+        - [UpdateKeyValue](English/API Reference/Edge Functions (Legacy)/Edge KV/UpdateKeyValue.md)
+        - [UpdateKvNamespace](English/API Reference/Edge Functions (Legacy)/Edge KV/UpdateKvNamespace.md)
+      - **Environment Variables**
+        - [AddEnv](English/API Reference/Edge Functions (Legacy)/Environment Variables/AddEnv.md)
+        - [DeleteEnv](English/API Reference/Edge Functions (Legacy)/Environment Variables/DeleteEnv.md)
+        - [EditEnv](English/API Reference/Edge Functions (Legacy)/Environment Variables/EditEnv.md)
+        - [GetEnv](English/API Reference/Edge Functions (Legacy)/Environment Variables/GetEnv.md)
+      - **Functions**
+        - [CreateSparrow](English/API Reference/Edge Functions (Legacy)/Functions/CreateSparrow.md)
+        - [DeleteSparrow](English/API Reference/Edge Functions (Legacy)/Functions/DeleteSparrow.md)
+        - [GetSparrow](English/API Reference/Edge Functions (Legacy)/Functions/GetSparrow.md)
+        - [ListSparrow](English/API Reference/Edge Functions (Legacy)/Functions/ListSparrow.md)
+        - [UpdateSparrow](English/API Reference/Edge Functions (Legacy)/Functions/UpdateSparrow.md)
+      - **Publish**
+        - [FullPublish](English/API Reference/Edge Functions (Legacy)/Publish/FullPublish.md)
+        - [SnapshotPublish](English/API Reference/Edge Functions (Legacy)/Publish/SnapshotPublish.md)
+      - **Release History**
+        - [GetTicket](English/API Reference/Edge Functions (Legacy)/Release History/GetTicket.md)
+        - [ListTicket](English/API Reference/Edge Functions (Legacy)/Release History/ListTicket.md)
+    - **Make Requests**
+      - [API Error Codes](English/API Reference/Make Requests/API Error Codes.md)
+      - [API Responses](English/API Reference/Make Requests/API Responses.md)
+      - [BytePlus SDK](English/API Reference/Make Requests/BytePlus SDK.md)
+      - [Send API Requests](English/API Reference/Make Requests/Send API Requests.md)
+    - **Policy Management**
+      - **Delivery Policies**
+        - [CreateServiceTemplate](English/API Reference/Policy Management/Delivery Policies/CreateServiceTemplate.md)
+        - [DescribeServiceTemplate](English/API Reference/Policy Management/Delivery Policies/DescribeServiceTemplate.md)
+        - [UpdateServiceTemplate](English/API Reference/Policy Management/Delivery Policies/UpdateServiceTemplate.md)
+      - **Encryption Policies**
+        - [CreateCipherTemplate](English/API Reference/Policy Management/Encryption Policies/CreateCipherTemplate.md)
+        - [DescribeCipherTemplate](English/API Reference/Policy Management/Encryption Policies/DescribeCipherTemplate.md)
+        - [UpdateCipherTemplate](English/API Reference/Policy Management/Encryption Policies/UpdateCipherTemplate.md)
+      - **General Operations**
+        - [DeleteTemplate](English/API Reference/Policy Management/General Operations/DeleteTemplate.md)
+        - [DescribeTemplateOperations](English/API Reference/Policy Management/General Operations/DescribeTemplateOperations.md)
+        - [DescribeTemplates](English/API Reference/Policy Management/General Operations/DescribeTemplates.md)
+        - [DuplicateTemplate](English/API Reference/Policy Management/General Operations/DuplicateTemplate.md)
+        - [LockTemplate](English/API Reference/Policy Management/General Operations/LockTemplate.md)
+        - [ReleaseTemplate](English/API Reference/Policy Management/General Operations/ReleaseTemplate.md)
+      - **Policy Versions**
+        - [CreateTemplateVersion](English/API Reference/Policy Management/Policy Versions/CreateTemplateVersion.md)
+        - [DescribeTemplateReleaseVersions](English/API Reference/Policy Management/Policy Versions/DescribeTemplateReleaseVersions.md)
+        - [DescribeTemplateVersions](English/API Reference/Policy Management/Policy Versions/DescribeTemplateVersions.md)
+      - **Policy-managed Domains**
+        - [AddTemplateDomain](English/API Reference/Policy Management/Policy-managed Domains/AddTemplateDomain.md)
+        - [DescribeTemplateDomainOperations](English/API Reference/Policy Management/Policy-managed Domains/DescribeTemplateDomainOperations.md)
+        - [DescribeTemplateDomains](English/API Reference/Policy Management/Policy-managed Domains/DescribeTemplateDomains.md)
+        - [UpdateTemplateDomain](English/API Reference/Policy Management/Policy-managed Domains/UpdateTemplateDomain.md)
+      - **Rules Engine Policies**
+        - [CreateRuleEngineTemplate](English/API Reference/Policy Management/Rules Engine Policies/CreateRuleEngineTemplate.md)
+        - [DescribeRuleEngineTemplate](English/API Reference/Policy Management/Rules Engine Policies/DescribeRuleEngineTemplate.md)
+        - [UpdateRuleEngineTemplate](English/API Reference/Policy Management/Rules Engine Policies/UpdateRuleEngineTemplate.md)
+    - **Pro Settings**
+      - **Cache Sharing**
+        - [ListCacheSharedDomains](English/API Reference/Pro Settings/Cache Sharing/ListCacheSharedDomains.md)
+      - **Universal Catalog**
+        - [AddSharedConfig](English/API Reference/Pro Settings/Universal Catalog/AddSharedConfig.md)
+        - [DeleteSharedConfig](English/API Reference/Pro Settings/Universal Catalog/DeleteSharedConfig.md)
+        - [DescribeDomainShared](English/API Reference/Pro Settings/Universal Catalog/DescribeDomainShared.md)
+        - [DescribeSharedConfig](English/API Reference/Pro Settings/Universal Catalog/DescribeSharedConfig.md)
+        - [ListSharedConfig](English/API Reference/Pro Settings/Universal Catalog/ListSharedConfig.md)
+        - [UpdateSharedConfig](English/API Reference/Pro Settings/Universal Catalog/UpdateSharedConfig.md)
+    - **Tools Center**
+      - **Content Management**
+        - [DescribeContentQuota](English/API Reference/Tools Center/Content Management/DescribeContentQuota.md)
+        - [DescribeContentTasks](English/API Reference/Tools Center/Content Management/DescribeContentTasks.md)
+        - [SubmitPreloadTask](English/API Reference/Tools Center/Content Management/SubmitPreloadTask.md)
+        - [SubmitRefreshTask](English/API Reference/Tools Center/Content Management/SubmitRefreshTask.md)
+      - **Diagnostic Tools**
+        - [DescribeCdnIP](English/API Reference/Tools Center/Diagnostic Tools/DescribeCdnIP.md)
+        - [DescribeCdnRegionAndIsp](English/API Reference/Tools Center/Diagnostic Tools/DescribeCdnRegionAndIsp.md)
+      - **Log Mangement**
+        - **Log Batch Delivery**
+          - [CreateOfflineLogStoreTask](English/API Reference/Tools Center/Log Mangement/Log Batch Delivery/CreateOfflineLogStoreTask.md)
+          - [DeleteOfflineLogStoreTask](English/API Reference/Tools Center/Log Mangement/Log Batch Delivery/DeleteOfflineLogStoreTask.md)
+          - [DisableOfflineLogStoreTask](English/API Reference/Tools Center/Log Mangement/Log Batch Delivery/DisableOfflineLogStoreTask.md)
+          - [EnableOfflineLogStoreTask](English/API Reference/Tools Center/Log Mangement/Log Batch Delivery/EnableOfflineLogStoreTask.md)
+          - [ListOfflineLogStoreTask](English/API Reference/Tools Center/Log Mangement/Log Batch Delivery/ListOfflineLogStoreTask.md)
+          - [UpdateOfflineLogStoreTask](English/API Reference/Tools Center/Log Mangement/Log Batch Delivery/UpdateOfflineLogStoreTask.md)
+        - **Log Download**
+          - [DescribeCdnAccessLog](English/API Reference/Tools Center/Log Mangement/Log Download/DescribeCdnAccessLog.md)
+          - [DescribeCdnOriginLog](English/API Reference/Tools Center/Log Mangement/Log Download/DescribeCdnOriginLog.md)
+        - **Log Streaming**
+          - [CreateRealtimeLogDeliveryTask](English/API Reference/Tools Center/Log Mangement/Log Streaming/CreateRealtimeLogDeliveryTask.md)
+          - [DeleteRealtimeLogDeliveryTask](English/API Reference/Tools Center/Log Mangement/Log Streaming/DeleteRealtimeLogDeliveryTask.md)
+          - [DisableRealtimeLogDeliveryTask](English/API Reference/Tools Center/Log Mangement/Log Streaming/DisableRealtimeLogDeliveryTask.md)
+          - [EnableRealtimeLogDeliveryTask](English/API Reference/Tools Center/Log Mangement/Log Streaming/EnableRealtimeLogDeliveryTask.md)
+          - [ListRealtimeLogDeliveryTask](English/API Reference/Tools Center/Log Mangement/Log Streaming/ListRealtimeLogDeliveryTask.md)
+          - [UpdateRealtimeLogDeliveryTask](English/API Reference/Tools Center/Log Mangement/Log Streaming/UpdateRealtimeLogDeliveryTask.md)
+      - **Tag Management**
+        - [TagResources](English/API Reference/Tools Center/Tag Management/TagResources.md)
+        - [UntagResources](English/API Reference/Tools Center/Tag Management/UntagResources.md)
+  - **Guides**
+    - [AI assistant](English/Guides/AI assistant.md)
+    - [Optimize content crawling for AI agents with HTML to Markdown](English/Guides/Optimize content crawling for AI agents with HTML to Markdown.md)
+    - [Pages + Trae Work Hands-On Guide: 6 Scenarios to Turn Your Ideas into a Shareable Web Pagec](English/Guides/Pages + Trae Work Hands-On Guide: 6 Scenarios to Turn Your Ideas into a Shareable Web Page.md)
+    - **Configuration guide**
+      - [Domain configuration](English/Guides/Configuration guide/Domain configuration.md)
+      - [Domain overview](English/Guides/Configuration guide/Domain overview.md)
+      - [Policy configuration](English/Guides/Configuration guide/Policy configuration.md)
+      - [Policy overview](English/Guides/Configuration guide/Policy overview.md)
+      - [Resource Quota](English/Guides/Configuration guide/Resource Quota.md)
+      - **Authorization management**
+        - [Authorize CDN to access necessary BytePlus services](English/Guides/Configuration guide/Authorization management/Authorize CDN to access necessary BytePlus services.md)
+      - **Delivery policies**
+        - [Conditional Origins](English/Guides/Configuration guide/Delivery policies/Conditional Origins.md)
+        - [Interact with Edge Functions](English/Guides/Configuration guide/Delivery policies/Interact with Edge Functions.md)
+        - [IPv6 Origin Fetch](English/Guides/Configuration guide/Delivery policies/IPv6 Origin Fetch.md)
+        - [Origin Certificate Validation](English/Guides/Configuration guide/Delivery policies/Origin Certificate Validation.md)
+        - [Origin Host](English/Guides/Configuration guide/Delivery policies/Origin Host.md)
+        - [Origin Protocol](English/Guides/Configuration guide/Delivery policies/Origin Protocol.md)
+        - [Origin Retry Mechanism](English/Guides/Configuration guide/Delivery policies/Origin Retry Mechanism.md)
+        - [Standard Origins](English/Guides/Configuration guide/Delivery policies/Standard Origins.md)
+        - **Policy configurations**
+          - **Access Restrictions**
+            - [Access restrictions priority](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Access restrictions priority.md)
+            - [Custom Restrictions](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Custom Restrictions.md)
+            - [Geographic Restrictions](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Geographic Restrictions.md)
+            - [IP Restrictions](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/IP Restrictions.md)
+            - [Origin Restrictions](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Origin Restrictions.md)
+            - [Referer Restrictions](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Referer Restrictions.md)
+            - [Remote Authentication](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Remote Authentication.md)
+            - [UA Restrictions](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/UA Restrictions.md)
+            - **Signed URL Authentication**
+              - [Signed URL Authentication Overview](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Signed URL Authentication/Signed URL Authentication Overview.md)
+              - [Type-A](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Signed URL Authentication/Type-A.md)
+              - [Type-B](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Signed URL Authentication/Type-B.md)
+              - [Type-C](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Signed URL Authentication/Type-C.md)
+              - [Type-D](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Signed URL Authentication/Type-D.md)
+              - [Type-E](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Signed URL Authentication/Type-E.md)
+              - [Type-F](English/Guides/Configuration guide/Delivery policies/Policy configurations/Access Restrictions/Signed URL Authentication/Type-F.md)
+          - **AI Traffic Management**
+            - [Convert HTML to Markdown](English/Guides/Configuration guide/Delivery policies/Policy configurations/AI Traffic Management/Convert HTML to Markdown.md)
+          - **Caching**
+            - [Browser Caching](English/Guides/Configuration guide/Delivery policies/Policy configurations/Caching/Browser Caching.md)
+            - [Cache Key](English/Guides/Configuration guide/Delivery policies/Policy configurations/Caching/Cache Key.md)
+            - [Caching Rules](English/Guides/Configuration guide/Delivery policies/Policy configurations/Caching/Caching Rules.md)
+            - [Negative Caching](English/Guides/Configuration guide/Delivery policies/Policy configurations/Caching/Negative Caching.md)
+            - [Serve Stale](English/Guides/Configuration guide/Delivery policies/Policy configurations/Caching/Serve Stale.md)
+            - [URL Redirect](English/Guides/Configuration guide/Delivery policies/Policy configurations/Caching/URL Redirect.md)
+          - **CDN Responses**
+            - [Client Response Headers](English/Guides/Configuration guide/Delivery policies/Policy configurations/CDN Responses/Client Response Headers.md)
+            - [Custom Error Pages](English/Guides/Configuration guide/Delivery policies/Policy configurations/CDN Responses/Custom Error Pages.md)
+            - [URL Normalization](English/Guides/Configuration guide/Delivery policies/Policy configurations/CDN Responses/URL Normalization.md)
+          - **Content Optimization**
+            - [File Compression](English/Guides/Configuration guide/Delivery policies/Policy configurations/Content Optimization/File Compression.md)
+            - [File Minification](English/Guides/Configuration guide/Delivery policies/Policy configurations/Content Optimization/File Minification.md)
+            - [Video Seeking](English/Guides/Configuration guide/Delivery policies/Policy configurations/Content Optimization/Video Seeking.md)
+          - **Origin Fetch**
+            - [Origin Fetch Timeouts](English/Guides/Configuration guide/Delivery policies/Policy configurations/Origin Fetch/Origin Fetch Timeouts.md)
+            - [Origin Request Headers](English/Guides/Configuration guide/Delivery policies/Policy configurations/Origin Fetch/Origin Request Headers.md)
+            - [Origin Request Parameters](English/Guides/Configuration guide/Delivery policies/Policy configurations/Origin Fetch/Origin Request Parameters.md)
+            - [Origin Response Headers](English/Guides/Configuration guide/Delivery policies/Policy configurations/Origin Fetch/Origin Response Headers.md)
+            - [Origin Retry](English/Guides/Configuration guide/Delivery policies/Policy configurations/Origin Fetch/Origin Retry.md)
+            - [Origin SNI](English/Guides/Configuration guide/Delivery policies/Policy configurations/Origin Fetch/Origin SNI.md)
+            - [Origin URL Rewrite](English/Guides/Configuration guide/Delivery policies/Policy configurations/Origin Fetch/Origin URL Rewrite.md)
+            - [Range Origin Fetch](English/Guides/Configuration guide/Delivery policies/Policy configurations/Origin Fetch/Range Origin Fetch.md)
+            - [Redirect Follow](English/Guides/Configuration guide/Delivery policies/Policy configurations/Origin Fetch/Redirect Follow.md)
+          - **Performance Optimization**
+            - [Origin Keep-Alive](English/Guides/Configuration guide/Delivery policies/Policy configurations/Performance Optimization/Origin Keep-Alive.md)
+            - [Smart Routing](English/Guides/Configuration guide/Delivery policies/Policy configurations/Performance Optimization/Smart Routing.md)
+          - **Protocols and Methods**
+            - [Disabled HTTP Methods](English/Guides/Configuration guide/Delivery policies/Policy configurations/Protocols and Methods/Disabled HTTP Methods.md)
+            - [IPv6](English/Guides/Configuration guide/Delivery policies/Policy configurations/Protocols and Methods/IPv6.md)
+            - [PROXY Protocol](English/Guides/Configuration guide/Delivery policies/Policy configurations/Protocols and Methods/PROXY Protocol.md)
+            - [Server-Sent Events (SSE)](English/Guides/Configuration guide/Delivery policies/Policy configurations/Protocols and Methods/Server-Sent Events (SSE).md)
+            - [WebSocket](English/Guides/Configuration guide/Delivery policies/Policy configurations/Protocols and Methods/WebSocket.md)
+          - **Rate Limiting**
+            - [Data Rate Limiting](English/Guides/Configuration guide/Delivery policies/Policy configurations/Rate Limiting/Data Rate Limiting.md)
+            - [Request Rate Limiting](English/Guides/Configuration guide/Delivery policies/Policy configurations/Rate Limiting/Request Rate Limiting.md)
+      - **Edge Functions**
+        - [Activate Edge Functions](English/Guides/Configuration guide/Edge Functions/Activate Edge Functions.md)
+        - [Billing for Edge Functions](English/Guides/Configuration guide/Edge Functions/Billing for Edge Functions.md)
+        - [Concepts](English/Guides/Configuration guide/Edge Functions/Concepts.md)
+        - [Edge Functions Overview](English/Guides/Configuration guide/Edge Functions/Edge Functions Overview.md)
+        - [FAQ](English/Guides/Configuration guide/Edge Functions/FAQ.md)
+        - [Get Started With Edge Functions](English/Guides/Configuration guide/Edge Functions/Get Started With Edge Functions.md)
+        - [How It Works](English/Guides/Configuration guide/Edge Functions/How It Works.md)
+        - [Usage Limits](English/Guides/Configuration guide/Edge Functions/Usage Limits.md)
+        - **CLI Guides**
+          - [CLI Overview](English/Guides/Configuration guide/Edge Functions/CLI Guides/CLI Overview.md)
+          - [CLI Release Notes](English/Guides/Configuration guide/Edge Functions/CLI Guides/CLI Release Notes.md)
+          - [Create a Function Using Function Templates](English/Guides/Configuration guide/Edge Functions/CLI Guides/Create a Function Using Function Templates.md)
+          - [Create an OPA Function Project](English/Guides/Configuration guide/Edge Functions/CLI Guides/Create an OPA Function Project.md)
+          - [Host a Static Website with CLI](English/Guides/Configuration guide/Edge Functions/CLI Guides/Host a Static Website with CLI.md)
+          - [Install the CLI](English/Guides/Configuration guide/Edge Functions/CLI Guides/Install the CLI.md)
+          - [Quickstart: Use CLI to Create and Publish a Function](English/Guides/Configuration guide/Edge Functions/CLI Guides/Quickstart: Use CLI to Create and Publish a Function.md)
+          - [Quickstart: Use CLI to Manage Edge KV](English/Guides/Configuration guide/Edge Functions/CLI Guides/Quickstart: Use CLI to Manage Edge KV.md)
+          - [Set Your Access Key ID and Secret Access Key](English/Guides/Configuration guide/Edge Functions/CLI Guides/Set Your Access Key ID and Secret Access Key.md)
+          - **Command Reference**
+            - [CLI Command List](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/CLI Command List.md)
+            - **Edge KV**
+              - [nest kv](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Edge KV/nest kv.md)
+            - **Functions**
+              - [nest init](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/nest init.md)
+              - **Debug Function Code**
+                - [nest debug](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Debug Function Code/nest debug.md)
+                - [nest start](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Debug Function Code/nest start.md)
+              - **Function Configuration**
+                - [nest canary](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Function Configuration/nest canary.md)
+                - [nest envs](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Function Configuration/nest envs.md)
+              - **Manage Functions**
+                - [nest deploy](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Manage Functions/nest deploy.md)
+                - [nest functions](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Manage Functions/nest functions.md)
+                - [nest upload](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Manage Functions/nest upload.md)
+              - **Release History**
+                - [nest rollback](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Release History/nest rollback.md)
+                - [nest tickets](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Release History/nest tickets.md)
+                - [nest versions](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Release History/nest versions.md)
+              - **Triggers**
+                - [nest cron](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Triggers/nest cron.md)
+                - [nest domain](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Functions/Triggers/nest domain.md)
+            - **Global Parameters**
+              - [--config](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Global Parameters/--config.md)
+              - [--function](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Global Parameters/--function.md)
+              - [--help](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Global Parameters/--help.md)
+              - [--verbose](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Global Parameters/--verbose.md)
+            - **Pages**
+              - [nest pages](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Pages/nest pages.md)
+            - **Utility Tools**
+              - [nest config](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Utility Tools/nest config.md)
+              - [nest help](English/Guides/Configuration guide/Edge Functions/CLI Guides/Command Reference/Utility Tools/nest help.md)
+        - **Console Guides**
+          - **Edge KV**
+            - [Get Started With Edge KV](English/Guides/Configuration guide/Edge Functions/Console Guides/Edge KV/Get Started With Edge KV.md)
+            - [Manage Data](English/Guides/Configuration guide/Edge Functions/Console Guides/Edge KV/Manage Data.md)
+            - [Manage Namespaces](English/Guides/Configuration guide/Edge Functions/Console Guides/Edge KV/Manage Namespaces.md)
+          - **Functions**
+            - [Edit and Debug Function Code](English/Guides/Configuration guide/Edge Functions/Console Guides/Functions/Edit and Debug Function Code.md)
+            - [Manage Functions](English/Guides/Configuration guide/Edge Functions/Console Guides/Functions/Manage Functions.md)
+            - [Release History](English/Guides/Configuration guide/Edge Functions/Console Guides/Functions/Release History.md)
+            - [Use AI Assistant to Edit Function Code](English/Guides/Configuration guide/Edge Functions/Console Guides/Functions/Use AI Assistant to Edit Function Code.md)
+            - [View Function Metrics](English/Guides/Configuration guide/Edge Functions/Console Guides/Functions/View Function Metrics.md)
+            - **Settings**
+              - [Canary Environment](English/Guides/Configuration guide/Edge Functions/Console Guides/Functions/Settings/Canary Environment.md)
+              - [Environment Variables](English/Guides/Configuration guide/Edge Functions/Console Guides/Functions/Settings/Environment Variables.md)
+            - **Triggers**
+              - [Cron Triggers](English/Guides/Configuration guide/Edge Functions/Console Guides/Functions/Triggers/Cron Triggers.md)
+              - [Domain Triggers](English/Guides/Configuration guide/Edge Functions/Console Guides/Functions/Triggers/Domain Triggers.md)
+          - **Pages**
+            - [Create a Pages Project](English/Guides/Configuration guide/Edge Functions/Console Guides/Pages/Create a Pages Project.md)
+            - [Introduction to Pages](English/Guides/Configuration guide/Edge Functions/Console Guides/Pages/Introduction to Pages.md)
+            - [Manage Projects and Deployments](English/Guides/Configuration guide/Edge Functions/Console Guides/Pages/Manage Projects and Deployments.md)
+            - [Preview and Custom Domains](English/Guides/Configuration guide/Edge Functions/Console Guides/Pages/Preview and Custom Domains.md)
+            - [Use Pages Functions](English/Guides/Configuration guide/Edge Functions/Console Guides/Pages/Use Pages Functions.md)
+            - [Use Pages Templates](English/Guides/Configuration guide/Edge Functions/Console Guides/Pages/Use Pages Templates.md)
+        - **MCP Server Guide**
+          - [MCP Server Overview](English/Guides/Configuration guide/Edge Functions/MCP Server Guide/MCP Server Overview.md)
+          - [Use the Edge Functions MCP Server](English/Guides/Configuration guide/Edge Functions/MCP Server Guide/Use the Edge Functions MCP Server.md)
+        - **Runtime APIs**
+          - [addEventListener()](English/Guides/Configuration guide/Edge Functions/Runtime APIs/addEventListener().md)
+          - [createHtmlStream()](English/Guides/Configuration guide/Edge Functions/Runtime APIs/createHtmlStream().md)
+          - [CronEvent](English/Guides/Configuration guide/Edge Functions/Runtime APIs/CronEvent.md)
+          - [FetchEvent](English/Guides/Configuration guide/Edge Functions/Runtime APIs/FetchEvent.md)
+          - [HTTP Response Codes](English/Guides/Configuration guide/Edge Functions/Runtime APIs/HTTP Response Codes.md)
+          - [KV](English/Guides/Configuration guide/Edge Functions/Runtime APIs/KV.md)
+          - [Runtime API Overview](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Runtime API Overview.md)
+          - [Streams API](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Streams API.md)
+          - [Web Standards API](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Web Standards API.md)
+          - **Fetch API**
+            - [fetch()](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Fetch API/fetch().md)
+            - [Headers](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Fetch API/Headers.md)
+            - [Request](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Fetch API/Request.md)
+            - [Response](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Fetch API/Response.md)
+            - [What is Fetch API](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Fetch API/What is Fetch API.md)
+          - **net**
+            - [dns](English/Guides/Configuration guide/Edge Functions/Runtime APIs/net/dns.md)
+          - **Web Crypto API**
+            - [digest()](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Web Crypto API/digest().md)
+            - [encrypt()/decrypt()](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Web Crypto API/encrypt() - decrypt().md)
+            - [importKey()/exportKey()/generateKey()](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Web Crypto API/importKey() - exportKey() - generateKey().md)
+            - [sign()/verify()](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Web Crypto API/sign() - verify().md)
+            - [Supported Algorithms](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Web Crypto API/Supported Algorithms.md)
+            - [What is Web Crypto API](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Web Crypto API/What is Web Crypto API.md)
+          - **Web Crypto Streams API**
+            - [DigestStream](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Web Crypto Streams API/DigestStream.md)
+            - [Supported Algorithms](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Web Crypto Streams API/Supported Algorithms.md)
+            - [What is Web Crypto Streams API](English/Guides/Configuration guide/Edge Functions/Runtime APIs/Web Crypto Streams API/What is Web Crypto Streams API.md)
+        - **Sample Code**
+          - [Accelerate Website by Deferring JavaScript Loading](English/Guides/Configuration guide/Edge Functions/Sample Code/Accelerate Website by Deferring JavaScript Loading.md)
+          - [Add Custom Request Headers Based on User-Agent](English/Guides/Configuration guide/Edge Functions/Sample Code/Add Custom Request Headers Based on User-Agent.md)
+          - [Bypass CDN Cache Based on Cookie](English/Guides/Configuration guide/Edge Functions/Sample Code/Bypass CDN Cache Based on Cookie.md)
+          - [Cookie-based A/B Testing](English/Guides/Configuration guide/Edge Functions/Sample Code/Cookie-based A - B Testing.md)
+          - [Cookie-based Caching](English/Guides/Configuration guide/Edge Functions/Sample Code/Cookie-based Caching.md)
+          - [CORS Proxy](English/Guides/Configuration guide/Edge Functions/Sample Code/CORS Proxy.md)
+          - [JWT Authentication](English/Guides/Configuration guide/Edge Functions/Sample Code/JWT Authentication.md)
+          - [Modify HTTP Request Headers or Response Headers](English/Guides/Configuration guide/Edge Functions/Sample Code/Modify HTTP Request Headers or Response Headers.md)
+          - [Overview](English/Guides/Configuration guide/Edge Functions/Sample Code/Overview.md)
+          - [Redirect HTTP Requests to HTTPS Requests](English/Guides/Configuration guide/Edge Functions/Sample Code/Redirect HTTP Requests to HTTPS Requests.md)
+          - [Redirect URLs](English/Guides/Configuration guide/Edge Functions/Sample Code/Redirect URLs.md)
+          - [Retrieve and Process JSON](English/Guides/Configuration guide/Edge Functions/Sample Code/Retrieve and Process JSON.md)
+          - [Retrieve Weather Data Based on User Geolocation](English/Guides/Configuration guide/Edge Functions/Sample Code/Retrieve Weather Data Based on User Geolocation.md)
+          - [Return a Custom Error Page](English/Guides/Configuration guide/Edge Functions/Sample Code/Return a Custom Error Page.md)
+          - [Return an HTML page](English/Guides/Configuration guide/Edge Functions/Sample Code/Return an HTML page.md)
+          - [Return JSON](English/Guides/Configuration guide/Edge Functions/Sample Code/Return JSON.md)
+          - [Stream a Rewritten HTML Page as Response](English/Guides/Configuration guide/Edge Functions/Sample Code/Stream a Rewritten HTML Page as Response.md)
+          - [Stream Aggregated Requests and Responses](English/Guides/Configuration guide/Edge Functions/Sample Code/Stream Aggregated Requests and Responses.md)
+          - [Stream Multiple Files as a Single Response](English/Guides/Configuration guide/Edge Functions/Sample Code/Stream Multiple Files as a Single Response.md)
+          - [Verify HMAC-SHA256 Signature of a Token](English/Guides/Configuration guide/Edge Functions/Sample Code/Verify HMAC-SHA256 Signature of a Token.md)
+          - [Website Fallback By Caching Static Pages](English/Guides/Configuration guide/Edge Functions/Sample Code/Website Fallback By Caching Static Pages.md)
+      - **Metrics**
+        - [AI Crawler Traffic Monitoring](English/Guides/Configuration guide/Metrics/AI Crawler Traffic Monitoring.md)
+        - [Edge Report](English/Guides/Configuration guide/Metrics/Edge Report.md)
+        - [Insights](English/Guides/Configuration guide/Metrics/Insights.md)
+        - [Metrics Reference](English/Guides/Configuration guide/Metrics/Metrics Reference.md)
+        - [Origin Report](English/Guides/Configuration guide/Metrics/Origin Report.md)
+        - [Popular Objects](English/Guides/Configuration guide/Metrics/Popular Objects.md)
+        - [Report Subscriptions](English/Guides/Configuration guide/Metrics/Report Subscriptions.md)
+        - [Statistical Time Period](English/Guides/Configuration guide/Metrics/Statistical Time Period.md)
+        - [Traffic Hit Ratio](English/Guides/Configuration guide/Metrics/Traffic Hit Ratio.md)
+      - **Pro settings**
+        - [Cache Sharing](English/Guides/Configuration guide/Pro settings/Cache Sharing.md)
+        - [Rules Engine](English/Guides/Configuration guide/Pro settings/Rules Engine.md)
+        - [Universal Catalog](English/Guides/Configuration guide/Pro settings/Universal Catalog.md)
+      - **Security center**
+        - [CDN-Hosted Certificates](English/Guides/Configuration guide/Security center/CDN-Hosted Certificates.md)
+        - [WAF protection](English/Guides/Configuration guide/Security center/WAF protection.md)
+        - **Certificate Center**
+          - [Associate domain name with certificate](English/Guides/Configuration guide/Security center/Certificate Center/Associate domain name with certificate.md)
+          - [Certificate Center overview](English/Guides/Configuration guide/Security center/Certificate Center/Certificate Center overview.md)
+          - [Upload certificates](English/Guides/Configuration guide/Security center/Certificate Center/Upload certificates.md)
+        - **DDoS protection**
+          - [Create an Advanced DDoS Protection instance](English/Guides/Configuration guide/Security center/DDoS protection/Create an Advanced DDoS Protection instance.md)
+          - [DDoS protection levels](English/Guides/Configuration guide/Security center/DDoS protection/DDoS protection levels.md)
+          - [DDoS protection overview](English/Guides/Configuration guide/Security center/DDoS protection/DDoS protection overview.md)
+          - [Manage protected domains](English/Guides/Configuration guide/Security center/DDoS protection/Manage protected domains.md)
+          - [Monitoring and alerting](English/Guides/Configuration guide/Security center/DDoS protection/Monitoring and alerting.md)
+          - [Renew an instance](English/Guides/Configuration guide/Security center/DDoS protection/Renew an instance.md)
+          - [Upgrade an instance](English/Guides/Configuration guide/Security center/DDoS protection/Upgrade an instance.md)
+        - **Encryption policies**
+          - **Policy configurations**
+            - **Protocols**
+              - [HTTP/2](English/Guides/Configuration guide/Security center/Encryption policies/Policy configurations/Protocols/HTTP - 2.md)
+              - [HTTP/3 (QUIC)](English/Guides/Configuration guide/Security center/Encryption policies/Policy configurations/Protocols/HTTP - 3 (QUIC).md)
+              - [Protocol Redirect](English/Guides/Configuration guide/Security center/Encryption policies/Policy configurations/Protocols/Protocol Redirect.md)
+            - **SSL - TLS**
+              - [HSTS](English/Guides/Configuration guide/Security center/Encryption policies/Policy configurations/SSL - TLS/HSTS.md)
+              - [Mutual TLS](English/Guides/Configuration guide/Security center/Encryption policies/Policy configurations/SSL - TLS/Mutual TLS.md)
+              - [OCSP Stapling](English/Guides/Configuration guide/Security center/Encryption policies/Policy configurations/SSL - TLS/OCSP Stapling.md)
+              - [TLS Versions](English/Guides/Configuration guide/Security center/Encryption policies/Policy configurations/SSL - TLS/TLS Versions.md)
+      - **Tools center**
+        - [Diagnostic tools](English/Guides/Configuration guide/Tools center/Diagnostic tools.md)
+        - [Manage Chinese Mainland Optimization Accelerators](English/Guides/Configuration guide/Tools center/Manage Chinese Mainland Optimization Accelerators.md)
+        - [URL Blocking and Unblocking](English/Guides/Configuration guide/Tools center/URL Blocking and Unblocking.md)
+        - [Usage Cap](English/Guides/Configuration guide/Tools center/Usage Cap.md)
+        - **Logs**
+          - [Log batch delivery](English/Guides/Configuration guide/Tools center/Logs/Log batch delivery.md)
+          - [Log download](English/Guides/Configuration guide/Tools center/Logs/Log download.md)
+          - [Logs  overview](English/Guides/Configuration guide/Tools center/Logs/Logs overview.md)
+          - **Log streaming**
+            - [Index configuration](English/Guides/Configuration guide/Tools center/Logs/Log streaming/Index configuration.md)
+            - [Log query examples](English/Guides/Configuration guide/Tools center/Logs/Log streaming/Log query examples.md)
+            - [Log streaming overview](English/Guides/Configuration guide/Tools center/Logs/Log streaming/Log streaming overview.md)
+            - [Task configuration](English/Guides/Configuration guide/Tools center/Logs/Log streaming/Task configuration.md)
+        - **Purge and prefetch**
+          - [Cache purge](English/Guides/Configuration guide/Tools center/Purge and prefetch/Cache purge.md)
+          - [Origin prefetch](English/Guides/Configuration guide/Tools center/Purge and prefetch/Origin prefetch.md)
+          - [Submitted Tasks](English/Guides/Configuration guide/Tools center/Purge and prefetch/Submitted Tasks.md)
+    - **FAQ**
+      - [Billing](English/Guides/FAQ/Billing.md)
+      - [Domain Configuration](English/Guides/FAQ/Domain Configuration.md)
+      - [Purge and prefetch](English/Guides/FAQ/Purge and prefetch.md)
+    - **Overview**
+      - [Basic concepts](English/Guides/Overview/Basic concepts.md)
+      - [Overview of BytePlus CDN](English/Guides/Overview/Overview of BytePlus CDN.md)
+    - **Pricing**
+      - [CDN Traffic Theft Risk](English/Guides/Pricing/CDN Traffic Theft Risk.md)
+      - [Pricing](English/Guides/Pricing/Pricing.md)
+    - **Quickstarts**
+      - [Activate CDN](English/Guides/Quickstarts/Activate CDN.md)
+      - [Add your domain name](English/Guides/Quickstarts/Add your domain name.md)
+      - [Configure hosts file to test your domain name](English/Guides/Quickstarts/Configure hosts file to test your domain name.md)
+      - [Overview](English/Guides/Quickstarts/Overview.md)
+      - [Set up CNAME](English/Guides/Quickstarts/Set up CNAME.md)
+      - [Set up delivery policy and origin](English/Guides/Quickstarts/Set up delivery policy and origin.md)
+      - [Upload certificate](English/Guides/Quickstarts/Upload certificate.md)
+    - **Updates and annoucements**
+      - [\[Important\] Change in Let's Encrypt Certificate Chain](English/Guides/Updates and annoucements/[Important] Change in Let's Encrypt Certificate Chain.md)
+      - [Announcements](English/Guides/Updates and annoucements/Announcements.md)
+  - **Learning Path**
+    - [API](English/Learning Path/API.md)
+    - [Console](English/Learning Path/Console.md)
+- **Service Agreements**
+  - [BytePlus Terms of Service](Service Agreements/BytePlus Terms of Service.md)
+  - [SLA for BytePlus CDN Service](Service Agreements/SLA for BytePlus CDN Service.md)
+- **日本語**
+  - **APIリファレンス**
+    - **APIリクエストの作成**
+      - [APIエラーコード](日本語/APIリファレンス/APIリクエストの作成/APIエラーコード.md)
+      - [APIリクエストの送信](日本語/APIリファレンス/APIリクエストの作成/APIリクエストの送信.md)
+      - [APIレスポンス](日本語/APIリファレンス/APIリクエストの作成/APIレスポンス.md)
+      - [BytePlus SDK](日本語/APIリファレンス/APIリクエストの作成/BytePlus SDK.md)
+    - **エッジ関数**
+      - **Cronトリガー**
+        - [CreateCronJob](日本語/APIリファレンス/エッジ関数/Cronトリガー/CreateCronJob.md)
+        - [DeleteCronJob](日本語/APIリファレンス/エッジ関数/Cronトリガー/DeleteCronJob.md)
+        - [GetCronJob](日本語/APIリファレンス/エッジ関数/Cronトリガー/GetCronJob.md)
+        - [ListCronJob](日本語/APIリファレンス/エッジ関数/Cronトリガー/ListCronJob.md)
+        - [ListCronJobTask](日本語/APIリファレンス/エッジ関数/Cronトリガー/ListCronJobTask.md)
+        - [ListCronJobTaskLog](日本語/APIリファレンス/エッジ関数/Cronトリガー/ListCronJobTaskLog.md)
+        - [StartCronJob](日本語/APIリファレンス/エッジ関数/Cronトリガー/StartCronJob.md)
+        - [StopCronJob](日本語/APIリファレンス/エッジ関数/Cronトリガー/StopCronJob.md)
+        - [UpdateCronJob](日本語/APIリファレンス/エッジ関数/Cronトリガー/UpdateCronJob.md)
+      - **エッジKV**
+        - [CreateKeyValue](日本語/APIリファレンス/エッジ関数/エッジKV/CreateKeyValue.md)
+        - [CreateKvNamespace](日本語/APIリファレンス/エッジ関数/エッジKV/CreateKvNamespace.md)
+        - [DeleteKvKey](日本語/APIリファレンス/エッジ関数/エッジKV/DeleteKvKey.md)
+        - [DeleteKvNamespace](日本語/APIリファレンス/エッジ関数/エッジKV/DeleteKvNamespace.md)
+        - [DeleteMultiKeys](日本語/APIリファレンス/エッジ関数/エッジKV/DeleteMultiKeys.md)
+        - [GetKeyValue](日本語/APIリファレンス/エッジ関数/エッジKV/GetKeyValue.md)
+        - [GetKvNamespace](日本語/APIリファレンス/エッジ関数/エッジKV/GetKvNamespace.md)
+        - [ListKvKey](日本語/APIリファレンス/エッジ関数/エッジKV/ListKvKey.md)
+        - [ListKvNamespace](日本語/APIリファレンス/エッジ関数/エッジKV/ListKvNamespace.md)
+        - [UpdateKeyValue](日本語/APIリファレンス/エッジ関数/エッジKV/UpdateKeyValue.md)
+        - [UpdateKvNamespace](日本語/APIリファレンス/エッジ関数/エッジKV/UpdateKvNamespace.md)
+      - **カナリア環境**
+        - [ListContinent](日本語/APIリファレンス/エッジ関数/カナリア環境/ListContinent.md)
+        - [ListContinentCluster](日本語/APIリファレンス/エッジ関数/カナリア環境/ListContinentCluster.md)
+        - [ListCountry](日本語/APIリファレンス/エッジ関数/カナリア環境/ListCountry.md)
+        - [UpdateCountryCluster](日本語/APIリファレンス/エッジ関数/カナリア環境/UpdateCountryCluster.md)
+      - **コード**
+        - [GetScriptSourceCode](日本語/APIリファレンス/エッジ関数/コード/GetScriptSourceCode.md)
+        - [GetSnapshot](日本語/APIリファレンス/エッジ関数/コード/GetSnapshot.md)
+        - [GetSourceCode](日本語/APIリファレンス/エッジ関数/コード/GetSourceCode.md)
+        - [ListVersions](日本語/APIリファレンス/エッジ関数/コード/ListVersions.md)
+        - [UpdateSourceCode](日本語/APIリファレンス/エッジ関数/コード/UpdateSourceCode.md)
+      - **ドメイン名**
+        - [FunctionBindDomains](日本語/APIリファレンス/エッジ関数/ドメイン名/FunctionBindDomains.md)
+        - [FunctionUnBindDomains](日本語/APIリファレンス/エッジ関数/ドメイン名/FunctionUnBindDomains.md)
+        - [ListFunctionDomains](日本語/APIリファレンス/エッジ関数/ドメイン名/ListFunctionDomains.md)
+      - **リリース**
+        - [CanaryPublish](日本語/APIリファレンス/エッジ関数/リリース/CanaryPublish.md)
+        - [FullPublish](日本語/APIリファレンス/エッジ関数/リリース/FullPublish.md)
+        - [SnapshotPublish](日本語/APIリファレンス/エッジ関数/リリース/SnapshotPublish.md)
+      - **リリース履歴**
+        - [GetTicket](日本語/APIリファレンス/エッジ関数/リリース履歴/GetTicket.md)
+        - [ListTicket](日本語/APIリファレンス/エッジ関数/リリース履歴/ListTicket.md)
+      - **環境変数**
+        - [AddEnv](日本語/APIリファレンス/エッジ関数/環境変数/AddEnv.md)
+        - [DeleteEnv](日本語/APIリファレンス/エッジ関数/環境変数/DeleteEnv.md)
+        - [EditEnv](日本語/APIリファレンス/エッジ関数/環境変数/EditEnv.md)
+        - [GetEnv](日本語/APIリファレンス/エッジ関数/環境変数/GetEnv.md)
+      - **関数**
+        - [CreateFunction](日本語/APIリファレンス/エッジ関数/関数/CreateFunction.md)
+        - [DeleteFunction](日本語/APIリファレンス/エッジ関数/関数/DeleteFunction.md)
+        - [GetFunction](日本語/APIリファレンス/エッジ関数/関数/GetFunction.md)
+        - [ListFunction](日本語/APIリファレンス/エッジ関数/関数/ListFunction.md)
+        - [UpdateFunction](日本語/APIリファレンス/エッジ関数/関数/UpdateFunction.md)
+    - **ツールセンター**
+      - **コンテンツ管理**
+        - [DescribeContentQuota](日本語/APIリファレンス/ツールセンター/コンテンツ管理/DescribeContentQuota.md)
+        - [DescribeContentTasks](日本語/APIリファレンス/ツールセンター/コンテンツ管理/DescribeContentTasks.md)
+        - [SubmitPreloadTask](日本語/APIリファレンス/ツールセンター/コンテンツ管理/SubmitPreloadTask.md)
+        - [SubmitRefreshTask](日本語/APIリファレンス/ツールセンター/コンテンツ管理/SubmitRefreshTask.md)
+      - **タグ管理**
+        - [TagResources](日本語/APIリファレンス/ツールセンター/タグ管理/TagResources.md)
+        - [UntagResources](日本語/APIリファレンス/ツールセンター/タグ管理/UntagResources.md)
+      - **ログ管理**
+        - **オフラインログ転送**
+          - [CreateOfflineLogStoreTask](日本語/APIリファレンス/ツールセンター/ログ管理/オフラインログ転送/CreateOfflineLogStoreTask.md)
+          - [DeleteOfflineLogStoreTask](日本語/APIリファレンス/ツールセンター/ログ管理/オフラインログ転送/DeleteOfflineLogStoreTask.md)
+          - [DisableOfflineLogStoreTask](日本語/APIリファレンス/ツールセンター/ログ管理/オフラインログ転送/DisableOfflineLogStoreTask.md)
+          - [EnableOfflineLogStoreTask](日本語/APIリファレンス/ツールセンター/ログ管理/オフラインログ転送/EnableOfflineLogStoreTask.md)
+          - [ListOfflineLogStoreTask](日本語/APIリファレンス/ツールセンター/ログ管理/オフラインログ転送/ListOfflineLogStoreTask.md)
+          - [UpdateOfflineLogStoreTask](日本語/APIリファレンス/ツールセンター/ログ管理/オフラインログ転送/UpdateOfflineLogStoreTask.md)
+        - **リアルタイムログ**
+          - [CreateRealtimeLogDeliveryTask](日本語/APIリファレンス/ツールセンター/ログ管理/リアルタイムログ/CreateRealtimeLogDeliveryTask.md)
+          - [DeleteRealtimeLogDeliveryTask](日本語/APIリファレンス/ツールセンター/ログ管理/リアルタイムログ/DeleteRealtimeLogDeliveryTask.md)
+          - [DisableRealtimeLogDeliveryTask](日本語/APIリファレンス/ツールセンター/ログ管理/リアルタイムログ/DisableRealtimeLogDeliveryTask.md)
+          - [EnableRealtimeLogDeliveryTask](日本語/APIリファレンス/ツールセンター/ログ管理/リアルタイムログ/EnableRealtimeLogDeliveryTask.md)
+          - [ListRealtimeLogDeliveryTask](日本語/APIリファレンス/ツールセンター/ログ管理/リアルタイムログ/ListRealtimeLogDeliveryTask.md)
+          - [UpdateRealtimeLogDeliveryTask](日本語/APIリファレンス/ツールセンター/ログ管理/リアルタイムログ/UpdateRealtimeLogDeliveryTask.md)
+      - **診断ツール**
+        - [DescribeCdnIP](日本語/APIリファレンス/ツールセンター/診断ツール/DescribeCdnIP.md)
+        - [DescribeCdnRegionAndIsp](日本語/APIリファレンス/ツールセンター/診断ツール/DescribeCdnRegionAndIsp.md)
+    - **ドメイン名管理**
+      - **ドメイン名の実行と停止**
+        - [StartCdnDomain](日本語/APIリファレンス/ドメイン名管理/ドメイン名の実行と停止/StartCdnDomain.md)
+        - [StopCdnDomain](日本語/APIリファレンス/ドメイン名管理/ドメイン名の実行と停止/StopCdnDomain.md)
+      - **ドメイン名の情報**
+        - [DescribeCdnConfig](日本語/APIリファレンス/ドメイン名管理/ドメイン名の情報/DescribeCdnConfig.md)
+        - [ListCdnDomains](日本語/APIリファレンス/ドメイン名管理/ドメイン名の情報/ListCdnDomains.md)
+      - **ドメイン名の検証**
+        - [CheckCdnDomain](日本語/APIリファレンス/ドメイン名管理/ドメイン名の検証/CheckCdnDomain.md)
+      - **ドメイン名の追加と削除**
+        - [AddCdnDomain](日本語/APIリファレンス/ドメイン名管理/ドメイン名の追加と削除/AddCdnDomain.md)
+        - [DeleteCdnDomain](日本語/APIリファレンス/ドメイン名管理/ドメイン名の追加と削除/DeleteCdnDomain.md)
+      - **ドメイン名設定**
+        - [BatchUpdateCdnConfig](日本語/APIリファレンス/ドメイン名管理/ドメイン名設定/BatchUpdateCdnConfig.md)
+        - [UpdateCdnConfig](日本語/APIリファレンス/ドメイン名管理/ドメイン名設定/UpdateCdnConfig.md)
+    - **ポリシー管理**
+      - **ポリシーバージョン**
+        - [CreateTemplateVersion](日本語/APIリファレンス/ポリシー管理/ポリシーバージョン/CreateTemplateVersion.md)
+        - [DescribeTemplateReleaseVersions](日本語/APIリファレンス/ポリシー管理/ポリシーバージョン/DescribeTemplateReleaseVersions.md)
+        - [DescribeTemplateVersions](日本語/APIリファレンス/ポリシー管理/ポリシーバージョン/DescribeTemplateVersions.md)
+      - **ポリシー付きドメイン名**
+        - [AddTemplateDomain](日本語/APIリファレンス/ポリシー管理/ポリシー付きドメイン名/AddTemplateDomain.md)
+        - [DescribeTemplateDomainOperations](日本語/APIリファレンス/ポリシー管理/ポリシー付きドメイン名/DescribeTemplateDomainOperations.md)
+        - [DescribeTemplateDomains](日本語/APIリファレンス/ポリシー管理/ポリシー付きドメイン名/DescribeTemplateDomains.md)
+        - [DescribeTemplateOperations](日本語/APIリファレンス/ポリシー管理/ポリシー付きドメイン名/DescribeTemplateOperations.md)
+        - [UpdateTemplateDomain](日本語/APIリファレンス/ポリシー管理/ポリシー付きドメイン名/UpdateTemplateDomain.md)
+      - **ルールエンジンポリシー**
+        - [CreateRuleEngineTemplate](日本語/APIリファレンス/ポリシー管理/ルールエンジンポリシー/CreateRuleEngineTemplate.md)
+        - [DescribeRuleEngineTemplate](日本語/APIリファレンス/ポリシー管理/ルールエンジンポリシー/DescribeRuleEngineTemplate.md)
+        - [UpdateRuleEngineTemplate](日本語/APIリファレンス/ポリシー管理/ルールエンジンポリシー/UpdateRuleEngineTemplate.md)
+      - **暗号化ポリシー**
+        - [CreateCipherTemplate](日本語/APIリファレンス/ポリシー管理/暗号化ポリシー/CreateCipherTemplate.md)
+        - [DescribeCipherTemplate](日本語/APIリファレンス/ポリシー管理/暗号化ポリシー/DescribeCipherTemplate.md)
+        - [UpdateCipherTemplate](日本語/APIリファレンス/ポリシー管理/暗号化ポリシー/UpdateCipherTemplate.md)
+      - **汎用操作**
+        - [DeleteTemplate](日本語/APIリファレンス/ポリシー管理/汎用操作/DeleteTemplate.md)
+        - [DescribeTemplates](日本語/APIリファレンス/ポリシー管理/汎用操作/DescribeTemplates.md)
+        - [DuplicateTemplate](日本語/APIリファレンス/ポリシー管理/汎用操作/DuplicateTemplate.md)
+        - [LockTemplate](日本語/APIリファレンス/ポリシー管理/汎用操作/LockTemplate.md)
+        - [ReleaseTemplate](日本語/APIリファレンス/ポリシー管理/汎用操作/ReleaseTemplate.md)
+      - **配信ポリシー**
+        - [CreateServiceTemplate](日本語/APIリファレンス/ポリシー管理/配信ポリシー/CreateServiceTemplate.md)
+        - [DescribeServiceTemplate](日本語/APIリファレンス/ポリシー管理/配信ポリシー/DescribeServiceTemplate.md)
+        - [UpdateServiceTemplate](日本語/APIリファレンス/ポリシー管理/配信ポリシー/UpdateServiceTemplate.md)
+    - **メトリクス**
+      - [統計時間の説明](日本語/APIリファレンス/メトリクス/統計時間の説明.md)
+      - **オリジンリクエスト統計**
+        - [DescribeOriginData](日本語/APIリファレンス/メトリクス/オリジンリクエスト統計/DescribeOriginData.md)
+        - [DescribeOriginRanking](日本語/APIリファレンス/メトリクス/オリジンリクエスト統計/DescribeOriginRanking.md)
+        - [DescribeOriginStatusCodeRanking](日本語/APIリファレンス/メトリクス/オリジンリクエスト統計/DescribeOriginStatusCodeRanking.md)
+        - [DescribeOriginSummary](日本語/APIリファレンス/メトリクス/オリジンリクエスト統計/DescribeOriginSummary.md)
+      - **サービスリージョン**
+        - [DescribeEdgeData](日本語/APIリファレンス/メトリクス/サービスリージョン/DescribeEdgeData.md)
+        - [DescribeEdgeRanking](日本語/APIリファレンス/メトリクス/サービスリージョン/DescribeEdgeRanking.md)
+        - [DescribeEdgeSummary](日本語/APIリファレンス/メトリクス/サービスリージョン/DescribeEdgeSummary.md)
+      - **ユーザーからのリクエストの統計**
+        - [DescribeDistrictData](日本語/APIリファレンス/メトリクス/ユーザーからのリクエストの統計/DescribeDistrictData.md)
+        - [DescribeDistrictRanking](日本語/APIリファレンス/メトリクス/ユーザーからのリクエストの統計/DescribeDistrictRanking.md)
+        - [DescribeDistrictSummary](日本語/APIリファレンス/メトリクス/ユーザーからのリクエストの統計/DescribeDistrictSummary.md)
+        - [DescribeEdgeStatusCodeRanking](日本語/APIリファレンス/メトリクス/ユーザーからのリクエストの統計/DescribeEdgeStatusCodeRanking.md)
+        - [DescribeStatisticalRanking](日本語/APIリファレンス/メトリクス/ユーザーからのリクエストの統計/DescribeStatisticalRanking.md)
+        - [DescribeUserData](日本語/APIリファレンス/メトリクス/ユーザーからのリクエストの統計/DescribeUserData.md)
+    - **ログクエリ**
+      - [DescribeCdnAccessLog](日本語/APIリファレンス/ログクエリ/DescribeCdnAccessLog.md)
+    - **証明書管理**
+      - [AddCertificate](日本語/APIリファレンス/証明書管理/AddCertificate.md)
+      - [BatchDeployCert](日本語/APIリファレンス/証明書管理/BatchDeployCert.md)
+      - [DeleteCdnCertificate](日本語/APIリファレンス/証明書管理/DeleteCdnCertificate.md)
+      - [DescribeCertConfig](日本語/APIリファレンス/証明書管理/DescribeCertConfig.md)
+      - [ListCdnCertInfo](日本語/APIリファレンス/証明書管理/ListCdnCertInfo.md)
+      - [ListCertInfo](日本語/APIリファレンス/証明書管理/ListCertInfo.md)
+    - **詳細設定**
+      - **ユニバーサルカタログ**
+        - [AddSharedConfig](日本語/APIリファレンス/詳細設定/ユニバーサルカタログ/AddSharedConfig.md)
+        - [DeleteSharedConfig](日本語/APIリファレンス/詳細設定/ユニバーサルカタログ/DeleteSharedConfig.md)
+        - [DescribeDomainShared](日本語/APIリファレンス/詳細設定/ユニバーサルカタログ/DescribeDomainShared.md)
+        - [DescribeSharedConfig](日本語/APIリファレンス/詳細設定/ユニバーサルカタログ/DescribeSharedConfig.md)
+        - [ListSharedConfig](日本語/APIリファレンス/詳細設定/ユニバーサルカタログ/ListSharedConfig.md)
+        - [UpdateSharedConfig](日本語/APIリファレンス/詳細設定/ユニバーサルカタログ/UpdateSharedConfig.md)
+      - **共有キャッシュ**
+        - [ListCacheSharedDomains](日本語/APIリファレンス/詳細設定/共有キャッシュ/ListCacheSharedDomains.md)
+  - **ご利用案内**
+    - [APIのご案内](日本語/ご利用案内/APIのご案内.md)
+    - [コンソールのご案内](日本語/ご利用案内/コンソールのご案内.md)
+  - **ユーザーガイド**
+    - [AI アシスタント](日本語/ユーザーガイド/AI アシスタント.md)
+    - **BytePlus CDNの概要**
+      - [BytePlus CDNとは](日本語/ユーザーガイド/BytePlus CDNの概要/BytePlus CDNとは.md)
+      - [BytePlus CDNの用語集](日本語/ユーザーガイド/BytePlus CDNの概要/BytePlus CDNの用語集.md)
+    - **よくある質問**
+      - [ドメイン名設定](日本語/ユーザーガイド/よくある質問/ドメイン名設定.md)
+      - [課金に関する質問](日本語/ユーザーガイド/よくある質問/課金に関する質問.md)
+    - **コンフィギュレーションガイド**
+      - [ドメイン名の概要](日本語/ユーザーガイド/コンフィギュレーションガイド/ドメイン名の概要.md)
+      - [ドメイン名設定](日本語/ユーザーガイド/コンフィギュレーションガイド/ドメイン名設定.md)
+      - [ポリシーの概要](日本語/ユーザーガイド/コンフィギュレーションガイド/ポリシーの概要.md)
+      - [ポリシー設定](日本語/ユーザーガイド/コンフィギュレーションガイド/ポリシー設定.md)
+      - [リソース割り当て](日本語/ユーザーガイド/コンフィギュレーションガイド/リソース割り当て.md)
+      - **アクセス管理**
+        - [CDNに必要なBytePlusサービスへのアクセスを許可する](日本語/ユーザーガイド/コンフィギュレーションガイド/アクセス管理/CDNに必要なBytePlusサービスへのアクセスを許可する.md)
+      - **エッジ関数**
+        - [よくある質問](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/よくある質問.md)
+        - [エッジ関数とは](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/エッジ関数とは.md)
+        - [エッジ関数の使用制限](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/エッジ関数の使用制限.md)
+        - [エッジ関数の動作原理](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/エッジ関数の動作原理.md)
+        - [エッジ関数の用語集](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/エッジ関数の用語集.md)
+        - [エッジ関数の課金](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/エッジ関数の課金.md)
+        - [エッジ関数を使い始める](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/エッジ関数を使い始める.md)
+        - [エッジ関数を有効にする](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/エッジ関数を有効にする.md)
+        - **CLIユーザーガイド**
+          - [Access Key IDとSecret Access Keyを設定する](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/Access Key IDとSecret Access Keyを設定する.md)
+          - [CLIをインストールする](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/CLIをインストールする.md)
+          - [CLIを用いて静的ウェブサイトをホスティングする](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/CLIを用いて静的ウェブサイトをホスティングする.md)
+          - [CLIリリースノート](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/CLIリリースノート.md)
+          - [CLI概要](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/CLI概要.md)
+          - [OPAプロジェクトを作成する](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/OPAプロジェクトを作成する.md)
+          - [テンプレートで関数を作成する](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/テンプレートで関数を作成する.md)
+          - [初心者向け：CLIでエッジKVを管理する](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/初心者向け：CLIでエッジKVを管理する.md)
+          - [初心者向け：CLIでローカル関数を作成し公開する](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/初心者向け：CLIでローカル関数を作成し公開する.md)
+          - **コマンドリファレンス**
+            - [コマンド一覧](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/コマンド一覧.md)
+            - **Pages**
+              - [nest pages](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/Pages/nest pages.md)
+            - **エッジKV**
+              - [nest kv](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/エッジKV/nest kv.md)
+            - **グローバルパラメータ**
+              - [--config](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/グローバルパラメータ/--config.md)
+              - [--function](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/グローバルパラメータ/--function.md)
+              - [--help](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/グローバルパラメータ/--help.md)
+              - [--verbose](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/グローバルパラメータ/--verbose.md)
+            - **ユーティリティツール**
+              - [nest config](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/ユーティリティツール/nest config.md)
+              - [nest help](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/ユーティリティツール/nest help.md)
+            - **関数**
+              - [nest init](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/nest init.md)
+              - **トリガー**
+                - [nest cron](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/トリガー/nest cron.md)
+                - [nest domain](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/トリガー/nest domain.md)
+              - **リリーズ履歴**
+                - [nest rollback](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/リリーズ履歴/nest rollback.md)
+                - [nest tickets](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/リリーズ履歴/nest tickets.md)
+                - [nest versions](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/リリーズ履歴/nest versions.md)
+              - **関数コードのデバッグ**
+                - [nest debug](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/関数コードのデバッグ/nest debug.md)
+                - [nest start](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/関数コードのデバッグ/nest start.md)
+              - **関数管理**
+                - [nest deploy](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/関数管理/nest deploy.md)
+                - [nest functions](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/関数管理/nest functions.md)
+                - [nest upload](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/関数管理/nest upload.md)
+              - **関数設定**
+                - [nest canary](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/関数設定/nest canary.md)
+                - [nest envs](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/CLIユーザーガイド/コマンドリファレンス/関数/関数設定/nest envs.md)
+        - **MCPサーバーガイド**
+          - [MCPサーバーとは](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/MCPサーバーガイド/MCPサーバーとは.md)
+          - [MCPサーバーを利用する](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/MCPサーバーガイド/MCPサーバーを利用する.md)
+        - **コンソールユーザーガイド**
+          - **Pages**
+            - [Pagesを用いて静的ページをホスティングする](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/Pages/Pagesを用いて静的ページをホスティングする.md)
+          - **エッジKV**
+            - [エッジKVを使い始める](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/エッジKV/エッジKVを使い始める.md)
+            - [データ管理](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/エッジKV/データ管理.md)
+            - [名前空間管理](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/エッジKV/名前空間管理.md)
+          - **関数**
+            - [AIアシスタントで関数コードを編集する](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/関数/AIアシスタントで関数コードを編集する.md)
+            - [エッジ関数のメトリクス](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/関数/エッジ関数のメトリクス.md)
+            - [リリース履歴](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/関数/リリース履歴.md)
+            - [関数コードの編集とデバッグ](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/関数/関数コードの編集とデバッグ.md)
+            - [関数管理](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/関数/関数管理.md)
+            - **トリガー**
+              - [Cronトリガー](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/関数/トリガー/Cronトリガー.md)
+              - [ドメイントリガー](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/関数/トリガー/ドメイントリガー.md)
+            - **設定**
+              - [カナリア環境](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/関数/設定/カナリア環境.md)
+              - [環境変数](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/コンソールユーザーガイド/関数/設定/環境変数.md)
+        - **サンプルコード**
+          - [Cookieに基づくCDNキャッシュのバイパス](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/Cookieに基づくCDNキャッシュのバイパス.md)
+          - [Cookieに基づくキャッシング](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/Cookieに基づくキャッシング.md)
+          - [CookieベースのA/Bテスト](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/CookieベースのA - Bテスト.md)
+          - [CORSプロキシ](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/CORSプロキシ.md)
+          - [HTMLページを返す](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/HTMLページを返す.md)
+          - [HTTPからHTTPSへのリダイレクト](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/HTTPからHTTPSへのリダイレクト.md)
+          - [HTTPリクエストヘッダーまたはレスポンスヘッダーを変更する](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/HTTPリクエストヘッダーまたはレスポンスヘッダーを変更する.md)
+          - [JavaScriptの遅延読み込みによるウェブサイトの高速化](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/JavaScriptの遅延読み込みによるウェブサイトの高速化.md)
+          - [JSONの取得と処理](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/JSONの取得と処理.md)
+          - [JSONを返す](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/JSONを返す.md)
+          - [JWT認証](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/JWT認証.md)
+          - [URLのリダイレクト](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/URLのリダイレクト.md)
+          - [User-Agentに基づくカスタムリクエストヘッダーを追加する](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/User-Agentに基づくカスタムリクエストヘッダーを追加する.md)
+          - [カスタムエラーページを返す](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/カスタムエラーページを返す.md)
+          - [サンプルコードのリスト](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/サンプルコードのリスト.md)
+          - [トークンのHMAC-SHA256署名を検証する](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/トークンのHMAC-SHA256署名を検証する.md)
+          - [ユーザーの位置情報に基づく天気データを取得する](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/ユーザーの位置情報に基づく天気データを取得する.md)
+          - [書き換えられたHTMLページをレスポンスとしてストリーミング](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/書き換えられたHTMLページをレスポンスとしてストリーミング.md)
+          - [複数のファイルを単一のレスポンスとしてストリーミング](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/複数のファイルを単一のレスポンスとしてストリーミング.md)
+          - [集約されたリクエストとレスポンスのストリーミング](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/集約されたリクエストとレスポンスのストリーミング.md)
+          - [静的ページのキャッシングによるウェブサイトフォールバックの実装](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/サンプルコード/静的ページのキャッシングによるウェブサイトフォールバックの実装.md)
+        - **ランタイムAPI**
+          - [addEventListener()](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/addEventListener().md)
+          - [createHtmlStream()](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/createHtmlStream().md)
+          - [CronEvent](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/CronEvent.md)
+          - [FetchEvent](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/FetchEvent.md)
+          - [HTTPレスポンスステータスコード](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/HTTPレスポンスステータスコード.md)
+          - [KV](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/KV.md)
+          - [Streams API](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Streams API.md)
+          - [Web Standards API](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Web Standards API.md)
+          - [ランタイムAPIリスト](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/ランタイムAPIリスト.md)
+          - **Fetch API**
+            - [Fetch APIとは](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Fetch API/Fetch APIとは.md)
+            - [fetch()](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Fetch API/fetch().md)
+            - [Headers](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Fetch API/Headers.md)
+            - [Request](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Fetch API/Request.md)
+            - [Response](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Fetch API/Response.md)
+          - **net**
+            - [dns](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/net/dns.md)
+          - **Web Crypto API**
+            - [digest()](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Web Crypto API/digest().md)
+            - [encrypt()/decrypt()](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Web Crypto API/encrypt() - decrypt().md)
+            - [importKey()/exportKey()/generateKey()](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Web Crypto API/importKey() - exportKey() - generateKey().md)
+            - [sign()/verify()](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Web Crypto API/sign() - verify().md)
+            - [Web Crypto APIとは](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Web Crypto API/Web Crypto APIとは.md)
+            - [サポートされているアルゴリズム](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Web Crypto API/サポートされているアルゴリズム.md)
+          - **Web Crypto Streams API**
+            - [DigestStream](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Web Crypto Streams API/DigestStream.md)
+            - [Web Crypto Streams APIとは](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Web Crypto Streams API/Web Crypto Streams APIとは.md)
+            - [サポートされているアルゴリズム](日本語/ユーザーガイド/コンフィギュレーションガイド/エッジ関数/ランタイムAPI/Web Crypto Streams API/サポートされているアルゴリズム.md)
+      - **セキュリティセンター**
+        - [WAF防護](日本語/ユーザーガイド/コンフィギュレーションガイド/セキュリティセンター/WAF防護.md)
+        - **暗号化ポリシー**
+          - **暗号化ポリシー配置**
+            - **プロトコル管理**
+              - [HTTP/2](日本語/ユーザーガイド/コンフィギュレーションガイド/セキュリティセンター/暗号化ポリシー/暗号化ポリシー配置/プロトコル管理/HTTP - 2.md)
+              - [HTTP/3 (QUIC)](日本語/ユーザーガイド/コンフィギュレーションガイド/セキュリティセンター/暗号化ポリシー/暗号化ポリシー配置/プロトコル管理/HTTP - 3 (QUIC).md)
+              - [HTTPとHTTPS間のリダイレクト](日本語/ユーザーガイド/コンフィギュレーションガイド/セキュリティセンター/暗号化ポリシー/暗号化ポリシー配置/プロトコル管理/HTTPとHTTPS間のリダイレクト.md)
+            - **暗号化のパフォーマンスの最適化**
+              - [HSTS](日本語/ユーザーガイド/コンフィギュレーションガイド/セキュリティセンター/暗号化ポリシー/暗号化ポリシー配置/暗号化のパフォーマンスの最適化/HSTS.md)
+              - [OCSPステープリング](日本語/ユーザーガイド/コンフィギュレーションガイド/セキュリティセンター/暗号化ポリシー/暗号化ポリシー配置/暗号化のパフォーマンスの最適化/OCSPステープリング.md)
+              - [TLSバージョン](日本語/ユーザーガイド/コンフィギュレーションガイド/セキュリティセンター/暗号化ポリシー/暗号化ポリシー配置/暗号化のパフォーマンスの最適化/TLSバージョン.md)
+        - **証明書センター**
+          - [証明書とドメイン名の関連付け](日本語/ユーザーガイド/コンフィギュレーションガイド/セキュリティセンター/証明書センター/証明書とドメイン名の関連付け.md)
+          - [証明書のアプロード](日本語/ユーザーガイド/コンフィギュレーションガイド/セキュリティセンター/証明書センター/証明書のアプロード.md)
+          - [証明書センター概要](日本語/ユーザーガイド/コンフィギュレーションガイド/セキュリティセンター/証明書センター/証明書センター概要.md)
+      - **ツールセンター**
+        - [診断ツール](日本語/ユーザーガイド/コンフィギュレーションガイド/ツールセンター/診断ツール.md)
+        - **パージとプリフェッチ**
+          - [キャッシュパージ](日本語/ユーザーガイド/コンフィギュレーションガイド/ツールセンター/パージとプリフェッチ/キャッシュパージ.md)
+          - [ファイルプリフェッチ](日本語/ユーザーガイド/コンフィギュレーションガイド/ツールセンター/パージとプリフェッチ/ファイルプリフェッチ.md)
+          - [操作記録](日本語/ユーザーガイド/コンフィギュレーションガイド/ツールセンター/パージとプリフェッチ/操作記録.md)
+        - **ログ管理**
+          - [オフラインログ転送](日本語/ユーザーガイド/コンフィギュレーションガイド/ツールセンター/ログ管理/オフラインログ転送.md)
+          - [ログダウンロード](日本語/ユーザーガイド/コンフィギュレーションガイド/ツールセンター/ログ管理/ログダウンロード.md)
+          - [ログ管理概要](日本語/ユーザーガイド/コンフィギュレーションガイド/ツールセンター/ログ管理/ログ管理概要.md)
+          - **リアルタイムログ**
+            - [インデックス設定](日本語/ユーザーガイド/コンフィギュレーションガイド/ツールセンター/ログ管理/リアルタイムログ/インデックス設定.md)
+            - [タスク設定](日本語/ユーザーガイド/コンフィギュレーションガイド/ツールセンター/ログ管理/リアルタイムログ/タスク設定.md)
+            - [リアルタイムログとは](日本語/ユーザーガイド/コンフィギュレーションガイド/ツールセンター/ログ管理/リアルタイムログ/リアルタイムログとは.md)
+            - [ログ検索例](日本語/ユーザーガイド/コンフィギュレーションガイド/ツールセンター/ログ管理/リアルタイムログ/ログ検索例.md)
+      - **メトリクス**
+        - [インサイト](日本語/ユーザーガイド/コンフィギュレーションガイド/メトリクス/インサイト.md)
+        - [エッジレポート](日本語/ユーザーガイド/コンフィギュレーションガイド/メトリクス/エッジレポート.md)
+        - [オリジンサーバーレポート](日本語/ユーザーガイド/コンフィギュレーションガイド/メトリクス/オリジンサーバーレポート.md)
+        - [トラフィックヒット率](日本語/ユーザーガイド/コンフィギュレーションガイド/メトリクス/トラフィックヒット率.md)
+        - [レポート購読](日本語/ユーザーガイド/コンフィギュレーションガイド/メトリクス/レポート購読.md)
+        - [人気オブジェクト](日本語/ユーザーガイド/コンフィギュレーションガイド/メトリクス/人気オブジェクト.md)
+        - [指標の定義と計算方法](日本語/ユーザーガイド/コンフィギュレーションガイド/メトリクス/指標の定義と計算方法.md)
+        - [統計期間の説明](日本語/ユーザーガイド/コンフィギュレーションガイド/メトリクス/統計期間の説明.md)
+      - **詳細設定**
+        - [ユニバーサルカタログ](日本語/ユーザーガイド/コンフィギュレーションガイド/詳細設定/ユニバーサルカタログ.md)
+        - [ルールエンジン](日本語/ユーザーガイド/コンフィギュレーションガイド/詳細設定/ルールエンジン.md)
+        - [共有キャッシュ](日本語/ユーザーガイド/コンフィギュレーションガイド/詳細設定/共有キャッシュ.md)
+      - **配信ポリシー**
+        - [IPv6オリジンフェッチ](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/IPv6オリジンフェッチ.md)
+        - [エッジ関数でリクエストに応答する](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/エッジ関数でリクエストに応答する.md)
+        - [オリジンサーバー設定](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/オリジンサーバー設定.md)
+        - [オリジンサーバー証明書の検証](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/オリジンサーバー証明書の検証.md)
+        - [オリジンフェッチの再試行](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/オリジンフェッチの再試行.md)
+        - [条件付きオリジンサーバー](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/条件付きオリジンサーバー.md)
+        - **配信ポリシー管理**
+          - **CDNレスポンス**
+            - [CDNレスポンスヘッダー設定](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/CDNレスポンス/CDNレスポンスヘッダー設定.md)
+            - [カスタムエラーページ](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/CDNレスポンス/カスタムエラーページ.md)
+          - **アクセス制限**
+            - [IP制限](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/IP制限.md)
+            - [Origin制限](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/Origin制限.md)
+            - [Referer制限](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/Referer制限.md)
+            - [UA制限](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/UA制限.md)
+            - [URL正規化](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/URL正規化.md)
+            - [アクセス制限機能の優先順位](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/アクセス制限機能の優先順位.md)
+            - [カスタム制限](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/カスタム制限.md)
+            - [リモート認証](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/リモート認証.md)
+            - [国名比較表](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/国名比較表.md)
+            - [地理的制限](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/地理的制限.md)
+            - **署名付きURL認証**
+              - [タイプA](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/署名付きURL認証/タイプA.md)
+              - [タイプB](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/署名付きURL認証/タイプB.md)
+              - [タイプC](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/署名付きURL認証/タイプC.md)
+              - [タイプD](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/署名付きURL認証/タイプD.md)
+              - [タイプE](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/署名付きURL認証/タイプE.md)
+              - [タイプF](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/署名付きURL認証/タイプF.md)
+              - [署名付きURL認証の概要](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/アクセス制限/署名付きURL認証/署名付きURL認証の概要.md)
+          - **オリジンフェッチ**
+            - [Rangeリクエスト](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/オリジンフェッチ/Rangeリクエスト.md)
+            - [URLを書き換え](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/オリジンフェッチ/URLを書き換え.md)
+            - [オリジンリクエストのSNI](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/オリジンフェッチ/オリジンリクエストのSNI.md)
+            - [オリジンリクエストのヘッダー](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/オリジンフェッチ/オリジンリクエストのヘッダー.md)
+            - [オリジンリクエストパラメータ](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/オリジンフェッチ/オリジンリクエストパラメータ.md)
+            - [リクエストタイムアウト](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/オリジンフェッチ/リクエストタイムアウト.md)
+            - [リダイレクトフォロー](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/オリジンフェッチ/リダイレクトフォロー.md)
+          - **キャッシュルール**
+            - [URLリダイレクト](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/キャッシュルール/URLリダイレクト.md)
+            - [キャッシュキー](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/キャッシュルール/キャッシュキー.md)
+            - [キャッシュルール](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/キャッシュルール/キャッシュルール.md)
+            - [ネガティブキャッシュ](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/キャッシュルール/ネガティブキャッシュ.md)
+            - [ブラウザキャッシュ](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/キャッシュルール/ブラウザキャッシュ.md)
+            - [古いコンテンツを配信する](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/キャッシュルール/古いコンテンツを配信する.md)
+          - **コンテンツ最適化**
+            - [ビデオシーク](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/コンテンツ最適化/ビデオシーク.md)
+            - [ファイル圧縮](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/コンテンツ最適化/ファイル圧縮.md)
+            - [ファイル最小化](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/コンテンツ最適化/ファイル最小化.md)
+          - **スロットリング**
+            - [帯域幅スロットリング](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/スロットリング/帯域幅スロットリング.md)
+          - **プロトコル管理**
+            - [HTTPメソッド拒否](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/プロトコル管理/HTTPメソッド拒否.md)
+            - [IPv6](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/プロトコル管理/IPv6.md)
+            - [PROXY Protocol](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/プロトコル管理/PROXY Protocol.md)
+            - [Server-sent Events (SSE)](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/プロトコル管理/Server-sent Events (SSE).md)
+            - [WebSocket](日本語/ユーザーガイド/コンフィギュレーションガイド/配信ポリシー/配信ポリシー管理/プロトコル管理/WebSocket.md)
+    - **更新履歴とお知らせ**
+      - [Let's Encryptの証明書チェーンの変更について](日本語/ユーザーガイド/更新履歴とお知らせ/Let's Encryptの証明書チェーンの変更について.md)
+      - [お知らせ](日本語/ユーザーガイド/更新履歴とお知らせ/お知らせ.md)
+    - **課金**
+      - [BytePlus CDNの課金](日本語/ユーザーガイド/課金/BytePlus CDNの課金.md)
+      - [高額請求のリスク警告](日本語/ユーザーガイド/課金/高額請求のリスク警告.md)
+    - **開始方法のチュートリアル**
+      - [BytePlus CDNを有効化する](日本語/ユーザーガイド/開始方法のチュートリアル/BytePlus CDNを有効化する.md)
+      - [CNAMEレコードを設定する](日本語/ユーザーガイド/開始方法のチュートリアル/CNAMEレコードを設定する.md)
+      - [hostsファイルを設定してドメインをテストする](日本語/ユーザーガイド/開始方法のチュートリアル/hostsファイルを設定してドメインをテストする.md)
+      - [チュートリアルの概要](日本語/ユーザーガイド/開始方法のチュートリアル/チュートリアルの概要.md)
+      - [ドメイン名を追加する](日本語/ユーザーガイド/開始方法のチュートリアル/ドメイン名を追加する.md)
+      - [証明書をアプロードする](日本語/ユーザーガイド/開始方法のチュートリアル/証明書をアプロードする.md)
+      - [配信ポリシーとオリジンサーバーを設定する](日本語/ユーザーガイド/開始方法のチュートリアル/配信ポリシーとオリジンサーバーを設定する.md)
+- **简体中文**
+  - **API 参考**
+    - **API 调用**
+      - [API 响应](简体中文/API 参考/API 调用/API 响应.md)
+      - [API 错误码](简体中文/API 参考/API 调用/API 错误码.md)
+      - [BytePlus SDK](简体中文/API 参考/API 调用/BytePlus SDK.md)
+      - [调用方式](简体中文/API 参考/API 调用/调用方式.md)
+    - **域名管理**
+      - **启用 - 停用域名**
+        - [StartCdnDomain](简体中文/API 参考/域名管理/启用 - 停用域名/StartCdnDomain.md)
+        - [StopCdnDomain](简体中文/API 参考/域名管理/启用 - 停用域名/StopCdnDomain.md)
+      - **域名检查**
+        - [CheckCdnDomain](简体中文/API 参考/域名管理/域名检查/CheckCdnDomain.md)
+      - **查询域名**
+        - [DescribeCdnConfig](简体中文/API 参考/域名管理/查询域名/DescribeCdnConfig.md)
+        - [ListCdnDomains](简体中文/API 参考/域名管理/查询域名/ListCdnDomains.md)
+      - **添加 - 删除域名**
+        - [AddCdnDomain](简体中文/API 参考/域名管理/添加 - 删除域名/AddCdnDomain.md)
+        - [DeleteCdnDomain](简体中文/API 参考/域名管理/添加 - 删除域名/DeleteCdnDomain.md)
+      - **配置域名**
+        - [BatchUpdateCdnConfig](简体中文/API 参考/域名管理/配置域名/BatchUpdateCdnConfig.md)
+        - [UpdateCdnConfig](简体中文/API 参考/域名管理/配置域名/UpdateCdnConfig.md)
+    - **工具中心**
+      - **内容管理**
+        - [DescribeContentQuota](简体中文/API 参考/工具中心/内容管理/DescribeContentQuota.md)
+        - [DescribeContentTasks](简体中文/API 参考/工具中心/内容管理/DescribeContentTasks.md)
+        - [SubmitPreloadTask](简体中文/API 参考/工具中心/内容管理/SubmitPreloadTask.md)
+        - [SubmitRefreshTask](简体中文/API 参考/工具中心/内容管理/SubmitRefreshTask.md)
+      - **日志管理**
+        - **实时日志投递**
+          - [CreateRealtimeLogDeliveryTask](简体中文/API 参考/工具中心/日志管理/实时日志投递/CreateRealtimeLogDeliveryTask.md)
+          - [DeleteRealtimeLogDeliveryTask](简体中文/API 参考/工具中心/日志管理/实时日志投递/DeleteRealtimeLogDeliveryTask.md)
+          - [DisableRealtimeLogDeliveryTask](简体中文/API 参考/工具中心/日志管理/实时日志投递/DisableRealtimeLogDeliveryTask.md)
+          - [EnableRealtimeLogDeliveryTask](简体中文/API 参考/工具中心/日志管理/实时日志投递/EnableRealtimeLogDeliveryTask.md)
+          - [ListRealtimeLogDeliveryTask](简体中文/API 参考/工具中心/日志管理/实时日志投递/ListRealtimeLogDeliveryTask.md)
+          - [UpdateRealtimeLogDeliveryTask](简体中文/API 参考/工具中心/日志管理/实时日志投递/UpdateRealtimeLogDeliveryTask.md)
+        - **日志查询**
+          - [DescribeCdnAccessLog](简体中文/API 参考/工具中心/日志管理/日志查询/DescribeCdnAccessLog.md)
+          - [DescribeCdnOriginLog](简体中文/API 参考/工具中心/日志管理/日志查询/DescribeCdnOriginLog.md)
+        - **离线日志转存**
+          - [CreateOfflineLogStoreTask](简体中文/API 参考/工具中心/日志管理/离线日志转存/CreateOfflineLogStoreTask.md)
+          - [DeleteOfflineLogStoreTask](简体中文/API 参考/工具中心/日志管理/离线日志转存/DeleteOfflineLogStoreTask.md)
+          - [DisableOfflineLogStoreTask](简体中文/API 参考/工具中心/日志管理/离线日志转存/DisableOfflineLogStoreTask.md)
+          - [EnableOfflineLogStoreTask](简体中文/API 参考/工具中心/日志管理/离线日志转存/EnableOfflineLogStoreTask.md)
+          - [ListOfflineLogStoreTask](简体中文/API 参考/工具中心/日志管理/离线日志转存/ListOfflineLogStoreTask.md)
+          - [UpdateOfflineLogStoreTask](简体中文/API 参考/工具中心/日志管理/离线日志转存/UpdateOfflineLogStoreTask.md)
+      - **标签管理**
+        - [TagResources](简体中文/API 参考/工具中心/标签管理/TagResources.md)
+        - [UntagResources](简体中文/API 参考/工具中心/标签管理/UntagResources.md)
+      - **诊断工具**
+        - [DescribeCdnEdgeIp](简体中文/API 参考/工具中心/诊断工具/DescribeCdnEdgeIp.md)
+        - [DescribeCdnIP](简体中文/API 参考/工具中心/诊断工具/DescribeCdnIP.md)
+        - [DescribeCdnRegionAndIsp](简体中文/API 参考/工具中心/诊断工具/DescribeCdnRegionAndIsp.md)
+    - **数据统计**
+      - [统计时间段说明](简体中文/API 参考/数据统计/统计时间段说明.md)
+      - **回源统计**
+        - [DescribeOriginData](简体中文/API 参考/数据统计/回源统计/DescribeOriginData.md)
+        - [DescribeOriginRanking](简体中文/API 参考/数据统计/回源统计/DescribeOriginRanking.md)
+        - [DescribeOriginStatusCodeRanking](简体中文/API 参考/数据统计/回源统计/DescribeOriginStatusCodeRanking.md)
+        - [DescribeOriginSummary](简体中文/API 参考/数据统计/回源统计/DescribeOriginSummary.md)
+      - **计费区域统计**
+        - [DescribeEdgeData](简体中文/API 参考/数据统计/计费区域统计/DescribeEdgeData.md)
+        - [DescribeEdgeRanking](简体中文/API 参考/数据统计/计费区域统计/DescribeEdgeRanking.md)
+        - [DescribeEdgeSummary](简体中文/API 参考/数据统计/计费区域统计/DescribeEdgeSummary.md)
+      - **访问统计**
+        - [DescribeDistrictData](简体中文/API 参考/数据统计/访问统计/DescribeDistrictData.md)
+        - [DescribeDistrictRanking](简体中文/API 参考/数据统计/访问统计/DescribeDistrictRanking.md)
+        - [DescribeDistrictSummary](简体中文/API 参考/数据统计/访问统计/DescribeDistrictSummary.md)
+        - [DescribeEdgeStatusCodeRanking](简体中文/API 参考/数据统计/访问统计/DescribeEdgeStatusCodeRanking.md)
+        - [DescribeStatisticalRanking](简体中文/API 参考/数据统计/访问统计/DescribeStatisticalRanking.md)
+        - [DescribeUserData](简体中文/API 参考/数据统计/访问统计/DescribeUserData.md)
+    - **策略管理**
+      - **分发策略**
+        - [CreateServiceTemplate](简体中文/API 参考/策略管理/分发策略/CreateServiceTemplate.md)
+        - [DescribeServiceTemplate](简体中文/API 参考/策略管理/分发策略/DescribeServiceTemplate.md)
+        - [UpdateServiceTemplate](简体中文/API 参考/策略管理/分发策略/UpdateServiceTemplate.md)
+      - **加密策略**
+        - [CreateCipherTemplate](简体中文/API 参考/策略管理/加密策略/CreateCipherTemplate.md)
+        - [DescribeCipherTemplate](简体中文/API 参考/策略管理/加密策略/DescribeCipherTemplate.md)
+        - [UpdateCipherTemplate](简体中文/API 参考/策略管理/加密策略/UpdateCipherTemplate.md)
+      - **策略版本**
+        - [CreateTemplateVersion](简体中文/API 参考/策略管理/策略版本/CreateTemplateVersion.md)
+        - [DescribeTemplateReleaseVersions](简体中文/API 参考/策略管理/策略版本/DescribeTemplateReleaseVersions.md)
+        - [DescribeTemplateVersions](简体中文/API 参考/策略管理/策略版本/DescribeTemplateVersions.md)
+      - **策管域名**
+        - [AddTemplateDomain](简体中文/API 参考/策略管理/策管域名/AddTemplateDomain.md)
+        - [DescribeTemplateDomainOperations](简体中文/API 参考/策略管理/策管域名/DescribeTemplateDomainOperations.md)
+        - [DescribeTemplateDomains](简体中文/API 参考/策略管理/策管域名/DescribeTemplateDomains.md)
+        - [UpdateTemplateDomain](简体中文/API 参考/策略管理/策管域名/UpdateTemplateDomain.md)
+      - **规则引擎策略**
+        - [CreateRuleEngineTemplate](简体中文/API 参考/策略管理/规则引擎策略/CreateRuleEngineTemplate.md)
+        - [DescribeRuleEngineTemplate](简体中文/API 参考/策略管理/规则引擎策略/DescribeRuleEngineTemplate.md)
+        - [UpdateRuleEngineTemplate](简体中文/API 参考/策略管理/规则引擎策略/UpdateRuleEngineTemplate.md)
+      - **通用操作**
+        - [DeleteTemplate](简体中文/API 参考/策略管理/通用操作/DeleteTemplate.md)
+        - [DescribeTemplateOperations](简体中文/API 参考/策略管理/通用操作/DescribeTemplateOperations.md)
+        - [DescribeTemplates](简体中文/API 参考/策略管理/通用操作/DescribeTemplates.md)
+        - [DuplicateTemplate](简体中文/API 参考/策略管理/通用操作/DuplicateTemplate.md)
+        - [LockTemplate](简体中文/API 参考/策略管理/通用操作/LockTemplate.md)
+        - [ReleaseTemplate](简体中文/API 参考/策略管理/通用操作/ReleaseTemplate.md)
+    - **计费**
+      - [DescribeBillingDetail](简体中文/API 参考/计费/DescribeBillingDetail.md)
+    - **证书管理**
+      - [AddCertificate](简体中文/API 参考/证书管理/AddCertificate.md)
+      - [BatchDeployCert](简体中文/API 参考/证书管理/BatchDeployCert.md)
+      - [DeleteCdnCertificate](简体中文/API 参考/证书管理/DeleteCdnCertificate.md)
+      - [DescribeCertConfig](简体中文/API 参考/证书管理/DescribeCertConfig.md)
+      - [ListCdnCertInfo](简体中文/API 参考/证书管理/ListCdnCertInfo.md)
+      - [ListCertInfo](简体中文/API 参考/证书管理/ListCertInfo.md)
+    - **边缘函数**
+      - **Cron 触发器**
+        - [CreateCronJob](简体中文/API 参考/边缘函数/Cron 触发器/CreateCronJob.md)
+        - [DeleteCronJob](简体中文/API 参考/边缘函数/Cron 触发器/DeleteCronJob.md)
+        - [GetCronJob](简体中文/API 参考/边缘函数/Cron 触发器/GetCronJob.md)
+        - [ListCronJob](简体中文/API 参考/边缘函数/Cron 触发器/ListCronJob.md)
+        - [ListCronJobTask](简体中文/API 参考/边缘函数/Cron 触发器/ListCronJobTask.md)
+        - [ListCronJobTaskLog](简体中文/API 参考/边缘函数/Cron 触发器/ListCronJobTaskLog.md)
+        - [StartCronJob](简体中文/API 参考/边缘函数/Cron 触发器/StartCronJob.md)
+        - [StopCronJob](简体中文/API 参考/边缘函数/Cron 触发器/StopCronJob.md)
+        - [UpdateCronJob](简体中文/API 参考/边缘函数/Cron 触发器/UpdateCronJob.md)
+      - **代码**
+        - [GetScriptSourceCode](简体中文/API 参考/边缘函数/代码/GetScriptSourceCode.md)
+        - [GetSnapshot](简体中文/API 参考/边缘函数/代码/GetSnapshot.md)
+        - [GetSourceCode](简体中文/API 参考/边缘函数/代码/GetSourceCode.md)
+        - [ListVersions](简体中文/API 参考/边缘函数/代码/ListVersions.md)
+        - [UpdateSourceCode](简体中文/API 参考/边缘函数/代码/UpdateSourceCode.md)
+      - **函数**
+        - [CreateFunction](简体中文/API 参考/边缘函数/函数/CreateFunction.md)
+        - [DeleteFunction](简体中文/API 参考/边缘函数/函数/DeleteFunction.md)
+        - [GetFunction](简体中文/API 参考/边缘函数/函数/GetFunction.md)
+        - [ListFunction](简体中文/API 参考/边缘函数/函数/ListFunction.md)
+        - [UpdateFunction](简体中文/API 参考/边缘函数/函数/UpdateFunction.md)
+      - **发布**
+        - [CanaryPublish](简体中文/API 参考/边缘函数/发布/CanaryPublish.md)
+        - [FullPublish](简体中文/API 参考/边缘函数/发布/FullPublish.md)
+        - [SnapshotPublish](简体中文/API 参考/边缘函数/发布/SnapshotPublish.md)
+      - **发布历史**
+        - [GetTicket](简体中文/API 参考/边缘函数/发布历史/GetTicket.md)
+        - [ListTicket](简体中文/API 参考/边缘函数/发布历史/ListTicket.md)
+      - **域名**
+        - [FunctionBindDomains](简体中文/API 参考/边缘函数/域名/FunctionBindDomains.md)
+        - [FunctionUnBindDomains](简体中文/API 参考/边缘函数/域名/FunctionUnBindDomains.md)
+        - [ListFunctionDomains](简体中文/API 参考/边缘函数/域名/ListFunctionDomains.md)
+      - **灰度环境**
+        - [ListContinent](简体中文/API 参考/边缘函数/灰度环境/ListContinent.md)
+        - [ListContinentCluster](简体中文/API 参考/边缘函数/灰度环境/ListContinentCluster.md)
+        - [ListCountry](简体中文/API 参考/边缘函数/灰度环境/ListCountry.md)
+        - [UpdateCountryCluster](简体中文/API 参考/边缘函数/灰度环境/UpdateCountryCluster.md)
+      - **环境变量**
+        - [AddEnv](简体中文/API 参考/边缘函数/环境变量/AddEnv.md)
+        - [DeleteEnv](简体中文/API 参考/边缘函数/环境变量/DeleteEnv.md)
+        - [EditEnv](简体中文/API 参考/边缘函数/环境变量/EditEnv.md)
+        - [GetEnv](简体中文/API 参考/边缘函数/环境变量/GetEnv.md)
+      - **边缘 KV**
+        - [CreateKeyValue](简体中文/API 参考/边缘函数/边缘 KV/CreateKeyValue.md)
+        - [CreateKvNamespace](简体中文/API 参考/边缘函数/边缘 KV/CreateKvNamespace.md)
+        - [DeleteKvKey](简体中文/API 参考/边缘函数/边缘 KV/DeleteKvKey.md)
+        - [DeleteKvNamespace](简体中文/API 参考/边缘函数/边缘 KV/DeleteKvNamespace.md)
+        - [DeleteMultiKeys](简体中文/API 参考/边缘函数/边缘 KV/DeleteMultiKeys.md)
+        - [GetKeyValue](简体中文/API 参考/边缘函数/边缘 KV/GetKeyValue.md)
+        - [GetKvNamespace](简体中文/API 参考/边缘函数/边缘 KV/GetKvNamespace.md)
+        - [ListKvKey](简体中文/API 参考/边缘函数/边缘 KV/ListKvKey.md)
+        - [ListKvNamespace](简体中文/API 参考/边缘函数/边缘 KV/ListKvNamespace.md)
+        - [UpdateKeyValue](简体中文/API 参考/边缘函数/边缘 KV/UpdateKeyValue.md)
+        - [UpdateKvNamespace](简体中文/API 参考/边缘函数/边缘 KV/UpdateKvNamespace.md)
+    - **边缘函数（旧版）**
+      - **Cron**
+        - [CreateCronJob](简体中文/API 参考/边缘函数（旧版）/Cron/CreateCronJob.md)
+        - [DeleteCronJob](简体中文/API 参考/边缘函数（旧版）/Cron/DeleteCronJob.md)
+        - [GetCronJob](简体中文/API 参考/边缘函数（旧版）/Cron/GetCronJob.md)
+        - [ListCronJob](简体中文/API 参考/边缘函数（旧版）/Cron/ListCronJob.md)
+        - [ListCronJobTask](简体中文/API 参考/边缘函数（旧版）/Cron/ListCronJobTask.md)
+        - [ListCronJobTaskLog](简体中文/API 参考/边缘函数（旧版）/Cron/ListCronJobTaskLog.md)
+        - [StartCronJob](简体中文/API 参考/边缘函数（旧版）/Cron/StartCronJob.md)
+        - [StopCronJob](简体中文/API 参考/边缘函数（旧版）/Cron/StopCronJob.md)
+        - [UpdateCronJob](简体中文/API 参考/边缘函数（旧版）/Cron/UpdateCronJob.md)
+      - **代码**
+        - [GetScriptSourceCode](简体中文/API 参考/边缘函数（旧版）/代码/GetScriptSourceCode.md)
+        - [GetSnapshot](简体中文/API 参考/边缘函数（旧版）/代码/GetSnapshot.md)
+        - [GetSourceCode](简体中文/API 参考/边缘函数（旧版）/代码/GetSourceCode.md)
+        - [ListVersions](简体中文/API 参考/边缘函数（旧版）/代码/ListVersions.md)
+        - [UpdateSourceCode](简体中文/API 参考/边缘函数（旧版）/代码/UpdateSourceCode.md)
+      - **函数**
+        - [CreateSparrow](简体中文/API 参考/边缘函数（旧版）/函数/CreateSparrow.md)
+        - [DeleteSparrow](简体中文/API 参考/边缘函数（旧版）/函数/DeleteSparrow.md)
+        - [GetSparrow](简体中文/API 参考/边缘函数（旧版）/函数/GetSparrow.md)
+        - [ListSparrow](简体中文/API 参考/边缘函数（旧版）/函数/ListSparrow.md)
+        - [UpdateSparrow](简体中文/API 参考/边缘函数（旧版）/函数/UpdateSparrow.md)
+      - **发布**
+        - [CanaryPublish](简体中文/API 参考/边缘函数（旧版）/发布/CanaryPublish.md)
+        - [FullPublish](简体中文/API 参考/边缘函数（旧版）/发布/FullPublish.md)
+        - [SnapshotPublish](简体中文/API 参考/边缘函数（旧版）/发布/SnapshotPublish.md)
+      - **发布历史**
+        - [GetTicket](简体中文/API 参考/边缘函数（旧版）/发布历史/GetTicket.md)
+        - [ListTicket](简体中文/API 参考/边缘函数（旧版）/发布历史/ListTicket.md)
+      - **域名**
+        - [ListSparrowDomains](简体中文/API 参考/边缘函数（旧版）/域名/ListSparrowDomains.md)
+        - [SparrowBindDomains](简体中文/API 参考/边缘函数（旧版）/域名/SparrowBindDomains.md)
+        - [SparrowUnBindDomains](简体中文/API 参考/边缘函数（旧版）/域名/SparrowUnBindDomains.md)
+      - **环境变量**
+        - [AddEnv](简体中文/API 参考/边缘函数（旧版）/环境变量/AddEnv.md)
+        - [DeleteEnv](简体中文/API 参考/边缘函数（旧版）/环境变量/DeleteEnv.md)
+        - [EditEnv](简体中文/API 参考/边缘函数（旧版）/环境变量/EditEnv.md)
+        - [GetEnv](简体中文/API 参考/边缘函数（旧版）/环境变量/GetEnv.md)
+      - **边缘KV**
+        - [CreateKeyValue](简体中文/API 参考/边缘函数（旧版）/边缘KV/CreateKeyValue.md)
+        - [CreateKvNamespace](简体中文/API 参考/边缘函数（旧版）/边缘KV/CreateKvNamespace.md)
+        - [DeleteKvKey](简体中文/API 参考/边缘函数（旧版）/边缘KV/DeleteKvKey.md)
+        - [DeleteKvNamespace](简体中文/API 参考/边缘函数（旧版）/边缘KV/DeleteKvNamespace.md)
+        - [GetKeyValue](简体中文/API 参考/边缘函数（旧版）/边缘KV/GetKeyValue.md)
+        - [GetKvNamespace](简体中文/API 参考/边缘函数（旧版）/边缘KV/GetKvNamespace.md)
+        - [ListKvKey](简体中文/API 参考/边缘函数（旧版）/边缘KV/ListKvKey.md)
+        - [ListKvNamespace](简体中文/API 参考/边缘函数（旧版）/边缘KV/ListKvNamespace.md)
+        - [UpdateKeyValue](简体中文/API 参考/边缘函数（旧版）/边缘KV/UpdateKeyValue.md)
+        - [UpdateKvNamespace](简体中文/API 参考/边缘函数（旧版）/边缘KV/UpdateKvNamespace.md)
+      - **集群**
+        - [ListContinent](简体中文/API 参考/边缘函数（旧版）/集群/ListContinent.md)
+        - [ListContinentCluster](简体中文/API 参考/边缘函数（旧版）/集群/ListContinentCluster.md)
+        - [ListCountry](简体中文/API 参考/边缘函数（旧版）/集群/ListCountry.md)
+        - [UpdateCountryCluster](简体中文/API 参考/边缘函数（旧版）/集群/UpdateCountryCluster.md)
+    - **高级配置**
+      - **全局配置**
+        - [AddSharedConfig](简体中文/API 参考/高级配置/全局配置/AddSharedConfig.md)
+        - [DeleteSharedConfig](简体中文/API 参考/高级配置/全局配置/DeleteSharedConfig.md)
+        - [DescribeDomainShared](简体中文/API 参考/高级配置/全局配置/DescribeDomainShared.md)
+        - [DescribeSharedConfig](简体中文/API 参考/高级配置/全局配置/DescribeSharedConfig.md)
+        - [ListSharedConfig](简体中文/API 参考/高级配置/全局配置/ListSharedConfig.md)
+        - [UpdateSharedConfig](简体中文/API 参考/高级配置/全局配置/UpdateSharedConfig.md)
+      - **共享缓存**
+        - [ListCacheSharedDomains](简体中文/API 参考/高级配置/共享缓存/ListCacheSharedDomains.md)
+  - **学习指引**
+    - [API 指引](简体中文/学习指引/API 指引.md)
+    - [使用指引](简体中文/学习指引/使用指引.md)
+  - **用户指南**
+    - [AI 助手](简体中文/用户指南/AI 助手.md)
+    - [Pages + Trae Work 实操指南：6 个场景，把你的想法变成可分享的网页](简体中文/用户指南/Pages + Trae Work 实操指南：6 个场景，把你的想法变成可分享的网页.md)
+    - [使用 HTML 转 Markdown 优化 AI Agent 内容抓取](简体中文/用户指南/使用 HTML 转 Markdown 优化 AI Agent 内容抓取.md)
+    - **产品计费**
+      - [计费说明](简体中文/用户指南/产品计费/计费说明.md)
+      - [高额账单风险警示](简体中文/用户指南/产品计费/高额账单风险警示.md)
+    - **常见问题**
+      - [刷新与预热问题](简体中文/用户指南/常见问题/刷新与预热问题.md)
+      - [域名配置](简体中文/用户指南/常见问题/域名配置.md)
+      - [计费常见问题](简体中文/用户指南/常见问题/计费常见问题.md)
+    - **快速入门**
+      - [上传证书](简体中文/用户指南/快速入门/上传证书.md)
+      - [开通 BytePlus CDN](简体中文/用户指南/快速入门/开通 BytePlus CDN.md)
+      - [教程介绍](简体中文/用户指南/快速入门/教程介绍.md)
+      - [添加您的域名](简体中文/用户指南/快速入门/添加您的域名.md)
+      - [设置 CNAME](简体中文/用户指南/快速入门/设置 CNAME.md)
+      - [设置分发策略与源站](简体中文/用户指南/快速入门/设置分发策略与源站.md)
+      - [配置 hosts 文件测试加速域名](简体中文/用户指南/快速入门/配置 hosts 文件测试加速域名.md)
+    - **更新和公告**
+      - [【通告】Let's Encrypt 证书链变更](简体中文/用户指南/更新和公告/【通告】Let's Encrypt 证书链变更.md)
+      - [产品公告](简体中文/用户指南/更新和公告/产品公告.md)
+    - **概述**
+      - [基本概念](简体中文/用户指南/概述/基本概念.md)
+      - [概述](简体中文/用户指南/概述/概述.md)
+    - **配置指南**
+      - [域名概述](简体中文/用户指南/配置指南/域名概述.md)
+      - [域名配置](简体中文/用户指南/配置指南/域名配置.md)
+      - [策略概述](简体中文/用户指南/配置指南/策略概述.md)
+      - [策略配置](简体中文/用户指南/配置指南/策略配置.md)
+      - [资源配额](简体中文/用户指南/配置指南/资源配额.md)
+      - **分发策略**
+        - [使用边缘函数响应](简体中文/用户指南/配置指南/分发策略/使用边缘函数响应.md)
+        - **URL 鉴权**
+          - [A 类型](简体中文/用户指南/配置指南/分发策略/URL 鉴权/A 类型.md)
+          - [B 类型](简体中文/用户指南/配置指南/分发策略/URL 鉴权/B 类型.md)
+          - [C 类型](简体中文/用户指南/配置指南/分发策略/URL 鉴权/C 类型.md)
+          - [D 类型](简体中文/用户指南/配置指南/分发策略/URL 鉴权/D 类型.md)
+          - [E 类型](简体中文/用户指南/配置指南/分发策略/URL 鉴权/E 类型.md)
+          - [F 类型](简体中文/用户指南/配置指南/分发策略/URL 鉴权/F 类型.md)
+          - [URL 鉴权概览](简体中文/用户指南/配置指南/分发策略/URL 鉴权/URL 鉴权概览.md)
+        - **源站配置**
+          - [IPv6 回源](简体中文/用户指南/配置指南/分发策略/源站配置/IPv6 回源.md)
+          - [回源 Host](简体中文/用户指南/配置指南/分发策略/源站配置/回源 Host.md)
+          - [回源协议](简体中文/用户指南/配置指南/分发策略/源站配置/回源协议.md)
+          - [回源重试机制](简体中文/用户指南/配置指南/分发策略/源站配置/回源重试机制.md)
+          - [条件源站](简体中文/用户指南/配置指南/分发策略/源站配置/条件源站.md)
+          - [源站清单](简体中文/用户指南/配置指南/分发策略/源站配置/源站清单.md)
+          - [源站证书校验](简体中文/用户指南/配置指南/分发策略/源站配置/源站证书校验.md)
+        - **策略配置**
+          - **AI 流量管理**
+            - [HTML 转 Markdown](简体中文/用户指南/配置指南/分发策略/策略配置/AI 流量管理/HTML 转 Markdown.md)
+          - **内容管理**
+            - [智能压缩](简体中文/用户指南/配置指南/分发策略/策略配置/内容管理/智能压缩.md)
+            - [视频拖拽](简体中文/用户指南/配置指南/分发策略/策略配置/内容管理/视频拖拽.md)
+            - [页面优化](简体中文/用户指南/配置指南/分发策略/策略配置/内容管理/页面优化.md)
+          - **协议管理**
+            - [IPv6](简体中文/用户指南/配置指南/分发策略/策略配置/协议管理/IPv6.md)
+            - [PROXY Protocol](简体中文/用户指南/配置指南/分发策略/策略配置/协议管理/PROXY Protocol.md)
+            - [Server-Sent Events (SSE)](简体中文/用户指南/配置指南/分发策略/策略配置/协议管理/Server-Sent Events (SSE).md)
+            - [WebSocket](简体中文/用户指南/配置指南/分发策略/策略配置/协议管理/WebSocket.md)
+            - [禁用 HTTP Method](简体中文/用户指南/配置指南/分发策略/策略配置/协议管理/禁用 HTTP Method.md)
+          - **回源扩展**
+            - [Range 回源设置](简体中文/用户指南/配置指南/分发策略/策略配置/回源扩展/Range 回源设置.md)
+            - [回源 SNI](简体中文/用户指南/配置指南/分发策略/策略配置/回源扩展/回源 SNI.md)
+            - [回源 URL 改写](简体中文/用户指南/配置指南/分发策略/策略配置/回源扩展/回源 URL 改写.md)
+            - [回源参数设置](简体中文/用户指南/配置指南/分发策略/策略配置/回源扩展/回源参数设置.md)
+            - [回源请求头设置](简体中文/用户指南/配置指南/分发策略/策略配置/回源扩展/回源请求头设置.md)
+            - [回源请求超时](简体中文/用户指南/配置指南/分发策略/策略配置/回源扩展/回源请求超时.md)
+            - [回源重定向跟随](简体中文/用户指南/配置指南/分发策略/策略配置/回源扩展/回源重定向跟随.md)
+            - [回源重试设置](简体中文/用户指南/配置指南/分发策略/策略配置/回源扩展/回源重试设置.md)
+            - [源站响应头设置](简体中文/用户指南/配置指南/分发策略/策略配置/回源扩展/源站响应头设置.md)
+          - **性能优化**
+            - [智能路由](简体中文/用户指南/配置指南/分发策略/策略配置/性能优化/智能路由.md)
+            - [源站预建连](简体中文/用户指南/配置指南/分发策略/策略配置/性能优化/源站预建连.md)
+          - **缓存规则**
+            - [URL 重定向改写](简体中文/用户指南/配置指南/分发策略/策略配置/缓存规则/URL 重定向改写.md)
+            - [浏览器缓存](简体中文/用户指南/配置指南/分发策略/策略配置/缓存规则/浏览器缓存.md)
+            - [状态码缓存](简体中文/用户指南/配置指南/分发策略/策略配置/缓存规则/状态码缓存.md)
+            - [离线缓存](简体中文/用户指南/配置指南/分发策略/策略配置/缓存规则/离线缓存.md)
+            - [缓存规则](简体中文/用户指南/配置指南/分发策略/策略配置/缓存规则/缓存规则.md)
+            - [缓存键值](简体中文/用户指南/配置指南/分发策略/策略配置/缓存规则/缓存键值.md)
+          - **访问扩展**
+            - [HTTP 响应头设置](简体中文/用户指南/配置指南/分发策略/策略配置/访问扩展/HTTP 响应头设置.md)
+            - [URL 标准化](简体中文/用户指南/配置指南/分发策略/策略配置/访问扩展/URL 标准化.md)
+            - [自定义错误页面](简体中文/用户指南/配置指南/分发策略/策略配置/访问扩展/自定义错误页面.md)
+          - **访问控制**
+            - [IP 黑白名单](简体中文/用户指南/配置指南/分发策略/策略配置/访问控制/IP 黑白名单.md)
+            - [Origin 防盗链](简体中文/用户指南/配置指南/分发策略/策略配置/访问控制/Origin 防盗链.md)
+            - [Referer 防盗链](简体中文/用户指南/配置指南/分发策略/策略配置/访问控制/Referer 防盗链.md)
+            - [UA 黑白名单](简体中文/用户指南/配置指南/分发策略/策略配置/访问控制/UA 黑白名单.md)
+            - [国家名称对照表](简体中文/用户指南/配置指南/分发策略/策略配置/访问控制/国家名称对照表.md)
+            - [地域访问限制](简体中文/用户指南/配置指南/分发策略/策略配置/访问控制/地域访问限制.md)
+            - [自定义拦截规则](简体中文/用户指南/配置指南/分发策略/策略配置/访问控制/自定义拦截规则.md)
+            - [访问控制功能的优先级](简体中文/用户指南/配置指南/分发策略/策略配置/访问控制/访问控制功能的优先级.md)
+            - [远程鉴权](简体中文/用户指南/配置指南/分发策略/策略配置/访问控制/远程鉴权.md)
+          - **限速和限频管理**
+            - [IP 访问限频](简体中文/用户指南/配置指南/分发策略/策略配置/限速和限频管理/IP 访问限频.md)
+            - [下载限速](简体中文/用户指南/配置指南/分发策略/策略配置/限速和限频管理/下载限速.md)
+      - **安全中心**
+        - [WAF 防护](简体中文/用户指南/配置指南/安全中心/WAF 防护.md)
+        - **DDoS 防护**
+          - [DDoS 防护概述](简体中文/用户指南/配置指南/安全中心/DDoS 防护/DDoS 防护概述.md)
+          - [DDoS 防护等级说明](简体中文/用户指南/配置指南/安全中心/DDoS 防护/DDoS 防护等级说明.md)
+          - [创建高级 DDoS 防护实例](简体中文/用户指南/配置指南/安全中心/DDoS 防护/创建高级 DDoS 防护实例.md)
+          - [升配实例](简体中文/用户指南/配置指南/安全中心/DDoS 防护/升配实例.md)
+          - [监控与报警](简体中文/用户指南/配置指南/安全中心/DDoS 防护/监控与报警.md)
+          - [管理防护域名](简体中文/用户指南/配置指南/安全中心/DDoS 防护/管理防护域名.md)
+          - [续订实例](简体中文/用户指南/配置指南/安全中心/DDoS 防护/续订实例.md)
+        - **加密策略**
+          - **策略配置**
+            - **加密优化**
+              - [HSTS 设置](简体中文/用户指南/配置指南/安全中心/加密策略/策略配置/加密优化/HSTS 设置.md)
+              - [OCSP 装订](简体中文/用户指南/配置指南/安全中心/加密策略/策略配置/加密优化/OCSP 装订.md)
+              - [TLS 版本设置](简体中文/用户指南/配置指南/安全中心/加密策略/策略配置/加密优化/TLS 版本设置.md)
+              - [访问双向认证](简体中文/用户指南/配置指南/安全中心/加密策略/策略配置/加密优化/访问双向认证.md)
+            - **请求协议**
+              - [HTTP/2 设置](简体中文/用户指南/配置指南/安全中心/加密策略/策略配置/请求协议/HTTP - 2 设置.md)
+              - [QUIC 设置](简体中文/用户指南/配置指南/安全中心/加密策略/策略配置/请求协议/QUIC 设置.md)
+              - [强制跳转设置](简体中文/用户指南/配置指南/安全中心/加密策略/策略配置/请求协议/强制跳转设置.md)
+        - **证书中心**
+          - [CDN 证书托管](简体中文/用户指南/配置指南/安全中心/证书中心/CDN 证书托管.md)
+          - [上传证书](简体中文/用户指南/配置指南/安全中心/证书中心/上传证书.md)
+          - [关联证书与加速域名](简体中文/用户指南/配置指南/安全中心/证书中心/关联证书与加速域名.md)
+          - [证书中心概述](简体中文/用户指南/配置指南/安全中心/证书中心/证书中心概述.md)
+      - **工具中心**
+        - [URL 封禁与解封](简体中文/用户指南/配置指南/工具中心/URL 封禁与解封.md)
+        - [中国内地网络优化](简体中文/用户指南/配置指南/工具中心/中国内地网络优化.md)
+        - [用量封顶](简体中文/用户指南/配置指南/工具中心/用量封顶.md)
+        - [诊断工具](简体中文/用户指南/配置指南/工具中心/诊断工具.md)
+        - **刷新与预热**
+          - [操作记录](简体中文/用户指南/配置指南/工具中心/刷新与预热/操作记录.md)
+          - [文件预热](简体中文/用户指南/配置指南/工具中心/刷新与预热/文件预热.md)
+          - [缓存刷新](简体中文/用户指南/配置指南/工具中心/刷新与预热/缓存刷新.md)
+        - **日志管理**
+          - [日志下载](简体中文/用户指南/配置指南/工具中心/日志管理/日志下载.md)
+          - [日志管理概述](简体中文/用户指南/配置指南/工具中心/日志管理/日志管理概述.md)
+          - [离线日志转存](简体中文/用户指南/配置指南/工具中心/日志管理/离线日志转存.md)
+          - **实时日志投递**
+            - [任务配置](简体中文/用户指南/配置指南/工具中心/日志管理/实时日志投递/任务配置.md)
+            - [实时日志投递概述](简体中文/用户指南/配置指南/工具中心/日志管理/实时日志投递/实时日志投递概述.md)
+            - [日志检索示例](简体中文/用户指南/配置指南/工具中心/日志管理/实时日志投递/日志检索示例.md)
+            - [索引配置](简体中文/用户指南/配置指南/工具中心/日志管理/实时日志投递/索引配置.md)
+      - **权限管理**
+        - [授权 CDN 访问必要的 BytePlus 服务](简体中文/用户指南/配置指南/权限管理/授权 CDN 访问必要的 BytePlus 服务.md)
+      - **监控与报告**
+        - [AI 流量管理](简体中文/用户指南/配置指南/监控与报告/AI 流量管理.md)
+        - [业务分析](简体中文/用户指南/配置指南/监控与报告/业务分析.md)
+        - [命中率](简体中文/用户指南/配置指南/监控与报告/命中率.md)
+        - [报表订阅](简体中文/用户指南/配置指南/监控与报告/报表订阅.md)
+        - [指标的定义以及统计方式](简体中文/用户指南/配置指南/监控与报告/指标的定义以及统计方式.md)
+        - [源站监控](简体中文/用户指南/配置指南/监控与报告/源站监控.md)
+        - [热点排行](简体中文/用户指南/配置指南/监控与报告/热点排行.md)
+        - [统计时间段说明](简体中文/用户指南/配置指南/监控与报告/统计时间段说明.md)
+        - [边缘监控](简体中文/用户指南/配置指南/监控与报告/边缘监控.md)
+      - **边缘函数**
+        - [什么是边缘函数](简体中文/用户指南/配置指南/边缘函数/什么是边缘函数.md)
+        - [使用限制](简体中文/用户指南/配置指南/边缘函数/使用限制.md)
+        - [基本概念](简体中文/用户指南/配置指南/边缘函数/基本概念.md)
+        - [工作原理](简体中文/用户指南/配置指南/边缘函数/工作原理.md)
+        - [常见问题](简体中文/用户指南/配置指南/边缘函数/常见问题.md)
+        - [开通边缘函数](简体中文/用户指南/配置指南/边缘函数/开通边缘函数.md)
+        - [计费说明](简体中文/用户指南/配置指南/边缘函数/计费说明.md)
+        - [边缘函数快速入门](简体中文/用户指南/配置指南/边缘函数/边缘函数快速入门.md)
+        - **CLI 指南**
+          - [CLI发布记录](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI发布记录.md)
+          - [CLI概览](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI概览.md)
+          - [使用 CLI 托管静态页面](简体中文/用户指南/配置指南/边缘函数/CLI 指南/使用 CLI 托管静态页面.md)
+          - [创建 OPA 函数项目](简体中文/用户指南/配置指南/边缘函数/CLI 指南/创建 OPA 函数项目.md)
+          - [基于函数模板创建函数](简体中文/用户指南/配置指南/边缘函数/CLI 指南/基于函数模板创建函数.md)
+          - [安装CLI](简体中文/用户指南/配置指南/边缘函数/CLI 指南/安装CLI.md)
+          - [快速入门：使用 CLI 创建并发布函数](简体中文/用户指南/配置指南/边缘函数/CLI 指南/快速入门：使用 CLI 创建并发布函数.md)
+          - [快速入门：使用 CLI 管理边缘 KV](简体中文/用户指南/配置指南/边缘函数/CLI 指南/快速入门：使用 CLI 管理边缘 KV.md)
+          - [设置您的 Access Key ID 和 Secret Access Key](简体中文/用户指南/配置指南/边缘函数/CLI 指南/设置您的 Access Key ID 和 Secret Access Key.md)
+          - **CLI命令参考**
+            - [CLI命令列表](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/CLI命令列表.md)
+            - **Pages**
+              - [nest pages](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/Pages/nest pages.md)
+            - **全局参数**
+              - [--config](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/全局参数/--config.md)
+              - [--function](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/全局参数/--function.md)
+              - [--help](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/全局参数/--help.md)
+              - [--verbose](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/全局参数/--verbose.md)
+            - **函数**
+              - [nest init](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/nest init.md)
+              - **函数配置**
+                - [nest canary](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/函数配置/nest canary.md)
+                - [nest envs](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/函数配置/nest envs.md)
+              - **发布历史**
+                - [nest rollback](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/发布历史/nest rollback.md)
+                - [nest tickets](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/发布历史/nest tickets.md)
+                - [nest versions](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/发布历史/nest versions.md)
+              - **管理函数**
+                - [nest deploy](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/管理函数/nest deploy.md)
+                - [nest functions](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/管理函数/nest functions.md)
+                - [nest upload](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/管理函数/nest upload.md)
+              - **触发器**
+                - [nest cron](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/触发器/nest cron.md)
+                - [nest domain](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/触发器/nest domain.md)
+              - **调试函数代码**
+                - [nest debug](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/调试函数代码/nest debug.md)
+                - [nest start](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/函数/调试函数代码/nest start.md)
+            - **辅助工具**
+              - [nest config](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/辅助工具/nest config.md)
+              - [nest help](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/辅助工具/nest help.md)
+            - **边缘KV**
+              - [nest kv](简体中文/用户指南/配置指南/边缘函数/CLI 指南/CLI命令参考/边缘KV/nest kv.md)
+        - **MCP 服务指南**
+          - [使用边缘函数 MCP 服务](简体中文/用户指南/配置指南/边缘函数/MCP 服务指南/使用边缘函数 MCP 服务.md)
+          - [边缘函数 MCP 服务概览](简体中文/用户指南/配置指南/边缘函数/MCP 服务指南/边缘函数 MCP 服务概览.md)
+        - **控制台指南**
+          - **Pages**
+            - [Pages 介绍](简体中文/用户指南/配置指南/边缘函数/控制台指南/Pages/Pages 介绍.md)
+            - [使用 Pages Functions](简体中文/用户指南/配置指南/边缘函数/控制台指南/Pages/使用 Pages Functions.md)
+            - [使用 Pages 模板](简体中文/用户指南/配置指南/边缘函数/控制台指南/Pages/使用 Pages 模板.md)
+            - [创建 Pages 项目](简体中文/用户指南/配置指南/边缘函数/控制台指南/Pages/创建 Pages 项目.md)
+            - [管理项目与部署](简体中文/用户指南/配置指南/边缘函数/控制台指南/Pages/管理项目与部署.md)
+            - [预览与自定义域名](简体中文/用户指南/配置指南/边缘函数/控制台指南/Pages/预览与自定义域名.md)
+          - **函数**
+            - [使用 AI 助手编辑函数代码](简体中文/用户指南/配置指南/边缘函数/控制台指南/函数/使用 AI 助手编辑函数代码.md)
+            - [发布历史](简体中文/用户指南/配置指南/边缘函数/控制台指南/函数/发布历史.md)
+            - [查看函数的监控数据](简体中文/用户指南/配置指南/边缘函数/控制台指南/函数/查看函数的监控数据.md)
+            - [管理函数](简体中文/用户指南/配置指南/边缘函数/控制台指南/函数/管理函数.md)
+            - [编辑和调试函数代码](简体中文/用户指南/配置指南/边缘函数/控制台指南/函数/编辑和调试函数代码.md)
+            - **函数配置**
+              - [灰度环境](简体中文/用户指南/配置指南/边缘函数/控制台指南/函数/函数配置/灰度环境.md)
+              - [环境变量](简体中文/用户指南/配置指南/边缘函数/控制台指南/函数/函数配置/环境变量.md)
+            - **触发器**
+              - [Cron触发器](简体中文/用户指南/配置指南/边缘函数/控制台指南/函数/触发器/Cron触发器.md)
+              - [域名触发器](简体中文/用户指南/配置指南/边缘函数/控制台指南/函数/触发器/域名触发器.md)
+          - **边缘KV**
+            - [管理存储空间](简体中文/用户指南/配置指南/边缘函数/控制台指南/边缘KV/管理存储空间.md)
+            - [管理数据](简体中文/用户指南/配置指南/边缘函数/控制台指南/边缘KV/管理数据.md)
+            - [边缘KV快速入门](简体中文/用户指南/配置指南/边缘函数/控制台指南/边缘KV/边缘KV快速入门.md)
+        - **示例代码**
+          - [CORS 请求代理](简体中文/用户指南/配置指南/边缘函数/示例代码/CORS 请求代理.md)
+          - [JWT鉴权](简体中文/用户指南/配置指南/边缘函数/示例代码/JWT鉴权.md)
+          - [URL重定向](简体中文/用户指南/配置指南/边缘函数/示例代码/URL重定向.md)
+          - [一次请求多个文件并流式返回](简体中文/用户指南/配置指南/边缘函数/示例代码/一次请求多个文件并流式返回.md)
+          - [修改HTTP请求头或响应头](简体中文/用户指南/配置指南/边缘函数/示例代码/修改HTTP请求头或响应头.md)
+          - [基于Cookie的缓存](简体中文/用户指南/配置指南/边缘函数/示例代码/基于Cookie的缓存.md)
+          - [将HTTP重定向到HTTPS](简体中文/用户指南/配置指南/边缘函数/示例代码/将HTTP重定向到HTTPS.md)
+          - [根据Cookie绕过CDN缓存](简体中文/用户指南/配置指南/边缘函数/示例代码/根据Cookie绕过CDN缓存.md)
+          - [根据Cookie进行A/B测试](简体中文/用户指南/配置指南/边缘函数/示例代码/根据Cookie进行A - B测试.md)
+          - [根据UA添加自定义请求头](简体中文/用户指南/配置指南/边缘函数/示例代码/根据UA添加自定义请求头.md)
+          - [根据用户地理位置信息获取天气数据](简体中文/用户指南/配置指南/边缘函数/示例代码/根据用户地理位置信息获取天气数据.md)
+          - [流式传输聚合的请求和响应](简体中文/用户指南/配置指南/边缘函数/示例代码/流式传输聚合的请求和响应.md)
+          - [流式返回改写的HTML页面](简体中文/用户指南/配置指南/边缘函数/示例代码/流式返回改写的HTML页面.md)
+          - [示例概览](简体中文/用户指南/配置指南/边缘函数/示例代码/示例概览.md)
+          - [自定义错误页面](简体中文/用户指南/配置指南/边缘函数/示例代码/自定义错误页面.md)
+          - [获取并处理JSON数据](简体中文/用户指南/配置指南/边缘函数/示例代码/获取并处理JSON数据.md)
+          - [返回HTML页面](简体中文/用户指南/配置指南/边缘函数/示例代码/返回HTML页面.md)
+          - [返回JSON数据](简体中文/用户指南/配置指南/边缘函数/示例代码/返回JSON数据.md)
+          - [通过延迟加载JavaScript实现网站加速](简体中文/用户指南/配置指南/边缘函数/示例代码/通过延迟加载JavaScript实现网站加速.md)
+          - [通过缓存网站的静态页面实现故障兜底](简体中文/用户指南/配置指南/边缘函数/示例代码/通过缓存网站的静态页面实现故障兜底.md)
+          - [验证Token的 HMAC-SHA256 签名](简体中文/用户指南/配置指南/边缘函数/示例代码/验证Token的 HMAC-SHA256 签名.md)
+        - **运行时API**
+          - [addEventListener()](简体中文/用户指南/配置指南/边缘函数/运行时API/addEventListener().md)
+          - [createHtmlStream()](简体中文/用户指南/配置指南/边缘函数/运行时API/createHtmlStream().md)
+          - [CronEvent](简体中文/用户指南/配置指南/边缘函数/运行时API/CronEvent.md)
+          - [FetchEvent](简体中文/用户指南/配置指南/边缘函数/运行时API/FetchEvent.md)
+          - [HTTP 响应状态码](简体中文/用户指南/配置指南/边缘函数/运行时API/HTTP 响应状态码.md)
+          - [KV](简体中文/用户指南/配置指南/边缘函数/运行时API/KV.md)
+          - [Streams API](简体中文/用户指南/配置指南/边缘函数/运行时API/Streams API.md)
+          - [Web Standards API](简体中文/用户指南/配置指南/边缘函数/运行时API/Web Standards API.md)
+          - [运行时API概览](简体中文/用户指南/配置指南/边缘函数/运行时API/运行时API概览.md)
+          - **Fetch API**
+            - [fetch()](简体中文/用户指南/配置指南/边缘函数/运行时API/Fetch API/fetch().md)
+            - [Headers](简体中文/用户指南/配置指南/边缘函数/运行时API/Fetch API/Headers.md)
+            - [Request](简体中文/用户指南/配置指南/边缘函数/运行时API/Fetch API/Request.md)
+            - [Response](简体中文/用户指南/配置指南/边缘函数/运行时API/Fetch API/Response.md)
+            - [什么是 Fetch API](简体中文/用户指南/配置指南/边缘函数/运行时API/Fetch API/什么是 Fetch API.md)
+          - **net**
+            - [dns](简体中文/用户指南/配置指南/边缘函数/运行时API/net/dns.md)
+          - **Web Crypto API**
+            - [digest()](简体中文/用户指南/配置指南/边缘函数/运行时API/Web Crypto API/digest().md)
+            - [encrypt()/decrypt()](简体中文/用户指南/配置指南/边缘函数/运行时API/Web Crypto API/encrypt() - decrypt().md)
+            - [importKey()/exportKey()/generateKey()](简体中文/用户指南/配置指南/边缘函数/运行时API/Web Crypto API/importKey() - exportKey() - generateKey().md)
+            - [sign()/verify()](简体中文/用户指南/配置指南/边缘函数/运行时API/Web Crypto API/sign() - verify().md)
+            - [什么是 Web Crypto API](简体中文/用户指南/配置指南/边缘函数/运行时API/Web Crypto API/什么是 Web Crypto API.md)
+            - [支持的算法](简体中文/用户指南/配置指南/边缘函数/运行时API/Web Crypto API/支持的算法.md)
+          - **Web Crypto Streams API**
+            - [DigestStream](简体中文/用户指南/配置指南/边缘函数/运行时API/Web Crypto Streams API/DigestStream.md)
+            - [什么是 Web Crypto Streams API](简体中文/用户指南/配置指南/边缘函数/运行时API/Web Crypto Streams API/什么是 Web Crypto Streams API.md)
+            - [支持的算法](简体中文/用户指南/配置指南/边缘函数/运行时API/Web Crypto Streams API/支持的算法.md)
+      - **高级配置**
+        - [全局配置](简体中文/用户指南/配置指南/高级配置/全局配置.md)
+        - [共享缓存](简体中文/用户指南/配置指南/高级配置/共享缓存.md)
+        - [规则引擎](简体中文/用户指南/配置指南/高级配置/规则引擎.md)
+- **繁體中文**
+  - **API參考**
+    - **API 调用**
+      - [API 回應](繁體中文/API參考/API 调用/API 回應.md)
+      - [API 錯誤碼](繁體中文/API參考/API 调用/API 錯誤碼.md)
+      - [BytePlus SDK](繁體中文/API參考/API 调用/BytePlus SDK.md)
+      - [呼叫方式](繁體中文/API參考/API 调用/呼叫方式.md)
+    - **工具中心**
+      - **內容管理**
+        - [DescribeContentQuota](繁體中文/API參考/工具中心/內容管理/DescribeContentQuota.md)
+        - [DescribeContentTasks](繁體中文/API參考/工具中心/內容管理/DescribeContentTasks.md)
+        - [SubmitPreloadTask](繁體中文/API參考/工具中心/內容管理/SubmitPreloadTask.md)
+        - [SubmitRefreshTask](繁體中文/API參考/工具中心/內容管理/SubmitRefreshTask.md)
+      - **日誌管理**
+        - **即時日誌投遞**
+          - [CreateRealtimeLogDeliveryTask](繁體中文/API參考/工具中心/日誌管理/即時日誌投遞/CreateRealtimeLogDeliveryTask.md)
+          - [DeleteRealtimeLogDeliveryTask](繁體中文/API參考/工具中心/日誌管理/即時日誌投遞/DeleteRealtimeLogDeliveryTask.md)
+          - [DisableRealtimeLogDeliveryTask](繁體中文/API參考/工具中心/日誌管理/即時日誌投遞/DisableRealtimeLogDeliveryTask.md)
+          - [EnableRealtimeLogDeliveryTask](繁體中文/API參考/工具中心/日誌管理/即時日誌投遞/EnableRealtimeLogDeliveryTask.md)
+          - [ListRealtimeLogDeliveryTask](繁體中文/API參考/工具中心/日誌管理/即時日誌投遞/ListRealtimeLogDeliveryTask.md)
+          - [UpdateRealtimeLogDeliveryTask](繁體中文/API參考/工具中心/日誌管理/即時日誌投遞/UpdateRealtimeLogDeliveryTask.md)
+        - **日誌下載**
+          - [DescribeCdnAccessLog](繁體中文/API參考/工具中心/日誌管理/日誌下載/DescribeCdnAccessLog.md)
+        - **離線日誌轉存**
+          - [CreateOfflineLogStoreTask](繁體中文/API參考/工具中心/日誌管理/離線日誌轉存/CreateOfflineLogStoreTask.md)
+          - [DeleteOfflineLogStoreTask](繁體中文/API參考/工具中心/日誌管理/離線日誌轉存/DeleteOfflineLogStoreTask.md)
+          - [DisableOfflineLogStoreTask](繁體中文/API參考/工具中心/日誌管理/離線日誌轉存/DisableOfflineLogStoreTask.md)
+          - [EnableOfflineLogStoreTask](繁體中文/API參考/工具中心/日誌管理/離線日誌轉存/EnableOfflineLogStoreTask.md)
+          - [ListOfflineLogStoreTask](繁體中文/API參考/工具中心/日誌管理/離線日誌轉存/ListOfflineLogStoreTask.md)
+          - [UpdateOfflineLogStoreTask](繁體中文/API參考/工具中心/日誌管理/離線日誌轉存/UpdateOfflineLogStoreTask.md)
+      - **標籤管理**
+        - [TagResources](繁體中文/API參考/工具中心/標籤管理/TagResources.md)
+        - [UntagResources](繁體中文/API參考/工具中心/標籤管理/UntagResources.md)
+      - **診斷工具**
+        - [DescribeCdnIP](繁體中文/API參考/工具中心/診斷工具/DescribeCdnIP.md)
+        - [DescribeCdnRegionAndIsp](繁體中文/API參考/工具中心/診斷工具/DescribeCdnRegionAndIsp.md)
+    - **憑證管理**
+      - [AddCertificate](繁體中文/API參考/憑證管理/AddCertificate.md)
+      - [BatchDeployCert](繁體中文/API參考/憑證管理/BatchDeployCert.md)
+      - [DeleteCdnCertificate](繁體中文/API參考/憑證管理/DeleteCdnCertificate.md)
+      - [DescribeCertConfig](繁體中文/API參考/憑證管理/DescribeCertConfig.md)
+      - [ListCdnCertInfo](繁體中文/API參考/憑證管理/ListCdnCertInfo.md)
+      - [ListCertInfo](繁體中文/API參考/憑證管理/ListCertInfo.md)
+    - **策略管理**
+      - **分發策略**
+        - [CreateServiceTemplate](繁體中文/API參考/策略管理/分發策略/CreateServiceTemplate.md)
+        - [DescribeServiceTemplate](繁體中文/API參考/策略管理/分發策略/DescribeServiceTemplate.md)
+        - [UpdateServiceTemplate](繁體中文/API參考/策略管理/分發策略/UpdateServiceTemplate.md)
+      - **加密策略**
+        - [CreateCipherTemplate](繁體中文/API參考/策略管理/加密策略/CreateCipherTemplate.md)
+        - [DescribeCipherTemplate](繁體中文/API參考/策略管理/加密策略/DescribeCipherTemplate.md)
+        - [UpdateCipherTemplate](繁體中文/API參考/策略管理/加密策略/UpdateCipherTemplate.md)
+      - **策略版本**
+        - [CreateTemplateVersion](繁體中文/API參考/策略管理/策略版本/CreateTemplateVersion.md)
+        - [DescribeTemplateReleaseVersions](繁體中文/API參考/策略管理/策略版本/DescribeTemplateReleaseVersions.md)
+        - [DescribeTemplateVersions](繁體中文/API參考/策略管理/策略版本/DescribeTemplateVersions.md)
+      - **策管網域名稱**
+        - [AddTemplateDomain](繁體中文/API參考/策略管理/策管網域名稱/AddTemplateDomain.md)
+        - [DescribeTemplateDomainOperations](繁體中文/API參考/策略管理/策管網域名稱/DescribeTemplateDomainOperations.md)
+        - [DescribeTemplateDomains](繁體中文/API參考/策略管理/策管網域名稱/DescribeTemplateDomains.md)
+        - [UpdateTemplateDomain](繁體中文/API參考/策略管理/策管網域名稱/UpdateTemplateDomain.md)
+      - **規則引擎策略**
+        - [CreateRuleEngineTemplate](繁體中文/API參考/策略管理/規則引擎策略/CreateRuleEngineTemplate.md)
+        - [DescribeRuleEngineTemplate](繁體中文/API參考/策略管理/規則引擎策略/DescribeRuleEngineTemplate.md)
+        - [UpdateRuleEngineTemplate](繁體中文/API參考/策略管理/規則引擎策略/UpdateRuleEngineTemplate.md)
+      - **通用操作**
+        - [DeleteTemplate](繁體中文/API參考/策略管理/通用操作/DeleteTemplate.md)
+        - [DescribeTemplateOperations](繁體中文/API參考/策略管理/通用操作/DescribeTemplateOperations.md)
+        - [DescribeTemplates](繁體中文/API參考/策略管理/通用操作/DescribeTemplates.md)
+        - [DuplicateTemplate](繁體中文/API參考/策略管理/通用操作/DuplicateTemplate.md)
+        - [LockTemplate](繁體中文/API參考/策略管理/通用操作/LockTemplate.md)
+        - [ReleaseTemplate](繁體中文/API參考/策略管理/通用操作/ReleaseTemplate.md)
+    - **網域管理**
+      - **啟用 - 停用網域名稱**
+        - [StartCdnDomain](繁體中文/API參考/網域管理/啟用 - 停用網域名稱/StartCdnDomain.md)
+        - [StopCdnDomain](繁體中文/API參考/網域管理/啟用 - 停用網域名稱/StopCdnDomain.md)
+      - **新增 - 刪除網域名稱**
+        - [AddCdnDomain](繁體中文/API參考/網域管理/新增 - 刪除網域名稱/AddCdnDomain.md)
+        - [DeleteCdnDomain](繁體中文/API參考/網域管理/新增 - 刪除網域名稱/DeleteCdnDomain.md)
+      - **查詢網域名稱**
+        - [DescribeCdnConfig](繁體中文/API參考/網域管理/查詢網域名稱/DescribeCdnConfig.md)
+        - [ListCdnDomains](繁體中文/API參考/網域管理/查詢網域名稱/ListCdnDomains.md)
+      - **網域名稱檢查**
+        - [CheckCdnDomain](繁體中文/API參考/網域管理/網域名稱檢查/CheckCdnDomain.md)
+      - **設定網域名稱**
+        - [BatchUpdateCdnConfig](繁體中文/API參考/網域管理/設定網域名稱/BatchUpdateCdnConfig.md)
+        - [UpdateCdnConfig](繁體中文/API參考/網域管理/設定網域名稱/UpdateCdnConfig.md)
+    - **資料統計**
+      - [統計時間段說明](繁體中文/API參考/資料統計/統計時間段說明.md)
+      - **回源統計**
+        - [DescribeOriginData](繁體中文/API參考/資料統計/回源統計/DescribeOriginData.md)
+        - [DescribeOriginRanking](繁體中文/API參考/資料統計/回源統計/DescribeOriginRanking.md)
+        - [DescribeOriginStatusCodeRanking](繁體中文/API參考/資料統計/回源統計/DescribeOriginStatusCodeRanking.md)
+        - [DescribeOriginSummary](繁體中文/API參考/資料統計/回源統計/DescribeOriginSummary.md)
+      - **存取統計**
+        - [DescribeDistrictData](繁體中文/API參考/資料統計/存取統計/DescribeDistrictData.md)
+        - [DescribeDistrictRanking](繁體中文/API參考/資料統計/存取統計/DescribeDistrictRanking.md)
+        - [DescribeDistrictSummary](繁體中文/API參考/資料統計/存取統計/DescribeDistrictSummary.md)
+        - [DescribeEdgeStatusCodeRanking](繁體中文/API參考/資料統計/存取統計/DescribeEdgeStatusCodeRanking.md)
+        - [DescribeStatisticalRanking](繁體中文/API參考/資料統計/存取統計/DescribeStatisticalRanking.md)
+        - [DescribeUserData](繁體中文/API參考/資料統計/存取統計/DescribeUserData.md)
+      - **計費區域統計**
+        - [DescribeEdgeData](繁體中文/API參考/資料統計/計費區域統計/DescribeEdgeData.md)
+        - [DescribeEdgeRanking](繁體中文/API參考/資料統計/計費區域統計/DescribeEdgeRanking.md)
+        - [DescribeEdgeSummary](繁體中文/API參考/資料統計/計費區域統計/DescribeEdgeSummary.md)
+    - **進階組態**
+      - **全域設定**
+        - [AddSharedConfig](繁體中文/API參考/進階組態/全域設定/AddSharedConfig.md)
+        - [DeleteSharedConfig](繁體中文/API參考/進階組態/全域設定/DeleteSharedConfig.md)
+        - [DescribeDomainShared](繁體中文/API參考/進階組態/全域設定/DescribeDomainShared.md)
+        - [DescribeSharedConfig](繁體中文/API參考/進階組態/全域設定/DescribeSharedConfig.md)
+        - [ListSharedConfig](繁體中文/API參考/進階組態/全域設定/ListSharedConfig.md)
+        - [UpdateSharedConfig](繁體中文/API參考/進階組態/全域設定/UpdateSharedConfig.md)
+      - **共用快取**
+        - [ListCacheSharedDomains](繁體中文/API參考/進階組態/共用快取/ListCacheSharedDomains.md)
+    - **邊緣函數**
+      - **Cron觸發器**
+        - [CreateCronJob](繁體中文/API參考/邊緣函數/Cron觸發器/CreateCronJob.md)
+        - [DeleteCronJob](繁體中文/API參考/邊緣函數/Cron觸發器/DeleteCronJob.md)
+        - [GetCronJob](繁體中文/API參考/邊緣函數/Cron觸發器/GetCronJob.md)
+        - [ListCronJob](繁體中文/API參考/邊緣函數/Cron觸發器/ListCronJob.md)
+        - [ListCronJobTask](繁體中文/API參考/邊緣函數/Cron觸發器/ListCronJobTask.md)
+        - [ListCronJobTaskLog](繁體中文/API參考/邊緣函數/Cron觸發器/ListCronJobTaskLog.md)
+        - [StartCronJob](繁體中文/API參考/邊緣函數/Cron觸發器/StartCronJob.md)
+        - [StopCronJob](繁體中文/API參考/邊緣函數/Cron觸發器/StopCronJob.md)
+        - [UpdateCronJob](繁體中文/API參考/邊緣函數/Cron觸發器/UpdateCronJob.md)
+      - **函數**
+        - [CreateFunction](繁體中文/API參考/邊緣函數/函數/CreateFunction.md)
+        - [DeleteFunction](繁體中文/API參考/邊緣函數/函數/DeleteFunction.md)
+        - [GetFunction](繁體中文/API參考/邊緣函數/函數/GetFunction.md)
+        - [ListFunction](繁體中文/API參考/邊緣函數/函數/ListFunction.md)
+        - [UpdateFunction](繁體中文/API參考/邊緣函數/函數/UpdateFunction.md)
+      - **環境變數**
+        - [AddEnv](繁體中文/API參考/邊緣函數/環境變數/AddEnv.md)
+        - [DeleteEnv](繁體中文/API參考/邊緣函數/環境變數/DeleteEnv.md)
+        - [EditEnv](繁體中文/API參考/邊緣函數/環境變數/EditEnv.md)
+        - [GetEnv](繁體中文/API參考/邊緣函數/環境變數/GetEnv.md)
+      - **發佈**
+        - [CanaryPublish](繁體中文/API參考/邊緣函數/發佈/CanaryPublish.md)
+        - [FullPublish](繁體中文/API參考/邊緣函數/發佈/FullPublish.md)
+        - [SnapshotPublish](繁體中文/API參考/邊緣函數/發佈/SnapshotPublish.md)
+      - **發佈曆史**
+        - [GetTicket](繁體中文/API參考/邊緣函數/發佈曆史/GetTicket.md)
+        - [ListTicket](繁體中文/API參考/邊緣函數/發佈曆史/ListTicket.md)
+      - **程式碼**
+        - [GetScriptSourceCode](繁體中文/API參考/邊緣函數/程式碼/GetScriptSourceCode.md)
+        - [GetSnapshot](繁體中文/API參考/邊緣函數/程式碼/GetSnapshot.md)
+        - [GetSourceCode](繁體中文/API參考/邊緣函數/程式碼/GetSourceCode.md)
+        - [ListVersions](繁體中文/API參考/邊緣函數/程式碼/ListVersions.md)
+        - [UpdateSourceCode](繁體中文/API參考/邊緣函數/程式碼/UpdateSourceCode.md)
+      - **網域名稱**
+        - [FunctionBindDomains](繁體中文/API參考/邊緣函數/網域名稱/FunctionBindDomains.md)
+        - [FunctionUnBindDomains](繁體中文/API參考/邊緣函數/網域名稱/FunctionUnBindDomains.md)
+        - [ListFunctionDomains](繁體中文/API參考/邊緣函數/網域名稱/ListFunctionDomains.md)
+      - **邊緣KV**
+        - [CreateKeyValue](繁體中文/API參考/邊緣函數/邊緣KV/CreateKeyValue.md)
+        - [CreateKvNamespace](繁體中文/API參考/邊緣函數/邊緣KV/CreateKvNamespace.md)
+        - [DeleteKvKey](繁體中文/API參考/邊緣函數/邊緣KV/DeleteKvKey.md)
+        - [DeleteKvNamespace](繁體中文/API參考/邊緣函數/邊緣KV/DeleteKvNamespace.md)
+        - [DeleteMultiKeys](繁體中文/API參考/邊緣函數/邊緣KV/DeleteMultiKeys.md)
+        - [GetKeyValue](繁體中文/API參考/邊緣函數/邊緣KV/GetKeyValue.md)
+        - [GetKvNamespace](繁體中文/API參考/邊緣函數/邊緣KV/GetKvNamespace.md)
+        - [ListKvKey](繁體中文/API參考/邊緣函數/邊緣KV/ListKvKey.md)
+        - [ListKvNamespace](繁體中文/API參考/邊緣函數/邊緣KV/ListKvNamespace.md)
+        - [UpdateKeyValue](繁體中文/API參考/邊緣函數/邊緣KV/UpdateKeyValue.md)
+        - [UpdateKvNamespace](繁體中文/API參考/邊緣函數/邊緣KV/UpdateKvNamespace.md)
+      - **金絲雀環境**
+        - [ListContinent](繁體中文/API參考/邊緣函數/金絲雀環境/ListContinent.md)
+        - [ListContinentCluster](繁體中文/API參考/邊緣函數/金絲雀環境/ListContinentCluster.md)
+        - [ListCountry](繁體中文/API參考/邊緣函數/金絲雀環境/ListCountry.md)
+        - [UpdateCountryCluster](繁體中文/API參考/邊緣函數/金絲雀環境/UpdateCountryCluster.md)
+  - **使用者指南**
+    - [AI 助理](繁體中文/使用者指南/AI 助理.md)
+    - [使用 HTML 轉 Markdown 優化 AI Agent 內容抓取](繁體中文/使用者指南/使用 HTML 轉 Markdown 優化 AI Agent 內容抓取.md)
+    - **常見問題**
+      - [清除快取与預取](繁體中文/使用者指南/常見問題/清除快取与預取.md)
+      - [網域名稱設定](繁體中文/使用者指南/常見問題/網域名稱設定.md)
+      - [計費常見問題](繁體中文/使用者指南/常見問題/計費常見問題.md)
+    - **更新與公告**
+      - [產品公告](繁體中文/使用者指南/更新與公告/產品公告.md)
+    - **概覽**
+      - [基本概念](繁體中文/使用者指南/概覽/基本概念.md)
+      - [概覽](繁體中文/使用者指南/概覽/概覽.md)
+    - **設定指南**
+      - [策略概覽](繁體中文/使用者指南/設定指南/策略概覽.md)
+      - [策略設定](繁體中文/使用者指南/設定指南/策略設定.md)
+      - [網域名稱概覽](繁體中文/使用者指南/設定指南/網域名稱概覽.md)
+      - [網域名稱設定](繁體中文/使用者指南/設定指南/網域名稱設定.md)
+      - [資源配額](繁體中文/使用者指南/設定指南/資源配額.md)
+      - **分發策略**
+        - [IPv6來源伺服器請求](繁體中文/使用者指南/設定指南/分發策略/IPv6來源伺服器請求.md)
+        - [使用邊緣函數回應](繁體中文/使用者指南/設定指南/分發策略/使用邊緣函數回應.md)
+        - [來源伺服器憑證校驗](繁體中文/使用者指南/設定指南/分發策略/來源伺服器憑證校驗.md)
+        - [來源伺服器設定](繁體中文/使用者指南/設定指南/分發策略/來源伺服器設定.md)
+        - [來源伺服器請求重試](繁體中文/使用者指南/設定指南/分發策略/來源伺服器請求重試.md)
+        - [條件來源伺服器](繁體中文/使用者指南/設定指南/分發策略/條件來源伺服器.md)
+        - **策略設定**
+          - **人工智慧交通管理**
+            - [HTML 轉 Markdown](繁體中文/使用者指南/設定指南/分發策略/策略設定/人工智慧交通管理/HTML 轉 Markdown.md)
+          - **來源伺服器請求擴展**
+            - [Range 來源伺服器請求](繁體中文/使用者指南/設定指南/分發策略/策略設定/來源伺服器請求擴展/Range 來源伺服器請求.md)
+            - [來源伺服器請求SNI](繁體中文/使用者指南/設定指南/分發策略/策略設定/來源伺服器請求擴展/來源伺服器請求SNI.md)
+            - [來源伺服器請求參數設定](繁體中文/使用者指南/設定指南/分發策略/策略設定/來源伺服器請求擴展/來源伺服器請求參數設定.md)
+            - [來源伺服器請求標頭設定](繁體中文/使用者指南/設定指南/分發策略/策略設定/來源伺服器請求擴展/來源伺服器請求標頭設定.md)
+            - [來源伺服器請求路徑改寫](繁體中文/使用者指南/設定指南/分發策略/策略設定/來源伺服器請求擴展/來源伺服器請求路徑改寫.md)
+            - [來源伺服器請求逾時](繁體中文/使用者指南/設定指南/分發策略/策略設定/來源伺服器請求擴展/來源伺服器請求逾時.md)
+            - [來源伺服器請求重新導向跟隨](繁體中文/使用者指南/設定指南/分發策略/策略設定/來源伺服器請求擴展/來源伺服器請求重新導向跟隨.md)
+          - **內容最佳化**
+            - [影片拖曳](繁體中文/使用者指南/設定指南/分發策略/策略設定/內容最佳化/影片拖曳.md)
+            - [智慧壓縮](繁體中文/使用者指南/設定指南/分發策略/策略設定/內容最佳化/智慧壓縮.md)
+            - [頁面最佳化](繁體中文/使用者指南/設定指南/分發策略/策略設定/內容最佳化/頁面最佳化.md)
+          - **協定管理**
+            - [IPv6](繁體中文/使用者指南/設定指南/分發策略/策略設定/協定管理/IPv6.md)
+            - [PROXY Protocol](繁體中文/使用者指南/設定指南/分發策略/策略設定/協定管理/PROXY Protocol.md)
+            - [Server-sent Events (SSE)](繁體中文/使用者指南/設定指南/分發策略/策略設定/協定管理/Server-sent Events (SSE).md)
+            - [WebSocket](繁體中文/使用者指南/設定指南/分發策略/策略設定/協定管理/WebSocket.md)
+            - [禁用的 HTTP 方法](繁體中文/使用者指南/設定指南/分發策略/策略設定/協定管理/禁用的 HTTP 方法.md)
+          - **存取擴展**
+            - [CDN 回應標頭設定](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取擴展/CDN 回應標頭設定.md)
+            - [自訂錯誤頁面](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取擴展/自訂錯誤頁面.md)
+          - **存取限制**
+            - [IP存取限制](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/IP存取限制.md)
+            - [Origin 存取限制](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/Origin 存取限制.md)
+            - [Referer 防盜連結](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/Referer 防盜連結.md)
+            - [UA存取限制](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/UA存取限制.md)
+            - [URL 標準化](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/URL 標準化.md)
+            - [國家名稱對照表](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/國家名稱對照表.md)
+            - [地理位置存取限制](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/地理位置存取限制.md)
+            - [存取限制功能的優先順序](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/存取限制功能的優先順序.md)
+            - [自訂攔截規則](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/自訂攔截規則.md)
+            - [遠端驗證](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/遠端驗證.md)
+            - **URL驗證**
+              - [A 類型](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/URL驗證/A 類型.md)
+              - [B 類型](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/URL驗證/B 類型.md)
+              - [C 類型](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/URL驗證/C 類型.md)
+              - [D 類型](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/URL驗證/D 類型.md)
+              - [E 類型](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/URL驗證/E 類型.md)
+              - [F 類型](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/URL驗證/F 類型.md)
+              - [URL 驗證概覽](繁體中文/使用者指南/設定指南/分發策略/策略設定/存取限制/URL驗證/URL 驗證概覽.md)
+          - **快取規則**
+            - [URL 重新導向改寫](繁體中文/使用者指南/設定指南/分發策略/策略設定/快取規則/URL 重新導向改寫.md)
+            - [快取索引鍵](繁體中文/使用者指南/設定指南/分發策略/策略設定/快取規則/快取索引鍵.md)
+            - [快取規則](繁體中文/使用者指南/設定指南/分發策略/策略設定/快取規則/快取規則.md)
+            - [瀏覽器快取](繁體中文/使用者指南/設定指南/分發策略/策略設定/快取規則/瀏覽器快取.md)
+            - [狀態碼快取](繁體中文/使用者指南/設定指南/分發策略/策略設定/快取規則/狀態碼快取.md)
+            - [離線快取](繁體中文/使用者指南/設定指南/分發策略/策略設定/快取規則/離線快取.md)
+          - **限速與限頻管理**
+            - [下載限速](繁體中文/使用者指南/設定指南/分發策略/策略設定/限速與限頻管理/下載限速.md)
+      - **安全中心**
+        - [CDN 憑證託管](繁體中文/使用者指南/設定指南/安全中心/CDN 憑證託管.md)
+        - [WAF防護](繁體中文/使用者指南/設定指南/安全中心/WAF防護.md)
+        - **DDoS 防護**
+          - [DDoS 防護概述](繁體中文/使用者指南/設定指南/安全中心/DDoS 防護/DDoS 防護概述.md)
+          - [DDoS 防護等級說明](繁體中文/使用者指南/設定指南/安全中心/DDoS 防護/DDoS 防護等級說明.md)
+          - [升級實例](繁體中文/使用者指南/設定指南/安全中心/DDoS 防護/升級實例.md)
+          - [建立高級 DDoS 防護實例](繁體中文/使用者指南/設定指南/安全中心/DDoS 防護/建立高級 DDoS 防護實例.md)
+          - [監控與警示](繁體中文/使用者指南/設定指南/安全中心/DDoS 防護/監控與警示.md)
+          - [管理防護網域名稱](繁體中文/使用者指南/設定指南/安全中心/DDoS 防護/管理防護網域名稱.md)
+          - [續訂實例](繁體中文/使用者指南/設定指南/安全中心/DDoS 防護/續訂實例.md)
+        - **加密策略**
+          - **策略設定**
+            - **加密最佳化**
+              - [HSTS](繁體中文/使用者指南/設定指南/安全中心/加密策略/策略設定/加密最佳化/HSTS.md)
+              - [mTLS](繁體中文/使用者指南/設定指南/安全中心/加密策略/策略設定/加密最佳化/mTLS.md)
+              - [OCSP 裝訂](繁體中文/使用者指南/設定指南/安全中心/加密策略/策略設定/加密最佳化/OCSP 裝訂.md)
+              - [TLS 版本設定](繁體中文/使用者指南/設定指南/安全中心/加密策略/策略設定/加密最佳化/TLS 版本設定.md)
+            - **請求協定**
+              - [HTTP/2](繁體中文/使用者指南/設定指南/安全中心/加密策略/策略設定/請求協定/HTTP - 2.md)
+              - [HTTP/3 (QUIC)](繁體中文/使用者指南/設定指南/安全中心/加密策略/策略設定/請求協定/HTTP - 3 (QUIC).md)
+              - [協定重新導向](繁體中文/使用者指南/設定指南/安全中心/加密策略/策略設定/請求協定/協定重新導向.md)
+        - **憑證中心**
+          - [上傳憑證](繁體中文/使用者指南/設定指南/安全中心/憑證中心/上傳憑證.md)
+          - [憑證中心概覽](繁體中文/使用者指南/設定指南/安全中心/憑證中心/憑證中心概覽.md)
+          - [關聯憑證和網域名稱](繁體中文/使用者指南/設定指南/安全中心/憑證中心/關聯憑證和網域名稱.md)
+      - **工具中心**
+        - [URL 封禁與解封](繁體中文/使用者指南/設定指南/工具中心/URL 封禁與解封.md)
+        - [用量封頂](繁體中文/使用者指南/設定指南/工具中心/用量封頂.md)
+        - [診斷工具](繁體中文/使用者指南/設定指南/工具中心/診斷工具.md)
+        - **日誌管理**
+          - [日誌下載](繁體中文/使用者指南/設定指南/工具中心/日誌管理/日誌下載.md)
+          - [日誌管理概述](繁體中文/使用者指南/設定指南/工具中心/日誌管理/日誌管理概述.md)
+          - [離線日誌轉存](繁體中文/使用者指南/設定指南/工具中心/日誌管理/離線日誌轉存.md)
+          - **即時日誌投遞**
+            - [任務設定](繁體中文/使用者指南/設定指南/工具中心/日誌管理/即時日誌投遞/任務設定.md)
+            - [即時日誌投遞概述](繁體中文/使用者指南/設定指南/工具中心/日誌管理/即時日誌投遞/即時日誌投遞概述.md)
+            - [日誌檢索範例](繁體中文/使用者指南/設定指南/工具中心/日誌管理/即時日誌投遞/日誌檢索範例.md)
+            - [索引設定](繁體中文/使用者指南/設定指南/工具中心/日誌管理/即時日誌投遞/索引設定.md)
+        - **清除快取與預取快取**
+          - [操作記錄](繁體中文/使用者指南/設定指南/工具中心/清除快取與預取快取/操作記錄.md)
+          - [清除快取](繁體中文/使用者指南/設定指南/工具中心/清除快取與預取快取/清除快取.md)
+          - [預取快取](繁體中文/使用者指南/設定指南/工具中心/清除快取與預取快取/預取快取.md)
+      - **權限管理**
+        - [授權 CDN 訪問必要的 BytePlus 服務](繁體中文/使用者指南/設定指南/權限管理/授權 CDN 訪問必要的 BytePlus 服務.md)
+      - **監控與報告**
+        - [命中率](繁體中文/使用者指南/設定指南/監控與報告/命中率.md)
+        - [報表訂閱](繁體中文/使用者指南/設定指南/監控與報告/報表訂閱.md)
+        - [指標的定義以及統計方式](繁體中文/使用者指南/設定指南/監控與報告/指標的定義以及統計方式.md)
+        - [来源伺服器監控](繁體中文/使用者指南/設定指南/監控與報告/来源伺服器監控.md)
+        - [業務分析](繁體中文/使用者指南/設定指南/監控與報告/業務分析.md)
+        - [熱門物件排行](繁體中文/使用者指南/設定指南/監控與報告/熱門物件排行.md)
+        - [統計時間段說明](繁體中文/使用者指南/設定指南/監控與報告/統計時間段說明.md)
+        - [邊緣監控](繁體中文/使用者指南/設定指南/監控與報告/邊緣監控.md)
+      - **進階設定**
+        - [全域設定](繁體中文/使用者指南/設定指南/進階設定/全域設定.md)
+        - [共享快取](繁體中文/使用者指南/設定指南/進階設定/共享快取.md)
+        - [規則引擎](繁體中文/使用者指南/設定指南/進階設定/規則引擎.md)
+      - **邊緣函數**
+        - [什麼是邊緣函數](繁體中文/使用者指南/設定指南/邊緣函數/什麼是邊緣函數.md)
+        - [使用限制](繁體中文/使用者指南/設定指南/邊緣函數/使用限制.md)
+        - [基本概念](繁體中文/使用者指南/設定指南/邊緣函數/基本概念.md)
+        - [工作原理](繁體中文/使用者指南/設定指南/邊緣函數/工作原理.md)
+        - [常見問題](繁體中文/使用者指南/設定指南/邊緣函數/常見問題.md)
+        - [邊緣函數快速入門](繁體中文/使用者指南/設定指南/邊緣函數/邊緣函數快速入門.md)
+        - [邊緣函數計費說明](繁體中文/使用者指南/設定指南/邊緣函數/邊緣函數計費說明.md)
+        - [開通邊緣函數](繁體中文/使用者指南/設定指南/邊緣函數/開通邊緣函數.md)
+        - **CLI指南**
+          - [CLI概覽](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI概覽.md)
+          - [CLI發佈記錄](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI發佈記錄.md)
+          - [使用 CLI 託管靜態網站](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/使用 CLI 託管靜態網站.md)
+          - [基於函數模版建立函數](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/基於函數模版建立函數.md)
+          - [安裝CLI](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/安裝CLI.md)
+          - [建立OPA函數專案](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/建立OPA函數專案.md)
+          - [快速入門：使用CLI建立並發佈函數](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/快速入門：使用CLI建立並發佈函數.md)
+          - [快速入門：使用CLI管理邊緣KV](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/快速入門：使用CLI管理邊緣KV.md)
+          - [設置您的Access Key ID和Secret Access Key](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/設置您的Access Key ID和Secret Access Key.md)
+          - **CLI命令參考**
+            - [CLI命令列表](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/CLI命令列表.md)
+            - **Pages**
+              - [nest pages](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/Pages/nest pages.md)
+            - **全局參數**
+              - [--config](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/全局參數/--config.md)
+              - [--function](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/全局參數/--function.md)
+              - [--help](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/全局參數/--help.md)
+              - [--verbose](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/全局參數/--verbose.md)
+            - **函數**
+              - [nest init](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/nest init.md)
+              - **函數配置**
+                - [nest canary](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/函數配置/nest canary.md)
+                - [nest envs](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/函數配置/nest envs.md)
+              - **發佈歷史**
+                - [nest rollback](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/發佈歷史/nest rollback.md)
+                - [nest tickets](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/發佈歷史/nest tickets.md)
+                - [nest versions](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/發佈歷史/nest versions.md)
+              - **管理函數**
+                - [nest deploy](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/管理函數/nest deploy.md)
+                - [nest functions](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/管理函數/nest functions.md)
+                - [nest upload](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/管理函數/nest upload.md)
+              - **觸發器**
+                - [nest cron](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/觸發器/nest cron.md)
+                - [nest domain](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/觸發器/nest domain.md)
+              - **除錯函數程式碼**
+                - [nest debug](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/除錯函數程式碼/nest debug.md)
+                - [nest start](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/函數/除錯函數程式碼/nest start.md)
+            - **輔助工具**
+              - [nest config](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/輔助工具/nest config.md)
+              - [nest help](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/輔助工具/nest help.md)
+            - **邊緣KV**
+              - [nest kv](繁體中文/使用者指南/設定指南/邊緣函數/CLI指南/CLI命令參考/邊緣KV/nest kv.md)
+        - **MCP 服務指南**
+          - [MCP 伺服器概覽](繁體中文/使用者指南/設定指南/邊緣函數/MCP 服務指南/MCP 伺服器概覽.md)
+          - [使用邊緣函數 MCP 伺服器](繁體中文/使用者指南/設定指南/邊緣函數/MCP 服務指南/使用邊緣函數 MCP 伺服器.md)
+        - **執行時期API**
+          - [addEventListener()](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/addEventListener().md)
+          - [createHtmlStream()](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/createHtmlStream().md)
+          - [CronEvent](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/CronEvent.md)
+          - [FetchEvent](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/FetchEvent.md)
+          - [KV](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/KV.md)
+          - [Streams API](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Streams API.md)
+          - [Web Standards API](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Web Standards API.md)
+          - [執行時期API概覽](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/執行時期API概覽.md)
+          - [錯誤碼](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/錯誤碼.md)
+          - **Fetch API**
+            - [fetch()](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Fetch API/fetch().md)
+            - [Headers](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Fetch API/Headers.md)
+            - [Request](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Fetch API/Request.md)
+            - [Response](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Fetch API/Response.md)
+            - [什麼是Fetch API](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Fetch API/什麼是Fetch API.md)
+          - **net**
+            - [dns](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/net/dns.md)
+          - **Web Crypto API**
+            - [digest()](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Web Crypto API/digest().md)
+            - [encrypt()/decrypt()](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Web Crypto API/encrypt() - decrypt().md)
+            - [importKey()/exportKey()/generateKey()](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Web Crypto API/importKey() - exportKey() - generateKey().md)
+            - [sign()/verify()](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Web Crypto API/sign() - verify().md)
+            - [什麼是 Web Crypto API](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Web Crypto API/什麼是 Web Crypto API.md)
+            - [支援的演算法](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Web Crypto API/支援的演算法.md)
+          - **Web Crypto Streams API**
+            - [DigestStream](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Web Crypto Streams API/DigestStream.md)
+            - [什麼是 Web Crypto Streams API](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Web Crypto Streams API/什麼是 Web Crypto Streams API.md)
+            - [支援的演算法](繁體中文/使用者指南/設定指南/邊緣函數/執行時期API/Web Crypto Streams API/支援的演算法.md)
+        - **控制台指南**
+          - **Pages**
+            - [使用 Pages 託管靜態頁面](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/Pages/使用 Pages 託管靜態頁面.md)
+          - **函數**
+            - [使用 AI IDE 編輯函數程式碼](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/函數/使用 AI IDE 編輯函數程式碼.md)
+            - [查看函數的監控資料](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/函數/查看函數的監控資料.md)
+            - [發佈曆史](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/函數/發佈曆史.md)
+            - [管理函數](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/函數/管理函數.md)
+            - [編輯和偵錯函數程式碼](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/函數/編輯和偵錯函數程式碼.md)
+            - **函數配置**
+              - [環境變數](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/函數/函數配置/環境變數.md)
+              - [金絲雀環境](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/函數/函數配置/金絲雀環境.md)
+            - **觸發器**
+              - [Cron觸發器](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/函數/觸發器/Cron觸發器.md)
+              - [網域名稱觸發器](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/函數/觸發器/網域名稱觸發器.md)
+          - **邊緣KV**
+            - [管理儲存空間](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/邊緣KV/管理儲存空間.md)
+            - [管理資料](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/邊緣KV/管理資料.md)
+            - [邊緣KV快速入門](繁體中文/使用者指南/設定指南/邊緣函數/控制台指南/邊緣KV/邊緣KV快速入門.md)
+        - **示例程式碼**
+          - [CORS請求代理](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/CORS請求代理.md)
+          - [JWT身分驗證](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/JWT身分驗證.md)
+          - [URL重新導向](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/URL重新導向.md)
+          - [一次請求多個檔案並串流返回](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/一次請求多個檔案並串流返回.md)
+          - [串流傳輸聚合的請求和回應](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/串流傳輸聚合的請求和回應.md)
+          - [串流返回改寫的 HTML 頁面](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/串流返回改寫的 HTML 頁面.md)
+          - [修改HTTP請求標頭或回應標頭](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/修改HTTP請求標頭或回應標頭.md)
+          - [取得並處理 JSON 資料](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/取得並處理 JSON 資料.md)
+          - [基於 Cookie 的快取](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/基於 Cookie 的快取.md)
+          - [將HTTP重新導向至HTTPS](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/將HTTP重新導向至HTTPS.md)
+          - [根據Cookie繞過CDN快取](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/根據Cookie繞過CDN快取.md)
+          - [根據Cookie進行A/B測試](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/根據Cookie進行A - B測試.md)
+          - [根據UA添加自訂請求標頭](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/根據UA添加自訂請求標頭.md)
+          - [根據使用者地理位置資訊取得天氣資料](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/根據使用者地理位置資訊取得天氣資料.md)
+          - [示例概覽](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/示例概覽.md)
+          - [自訂錯誤頁面](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/自訂錯誤頁面.md)
+          - [返回HTML頁面](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/返回HTML頁面.md)
+          - [返回JSON資料](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/返回JSON資料.md)
+          - [透過延遲載入JavaScript實現網站加速](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/透過延遲載入JavaScript實現網站加速.md)
+          - [透過快取網站的靜態頁面實現故障備援](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/透過快取網站的靜態頁面實現故障備援.md)
+          - [驗證Token的HMAC-SHA256 簽章](繁體中文/使用者指南/設定指南/邊緣函數/示例程式碼/驗證Token的HMAC-SHA256 簽章.md)
+    - **費用**
+      - [收費說明](繁體中文/使用者指南/費用/收費說明.md)
+      - [高額帳單風險警示](繁體中文/使用者指南/費用/高額帳單風險警示.md)
+    - **開始使用**
+      - [上傳憑證](繁體中文/使用者指南/開始使用/上傳憑證.md)
+      - [教學簡介](繁體中文/使用者指南/開始使用/教學簡介.md)
+      - [新增您的網域名稱](繁體中文/使用者指南/開始使用/新增您的網域名稱.md)
+      - [設定 CNAME](繁體中文/使用者指南/開始使用/設定 CNAME.md)
+      - [設定 hosts 檔案測試網域名稱](繁體中文/使用者指南/開始使用/設定 hosts 檔案測試網域名稱.md)
+      - [設定分發策略與來源伺服器](繁體中文/使用者指南/開始使用/設定分發策略與來源伺服器.md)
+      - [開通 BytePlus CDN](繁體中文/使用者指南/開始使用/開通 BytePlus CDN.md)
+  - **學習導引**
+    - [API導引](繁體中文/學習導引/API導引.md)
+    - [使用導引](繁體中文/學習導引/使用導引.md)

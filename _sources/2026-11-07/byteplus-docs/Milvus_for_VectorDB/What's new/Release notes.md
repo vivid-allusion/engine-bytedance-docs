@@ -1,0 +1,128 @@
+---
+title: "Release notes"
+product: "Milvus for VectorDB"
+product_code: "Milvus_for_VectorDB"
+source: "https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Release_notes"
+---
+
+**2026**
+
+## October 2026
+
+|Feature |Feature description |Release date |Release regions |Related documentation |
+|---|---|---|---|---|
+|Support Milvus 3.0 engine |The Dedicated edition instance supports the Milvus 3.0 engine. Building on core capabilities such as streaming ingestion and hierarchical storage from version 2.6, it adds features like External Collection and Snapshot. It further decouples query execution, index management, and underlying storage while enhancing sorting aggregation, text analysis, and low\-cost storage capabilities. This better serves use cases such as AI Agent, enterprise\-level RAG, multimodal retrieval, and lakehouse fusion retrieval.<br><br>> **tip**<br><br><br>> The 3.0 version instance feature is in public beta. To use it, please [submit a ticket](https://console.byteplus.com/workorder/create?step=2&SubProductID=P00000255) to contact technical support.<br> |2026\-10\-29 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+|AI center |The AI center provides Embedding model and API Key management, enabling one\-stop model addition, invocation, testing, and comparison. Supports configuring Embedding for Milvus instances to convert unstructured data into vectors. |2026\-10\-29 |* Asia Pacific (Johor) |[Embedding model management](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/embedding-model-management) |
+|Serverless instance supports HTTPS protocol |The Serverless instance supports secure transfer via HTTPS, encrypting data between the client and the instance to reduce the risk of data interception or tampering during transmission and improve data transfer security. |2026\-10\-29 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+|Support partial restart |Supports restarting specified components or nodes within an instance without restarting the entire instance, reducing impact on other components and business services, improving operational flexibility, and lowering service disruption risks. |2026\-10\-29 |* Asia Pacific (Johor) |[Restart instance or component](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/restart-instance-or-component) |
+|User interface optimization |Add multiple optimizations to console user interface, mainly including:<br><br><br>* Optimize cross\-page navigation logic<br><br>* Refactor detail page layout<br><br>* Optimize interaction feedback and empty state experience<br><br>* Fix data and selection desynchronization<br><br>* Optimize form default values and pre\-validation |2026\-10\-29 |* Asia Pacific (Johor) |[Create a collection](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_a_collection) |
+
+## August 2026
+
+|Feature |Feature description |Release date |Release regions |Related documentation |
+|---|---|---|---|---|
+|On\-Demand instance |Milvus for VectorDB On\-Demand supports On\-Demand instances with pay\-as\-you\-go allocated computing resources, suitable for scenarios with large traffic fluctuations, unstable loads, and flexible cost control.<br><br>> **tip**<br><br><br>> The On\-Demand instance feature is in public beta. To use it, please [submit a ticket](https://console.byteplus.com/workorder/create?step=2&SubProductID=P00000255) to contact technical support.<br> |2026\-08\-26 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+|Query cluster |On\-Demand instances support Query clusters for executing vector retrieval and scalar queries. After creating a Collection and writing data, you can create a Query cluster to perform retrieval and query operations.<br><br>> **tip**<br><br><br>> The On\-Demand instances and Query cluster features are in public beta. To use them, please [submit a ticket](https://console.byteplus.com/workorder/create?step=2&SubProductID=P00000255) to contact technical support.<br> |2026\-08\-26 |* Asia Pacific (Johor) |[Query cluster management](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Query_cluster_management) |
+|External Collection |On\-Demand instances support External Collections, allowing external data storage for collection data. This reduces local storage dependency and meets requirements for flexible data storage and elastic scaling scenarios.<br><br>> **tip**<br><br><br>> On\-Demand instances and the External Collection feature are in public beta. To use them, [submit a ticket](https://console.byteplus.com/workorder/create?step=2&SubProductID=P00000255) to contact technical support.<br> |2026\-08\-26 |* Asia Pacific (Johor) |[Create a collection](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_a_collection) |
+|Integration center |The integration center manages external storage connection configurations used by On\-Demand instance External Collections in a unified way. By creating integrations, you can save the connection information of external storage. When creating an External Collection, you can directly reference the configured integration, simplifying the external storage setup process. |2026\-08\-26 |* Asia Pacific (Johor) |[Create integration](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_integration) |
+|3\-AZ deployment |Dedicated instances support deployment across three availability zones. You can select this when creating a new instance or upgrade an existing instance by changing its specification. This enhances availability and disaster recovery capabilities, reduces the impact of a single availability zone failure on your business, and ensures stable operations. |2026\-08\-26 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+|Supports HTTPS transport protocol |The Dedicated instance supports secure transmission via the HTTPS protocol, encrypting data between the client and the instance to reduce the risk of data interception or tampering during transmission and enhance data transfer security. |2026\-08\-26 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+|Support control plane audit |Milvus for VectorDB has integrated with BytePlus's control plane audit service, recording operation events related to Milvus for VectorDB to facilitate subsequent query, audit, and tracing. |2026\-08\-26 |* Asia Pacific (Johor) |[Control panel audit log](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Control_panel_audit) |
+|Support suspending Dedicated instances |Milvus for VectorDB switches running pay\-as\-you\-go Dedicated instances to suspend status. During suspension, computing resources stop running while the instance's data and network configuration are fully retained, reducing costs when the instance is not in use. |2026\-08\-26 |* Asia Pacific (Johor) |[Suspend pay-as-you-go instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Suspend_pay-as-you-go_instance) |
+
+## July 2026
+
+|Feature |Feature description |Release date |Release regions |Related documentation |
+|---|---|---|---|---|
+|Support access logs and slow logs |Supports access logs and slow logs, allowing logs to be delivered to the Torch Log Service (TLS). Using features like log search, clustering analysis, and visual charts, it enables unified log analysis and fast issue diagnosis. |2026\-07\-17 |* Asia Pacific (Johor) |[Log management](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Log_management) |
+|Support task center |Supports the Task center function, which can uniformly record non\-real\-time operation tasks such as creating instances, changing specifications, modifying configurations, and upgrading kernels. It also provides task progress and resource change details, helping you monitor task execution status in real time. |2026\-07\-17 |* Asia Pacific (Johor) |[View task progress](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/View_task_progress) |
+|Support instance recycle bin |After deleting an instance, the system automatically creates a backup and retains it for 7 days. During the retention period, you can quickly restore the instance from the backup, reducing the risk of data loss from accidental deletion and enhancing data security and business continuity. |2026\-07\-17 |* Asia Pacific (Johor) |[Delete an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Delete_an_instance) |
+|Integrate with Cloud Monitor dashboard |Milvus for VectorDB integrates with Cloud Monitor. You can view instance monitoring metrics and running status in the full\-stack observability platform, enabling centralized monitoring, quick diagnosis, and operational analysis to improve instance maintenance efficiency. |2026\-07\-17 |* Asia Pacific (Johor) |[View instance monitoring information](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/View_instance_monitoring_information) |
+|Batch export of instance information |Supports batch export of instance information, allowing you to export specified instance information locally with customizable export scope and list fields, facilitating resource inventory, data statistics, and operational management. |2026\-07\-17 |* Asia Pacific (Johor) |[View the instance list](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/View_the_instance_list) |
+|Serverless instances support tag management |The Serverless instance supports tag management, allowing you to modify and delete existing tags for flexible maintenance of instance tag information. |2026\-07\-17 |* Asia Pacific (Johor) |[Viewing instance information](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/View_instance_information) |
+|Support batch delete Collection |Supports batch delete of Collection, allowing multiple Collections to be deleted at once, reducing repetitive operations, and improving data cleanup and resource management efficiency. |2026\-07\-17 |* Asia Pacific (Johor) |[Delete a collection](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Delete_a_collection) |
+|Node dimension monitoring item display |Supports displaying monitoring items by node dimension, allowing metrics to be viewed per node; clicking the node name toggles the corresponding monitoring data, aiding quick identification of abnormal nodes. |2026\-07\-17 |* Asia Pacific (Johor) |[View instance monitoring information](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/View_instance_monitoring_information) |
+
+## June 2026
+
+|Feature |Feature description |Release date |Release regions |Related documents |
+|---|---|---|---|---|
+|Support hybrid resource mode |Version 2.6 Dedicated instances support a hybrid resource model, using GPUs for data nodes and CPUs for compute nodes. Fast build speed, lower query costs, balancing performance and cost\-effectiveness. |2026\-06\-23 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+|Support elastic scaling |Dedicated instance supports elastic scaling, including auto scaling and scheduled scaling. It can automatically expand when the load increases and shrink during low resource usage periods, adapting to cyclical traffic changes. This ensures stable performance, improves resource utilization, and reduces costs. |2026\-06\-23 |* Asia Pacific (Johor) |[Elastic scaling](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Elastic_scaling) |
+|Serverless instance create optimization |Creating a Serverless instance for the first time within the same subnet will create network resources such as network interfaces and DNS. Subsequent instances reuse existing resources, enabling creation in 1 second. |2026\-06\-23 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+
+## May 2026
+
+|Feature |Feature description |Release date |Release regions |Related documents |
+|---|---|---|---|---|
+|Support kernel version upgrade |Milvus for VectorDB instances support kernel version upgrade. You can upgrade instances to the new version as needed to access new features, performance improvements, and enhanced stability. |2026\-05\-20 |* Asia Pacific (Johor) |[Upgrade kernel version](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Upgrade_kernel_version) |
+|Version 2.6 instance supports index node pooling |Version 2.6 instances support index node pooling, managing index node resources in a unified pool to enable on\-demand allocation and dynamic reuse, improving resource utilization and reducing idle costs. |2026\-05\-20 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+|Data migration supports version 2.6 instances |The data migration target supports version 2.6 instances. You can migrate existing data from other data sources to version 2.6 instances through workflows. |2026\-05\-20 |* Asia Pacific (Johor) |[Create a workflow](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_a_workflow) |
+|OpenAPI supports instance specification changes and data migration |Support executing instance resizing and data migration operations through OpenAPI to enable resource adjustment, migration task creation, and automated operation and maintenance workflow orchestration. |2026\-05\-20 |* Asia Pacific (Johor) |* [Instance management](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/API_Instance_management)<br><br>* [Workflow management](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Workflow_management) |
+|Integrated public network access and whitelist configuration |When enabling public network access for the instance, you can also configure the access whitelist simultaneously, reducing repeated changes to the instance status and minimizing access restrictions caused by not configuring the whitelist, thereby improving public network access configuration efficiency and user experience. |2026\-05\-20 |* Asia Pacific (Johor) |[Configure instance public network access](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Configure_instance_public_network_access) |
+
+## April 2026
+
+|Feature |Feature description |Release date |Release regions |Related documentation |
+|---|---|---|---|---|
+|Support Milvus 2.6 engine |The Dedicated edition instance supports engine version 2.6, enhancing hybrid search and full\-text search capabilities, while optimizing query performance, observability, and distributed stability. |2026\-04\-20 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+|Support multi\-availability zone deployment |Dedicated instances support multi\-AZ deployment When a single availability zone fails, the system automatically switches over to ensure continuous service availability, improving overall disaster recovery and business stability |2026\-04\-20 |* Asia Pacific (Johor) |[Region and availability zone](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Regions_and_availability_zones) |
+|Support backup management |Milvus for VectorDB supports backup functionality, allowing users to manually or automatically save data status at specified points in time and quickly roll back to previous states in case of mistakes or exceptions, enhancing data security and system recovery capabilities. |2026\-04\-20 |* Asia Pacific (Johor) |[Backup management](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Snapshot_management) |
+|Support hot update for instance configuration |Some configuration changes take effect in real time without restarting the instance; for a few runtime\-dependent settings, restarting only related nodes completes the update. This feature reduces service interruption from configuration changes, improving system availability and maintenance efficiency. |2026\-04\-20 |* Asia Pacific (Johor) |[Modify the instance configuration](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Modify_the_instance_configuration) |
+|Support index node pooling |Version 2.5 instances support index node pooling, managing index node resources in a unified pool to enable on\-demand allocation and dynamic reuse, improving resource utilization and reducing idle costs. |2026\-04\-20 |* Asia Pacific (Johor) |[Introduction to index node pooling](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Introduction_to_index_node_pooling) |
+|Add monitoring metrics |Milvus for VectorDB adds ProxyReceivedBytes and ProxySendBytes metrics to count the amount of data received and sent by Proxy nodes per unit time. |2026\-04\-20 |* Asia Pacific (Johor) |[View instance monitoring information](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Monitoring_and_alarm_metrics) |
+
+## February 2026
+
+|Feature |Feature description |Release date |Release regions |Related documentation |
+|---|---|---|---|---|
+|Support collection\-level monitoring |Milvus for VectorDB supports collections monitoring. You can view collections monitoring metrics in the instance details or check monitoring metrics in a specified Collection. |2026\-02\-28 |* Asia Pacific (Johor) |* [View instance monitoring information](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/View_instance_monitoring_information)<br><br>* [View collection details](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/View_collection_details) |
+|Serverless instance supports alarm management |Serverless instance supports alarm management. You can configure one\-click alarms, create alarm policies, and add alarm contacts. |2026\-02\-28 |* Asia Pacific (Johor) |[Monitoring and Alerts](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Monitoring_and_alerts) |
+|Serverless instance creation optimization |Serverless instance creation is optimized, reducing time consumed from about 30 seconds to within 10 seconds, greatly improving resource delivery efficiency and significantly enhancing the user’s instant use experience. |2026\-02\-28 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+
+## January 2026
+
+|Feature |Feature description |Release date |Release regions |Related documents |
+|---|---|---|---|---|
+|Serverless instances |Milvus for VectorDB supports Serverless instances by using shared computing resources to achieve automatic scaling. Suitable for AI agents, unstable traffic, low maintenance, and cost\-sensitive scenarios. |2026\-01\-21 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+|API Playground |Milvus for VectorDB provides an API Playground feature, allowing you to quickly call APIs in the console to add, delete, update, and query data. |2026\-01\-21 |* Asia Pacific (Johor) |[API Playground](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/API_Playground) |
+|Log query |Milvus for VectorDB provides log query functionality for Dedicated instances. You can quickly locate the instance log content you want to query by filtering by log level, role, node, time, keywords, and other criteria to assist in instance operation and maintenance. |2026\-01\-21 |* Asia Pacific (Johor) |[Query logs](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Query_logs) |
+|DiskANN + RaBitQ index |Milvus for VectorDB now supports DiskANN + RaBitQ. DiskANN + RaBitQ is a brand new index implementation, not a simple overlay of RaBitQ quantization on native DiskANN. It significantly reduces memory usage while maintaining high recall. |2026\-01\-21 |* Asia Pacific (Johor) |[Milvus for VectorDB supports DiskANN + RaBitQ](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Milvus_for_VectorDB_supports_DiskANN_and_RaBitQ) |
+|Built\-in vector search in Collections |Provide query operations on the Collection based on vector similarity. You can enter or generate query vectors, select a vector field and similarity metric, and combine conditions such as TopK, similarity range, scalar filter expressions, and partition filtering to complete the vector search request. |2026\-01\-21 |* Asia Pacific (Johor) |[View collection details](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/View_collection_details) |
+|Reset password |After creating a Milvus for VectorDB instance, you can reset the instance password as needed. |2026\-01\-21 |* Asia Pacific (Johor) |[Reset the instance password](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Reset_the_instance_password) |
+
+**2025**
+
+## December 2025
+
+|Feature |Feature description |Release date |Release regions |Related documentation |
+|---|---|---|---|---|
+|GPU nodes supported |The index nodes and compute nodes of Milvus for VectorDB instances support GPU, significantly accelerating vector computation and similarity search to achieve lower latency and higher throughput in large\-scale, high\-concurrency scenarios. |2025\-12\-19 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/redis/create-instance) |
+|Provide new CU specification |Milvus for VectorDB instance nodes support more CU specifications to meet your resource requirements in different scenarios. |2025\-12\-19 |* Asia Pacific (Johor) |[Product specifications](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Product_specifications) |
+|Support instance renewal fee |Milvus for VectorDB subscription instances support flexible renewal, allowing you to renew by purchase duration or expiration date. |2025\-12\-19 |* Asia Pacific (Johor) |[Renew subscription for annual and monthly packages](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Renew_a_subscription_instance) |
+|Annual subscription discount |When you purchase or renew a subscription instance for 1 year or more, Milvus for VectorDB offers a 50% discount. |2025\-12\-19 |* Asia Pacific (Johor) |[Subscription](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Subscription) |
+
+## November 2025
+
+|Feature |Feature description |Release date |Release regions |Related documentation |
+|---|---|---|---|---|
+|Official product sale |Milvus for VectorDB is now officially available for sale. |2025\-11\-25 |* Asia Pacific (Johor) |[Milvus for VectorDB official sales announcement](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Milvus_for_VectorDB_official_sales_announcement) |
+|Data migration |Milvus for VectorDB supports data migration, allowing you to migrate existing data from other data sources to Milvus for VectorDB through workflows. |2025\-11\-25 |* Asia Pacific (Johor) |[Data migration](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Data_migration) |
+|Collections |Milvus for VectorDB supports creating and managing databases and collections visually. |2025\-11\-25 |* Asia Pacific (Johor) |[Collections](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Databases_and_collections) |
+
+## October 2025
+
+|Feature |Feature description |Release date |Release regions |Related documentation |
+|---|---|---|---|---|
+|Product public beta |Milvus for VectorDB starts commercial public beta. |2025\-10\-22 |* Asia Pacific (Johor) |[Milvus for VectorDB commercial public beta announcement](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Milvus_for_VectorDB_commercial_public_beta_announcement) |
+|Subscription instances |Subscription is a billing method where payment is made in advance when creating a new instance. Compared with pay\-as\-you\-go, subscription offers a better price for Milvus for VectorDB instances. Milvus for VectorDB instances also support switching between subscription and pay\-as\-you\-go. |2025\-10\-22 |* Asia Pacific (Johor) |[Subscription](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Subscription) |
+|Instance connection guide |The instance details page provides steps for connecting to an instance through clients. Currently, Python, Java, NodeJs, Go, and RESTful API are supported. |2025\-10\-22 |* Asia Pacific (Johor) |[Connect to the instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Connect_to_the_instance) |
+
+## June 2025
+
+|Feature |Feature description |Release date |Release regions |Related documentation |
+|---|---|---|---|---|
+|Resource calculator |You can understand how to estimate the required resources based on the provided experimental data, including vector count, vector dimension, and index type, and adjust according to test results during deployment. |2025\-06\-30 |* Asia Pacific (Johor) |[Resource estimation](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Resource_estimation) |
+|Upgrade an instance |After creating the instance, you can change the instance configuration based on your business requirements. |2025\-06\-30 |* Asia Pacific (Johor) |[Change the instance specification](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Change_instance_specification) |
+|Capacity node |Milvus for VectorDB instances now supports capacity compute nodes, meeting your diverse business requirements. |2025\-06\-30 |* Asia Pacific (Johor) |[Create an instance](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/Create_an_instance) |
+|Instance system view |The instance details page provides a system topology view that displays each node's configuration, as well as information such as creation time, update time, and resource utilization. |2025\-06\-30 |* Asia Pacific (Johor) |[Viewing instance information](https://docs.byteplus.com/en/docs/Milvus_for_VectorDB/View_instance_information) |

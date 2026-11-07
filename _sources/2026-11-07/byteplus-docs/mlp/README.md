@@ -1,0 +1,131 @@
+# Machine Learning Platform
+
+103 pages. Source: https://docs.byteplus.com/en/docs/mlp
+
+Back to the [full index](../README.md).
+
+- [FAQs](FAQs.md)
+- **API Reference**
+  - **Resource Group**
+    - [CreateResouCreateResourceGroup - Create resource grouprceGroup - Create resource group](API Reference/Resource Group/CreateResouCreateResourceGroup - Create resource grouprceGroup - Create resource group.md)
+    - [DeleteResourceGroup - Delete Resource Group](API Reference/Resource Group/DeleteResourceGroup - Delete Resource Group.md)
+    - [GetResourceGroup - Query Resource Group Details](API Reference/Resource Group/GetResourceGroup - Query Resource Group Details.md)
+    - [ListResourceGroups - Get Resource Group List](API Reference/Resource Group/ListResourceGroups - Get Resource Group List.md)
+    - [UpdateResourceGroup - Update Resource Group](API Reference/Resource Group/UpdateResourceGroup - Update Resource Group.md)
+- **Best Practices**
+  - [DeepSeek R1 Model Deployment Quick Guide](Best Practices/DeepSeek R1 Model Deployment Quick Guide.md)
+  - [How to build a visualization dashboard for monitoring data metrics through Grafana - taking configuring the total GPU resources dashboard as an example](Best Practices/How to build a visualization dashboard for monitoring data metrics through Grafana - takin.md)
+  - [How to Deploy ComfyUI in Byteplus in 5 Minutes](Best Practices/How to Deploy ComfyUI in Byteplus in 5 Minutes.md)
+  - [How to view process information in a container](Best Practices/How to view process information in a container.md)
+  - [Link Training and Evaluation Tasks Through Workflow](Best Practices/Link Training and Evaluation Tasks Through Workflow.md)
+  - [MLP xLLM inference engine PD is deployed separately DeepSeek R1, the maximum throughput is increased by 5 times](Best Practices/MLP xLLM inference engine PD is deployed separately DeepSeek R1, the maximum throughput is.md)
+  - [More Examples](Best Practices/More Examples.md)
+  - [Multi-Instance Command Batch Execution Tool](Best Practices/Multi-Instance Command Batch Execution Tool.md)
+  - [Node Failure Notification and Load Migration Guide](Best Practices/Node Failure Notification and Load Migration Guide.md)
+  - [Repeat DAPO reinforcement learning training best practices with verl](Best Practices/Repeat DAPO reinforcement learning training best practices with verl.md)
+  - [veMLP xLLM Inference Engine PD Separation Deployment for Qwen Model](Best Practices/veMLP xLLM Inference Engine PD Separation Deployment for Qwen Model.md)
+  - **autonomous driving**
+    - [Best Practices of BEVFormer Model on MLP](Best Practices/autonomous driving/Best Practices of BEVFormer Model on MLP.md)
+  - **Embodied intelligence**
+    - [Isaac simulation environment tutorial](Best Practices/Embodied intelligence/Isaac simulation environment tutorial.md)
+  - **LLM**
+    - [Accelerating Llama with veTuner and veTurboIO - 3.1-8 B Model Best Practices in MLP](Best Practices/LLM/Accelerating Llama with veTuner and veTurboIO - 3.1-8 B Model Best Practices in MLP.md)
+    - [AWQ Quantization - Best Practices for LlaMA3.1-8B in MLP](Best Practices/LLM/AWQ Quantization - Best Practices for LlaMA3.1-8B in MLP.md)
+    - [Best Practices for DeepSeek-V2-Lite Models in MLP](Best Practices/LLM/Best Practices for DeepSeek-V2-Lite Models in MLP.md)
+    - [Best Practices of Qwen32B Model in MLP](Best Practices/LLM/Best Practices of Qwen32B Model in MLP.md)
+    - [GPTQ Quantization -- LlaMA3.1-8B Best Practices Document](Best Practices/LLM/GPTQ Quantization -- LlaMA3.1-8B Best Practices Document.md)
+    - [GRPO reinforcement learning training best practices with verl](Best Practices/LLM/GRPO reinforcement learning training best practices with verl.md)
+    - [Llama 3.1 8B mcore dense model best practices in MLP](Best Practices/LLM/Llama 3.1 8B mcore dense model best practices in MLP.md)
+    - [Llama 3.1 8B Model Best Practices in MLP](Best Practices/LLM/Llama 3.1 8B Model Best Practices in MLP.md)
+    - [Offline FP8 Static Quantization -- LlaMA3.1-8B Best Practices Document](Best Practices/LLM/Offline FP8 Static Quantization -- LlaMA3.1-8B Best Practices Document.md)
+    - [Qwen2 72B Model Best Practices in MLP](Best Practices/LLM/Qwen2 72B Model Best Practices in MLP.md)
+- **Command line tool**
+  - [User Documentation](Command line tool/User Documentation.md)
+- **Preparation**
+  - [BytePlus-MLP Quick Access Guide for Resource Administrators](Preparation/BytePlus-MLP Quick Access Guide for Resource Administrators.md)
+  - [Create appropriate sub accounts](Preparation/Create appropriate sub accounts.md)
+- **Product Billing**
+  - [Instance Specifications and Pricing](Product Billing/Instance Specifications and Pricing.md)
+- **Product introduction**
+  - [Common concepts](Product introduction/Common concepts.md)
+  - [Feature Overview](Product introduction/Feature Overview.md)
+  - [What is a machine learning platform](Product introduction/What is a machine learning platform.md)
+- **Quick Start**
+  - [Quick Access Guide (Enterprise Edition)](Quick Start/Quick Access Guide (Enterprise Edition).md)
+  - **Preparation**
+    - [Rights Management with IAM](Quick Start/Preparation/Rights Management with IAM.md)
+- **SDK Reference**
+  - [User Documentation](SDK Reference/User Documentation.md)
+- **User Guide**
+  - [Overview](User Guide/Overview.md)
+  - [rights management](User Guide/rights management.md)
+  - **Container Registry**
+    - [Overview](User Guide/Container Registry/Overview.md)
+    - [Preset mirror list](User Guide/Container Registry/Preset mirror list.md)
+    - [Transfer external mirror to Container Registry](User Guide/Container Registry/Transfer external mirror to Container Registry.md)
+  - **Custom Task**
+    - [Accelerated training through RDMA networks](User Guide/Custom Task/Accelerated training through RDMA networks.md)
+    - [Distributed Communication Optimization Based on Switch Information](User Guide/Custom Task/Distributed Communication Optimization Based on Switch Information.md)
+    - [How to handle common Xid events](User Guide/Custom Task/How to handle common Xid events.md)
+    - [How to perform performance analysis](User Guide/Custom Task/How to perform performance analysis.md)
+    - [Idle-time tasks in prepaid scenarios](User Guide/Custom Task/Idle-time tasks in prepaid scenarios.md)
+    - [Initiate BytePS distributed training](User Guide/Custom Task/Initiate BytePS distributed training.md)
+    - [Initiate MPI distributed training](User Guide/Custom Task/Initiate MPI distributed training.md)
+    - [Initiate PyTorchDDP distributed training](User Guide/Custom Task/Initiate PyTorchDDP distributed training.md)
+    - [Initiate stand-alone/distributed training tasks](User Guide/Custom Task/Initiate stand-alone - distributed training tasks.md)
+    - [Initiate TensorFlowPS distributed training](User Guide/Custom Task/Initiate TensorFlowPS distributed training.md)
+    - [List of common environment variables](User Guide/Custom Task/List of common environment variables.md)
+    - [Message notifications for configuration tasks](User Guide/Custom Task/Message notifications for configuration tasks.md)
+    - [priority scheduling strategy](User Guide/Custom Task/priority scheduling strategy.md)
+    - [Submit distributed tasks using the RAY Compute Engine](User Guide/Custom Task/Submit distributed tasks using the RAY Compute Engine.md)
+    - [Verify that the mirror supports RDMA.](User Guide/Custom Task/Verify that the mirror supports RDMA.md)
+    - [View TensorBoard logs](User Guide/Custom Task/View TensorBoard logs.md)
+    - [View the status/monitoring/log of a task](User Guide/Custom Task/View the status - monitoring - log of a task.md)
+  - **Dev Boxes**
+    - [Close Dev boxes ](User Guide/Dev Boxes/Close Dev boxes.md)
+    - [Create Dev boxes](User Guide/Dev Boxes/Create Dev boxes.md)
+    - [Creating Docker containers in Dev boxes](User Guide/Dev Boxes/Creating Docker containers in Dev boxes.md)
+    - [Delete Dev boxes](User Guide/Dev Boxes/Delete Dev boxes.md)
+    - [Dev boxes lifecycle management](User Guide/Dev Boxes/Dev boxes lifecycle management.md)
+    - [Developing code with WebIDE](User Guide/Dev Boxes/Developing code with WebIDE.md)
+    - [Remote connection to Dev boxes via SSH](User Guide/Dev Boxes/Remote connection to Dev boxes via SSH.md)
+    - [Restart Dev boxes](User Guide/Dev Boxes/Restart Dev boxes.md)
+  - **Global Configuration**
+    - [Container Registry](User Guide/Global Configuration/Container Registry.md)
+    - [File Storage PFS](User Guide/Global Configuration/File Storage PFS.md)
+    - [VPC](User Guide/Global Configuration/VPC.md)
+    - **Monitor**
+      - [Monitoring configuration instructions](User Guide/Global Configuration/Monitor/Monitoring configuration instructions.md)
+      - [Preset Kanban Introduction of MLP in VMP](User Guide/Global Configuration/Monitor/Preset Kanban Introduction of MLP in VMP.md)
+  - **Online Service**
+    - [Configure automatic capacity expansion and reduction for services](User Guide/Online Service/Configure automatic capacity expansion and reduction for services.md)
+    - [Configure capacity expansion and reduction strategies for deployment](User Guide/Online Service/Configure capacity expansion and reduction strategies for deployment.md)
+    - [Configure service traffic policy](User Guide/Online Service/Configure service traffic policy.md)
+    - [Delete service](User Guide/Online Service/Delete service.md)
+    - [Deploy the model as a service](User Guide/Online Service/Deploy the model as a service.md)
+    - [Deploy the model as a service (new)](User Guide/Online Service/Deploy the model as a service (new).md)
+    - [How to call inference services (new)](User Guide/Online Service/How to call inference services (new).md)
+    - [Register Ark inference access point](User Guide/Online Service/Register Ark inference access point.md)
+    - [Service changes and change records](User Guide/Online Service/Service changes and change records.md)
+    - [Update/Copy Services/Deployment Notes](User Guide/Online Service/Update - Copy Services - Deployment Notes.md)
+    - [View the status/monitoring/logs of the service (new)](User Guide/Online Service/View the status - monitoring - logs of the service (new).md)
+  - **Pipeline**
+    - [Create pipeline](User Guide/Pipeline/Create pipeline.md)
+    - [Define pipelines with YAML](User Guide/Pipeline/Define pipelines with YAML.md)
+    - [Running pipeline](User Guide/Pipeline/Running pipeline.md)
+    - [Using the pipeline through the SDK](User Guide/Pipeline/Using the pipeline through the SDK.md)
+  - **Resource Group**
+    - [\[New Feature\] Create a resource group](User Guide/Resource Group/[New Feature] Create a resource group.md)
+    - [\[New Feature\] Pay by the volume](User Guide/Resource Group/[New Feature] Pay by the volume.md)
+    - [Allocate/transfer resources to the queue](User Guide/Resource Group/Allocate - transfer resources to the queue.md)
+    - [Change the load network VPC of a prepaid resource group](User Guide/Resource Group/Change the load network VPC of a prepaid resource group.md)
+    - [Change the PFS instance of a prepaid resource group](User Guide/Resource Group/Change the PFS instance of a prepaid resource group.md)
+    - [Create a resource queue](User Guide/Resource Group/Create a resource queue.md)
+    - [Description of common reasons for the status in the load queue](User Guide/Resource Group/Description of common reasons for the status in the load queue.md)
+    - [Dev boxes automatic shutdown rule settings](User Guide/Resource Group/Dev boxes automatic shutdown rule settings.md)
+    - [GPU defragmentation rule settings](User Guide/Resource Group/GPU defragmentation rule settings.md)
+    - [GPU spec instance limit CPU load commit](User Guide/Resource Group/GPU spec instance limit CPU load commit.md)
+    - [GPU/CPU Flexible Use Guide](User Guide/Resource Group/GPU - CPU Flexible Use Guide.md)
+    - [Manage users in a queue](User Guide/Resource Group/Manage users in a queue.md)
+    - [Node load details](User Guide/Resource Group/Node load details.md)
+    - [Renew/match/unsubscribe for a resource group](User Guide/Resource Group/Renew - match - unsubscribe for a resource group.md)

@@ -1,0 +1,223 @@
+# Container Registry
+
+162 pages. Source: https://docs.byteplus.com/en/docs/cr
+
+Back to the [full index](../README.md).
+
+- **API**
+  - [API list](API/API list.md)
+  - [API overview](API/API overview.md)
+  - [API release notes](API/API release notes.md)
+  - [Common error codes](API/Common error codes.md)
+  - **Access credentials**
+    - [GetAuthorizationToken](API/Access credentials/GetAuthorizationToken.md)
+  - **API method**
+    - [Common parameters](API/API method/Common parameters.md)
+    - [Request structure](API/API method/Request structure.md)
+    - [Sample response](API/API method/Sample response.md)
+    - [Service Address](API/API method/Service Address.md)
+    - [Signature example](API/API method/Signature example.md)
+    - [Signature method](API/API method/Signature method.md)
+  - **Data structures**
+    - [Request data structure](API/Data structures/Request data structure.md)
+    - [Response data structure](API/Data structures/Response data structure.md)
+  - **Domain Management**
+    - [ListDomains](API/Domain Management/ListDomains.md)
+  - **Endpoint management**
+    - [CreateEndpointAclPolicies](API/Endpoint management/CreateEndpointAclPolicies.md)
+    - [DeleteEndpointAclPolicies](API/Endpoint management/DeleteEndpointAclPolicies.md)
+    - [GetPublicEndpoint](API/Endpoint management/GetPublicEndpoint.md)
+    - [GetVpcEndpoint](API/Endpoint management/GetVpcEndpoint.md)
+    - [UpdatePublicEndpoint](API/Endpoint management/UpdatePublicEndpoint.md)
+    - [UpdateVpcEndpoint](API/Endpoint management/UpdateVpcEndpoint.md)
+  - **Namespace management**
+    - [CreateNamespace](API/Namespace management/CreateNamespace.md)
+    - [DeleteNamespace](API/Namespace management/DeleteNamespace.md)
+    - [ListNamespaces](API/Namespace management/ListNamespaces.md)
+  - **OCI artifact repository management**
+    - [CreateRepository](API/OCI artifact repository management/CreateRepository.md)
+    - [DeleteRepository](API/OCI artifact repository management/DeleteRepository.md)
+    - [ListRepositories](API/OCI artifact repository management/ListRepositories.md)
+    - [UpdateRepository](API/OCI artifact repository management/UpdateRepository.md)
+  - **OCI artifact tag management**
+    - [DeleteTags](API/OCI artifact tag management/DeleteTags.md)
+    - [ListTags](API/OCI artifact tag management/ListTags.md)
+    - [UpdateTagDescription](API/OCI artifact tag management/UpdateTagDescription.md)
+  - **Registries**
+    - [CreateRegistry](API/Registries/CreateRegistry.md)
+    - [DeleteRegistry](API/Registries/DeleteRegistry.md)
+    - [ListRegistries](API/Registries/ListRegistries.md)
+    - [StartRegistry](API/Registries/StartRegistry.md)
+  - **Robot Account Management**
+    - [CreateRobotAccount](API/Robot Account Management/CreateRobotAccount.md)
+    - [DeleteRobotAccount](API/Robot Account Management/DeleteRobotAccount.md)
+    - [ListRobotAccounts](API/Robot Account Management/ListRobotAccounts.md)
+    - [UpdateRobotAccount](API/Robot Account Management/UpdateRobotAccount.md)
+    - [UpdateRobotAccountPassword](API/Robot Account Management/UpdateRobotAccountPassword.md)
+  - **User management**
+    - [GetUser](API/User management/GetUser.md)
+    - [SetUser](API/User management/SetUser.md)
+- **Best practices**
+  - [Cleaning up image tags](Best practices/Cleaning up image tags.md)
+  - [Optimizing Dockerfile for image builds](Best practices/Optimizing Dockerfile for image builds.md)
+  - **Image migration and synchronization**
+    - [Cross-region disaster recovery for CR instances](Best practices/Image migration and synchronization/Cross-region disaster recovery for CR instances.md)
+    - [Migrating images in batches by using cr-image-syncer](Best practices/Image migration and synchronization/Migrating images in batches by using cr-image-syncer.md)
+    - [Pulling Harbor images from Vocano Engine CR](Best practices/Image migration and synchronization/Pulling Harbor images from Vocano Engine CR.md)
+    - [Synchronization of image data across multiple platforms](Best practices/Image migration and synchronization/Synchronization of image data across multiple platforms.md)
+  - **Images distribution**
+    - [Container Image Distribution and Startup Acceleration Based on Zstd Compression Algorithm](Best practices/Images distribution/Container Image Distribution and Startup Acceleration Based on Zstd Compression Algorithm.md)
+  - **Push and pull OCI artifacts**
+    - [Connecting cross-account VPCs via PrivateLink](Best practices/Push and pull OCI artifacts/Connecting cross-account VPCs via PrivateLink.md)
+    - [Pulling images without secrets over private network using VKE add-on](Best practices/Push and pull OCI artifacts/Pulling images without secrets over private network using VKE add-on.md)
+    - [Pushing and pulling images using nerdctl](Best practices/Push and pull OCI artifacts/Pushing and pulling images using nerdctl.md)
+    - [Pushing images across borders to Volcano Engine CR](Best practices/Push and pull OCI artifacts/Pushing images across borders to Volcano Engine CR.md)
+    - [Pushing images from CR Standard Edition instance in on-premises environment](Best practices/Push and pull OCI artifacts/Pushing images from CR Standard Edition instance in on-premises environment.md)
+    - [Pushing images in Flannel-based clusters](Best practices/Push and pull OCI artifacts/Pushing images in Flannel-based clusters.md)
+- **Billing**
+  - [Billing overview](Billing/Billing overview.md)
+  - [Overdue payment](Billing/Overdue payment.md)
+  - [Switch from Pay-as-you-go to Mixed Billing (Partially subscription)](Billing/Switch from Pay-as-you-go to Mixed Billing (Partially subscription).md)
+  - **Billing items**
+    - [Instance Costs](Billing/Billing items/Instance Costs.md)
+    - [Namespace Quota](Billing/Billing items/Namespace Quota.md)
+    - [OCI artifact repository quota](Billing/Billing items/OCI artifact repository quota.md)
+    - [Storage Capacity fee](Billing/Billing items/Storage Capacity fee.md)
+    - [Traffic Cost](Billing/Billing items/Traffic Cost.md)
+    - [VPC access quota](Billing/Billing items/VPC access quota.md)
+- **FAQ**
+  - **Access control**
+    - [Why does the domain name of a CR instance fail to resolve?](FAQ/Access control/Why does the domain name of a CR instance fail to resolve?.md)
+  - **Authorization**
+    - [How do I enable cross-service authorization for an IAM user?](FAQ/Authorization/How do I enable cross-service authorization for an IAM user?.md)
+    - [How do I fix the "AccessDenied Code:403" error?](FAQ/Authorization/How do I fix the "AccessDenied Code:403" error?.md)
+  - **Limit**
+    - [How do I apply to use a beta feature?](FAQ/Limit/How do I apply to use a beta feature?.md)
+    - [How do I handle the "pull QPS exceeded" error after a pod starts?](FAQ/Limit/How do I handle the "pull QPS exceeded" error after a pod starts?.md)
+    - [How do I increase the quota?](FAQ/Limit/How do I increase the quota?.md)
+    - [How should I do if the number of image tags exceeds the quota?](FAQ/Limit/How should I do if the number of image tags exceeds the quota?.md)
+    - [How should I do if the number of namespaces exceeds the quota?](FAQ/Limit/How should I do if the number of namespaces exceeds the quota?.md)
+    - [How should I do if the number of OCI artifact repositories exceeds the quota?](FAQ/Limit/How should I do if the number of OCI artifact repositories exceeds the quota?.md)
+    - [How should I do if the number of VPC accesses exceeds the quota?](FAQ/Limit/How should I do if the number of VPC accesses exceeds the quota?.md)
+  - **Push and pull container images**
+    - [How do I address a Docker login failure](FAQ/Push and pull container images/How do I address a Docker login failure.md)
+    - [How do I fix image pull failures?](FAQ/Push and pull container images/How do I fix image pull failures?.md)
+    - [How do I fix image push failures?](FAQ/Push and pull container images/How do I fix image push failures?.md)
+    - [How do I fix slow public network image pushes caused by proxy settings?](FAQ/Push and pull container images/How do I fix slow public network image pushes caused by proxy settings?.md)
+    - [How do I troubleshoot public network access issues in CR?](FAQ/Push and pull container images/How do I troubleshoot public network access issues in CR?.md)
+  - **Registry replication**
+    - [How do I fix the "The quota of ReplicationRule is exceeded" error?](FAQ/Registry replication/How do I fix the "The quota of ReplicationRule is exceeded" error?.md)
+    - [How do I fix the "TOOMANYREQUESTS" error during replication from Docker Hub?](FAQ/Registry replication/How do I fix the "TOOMANYREQUESTS" error during replication from Docker Hub?.md)
+    - [How do I restore a registry replication rule after deleting a namespace in the source instance?](FAQ/Registry replication/How do I restore a registry replication rule after deleting a namespace in the source inst.md)
+  - **VPC**
+    - [How do I delete the private DNS record and ENI created when I create a VPC?](FAQ/VPC/How do I delete the private DNS record and ENI created when I create a VPC?.md)
+    - [How do I view the private domain name and network interface automatically created for a VPC?](FAQ/VPC/How do I view the private domain name and network interface automatically created for a VP.md)
+- **Getting started**
+  - [Push and pull artifacts](Getting started/Push and pull artifacts.md)
+- **Overview**
+  - [Benefits](Overview/Benefits.md)
+  - [Common scenarios](Overview/Common scenarios.md)
+  - [Features](Overview/Features.md)
+  - [Limits](Overview/Limits.md)
+  - [Region](Overview/Region.md)
+  - [What is Container Registry](Overview/What is Container Registry.md)
+- **SDK**
+  - [Java SDK](SDK/Java SDK.md)
+  - [Python SDK](SDK/Python SDK.md)
+  - [SDK Overview](SDK/SDK Overview.md)
+- **Terms**
+  - [BytePlus Container Registry_Service Level Agreement](Terms/BytePlus Container Registry_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Container Registry](Terms/Service-Specific Terms for BytePlus Container Registry.md)
+- **Terraform**
+  - [Creating Standard Edition instances](Terraform/Creating Standard Edition instances.md)
+  - [Obtaining temporary keys for logging into instances](Terraform/Obtaining temporary keys for logging into instances.md)
+  - [Obtaining VPC access entry information](Terraform/Obtaining VPC access entry information.md)
+  - [Preparations](Terraform/Preparations.md)
+  - [Updating VPC access entries](Terraform/Updating VPC access entries.md)
+- **User guide**
+  - **Access configuration**
+    - [Instance access credentials](User guide/Access configuration/Instance access credentials.md)
+    - **Access control**
+      - [Connect VPCs under the same account](User guide/Access configuration/Access control/Connect VPCs under the same account.md)
+      - [Connecting cross-account VPCs via CEN](User guide/Access configuration/Access control/Connecting cross-account VPCs via CEN.md)
+      - [Enabling public network access](User guide/Access configuration/Access control/Enabling public network access.md)
+    - **Domain name management**
+      - [Adding public network access resolution records](User guide/Access configuration/Domain name management/Adding public network access resolution records.md)
+      - [Creating custom domain names](User guide/Access configuration/Domain name management/Creating custom domain names.md)
+      - [Managing custom domain names](User guide/Access configuration/Domain name management/Managing custom domain names.md)
+      - [Overview](User guide/Access configuration/Domain name management/Overview.md)
+      - [Setting default domain names](User guide/Access configuration/Domain name management/Setting default domain names.md)
+      - [Viewing TrafficRoute resolution records](User guide/Access configuration/Domain name management/Viewing TrafficRoute resolution records.md)
+  - **Alerts and notifications**
+    - **Event notification management**
+      - [Creating image push notification rules](User guide/Alerts and notifications/Event notification management/Creating image push notification rules.md)
+      - [Managing notification rules](User guide/Alerts and notifications/Event notification management/Managing notification rules.md)
+    - **Resource Quota**
+      - [Configuring resource capacity alerts](User guide/Alerts and notifications/Resource Quota/Configuring resource capacity alerts.md)
+      - [Increasing instance quotas](User guide/Alerts and notifications/Resource Quota/Increasing instance quotas.md)
+  - **Audit log management**
+    - [Enabling log audit](User guide/Audit log management/Enabling log audit.md)
+    - [Managing audit logs](User guide/Audit log management/Managing audit logs.md)
+    - [View log report](User guide/Audit log management/View log report.md)
+  - **Distribution acceleration**
+    - **Image lazy loading**
+      - [Creating image lazy loading conversion rules](User guide/Distribution acceleration/Image lazy loading/Creating image lazy loading conversion rules.md)
+      - [Image lazy loading overview](User guide/Distribution acceleration/Image lazy loading/Image lazy loading overview.md)
+      - [Managing image lazy loading conversion rules](User guide/Distribution acceleration/Image lazy loading/Managing image lazy loading conversion rules.md)
+      - [Manually converting images to Nydus format](User guide/Distribution acceleration/Image lazy loading/Manually converting images to Nydus format.md)
+    - **P2P acceleration**
+      - [P2P acceleration overview](User guide/Distribution acceleration/P2P acceleration/P2P acceleration overview.md)
+      - [Using P2P acceleration in VKE](User guide/Distribution acceleration/P2P acceleration/Using P2P acceleration in VKE.md)
+  - **Image signature management**
+    - [Create image signature](User guide/Image signature management/Create image signature.md)
+    - [Delete image signature](User guide/Image signature management/Delete image signature.md)
+  - **Instance management**
+    - [Create a standard instance](User guide/Instance management/Create a standard instance.md)
+    - [Destroy an instance](User guide/Instance management/Destroy an instance.md)
+    - [Initializing instances](User guide/Instance management/Initializing instances.md)
+    - [Instance edition](User guide/Instance management/Instance edition.md)
+    - [Manage Standard Edition instances](User guide/Instance management/Manage Standard Edition instances.md)
+  - **Namespace management**
+    - [Create a namespace](User guide/Namespace management/Create a namespace.md)
+    - [Deleting a namespace](User guide/Namespace management/Deleting a namespace.md)
+    - [Modifying namespaces](User guide/Namespace management/Modifying namespaces.md)
+  - **OCI artifact management**
+    - [Batch modifying public/private types of OCI artifacts](User guide/OCI artifact management/Batch modifying public - private types of OCI artifacts.md)
+    - [Edit image tag description](User guide/OCI artifact management/Edit image tag description.md)
+    - [Image scanning](User guide/OCI artifact management/Image scanning.md)
+    - [Pull and push Helm charts](User guide/OCI artifact management/Pull and push Helm charts.md)
+    - [Pull and push images](User guide/OCI artifact management/Pull and push images.md)
+    - [Viewing image layer information](User guide/OCI artifact management/Viewing image layer information.md)
+  - **Registry replication**
+    - [Inter-instance synchronization](User guide/Registry replication/Inter-instance synchronization.md)
+    - [Manage registry replication rules](User guide/Registry replication/Manage registry replication rules.md)
+    - [Registry replication overview](User guide/Registry replication/Registry replication overview.md)
+    - [Regular expression matching examples](User guide/Registry replication/Regular expression matching examples.md)
+    - [Synchronizing external repositories to CR](User guide/Registry replication/Synchronizing external repositories to CR.md)
+  - **Repository management**
+    - [Creating OCI artifact repositories](User guide/Repository management/Creating OCI artifact repositories.md)
+    - [Deleting OCI artifact repositories](User guide/Repository management/Deleting OCI artifact repositories.md)
+    - [Modifying OCI artifact repositories](User guide/Repository management/Modifying OCI artifact repositories.md)
+  - **User authorization**
+    - **Authorization management**
+      - [Add authentication policy](User guide/User authorization/Authorization management/Add authentication policy.md)
+      - [Add system policy](User guide/User authorization/Authorization management/Add system policy.md)
+      - [Adding custom policies](User guide/User authorization/Authorization management/Adding custom policies.md)
+      - [Grant push and pull permissions for images in the specified namespace](User guide/User authorization/Authorization management/Grant push and pull permissions for images in the specified namespace.md)
+      - [Granting full management permissions of a specific namespace](User guide/User authorization/Authorization management/Granting full management permissions of a specific namespace.md)
+      - [Granting project-specific permissions](User guide/User authorization/Authorization management/Granting project-specific permissions.md)
+    - **Robot account management**
+      - [Creating robot accounts](User guide/User authorization/Robot account management/Creating robot accounts.md)
+      - [Managing robot accounts](User guide/User authorization/Robot account management/Managing robot accounts.md)
+  - **Version magnagement**
+    - **Tag retention rule management**
+      - [Creating tag retention rules](User guide/Version magnagement/Tag retention rule management/Creating tag retention rules.md)
+      - [Managing tag retention rules](User guide/Version magnagement/Tag retention rule management/Managing tag retention rules.md)
+      - [Viewing rule execution records](User guide/Version magnagement/Tag retention rule management/Viewing rule execution records.md)
+    - **Version immutable rules management**
+      - [Creating tag immutability rules](User guide/Version magnagement/Version immutable rules management/Creating tag immutability rules.md)
+      - [Managing tag immutability rules](User guide/Version magnagement/Version immutable rules management/Managing tag immutability rules.md)
+- **What's new**
+  - [Release notes](What's new/Release notes.md)
+  - **Bulletin**
+    - [\[Product update\] Change of the overdue payment duration](What's new/Bulletin/[Product update] Change of the overdue payment duration.md)

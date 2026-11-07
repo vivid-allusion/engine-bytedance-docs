@@ -1,0 +1,317 @@
+# Code Pipeline
+
+235 pages. Source: https://docs.byteplus.com/en/docs/cp
+
+Back to the [full index](../README.md).
+
+- **API Reference**
+  - [API overview](API Reference/API overview.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [Public error codes](API Reference/Public error codes.md)
+  - **Code source**
+    - [CreateResource](API Reference/Code source/CreateResource.md)
+    - [DeleteResource](API Reference/Code source/DeleteResource.md)
+    - [ListResources](API Reference/Code source/ListResources.md)
+    - [UpdateResource](API Reference/Code source/UpdateResource.md)
+  - **Custom steps**
+    - [CreateComponentStep](API Reference/Custom steps/CreateComponentStep.md)
+    - [DeleteComponentStep](API Reference/Custom steps/DeleteComponentStep.md)
+    - [ListComponentStep](API Reference/Custom steps/ListComponentStep.md)
+    - [UpdateComponentStep](API Reference/Custom steps/UpdateComponentStep.md)
+    - [UpgradeComponentStep](API Reference/Custom steps/UpgradeComponentStep.md)
+  - **Log**
+    - [GetTaskRunLog](API Reference/Log/GetTaskRunLog.md)
+    - [GetTaskRunLogDownloadURI](API Reference/Log/GetTaskRunLogDownloadURI.md)
+  - **Methods of invocation**
+    - [Public parameters](API Reference/Methods of invocation/Public parameters.md)
+    - [Request structure](API Reference/Methods of invocation/Request structure.md)
+    - [Returned results](API Reference/Methods of invocation/Returned results.md)
+    - [Service Addresses](API Reference/Methods of invocation/Service Addresses.md)
+    - [Signature mechanism](API Reference/Methods of invocation/Signature mechanism.md)
+  - **Pipeline**
+    - [CreatePipeline](API Reference/Pipeline/CreatePipeline.md)
+    - [DeletePipeline](API Reference/Pipeline/DeletePipeline.md)
+    - [ListPipelines](API Reference/Pipeline/ListPipelines.md)
+  - **Service connection**
+    - [CreateServiceConnection](API Reference/Service connection/CreateServiceConnection.md)
+    - [DeleteServiceConnection](API Reference/Service connection/DeleteServiceConnection.md)
+    - [GetServiceConnection](API Reference/Service connection/GetServiceConnection.md)
+    - [ListServiceConnections](API Reference/Service connection/ListServiceConnections.md)
+    - [UpdateServiceConnection](API Reference/Service connection/UpdateServiceConnection.md)
+  - **The pipeline operation**
+    - [CancelPipelineRun](API Reference/The pipeline operation/CancelPipelineRun.md)
+    - [ListPipelineRuns](API Reference/The pipeline operation/ListPipelineRuns.md)
+    - [ListTaskRuns](API Reference/The pipeline operation/ListTaskRuns.md)
+    - [RunPipeline](API Reference/The pipeline operation/RunPipeline.md)
+  - **Trigger**
+    - [CreatePipelineWebhookURL](API Reference/Trigger/CreatePipelineWebhookURL.md)
+    - [CreateTrigger](API Reference/Trigger/CreateTrigger.md)
+    - [DeleteTrigger](API Reference/Trigger/DeleteTrigger.md)
+    - [ListTriggers](API Reference/Trigger/ListTriggers.md)
+    - [UpdateTrigger](API Reference/Trigger/UpdateTrigger.md)
+  - **Workspace**
+    - [CreateWorkspace](API Reference/Workspace/CreateWorkspace.md)
+    - [DeleteWorkspace](API Reference/Workspace/DeleteWorkspace.md)
+    - [ListWorkspaces](API Reference/Workspace/ListWorkspaces.md)
+    - [UpdateWorkspace](API Reference/Workspace/UpdateWorkspace.md)
+- **Best practices**
+  - [Achieve a set of orchestrated differentiated deployments through application delivery](Best practices/Achieve a set of orchestrated differentiated deployments through application delivery.md)
+  - [Automatically convert Nydus accelerated images via pipeline](Best practices/Automatically convert Nydus accelerated images via pipeline.md)
+  - [Build a blank screen image and deploy the Vite+React frontend project using a NodeJS pipeline](Best practices/Build a blank screen image and deploy the Vite+React frontend project using a NodeJS pipel.md)
+  - [Deliver pipeline artifacts through the output of custom steps](Best practices/Deliver pipeline artifacts through the output of custom steps.md)
+  - [Deploy React via a pipeline to TOS](Best practices/Deploy React via a pipeline to TOS.md)
+- **FAQs**
+  - **Application delivery FAQ**
+    - [How to set the time zone for an application](FAQs/Application delivery FAQ/How to set the time zone for an application.md)
+  - **Code source FAQ**
+    - [Does Code Pipeline support code hosting](FAQs/Code source FAQ/Does Code Pipeline support code hosting.md)
+  - **Compilation FAQ**
+    - [Go projects pull dependencies slowly](FAQs/Compilation FAQ/Go projects pull dependencies slowly.md)
+    - [Slow dependency fetching in Node.js projects](FAQs/Compilation FAQ/Slow dependency fetching in Node.js projects.md)
+    - [Slow dependency pull speed in Python projects](FAQs/Compilation FAQ/Slow dependency pull speed in Python projects.md)
+    - [Slow fetching of dependencies in Maven projects](FAQs/Compilation FAQ/Slow fetching of dependencies in Maven projects.md)
+  - **Custom steps FAQ**
+    - [How to resolve the issue where the step input parameter inputs.xxx does not exist](FAQs/Custom steps FAQ/How to resolve the issue where the step input parameter inputs.xxx does not exist.md)
+  - **Deployment FAQ**
+    - [How to resolve a Kubernetes image upgrade reporting image pull failure and returning a 401 error](FAQs/Deployment FAQ/How to resolve a Kubernetes image upgrade reporting image pull failure and returning a 401.md)
+    - [Kubernetes image upgrade failed Logs target app operated by other parallel pipelines or tasks](FAQs/Deployment FAQ/Kubernetes image upgrade failed Logs target app operated by other parallel pipelines or ta.md)
+  - **General FAQ**
+    - [How to handle process exit errors when performing write operations on directories under a Pod](FAQs/General FAQ/How to handle process exit errors when performing write operations on directories under a.md)
+  - **Image build FAQ**
+    - [How can the image version number be dynamically updated](FAQs/Image build FAQ/How can the image version number be dynamically updated.md)
+    - [How to accelerate image builds when downloading base images from overseas](FAQs/Image build FAQ/How to accelerate image builds when downloading base images from overseas.md)
+    - [How to handle a 404 error when pushing an image build to the Container Registry service](FAQs/Image build FAQ/How to handle a 404 error when pushing an image build to the Container Registry service.md)
+    - [How to handle trigger limits when pushing images to the Image Repository Preview Version](FAQs/Image build FAQ/How to handle trigger limits when pushing images to the Image Repository Preview Version.md)
+    - [How to resolve slow or failed base image pulls during image build](FAQs/Image build FAQ/How to resolve slow or failed base image pulls during image build.md)
+    - [How to troubleshoot and identify the cause of a 401 Unauthorized error when pushing an image to the image repository service](FAQs/Image build FAQ/How to troubleshoot and identify the cause of a 401 Unauthorized error when pushing an ima.md)
+    - [mage build stage COPY command causes build not found error How to troubleshoot and resolve](FAQs/Image build FAQ/mage build stage COPY command causes build not found error How to troubleshoot and resolve.md)
+    - [Troubleshooting a 401 Unauthorized error when pushing an image build to a custom repository](FAQs/Image build FAQ/Troubleshooting a 401 Unauthorized error when pushing an image build to a custom repositor.md)
+  - **Pipeline caches FAQ**
+    - [How to configure pipeline cache to improve Java Maven project build efficiency](FAQs/Pipeline caches FAQ/How to configure pipeline cache to improve Java Maven project build efficiency.md)
+    - [How to configure pipeline caching to improve Go project build efficiency](FAQs/Pipeline caches FAQ/How to configure pipeline caching to improve Go project build efficiency.md)
+    - [How to configure pipeline caching to improve Java Gradle project build efficiency](FAQs/Pipeline caches FAQ/How to configure pipeline caching to improve Java Gradle project build efficiency.md)
+    - [How to configure pipeline caching to improve Node.js project build efficiency](FAQs/Pipeline caches FAQ/How to configure pipeline caching to improve Node.js project build efficiency.md)
+  - **Pipeline operation FAQ**
+    - [How to handle when the LockWaiting state persists for a long time](FAQs/Pipeline operation FAQ/How to handle when the LockWaiting state persists for a long time.md)
+    - [How to process a pipeline that remains in the In queue state?](FAQs/Pipeline operation FAQ/How to process a pipeline that remains in the In queue state?.md)
+  - **Private resource pool FAQ**
+    - [Upgrade the Tekton Webhook configuration for existing private resource pools](FAQs/Private resource pool FAQ/Upgrade the Tekton Webhook configuration for existing private resource pools.md)
+    - [When running pipeline with private resource pool it stays in environment preparation stage](FAQs/Private resource pool FAQ/When running pipeline with private resource pool it stays in environment preparation stage.md)
+- **Getting started**
+  - [Preparations](Getting started/Preparations.md)
+  - [Quick start for application delivery](Getting started/Quick start for application delivery.md)
+  - [Quick start for pipeline](Getting started/Quick start for pipeline.md)
+- **Product billing**
+  - [Billing Overview](Product billing/Billing Overview.md)
+  - **Billing Item**
+    - [Code Pipeline Basic Edition](Product billing/Billing Item/Code Pipeline Basic Edition.md)
+    - [Pipeline execution time](Product billing/Billing Item/Pipeline execution time.md)
+- **Product overview**
+  - [Application scenarios](Product overview/Application scenarios.md)
+  - [Benefits](Product overview/Benefits.md)
+  - [Features](Product overview/Features.md)
+  - [Limit](Product overview/Limit.md)
+  - [Region](Product overview/Region.md)
+  - [Terms](Product overview/Terms.md)
+  - [What is Code Pipeline](Product overview/What is Code Pipeline.md)
+- **Product updates**
+  - [Release notes](Product updates/Release notes.md)
+- **Related agreements**
+  - [BytePlus Code Pipeline Service Level Agreement](Related agreements/BytePlus Code Pipeline Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Code Pipeline](Related agreements/Service-Specific Terms for BytePlus Code Pipeline.md)
+- **SDK reference**
+  - [SDK overview](SDK reference/SDK overview.md)
+- **User guide**
+  - [Overview](User guide/Overview.md)
+  - **Application delivery (K8s YAML and OAM)**
+    - **Application management**
+      - [Create an application](User guide/Application delivery (K8s YAML and OAM)/Application management/Create an application.md)
+      - [Create Helm application](User guide/Application delivery (K8s YAML and OAM)/Application management/Create Helm application.md)
+      - [Import applications](User guide/Application delivery (K8s YAML and OAM)/Application management/Import applications.md)
+      - [Manage applications](User guide/Application delivery (K8s YAML and OAM)/Application management/Manage applications.md)
+    - **Application orchestration**
+      - [Scheduling history](User guide/Application delivery (K8s YAML and OAM)/Application orchestration/Scheduling history.md)
+      - **K8s YAML**
+        - [K8s YAML application orchestration](User guide/Application delivery (K8s YAML and OAM)/Application orchestration/K8s YAML/K8s YAML application orchestration.md)
+        - [Turn off double curly brace rendering](User guide/Application delivery (K8s YAML and OAM)/Application orchestration/K8s YAML/Turn off double curly brace rendering.md)
+        - [Use placeholders and variables](User guide/Application delivery (K8s YAML and OAM)/Application orchestration/K8s YAML/Use placeholders and variables.md)
+    - **Configuration management**
+      - [Configuration Item](User guide/Application delivery (K8s YAML and OAM)/Configuration management/Configuration Item.md)
+      - [Configuration management overview](User guide/Application delivery (K8s YAML and OAM)/Configuration management/Configuration management overview.md)
+      - [Environment configuration](User guide/Application delivery (K8s YAML and OAM)/Configuration management/Environment configuration.md)
+    - **Deployment operations and maintenance**
+      - [Change logs](User guide/Application delivery (K8s YAML and OAM)/Deployment operations and maintenance/Change logs.md)
+      - [K8s YAML application deployment](User guide/Application delivery (K8s YAML and OAM)/Deployment operations and maintenance/K8s YAML application deployment.md)
+      - [The observation deployment process](User guide/Application delivery (K8s YAML and OAM)/Deployment operations and maintenance/The observation deployment process.md)
+      - [View monitoring dashboard (K8s YAML)](User guide/Application delivery (K8s YAML and OAM)/Deployment operations and maintenance/View monitoring dashboard (K8s YAML).md)
+    - **Environment management**
+      - [Create environments](User guide/Application delivery (K8s YAML and OAM)/Environment management/Create environments.md)
+      - [Manage environments](User guide/Application delivery (K8s YAML and OAM)/Environment management/Manage environments.md)
+    - **Permission Management**
+      - [Manage members](User guide/Application delivery (K8s YAML and OAM)/Permission Management/Manage members.md)
+      - [Role permissions](User guide/Application delivery (K8s YAML and OAM)/Permission Management/Role permissions.md)
+  - **Custom pipeline steps**
+    - [Create custom steps](User guide/Custom pipeline steps/Create custom steps.md)
+    - [Manage custom steps](User guide/Custom pipeline steps/Manage custom steps.md)
+    - [Step YAML rules](User guide/Custom pipeline steps/Step YAML rules.md)
+    - [Use custom steps](User guide/Custom pipeline steps/Use custom steps.md)
+  - **Custom pipeline templates**
+    - [Create pipeline templates](User guide/Custom pipeline templates/Create pipeline templates.md)
+    - [Manage pipeline templates](User guide/Custom pipeline templates/Manage pipeline templates.md)
+  - **Hosted applications (ECS)**
+    - [Access a hosted application (ECS)](User guide/Hosted applications (ECS)/Access a hosted application (ECS).md)
+    - [Batch release of managed apps](User guide/Hosted applications (ECS)/Batch release of managed apps.md)
+    - [Change hosted applications (ECS)](User guide/Hosted applications (ECS)/Change hosted applications (ECS).md)
+    - [Create and deploy managed app (Java technology stack)](User guide/Hosted applications (ECS)/Create and deploy managed app (Java technology stack).md)
+    - [Create and deploy managed apps (non-Java tech stack)](User guide/Hosted applications (ECS)/Create and deploy managed apps (non-Java tech stack).md)
+    - [Delete managed applications (ECS)](User guide/Hosted applications (ECS)/Delete managed applications (ECS).md)
+    - [Host application scaling](User guide/Hosted applications (ECS)/Host application scaling.md)
+  - **Managed applications (K8s)**
+    - [Change the hosted application](User guide/Managed applications (K8s)/Change the hosted application.md)
+    - [Delete a managed application](User guide/Managed applications (K8s)/Delete a managed application.md)
+    - [View hosted application details](User guide/Managed applications (K8s)/View hosted application details.md)
+    - [View the monitoring dashboard](User guide/Managed applications (K8s)/View the monitoring dashboard.md)
+    - **Access methods**
+      - [Add a load balancer (public network)](User guide/Managed applications (K8s)/Access methods/Add a load balancer (public network).md)
+      - [Add an API gateway](User guide/Managed applications (K8s)/Access methods/Add an API gateway.md)
+      - [Add intranet load balancing](User guide/Managed applications (K8s)/Access methods/Add intranet load balancing.md)
+      - [Add Service](User guide/Managed applications (K8s)/Access methods/Add Service.md)
+      - [Overview of access methods](User guide/Managed applications (K8s)/Access methods/Overview of access methods.md)
+    - **Create a hosted application (other)**
+      - [Create and deploy managed app (container image)](User guide/Managed applications (K8s)/Create a hosted application (other)/Create and deploy managed app (container image).md)
+      - [Create and deploy managed applications (binary packages)](User guide/Managed applications (K8s)/Create a hosted application (other)/Create and deploy managed applications (binary packages).md)
+    - **Create a managed Java application**
+      - [Canary release for an application](User guide/Managed applications (K8s)/Create a managed Java application/Canary release for an application.md)
+      - [Create and deploy Managed App (JAR/WAR)](User guide/Managed applications (K8s)/Create a managed Java application/Create and deploy Managed App (JAR - WAR).md)
+      - [Java application hosting overview](User guide/Managed applications (K8s)/Create a managed Java application/Java application hosting overview.md)
+    - **Scaling and resizing**
+      - [Auto scaling](User guide/Managed applications (K8s)/Scaling and resizing/Auto scaling.md)
+      - [Manual scaling](User guide/Managed applications (K8s)/Scaling and resizing/Manual scaling.md)
+  - **Permission management**
+    - [Configure IAM user permissions](User guide/Permission management/Configure IAM user permissions.md)
+    - [Cross-service authorization](User guide/Permission management/Cross-service authorization.md)
+  - **Pipeline**
+    - [Add Maven Setting global configurations](User guide/Pipeline/Add Maven Setting global configurations.md)
+    - [Cache directory](User guide/Pipeline/Cache directory.md)
+    - [Code source branching model](User guide/Pipeline/Code source branching model.md)
+    - [Create a pipeline via console](User guide/Pipeline/Create a pipeline via console.md)
+    - [Create pipelines using YAML](User guide/Pipeline/Create pipelines using YAML.md)
+    - [Notification](User guide/Pipeline/Notification.md)
+    - [Pipeline group](User guide/Pipeline/Pipeline group.md)
+    - [Pipeline management](User guide/Pipeline/Pipeline management.md)
+    - [Pipeline status](User guide/Pipeline/Pipeline status.md)
+    - [Process orchestration](User guide/Pipeline/Process orchestration.md)
+    - [Pull only the code source of the latest version of the code source](User guide/Pipeline/Pull only the code source of the latest version of the code source.md)
+    - [Run a pipeline](User guide/Pipeline/Run a pipeline.md)
+    - [View run details](User guide/Pipeline/View run details.md)
+    - **Concurrency lock**
+      - [Configure the concurrency lock](User guide/Pipeline/Concurrency lock/Configure the concurrency lock.md)
+      - [Manage concurrency locks](User guide/Pipeline/Concurrency lock/Manage concurrency locks.md)
+    - **Trigger**
+      - [General webhook trigger](User guide/Pipeline/Trigger/General webhook trigger.md)
+      - [Image source Webhook trigger](User guide/Pipeline/Trigger/Image source Webhook trigger.md)
+      - [Manage triggers](User guide/Pipeline/Trigger/Manage triggers.md)
+      - [Scheduled trigger](User guide/Pipeline/Trigger/Scheduled trigger.md)
+      - [Trigger from code source](User guide/Pipeline/Trigger/Trigger from code source.md)
+      - [Trigger overview](User guide/Pipeline/Trigger/Trigger overview.md)
+      - **Trigger webhook configuration**
+        - [Configure a GitLab webhook](User guide/Pipeline/Trigger/Trigger webhook configuration/Configure a GitLab webhook.md)
+        - [Configure Bitbucket webhook](User guide/Pipeline/Trigger/Trigger webhook configuration/Configure Bitbucket webhook.md)
+        - [Configure GitHub webhook push](User guide/Pipeline/Trigger/Trigger webhook configuration/Configure GitHub webhook push.md)
+        - [Overview](User guide/Pipeline/Trigger/Trigger webhook configuration/Overview.md)
+    - **Variable management**
+      - [Custom variables](User guide/Pipeline/Variable management/Custom variables.md)
+      - [Overview of variables](User guide/Pipeline/Variable management/Overview of variables.md)
+      - [Pipeline variable groups](User guide/Pipeline/Variable management/Pipeline variable groups.md)
+      - [Predefined variables](User guide/Pipeline/Variable management/Predefined variables.md)
+      - [Use variables](User guide/Pipeline/Variable management/Use variables.md)
+    - **YAML pipeline**
+      - **List of component**
+        - [Flow control](User guide/Pipeline/YAML pipeline/List of component/Flow control.md)
+        - [Resource deployment](User guide/Pipeline/YAML pipeline/List of component/Resource deployment.md)
+      - **List of steps**
+        - [Artifact management](User guide/Pipeline/YAML pipeline/List of steps/Artifact management.md)
+        - [Building images](User guide/Pipeline/YAML pipeline/List of steps/Building images.md)
+        - [Code management](User guide/Pipeline/YAML pipeline/List of steps/Code management.md)
+        - [Code scanning](User guide/Pipeline/YAML pipeline/List of steps/Code scanning.md)
+        - [Command execution](User guide/Pipeline/YAML pipeline/List of steps/Command execution.md)
+        - [Compilation and build](User guide/Pipeline/YAML pipeline/List of steps/Compilation and build.md)
+        - [Resource deployment](User guide/Pipeline/YAML pipeline/List of steps/Resource deployment.md)
+        - [Unit test](User guide/Pipeline/YAML pipeline/List of steps/Unit test.md)
+      - **YAML syntax**
+        - [Pipeline Addon component](User guide/Pipeline/YAML pipeline/YAML syntax/Pipeline Addon component.md)
+        - [Pipeline sources](User guide/Pipeline/YAML pipeline/YAML syntax/Pipeline sources.md)
+        - [Pipeline stages](User guide/Pipeline/YAML pipeline/YAML syntax/Pipeline stages.md)
+        - [Pipeline steps](User guide/Pipeline/YAML pipeline/YAML syntax/Pipeline steps.md)
+        - [Pipeline tasks](User guide/Pipeline/YAML pipeline/YAML syntax/Pipeline tasks.md)
+  - **Predefined pipeline tasks**
+    - **Artifact management**
+      - [TOS upload](User guide/Predefined pipeline tasks/Artifact management/TOS upload.md)
+    - **Build and push images**
+      - [Build image and push to custom image repository](User guide/Predefined pipeline tasks/Build and push images/Build image and push to custom image repository.md)
+      - [Building images and pushing to Container Registry service](User guide/Predefined pipeline tasks/Build and push images/Building images and pushing to Container Registry service.md)
+    - **Build ECS images**
+      - [Configure ECS image build pipeline templates](User guide/Predefined pipeline tasks/Build ECS images/Configure ECS image build pipeline templates.md)
+      - [Create ECS instance](User guide/Predefined pipeline tasks/Build ECS images/Create ECS instance.md)
+      - [Delete ECS instance](User guide/Predefined pipeline tasks/Build ECS images/Delete ECS instance.md)
+      - [ECS image creation](User guide/Predefined pipeline tasks/Build ECS images/ECS image creation.md)
+      - [ECS image cross-region copy](User guide/Predefined pipeline tasks/Build ECS images/ECS image cross-region copy.md)
+      - [ECS image sharing](User guide/Predefined pipeline tasks/Build ECS images/ECS image sharing.md)
+      - [ECS vulnerability scanning](User guide/Predefined pipeline tasks/Build ECS images/ECS vulnerability scanning.md)
+    - **Command execution**
+      - [Custom image execution](User guide/Predefined pipeline tasks/Command execution/Custom image execution.md)
+      - [Execute command](User guide/Predefined pipeline tasks/Command execution/Execute command.md)
+    - **Compilation and build**
+      - [Function build](User guide/Predefined pipeline tasks/Compilation and build/Function build.md)
+      - [Java compilation and build](User guide/Predefined pipeline tasks/Compilation and build/Java compilation and build.md)
+      - [NodeJS compilation and build](User guide/Predefined pipeline tasks/Compilation and build/NodeJS compilation and build.md)
+    - **Deployments**
+      - [AgentKit Runtime deployment](User guide/Predefined pipeline tasks/Deployments/AgentKit Runtime deployment.md)
+      - [AgentKit Runtime update](User guide/Predefined pipeline tasks/Deployments/AgentKit Runtime update.md)
+      - [Application deployment](User guide/Predefined pipeline tasks/Deployments/Application deployment.md)
+      - [ECS operations and maintenance](User guide/Predefined pipeline tasks/Deployments/ECS operations and maintenance.md)
+      - [Function deployment](User guide/Predefined pipeline tasks/Deployments/Function deployment.md)
+      - [Kubectl release](User guide/Predefined pipeline tasks/Deployments/Kubectl release.md)
+      - [Kubernetes batch deployment](User guide/Predefined pipeline tasks/Deployments/Kubernetes batch deployment.md)
+      - [Kubernetes image upgrade](User guide/Predefined pipeline tasks/Deployments/Kubernetes image upgrade.md)
+    - **General task configuration**
+      - [Task resource specifications configuration](User guide/Predefined pipeline tasks/General task configuration/Task resource specifications configuration.md)
+      - [Webhook notification](User guide/Predefined pipeline tasks/General task configuration/Webhook notification.md)
+    - **Process control**
+      - [Manual checkpoint](User guide/Predefined pipeline tasks/Process control/Manual checkpoint.md)
+      - [Selectors](User guide/Predefined pipeline tasks/Process control/Selectors.md)
+    - **Test**
+      - [Obtain a SonarQube token](User guide/Predefined pipeline tasks/Test/Obtain a SonarQube token.md)
+      - [SonarQube code scanning](User guide/Predefined pipeline tasks/Test/SonarQube code scanning.md)
+      - [Unit test](User guide/Predefined pipeline tasks/Test/Unit test.md)
+  - **Resource management**
+    - **Build resource pool**
+      - [Public resource pool](User guide/Resource management/Build resource pool/Public resource pool.md)
+      - **Private resource pool**
+        - [Create a custom private resource pool](User guide/Resource management/Build resource pool/Private resource pool/Create a custom private resource pool.md)
+        - [Create a VKE private resource pool](User guide/Resource management/Build resource pool/Private resource pool/Create a VKE private resource pool.md)
+        - [Manage private resource pools](User guide/Resource management/Build resource pool/Private resource pool/Manage private resource pools.md)
+    - **Deploy resource**
+      - [Deploy resource management](User guide/Resource management/Deploy resource/Deploy resource management.md)
+      - **Integrate deployment resources**
+        - [Integrate custom clusters](User guide/Resource management/Deploy resource/Integrate deployment resources/Integrate custom clusters.md)
+        - [Integrate VKE cluster](User guide/Resource management/Deploy resource/Integrate deployment resources/Integrate VKE cluster.md)
+    - **Host group management**
+      - [Add ECS host group](User guide/Resource management/Host group management/Add ECS host group.md)
+      - [Add owned host group](User guide/Resource management/Host group management/Add owned host group.md)
+  - **Service connection**
+    - [Connect to an artifact repository](User guide/Service connection/Connect to an artifact repository.md)
+    - [Delete a service connection](User guide/Service connection/Delete a service connection.md)
+    - [Integrate code source](User guide/Service connection/Integrate code source.md)
+    - [Update the service connection](User guide/Service connection/Update the service connection.md)
+    - **Code source**
+      - [Code source overview](User guide/Service connection/Code source/Code source overview.md)
+      - [Manage code sources](User guide/Service connection/Code source/Manage code sources.md)
+      - **Code source token**
+        - [Get a BitbucketCloud token](User guide/Service connection/Code source/Code source token/Get a BitbucketCloud token.md)
+        - [Get a GitHub token](User guide/Service connection/Code source/Code source token/Get a GitHub token.md)
+        - [Get a GitLab token](User guide/Service connection/Code source/Code source token/Get a GitLab token.md)
+  - **Workspace**
+    - [Create a workspace](User guide/Workspace/Create a workspace.md)
+    - [Workspace management](User guide/Workspace/Workspace management.md)
+    - [Workspace overview](User guide/Workspace/Workspace overview.md)

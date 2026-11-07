@@ -1,0 +1,79 @@
+---
+title: "Enabling a preset alert template"
+product: "Cloud Monitor"
+product_code: "cloudmonitor"
+source: "https://docs.byteplus.com/en/docs/cloudmonitor/Enabling-a-preconfigured-alarm-template"
+---
+
+Alert templates can be preset for the monitoring items of various cloud services. Preset alert templates include basic information, resources, and alert rules, but do not include notification methods. Preset alert templates can be applied with a few clicks, which streamlines processes.
+
+<span id="07eea661"></span>
+## Prerequisites
+
+
+* An alert contact and contact group have been created. For details, see [Creating alert contacts](https://docs.byteplus.com/en/docs/cloudmonitor/Creating-an-alarm-contact-and-an-alarm-contact-group) and [Creating contact groups](https://docs.byteplus.com/en/docs/cloudmonitor/Editing-an-alarm-contact).
+
+* An alert callback URL is created. For details, see [Creating callback URLs](https://docs.byteplus.com/en/docs/cloudmonitor/Managing-callback-address#414fd7c7).
+
+
+<span id=".5pON5L2c5q2l6aqk"></span>
+## Procedure
+
+
+1. Log in to the [Cloud Monitor console](http://console.volcengine.com/cloud-monitor/overview). 
+
+2. In the left navigation bar, click **Alert Center** \> **Alert Template**.
+
+3. Click the **Preset alert template** tab.
+
+4. On the **Preset alert template** page, in the **Enable** column, switch on the toggle to enable the preset alert template.
+
+5. On the **Configure contact group** page, configure the alert channel and then click **Confirm**.
+
+   
+   |Parameter |Descriptions |
+   |---|---|
+   |Notification method |Select an alert configuration method. You can select **Manually select** or **Notification policy**. |
+   |Notify policy |If you select **Notification policy** for **Notification method**, select a specific notification policy. |
+   |Alert channel |If you set **Notification method** to **Manually select**, select one or more notification channels. Available options include **Email**, **Phone**, **SMS**, **Alert callback**, and **Orchestration**. For the limits on receiving notifications by phone number or SMS message, refer to [Limit](https://docs.byteplus.com/en/docs/cloudmonitor/Limits). |
+   |Alert contact group |If you select one or more of the following options for **Alert channel**: **Email**, **Phone**, or **SMS**, the **Alert contact group** parameter will be displayed on the page.<br><br><br>* At least one contact group must be specified as the recipient of alert notifications.<br><br>* Up to five contact groups can be specified as the recipients of alert notifications. |
+   |Webhook |If you set the **Alert channel** parameter to **Alert callback**, the **Alert callback** text box will be displayed on the page.<br><br><br>* You must specify a public URL as the webhook URL. If a resource subsequently triggers an alert policy, the system will send the alert details to this URL via a POST request, enabling you to perform in\-depth data analysis.<br><br>   * You can select created webhook URLs. Up to eight webhook URLs can be selected.<br><br>   * You can enter only one webhook URL.<br><br>* We recommend that you prepare a server with the HTTP service enabled and accessible via the public network, and then specify the HTTP URL of the server as the callback URL.<br><br>* For more information about alert webhook URLs, refer to [Alert webhook usage](https://docs.byteplus.com/en/docs/cloudmonitor/Webhook-instructions).<br><br>* Alert webhooks can be associated with robots in Feishu, DingTalk, and WeCom groups to automatically push alert notifications. For specific operations, refer to [Receiving alert notifications by Feishu group](https://docs.byteplus.com/en/docs/cloudmonitor/Receiving-alarm-notifications-in-Feishu-groups), [Receiving alert notifications by DingTalk group](https://docs.byteplus.com/en/docs/cloudmonitor/Receiving-alarm-notifications-in-DingTalk-groups), and [Receiving alert notifications by WeChat group](https://docs.byteplus.com/en/docs/cloudmonitor/Receiving-alarm-notifications-in-WeChat-groups). |
+   
+
+6. After configuration is complete, click **Apply**.
+
+
+<span id="V2w3rMYT"></span>
+## Verifying results
+
+<div data-tips="true" data-tips-type="warning" data-tips-is-title="true">warning</div>
+
+
+
+* <div data-tips="true" data-tips-type="warning">The enabled preset alert template will be applied to <strong>all regions</strong> and <strong>all resources</strong>.</div>
+
+
+* <div data-tips="true" data-tips-type="warning">You cannot delete alert policies generated based on a preset alert template.</div>
+
+
+* <div data-tips="true" data-tips-type="warning">If a preset alert template is disabled, the automatically generated alert policies based on it will also be deleted.</div>
+
+
+* <div data-tips="true" data-tips-type="warning">Disabling or enabling the preset alert template will not affect the contents of the alert policy.</div>
+
+
+* <div data-tips="true" data-tips-type="warning">Alert policies automatically generated by preset alert templates do not have their associated preset alert templates displayed.</div>
+
+
+
+After you enable a preset alert template, the corresponding alert policy is automatically generated. Here:
+
+
+* An alert policy name follows the  **{Resource type}{Dimension} format.**  For example, when the resource type is **ECS** and the dimension is **Instance**, the generated alert policy name is **ECS Instance alert policy**.
+
+* The description of the alert policy is **An alert policy automatically generated after the preset alert template is enabled. It can only be deleted by disabling the preset alert template**.
+
+
+In the preset alert template list, select an enabled alert template and then click **Configure contact group** in the **Actions** column to modify contact group settings of the template, such as the notification policy, contacts, and notification method.
+
+&nbsp;

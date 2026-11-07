@@ -1,0 +1,134 @@
+# API Gateway
+
+101 pages. Source: https://docs.byteplus.com/en/docs/apig
+
+Back to the [full index](../README.md).
+
+- **Best practices**
+  - [Accessing VCI Agent Sandbox via APIG](Best practices/Accessing VCI Agent Sandbox via APIG.md)
+  - [Best practices for migrating from JWT Token to API Key (retain JWT Token)](Best practices/Best practices for migrating from JWT Token to API Key (retain JWT Token).md)
+  - [Best practices for migrating from JWT Token to API Key (without retaining JWT Token)](Best practices/Best practices for migrating from JWT Token to API Key (without retaining JWT Token).md)
+  - [Implementing blue-green and canary release in VKE cluster using annotations](Best practices/Implementing blue-green and canary release in VKE cluster using annotations.md)
+  - [Implementing blue-green and canary release in VKE cluster via the console](Best practices/Implementing blue-green and canary release in VKE cluster via the console.md)
+  - [Use API Gateway to implement north-south traffic management for multiple clusters](Best practices/Use API Gateway to implement north-south traffic management for multiple clusters.md)
+  - [Using API Key to implement gateway authentication](Best practices/Using API Key to implement gateway authentication.md)
+  - [Using Gateway API via APIG](Best practices/Using Gateway API via APIG.md)
+  - [Using the HMAC plugin for AK/SK authentication](Best practices/Using the HMAC plugin for AK - SK authentication.md)
+- **Billing**
+  - [Arrears](Billing/Arrears.md)
+  - [Billing overview](Billing/Billing overview.md)
+- **FAQs**
+  - **AI Gateway FAQ**
+    - [How to deal with the "upstream connect error" returned by using an AI agent?](FAQs/AI Gateway FAQ/How to deal with the "upstream connect error" returned by using an AI agent?.md)
+  - **Cluster Management FAQ**
+    - [Import cluster error](FAQs/Cluster Management FAQ/Import cluster error.md)
+  - **Invoke API Gateway Service FAQ**
+    - [How to deal with a 403 Forbidden response?](FAQs/Invoke API Gateway Service FAQ/How to deal with a 403 Forbidden response?.md)
+    - [How to handle "503 Service unavailable" response?](FAQs/Invoke API Gateway Service FAQ/How to handle "503 Service unavailable" response?.md)
+    - [How to handle "Request back 404 Not Found"?](FAQs/Invoke API Gateway Service FAQ/How to handle "Request back 404 Not Found"?.md)
+    - [How to handle "Token error"?](FAQs/Invoke API Gateway Service FAQ/How to handle "Token error"?.md)
+    - [How to handle a 504 Service unavailable response?](FAQs/Invoke API Gateway Service FAQ/How to handle a 504 Service unavailable response?.md)
+    - [The API gateway by default will convert the header to lowercase](FAQs/Invoke API Gateway Service FAQ/The API gateway by default will convert the header to lowercase.md)
+  - **Standard FAQ**
+    - [Will the automatically generated access Domain name remain unchanged?](FAQs/Standard FAQ/Will the automatically generated access Domain name remain unchanged?.md)
+- **Getting started**
+  - [Quick guide](Getting started/Quick guide.md)
+  - [Using API Gateway to deploy applications in a VKE cluster.](Getting started/Using API Gateway to deploy applications in a VKE cluster.md)
+  - [Using API Gateway to deploy applications in ECS](Getting started/Using API Gateway to deploy applications in ECS.md)
+  - [Using API Gateway to deploy functions in FaaS](Getting started/Using API Gateway to deploy functions in FaaS.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Limits](Overview/Limits.md)
+  - [Product Advantages](Overview/Product Advantages.md)
+  - [Product Features](Overview/Product Features.md)
+  - [Regions and availability zones](Overview/Regions and availability zones.md)
+  - [Terms](Overview/Terms.md)
+  - [What is an API gateway](Overview/What is an API gateway.md)
+- **Terms**
+  - [BytePlus API Gateway_Service Level Agreement](Terms/BytePlus API Gateway_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus API Gateway](Terms/Service-Specific Terms for BytePlus API Gateway.md)
+- **User guide**
+  - **AI Gateway**
+    - [AI gateway service](User guide/AI Gateway/AI gateway service.md)
+    - [AI Model Fallbacks](User guide/AI Gateway/AI Model Fallbacks.md)
+    - [AI multi-model proxy](User guide/AI Gateway/AI multi-model proxy.md)
+    - [MCP service](User guide/AI Gateway/MCP service.md)
+    - [What is the AI Gateway?](User guide/AI Gateway/What is the AI Gateway?.md)
+    - **Policy and plugin**
+      - [GEOIP plugin](User guide/AI Gateway/Policy and plugin/GEOIP plugin.md)
+      - [Global rate limiting plugin](User guide/AI Gateway/Policy and plugin/Global rate limiting plugin.md)
+      - [LLM load-aware routing](User guide/AI Gateway/Policy and plugin/LLM load-aware routing.md)
+      - [LLM Session Affinity Routing](User guide/AI Gateway/Policy and plugin/LLM Session Affinity Routing.md)
+      - [LLM session persistence ID generation plugin](User guide/AI Gateway/Policy and plugin/LLM session persistence ID generation plugin.md)
+      - [MCP session persistence](User guide/AI Gateway/Policy and plugin/MCP session persistence.md)
+      - [OAuth2 single sign-on add-on](User guide/AI Gateway/Policy and plugin/OAuth2 single sign-on add-on.md)
+  - **Consumer Management**
+    - [Consumer management](User guide/Consumer Management/Consumer management.md)
+    - [Consumer overview](User guide/Consumer Management/Consumer overview.md)
+    - [Creating a consumer](User guide/Consumer Management/Creating a consumer.md)
+    - [Generating credentials](User guide/Consumer Management/Generating credentials.md)
+  - **Custom plugins**
+    - [Creating Lua plugins](User guide/Custom plugins/Creating Lua plugins.md)
+    - [Creating WASM plugins](User guide/Custom plugins/Creating WASM plugins.md)
+    - [IAM access authentication](User guide/Custom plugins/IAM access authentication.md)
+    - [Managing custom plugins](User guide/Custom plugins/Managing custom plugins.md)
+  - **Instance management**
+    - [Adding access entrance](User guide/Instance management/Adding access entrance.md)
+    - [Creating an instance](User guide/Instance management/Creating an instance.md)
+    - [Managing instances](User guide/Instance management/Managing instances.md)
+    - [Version Management](User guide/Instance management/Version Management.md)
+  - **Monitoring and Alerts**
+    - [Logs management](User guide/Monitoring and Alerts/Logs management.md)
+    - **Alert management**
+      - [ Creating an alerting rule manually](User guide/Monitoring and Alerts/Alert management/Creating an alerting rule manually.md)
+      - [Alert management overview](User guide/Monitoring and Alerts/Alert management/Alert management overview.md)
+      - [Creating alerting rules based on templates](User guide/Monitoring and Alerts/Alert management/Creating alerting rules based on templates.md)
+      - [One-click alert activation](User guide/Monitoring and Alerts/Alert management/One-click alert activation.md)
+    - **Monitoring Management**
+      - [Instance monitoring](User guide/Monitoring and Alerts/Monitoring Management/Instance monitoring.md)
+      - [Monitoring metrics](User guide/Monitoring and Alerts/Monitoring Management/Monitoring metrics.md)
+      - [Service monitoring](User guide/Monitoring and Alerts/Monitoring Management/Service monitoring.md)
+  - **Route Management**
+    - [Create a route](User guide/Route Management/Create a route.md)
+    - [Creating Mock routes](User guide/Route Management/Creating Mock routes.md)
+    - [Creating redirect routes](User guide/Route Management/Creating redirect routes.md)
+    - [Route Management](User guide/Route Management/Route Management.md)
+    - [Route priority](User guide/Route Management/Route priority.md)
+    - **Routing policy**
+      - [Configure a retry policy](User guide/Route Management/Routing policy/Configure a retry policy.md)
+      - [Configure traffic mirroring policy](User guide/Route Management/Routing policy/Configure traffic mirroring policy.md)
+      - [Configuring a cross-origin policy](User guide/Route Management/Routing policy/Configuring a cross-origin policy.md)
+      - [Configuring a rewrite policy](User guide/Route Management/Routing policy/Configuring a rewrite policy.md)
+      - [Configuring a timeout policy](User guide/Route Management/Routing policy/Configuring a timeout policy.md)
+  - **Security Certification**
+    - [API Key authentication and authorization](User guide/Security Certification/API Key authentication and authorization.md)
+    - [External authentication and authorization](User guide/Security Certification/External authentication and authorization.md)
+    - [HMAC authentication and authorization](User guide/Security Certification/HMAC authentication and authorization.md)
+    - [IP Restriction](User guide/Security Certification/IP Restriction.md)
+    - [JWT authentication and authorization](User guide/Security Certification/JWT authentication and authorization.md)
+    - [Rate limiting](User guide/Security Certification/Rate limiting.md)
+  - **Service Management**
+    - [Add a CNAME record](User guide/Service Management/Add a CNAME record.md)
+    - [Adding domain name](User guide/Service Management/Adding domain name.md)
+    - [Creating a service](User guide/Service Management/Creating a service.md)
+    - [Service management](User guide/Service Management/Service management.md)
+  - **Upstream Management**
+    - [Cloud server type Upstream](User guide/Upstream Management/Cloud server type Upstream.md)
+    - [Fixed domain name type: upstream](User guide/Upstream Management/Fixed domain name type: upstream.md)
+    - [Manage Upstream](User guide/Upstream Management/Manage Upstream.md)
+    - [Service circuit breaking policy](User guide/Upstream Management/Service circuit breaking policy.md)
+    - [Upstream function service type](User guide/Upstream Management/Upstream function service type.md)
+    - [Upstream of fixed IP type](User guide/Upstream Management/Upstream of fixed IP type.md)
+    - [Upstream overview](User guide/Upstream Management/Upstream overview.md)
+    - **Upstream source**
+      - [Cluster route synchronization](User guide/Upstream Management/Upstream source/Cluster route synchronization.md)
+      - [Import a registered cluster](User guide/Upstream Management/Upstream source/Import a registered cluster.md)
+      - [Import container clusters](User guide/Upstream Management/Upstream source/Import container clusters.md)
+      - [Manage container clusters](User guide/Upstream Management/Upstream source/Manage container clusters.md)
+    - **Vital Kubernetes Engine type Upstream**
+      - [Create an Upstream container service type](User guide/Upstream Management/Vital Kubernetes Engine type Upstream/Create an Upstream container service type.md)
+      - [Creating Upstreams of VCI Agent Sandbox type](User guide/Upstream Management/Vital Kubernetes Engine type Upstream/Creating Upstreams of VCI Agent Sandbox type.md)
+      - [Gateway supported annotations](User guide/Upstream Management/Vital Kubernetes Engine type Upstream/Gateway supported annotations.md)
+      - [Manage upstream version of Vital Kubernetes Engine type](User guide/Upstream Management/Vital Kubernetes Engine type Upstream/Manage upstream version of Vital Kubernetes Engine type.md)
+- **What's New**
+  - [Release notes](What's New/Release notes.md)

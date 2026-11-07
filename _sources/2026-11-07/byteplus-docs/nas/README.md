@@ -1,0 +1,214 @@
+# FileNAS
+
+158 pages. Source: https://docs.byteplus.com/en/docs/nas
+
+Back to the [full index](../README.md).
+
+- **EFS**
+  - **Billing**
+    - [Arrears](EFS/Billing/Arrears.md)
+    - [Billing overview](EFS/Billing/Billing overview.md)
+  - **Getting Started**
+    - [Quick start](EFS/Getting Started/Quick start.md)
+  - **Overview**
+    - [Application scenarios](EFS/Overview/Application scenarios.md)
+    - [Basic concepts](EFS/Overview/Basic concepts.md)
+    - [Product advantages](EFS/Overview/Product advantages.md)
+    - [Product features](EFS/Overview/Product features.md)
+    - [Product Selection](EFS/Overview/Product Selection.md)
+    - [Product specifications](EFS/Overview/Product specifications.md)
+    - [Regions and availability zones](EFS/Overview/Regions and availability zones.md)
+    - [Usage limits](EFS/Overview/Usage limits.md)
+    - [What is Elastic File Storage (EFS)](EFS/Overview/What is Elastic File Storage (EFS).md)
+  - **Terms**
+    - [Service-Specific Terms for BytePlus Storage Products and Services](EFS/Terms/Service-Specific Terms for BytePlus Storage Products and Services.md)
+    - [SLA for BytePlus EFS](EFS/Terms/SLA for BytePlus EFS.md)
+  - **User Guide**
+    - [Managing bandwidth modes](EFS/User Guide/Managing bandwidth modes.md)
+    - [Managing burst bandwidth](EFS/User Guide/Managing burst bandwidth.md)
+    - [Managing directory quotas](EFS/User Guide/Managing directory quotas.md)
+    - [Managing mount targets](EFS/User Guide/Managing mount targets.md)
+    - [Managing permission groups](EFS/User Guide/Managing permission groups.md)
+    - **DataFlow**
+      - [DataFlow FAQ](EFS/User Guide/DataFlow/DataFlow FAQ.md)
+      - [DataFlow overview](EFS/User Guide/DataFlow/DataFlow overview.md)
+      - [Managing DataFlow policies](EFS/User Guide/DataFlow/Managing DataFlow policies.md)
+      - [Managing DataFlow tasks](EFS/User Guide/DataFlow/Managing DataFlow tasks.md)
+      - [Viewing DataFlow logs](EFS/User Guide/DataFlow/Viewing DataFlow logs.md)
+    - **Managing access points**
+      - [Access point overview](EFS/User Guide/Managing access points/Access point overview.md)
+      - [Configuring access point policies](EFS/User Guide/Managing access points/Configuring access point policies.md)
+      - [Managing access points](EFS/User Guide/Managing access points/Managing access points.md)
+      - [Mounting with access points and FSX](EFS/User Guide/Managing access points/Mounting with access points and FSX.md)
+      - [Unmounting file systems](EFS/User Guide/Managing access points/Unmounting file systems.md)
+      - [Viewing access point mount commands](EFS/User Guide/Managing access points/Viewing access point mount commands.md)
+    - **Managing file systems**
+      - [Creating file systems](EFS/User Guide/Managing file systems/Creating file systems.md)
+      - [Deleting file systems](EFS/User Guide/Managing file systems/Deleting file systems.md)
+      - [Viewing file systems](EFS/User Guide/Managing file systems/Viewing file systems.md)
+    - **Managing tags**
+      - [Binding tags](EFS/User Guide/Managing tags/Binding tags.md)
+      - [Editing tags](EFS/User Guide/Managing tags/Editing tags.md)
+      - [Filtering file systems by tag](EFS/User Guide/Managing tags/Filtering file systems by tag.md)
+      - [Tag overview](EFS/User Guide/Managing tags/Tag overview.md)
+      - [Unbinding tags](EFS/User Guide/Managing tags/Unbinding tags.md)
+    - **Monitoring alarm**
+      - [Creating alarm strategies](EFS/User Guide/Monitoring alarm/Creating alarm strategies.md)
+      - [Viewing performance monitoring](EFS/User Guide/Monitoring alarm/Viewing performance monitoring.md)
+    - **Mounting file systems**
+      - [Choosing the right client](EFS/User Guide/Mounting file systems/Choosing the right client.md)
+      - **Using FSX**
+        - [Downloading FSX installation packages](EFS/User Guide/Mounting file systems/Using FSX/Downloading FSX installation packages.md)
+        - [FAQs](EFS/User Guide/Mounting file systems/Using FSX/FAQs.md)
+        - [FSX overview](EFS/User Guide/Mounting file systems/Using FSX/FSX overview.md)
+        - [FSX release notes](EFS/User Guide/Mounting file systems/Using FSX/FSX release notes.md)
+        - [Installing FSX](EFS/User Guide/Mounting file systems/Using FSX/Installing FSX.md)
+        - [Mounting file systems](EFS/User Guide/Mounting file systems/Using FSX/Mounting file systems.md)
+      - **Using NFS**
+        - [Mounting file systems](EFS/User Guide/Mounting file systems/Using NFS/Mounting file systems.md)
+        - [NFS protocol](EFS/User Guide/Mounting file systems/Using NFS/NFS protocol.md)
+        - [Recommended NFS kernel versions](EFS/User Guide/Mounting file systems/Using NFS/Recommended NFS kernel versions.md)
+        - [Unmounting file systems](EFS/User Guide/Mounting file systems/Using NFS/Unmounting file systems.md)
+  - **What's New**
+    - [New feature release notes](EFS/What's New/New feature release notes.md)
+- **FileNAS**
+  - **API Reference**
+    - [API overview](FileNAS/API Reference/API overview.md)
+    - **Call method**
+      - [Common parameters](FileNAS/API Reference/Call method/Common parameters.md)
+      - [Request structure](FileNAS/API Reference/Call method/Request structure.md)
+      - [Response structure](FileNAS/API Reference/Call method/Response structure.md)
+      - [Signature request](FileNAS/API Reference/Call method/Signature request.md)
+    - **FileSystems**
+      - [CreateFileSystem](FileNAS/API Reference/FileSystems/CreateFileSystem.md)
+      - [DeleteFileSystem](FileNAS/API Reference/FileSystems/DeleteFileSystem.md)
+      - [DescribeFileSystems](FileNAS/API Reference/FileSystems/DescribeFileSystems.md)
+      - [ExpandFileSystem](FileNAS/API Reference/FileSystems/ExpandFileSystem.md)
+      - [UpdateFileSystem](FileNAS/API Reference/FileSystems/UpdateFileSystem.md)
+    - **General**
+      - [DescribeFileSystemOverview](FileNAS/API Reference/General/DescribeFileSystemOverview.md)
+      - [DescribeFileSystemStatistics](FileNAS/API Reference/General/DescribeFileSystemStatistics.md)
+    - **MountPoints**
+      - [CreateMountPoint](FileNAS/API Reference/MountPoints/CreateMountPoint.md)
+      - [DeleteMountPoint](FileNAS/API Reference/MountPoints/DeleteMountPoint.md)
+      - [DescribeMountedClients](FileNAS/API Reference/MountPoints/DescribeMountedClients.md)
+      - [DescribeMountPoints](FileNAS/API Reference/MountPoints/DescribeMountPoints.md)
+      - [UpdateMountPoint](FileNAS/API Reference/MountPoints/UpdateMountPoint.md)
+    - **PermissionGroups**
+      - [CreatePermissionGroup](FileNAS/API Reference/PermissionGroups/CreatePermissionGroup.md)
+      - [DeletePermissionGroup](FileNAS/API Reference/PermissionGroups/DeletePermissionGroup.md)
+      - [DescribePermissionGroups](FileNAS/API Reference/PermissionGroups/DescribePermissionGroups.md)
+      - [DescribePermissionRules](FileNAS/API Reference/PermissionGroups/DescribePermissionRules.md)
+      - [UpdatePermissionGroup](FileNAS/API Reference/PermissionGroups/UpdatePermissionGroup.md)
+      - [UpdatePermissionRule](FileNAS/API Reference/PermissionGroups/UpdatePermissionRule.md)
+    - **Regions**
+      - [DescribeRegions](FileNAS/API Reference/Regions/DescribeRegions.md)
+      - [DescribeZones](FileNAS/API Reference/Regions/DescribeZones.md)
+    - **Snapshots**
+      - [CreateSnapshot](FileNAS/API Reference/Snapshots/CreateSnapshot.md)
+      - [DeleteSnapshot](FileNAS/API Reference/Snapshots/DeleteSnapshot.md)
+      - [DescribeSnapshots](FileNAS/API Reference/Snapshots/DescribeSnapshots.md)
+      - [UpdateSnapshot](FileNAS/API Reference/Snapshots/UpdateSnapshot.md)
+      - **AutoSnapshotPolicies**
+        - [ApplyAutoSnapshotPolicy](FileNAS/API Reference/Snapshots/AutoSnapshotPolicies/ApplyAutoSnapshotPolicy.md)
+        - [CancelAutoSnapshotPolicy](FileNAS/API Reference/Snapshots/AutoSnapshotPolicies/CancelAutoSnapshotPolicy.md)
+        - [CreateAutoSnapshotPolicy](FileNAS/API Reference/Snapshots/AutoSnapshotPolicies/CreateAutoSnapshotPolicy.md)
+        - [DeleteAutoSnapshotPolicy](FileNAS/API Reference/Snapshots/AutoSnapshotPolicies/DeleteAutoSnapshotPolicy.md)
+        - [DescribeAutoSnapshotPolicies](FileNAS/API Reference/Snapshots/AutoSnapshotPolicies/DescribeAutoSnapshotPolicies.md)
+        - [UpdateAutoSnapshotPolicy](FileNAS/API Reference/Snapshots/AutoSnapshotPolicies/UpdateAutoSnapshotPolicy.md)
+  - **Billing**
+    - [Arrears](FileNAS/Billing/Arrears.md)
+    - [Billing overview](FileNAS/Billing/Billing overview.md)
+  - **FAQ**
+    - [Mounting FAQ](FileNAS/FAQ/Mounting FAQ.md)
+  - **Getting Started**
+    - [Procedure](FileNAS/Getting Started/Procedure.md)
+  - **Overview**
+    - [Application scenarios](FileNAS/Overview/Application scenarios.md)
+    - [Basic concepts](FileNAS/Overview/Basic concepts.md)
+    - [Limits](FileNAS/Overview/Limits.md)
+    - [Product advantages](FileNAS/Overview/Product advantages.md)
+    - [Product specifications](FileNAS/Overview/Product specifications.md)
+    - [What is FileNAS](FileNAS/Overview/What is FileNAS.md)
+  - **Terms**
+    - [BytePlus NAS_Service Level Agreement ](FileNAS/Terms/BytePlus NAS_Service Level Agreement.md)
+    - [Service-Specific Terms for BytePlus Storage Products and Services](FileNAS/Terms/Service-Specific Terms for BytePlus Storage Products and Services.md)
+  - **User Guide**
+    - **Cache FileNAS**
+      - [Managing burst bandwidth](FileNAS/User Guide/Cache FileNAS/Managing burst bandwidth.md)
+      - [Managing directory quotas](FileNAS/User Guide/Cache FileNAS/Managing directory quotas.md)
+      - [Managing mount targets](FileNAS/User Guide/Cache FileNAS/Managing mount targets.md)
+      - [Managing permission groups](FileNAS/User Guide/Cache FileNAS/Managing permission groups.md)
+      - [Managing provisioned bandwidth](FileNAS/User Guide/Cache FileNAS/Managing provisioned bandwidth.md)
+      - [Usage statistics](FileNAS/User Guide/Cache FileNAS/Usage statistics.md)
+      - **DataFlow**
+        - [DataFlow overview](FileNAS/User Guide/Cache FileNAS/DataFlow/DataFlow overview.md)
+        - [Managing DataFlow policies](FileNAS/User Guide/Cache FileNAS/DataFlow/Managing DataFlow policies.md)
+        - [Managing DataFlow tasks](FileNAS/User Guide/Cache FileNAS/DataFlow/Managing DataFlow tasks.md)
+        - [Managing traffic for DataFlow](FileNAS/User Guide/Cache FileNAS/DataFlow/Managing traffic for DataFlow.md)
+        - [Viewing DataFlow logs](FileNAS/User Guide/Cache FileNAS/DataFlow/Viewing DataFlow logs.md)
+      - **Managing access points**
+        - [Access point overview](FileNAS/User Guide/Cache FileNAS/Managing access points/Access point overview.md)
+        - [Configuring access point policies](FileNAS/User Guide/Cache FileNAS/Managing access points/Configuring access point policies.md)
+        - [Managing access points](FileNAS/User Guide/Cache FileNAS/Managing access points/Managing access points.md)
+        - [Viewing access point mount commands](FileNAS/User Guide/Cache FileNAS/Managing access points/Viewing access point mount commands.md)
+      - **Managing file systems**
+        - [Creating file systems](FileNAS/User Guide/Cache FileNAS/Managing file systems/Creating file systems.md)
+        - [Deleting file systems](FileNAS/User Guide/Cache FileNAS/Managing file systems/Deleting file systems.md)
+        - [Exporting File System List](FileNAS/User Guide/Cache FileNAS/Managing file systems/Exporting File System List.md)
+        - [Viewing file systems](FileNAS/User Guide/Cache FileNAS/Managing file systems/Viewing file systems.md)
+      - **Monitoring and alerting**
+        - [Creating alert policies](FileNAS/User Guide/Cache FileNAS/Monitoring and alerting/Creating alert policies.md)
+        - [Viewing performance monitoring](FileNAS/User Guide/Cache FileNAS/Monitoring and alerting/Viewing performance monitoring.md)
+      - **Mounting file systems**
+        - **FSX client**
+          - [FAQs](FileNAS/User Guide/Cache FileNAS/Mounting file systems/FSX client/FAQs.md)
+          - [FSX overview](FileNAS/User Guide/Cache FileNAS/Mounting file systems/FSX client/FSX overview.md)
+          - [Installing FSX](FileNAS/User Guide/Cache FileNAS/Mounting file systems/FSX client/Installing FSX.md)
+          - [Mounting file systems](FileNAS/User Guide/Cache FileNAS/Mounting file systems/FSX client/Mounting file systems.md)
+        - **NFS client**
+          - [Mounting file systems](FileNAS/User Guide/Cache FileNAS/Mounting file systems/NFS client/Mounting file systems.md)
+          - [Unmounting file systems](FileNAS/User Guide/Cache FileNAS/Mounting file systems/NFS client/Unmounting file systems.md)
+      - **Tag management**
+        - [Binding tags](FileNAS/User Guide/Cache FileNAS/Tag management/Binding tags.md)
+        - [Editing tags](FileNAS/User Guide/Cache FileNAS/Tag management/Editing tags.md)
+        - [Filtering file systems by tag](FileNAS/User Guide/Cache FileNAS/Tag management/Filtering file systems by tag.md)
+        - [Tag overview](FileNAS/User Guide/Cache FileNAS/Tag management/Tag overview.md)
+        - [Unbinding tags](FileNAS/User Guide/Cache FileNAS/Tag management/Unbinding tags.md)
+    - **Extreme FileNAS**
+      - [Cross-Service Authorization](FileNAS/User Guide/Extreme FileNAS/Cross-Service Authorization.md)
+      - **Managing file systems**
+        - [Creating a file system](FileNAS/User Guide/Extreme FileNAS/Managing file systems/Creating a file system.md)
+        - [Deleting a file system](FileNAS/User Guide/Extreme FileNAS/Managing file systems/Deleting a file system.md)
+        - [Expanding a file system](FileNAS/User Guide/Extreme FileNAS/Managing file systems/Expanding a file system.md)
+        - [Exporting  file systems](FileNAS/User Guide/Extreme FileNAS/Managing file systems/Exporting file systems.md)
+      - **Monitoring and alerting**
+        - [Configuring alarm rules](FileNAS/User Guide/Extreme FileNAS/Monitoring and alerting/Configuring alarm rules.md)
+        - [Viewing performance monitoring](FileNAS/User Guide/Extreme FileNAS/Monitoring and alerting/Viewing performance monitoring.md)
+      - **Mount points**
+        - [Managing mount points](FileNAS/User Guide/Extreme FileNAS/Mount points/Managing mount points.md)
+      - **Mounting file systems**
+        - [Mounting a file system](FileNAS/User Guide/Extreme FileNAS/Mounting file systems/Mounting a file system.md)
+        - [Unmount a file system](FileNAS/User Guide/Extreme FileNAS/Mounting file systems/Unmount a file system.md)
+      - **Permission groups**
+        - [Managing permission groups](FileNAS/User Guide/Extreme FileNAS/Permission groups/Managing permission groups.md)
+      - **Snapshot**
+        - [Creating a new file system using a snapshot](FileNAS/User Guide/Extreme FileNAS/Snapshot/Creating a new file system using a snapshot.md)
+        - [Creating a snapshot](FileNAS/User Guide/Extreme FileNAS/Snapshot/Creating a snapshot.md)
+        - [Deleting a snapshot](FileNAS/User Guide/Extreme FileNAS/Snapshot/Deleting a snapshot.md)
+        - [Modifying snapshot properties](FileNAS/User Guide/Extreme FileNAS/Snapshot/Modifying snapshot properties.md)
+        - [Overview](FileNAS/User Guide/Extreme FileNAS/Snapshot/Overview.md)
+        - [Viewing snapshots](FileNAS/User Guide/Extreme FileNAS/Snapshot/Viewing snapshots.md)
+        - **AutoSnapshotPolicy**
+          - [Associating an automatic snapshot policy with a file system](FileNAS/User Guide/Extreme FileNAS/Snapshot/AutoSnapshotPolicy/Associating an automatic snapshot policy with a file system.md)
+          - [Creating an auto snapshot policy](FileNAS/User Guide/Extreme FileNAS/Snapshot/AutoSnapshotPolicy/Creating an auto snapshot policy.md)
+          - [Deleting an auto snapshot policy](FileNAS/User Guide/Extreme FileNAS/Snapshot/AutoSnapshotPolicy/Deleting an auto snapshot policy.md)
+          - [Disable the automatic snapshot policy for a file system](FileNAS/User Guide/Extreme FileNAS/Snapshot/AutoSnapshotPolicy/Disable the automatic snapshot policy for a file system.md)
+          - [Modifying an auto snapshot policy](FileNAS/User Guide/Extreme FileNAS/Snapshot/AutoSnapshotPolicy/Modifying an auto snapshot policy.md)
+      - **Tag**
+        - [Binding or adding tags](FileNAS/User Guide/Extreme FileNAS/Tag/Binding or adding tags.md)
+        - [Filtering file systems by tags](FileNAS/User Guide/Extreme FileNAS/Tag/Filtering file systems by tags.md)
+        - [Overview](FileNAS/User Guide/Extreme FileNAS/Tag/Overview.md)
+        - [Unbinding or deleting tags](FileNAS/User Guide/Extreme FileNAS/Tag/Unbinding or deleting tags.md)
+  - **What's New**
+    - [New feature release notes](FileNAS/What's New/New feature release notes.md)

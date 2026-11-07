@@ -1,0 +1,147 @@
+# Cloud Enterprise Network
+
+111 pages. Source: https://docs.byteplus.com/en/docs/cen
+
+Back to the [full index](../README.md).
+
+- [What's New](What's New.md)
+- **API Reference**
+  - [API overview](API Reference/API overview.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [Introduction​](API Reference/Introduction​.md)
+  - **Call method**
+    - [Common error codes](API Reference/Call method/Common error codes.md)
+    - [Common parameters](API Reference/Call method/Common parameters.md)
+    - [Request method](API Reference/Call method/Request method.md)
+    - [Response examples](API Reference/Call method/Response examples.md)
+    - [Signature method](API Reference/Call method/Signature method.md)
+  - **CEN bandwidth packages**
+    - [AssociateCenBandwidthPackage - attach a bandwidth package instance to a Cloud Enterprise Network (CEN) instance](API Reference/CEN bandwidth packages/AssociateCenBandwidthPackage - attach a bandwidth package instance to a Cloud Enterprise N.md)
+    - [CreateCenBandwidthPackage - Creating a bandwidth package instance](API Reference/CEN bandwidth packages/CreateCenBandwidthPackage - Creating a bandwidth package instance.md)
+    - [DeleteCenBandwidthPackage - Deleting a bandwidth package instance](API Reference/CEN bandwidth packages/DeleteCenBandwidthPackage - Deleting a bandwidth package instance.md)
+    - [Describe95Traffic - Querying Pay-by-95th-peak details](API Reference/CEN bandwidth packages/Describe95Traffic - Querying Pay-by-95th-peak details.md)
+    - [DescribeCenBandwidthPackageAttributes - Querying the details of specified bandwidth package instance](API Reference/CEN bandwidth packages/DescribeCenBandwidthPackageAttributes - Querying the details of specified bandwidth packag.md)
+    - [DescribeCenBandwidthPackages - Querying the information of qualified CEN bandwidth package instances](API Reference/CEN bandwidth packages/DescribeCenBandwidthPackages - Querying the information of qualified CEN bandwidth package.md)
+    - [DescribeCenBandwidthPackagesBilling - Querying the billing information of qualified bandwidth package instances](API Reference/CEN bandwidth packages/DescribeCenBandwidthPackagesBilling - Querying the billing information of qualified bandwi.md)
+    - [DisassociateCenBandwidthPackage - detach the bandwidth package instance from the Cloud Enterprise Network (CEN) instance](API Reference/CEN bandwidth packages/DisassociateCenBandwidthPackage - detach the bandwidth package instance from the Cloud Ent.md)
+    - [ModifyCenBandwidthPackageAssociation - Modifying the bandwidth package associated with a CEN](API Reference/CEN bandwidth packages/ModifyCenBandwidthPackageAssociation - Modifying the bandwidth package associated with a C.md)
+    - [ModifyCenBandwidthPackageAttributes - Modifying the basic information of bandwidth package instances](API Reference/CEN bandwidth packages/ModifyCenBandwidthPackageAttributes - Modifying the basic information of bandwidth package.md)
+    - [RenewCenBandwidthPackage - Renewing the CEN bandwidth package instance](API Reference/CEN bandwidth packages/RenewCenBandwidthPackage - Renewing the CEN bandwidth package instance.md)
+    - [SetCenBandwidthPackageRenewal - Updating the renewal type of bandwidth packages](API Reference/CEN bandwidth packages/SetCenBandwidthPackageRenewal - Updating the renewal type of bandwidth packages.md)
+  - **CEN instances**
+    - [CreateCen - Creating a CEN instance](API Reference/CEN instances/CreateCen - Creating a CEN instance.md)
+    - [DeleteCen - Deleting a CEN instance](API Reference/CEN instances/DeleteCen - Deleting a CEN instance.md)
+    - [DescribeCenAttributes - query detailed information of a specified CEN instance](API Reference/CEN instances/DescribeCenAttributes - query detailed information of a specified CEN instance.md)
+    - [DescribeCens - Query the list of Cloud Enterprise Network (CEN) instances](API Reference/CEN instances/DescribeCens - Query the list of Cloud Enterprise Network (CEN) instances.md)
+    - [ModifyCenAttributes - Modify the specified Cloud Enterprise Network instance](API Reference/CEN instances/ModifyCenAttributes - Modify the specified Cloud Enterprise Network instance.md)
+  - **Cross-account authorization**
+    - [DescribeGrantRulesToCen - Viewing the cross-account authorization information of qualified CEN instances](API Reference/Cross-account authorization/DescribeGrantRulesToCen - Viewing the cross-account authorization information of qualified.md)
+    - [DescribeInstanceGrantedRules - View cross-account authorization information for Network Instances meeting specified criteria](API Reference/Cross-account authorization/DescribeInstanceGrantedRules - View cross-account authorization information for Network In.md)
+    - [GrantInstanceToCen - Authorizing a specified network instance to a cross-account CEN instance](API Reference/Cross-account authorization/GrantInstanceToCen - Authorizing a specified network instance to a cross-account CEN insta.md)
+    - [RevokeInstanceFromCen - Removing the cross-account access for a network instance to CEN](API Reference/Cross-account authorization/RevokeInstanceFromCen - Removing the cross-account access for a network instance to CEN.md)
+  - **Inter-region bandwidth**
+    - [CreateCenInterRegionBandwidth - Allocating the inter-region bandwidth for specified CEN instances](API Reference/Inter-region bandwidth/CreateCenInterRegionBandwidth - Allocating the inter-region bandwidth for specified CEN in.md)
+    - [DeleteCenInterRegionBandwidth - delete the specified Cloud Enterprise Network (CEN) instance inter-region bandwidth](API Reference/Inter-region bandwidth/DeleteCenInterRegionBandwidth - delete the specified Cloud Enterprise Network (CEN) instan.md)
+    - [DescribeCenInterRegionBandwidthAttributes - Querying details of the specified CEN inter-region bandwidth instance](API Reference/Inter-region bandwidth/DescribeCenInterRegionBandwidthAttributes - Querying details of the specified CEN inter-re.md)
+    - [DescribeCenInterRegionBandwidths - Querying the list of qualified inter-region bandwidths for CEN instances](API Reference/Inter-region bandwidth/DescribeCenInterRegionBandwidths - Querying the list of qualified inter-region bandwidths.md)
+    - [ModifyCenInterRegionBandwidthAttributes - Modifying the bandwidth of a specified CEN inter-region bandwidth](API Reference/Inter-region bandwidth/ModifyCenInterRegionBandwidthAttributes - Modifying the bandwidth of a specified CEN inter.md)
+  - **Network instances**
+    - [AttachInstanceToCen - Attaching a network instance](API Reference/Network instances/AttachInstanceToCen - Attaching a network instance.md)
+    - [DescribeCenAttachedInstanceAttributes - Querying the details of network instance](API Reference/Network instances/DescribeCenAttachedInstanceAttributes - Querying the details of network instance.md)
+    - [DescribeCenAttachedInstances - Querying the network instance list](API Reference/Network instances/DescribeCenAttachedInstances - Querying the network instance list.md)
+    - [DetachInstanceFromCen - Detaching a network instance](API Reference/Network instances/DetachInstanceFromCen - Detaching a network instance.md)
+  - **Route entries for access to cloud service**
+    - [CreateCenServiceRouteEntry - Configuring the specified cloud service access route](API Reference/Route entries for access to cloud service/CreateCenServiceRouteEntry - Configuring the specified cloud service access route.md)
+    - [DeleteCenServiceRouteEntry - delete a specified cloud service access route](API Reference/Route entries for access to cloud service/DeleteCenServiceRouteEntry - delete a specified cloud service access route.md)
+    - [DescribeCenServiceRouteEntries - Querying the details of qualified cloud service access routes](API Reference/Route entries for access to cloud service/DescribeCenServiceRouteEntries - Querying the details of qualified cloud service access ro.md)
+    - [ModifyCenServiceRouteEntryAttributes - Modifying the description or publish scope of a specified service access route](API Reference/Route entries for access to cloud service/ModifyCenServiceRouteEntryAttributes - Modifying the description or publish scope of a spe.md)
+  - **Routing entries**
+    - [DescribeCenRouteEntries - Querying the route entries for specified CEN instances](API Reference/Routing entries/DescribeCenRouteEntries - Querying the route entries for specified CEN instances.md)
+    - [PublishCenRouteEntry - Publishing the specified network instance route entries to CEN](API Reference/Routing entries/PublishCenRouteEntry - Publishing the specified network instance route entries to CEN.md)
+    - [WithdrawCenRouteEntry - Withdraw the specified route entry of the network instance from Cloud Enterprise Network (CEN)](API Reference/Routing entries/WithdrawCenRouteEntry - Withdraw the specified route entry of the network instance from Cl.md)
+  - **Summary route entries**
+    - [DescribeCenSummaryRouteEntries - Querying the qualified CEN summary route entries](API Reference/Summary route entries/DescribeCenSummaryRouteEntries - Querying the qualified CEN summary route entries.md)
+  - **Tags**
+    - [ListTagsForResources - Querying the tags of qualified CEN resources](API Reference/Tags/ListTagsForResources - Querying the tags of qualified CEN resources.md)
+    - [TagResources - Creating a tag](API Reference/Tags/TagResources - Creating a tag.md)
+    - [UntagResources - Deleting a tag](API Reference/Tags/UntagResources - Deleting a tag.md)
+- **Best practices**
+  - [Interconnection between multiple VPCs in the cloud and multiple on-premises data centers (Cross-account, cross-region)](Best practices/Interconnection between multiple VPCs in the cloud and multiple on-premises data centers ( (Interconnection-between-multiple-VPCs-an).md)
+  - [Interconnection between multiple VPCs in the cloud and multiple on-premises data centers (Cross-account, same region)](Best practices/Interconnection between multiple VPCs in the cloud and multiple on-premises data centers (.md)
+  - [Interconnectivity between multiple VPCs and multiple on-premises data centers (same account, cross-region)](Best practices/Interconnectivity between multiple VPCs and multiple on-premises data centers (same accoun (Connecting-multiple-VPCs-and-multiple-da).md)
+  - [Interconnectivity between multiple VPCs and multiple on-premises data centers (same account, same region)](Best practices/Interconnectivity between multiple VPCs and multiple on-premises data centers (same accoun.md)
+- **Billing**
+  - [Arrears description](Billing/Arrears description.md)
+  - [Billing overview](Billing/Billing overview.md)
+  - [Expiration](Billing/Expiration.md)
+  - [Renewal](Billing/Renewal.md)
+  - [Specification changes](Billing/Specification changes.md)
+  - [Unsubscription description](Billing/Unsubscription description.md)
+  - **Billing methods**
+    - [Pay-by-traffic](Billing/Billing methods/Pay-by-traffic.md)
+    - [Subscription](Billing/Billing methods/Subscription.md)
+- **FAQ**
+  - [Bandwidth package FAQ](FAQ/Bandwidth package FAQ.md)
+  - [Billing FAQ](FAQ/Billing FAQ.md)
+  - [FAQs about CEN instances](FAQ/FAQs about CEN instances.md)
+  - [Inter-region Bandwidth FAQ](FAQ/Inter-region Bandwidth FAQ.md)
+  - [Monitoring FAQ](FAQ/Monitoring FAQ.md)
+  - [Network Instance FAQ](FAQ/Network Instance FAQ.md)
+  - [Route FAQs](FAQ/Route FAQs.md)
+- **Getting Started**
+  - [Quick start](Getting Started/Quick start.md)
+  - [VPC interconnection (cross-account and cross-region)](Getting Started/VPC interconnection (cross-account and cross-region).md)
+  - [VPC interconnection (cross-account, same region)](Getting Started/VPC interconnection (cross-account, same region).md)
+  - [VPC interconnection (same account and same region)](Getting Started/VPC interconnection (same account and same region).md)
+  - [VPC interconnection (same account, cross-region)](Getting Started/VPC interconnection (same account, cross-region).md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Areas and regions](Overview/Areas and regions.md)
+  - [Benefits](Overview/Benefits.md)
+  - [Limitations](Overview/Limitations.md)
+  - [What is Cloud Enterprise Network](Overview/What is Cloud Enterprise Network.md)
+- **SDK Reference**
+  - [CEN SDK Overview](SDK Reference/CEN SDK Overview.md)
+- **Terms**
+  - [BytePlus CEN_Service Level Agreement](Terms/BytePlus CEN_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus Cloud Enterprise Network](Terms/Service-Specific Terms for BytePlus Cloud Enterprise Network.md)
+- **User Guide**
+  - [Access control](User Guide/Access control.md)
+  - **CEN bandwidth packages**
+    - [Associating or disassociating a CEN bandwidth package](User Guide/CEN bandwidth packages/Associating or disassociating a CEN bandwidth package.md)
+    - [Creating a bandwidth package](User Guide/CEN bandwidth packages/Creating a bandwidth package.md)
+    - [Deleting a bandwidth package](User Guide/CEN bandwidth packages/Deleting a bandwidth package.md)
+    - [Modifying a bandwidth package](User Guide/CEN bandwidth packages/Modifying a bandwidth package.md)
+    - **Inter-region bandwidth**
+      - [Configuring an inter-region bandwidth](User Guide/CEN bandwidth packages/Inter-region bandwidth/Configuring an inter-region bandwidth.md)
+      - [Deleting an inter-region bandwidth](User Guide/CEN bandwidth packages/Inter-region bandwidth/Deleting an inter-region bandwidth.md)
+      - [Modifying an inter-region bandwidth](User Guide/CEN bandwidth packages/Inter-region bandwidth/Modifying an inter-region bandwidth.md)
+  - **CEN instances**
+    - [Creating a CEN instance](User Guide/CEN instances/Creating a CEN instance.md)
+    - [Deleting a CEN instance](User Guide/CEN instances/Deleting a CEN instance.md)
+  - **IAM**
+    - [CEN custom policy syntax example](User Guide/IAM/CEN custom policy syntax example.md)
+    - [Cloud Enterprise Network IAM policy types](User Guide/IAM/Cloud Enterprise Network IAM policy types.md)
+    - [IAM overview](User Guide/IAM/IAM overview.md)
+  - **Monitoring**
+    - [Configuring an alert policy](User Guide/Monitoring/Configuring an alert policy.md)
+    - [Viewing monitoring data](User Guide/Monitoring/Viewing monitoring data.md)
+  - **Network instances**
+    - [Attaching a network instance](User Guide/Network instances/Attaching a network instance.md)
+    - [Detaching a network instance](User Guide/Network instances/Detaching a network instance.md)
+  - **Projects and tags**
+    - [Project management](User Guide/Projects and tags/Project management.md)
+    - [Tag management](User Guide/Projects and tags/Tag management.md)
+  - **Route entries**
+    - [Managing a DC route denylist](User Guide/Route entries/Managing a DC route denylist.md)
+    - [Publishing or withdrawing a VPC route](User Guide/Route entries/Publishing or withdrawing a VPC route.md)
+    - [Route overview](User Guide/Route entries/Route overview.md)
+    - [Viewing route information](User Guide/Route entries/Viewing route information.md)
+  - **Route entries for access to cloud services**
+    - [Configuring Cloud Service access](User Guide/Route entries for access to cloud services/Configuring Cloud Service access.md)
+    - [Deleting Cloud Service access](User Guide/Route entries for access to cloud services/Deleting Cloud Service access.md)
+    - [Modifying Cloud Service access](User Guide/Route entries for access to cloud services/Modifying Cloud Service access.md)
+  - **Summary route entries**
+    - [Configuring a summary route entry](User Guide/Summary route entries/Configuring a summary route entry.md)
+    - [Deleting a summary route](User Guide/Summary route entries/Deleting a summary route.md)
+    - [Summary route entry configuration practice](User Guide/Summary route entries/Summary route entry configuration practice.md)

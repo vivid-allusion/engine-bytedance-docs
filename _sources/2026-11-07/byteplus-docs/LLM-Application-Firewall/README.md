@@ -1,0 +1,106 @@
+# LLM Application Firewall
+
+70 pages. Source: https://docs.byteplus.com/en/docs/LLM-Application-Firewall
+
+Back to the [full index](../README.md).
+
+- **API_reference**
+  - **API**
+    - [Check whether input or output content is compliant](API_reference/API/Check whether input or output content is compliant.md)
+    - [Error code description](API_reference/API/Error code description.md)
+    - [Generate content for secure responses](API_reference/API/Generate content for secure responses.md)
+  - **Call method**
+    - [API authentication](API_reference/Call method/API authentication.md)
+    - [API HTTP request](API_reference/Call method/API HTTP request.md)
+    - [Common request parameters](API_reference/Call method/Common request parameters.md)
+    - [Response](API_reference/Call method/Response.md)
+- **Billing**
+  - [Billing model and pricing details](Billing/Billing model and pricing details.md)
+  - [Bills and invoices](Billing/Bills and invoices.md)
+  - [Expiration and overdue payments](Billing/Expiration and overdue payments.md)
+  - [Manage subscriptions](Billing/Manage subscriptions.md)
+- **FAQs**
+  - [FAQ about LLM Application Firewall](FAQs/FAQ about LLM Application Firewall.md)
+- **Get started**
+  - [Integrate LLM Application Firewall into model services](Get started/Integrate LLM Application Firewall into model services.md)
+  - [Integrate LLM Application Firewall into your SDK](Get started/Integrate LLM Application Firewall into your SDK.md)
+  - [Integrate LLM Application Firewall using a traffic-based approach](Get started/Integrate LLM Application Firewall using a traffic-based approach.md)
+  - [Introduction to assets integration](Get started/Introduction to assets integration.md)
+- **Overview**
+  - [Applicable scenarios](Overview/Applicable scenarios.md)
+  - [Basic concepts](Overview/Basic concepts.md)
+  - [Features](Overview/Features.md)
+  - [What is LLM Application Firewall](Overview/What is LLM Application Firewall.md)
+- **SDK_reference**
+  - **SDK reference**
+    - [SDK overview](SDK_reference/SDK reference/SDK overview.md)
+    - **Go SDK**
+      - [Go SDK examples](SDK_reference/SDK reference/Go SDK/Go SDK examples.md)
+      - [Install and initialize the Go SDK](SDK_reference/SDK reference/Go SDK/Install and initialize the Go SDK.md)
+      - [Quick start for the Go SDK](SDK_reference/SDK reference/Go SDK/Quick start for the Go SDK.md)
+    - **Java SDK**
+      - [Install and initialize the Java SDK](SDK_reference/SDK reference/Java SDK/Install and initialize the Java SDK.md)
+      - [Java SDK examples](SDK_reference/SDK reference/Java SDK/Java SDK examples.md)
+      - [Quick start for the Java SDK](SDK_reference/SDK reference/Java SDK/Quick start for the Java SDK.md)
+    - **Python SDK**
+      - [Install and initialize the Python SDK](SDK_reference/SDK reference/Python SDK/Install and initialize the Python SDK.md)
+      - [Python SDK examples](SDK_reference/SDK reference/Python SDK/Python SDK examples.md)
+      - [Quick start for the Python SDK](SDK_reference/SDK reference/Python SDK/Quick start for the Python SDK.md)
+- **Terms**
+  - [Service Level Agreement for the BytePlus LLM Application Firewall ](Terms/Service Level Agreement for the BytePlus LLM Application Firewall.md)
+- **Tutorials**
+  - **Tutorials**
+    - [Create a custom protection model to safeguard specific business scenarios](Tutorials/Tutorials/Create a custom protection model to safeguard specific business scenarios.md)
+    - [Detect deepfakes with the SDK](Tutorials/Tutorials/Detect deepfakes with the SDK.md)
+    - [Enable the LLM Application Firewall plugin in Dify workflows](Tutorials/Tutorials/Enable the LLM Application Firewall plugin in Dify workflows.md)
+    - [Integrate the LLM Application Firewall with the SDK and verify prompt protection](Tutorials/Tutorials/Integrate the LLM Application Firewall with the SDK and verify prompt protection.md)
+    - [Route traffic and test model abuse prevention efficacy](Tutorials/Tutorials/Route traffic and test model abuse prevention efficacy.md)
+- **User guide**
+  - **Asset**
+    - [View asset details](User guide/Asset/View asset details.md)
+    - **Model service integration**
+      - [Configure model integration parameters](User guide/Asset/Model service integration/Configure model integration parameters.md)
+      - [Obtain the model service domain name and API Key](User guide/Asset/Model service integration/Obtain the model service domain name and API Key.md)
+    - **SDK integration**
+      - [Configure SDK integration parameters](User guide/Asset/SDK integration/Configure SDK integration parameters.md)
+    - **Traffic integration**
+      - [Allow back-to-origin CIDR blocks](User guide/Asset/Traffic integration/Allow back-to-origin CIDR blocks.md)
+      - [Configure custom application types](User guide/Asset/Traffic integration/Configure custom application types.md)
+      - [Configure traffic integration parameters ](User guide/Asset/Traffic integration/Configure traffic integration parameters.md)
+      - [Modify DNS resolution](User guide/Asset/Traffic integration/Modify DNS resolution.md)
+      - [Verify forwarding configuration](User guide/Asset/Traffic integration/Verify forwarding configuration.md)
+  - **Attack log**
+    - [View attack logs](User guide/Attack log/View attack logs.md)
+  - **Dashboard**
+    - [View the security overview](User guide/Dashboard/View the security overview.md)
+  - **Detection**
+    - [Review content asynchronously](User guide/Detection/Review content asynchronously.md)
+    - [Test protection capabilities online](User guide/Detection/Test protection capabilities online.md)
+  - **Instance**
+    - [Create an LLM Application Firewall instance](User guide/Instance/Create an LLM Application Firewall instance.md)
+  - **Log details**
+    - [Download logs and view export history](User guide/Log details/Download logs and view export history.md)
+    - [Log field descriptions](User guide/Log details/Log field descriptions.md)
+    - [View and analyze logs](User guide/Log details/View and analyze logs.md)
+  - **Operations**
+    - [Optimize your policies adaptively](User guide/Operations/Optimize your policies adaptively.md)
+  - **Protection**
+    - [Configure a custom response rule](User guide/Protection/Configure a custom response rule.md)
+    - [Configure access control policies](User guide/Protection/Configure access control policies.md)
+    - [Configure custom block response policies](User guide/Protection/Configure custom block response policies.md)
+    - [Introduction to protection policies](User guide/Protection/Introduction to protection policies.md)
+    - **Configure custom protection policies**
+      - [Configure custom detection categories](User guide/Protection/Configure custom protection policies/Configure custom detection categories.md)
+      - [Configure custom detection rules](User guide/Protection/Configure custom protection policies/Configure custom detection rules.md)
+      - [Configure custom models](User guide/Protection/Configure custom protection policies/Configure custom models.md)
+      - [Configure custom watch lists](User guide/Protection/Configure custom protection policies/Configure custom watch lists.md)
+      - [Custom protection description](User guide/Protection/Configure custom protection policies/Custom protection description.md)
+    - **Configure LLM protection policies**
+      - [Configure hallucination content protection policies](User guide/Protection/Configure LLM protection policies/Configure hallucination content protection policies.md)
+      - [Configure model abuse prevention policies](User guide/Protection/Configure LLM protection policies/Configure model abuse prevention policies.md)
+      - [Configure prompt injection protection policies](User guide/Protection/Configure LLM protection policies/Configure prompt injection protection policies.md)
+      - [Configure resource exhaustion mitigation policies](User guide/Protection/Configure LLM protection policies/Configure resource exhaustion mitigation policies.md)
+      - [Configure sensitive data disclosure prevention policies](User guide/Protection/Configure LLM protection policies/Configure sensitive data disclosure prevention policies.md)
+      - [Configure topic control policies](User guide/Protection/Configure LLM protection policies/Configure topic control policies.md)
+- **What‘s new**
+  - [Release notes](What‘s new/Release notes.md)

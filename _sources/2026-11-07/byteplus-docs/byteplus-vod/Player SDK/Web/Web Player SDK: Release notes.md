@@ -1,0 +1,34 @@
+---
+title: "Web Player SDK: Release notes"
+product: "BytePlus Video on Demand"
+product_code: "byteplus-vod"
+source: "https://docs.byteplus.com/en/docs/byteplus-vod/docs-release-notes-web-player"
+---
+
+These release notes provide a comprehensive log of all new features, improvements, and bug fixes for the BytePlus VOD Player SDK for Web. Use this page to track version\-by\-version changes and plan your integration or upgrade strategy.
+
+
+|**Release date** |**Version** |**Description** |
+|---|---|---|
+|May 21, 2026 |1.17.0 |**New features:** <br><br><br>* Upgraded the HLS playback engine to deliver expanded functionality, improved stability, and broader compatibility.<br><br>   * Added support for multi\-audio\-track playback and track switching in HLS streams. See [Web Player SDK: Multi-audio track](https://docs.byteplus.com/docs/byteplus-vod/docs-multi-audio-track-web).<br><br>* License verification is no longer required for local IP address environments.<br><br><br>**Improvements:** <br><br><br>* Improved the retry mechanism for more reliable error recovery.<br><br>* Improved error handling for software\-decoded playback.<br><br>* Improved the interaction behavior of the subtitle selection plugin. |
+|April 27, 2026 |1.16.0 |Optimizes playback log reporting for overseas regions. It is recommended that applications in regions outside the Chinese mainland upgrade to this version. |
+|August 20, 2025 |1.15.0 |Starting from this version, a license is now required to use the Web Player SDK. You must first obtain a license from the BytePlus VOD console and then configure it within your application. Please follow the instructions in [Web Player SDK: Quickstart](https://docs.byteplus.com/docs/byteplus-vod/docs-getting-started-with-the-web-player-sdk). |
+|July 14, 2025 |1.14.1 |**Fixed issues:** <br><br><br>* Fixed an issue where the resolution of HLS encrypted video playback could not be switched in VID mode.<br><br>* Fixed an issue where `playNext` could not be used to switch HLS encrypted video on iOS. |
+|June 14, 2025 |1.14.0 |* **New features:**  Android now supports entering full\-screen mode on system rotation.<br><br>* **Fixed issues:** <br><br>   * Fixed an issue where the player did not fill the entire screen when entering full\-screen mode via CSS rotation in landscape mode on mobile devices.<br><br>   * Added support for Google IMA ads on H5. |
+|April 25, 2025 |1.13.0 |Supports [Web Player SDK: Playing private encrypted videos](https://docs.byteplus.com/docs/byteplus-vod/playing_private_encrypted_videos_web). |
+|April 21, 2025 |1.12.0 |Supports adding [Google IMA ads](https://developers.google.com/interactive-media-ads/docs/sdks/html5/client-side/get-started) to your video using VePlayer. See [Implementing Google IMA ads](https://docs.byteplus.com/docs/byteplus-vod/docs-plugins-web#f60340a5). |
+|March 11, 2025 |1.10.0 |Optimized the playback error UI and logs to improve the efficiency of automatic playback error recovery. See the [Listening for player error](https://docs.byteplus.com/docs/byteplus-vod/docs-implementing-basic-features-web#ad54b612) section for details. |
+|February 10, 2025 |1.9.7 |Adaptive bitrate streaming now supports DRM encryption. You can enable DRM encryption in the ABR streaming template, and then use Web Player SDK for video playback. |
+|November 14, 2024 |1.9.6 |* Supports adaptive bitrate playback of HLS, DASH, and MP4 videos in Vid mode.<br><br>* Fixed an issue with error reporting when calling  destroy while playing HLS encrypted videos. |
+|September 14, 2024 |1.9.5 |* Fixed an issue where some parameters of the scrolling comments feature did not take effect. |
+|September 11, 2024 |1.9.4 |* Supports adaptive bitrate playback of HLS videos in DirectUrl mode.<br><br>* Supports dynamic buffering of MP4 and DASH formats in MSE. |
+|July 25, 2024 |1.9.3 |* New feature: Supports [Web Player SDK: Playing DRM encrypted videos](https://docs.byteplus.com/docs/byteplus-vod/playing_drm_encrypted_videos_web). |
+|July 11, 2024 |1.9.2 |* New features:<br><br>   * Supports preloading MP4 video resources.<br><br>   * Allows for customizing configurations for built\-in plugins (`pc`, `mobile`, and `start`).<br><br>   * Added a base class for creating custom plugins tailored to specific requirements. |
+|June 24, 2024 |1.9.0 |* New features:<br><br>   * Enables setting playback sources using the HTML `<source />` element.<br><br>   * Added support for automatically refreshing expired playback sources.<br><br>   * Added support for adaptive bitrate playback for MP4 format videos.<br><br>* Fixed issues:<br><br>   * Fixed an issue where the resume playback feature did not function on iOS.<br><br>   * Fixed the issue where videos would freeze at the end under specific scenarios when playing HLS and the `ended` event was not triggered. |
+|May 15, 2024 |1.8.6 |* New feature: Added support for quality degradation. See [Quality degradation](https://docs.byteplus.com/docs/byteplus-vod/docs-plugins-web#60b844f3).<br><br>* Improvement: Optimized the configuration and APIs related to cover image and resolution switching.<br><br>* Fixed issue: Fixed an issue where HLS private encryption playback failed. |
+|March 27, 2024 |1.8.2 |* New feature: Added support for dynamic watermarks.<br><br>* Improvement: Optimized TypeScript type exports.<br><br>* Fixed issue: Fixed an issue where the player controller would not automatically lose focus in certain scenarios. |
+|January 11, 2024 |1.7.5 |* New feature: Added support for displaying the resolution switcher even when there is only one resolution.<br><br>* Fixed issue: The replay button did not work when clicked for the first time after the progress bar was dragged beyond the end of the video. |
+|January 5, 2024 |1.7.4 |This release adds the playlist feature, which allows you to automatically play videos in a given video list in sequential order. For details, see [Playlist](https://docs.byteplus.com/docs/byteplus-vod/docs-implementing-basic-features-web#81eb9f86). |
+|December 15, 2023 |1.7.2 |* New features:<br><br>   * Added support for specifying a custom loading path for the playback plugin.<br><br>   * Added support for the Electron production environment.<br><br>   * Log reporting now automatically includes the container and encoding formats when available.<br><br>* Fixed issues:<br><br>   * The progress bar did not reset styles when switching videos.<br><br>   * The player kept loading when switching videos on iOS.<br><br>   * There was video but no audio when playing DASH videos.<br><br>   * The resolution switching did not take effect when playing DASH videos. |
+|May 11, 2023 |1.1.1 |New features:<br><br><br>* Added support for importing subtitles when playing a video.<br><br>* Added support for reporting quality statistics to the BytePlus VOD quality platform. |
+|April 3, 2023 |1.0.1 |This is the first release of the BytePlus VOD Player SDK for Web. |

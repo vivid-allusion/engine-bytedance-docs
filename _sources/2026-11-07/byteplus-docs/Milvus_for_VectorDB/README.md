@@ -1,0 +1,160 @@
+# Milvus for VectorDB
+
+124 pages. Source: https://docs.byteplus.com/en/docs/Milvus_for_VectorDB
+
+Back to the [full index](../README.md).
+
+- **API reference**
+  - **Basic information**
+    - [DescribeZones](API reference/Basic information/DescribeZones.md)
+  - **Instance configuration**
+    - [DescribeConfigModules](API reference/Instance configuration/DescribeConfigModules.md)
+    - [DescribeInstanceConfig](API reference/Instance configuration/DescribeInstanceConfig.md)
+    - [ModifyInstanceConfig](API reference/Instance configuration/ModifyInstanceConfig.md)
+  - **Instance management**
+    - [CreateInstanceOneStep - Create instance](API reference/Instance management/CreateInstanceOneStep - Create instance.md)
+    - [DescribeAvailableSpecV2 - Get available specifications](API reference/Instance management/DescribeAvailableSpecV2 - Get available specifications.md)
+    - [DescribeAvailableVersion](API reference/Instance management/DescribeAvailableVersion.md)
+    - [DescribeInstanceDetail](API reference/Instance management/DescribeInstanceDetail.md)
+    - [DescribeInstances](API reference/Instance management/DescribeInstances.md)
+    - [DescribeNodeInfo](API reference/Instance management/DescribeNodeInfo.md)
+    - [DescribePriceV2 - Query Instance Price V2](API reference/Instance management/DescribePriceV2 - Query Instance Price V2.md)
+    - [ModifyDeleteProtect](API reference/Instance management/ModifyDeleteProtect.md)
+    - [ModifyInstanceName](API reference/Instance management/ModifyInstanceName.md)
+    - [ReleaseInstance](API reference/Instance management/ReleaseInstance.md)
+    - [ScaleInstance](API reference/Instance management/ScaleInstance.md)
+  - **Serverless**
+    - [MSCreateInstance](API reference/Serverless/MSCreateInstance.md)
+    - [MSCreateInstanceOneStep](API reference/Serverless/MSCreateInstanceOneStep.md)
+    - [MSDescribeInstance](API reference/Serverless/MSDescribeInstance.md)
+    - [MSDescribeInstances](API reference/Serverless/MSDescribeInstances.md)
+    - [MSModifyEndpointAllowGroup](API reference/Serverless/MSModifyEndpointAllowGroup.md)
+    - [MSModifyPublicDomain](API reference/Serverless/MSModifyPublicDomain.md)
+    - [MSReleaseInstance - Release Serverless instance](API reference/Serverless/MSReleaseInstance - Release Serverless instance.md)
+  - **Workflow management**
+    - [DMCreateWorkflow](API reference/Workflow management/DMCreateWorkflow.md)
+    - [DMDeleteWorkflow](API reference/Workflow management/DMDeleteWorkflow.md)
+    - [DMDescribeWorkflow](API reference/Workflow management/DMDescribeWorkflow.md)
+    - [DMDescribeWorkflows](API reference/Workflow management/DMDescribeWorkflows.md)
+    - [DMStartWorkflow](API reference/Workflow management/DMStartWorkflow.md)
+    - [DMStopWorkflow](API reference/Workflow management/DMStopWorkflow.md)
+    - [DMUpdateWorkflow](API reference/Workflow management/DMUpdateWorkflow.md)
+- **Best practices**
+  - [Build a RAG system using Milvus for VectorDB and the open-source Coze Studio](Best practices/Build a RAG system using Milvus for VectorDB and the open-source Coze Studio.md)
+  - [Build an RAG system with Milvus for VectorDB and open-source dify](Best practices/Build an RAG system with Milvus for VectorDB and open-source dify.md)
+  - [Milvus CLI user guide](Best practices/Milvus CLI user guide.md)
+  - [Milvus for VectorDB skill user guide](Best practices/Milvus for VectorDB skill user guide.md)
+  - [Milvus vector retrieval performance test guide](Best practices/Milvus vector retrieval performance test guide.md)
+  - [Practical implementation of large-scale vector retrieval with the Milvus for VectorDB Python client and DiskANN](Best practices/Practical implementation of large-scale vector retrieval with the Milvus for VectorDB Pyth.md)
+- **Billing**
+  - [Arrears](Billing/Arrears.md)
+  - [Change to pay-as-you-go](Billing/Change to pay-as-you-go.md)
+  - [Change to subscription](Billing/Change to subscription.md)
+  - [Configuration change and unsubscribion instructions](Billing/Configuration change and unsubscribion instructions.md)
+  - [Product billing](Billing/Product billing.md)
+  - [Taxes and invoices](Billing/Taxes and invoices.md)
+  - **Billing methods**
+    - [Pay-as-you-go](Billing/Billing methods/Pay-as-you-go.md)
+    - [Subscription](Billing/Billing methods/Subscription.md)
+- **Overview**
+  - [Application scenarios](Overview/Application scenarios.md)
+  - [Comparison between Milvus for VectorDB and Self-hosted Milvus on ECS](Overview/Comparison between Milvus for VectorDB and Self-hosted Milvus on ECS.md)
+  - [Glossary](Overview/Glossary.md)
+  - [Product specifications](Overview/Product specifications.md)
+  - [Regions and availability zones](Overview/Regions and availability zones.md)
+  - [What is Milvus for VectorDB](Overview/What is Milvus for VectorDB.md)
+- **Quick start**
+  - [Connect to the instance](Quick start/Connect to the instance.md)
+  - [Create an instance](Quick start/Create an instance.md)
+  - [Cross-service access authorization](Quick start/Cross-service access authorization.md)
+  - [Overview](Quick start/Overview.md)
+  - [Resource estimation](Quick start/Resource estimation.md)
+  - [Set permissions for IAM users (optional)](Quick start/Set permissions for IAM users (optional).md)
+- **Terms**
+  - [BytePlus Milvus for VectorDB Service Level Agreement](Terms/BytePlus Milvus for VectorDB Service Level Agreement.md)
+- **User guide**
+  - [API Playground](User guide/API Playground.md)
+  - **AI center**
+    - [API Key management](User guide/AI center/API Key management.md)
+    - [Embedding model management](User guide/AI center/Embedding model management.md)
+  - **Data migration**
+    - [Create a workflow](User guide/Data migration/Create a workflow.md)
+    - [Delete a workflow](User guide/Data migration/Delete a workflow.md)
+    - [Modify a workflow](User guide/Data migration/Modify a workflow.md)
+    - [Multimodal data vectorization](User guide/Data migration/Multimodal data vectorization.md)
+    - [Start a workflow](User guide/Data migration/Start a workflow.md)
+    - [Stop a workflow](User guide/Data migration/Stop a workflow.md)
+    - [View the workflow information](User guide/Data migration/View the workflow information.md)
+    - [View the workflow list](User guide/Data migration/View the workflow list.md)
+  - **Databases and collections**
+    - [Authorize to use an instance](User guide/Databases and collections/Authorize to use an instance.md)
+    - [Milvus for VectorDB supports DiskANN + RaBitQ](User guide/Databases and collections/Milvus for VectorDB supports DiskANN + RaBitQ.md)
+    - **Collection management**
+      - [Clone a collection schema](User guide/Databases and collections/Collection management/Clone a collection schema.md)
+      - [Clone Collection schemas and data](User guide/Databases and collections/Collection management/Clone Collection schemas and data.md)
+      - [Compress a collection](User guide/Databases and collections/Collection management/Compress a collection.md)
+      - [Create a collection](User guide/Databases and collections/Collection management/Create a collection.md)
+      - [Delete a collection](User guide/Databases and collections/Collection management/Delete a collection.md)
+      - [Load and release a collection](User guide/Databases and collections/Collection management/Load and release a collection.md)
+      - [Modify collection configuration](User guide/Databases and collections/Collection management/Modify collection configuration.md)
+      - [Persist a collection to disk](User guide/Databases and collections/Collection management/Persist a collection to disk.md)
+      - [Rename a collection](User guide/Databases and collections/Collection management/Rename a collection.md)
+      - [View collection details](User guide/Databases and collections/Collection management/View collection details.md)
+    - **Database management**
+      - [Create a database](User guide/Databases and collections/Database management/Create a database.md)
+      - [Delete a database](User guide/Databases and collections/Database management/Delete a database.md)
+      - [Modify the database configuration](User guide/Databases and collections/Database management/Modify the database configuration.md)
+      - [View a database](User guide/Databases and collections/Database management/View a database.md)
+  - **Instance management**
+    - [Change the instance specification](User guide/Instance management/Change the instance specification.md)
+    - [Change the project of an instance](User guide/Instance management/Change the project of an instance.md)
+    - [Configure delete protection for an instance](User guide/Instance management/Configure delete protection for an instance.md)
+    - [Delete an instance](User guide/Instance management/Delete an instance.md)
+    - [Introduction to index node pooling](User guide/Instance management/Introduction to index node pooling.md)
+    - [Renew a subscription instance](User guide/Instance management/Renew a subscription instance.md)
+    - [Reset the instance password](User guide/Instance management/Reset the instance password.md)
+    - [Restart an instance or component](User guide/Instance management/Restart an instance or component.md)
+    - [Suspend pay-as-you-go instance](User guide/Instance management/Suspend pay-as-you-go instance.md)
+    - [Upgrade instance kernel version](User guide/Instance management/Upgrade instance kernel version.md)
+    - [View instance information](User guide/Instance management/View instance information.md)
+    - [View the instance list](User guide/Instance management/View the instance list.md)
+    - [Weak password dictionary](User guide/Instance management/Weak password dictionary.md)
+    - **Elastic scaling**
+      - [Configure auto scaling](User guide/Instance management/Elastic scaling/Configure auto scaling.md)
+      - [Configure scheduled scaling](User guide/Instance management/Elastic scaling/Configure scheduled scaling.md)
+    - **Instance access**
+      - [Configure instance public network access](User guide/Instance management/Instance access/Configure instance public network access.md)
+    - **Instance configuration**
+      - [Configure Embedding](User guide/Instance management/Instance configuration/Configure Embedding.md)
+      - [Modifiable parameter list](User guide/Instance management/Instance configuration/Modifiable parameter list.md)
+      - [Modify the instance configuration](User guide/Instance management/Instance configuration/Modify the instance configuration.md)
+    - **Log management**
+      - [View access logs](User guide/Instance management/Log management/View access logs.md)
+      - [View running logs](User guide/Instance management/Log management/View running logs.md)
+      - [View slow logs](User guide/Instance management/Log management/View slow logs.md)
+    - **Security audit**
+      - [Control panel audit log](User guide/Instance management/Security audit/Control panel audit log.md)
+  - **Integration center**
+    - [Create integration](User guide/Integration center/Create integration.md)
+  - **Monitoring and alerts**
+    - [Create an alarm policy](User guide/Monitoring and alerts/Create an alarm policy.md)
+    - [Enable alarm configuration](User guide/Monitoring and alerts/Enable alarm configuration.md)
+    - [Manage alarm contacts](User guide/Monitoring and alerts/Manage alarm contacts.md)
+    - [Monitoring and alarm metrics](User guide/Monitoring and alerts/Monitoring and alarm metrics.md)
+    - [View alarm history](User guide/Monitoring and alerts/View alarm history.md)
+    - [View instance monitoring information](User guide/Monitoring and alerts/View instance monitoring information.md)
+  - **Snapshot management**
+    - [Automatically create backups](User guide/Snapshot management/Automatically create backups.md)
+    - [Delete a backup](User guide/Snapshot management/Delete a backup.md)
+    - [Import a backup from TOS](User guide/Snapshot management/Import a backup from TOS.md)
+    - [Manually create backup](User guide/Snapshot management/Manually create backup.md)
+    - [Use backup to restore data](User guide/Snapshot management/Use backup to restore data.md)
+    - [View backup information](User guide/Snapshot management/View backup information.md)
+  - **Task center**
+    - [View task progress](User guide/Task center/View task progress.md)
+- **What's new**
+  - [Release notes](What's new/Release notes.md)
+  - **Product announcements**
+    - [Milvus for VectorDB commercial public beta announcement](What's new/Product announcements/Milvus for VectorDB commercial public beta announcement.md)
+    - [Notice of minor kernel version upgrade for Milvus for VectorDB](What's new/Product announcements/Notice of minor kernel version upgrade for Milvus for VectorDB.md)
+    - [Serverless instance read vCU billing notification](What's new/Product announcements/Serverless instance read vCU billing notification.md)

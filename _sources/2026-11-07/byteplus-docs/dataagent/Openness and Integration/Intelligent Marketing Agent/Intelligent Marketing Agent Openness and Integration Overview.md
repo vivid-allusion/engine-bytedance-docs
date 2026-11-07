@@ -1,0 +1,15 @@
+---
+title: "Intelligent Marketing Agent Openness and Integration Overview"
+product: "DataAgent"
+product_code: "dataagent"
+source: "https://docs.byteplus.com/en/docs/dataagent/Overview_of_Intelligent_Marketing_Agent_Openness_and_Integration"
+---
+
+|functional segmentation |||Supported open capabilities and integration methods |
+|---|---|---|---|
+|Marketing Interactive Assistant Agent |Unstructured data marking ||* Functional openness: The unstructured data marking function does not support openness for the time being, that is, it does not support calling the unstructured data marking function through OpenAPI for the time being.<br><br>* Marking results are integrated into three parties; unstructured data marking results can be directly saved as VeCDP datasets or labels, and you can refer to VeCDP's open documentation for reference. |
+||Marketing Interactive Assistant |Enterprise Knowledge Engine |* Functional openness: The current enterprise knowledge engine supports the OpenAPI interface, and you can modify and delete the enterprise knowledge engine by calling the OpenAPI interface. Please see for details [Introduction to Enterprise Knowledge Engine OpenAPI](https://docs.byteplus.com/docs/dataagent/Enterprise_Knowledge_Engine_OpenAPI).<br><br>* Enterprise Knowledge Engine Results Tripartite Integration: After creating the Enterprise Knowledge Engine, you can create an API application on the Agent, and then implement the tripartite integration through the provided API plug\-in. |
+|||Customer service/shopping guide scene |In the customer service/shopping guide application scenario, you can create an API application on the Agent, and then achieve three\-party integration through the provided API plug\-in:<br><br><br>* If you **already have a shopping guide or customer service** \*\*system, need to integrate AI capabilities to upgrade and do not do a complete system replacement \*\*, Volcano provides **underlying data capabilities and power builder** , you can flexibly carry out front\-end and other development according to your own needs.<br><br>* If you want to **purchase complete platform customers** , Volcano will provide you with **full process services from data interface to front\-end page** . Please see for details [User Case: Customer Service / Sales Scenarios](https://docs.byteplus.com/docs/dataagent/User_Case_Customer_Service_Sales_Scenarios). |
+|||Intelligent Q & A Scenario |In a smart Q & A scenario, you can:<br><br><br>* Create an API application on the Agent, and then implement three\-party integration through the provided API plug\-in.<br><br>* Publish the built smart document as a web page, which can be directly integrated into the web page through common web page integration methods, such as iFrame, etc. |
+|||session analysis scenario |In the conversation analysis scenario, the overall function relies on the function implementation of VeCDP, and the openness and three\-party integration capabilities can be consulted by referring to VeCDP's open documentation. |
+|Intelligent Marketing Strategy Agent |||Openness and three\-way integration are not supported yet. |

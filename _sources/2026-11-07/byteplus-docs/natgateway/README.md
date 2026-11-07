@@ -1,0 +1,141 @@
+# NAT Gateway
+
+106 pages. Source: https://docs.byteplus.com/en/docs/natgateway
+
+Back to the [full index](../README.md).
+
+- **API Reference**
+  - [API overview](API Reference/API overview.md)
+  - [API release notes](API Reference/API release notes.md)
+  - [Overview](API Reference/Overview.md)
+  - **Call method**
+    - [Common Parameters](API Reference/Call method/Common Parameters.md)
+    - [Public error codes](API Reference/Call method/Public error codes.md)
+    - [Request Structure](API Reference/Call method/Request Structure.md)
+    - [Response](API Reference/Call method/Response.md)
+    - [Signature method](API Reference/Call method/Signature method.md)
+  - **DNAT**
+    - [CreateDnatEntry - Creating a DNAT rule](API Reference/DNAT/CreateDnatEntry - Creating a DNAT rule.md)
+    - [DeleteDnatEntry - Deleting a DNAT rule](API Reference/DNAT/DeleteDnatEntry - Deleting a DNAT rule.md)
+    - [DescribeDnatEntries - Querying DNAT rules](API Reference/DNAT/DescribeDnatEntries - Querying DNAT rules.md)
+    - [DescribeDnatEntryAttributes - Viewing details of a DNAT rule](API Reference/DNAT/DescribeDnatEntryAttributes - Viewing details of a DNAT rule.md)
+    - [ModifyDnatEntryAttributes - Modifying a DNAT rule](API Reference/DNAT/ModifyDnatEntryAttributes - Modifying a DNAT rule.md)
+  - **NAT Gateway**
+    - [CreateNatGateway - Creating a NAT gateway](API Reference/NAT Gateway/CreateNatGateway - Creating a NAT gateway.md)
+    - [DeleteNatGateway - Deleting a NAT gateway](API Reference/NAT Gateway/DeleteNatGateway - Deleting a NAT gateway.md)
+    - [DescribeNatGatewayAttributes - Viewing details of a specified NAT gateway](API Reference/NAT Gateway/DescribeNatGatewayAttributes - Viewing details of a specified NAT gateway.md)
+    - [DescribeNatGateways - Querying NAT gateways](API Reference/NAT Gateway/DescribeNatGateways - Querying NAT gateways.md)
+    - [ListNatGatewayAvailableZones - Querying NAT gateway availability zones](API Reference/NAT Gateway/ListNatGatewayAvailableZones - Querying NAT gateway availability zones.md)
+    - [ModifyNatGatewayAttributes - Modifying a NAT gateway](API Reference/NAT Gateway/ModifyNatGatewayAttributes - Modifying a NAT gateway.md)
+  - **NAT IP address management**
+    - [CreateNatIp - Creating a NAT IP](API Reference/NAT IP address management/CreateNatIp - Creating a NAT IP.md)
+    - [DeleteNatIp - Deleting a NAT IP](API Reference/NAT IP address management/DeleteNatIp - Deleting a NAT IP.md)
+    - [DescribeNatIpAttributes - Querying the details of a NAT IP](API Reference/NAT IP address management/DescribeNatIpAttributes - Querying the details of a NAT IP.md)
+    - [DescribeNatIps - Querying NAT IPs](API Reference/NAT IP address management/DescribeNatIps - Querying NAT IPs.md)
+    - [ModifyNatIpAttributes - Modifying a NAT IP](API Reference/NAT IP address management/ModifyNatIpAttributes - Modifying a NAT IP.md)
+  - **Rate limiting rules**
+    - [BatchDeleteNatIpLimitRules - Batch deleting rate limiting rules](API Reference/Rate limiting rules/BatchDeleteNatIpLimitRules - Batch deleting rate limiting rules.md)
+    - [CreateNatIpLimitRule - Creating a rate limiting rule](API Reference/Rate limiting rules/CreateNatIpLimitRule - Creating a rate limiting rule.md)
+    - [DeleteNatIpLimitRule - Deleting a bandwidth limit rule](API Reference/Rate limiting rules/DeleteNatIpLimitRule - Deleting a bandwidth limit rule.md)
+    - [DescribeNatIpLimitRules - Querying bandwidth limit rules](API Reference/Rate limiting rules/DescribeNatIpLimitRules - Querying bandwidth limit rules.md)
+    - [ModifyNatIpLimitRuleAttributes - Modifying a rate limiting rule](API Reference/Rate limiting rules/ModifyNatIpLimitRuleAttributes - Modifying a rate limiting rule.md)
+  - **Resource tag**
+    - [ListTagsForResources - Querying the list of tags](API Reference/Resource tag/ListTagsForResources - Querying the list of tags.md)
+    - [TagResources - Adding custom tags](API Reference/Resource tag/TagResources - Adding custom tags.md)
+    - [UntagResources - Disassociating custom tags](API Reference/Resource tag/UntagResources - Disassociating custom tags.md)
+  - **Session log**
+    - [CreateSessionLog - Creating a NAT session log](API Reference/Session log/CreateSessionLog - Creating a NAT session log.md)
+    - [DeleteSessionLog - Deleting a NAT session log](API Reference/Session log/DeleteSessionLog - Deleting a NAT session log.md)
+    - [DescribeSessionLogs - Querying session logs](API Reference/Session log/DescribeSessionLogs - Querying session logs.md)
+    - [DisableSessionLog - Disabling the NAT session log feature](API Reference/Session log/DisableSessionLog - Disabling the NAT session log feature.md)
+    - [EnableSessionLog - Enabling the NAT session log feature](API Reference/Session log/EnableSessionLog - Enabling the NAT session log feature.md)
+    - [ModifySessionLog - Modifying a NAT session log](API Reference/Session log/ModifySessionLog - Modifying a NAT session log.md)
+  - **SNAT**
+    - [CreateSnatEntry - Creating a SNAT rule](API Reference/SNAT/CreateSnatEntry - Creating a SNAT rule.md)
+    - [DeleteSnatEntry - Deleting a SNAT rule](API Reference/SNAT/DeleteSnatEntry - Deleting a SNAT rule.md)
+    - [DescribeSnatEntries - Querying SNAT rules](API Reference/SNAT/DescribeSnatEntries - Querying SNAT rules.md)
+    - [DescribeSnatEntryAttributes - Viewing details of a SNAT rule](API Reference/SNAT/DescribeSnatEntryAttributes - Viewing details of a SNAT rule.md)
+    - [ModifySnatEntryAttributes - Modifying a SNAT rule](API Reference/SNAT/ModifySnatEntryAttributes - Modifying a SNAT rule.md)
+- **Best Practices**
+  - [Accessing the Internet via Internet NAT Gateway from an on-premises data center](Best Practices/Accessing the Internet via Internet NAT Gateway from an on-premises data center.md)
+  - [Deploying multiple Internet NAT Gateways in a single VPC.](Best Practices/Deploying multiple Internet NAT Gateways in a single VPC.md)
+  - [Enabling cross-region Internet access with CEN](Best Practices/Enabling cross-region Internet access with CEN.md)
+  - [Implementing cross-region Internet access with TR](Best Practices/Implementing cross-region Internet access with TR.md)
+  - [Sharing an Internet NAT Gateway across VPCs via CEN](Best Practices/Sharing an Internet NAT Gateway across VPCs via CEN.md)
+  - [Sharing an Internet NAT Gateway across VPCs via TR](Best Practices/Sharing an Internet NAT Gateway across VPCs via TR.md)
+- **Billing**
+  - **Internet NAT Gateway**
+    - [Arrears](Billing/Internet NAT Gateway/Arrears.md)
+    - [Billing conversion](Billing/Internet NAT Gateway/Billing conversion.md)
+    - [Billing overview](Billing/Internet NAT Gateway/Billing overview.md)
+    - [Expiration](Billing/Internet NAT Gateway/Expiration.md)
+    - [Renewal](Billing/Internet NAT Gateway/Renewal.md)
+    - [Specification changes](Billing/Internet NAT Gateway/Specification changes.md)
+    - [Unsubscription](Billing/Internet NAT Gateway/Unsubscription.md)
+    - **Billing methods**
+      - [Pay-by-CU](Billing/Internet NAT Gateway/Billing methods/Pay-by-CU.md)
+      - [Pay-by-specification](Billing/Internet NAT Gateway/Billing methods/Pay-by-specification.md)
+      - [Subscription](Billing/Internet NAT Gateway/Billing methods/Subscription.md)
+  - **VPC NAT Gateway**
+    - [Arrears](Billing/VPC NAT Gateway/Arrears.md)
+    - [Pay-by-CU](Billing/VPC NAT Gateway/Pay-by-CU.md)
+- **FAQ**
+  - [Billing FAQs](FAQ/Billing FAQs.md)
+  - [DNAT entry FAQs](FAQ/DNAT entry FAQs.md)
+  - [IAM FAQs](FAQ/IAM FAQs.md)
+  - [NAT Gateway FAQs](FAQ/NAT Gateway FAQs.md)
+  - [SNAT entry FAQs](FAQ/SNAT entry FAQs.md)
+- **Getting Started**
+  - **Internet NAT Gateway**
+    - [Enabling Internet access via SNAT](Getting Started/Internet NAT Gateway/Enabling Internet access via SNAT.md)
+    - [Exposing services to Internet via DNAT](Getting Started/Internet NAT Gateway/Exposing services to Internet via DNAT.md)
+  - **VPC NAT Gateway**
+    - [Resolve address conflicts in multi-VPC interconnection scenarios](Getting Started/VPC NAT Gateway/Resolve address conflicts in multi-VPC interconnection scenarios.md)
+    - [Route configuration overview​](Getting Started/VPC NAT Gateway/Route configuration overview​.md)
+    - [Using a specified IP to communicate with the on-premises data center](Getting Started/VPC NAT Gateway/Using a specified IP to communicate with the on-premises data center.md)
+- **Overview**
+  - [Application scenarios (Internet NAT Gateway)](Overview/Application scenarios (Internet NAT Gateway).md)
+  - [Benefits](Overview/Benefits.md)
+  - [Limits](Overview/Limits.md)
+  - [Performance](Overview/Performance.md)
+  - [Region and Availability Zone](Overview/Region and Availability Zone.md)
+  - [Terms](Overview/Terms.md)
+  - [VPC NAT Gateway application scenarios](Overview/VPC NAT Gateway application scenarios.md)
+  - [What is NAT Gateway](Overview/What is NAT Gateway.md)
+- **SDK Reference**
+  - [NAT SDK overview](SDK Reference/NAT SDK overview.md)
+- **Terms**
+  - [BytePlus NAT_Service Level Agreement](Terms/BytePlus NAT_Service Level Agreement.md)
+  - [Service-Specific Terms for BytePlus NAT Gateway](Terms/Service-Specific Terms for BytePlus NAT Gateway.md)
+- **User Guide**
+  - **Identity and Access Management**
+    - [IAM overview](User Guide/Identity and Access Management/IAM overview.md)
+    - [NAT Gateway custom policy examples](User Guide/Identity and Access Management/NAT Gateway custom policy examples.md)
+    - [NAT Gateway IAM policy types](User Guide/Identity and Access Management/NAT Gateway IAM policy types.md)
+  - **Internet NAT Gateway**
+    - [Associating/Disassociating an EIP](User Guide/Internet NAT Gateway/Associating - Disassociating an EIP.md)
+    - [Changing specification for Internet NAT Gateway](User Guide/Internet NAT Gateway/Changing specification for Internet NAT Gateway.md)
+    - [Creating an Internet NAT Gateway](User Guide/Internet NAT Gateway/Creating an Internet NAT Gateway.md)
+    - [Deleting a NAT Gateway](User Guide/Internet NAT Gateway/Deleting a NAT Gateway.md)
+    - [Managing a DNAT rule](User Guide/Internet NAT Gateway/Managing a DNAT rule.md)
+    - [Managing a scheduling policy](User Guide/Internet NAT Gateway/Managing a scheduling policy.md)
+    - [Managing a session log](User Guide/Internet NAT Gateway/Managing a session log.md)
+    - [Managing an SNAT entry](User Guide/Internet NAT Gateway/Managing an SNAT entry.md)
+    - [Managing IP rate limiting](User Guide/Internet NAT Gateway/Managing IP rate limiting.md)
+    - [NAT Gateway smart scheduling](User Guide/Internet NAT Gateway/NAT Gateway smart scheduling.md)
+  - **Monitor**
+    - [Configuring an alarm strategy](User Guide/Monitor/Configuring an alarm strategy.md)
+    - [Viewing monitoring data](User Guide/Monitor/Viewing monitoring data.md)
+  - **Projects and tags**
+    - [Project management](User Guide/Projects and tags/Project management.md)
+    - [Tag management](User Guide/Projects and tags/Tag management.md)
+  - **VPC NAT Gateway**
+    - [Adding or deleting a NAT IP](User Guide/VPC NAT Gateway/Adding or deleting a NAT IP.md)
+    - [Creating a VPC NAT Gateway](User Guide/VPC NAT Gateway/Creating a VPC NAT Gateway.md)
+    - [Deleting a VPC NAT Gateway](User Guide/VPC NAT Gateway/Deleting a VPC NAT Gateway.md)
+    - [Managing a DNAT rule](User Guide/VPC NAT Gateway/Managing a DNAT rule.md)
+    - [Managing an SNAT rule for VPC NAT Gateway](User Guide/VPC NAT Gateway/Managing an SNAT rule for VPC NAT Gateway.md)
+- **What's New**
+  - [New feature release notes](What's New/New feature release notes.md)
+  - **Announcement**
+    - [NAT Gateway upgrade](What's New/Announcement/NAT Gateway upgrade.md)

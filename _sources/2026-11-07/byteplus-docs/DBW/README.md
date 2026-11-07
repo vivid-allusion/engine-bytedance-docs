@@ -1,0 +1,467 @@
+# Database Workshop
+
+335 pages. Source: https://docs.byteplus.com/en/docs/DBW
+
+Back to the [full index](../README.md).
+
+- **API reference**
+  - [API History](API reference/API History.md)
+  - [API overview](API reference/API overview.md)
+  - **Appendixes**
+    - [Data structure](API reference/Appendixes/Data structure.md)
+    - [Error code](API reference/Appendixes/Error code.md)
+  - **Call method**
+    - [Common parameters](API reference/Call method/Common parameters.md)
+    - [Request structure](API reference/Call method/Request structure.md)
+    - [Return result](API reference/Call method/Return result.md)
+    - [Signature mechanism](API reference/Call method/Signature mechanism.md)
+  - **Compliance Agreement**
+    - [AgreeUserProtocol](API reference/Compliance Agreement/AgreeUserProtocol.md)
+  - **Instance access**
+    - [DataConnectInstance](API reference/Instance access/DataConnectInstance.md)
+  - **Operation and maintenance management**
+    - **Audit log management**
+      - [DescribeAuditLogDetail](API reference/Operation and maintenance management/Audit log management/DescribeAuditLogDetail.md)
+    - **AutoOps**
+      - [AutoScale](API reference/Operation and maintenance management/AutoOps/AutoScale.md)
+      - [DescribeAutoScaleEvents](API reference/Operation and maintenance management/AutoOps/DescribeAutoScaleEvents.md)
+      - [DescribeAutoScaleRules](API reference/Operation and maintenance management/AutoOps/DescribeAutoScaleRules.md)
+    - **Diagnostics and Snapshots**
+      - [DescribeDialogDetailSnapshot](API reference/Operation and maintenance management/Diagnostics and Snapshots/DescribeDialogDetailSnapshot.md)
+      - [DescribeDialogSnapshots](API reference/Operation and maintenance management/Diagnostics and Snapshots/DescribeDialogSnapshots.md)
+      - [DescribeEngineStatusSnapShot](API reference/Operation and maintenance management/Diagnostics and Snapshots/DescribeEngineStatusSnapShot.md)
+      - [DescribeInstanceDasSnapShotCollectionStatus](API reference/Operation and maintenance management/Diagnostics and Snapshots/DescribeInstanceDasSnapShotCollectionStatus.md)
+      - [ModifyInstanceDasSnapshotCollectionSwitch](API reference/Operation and maintenance management/Diagnostics and Snapshots/ModifyInstanceDasSnapshotCollectionSwitch.md)
+    - **Slow log and optimization suggestions**
+      - [DescribeSlowLogs](API reference/Operation and maintenance management/Slow log and optimization suggestions/DescribeSlowLogs.md)
+      - [ListSlowQueryAdviceApi](API reference/Operation and maintenance management/Slow log and optimization suggestions/ListSlowQueryAdviceApi.md)
+      - [SlowQueryAdviceTaskHistoryApi](API reference/Operation and maintenance management/Slow log and optimization suggestions/SlowQueryAdviceTaskHistoryApi.md)
+    - **SQL insights and auditing**
+      - [CreateFullSqlOrder](API reference/Operation and maintenance management/SQL insights and auditing/CreateFullSqlOrder.md)
+      - [CreateTerminateFullSqlOrder](API reference/Operation and maintenance management/SQL insights and auditing/CreateTerminateFullSqlOrder.md)
+      - [DescribeFullSQLFingerprintExample](API reference/Operation and maintenance management/SQL insights and auditing/DescribeFullSQLFingerprintExample.md)
+      - [DescribeFullSqlStatus](API reference/Operation and maintenance management/SQL insights and auditing/DescribeFullSqlStatus.md)
+      - [DescribeSQLExecItemMetric](API reference/Operation and maintenance management/SQL insights and auditing/DescribeSQLExecItemMetric.md)
+      - [DescribeSqlTemplatesContrast](API reference/Operation and maintenance management/SQL insights and auditing/DescribeSqlTemplatesContrast.md)
+      - [GetFullSqlInstanceCorrespondence](API reference/Operation and maintenance management/SQL insights and auditing/GetFullSqlInstanceCorrespondence.md)
+      - [PreCheckCreateFullSql](API reference/Operation and maintenance management/SQL insights and auditing/PreCheckCreateFullSql.md)
+    - **SQL throttling**
+      - [CreateSqlConcurrencyControlRule](API reference/Operation and maintenance management/SQL throttling/CreateSqlConcurrencyControlRule.md)
+      - [DeleteSqlConcurrencyControlRule](API reference/Operation and maintenance management/SQL throttling/DeleteSqlConcurrencyControlRule.md)
+      - [DescribeSqlConcurrencyControlRules](API reference/Operation and maintenance management/SQL throttling/DescribeSqlConcurrencyControlRules.md)
+      - [DescribeSqlKeywords](API reference/Operation and maintenance management/SQL throttling/DescribeSqlKeywords.md)
+      - [RestartSqlConcurrencyControlRule](API reference/Operation and maintenance management/SQL throttling/RestartSqlConcurrencyControlRule.md)
+      - [StopSqlConcurrencyControlRule](API reference/Operation and maintenance management/SQL throttling/StopSqlConcurrencyControlRule.md)
+    - **Transactions and locks**
+      - [AnalyzeTrxAndLock](API reference/Operation and maintenance management/Transactions and locks/AnalyzeTrxAndLock.md)
+      - [DescribeTrxAndLockAnalysisTaskResults](API reference/Operation and maintenance management/Transactions and locks/DescribeTrxAndLockAnalysisTaskResults.md)
+      - [DescribeTrxAndLockAnalysisTasks](API reference/Operation and maintenance management/Transactions and locks/DescribeTrxAndLockAnalysisTasks.md)
+  - **Persistent Kill**
+    - [CreateSqlKillRule](API reference/Persistent Kill/CreateSqlKillRule.md)
+    - [DeleteSqlKillRule](API reference/Persistent Kill/DeleteSqlKillRule.md)
+    - [DescribeSqlKillRules](API reference/Persistent Kill/DescribeSqlKillRules.md)
+    - [StopSqlKillRule](API reference/Persistent Kill/StopSqlKillRule.md)
+  - **Security control**
+    - [DescribeManagedUsers](API reference/Security control/DescribeManagedUsers.md)
+    - [DescribeSecurityGroups](API reference/Security control/DescribeSecurityGroups.md)
+    - [DisableInstanceManagement](API reference/Security control/DisableInstanceManagement.md)
+    - [EnableInstanceManagement](API reference/Security control/EnableInstanceManagement.md)
+    - [ListApprovalFlowConfig](API reference/Security control/ListApprovalFlowConfig.md)
+    - [ListApprovalNode](API reference/Security control/ListApprovalNode.md)
+    - [UpdateInstanceManagementConfig](API reference/Security control/UpdateInstanceManagementConfig.md)
+  - **SQL task**
+    - [DataCancelExec](API reference/SQL task/DataCancelExec.md)
+    - [DataCloseSession](API reference/SQL task/DataCloseSession.md)
+    - [DataDescribeCommandSet](API reference/SQL task/DataDescribeCommandSet.md)
+    - [DataExecCommands](API reference/SQL task/DataExecCommands.md)
+    - [DataExecCommandSetAsync](API reference/SQL task/DataExecCommandSetAsync.md)
+    - [DataGetCommandSetResult](API reference/SQL task/DataGetCommandSetResult.md)
+    - [DataSessionKeepAlive](API reference/SQL task/DataSessionKeepAlive.md)
+    - [ExecuteSQL](API reference/SQL task/ExecuteSQL.md)
+    - [GenerateSQLFromNL](API reference/SQL task/GenerateSQLFromNL.md)
+    - [GetTableInfo](API reference/SQL task/GetTableInfo.md)
+    - [ListDatabases](API reference/SQL task/ListDatabases.md)
+    - [ListTables](API reference/SQL task/ListTables.md)
+  - **Ticket management**
+    - [CreateDdlSqlChangeTicket](API reference/Ticket management/CreateDdlSqlChangeTicket.md)
+    - [CreateDmlSqlChangeTicket](API reference/Ticket management/CreateDmlSqlChangeTicket.md)
+    - [DescribePreCheckDetail](API reference/Ticket management/DescribePreCheckDetail.md)
+    - [DescribeTicketDetail](API reference/Ticket management/DescribeTicketDetail.md)
+    - [DescribeTickets](API reference/Ticket management/DescribeTickets.md)
+    - [DescribeWorkflow](API reference/Ticket management/DescribeWorkflow.md)
+    - [ManualExecuteTicket](API reference/Ticket management/ManualExecuteTicket.md)
+    - [WorkflowAction](API reference/Ticket management/WorkflowAction.md)
+- **Best practices**
+  - [Analyzing the primary-replica lag issue of RDS for MySQL instances through full SQL insight](Best practices/Analyzing the primary-replica lag issue of RDS for MySQL instances through full SQL insigh.md)
+  - [Handling slow SQL issues in the RDS for MySQL database](Best practices/Handling slow SQL issues in the RDS for MySQL database.md)
+  - [Initializing a sub-user as an administrator](Best practices/Initializing a sub-user as an administrator.md)
+- **Billing**
+  - [Arrears](Billing/Arrears.md)
+  - [Overview](Billing/Overview.md)
+  - [Pay-as-you-go](Billing/Pay-as-you-go.md)
+  - **Billing items and prices**
+    - [Billing items and prices (RDS for PostgreSQL)](Billing/Billing items and prices/Billing items and prices (RDS for PostgreSQL).md)
+    - [MySQL Billing Items and Prices](Billing/Billing items and prices/MySQL Billing Items and Prices.md)
+    - [Redis Billing Items and Prices](Billing/Billing items and prices/Redis Billing Items and Prices.md)
+    - [veDB MySQL Billing items and prices](Billing/Billing items and prices/veDB MySQL Billing items and prices.md)
+- **FAQ**
+  - [FAQ Overview](FAQ/FAQ Overview.md)
+  - **FAQ about permission management**
+    - [How do I authorize a sub-account to access Database Workshop](FAQ/FAQ about permission management/How do I authorize a sub-account to access Database Workshop.md)
+    - [Insufficient permissions when logging into the Database Workshop DBW. What should I do?](FAQ/FAQ about permission management/Insufficient permissions when logging into the Database Workshop DBW. What should I do?.md)
+    - [When encountering an xxxx instance with security control enabled and the current user lacks the \[Operation and Maintenance Read-Only\] permission, contact the administrator for authorization or apply for the \[Operation and Maintenance Read-Only\] permission](FAQ/FAQ about permission management/When encountering an xxxx instance with security control enabled and the current user lack.md)
+  - **General FAQ**
+    - [Can execution results and execution records be exported after executing SQL in the SQL console?](FAQ/General FAQ/Can execution results and execution records be exported after executing SQL in the SQL con.md)
+    - [Can I switch to a Cache for Redis account after logging on to the data interaction platform](FAQ/General FAQ/Can I switch to a Cache for Redis account after logging on to the data interaction platfor.md)
+    - [Does Database Workshop (DBW) support cross-account?](FAQ/General FAQ/Does Database Workshop (DBW) support cross-account?.md)
+    - [Does modifying the approval process of an instance affect the already generated work orders?](FAQ/General FAQ/Does modifying the approval process of an instance affect the already generated work order.md)
+    - [How to resolve the "PrecheckFailed_DiskSpaceInsufficient" error when creating a ticket?](FAQ/General FAQ/How to resolve the "PrecheckFailed_DiskSpaceInsufficient" error when creating a ticket?.md)
+    - [How to resolve the "too many connections" error when executing OnlineDDL?](FAQ/General FAQ/How to resolve the "too many connections" error when executing OnlineDDL?.md)
+    - [How to view the historical commit records of a MySQL instance in the cloud database?](FAQ/General FAQ/How to view the historical commit records of a MySQL instance in the cloud database?.md)
+    - [What database instances does the Data Interaction Platform feature of Database Workshop DBW support?](FAQ/General FAQ/What database instances does the Data Interaction Platform feature of Database Workshop DB.md)
+    - [What databases does the operation and maintenance management feature of DBW support?](FAQ/General FAQ/What databases does the operation and maintenance management feature of DBW support?.md)
+    - [What if the approver cannot approve in time due to certain reasons?](FAQ/General FAQ/What if the approver cannot approve in time due to certain reasons?.md)
+    - [What instance types does the instance list page of Database Workbench DBW support?](FAQ/General FAQ/What instance types does the instance list page of Database Workbench DBW support?.md)
+    - [What should I do if I encounter insufficient permissions when logging into the Data Interaction Platform DBW?](FAQ/General FAQ/What should I do if I encounter insufficient permissions when logging into the Data Intera.md)
+    - [What should I do if I encounter the error OnlineDDLErrorCode_DuplicateKeyOrColumn while executing a lock-free schema change task?](FAQ/General FAQ/What should I do if I encounter the error OnlineDDLErrorCode_DuplicateKeyOrColumn while ex.md)
+    - [Which databases does Database Workshop DBW support?](FAQ/General FAQ/Which databases does Database Workshop DBW support?.md)
+    - [Why are not all SQLs recorded in Full SQL Insights?](FAQ/General FAQ/Why are not all SQLs recorded in Full SQL Insights?.md)
+    - [Why are the time consumption metrics inconsistent across DBW console's full SQL insights, audit logs, and slow logs?](FAQ/General FAQ/Why are the time consumption metrics inconsistent across DBW console's full SQL insights,.md)
+    - [Why can't I directly execute Create index or Drop index statements on database tables in the data interaction console?](FAQ/General FAQ/Why can't I directly execute Create index or Drop index statements on database tables in t.md)
+    - [Why can't I find data from the Cache for Redis on the data interaction platform?](FAQ/General FAQ/Why can't I find data from the Cache for Redis on the data interaction platform?.md)
+    - [Why can't instances with security control enabled be successfully called via the API interface?](FAQ/General FAQ/Why can't instances with security control enabled be successfully called via the API inter.md)
+    - [Why is the deadlock time and deadlock count collected on the Transactions and Locks page inconsistent with the performance monitoring collection?](FAQ/General FAQ/Why is the deadlock time and deadlock count collected on the Transactions and Locks page i.md)
+    - [Why is the total number of sessions in the session management tab inconsistent with the number of connections in the MySQL instance?](FAQ/General FAQ/Why is the total number of sessions in the session management tab inconsistent with the nu.md)
+- **Operation guide**
+  - [Viewing fee information](Operation guide/Viewing fee information.md)
+  - **Data management**
+    - **Data interaction platform**
+      - [Introduction to SQL window](Operation guide/Data management/Data interaction platform/Introduction to SQL window.md)
+      - [Natural language to SQL](Operation guide/Data management/Data interaction platform/Natural language to SQL.md)
+    - **Ticket list**
+      - [DBW role application](Operation guide/Data management/Ticket list/DBW role application.md)
+      - **Data archiving management**
+        - [Overview](Operation guide/Data management/Ticket list/Data archiving management/Overview.md)
+        - [Variables](Operation guide/Data management/Ticket list/Data archiving management/Variables.md)
+  - **Enterprise security**
+    - [Viewing my permissions](Operation guide/Enterprise security/Viewing my permissions.md)
+    - **Action trail management**
+      - [Operations observability log management](Operation guide/Enterprise security/Action trail management/Operations observability log management.md)
+      - [SQL execution log management](Operation guide/Enterprise security/Action trail management/SQL execution log management.md)
+    - **Approval workflow**
+      - [Approval node management](Operation guide/Enterprise security/Approval workflow/Approval node management.md)
+      - [Approval workflow management](Operation guide/Enterprise security/Approval workflow/Approval workflow management.md)
+    - **User management**
+      - [Personal user management](Operation guide/Enterprise security/User management/Personal user management.md)
+      - [User group management](Operation guide/Enterprise security/User management/User group management.md)
+      - [User profile](Operation guide/Enterprise security/User management/User profile.md)
+      - [User role description](Operation guide/Enterprise security/User management/User role description.md)
+  - **Event center**
+    - [Event list](Operation guide/Event center/Event list.md)
+    - [Notification policy management](Operation guide/Event center/Notification policy management.md)
+    - [Rule configuration management](Operation guide/Event center/Rule configuration management.md)
+  - **Instance access**
+    - [External instance management](Operation guide/Instance access/External instance management.md)
+    - [Instance list management (New version)](Operation guide/Instance access/Instance list management (New version).md)
+  - **Operation and maintenance management**
+    - [Automated operation and maintenance management](Operation guide/Operation and maintenance management/Automated operation and maintenance management.md)
+    - [Operations Overview](Operation guide/Operation and maintenance management/Operations Overview.md)
+    - [Search and analyze SQL logs](Operation guide/Operation and maintenance management/Search and analyze SQL logs.md)
+    - [Transactions and locks](Operation guide/Operation and maintenance management/Transactions and locks.md)
+- **Overview**
+  - [Applicable scenarios](Overview/Applicable scenarios.md)
+  - [DBW allowlisted IPs](Overview/DBW allowlisted IPs.md)
+  - [Features](Overview/Features.md)
+  - [Limits](Overview/Limits.md)
+  - [Product advantages](Overview/Product advantages.md)
+  - [Supported database types and features](Overview/Supported database types and features.md)
+  - [What is Database Workshop](Overview/What is Database Workshop.md)
+- **Permission management**
+  - [IAM user permission management](Permission management/IAM user permission management.md)
+  - [Root user permission management](Permission management/Root user permission management.md)
+- **Quick start**
+  - [Customize ticket approval workflow](Quick start/Customize ticket approval workflow.md)
+  - [Getting started with SQL console](Quick start/Getting started with SQL console.md)
+  - [Querying a slow log through operation observability](Quick start/Querying a slow log through operation observability.md)
+  - [Quick start guide for data change ticket management](Quick start/Quick start guide for data change ticket management.md)
+  - [Quick start guide for SQL review tickets](Quick start/Quick start guide for SQL review tickets.md)
+- **Terms**
+  - [Database Workshop_Service Level Agreement](Terms/Database Workshop_Service Level Agreement.md)
+  - [Disclaimer and service terms of natural language to SQL conversion](Terms/Disclaimer and service terms of natural language to SQL conversion.md)
+  - [Service-Specific Terms for Volcano Engine Database Workshop](Terms/Service-Specific Terms for Volcano Engine Database Workshop.md)
+- **Troubleshooting**
+  - [During the pre-check of a lock-free structure change ticket, if you encounter the prompt "Your lock-free change task has been detected, and there are potential risks during execution, such as data loss due to duplicate data," how should you handle it?](Troubleshooting/During the pre-check of a lock-free structure change ticket, if you encounter the prompt ".md)
+  - [What should I do if an error occurs during the session connection when logging into the Redis instance on the Data Interaction Platform?](Troubleshooting/What should I do if an error occurs during the session connection when logging into the Re.md)
+  - [What should I do if I receive a session creation failure prompt when logging into an instance on the Data Interaction Platform?](Troubleshooting/What should I do if I receive a session creation failure prompt when logging into an insta.md)
+  - [What to do if the connection fails when logging into the data interaction platform?](Troubleshooting/What to do if the connection fails when logging into the data interaction platform?.md)
+  - [What to do if you encounter an error during the ticket submission process?](Troubleshooting/What to do if you encounter an error during the ticket submission process?.md)
+  - [When calling the DBW API, I encountered the error "Client.Timeout exceeded while awaiting headers." What should I do?](Troubleshooting/When calling the DBW API, I encountered the error "Client.Timeout exceeded while awaiting.md)
+  - [Why can an IAM user with an instance-level IAM policy still view all instances?](Troubleshooting/Why can an IAM user with an instance-level IAM policy still view all instances?.md)
+- **User guide (Cache for Redis)**
+  - **Data management**
+    - **SQL window**
+      - [Command operations](User guide (Cache for Redis)/Data management/SQL window/Command operations.md)
+      - [Key value management](User guide (Cache for Redis)/Data management/SQL window/Key value management.md)
+      - [Logging on to the data interaction platform (Cache for Redis)](User guide (Cache for Redis)/Data management/SQL window/Logging on to the data interaction platform (Cache for Redis).md)
+    - **Ticket list**
+      - **Permission application ticket**
+        - [Creating an operation permission ticket](User guide (Cache for Redis)/Data management/Ticket list/Permission application ticket/Creating an operation permission ticket.md)
+        - [Managing permission application tickets](User guide (Cache for Redis)/Data management/Ticket list/Permission application ticket/Managing permission application tickets.md)
+  - **Enterprise security**
+    - [Granting operation permissions for system roles](User guide (Cache for Redis)/Enterprise security/Granting operation permissions for system roles.md)
+    - **Security rules**
+      - [Security rule management](User guide (Cache for Redis)/Enterprise security/Security rules/Security rule management.md)
+      - [Security rule set management](User guide (Cache for Redis)/Enterprise security/Security rules/Security rule set management.md)
+  - **Instance list**
+    - [Enabling security control](User guide (Cache for Redis)/Instance list/Enabling security control.md)
+    - [Instance list management](User guide (Cache for Redis)/Instance list/Instance list management.md)
+  - **Operation and maintenance management**
+    - [Database inspection management](User guide (Cache for Redis)/Operation and maintenance management/Database inspection management.md)
+    - **Observation and diagnosis**
+      - [(Beta) Bandwidth auto-scaling management](User guide (Cache for Redis)/Operation and maintenance management/Observation and diagnosis/(Beta) Bandwidth auto-scaling management.md)
+      - [(Beta) Database audit management](User guide (Cache for Redis)/Operation and maintenance management/Observation and diagnosis/(Beta) Database audit management.md)
+      - [Performance monitoring management](User guide (Cache for Redis)/Operation and maintenance management/Observation and diagnosis/Performance monitoring management.md)
+- **User guide (Document Database MongoDB))**
+  - **Data management**
+    - **SQL window**
+      - [Collection management](User guide (Document Database MongoDB))/Data management/SQL window/Collection management.md)
+      - [Command operations](User guide (Document Database MongoDB))/Data management/SQL window/Command operations.md)
+      - [Database management](User guide (Document Database MongoDB))/Data management/SQL window/Database management.md)
+      - [Index management](User guide (Document Database MongoDB))/Data management/SQL window/Index management.md)
+      - [Logging on to the data interaction platform (Document Database for MongoDB)](User guide (Document Database MongoDB))/Data management/SQL window/Logging on to the data interaction platform (Document Database for MongoDB).md)
+      - [Natural language to SQL](User guide (Document Database MongoDB))/Data management/SQL window/Natural language to SQL.md)
+      - [Visual query management](User guide (Document Database MongoDB))/Data management/SQL window/Visual query management.md)
+    - **Ticket management**
+      - **Data import and export ticket**
+        - [Creating a data import ticket](User guide (Document Database MongoDB))/Data management/Ticket management/Data import and export ticket/Creating a data import ticket.md)
+        - [Creating a full database export ticket](User guide (Document Database MongoDB))/Data management/Ticket management/Data import and export ticket/Creating a full database export ticket.md)
+        - [Managing import and export tickets](User guide (Document Database MongoDB))/Data management/Ticket management/Data import and export ticket/Managing import and export tickets.md)
+      - **Permission application ticket**
+        - [Creating an operation permission ticket](User guide (Document Database MongoDB))/Data management/Ticket management/Permission application ticket/Creating an operation permission ticket.md)
+        - [Managing permission application tickets](User guide (Document Database MongoDB))/Data management/Ticket management/Permission application ticket/Managing permission application tickets.md)
+  - **Enterprise security management**
+    - [Granting operation permissions for system roles](User guide (Document Database MongoDB))/Enterprise security management/Granting operation permissions for system roles.md)
+    - **Security rules**
+      - [Security rule management](User guide (Document Database MongoDB))/Enterprise security management/Security rules/Security rule management.md)
+      - [Security rule set management](User guide (Document Database MongoDB))/Enterprise security management/Security rules/Security rule set management.md)
+  - **Instance list**
+    - [Enabling security control](User guide (Document Database MongoDB))/Instance list/Enabling security control.md)
+    - [Instance list management](User guide (Document Database MongoDB))/Instance list/Instance list management.md)
+  - **Operation and maintenance management**
+    - [Performance monitoring management](User guide (Document Database MongoDB))/Operation and maintenance management/Performance monitoring management.md)
+    - [Session management](User guide (Document Database MongoDB))/Operation and maintenance management/Session management.md)
+    - [Slow log management](User guide (Document Database MongoDB))/Operation and maintenance management/Slow log management.md)
+    - [Spatial analysis management](User guide (Document Database MongoDB))/Operation and maintenance management/Spatial analysis management.md)
+- **User guide (External instance user guide)**
+  - [Data management](User guide (External instance user guide)/Data management.md)
+  - [Instance list management](User guide (External instance user guide)/Instance list management.md)
+- **User guide (NDB for MySQL)**
+  - **Data management**
+    - **SQL window**
+      - **Database management**
+        - [Command operations](User guide (NDB for MySQL)/Data management/SQL window/Database management/Command operations.md)
+        - [Database management](User guide (NDB for MySQL)/Data management/SQL window/Database management/Database management.md)
+        - [Event management](User guide (NDB for MySQL)/Data management/SQL window/Database management/Event management.md)
+        - [Function management](User guide (NDB for MySQL)/Data management/SQL window/Database management/Function management.md)
+        - [Logging on to the data interaction platform (veDB for MySQL)](User guide (NDB for MySQL)/Data management/SQL window/Database management/Logging on to the data interaction platform (veDB for MySQL).md)
+        - [Stored procedure management](User guide (NDB for MySQL)/Data management/SQL window/Database management/Stored procedure management.md)
+        - [Table management](User guide (NDB for MySQL)/Data management/SQL window/Database management/Table management.md)
+        - [Trigger management](User guide (NDB for MySQL)/Data management/SQL window/Database management/Trigger management.md)
+        - [View management](User guide (NDB for MySQL)/Data management/SQL window/Database management/View management.md)
+      - **Import and export data**
+        - [Deleting import/export tasks](User guide (NDB for MySQL)/Data management/SQL window/Import and export data/Deleting import - export tasks.md)
+        - [Exporting an SQL result set](User guide (NDB for MySQL)/Data management/SQL window/Import and export data/Exporting an SQL result set.md)
+        - [Exporting table data](User guide (NDB for MySQL)/Data management/SQL window/Import and export data/Exporting table data.md)
+        - [Importing table data](User guide (NDB for MySQL)/Data management/SQL window/Import and export data/Importing table data.md)
+        - [Viewing import/export tasks](User guide (NDB for MySQL)/Data management/SQL window/Import and export data/Viewing import - export tasks.md)
+    - **Ticket list**
+      - **Clear table tickets**
+        - [Creating a clear table ticket](User guide (NDB for MySQL)/Data management/Ticket list/Clear table tickets/Creating a clear table ticket.md)
+        - [Manage clear table tickets](User guide (NDB for MySQL)/Data management/Ticket list/Clear table tickets/Manage clear table tickets.md)
+      - **Data change ticket**
+        - [Creating a lock-free data change ticket](User guide (NDB for MySQL)/Data management/Ticket list/Data change ticket/Creating a lock-free data change ticket.md)
+        - [Creating a lock-free schema change ticket (OnlineDDL)](User guide (NDB for MySQL)/Data management/Ticket list/Data change ticket/Creating a lock-free schema change ticket (OnlineDDL).md)
+        - [Creating a regular SQL change ticket](User guide (NDB for MySQL)/Data management/Ticket list/Data change ticket/Creating a regular SQL change ticket.md)
+        - [Managing data change tickets](User guide (NDB for MySQL)/Data management/Ticket list/Data change ticket/Managing data change tickets.md)
+      - **Data cleaning and archiving ticket**
+        - [Creating a data cleanup and archiving ticket](User guide (NDB for MySQL)/Data management/Ticket list/Data cleaning and archiving ticket/Creating a data cleanup and archiving ticket.md)
+        - [Managing a data cleanup and archiving ticket](User guide (NDB for MySQL)/Data management/Ticket list/Data cleaning and archiving ticket/Managing a data cleanup and archiving ticket.md)
+      - **Data import and export ticket**
+        - [Creating a data import ticket](User guide (NDB for MySQL)/Data management/Ticket list/Data import and export ticket/Creating a data import ticket.md)
+        - [Creating a full database export ticket](User guide (NDB for MySQL)/Data management/Ticket list/Data import and export ticket/Creating a full database export ticket.md)
+        - [Creating an SQL result set export ticket](User guide (NDB for MySQL)/Data management/Ticket list/Data import and export ticket/Creating an SQL result set export ticket.md)
+        - [Managing import and export tickets](User guide (NDB for MySQL)/Data management/Ticket list/Data import and export ticket/Managing import and export tickets.md)
+      - **permission request ticket**
+        - [Creating an operation permission ticket](User guide (NDB for MySQL)/Data management/Ticket list/permission request ticket/Creating an operation permission ticket.md)
+        - [Managing permission application tickets](User guide (NDB for MySQL)/Data management/Ticket list/permission request ticket/Managing permission application tickets.md)
+      - **SQL review ticket**
+        - [Creating an SQL review ticket](User guide (NDB for MySQL)/Data management/Ticket list/SQL review ticket/Creating an SQL review ticket.md)
+        - [Managing an SQL review ticket](User guide (NDB for MySQL)/Data management/Ticket list/SQL review ticket/Managing an SQL review ticket.md)
+  - **Enterprise security management**
+    - [Granting system role operation permissions](User guide (NDB for MySQL)/Enterprise security management/Granting system role operation permissions.md)
+    - **Security rules**
+      - [Security rule management](User guide (NDB for MySQL)/Enterprise security management/Security rules/Security rule management.md)
+      - [Security rule set management](User guide (NDB for MySQL)/Enterprise security management/Security rules/Security rule set management.md)
+  - **Instance list**
+    - [Enabling security control](User guide (NDB for MySQL)/Instance list/Enabling security control.md)
+    - [Instance list management](User guide (NDB for MySQL)/Instance list/Instance list management.md)
+  - **Operation and maintenance management**
+    - [Database inspection management](User guide (NDB for MySQL)/Operation and maintenance management/Database inspection management.md)
+    - **Observation and diagnosis**
+      - [Database audit management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/Database audit management.md)
+      - [One-click diagnosis management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/One-click diagnosis management.md)
+      - [Performance monitoring management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/Performance monitoring management.md)
+      - [Spatial analysis management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/Spatial analysis management.md)
+      - [SQL insights and auditing management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/SQL insights and auditing management.md)
+      - [Transaction and lock management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/Transaction and lock management.md)
+      - **AutoOps management**
+        - [Automatic index creation management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/AutoOps management/Automatic index creation management.md)
+        - [Node specification auto scaling management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/AutoOps management/Node specification auto scaling management.md)
+        - [Scheduled scaling management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/AutoOps management/Scheduled scaling management.md)
+      - **Log management**
+        - [Error log management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/Log management/Error log management.md)
+        - [Slow log](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/Log management/Slow log.md)
+        - [Slow log diagnosis](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/Log management/Slow log diagnosis.md)
+      - **Session management**
+        - [Kill session](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/Session management/Kill session.md)
+        - [Session management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/Session management/Session management.md)
+        - [SQL throttling management](User guide (NDB for MySQL)/Operation and maintenance management/Observation and diagnosis/Session management/SQL throttling management.md)
+- **User guide (RDS for MySQL)**
+  - **Data management**
+    - [Managing tasks](User guide (RDS for MySQL)/Data management/Managing tasks.md)
+    - **SQL window**
+      - **Data import and export**
+        - [Deleting a data import or export task](User guide (RDS for MySQL)/Data management/SQL window/Data import and export/Deleting a data import or export task.md)
+        - [Exporting an SQL result set](User guide (RDS for MySQL)/Data management/SQL window/Data import and export/Exporting an SQL result set.md)
+        - [Exporting table data](User guide (RDS for MySQL)/Data management/SQL window/Data import and export/Exporting table data.md)
+        - [Importing table data](User guide (RDS for MySQL)/Data management/SQL window/Data import and export/Importing table data.md)
+        - [Viewing a data import or export task](User guide (RDS for MySQL)/Data management/SQL window/Data import and export/Viewing a data import or export task.md)
+      - **Database management**
+        - [Command operations](User guide (RDS for MySQL)/Data management/SQL window/Database management/Command operations.md)
+        - [Database management](User guide (RDS for MySQL)/Data management/SQL window/Database management/Database management.md)
+        - [Event management](User guide (RDS for MySQL)/Data management/SQL window/Database management/Event management.md)
+        - [Function management](User guide (RDS for MySQL)/Data management/SQL window/Database management/Function management.md)
+        - [Logging on to the RDS for MySQL console](User guide (RDS for MySQL)/Data management/SQL window/Database management/Logging on to the RDS for MySQL console.md)
+        - [Stored procedure management](User guide (RDS for MySQL)/Data management/SQL window/Database management/Stored procedure management.md)
+        - [Table management](User guide (RDS for MySQL)/Data management/SQL window/Database management/Table management.md)
+        - [Trigger management](User guide (RDS for MySQL)/Data management/SQL window/Database management/Trigger management.md)
+        - [View management](User guide (RDS for MySQL)/Data management/SQL window/Database management/View management.md)
+    - **Ticket list**
+      - **Clear table ticket**
+        - [Creating a clear table ticket](User guide (RDS for MySQL)/Data management/Ticket list/Clear table ticket/Creating a clear table ticket.md)
+        - [Manage clear table tickets](User guide (RDS for MySQL)/Data management/Ticket list/Clear table ticket/Manage clear table tickets.md)
+      - **Data change ticket**
+        - [Creating a lock-free data change ticket](User guide (RDS for MySQL)/Data management/Ticket list/Data change ticket/Creating a lock-free data change ticket.md)
+        - [Creating a lock-free schema change ticket (OnlineDDL)](User guide (RDS for MySQL)/Data management/Ticket list/Data change ticket/Creating a lock-free schema change ticket (OnlineDDL).md)
+        - [Creating a regular SQL change ticket](User guide (RDS for MySQL)/Data management/Ticket list/Data change ticket/Creating a regular SQL change ticket.md)
+        - [Managing data change tickets](User guide (RDS for MySQL)/Data management/Ticket list/Data change ticket/Managing data change tickets.md)
+      - **Data cleanup and archiving ticket**
+        - [Creating a data cleanup and archiving ticket](User guide (RDS for MySQL)/Data management/Ticket list/Data cleanup and archiving ticket/Creating a data cleanup and archiving ticket.md)
+        - [Managing a data cleanup and archiving ticket](User guide (RDS for MySQL)/Data management/Ticket list/Data cleanup and archiving ticket/Managing a data cleanup and archiving ticket.md)
+      - **Data import and export ticket**
+        - [Creating a data import ticket](User guide (RDS for MySQL)/Data management/Ticket list/Data import and export ticket/Creating a data import ticket.md)
+        - [Creating a full database export ticket](User guide (RDS for MySQL)/Data management/Ticket list/Data import and export ticket/Creating a full database export ticket.md)
+        - [Creating an SQL result set export ticket](User guide (RDS for MySQL)/Data management/Ticket list/Data import and export ticket/Creating an SQL result set export ticket.md)
+        - [Managing import and export tickets](User guide (RDS for MySQL)/Data management/Ticket list/Data import and export ticket/Managing import and export tickets.md)
+      - **Permission application ticket**
+        - [Creating an operation permission ticket](User guide (RDS for MySQL)/Data management/Ticket list/Permission application ticket/Creating an operation permission ticket.md)
+        - [Managing permission application tickets](User guide (RDS for MySQL)/Data management/Ticket list/Permission application ticket/Managing permission application tickets.md)
+      - **SQL review ticket**
+        - [Creating an SQL review ticket](User guide (RDS for MySQL)/Data management/Ticket list/SQL review ticket/Creating an SQL review ticket.md)
+        - [Managing an SQL review ticket](User guide (RDS for MySQL)/Data management/Ticket list/SQL review ticket/Managing an SQL review ticket.md)
+  - **Enterprise security**
+    - [Granting operation permissions for system roles](User guide (RDS for MySQL)/Enterprise security/Granting operation permissions for system roles.md)
+    - **Security rules**
+      - [Security rule management](User guide (RDS for MySQL)/Enterprise security/Security rules/Security rule management.md)
+      - [Security rule set management](User guide (RDS for MySQL)/Enterprise security/Security rules/Security rule set management.md)
+  - **Instance list**
+    - [Enabling security control](User guide (RDS for MySQL)/Instance list/Enabling security control.md)
+    - [Instance list management](User guide (RDS for MySQL)/Instance list/Instance list management.md)
+  - **Operation and maintenance management**
+    - [Database inspection management](User guide (RDS for MySQL)/Operation and maintenance management/Database inspection management.md)
+    - **Observation and diagnosis**
+      - [Database audit management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/Database audit management.md)
+      - [Monitoring panel management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/Monitoring panel management.md)
+      - [One-click diagnosis management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/One-click diagnosis management.md)
+      - [Spatial analysis management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/Spatial analysis management.md)
+      - [SQL insights and auditing management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/SQL insights and auditing management.md)
+      - [Transaction and lock management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/Transaction and lock management.md)
+      - **AutoOps management**
+        - [Automatic index creation management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/AutoOps management/Automatic index creation management.md)
+        - [Storage space expansion management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/AutoOps management/Storage space expansion management.md)
+        - **Specification scaling management**
+          - [Auto scaling management (Cloud disk instances)](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/AutoOps management/Specification scaling management/Auto scaling management (Cloud disk instances).md)
+          - [Scheduled scaling management (Cloud disk instances)](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/AutoOps management/Specification scaling management/Scheduled scaling management (Cloud disk instances).md)
+          - [Specification scaling management (General Type)](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/AutoOps management/Specification scaling management/Specification scaling management (General Type).md)
+      - **Log management**
+        - [Error log management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/Log management/Error log management.md)
+        - [Slow log details management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/Log management/Slow log details management.md)
+        - [Slow log diagnosis management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/Log management/Slow log diagnosis management.md)
+      - **Session management**
+        - [Session management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/Session management/Session management.md)
+        - [SQL throttling management](User guide (RDS for MySQL)/Operation and maintenance management/Observation and diagnosis/Session management/SQL throttling management.md)
+- **User guide (RDS for PostgreSQL)**
+  - **Data management**
+    - **SQL window**
+      - [Command operations](User guide (RDS for PostgreSQL)/Data management/SQL window/Command operations.md)
+      - [Database management](User guide (RDS for PostgreSQL)/Data management/SQL window/Database management.md)
+      - [Exporting an SQL result set](User guide (RDS for PostgreSQL)/Data management/SQL window/Exporting an SQL result set.md)
+      - [Logging on to the data interaction platform (RDS for PostgreSQL)](User guide (RDS for PostgreSQL)/Data management/SQL window/Logging on to the data interaction platform (RDS for PostgreSQL).md)
+      - [Schema management](User guide (RDS for PostgreSQL)/Data management/SQL window/Schema management.md)
+      - [Table management](User guide (RDS for PostgreSQL)/Data management/SQL window/Table management.md)
+    - **Ticket list**
+      - **Data change ticket**
+        - [Creating a regular SQL change ticket](User guide (RDS for PostgreSQL)/Data management/Ticket list/Data change ticket/Creating a regular SQL change ticket.md)
+        - [Managing data change tickets](User guide (RDS for PostgreSQL)/Data management/Ticket list/Data change ticket/Managing data change tickets.md)
+      - **Permission application ticket**
+        - [Creating an operation permission ticket](User guide (RDS for PostgreSQL)/Data management/Ticket list/Permission application ticket/Creating an operation permission ticket.md)
+        - [Managing permission application tickets](User guide (RDS for PostgreSQL)/Data management/Ticket list/Permission application ticket/Managing permission application tickets.md)
+      - **SQL review ticket**
+        - [Creating an SQL review ticket](User guide (RDS for PostgreSQL)/Data management/Ticket list/SQL review ticket/Creating an SQL review ticket.md)
+        - [Managing an SQL review ticket](User guide (RDS for PostgreSQL)/Data management/Ticket list/SQL review ticket/Managing an SQL review ticket.md)
+  - **Enterprise security management**
+    - [Granting operation permissions for system roles](User guide (RDS for PostgreSQL)/Enterprise security management/Granting operation permissions for system roles.md)
+    - **Security rules**
+      - [Security rule management](User guide (RDS for PostgreSQL)/Enterprise security management/Security rules/Security rule management.md)
+      - [Security rule set management](User guide (RDS for PostgreSQL)/Enterprise security management/Security rules/Security rule set management.md)
+  - **Instance list**
+    - [Enabling security control](User guide (RDS for PostgreSQL)/Instance list/Enabling security control.md)
+    - [Instance list management](User guide (RDS for PostgreSQL)/Instance list/Instance list management.md)
+  - **Operation and maintenance management**
+    - [Database inspection management](User guide (RDS for PostgreSQL)/Operation and maintenance management/Database inspection management.md)
+    - **Observation and diagnosis**
+      - [Database audit](User guide (RDS for PostgreSQL)/Operation and maintenance management/Observation and diagnosis/Database audit.md)
+      - [Log management](User guide (RDS for PostgreSQL)/Operation and maintenance management/Observation and diagnosis/Log management.md)
+      - [One-click diagnosis management](User guide (RDS for PostgreSQL)/Operation and maintenance management/Observation and diagnosis/One-click diagnosis management.md)
+      - [Performance monitoring management](User guide (RDS for PostgreSQL)/Operation and maintenance management/Observation and diagnosis/Performance monitoring management.md)
+      - [Session management](User guide (RDS for PostgreSQL)/Operation and maintenance management/Observation and diagnosis/Session management.md)
+      - [Spatial analysis management](User guide (RDS for PostgreSQL)/Operation and maintenance management/Observation and diagnosis/Spatial analysis management.md)
+      - [SQL insights and auditing management](User guide (RDS for PostgreSQL)/Operation and maintenance management/Observation and diagnosis/SQL insights and auditing management.md)
+      - [Transaction and lock management](User guide (RDS for PostgreSQL)/Operation and maintenance management/Observation and diagnosis/Transaction and lock management.md)
+      - **AutoOps management**
+        - [Storage space expansion management](User guide (RDS for PostgreSQL)/Operation and maintenance management/Observation and diagnosis/AutoOps management/Storage space expansion management.md)
+- **User guide (RDS for SQL Server)**
+  - **Data management**
+    - **SQL window**
+      - [Command operations](User guide (RDS for SQL Server)/Data management/SQL window/Command operations.md)
+      - [Logging on to the data interaction platform (RDS for SQL Server)](User guide (RDS for SQL Server)/Data management/SQL window/Logging on to the data interaction platform (RDS for SQL Server).md)
+    - **Ticket management**
+      - **Permission application ticket**
+        - [Creating an operation permission ticket](User guide (RDS for SQL Server)/Data management/Ticket management/Permission application ticket/Creating an operation permission ticket.md)
+        - [Managing permission application tickets](User guide (RDS for SQL Server)/Data management/Ticket management/Permission application ticket/Managing permission application tickets.md)
+  - **Enterprise security management**
+    - [Granting operation permissions for system roles](User guide (RDS for SQL Server)/Enterprise security management/Granting operation permissions for system roles.md)
+    - **Security rules**
+      - [Security rule management](User guide (RDS for SQL Server)/Enterprise security management/Security rules/Security rule management.md)
+      - [Security rule set management](User guide (RDS for SQL Server)/Enterprise security management/Security rules/Security rule set management.md)
+  - **Instance list**
+    - [Enabling security control](User guide (RDS for SQL Server)/Instance list/Enabling security control.md)
+    - [Instance list management](User guide (RDS for SQL Server)/Instance list/Instance list management.md)
+  - **Operation and maintenance management**
+    - [Lock analysis management](User guide (RDS for SQL Server)/Operation and maintenance management/Lock analysis management.md)
+    - [Log management](User guide (RDS for SQL Server)/Operation and maintenance management/Log management.md)
+    - [Performance monitoring management](User guide (RDS for SQL Server)/Operation and maintenance management/Performance monitoring management.md)
+- **What's new**
+  - [New feature release notes](What's new/New feature release notes.md)
+  - **Announcement**
+    - [Transaction and lock snapshot optimization has been deprecated](What's new/Announcement/Transaction and lock snapshot optimization has been deprecated.md)

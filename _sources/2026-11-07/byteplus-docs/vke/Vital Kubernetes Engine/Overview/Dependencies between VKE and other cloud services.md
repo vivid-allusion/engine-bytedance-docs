@@ -1,0 +1,35 @@
+---
+title: "Dependencies between VKE and other cloud services"
+product: " Vital Kubernetes Engine"
+product_code: "vke"
+source: "https://docs.byteplus.com/en/docs/vke/Dependencies-between-VKE-and-other-cloud-services"
+---
+
+To use all VKE features, you must grant VKE permissions on the resources of the cloud services it depends on. This topic describes the dependencies between VKE and other cloud services.
+
+<span id=".5LqR5pyN5Yqh5L6d6LWW5YWz57O75Zu-"></span>
+## Cloud service dependency diagram
+
+As a Platform as a Service (PaaS) platform, VKE not only depends on underlying Infrastructure as a Service (IaaS) services that provide computing, storage, and network infrastructure, such as Elastic Compute Service (ECS), Elastic Block Storage (EBS), and Virtual Private Cloud (VPC), but also needs to work with other PaaS services, such as Container Registry (CR).
+
+<span id=".5a655Zmo5pyN5Yqh5LiO5YW25LuW5LqR5pyN5Yqh5L6d6LWW5YWz57O7"></span>
+## Dependencies between VKE and other cloud services
+
+The following table describes the detailed dependencies between VKE and features of other cloud services and provides the reference links of the related features.
+
+
+|Cloud service name |Dependency |Related entity feature |
+|---|---|---|
+|ECS |A VKE cluster generally consists of multiple nodes. In most cases, a node is an ECS instance. You can configure the specification of an ECS instance when you create a node. |[Creating nodes](https://docs.byteplus.com/en/docs/vke/Adding-nodes)<br><br>[Adding existing nodes](https://docs.byteplus.com/en/docs/vke/Adding-existing-nodes) |
+|VPC |VKE clusters need to run within VPCs. All clusters that you create and the resources such as nodes and containers in the clusters run in the specified VPCs. This ensures network isolation and security between clusters of different users. |[Creating a cluster](https://docs.byteplus.com/en/docs/vke/Creating-a-cluster) |
+|NAT Gateway |NAT Gateway provides network address translation services. SNAT entries convert private IP addresses to public IP addresses by binding EIPs. This allows ECS nodes and containers within VPCs to share the EIPs to access the public network. |[Creating a cluster](https://docs.byteplus.com/en/docs/vke/Creating-a-cluster) |
+|Security group |A security group is a virtual firewall. It offers access policies to ECS nodes that have the same security protection requirements and are mutually trusted in a VPC. A security group can perform status detection and packet filtering. It is used to divide security domains in the cloud and serves as an important means of isolation for network security. |[Configuring VKE security groups](https://docs.byteplus.com/en/docs/vke/Security-group-settings)<br><br>[Creating nodes](https://docs.byteplus.com/en/docs/vke/Adding-nodes)<br><br>[Creating node pools](https://docs.byteplus.com/en/docs/vke/Creating-a-NodePool) |
+|Application Load Balancer (ALB) |ALB can implement fine\-grained and balanced traffic scheduling and eliminate the effects of SPOFs. It can be used in application\-layer websites, audio and video applications, and other high\-traffic distribution scenarios. Therefore, ALB can enhance the overall service performance of your application system and improve service stability and reliability. VKE can associate applications with ALB to offer a more powerful way to manage Ingress traffic. |[Creating an ALB Ingress](https://docs.byteplus.com/en/docs/vke/Creating-an-ALB-Ingress-in-the-console) |
+|Classic Load Balancer (CLB) |Classic Load Balancer (CLB) is a service that distributes inbound traffic to multiple backend servers based on specified policies. CLB expands the external service capabilities of your system and improves the system availability by eliminating SPOFs. VKE allows you to bind created applications to Load Balancers to enhance the external service capabilities of the applications. |[Load Balancer services](https://docs.byteplus.com/en/docs/vke/Creating-a-LoadBalancer-Service-in-the-console)<br><br>[Configuring a CLB Ingress](https://docs.byteplus.com/en/docs/vke/Creating-a-CLB-Ingress-in-the-console) |
+|CR |CR offers secure and highly available hosting services to cloud\-native artifacts such as container images and Helm Charts that are compliant with the Open Container Initiative (OCI). CR helps you perform the full\-lifecycle management of cloud\-native artifacts that are compliant with the OCI. |[Creating a Deployment](https://docs.byteplus.com/en/docs/vke/Creating-a-Deployment)<br><br>[Creating a StatefulSet](https://docs.byteplus.com/en/docs/vke/Creating-a-StatefulSet)<br><br>[Creating a Job](https://docs.byteplus.com/en/docs/vke/Creating-a-Job)<br><br>[Creating a CronJob](https://docs.byteplus.com/en/docs/vke/Creating-a-CronJob)<br><br>[Creating a DaemonSet](https://docs.byteplus.com/en/docs/vke/Creating-a-DaemonSet?type=preview) |
+|EBS |VKE allows you to create cloud disk resources by using native resources such as SC, PVC, and PV, and mount cloud disks to ECS instances. VKE also allows you to expand cloud disk capacity. |[Using static EBS volumes](https://docs.byteplus.com/en/docs/vke/Using-static-EBS-Volumes)<br><br>[Using dynamic EBS volumes](https://docs.byteplus.com/en/docs/vke/Using-dynamic-EBS-Volumes) |
+|NAS |VKE enables you to associate NAS volumes by using native resources, such as StorageClass, persistent volume claim (PVC), and PV resources. In addition, it enables you to mount NAS volumes on ECS instances and use NAS in containers. |[Using static NAS volumes](https://docs.byteplus.com/en/docs/vke/Using-static-NAS-Volumes)<br><br>[Using dynamic NAS volumes](https://docs.byteplus.com/en/docs/vke/Using-dynamic-NAS-Volumes) |
+|Torch Object Storage (TOS) |VKE allows you to associate TOS bucket resources by using native resources such as SC, PVC, and PV, and supports the use of TOS resources in containers. |[Using static TOS volumes](https://docs.byteplus.com/en/docs/vke/Using-static-TOS-Volumes?lang=en) |
+|VCI |Vital Container Instance (VCI) is a serverless and containerized computing service that supports capabilities such as startup within seconds, high\-concurrency creation, and sandbox container security isolation. VCI can be seamlessly integrated with VKE to provide Kubernetes orchestration capabilities. |[Using VCI](https://docs.byteplus.com/en/docs/vke/Using-VCI-in-Vital-Kubernetes-Engine) |
+|Terraform |Terraform is an open source tool that supports IT infrastructure orchestration, which allows you to define infrastructure or applications by using configuration files. You can use Terraform in VKE. |[Getting started with Terraform](https://docs.byteplus.com/en/docs/tf/Installing-Terraform) |
+|Cloud native observability |The cloud native observability solution is an integrated observability solution tailored for VKE clusters. It is developed based on Vital Managed Service for Prometheus (VMP) and enables metric and link monitoring for Kubernetes clusters, resources, networks, applications, and services. |[Cloud native observability](https://docs.byteplus.com/en/docs/vke/Basic-observability) |
